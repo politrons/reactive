@@ -6,4 +6,5 @@
 * Merge observables
 * Zip observables
 * Scan observables
+* Switch observables
 * Group by
