@@ -15,10 +15,10 @@ public class ObservableFlatMap<T> {
     @Test
     public void testFlatMap() {
 
-        List<Person> persons = new ArrayList<>();
-        persons.add(new Person("Pablo", 34, "male"));
-        persons.add(new Person("Paula", 35, "female"));
-        Observable.just(persons)
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Pablo", 34, "male"));
+        people.add(new Person("Paula", 35, "female"));
+        Observable.just(people)
                   .flatMap(Observable::from)
                   .subscribe(this::showResult);
 

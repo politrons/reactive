@@ -9,7 +9,7 @@ public class ObservableMerge {
     @Test
 
     public void testMerge() {
-        Observable.merge(obString(), obString1())
+        Observable.merge(obPerson(), obPerson1())
                   .subscribe(result -> showResult(result.toString()));
     }
 
@@ -18,11 +18,11 @@ public class ObservableMerge {
         System.out.println(++count);
     }
 
-    public Observable<Person> obString() {
+    public Observable<Person> obPerson() {
         return Observable.just(new Person("pablo", 34, null));
     }
 
-    public Observable<Person> obString1() {
+    public Observable<Person> obPerson1() {
         return Observable.just(new Person(null, 25, "male"));
     }
 

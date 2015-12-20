@@ -9,10 +9,10 @@ public class ObservableGroupBy {
 
     @Test
     public void testGroupBy() {
-        List<Person> persons = new ArrayList<>();
-        persons.add(new Person("Pablo", 34, "male"));
-        persons.add(new Person("Paula", 35, "female"));
-        Observable.just(persons)
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Pablo", 34, "male"));
+        people.add(new Person("Paula", 35, "female"));
+        Observable.just(people)
                   .flatMap(listOfPersons -> Observable.from(listOfPersons)
                                                       .groupBy(person -> person.sex.equals("male"))).subscribe(booleanPersonGroupedObservable -> {
             if(booleanPersonGroupedObservable.getKey()){

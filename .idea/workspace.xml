@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ObservableTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ObservableTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableMerge.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableMerge.java" />
     </list>
@@ -56,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24418604">
-              <caret line="12" column="123" selection-start-line="12" selection-start-column="123" selection-end-line="12" selection-end-column="123" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -90,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#431#432#0" expanded="true" />
@@ -102,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.27522936">
               <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="74" />
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -176,13 +171,13 @@
         <option value="$PROJECT_DIR$/src/test/java/TestObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestZip.java" />
         <option value="$PROJECT_DIR$/src/main/java/Person.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ObservableMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableJoin.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableMerge.java" />
       </list>
     </option>
   </component>
@@ -1149,7 +1144,7 @@
       <updated>1441692834585</updated>
       <workItem from="1441692838562" duration="2092000" />
       <workItem from="1441723564087" duration="585000" />
-      <workItem from="1450621334649" duration="5114000" />
+      <workItem from="1450621334649" duration="5458000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1163,7 +1158,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450622896617</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add flatMap">
+      <created>1450626717757</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1450626717757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1199,7 +1200,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7791000" />
+    <option name="totallyTimeSpent" value="8135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
@@ -1212,7 +1213,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30942452" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1239,7 +1240,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add merge and zip" />
     <MESSAGE value="Add group by observable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add group by observable" />
+    <MESSAGE value="Add flatMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add flatMap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1320,18 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1348,10 +1338,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4738" column="35" selection-start-line="4738" selection-start-column="35" selection-end-line="4738" selection-end-column="35" />
+          <folding>
+            <element signature="e#162459#162460#0" expanded="true" />
+            <element signature="e#162522#162523#0" expanded="true" />
+            <element signature="e#359940#359941#0" expanded="true" />
+            <element signature="e#360004#360005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#431#432#0" expanded="true" />
@@ -1370,42 +1399,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.27522936">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4738" column="35" selection-start-line="4738" selection-start-column="35" selection-end-line="4738" selection-end-column="35" />
-          <folding>
-            <element signature="e#162459#162460#0" expanded="true" />
-            <element signature="e#162522#162523#0" expanded="true" />
-            <element signature="e#359940#359941#0" expanded="true" />
-            <element signature="e#360004#360005#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24418604">
-          <caret line="12" column="123" selection-start-line="12" selection-start-column="123" selection-end-line="12" selection-end-column="123" />
-          <folding />
         </state>
       </provider>
     </entry>
