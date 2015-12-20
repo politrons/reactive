@@ -88,16 +88,10 @@
       <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10465116">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="2.0183487">
+              <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1447#1448#0" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-                <element signature="e#1583#1584#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1153,7 +1147,7 @@
       <updated>1441692834585</updated>
       <workItem from="1441692838562" duration="2092000" />
       <workItem from="1441723564087" duration="585000" />
-      <workItem from="1450621334649" duration="17006000" />
+      <workItem from="1450621334649" duration="17642000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1209,16 +1203,16 @@
       <option name="project" value="LOCAL" />
       <updated>1450649990473</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add switch">
+      <created>1450651105743</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1450651105743</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 19m 09s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 19m 32s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObservableZip - 2015.12.20 at 22h 26m 26s.xml">
       <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
@@ -1237,15 +1231,21 @@
     <history-entry file="ObservableZip - 2015.12.20 at 22h 28m 57s.xml">
       <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip_testAsyncZip - 2015.12.20 at 22h 18m 25s.xml">
-      <configuration name="ObservableZip.testAsyncZip" configurationId="JUnit" />
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 43m 22s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip_testAsyncZip - 2015.12.20 at 22h 18m 54s.xml">
-      <configuration name="ObservableZip.testAsyncZip" configurationId="JUnit" />
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 45m 44s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 47m 37s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 48m 24s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19683000" />
+    <option name="totallyTimeSpent" value="20319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
@@ -1258,7 +1258,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5175953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29524603" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1309,21 +1309,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ObservableZip.java</url>
-          <line>50</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ObservableZip.java</url>
-          <line>55</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ObservableZip.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="23" />
@@ -1506,16 +1500,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10465116">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.0183487">
+          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15,50 +15,80 @@ public class ObservableZip {
         scheduler = Schedulers.newThread();
         scheduler1 = Schedulers.newThread();
         scheduler2 = Schedulers.newThread();
-        long start =System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         Observable.zip(obAsyncString(), obAsyncString1(), obAsyncString2(), (s, s2, s3) -> s.concat(s2)
                                                                                             .concat(s3))
-                  .subscribe(result->showResult("Async:",start, result));
+                  .subscribe(result -> showResult("Async:", start, result));
     }
 
     @Test
     public void testZip() {
-        long start =System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         Observable.zip(obString(), obString1(), obString2(), (s, s2, s3) -> s.concat(s2)
                                                                              .concat(s3))
-                  .subscribe(result->showResult("Sync:",start, result));
+                  .subscribe(result -> showResult("Sync:", start, result));
     }
 
 
-    public void showResult(String transactionType, long start, String result){
-        System.out.println(transactionType + String.valueOf(System.currentTimeMillis() - start));
-        System.out.println(result);
+    public void showResult(String transactionType, long start, String result) {
+        System.out.println(result + " " +
+                                   transactionType + String.valueOf(System.currentTimeMillis() - start));
     }
 
     public Observable<String> obString() {
-        return Observable.just("hello");
+        return Observable.just("")
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> "Hello");
     }
 
     public Observable<String> obString1() {
-        return Observable.just(" world");
+        return Observable.just("")
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> " World");
     }
 
     public Observable<String> obString2() {
-        return Observable.just("!");
+        return Observable.just("")
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> "!");
     }
 
     public Observable<String> obAsyncString() {
-        return Observable.just("hello")
-                         .observeOn(scheduler);
+        return Observable.just("")
+                         .observeOn(scheduler)
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> "Hello");
     }
 
     public Observable<String> obAsyncString1() {
-        return Observable.just(" world")
-                         .observeOn(scheduler1);
+        return Observable.just("")
+                         .observeOn(scheduler1)
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> " World");
     }
 
     public Observable<String> obAsyncString2() {
-        return Observable.just("!")
-                         .observeOn(scheduler2);
+        return Observable.just("")
+                         .observeOn(scheduler1)
+                         .doOnNext(val -> {
+                             System.out.println("Thread " + Thread.currentThread()
+                                                                  .getName());
+                         })
+                         .map(val -> "!");
     }
 }
