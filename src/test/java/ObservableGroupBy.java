@@ -24,25 +24,4 @@ public class ObservableGroupBy {
     }
 
 
-
-    class Person {
-        String name;
-        Integer age;
-        String sex;
-
-        Person(String name, Integer age, String sex) {
-            this.name = name;
-            this.age = age;
-            this.sex = sex;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" +
-                    "name='" + name + '\'' +
-                    ", age=" + age +
-                    ", sex='" + sex + '\'' +
-                    '}';
-        }
-    }
 }
