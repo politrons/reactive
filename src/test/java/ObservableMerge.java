@@ -2,7 +2,7 @@ import org.junit.Test;
 import rx.Observable;
 
 
-public class TestMerge {
+public class ObservableMerge {
 
     static int count = 0;
 

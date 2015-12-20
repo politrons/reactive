@@ -2,7 +2,7 @@ import org.junit.Test;
 import rx.Observable;
 
 
-public class TestZip {
+public class ObservableZip {
 
     @Test
     public void testZip() {
