@@ -84,7 +84,7 @@ public class ObservableZip {
 
     public Observable<String> obAsyncString2() {
         return Observable.just("")
-                         .observeOn(scheduler1)
+                         .observeOn(scheduler2)
                          .doOnNext(val -> {
                              System.out.println("Thread " + Thread.currentThread()
                                                                   .getName());

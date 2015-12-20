@@ -88,8 +88,8 @@
       <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.0183487">
-              <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.6880734">
+              <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1147,7 +1147,7 @@
       <updated>1441692834585</updated>
       <workItem from="1441692838562" duration="2092000" />
       <workItem from="1441723564087" duration="585000" />
-      <workItem from="1450621334649" duration="17642000" />
+      <workItem from="1450621334649" duration="17866000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1209,22 +1209,16 @@
       <option name="project" value="LOCAL" />
       <updated>1450651105743</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add async on observables">
+      <created>1450651755242</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1450651755242</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 26m 26s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 26m 38s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 27m 24s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 28m 10s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObservableZip - 2015.12.20 at 22h 28m 15s.xml">
       <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
@@ -1243,9 +1237,21 @@
     <history-entry file="ObservableZip - 2015.12.20 at 22h 48m 24s.xml">
       <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 19s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 23s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 27s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 31s.xml">
+      <configuration name="ObservableZip" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20319000" />
+    <option name="totallyTimeSpent" value="20543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
@@ -1288,7 +1294,8 @@
     <MESSAGE value="Add flatMap" />
     <MESSAGE value="refactor" />
     <MESSAGE value="add switch" />
-    <option name="LAST_COMMIT_MESSAGE" value="add switch" />
+    <MESSAGE value="add async on observables" />
+    <option name="LAST_COMMIT_MESSAGE" value="add async on observables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1500,8 +1507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0183487">
-          <caret line="88" column="60" selection-start-line="88" selection-start-column="60" selection-end-line="88" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.6880734">
+          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
