@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableSwitch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableScan.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableScan.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableScan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3440367">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#389#390#0" expanded="true" />
@@ -99,6 +99,16 @@
                 <element signature="e#574#575#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableSwitch.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSwitch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5504587">
+              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,24 +133,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4738" column="35" selection-start-line="4738" selection-start-column="35" selection-end-line="4738" selection-end-column="35" />
+              <caret line="3996" column="31" selection-start-line="3996" selection-start-column="31" selection-end-line="3996" selection-end-column="31" />
               <folding>
                 <element signature="e#162459#162460#0" expanded="true" />
                 <element signature="e#162522#162523#0" expanded="true" />
+                <element signature="e#205348#205349#0" expanded="true" />
+                <element signature="e#205416#205417#0" expanded="true" />
                 <element signature="e#359940#359941#0" expanded="true" />
                 <element signature="e#360004#360005#0" expanded="true" />
               </folding>
@@ -179,8 +181,9 @@
         <option value="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ObservableZip.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableZip.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableSwitch.java" />
       </list>
     </option>
   </component>
@@ -423,49 +426,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableScan">
-    <configuration default="false" name="CreatingObservable.scanObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CreatingObservable" />
-      <option name="METHOD_NAME" value="scanObservable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableFlatMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObservableFlatMap" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableSwitch.testNoSwitchPerson">
     <configuration default="false" name="ObservableGroupBy.testGroupByAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="reactive" />
@@ -517,6 +478,48 @@
       <option name="MAIN_CLASS_NAME" value="ObservableScan" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableSwitch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ObservableSwitch" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableSwitch.testNoSwitchPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ObservableSwitch" />
+      <option name="METHOD_NAME" value="testNoSwitchPerson" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1116,19 +1119,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CreatingObservable.scanObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableGroupBy.testGroupByAge" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableZip" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableScan" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableGroupBy.testGroupByAge" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableZip" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableScan" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableSwitch" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableSwitch.testNoSwitchPerson" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableScan" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableZip" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableGroupBy.testGroupByAge" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CreatingObservable.scanObservable" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableSwitch.testNoSwitchPerson" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableSwitch" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableScan" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableZip" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableGroupBy.testGroupByAge" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1148,7 +1151,7 @@
       <updated>1441692834585</updated>
       <workItem from="1441692838562" duration="2092000" />
       <workItem from="1441723564087" duration="585000" />
-      <workItem from="1450621334649" duration="8327000" />
+      <workItem from="1450621334649" duration="10700000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1186,16 +1189,16 @@
       <option name="project" value="LOCAL" />
       <updated>1450634596313</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor">
+      <created>1450637296840</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450637296840</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatingObservable_scanObservable - 2015.12.20 at 15h 16m 11s.xml">
-      <configuration name="CreatingObservable.scanObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableFlatMap - 2015.12.20 at 15h 49m 33s.xml">
-      <configuration name="ObservableFlatMap" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObservableGroupBy_testGroupByAge - 2015.12.20 at 17h 25m 16s.xml">
       <configuration name="ObservableGroupBy.testGroupByAge" configurationId="JUnit" />
     </history-entry>
@@ -1217,12 +1220,18 @@
     <history-entry file="ObservableScan - 2015.12.20 at 18h 46m 33s.xml">
       <configuration name="ObservableScan" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableSwitch - 2015.12.20 at 19h 50m 32s.xml">
+      <configuration name="ObservableSwitch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableSwitch_testNoSwitchPerson - 2015.12.20 at 19h 51m 56s.xml">
+      <configuration name="ObservableSwitch.testNoSwitchPerson" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ObservableZip - 2015.12.20 at 18h 02m 45s.xml">
       <configuration name="ObservableZip" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11004000" />
+    <option name="totallyTimeSpent" value="13377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
@@ -1238,7 +1247,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30942452" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4437031" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1377,19 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4738" column="35" selection-start-line="4738" selection-start-column="35" selection-end-line="4738" selection-end-column="35" />
-          <folding>
-            <element signature="e#162459#162460#0" expanded="true" />
-            <element signature="e#162522#162523#0" expanded="true" />
-            <element signature="e#359940#359941#0" expanded="true" />
-            <element signature="e#360004#360005#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1424,22 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1456,8 +1436,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3440367">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3996" column="31" selection-start-line="3996" selection-start-column="31" selection-end-line="3996" selection-end-column="31" />
+          <folding>
+            <element signature="e#162459#162460#0" expanded="true" />
+            <element signature="e#162522#162523#0" expanded="true" />
+            <element signature="e#205348#205349#0" expanded="true" />
+            <element signature="e#205416#205417#0" expanded="true" />
+            <element signature="e#359940#359941#0" expanded="true" />
+            <element signature="e#360004#360005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSwitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5504587">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
           <folding />
         </state>
       </provider>
