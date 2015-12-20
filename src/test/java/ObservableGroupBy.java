@@ -9,10 +9,7 @@ public class ObservableGroupBy {
 
     @Test
     public void testGroupBy() {
-        List<Person> people = new ArrayList<>();
-        people.add(new Person("Pablo", 34, "male"));
-        people.add(new Person("Paula", 35, "female"));
-        Observable.just(people)
+        Observable.just(getPersons())
                   .flatMap(listOfPersons -> Observable.from(listOfPersons)
                                                       .groupBy(person -> person.sex.equals("male"))).subscribe(booleanPersonGroupedObservable -> {
             if(booleanPersonGroupedObservable.getKey()){
@@ -23,5 +20,29 @@ public class ObservableGroupBy {
         });
     }
 
+
+    @Test
+    public void testGroupBySex() {
+        Observable.just(getPersons())
+                  .flatMap(listOfPersons -> Observable.from(listOfPersons)
+                                                      .groupBy(person -> person.sex)).subscribe(booleanPersonGroupedObservable -> {
+            switch (booleanPersonGroupedObservable.getKey()){
+                case "male":{
+                    booleanPersonGroupedObservable.asObservable().subscribe(person -> System.out.println("Here the male:" + person.name));
+                    break;
+                }case "female":{
+                    booleanPersonGroupedObservable.asObservable().subscribe(person -> System.out.println("Here the female:" + person.name));
+                    break;
+                }
+            }
+        });
+    }
+
+    private List<Person> getPersons() {
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Pablo", 34, "male"));
+        people.add(new Person("Paula", 35, "female"));
+        return people;
+    }
 
 }
