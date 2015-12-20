@@ -6,7 +6,6 @@ import rx.schedulers.Schedulers;
 
 public class ObservableZip {
 
-
     private Scheduler scheduler;
     private Scheduler scheduler1;
     private Scheduler scheduler2;
@@ -19,7 +18,6 @@ public class ObservableZip {
         long start =System.currentTimeMillis();
         Observable.zip(obAsyncString(), obAsyncString1(), obAsyncString2(), (s, s2, s3) -> s.concat(s2)
                                                                                             .concat(s3))
-                  .observeOn(scheduler)
                   .subscribe(result->showResult("Async:",start, result));
     }
 
