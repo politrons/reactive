@@ -9,7 +9,14 @@ public class ObservableScan {
 
 
     /**
-     * apply this function for every item against the previous emitted item from the source
+     * apply this function for every item against the previous emitted item from the source.
+     *  Emitted:
+                0
+                1
+                3
+                6
+                10
+                15
      */
     @Test
     public void scanObservable() {

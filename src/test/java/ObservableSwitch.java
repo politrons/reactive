@@ -8,7 +8,8 @@ import java.util.List;
 public class ObservableSwitch<T> {
 
     /**
-     * We switch from alternative observable if the origin observable is empty
+     * We switch from alternative observable if the origin observable is empty.
+     * Emitted:Person{name='new', age=0, sex='no_sex'}
      */
     @Test
     public void testSwitchPerson() {
@@ -22,7 +23,8 @@ public class ObservableSwitch<T> {
     }
 
     /**
-     * We dont switch from alternative observable because the origin observable is not empty
+     * We dont switch from alternative observable because the origin observable is not empty.
+     * Emitted:Person{name='Pablo', age=34, sex='male'}
      */
     @Test
     public void testNoSwitchPerson() {

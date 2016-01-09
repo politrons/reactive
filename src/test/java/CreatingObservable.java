@@ -3,6 +3,8 @@ import rx.Observable;
 
 import java.util.concurrent.TimeUnit;
 
+import static junit.framework.TestCase.assertTrue;
+
 
 /**
  * @author Pablo Perez
@@ -29,6 +31,16 @@ public class CreatingObservable {
         Observable.interval(1, TimeUnit.SECONDS)
                   .map(Long::new)
                   .subscribe(result-> System.out.printf(String.valueOf(result)));
+    }
+
+    /**
+     * Create an observable with a Long value evey second
+     */
+    @Test
+    public void observableEvolveAndToValue(){
+        assertTrue(Observable.just(10)
+                  .map(String::valueOf)
+                  .toBlocking().single().equals("10"));
     }
 
 
