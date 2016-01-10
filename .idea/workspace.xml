@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableTo.java" />
+    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="add async on observables">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/HotObservable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CreatingObservable.java" afterPath="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableScan.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableSwitch.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableSwitch.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,30 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreatingObservable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObservableTo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableTo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableTo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8944954">
+            <state vertical-scroll-proportion="0.0">
               <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="e#985#986#0" expanded="true" />
@@ -69,6 +45,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotObservable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51834863">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectableObservable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/ConnectableObservable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,21 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableGroupBy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8777" column="52" selection-start-line="8777" selection-start-column="52" selection-end-line="8777" selection-end-column="52" />
+              <caret line="7565" column="30" selection-start-line="7565" selection-start-column="30" selection-end-line="7565" selection-end-column="30" />
               <folding>
                 <element signature="e#458985#458986#0" expanded="true" />
                 <element signature="e#459037#459038#0" expanded="true" />
@@ -176,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableTo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HotObservable.java" />
       </list>
     </option>
   </component>
@@ -418,7 +415,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableTo">
+  <component name="RunManager" selected="JUnit.HotObservable">
     <configuration default="false" name="ObservableZip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="reactive" />
@@ -1166,12 +1163,34 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
+    <configuration default="false" name="HotObservable" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HotObservable" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableZip" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableScan" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableSwitch" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableTo" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.HotObservable" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1207,7 +1226,7 @@
       <workItem from="1450621334649" duration="18484000" />
       <workItem from="1451466307885" duration="357000" />
       <workItem from="1451578220993" duration="722000" />
-      <workItem from="1452347440541" duration="2843000" />
+      <workItem from="1452347440541" duration="5523000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1281,43 +1300,49 @@
       <option name="project" value="LOCAL" />
       <updated>1450651969703</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add async on observables">
+      <created>1452351962324</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1452351962324</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableFlatMap - 2016.01.09 at 13h 55m 46s.xml">
-      <configuration name="ObservableFlatMap" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 46m 33s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableScan - 2016.01.09 at 13h 51m 19s.xml">
-      <configuration name="ObservableScan" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 46m 44s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableSwitch - 2016.01.09 at 13h 52m 57s.xml">
-      <configuration name="ObservableSwitch" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 48m 14s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTo - 2016.01.09 at 14h 59m 15s.xml">
-      <configuration name="ObservableTo" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 50m 42s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTo - 2016.01.09 at 15h 02m 05s.xml">
-      <configuration name="ObservableTo" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 51m 00s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTo - 2016.01.09 at 15h 02m 23s.xml">
-      <configuration name="ObservableTo" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 14h 52m 10s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTo - 2016.01.09 at 15h 05m 09s.xml">
-      <configuration name="ObservableTo" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 15h 02m 58s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 23s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 15h 04m 54s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 27s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 15h 05m 48s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip - 2015.12.20 at 22h 52m 31s.xml">
-      <configuration name="ObservableZip" configurationId="JUnit" />
+    <history-entry file="HotObservable - 2016.01.10 at 15h 07m 04s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25083000" />
+    <option name="totallyTimeSpent" value="27763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
@@ -1389,7 +1414,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1398,32 +1423,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1469,7 +1468,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1563,7 +1564,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1657,7 +1660,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1774,7 +1779,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1782,14 +1789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1830,17 +1829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8777" column="52" selection-start-line="8777" selection-start-column="52" selection-end-line="8777" selection-end-column="52" />
-          <folding>
-            <element signature="e#458985#458986#0" expanded="true" />
-            <element signature="e#459037#459038#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/BlockingObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1851,12 +1839,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableTo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8944954">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#985#986#0" expanded="true" />
             <element signature="e#1058#1059#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/ConnectableObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7565" column="30" selection-start-line="7565" selection-start-column="30" selection-end-line="7565" selection-end-column="30" />
+          <folding>
+            <element signature="e#458985#458986#0" expanded="true" />
+            <element signature="e#459037#459038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51834863">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
