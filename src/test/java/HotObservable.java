@@ -1,6 +1,7 @@
 import org.junit.Test;
 import rx.Observable;
 import rx.observables.ConnectableObservable;
+import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 
 
@@ -37,6 +38,23 @@ public class HotObservable<T> {
                                                                        (System.currentTimeMillis() - startTime)/1000)));
         Thread.sleep(1000);
         observable.subscribe(publishSubject);
+
+    }
+
+
+    /**
+     * In this example we see how using hot observables PublishSubject we can start emitting items not when we subscribe,
+     * but when we subscribe the observer to the observable.
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservableReplay() throws InterruptedException {
+        Long startTime = System.currentTimeMillis();
+        ConnectableObservable<Integer> replay =  Observable.range(0, 10).publish();
+        replay.subscribe(s -> System.out.println(String.format("Item %s Emitted ", s)));
+        replay.connect();
+        Observable<Integer> observable = replay.subscribeOn(Schedulers.io()).count();
+        observable.toBlocking().forEach(item-> System.out.println("Item replayed after being emitted by ConnectableObservable " + item));
     }
 
 

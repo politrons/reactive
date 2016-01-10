@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="add async on observables">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/HotObservable.java" />
+    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HotObservable.java" afterPath="$PROJECT_DIR$/src/test/java/HotObservable.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +53,18 @@
       <file leaf-file-name="HotObservable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51834863">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.15137614">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action1.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/functions/Action1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -76,18 +86,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObservableScan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1226,7 +1224,7 @@
       <workItem from="1450621334649" duration="18484000" />
       <workItem from="1451466307885" duration="357000" />
       <workItem from="1451578220993" duration="722000" />
-      <workItem from="1452347440541" duration="5523000" />
+      <workItem from="1452347440541" duration="6614000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1306,47 +1304,53 @@
       <option name="project" value="LOCAL" />
       <updated>1452351962324</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add async on observables">
+      <created>1452438452893</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1452438452893</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HotObservable - 2016.01.10 at 14h 46m 33s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 14h 46m 44s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 14h 48m 14s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 14h 50m 42s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 14h 51m 00s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 14h 52m 10s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 15h 02m 58s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 15h 04m 54s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HotObservable - 2016.01.10 at 15h 05m 48s.xml">
       <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HotObservable - 2016.01.10 at 15h 07m 04s.xml">
       <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 17m 25s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 17m 58s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 18m 14s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 18m 31s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 23m 25s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 24m 00s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 24m 09s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotObservable - 2016.01.10 at 15h 25m 43s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27763000" />
+    <option name="totallyTimeSpent" value="28854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="23" width="1241" height="777" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1358,7 +1362,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5175953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31943285" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31943285" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1413,8 +1417,16 @@
           </properties>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HotObservable.java</url>
+          <line>56</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1423,14 +1435,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1883,10 +1887,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/functions/Action1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51834863">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.15137614">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
