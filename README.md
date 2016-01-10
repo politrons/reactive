@@ -9,3 +9,4 @@ Pablo Perez Garcia
 * Scan observables
 * Switch observables
 * Group by
+* Hot Observables
