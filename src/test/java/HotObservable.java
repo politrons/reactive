@@ -33,7 +33,7 @@ public class HotObservable<T> {
     public void testHotObservablePublishSubject() throws InterruptedException {
         Long startTime = System.currentTimeMillis();
         Observable<String> observable = Observable.just("Hot observable");
-        PublishSubject publishSubject = PublishSubject.create();
+        PublishSubject<String> publishSubject = PublishSubject.create();
         publishSubject.subscribe(s -> System.out.println(String.format("Item %s Emitted in publish subject after: %s seconds", s,
                                                                        (System.currentTimeMillis() - startTime)/1000)));
         Thread.sleep(1000);
@@ -49,7 +49,6 @@ public class HotObservable<T> {
      */
     @Test
     public void testHotObservableReplay() throws InterruptedException {
-        Long startTime = System.currentTimeMillis();
         ConnectableObservable<Integer> replay =  Observable.range(0, 10).publish();
         replay.subscribe(s -> System.out.println(String.format("Item %s Emitted ", s)));
         replay.connect();
