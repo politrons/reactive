@@ -2,36 +2,60 @@ import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
 import rx.observables.ConnectableObservable;
-import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 
 import java.util.concurrent.TimeUnit;
 
 
-public class HotObservable<T> {
+public class HotObservable {
 
 
     /**
-     * This example we can see how a third observable subscribe to hot Observable once start emitting items so he miss the first items
+     * This example we can see how a third observable subscribe to hot Observable once this one haa start emitting items, so he miss the items already emitted
      *
      * @throws InterruptedException
      */
     @Test
-    public void testHotObservables() throws InterruptedException {
+    public void testHotObservablesMissingItems() throws InterruptedException {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         ConnectableObservable<Long> published = interval.publish();
         Subscription sub1 = subscribePrint(published, "First");
         Subscription sub2 = subscribePrint(published, "Second");
         published.connect();
+        thirdSubscriber(published, sub1, sub2);
+    }
+
+    /**
+     * This example we can see how a third observable subscribe to hot Observable once start emitting items, and because the hot
+     * observable was created with replay, it replay to the third subscriber all missed items.
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservablesRecoveringMissItems() throws InterruptedException {
+        Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
+        ConnectableObservable<Long> published = interval.replay();
+        Subscription sub1 = subscribePrint(published, "First");
+        Subscription sub2 = subscribePrint(published, "Second");
+        published.connect();
+        thirdSubscriber(published, sub1, sub2);
+    }
+
+
+    private void thirdSubscriber(ConnectableObservable<Long> published, Subscription sub1, Subscription sub2) {
         try {
             Thread.sleep(500L);
             Subscription sub3 = subscribePrint(published, "Third");
             Thread.sleep(500L);
-            sub1.unsubscribe();
-            sub2.unsubscribe();
-            sub3.unsubscribe();
+            unsubscribe(sub1, sub2, sub3);
         } catch (InterruptedException e) {
         }
+    }
+
+    private void unsubscribe(Subscription sub1, Subscription sub2, Subscription sub3) {
+        sub1.unsubscribe();
+        sub2.unsubscribe();
+        sub3.unsubscribe();
     }
 
     Subscription subscribePrint(Observable<Long> observable, String name) {
@@ -77,25 +101,5 @@ public class HotObservable<T> {
         observable.subscribe(publishSubject);
 
     }
-
-
-    /**
-     * In this example we see how using hot observables PublishSubject we can start emitting items not when we subscribe,
-     * but when we subscribe the observer to the observable.
-     *
-     * @throws InterruptedException
-     */
-    @Test
-    public void testHotObservableReplay() throws InterruptedException {
-        ConnectableObservable<Integer> replay = Observable.range(0, 10)
-                                                          .publish();
-        replay.subscribe(s -> System.out.println(String.format("Item %s Emitted ", s)));
-        replay.connect();
-        Observable<Integer> observable = replay.subscribeOn(Schedulers.io())
-                                               .count();
-        observable.toBlocking()
-                  .forEach(item -> System.out.println("Item replayed after being emitted by ConnectableObservable " + item));
-    }
-
 
 }
