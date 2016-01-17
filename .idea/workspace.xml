@@ -31,11 +31,8 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableTo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-              </folding>
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,8 +50,8 @@
       <file leaf-file-name="HotObservable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0779817">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48165137">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -65,7 +62,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +74,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
-              <folding />
+              <folding>
+                <element signature="e#0#25830#0" expanded="false" />
+                <element signature="e#5748#5749#0" expanded="false" />
+                <element signature="e#5784#5785#0" expanded="false" />
+                <element signature="e#10065#10066#0" expanded="false" />
+                <element signature="e#10148#10149#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +135,52 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2460#2461#0" expanded="false" />
+                <element signature="e#2486#2487#0" expanded="false" />
+                <element signature="e#2807#2808#0" expanded="false" />
+                <element signature="e#2858#2859#0" expanded="false" />
+                <element signature="e#4494#4495#0" expanded="false" />
+                <element signature="e#4543#4544#0" expanded="false" />
+                <element signature="e#5161#5162#0" expanded="false" />
+                <element signature="e#5210#5211#0" expanded="false" />
+                <element signature="e#6114#6115#0" expanded="false" />
+                <element signature="e#6177#6178#0" expanded="false" />
+                <element signature="e#6660#6661#0" expanded="false" />
+                <element signature="e#6708#6709#0" expanded="false" />
+                <element signature="e#7411#7412#0" expanded="false" />
+                <element signature="e#7468#7469#0" expanded="false" />
+                <element signature="e#8024#8025#0" expanded="false" />
+                <element signature="e#8129#8130#0" expanded="false" />
+                <element signature="e#9714#9715#0" expanded="false" />
+                <element signature="e#9761#9762#0" expanded="false" />
+                <element signature="e#10595#10596#0" expanded="false" />
+                <element signature="e#10651#10652#0" expanded="false" />
+                <element signature="e#11344#11345#0" expanded="false" />
+                <element signature="e#11448#11449#0" expanded="false" />
+                <element signature="e#13302#13303#0" expanded="false" />
+                <element signature="e#13379#13380#0" expanded="false" />
+                <element signature="e#14002#14003#0" expanded="false" />
+                <element signature="e#14053#14054#0" expanded="false" />
+                <element signature="e#14850#14851#0" expanded="false" />
+                <element signature="e#14905#14906#0" expanded="false" />
+                <element signature="e#15432#15433#0" expanded="false" />
+                <element signature="e#15481#15482#0" expanded="false" />
+                <element signature="e#16227#16228#0" expanded="false" />
+                <element signature="e#16285#16286#0" expanded="false" />
+                <element signature="e#17101#17102#0" expanded="false" />
+                <element signature="e#17207#17208#0" expanded="false" />
+                <element signature="e#19355#19356#0" expanded="false" />
+                <element signature="e#19414#19415#0" expanded="false" />
+                <element signature="e#19975#19976#0" expanded="false" />
+                <element signature="e#20027#20028#0" expanded="false" />
+                <element signature="e#20699#20700#0" expanded="false" />
+                <element signature="e#20748#20749#0" expanded="false" />
+                <element signature="e#20983#20984#0" expanded="false" />
+                <element signature="e#21035#21036#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -300,6 +350,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,7 +433,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1225,7 +1275,9 @@
       <workItem from="1451466307885" duration="357000" />
       <workItem from="1451578220993" duration="722000" />
       <workItem from="1452347440541" duration="6637000" />
-      <workItem from="1452460423953" duration="159000" />
+      <workItem from="1452460423953" duration="790000" />
+      <workItem from="1452503192757" duration="448000" />
+      <workItem from="1453041525230" duration="453000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1317,13 +1369,16 @@
       <option name="project" value="LOCAL" />
       <updated>1452452439571</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add async on observables">
+      <created>1452460591148</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1452460591148</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HotObservable - 2016.01.10 at 15h 07m 04s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HotObservable - 2016.01.10 at 15h 17m 25s.xml">
       <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
@@ -1351,13 +1406,16 @@
     <history-entry file="HotObservable - 2016.01.10 at 21h 16m 14s.xml">
       <configuration name="HotObservable" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HotObservable - 2016.01.17 at 14h 43m 34s.xml">
+      <configuration name="HotObservable" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29036000" />
+    <option name="totallyTimeSpent" value="30568000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="23" width="1241" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="39" y="23" width="1241" height="777" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1369,7 +1427,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5175953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31885245" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32110092" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1426,7 +1484,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/HotObservable.java</url>
-          <line>55</line>
+          <line>96</line>
           <properties>
             <option name="lambda-ordinal" value="0" />
           </properties>
@@ -1456,14 +1514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6149#6150#0" expanded="false" />
-            <element signature="e#6206#6207#0" expanded="false" />
-            <element signature="e#6415#6416#0" expanded="false" />
-            <element signature="e#6464#6465#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,7 +1558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,14 +1600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6149#6150#0" expanded="false" />
-            <element signature="e#6206#6207#0" expanded="false" />
-            <element signature="e#6415#6416#0" expanded="false" />
-            <element signature="e#6464#6465#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1603,7 +1644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1646,14 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6149#6150#0" expanded="false" />
-            <element signature="e#6206#6207#0" expanded="false" />
-            <element signature="e#6415#6416#0" expanded="false" />
-            <element signature="e#6464#6465#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1698,7 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1721,7 +1752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,14 +1794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6149#6150#0" expanded="false" />
-            <element signature="e#6206#6207#0" expanded="false" />
-            <element signature="e#6415#6416#0" expanded="false" />
-            <element signature="e#6464#6465#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1804,7 +1826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1818,10 +1839,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSwitch.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableTo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/functions/Action1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#25830#0" expanded="false" />
+            <element signature="e#5748#5749#0" expanded="false" />
+            <element signature="e#5784#5785#0" expanded="false" />
+            <element signature="e#10065#10066#0" expanded="false" />
+            <element signature="e#10148#10149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/ConnectableObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1836,45 +1897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/BlockingObservable.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSwitch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableTo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/ConnectableObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1890,18 +1916,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/functions/Action1.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/BlockingObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2460#2461#0" expanded="false" />
+            <element signature="e#2486#2487#0" expanded="false" />
+            <element signature="e#2807#2808#0" expanded="false" />
+            <element signature="e#2858#2859#0" expanded="false" />
+            <element signature="e#4494#4495#0" expanded="false" />
+            <element signature="e#4543#4544#0" expanded="false" />
+            <element signature="e#5161#5162#0" expanded="false" />
+            <element signature="e#5210#5211#0" expanded="false" />
+            <element signature="e#6114#6115#0" expanded="false" />
+            <element signature="e#6177#6178#0" expanded="false" />
+            <element signature="e#6660#6661#0" expanded="false" />
+            <element signature="e#6708#6709#0" expanded="false" />
+            <element signature="e#7411#7412#0" expanded="false" />
+            <element signature="e#7468#7469#0" expanded="false" />
+            <element signature="e#8024#8025#0" expanded="false" />
+            <element signature="e#8129#8130#0" expanded="false" />
+            <element signature="e#9714#9715#0" expanded="false" />
+            <element signature="e#9761#9762#0" expanded="false" />
+            <element signature="e#10595#10596#0" expanded="false" />
+            <element signature="e#10651#10652#0" expanded="false" />
+            <element signature="e#11344#11345#0" expanded="false" />
+            <element signature="e#11448#11449#0" expanded="false" />
+            <element signature="e#13302#13303#0" expanded="false" />
+            <element signature="e#13379#13380#0" expanded="false" />
+            <element signature="e#14002#14003#0" expanded="false" />
+            <element signature="e#14053#14054#0" expanded="false" />
+            <element signature="e#14850#14851#0" expanded="false" />
+            <element signature="e#14905#14906#0" expanded="false" />
+            <element signature="e#15432#15433#0" expanded="false" />
+            <element signature="e#15481#15482#0" expanded="false" />
+            <element signature="e#16227#16228#0" expanded="false" />
+            <element signature="e#16285#16286#0" expanded="false" />
+            <element signature="e#17101#17102#0" expanded="false" />
+            <element signature="e#17207#17208#0" expanded="false" />
+            <element signature="e#19355#19356#0" expanded="false" />
+            <element signature="e#19414#19415#0" expanded="false" />
+            <element signature="e#19975#19976#0" expanded="false" />
+            <element signature="e#20027#20028#0" expanded="false" />
+            <element signature="e#20699#20700#0" expanded="false" />
+            <element signature="e#20748#20749#0" expanded="false" />
+            <element signature="e#20983#20984#0" expanded="false" />
+            <element signature="e#21035#21036#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0779817">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48165137">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding />
         </state>
       </provider>
