@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableAmbConditional.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SingleFeatures.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="reactive.iws" />
@@ -47,6 +47,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SingleFeatures.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SingleFeatures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43361884">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Single.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Single.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ObservableScan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScan.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableAmbConditional.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableAmbConditional.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableAmbConditional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64220184">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,28 +95,31 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/subjects/Subject.java">
+      <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subscription.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Subscription.java">
+      <file leaf-file-name="ObservableMerge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding />
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,71 +130,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="6813" column="31" selection-start-line="6813" selection-start-column="31" selection-end-line="6813" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockingObservable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/BlockingObservable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#2460#2461#0" expanded="false" />
-                <element signature="e#2486#2487#0" expanded="false" />
-                <element signature="e#2807#2808#0" expanded="false" />
-                <element signature="e#2858#2859#0" expanded="false" />
-                <element signature="e#4494#4495#0" expanded="false" />
-                <element signature="e#4543#4544#0" expanded="false" />
-                <element signature="e#5161#5162#0" expanded="false" />
-                <element signature="e#5210#5211#0" expanded="false" />
-                <element signature="e#6114#6115#0" expanded="false" />
-                <element signature="e#6177#6178#0" expanded="false" />
-                <element signature="e#6660#6661#0" expanded="false" />
-                <element signature="e#6708#6709#0" expanded="false" />
-                <element signature="e#7411#7412#0" expanded="false" />
-                <element signature="e#7468#7469#0" expanded="false" />
-                <element signature="e#8024#8025#0" expanded="false" />
-                <element signature="e#8129#8130#0" expanded="false" />
-                <element signature="e#9714#9715#0" expanded="false" />
-                <element signature="e#9761#9762#0" expanded="false" />
-                <element signature="e#10595#10596#0" expanded="false" />
-                <element signature="e#10651#10652#0" expanded="false" />
-                <element signature="e#11344#11345#0" expanded="false" />
-                <element signature="e#11448#11449#0" expanded="false" />
-                <element signature="e#13302#13303#0" expanded="false" />
-                <element signature="e#13379#13380#0" expanded="false" />
-                <element signature="e#14002#14003#0" expanded="false" />
-                <element signature="e#14053#14054#0" expanded="false" />
-                <element signature="e#14850#14851#0" expanded="false" />
-                <element signature="e#14905#14906#0" expanded="false" />
-                <element signature="e#15432#15433#0" expanded="false" />
-                <element signature="e#15481#15482#0" expanded="false" />
-                <element signature="e#16227#16228#0" expanded="false" />
-                <element signature="e#16285#16286#0" expanded="false" />
-                <element signature="e#17101#17102#0" expanded="false" />
-                <element signature="e#17207#17208#0" expanded="false" />
-                <element signature="e#19355#19356#0" expanded="false" />
-                <element signature="e#19414#19415#0" expanded="false" />
-                <element signature="e#19975#19976#0" expanded="false" />
-                <element signature="e#20027#20028#0" expanded="false" />
-                <element signature="e#20699#20700#0" expanded="false" />
-                <element signature="e#20748#20749#0" expanded="false" />
-                <element signature="e#20983#20984#0" expanded="false" />
-                <element signature="e#21035#21036#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -203,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ObservableMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableGroupBy.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/ObservableZip.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableSwitch.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableTo.java" />
@@ -211,6 +170,10 @@
         <option value="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableScan.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableAmbConditional.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableZip.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreatingSingle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Single.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SingleFeatures.java" />
       </list>
     </option>
   </component>
@@ -232,10 +195,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="46" />
     <option name="y" value="23" />
-    <option name="width" value="1242" />
-    <option name="height" value="777" />
+    <option name="width" value="1874" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -338,11 +301,64 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -374,70 +390,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableAmbConditional">
-    <configuration default="false" name="ObservableSwitch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObservableSwitch" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableFlatMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObservableFlatMap" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObservableTo" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SingleFeatures.testSinglesAsync">
     <configuration default="false" name="CreatingObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="reactive" />
@@ -468,6 +421,69 @@
       <option name="MAIN_CLASS_NAME" value="ObservableAmbConditional" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingleFeatures" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleFeatures.testZipSingles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingleFeatures" />
+      <option name="METHOD_NAME" value="testZipSingles" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleFeatures.testSinglesAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingleFeatures" />
+      <option name="METHOD_NAME" value="testSinglesAsync" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1145,19 +1161,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableSwitch" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableTo" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CreatingObservable" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CreatingObservable" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SingleFeatures" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SingleFeatures.testZipSingles" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SingleFeatures.testSinglesAsync" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CreatingObservable" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableTo" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableSwitch" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SingleFeatures.testSinglesAsync" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SingleFeatures.testZipSingles" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SingleFeatures" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CreatingObservable" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1190,7 +1206,10 @@
       <workItem from="1452503192757" duration="448000" />
       <workItem from="1453041525230" duration="2293000" />
       <workItem from="1454432576120" duration="389000" />
-      <workItem from="1455458638347" duration="2284000" />
+      <workItem from="1455458638347" duration="2361000" />
+      <workItem from="1455716987186" duration="1008000" />
+      <workItem from="1456912934212" duration="392000" />
+      <workItem from="1457114384356" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1306,24 +1325,18 @@
       <option name="project" value="LOCAL" />
       <updated>1453043152824</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add amb observable">
+      <created>1455461968384</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1455461968384</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatingObservable - 2016.02.02 at 17h 07m 42s.xml">
-      <configuration name="CreatingObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatingObservable - 2016.02.02 at 17h 08m 05s.xml">
-      <configuration name="CreatingObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.10 at 21h 16m 14s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.17 at 14h 43m 34s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotObservable - 2016.01.17 at 14h 50m 09s.xml">
-      <configuration name="HotObservable" configurationId="JUnit" />
+    <history-entry file="CreatingSingle - 2016.03.04 at 18h 03m 26s.xml">
+      <configuration name="CreatingSingle" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HotObservable - 2016.01.17 at 14h 50m 27s.xml">
       <configuration name="HotObservable" configurationId="JUnit" />
@@ -1340,12 +1353,24 @@
     <history-entry file="ObservableAmbConditional - 2016.02.14 at 14h 57m 53s.xml">
       <configuration name="ObservableAmbConditional" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SingleFeatures_testSinglesAsync - 2016.03.04 at 18h 14m 26s.xml">
+      <configuration name="SingleFeatures.testSinglesAsync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleFeatures_testSinglesAsync - 2016.03.04 at 18h 15m 40s.xml">
+      <configuration name="SingleFeatures.testSinglesAsync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleFeatures_testSinglesAsync - 2016.03.04 at 18h 16m 10s.xml">
+      <configuration name="SingleFeatures.testSinglesAsync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SingleFeatures_testZipSingles - 2016.03.04 at 18h 08m 49s.xml">
+      <configuration name="SingleFeatures.testZipSingles" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35081000" />
+    <option name="totallyTimeSpent" value="37683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1242" height="777" extended-state="6" />
+    <frame x="46" y="23" width="1874" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1358,7 +1383,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.516129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32583332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37083334" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1395,7 +1420,8 @@
     <MESSAGE value="add switch" />
     <MESSAGE value="add async on observables" />
     <MESSAGE value="add hot observable" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hot observable" />
+    <MESSAGE value="add amb observable" />
+    <option name="LAST_COMMIT_MESSAGE" value="add amb observable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1414,8 +1440,14 @@
           </properties>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SingleFeatures.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1424,22 +1456,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2918" column="9" selection-start-line="2918" selection-start-column="9" selection-end-line="2918" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1488,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,7 +1579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,13 +1677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1703,13 +1710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="445" column="22" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25830#0" expanded="false" />
-            <element signature="e#5748#5749#0" expanded="false" />
-            <element signature="e#5784#5785#0" expanded="false" />
-            <element signature="e#10065#10066#0" expanded="false" />
-            <element signature="e#10148#10149#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1717,15 +1717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="47" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1733,7 +1724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1741,52 +1731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2460#2461#0" expanded="false" />
-            <element signature="e#2486#2487#0" expanded="false" />
-            <element signature="e#2807#2808#0" expanded="false" />
-            <element signature="e#2858#2859#0" expanded="false" />
-            <element signature="e#4494#4495#0" expanded="false" />
-            <element signature="e#4543#4544#0" expanded="false" />
-            <element signature="e#5161#5162#0" expanded="false" />
-            <element signature="e#5210#5211#0" expanded="false" />
-            <element signature="e#6114#6115#0" expanded="false" />
-            <element signature="e#6177#6178#0" expanded="false" />
-            <element signature="e#6660#6661#0" expanded="false" />
-            <element signature="e#6708#6709#0" expanded="false" />
-            <element signature="e#7411#7412#0" expanded="false" />
-            <element signature="e#7468#7469#0" expanded="false" />
-            <element signature="e#8024#8025#0" expanded="false" />
-            <element signature="e#8129#8130#0" expanded="false" />
-            <element signature="e#9714#9715#0" expanded="false" />
-            <element signature="e#9761#9762#0" expanded="false" />
-            <element signature="e#10595#10596#0" expanded="false" />
-            <element signature="e#10651#10652#0" expanded="false" />
-            <element signature="e#11344#11345#0" expanded="false" />
-            <element signature="e#11448#11449#0" expanded="false" />
-            <element signature="e#13302#13303#0" expanded="false" />
-            <element signature="e#13379#13380#0" expanded="false" />
-            <element signature="e#14002#14003#0" expanded="false" />
-            <element signature="e#14053#14054#0" expanded="false" />
-            <element signature="e#14850#14851#0" expanded="false" />
-            <element signature="e#14905#14906#0" expanded="false" />
-            <element signature="e#15432#15433#0" expanded="false" />
-            <element signature="e#15481#15482#0" expanded="false" />
-            <element signature="e#16227#16228#0" expanded="false" />
-            <element signature="e#16285#16286#0" expanded="false" />
-            <element signature="e#17101#17102#0" expanded="false" />
-            <element signature="e#17207#17208#0" expanded="false" />
-            <element signature="e#19355#19356#0" expanded="false" />
-            <element signature="e#19414#19415#0" expanded="false" />
-            <element signature="e#19975#19976#0" expanded="false" />
-            <element signature="e#20027#20028#0" expanded="false" />
-            <element signature="e#20699#20700#0" expanded="false" />
-            <element signature="e#20748#20749#0" expanded="false" />
-            <element signature="e#20983#20984#0" expanded="false" />
-            <element signature="e#21035#21036#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1794,7 +1738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1830,22 +1773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotObservable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1856,8 +1783,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableAmbConditional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64220184">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreatingObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Single.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SingleFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43361884">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
