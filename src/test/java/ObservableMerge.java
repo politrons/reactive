@@ -7,7 +7,6 @@ public class ObservableMerge {
     static int count = 0;
 
     @Test
-
     public void testMerge() {
         Observable.merge(obPerson(), obPerson1())
                   .subscribe(result -> showResult(result.toString()));

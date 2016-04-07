@@ -12,7 +12,7 @@ public class HotObservable {
 
 
     /**
-     * This example we can see how a third observable subscribe to hot Observable once this one haa start emitting items, so he miss the items already emitted
+     * This example we can see how a third observable subscribe to hot Observable once this one has start emitting items, so he miss the items already emitted
      *
      * @throws InterruptedException
      */
@@ -23,6 +23,7 @@ public class HotObservable {
         Subscription sub1 = subscribePrint(published, "First");
         Subscription sub2 = subscribePrint(published, "Second");
         published.connect();
+
         thirdSubscriber(published, sub1, sub2);
     }
 
