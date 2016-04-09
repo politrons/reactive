@@ -12,6 +12,28 @@ public class ObservableSubscription {
 
     private String foo="empty";
 
+    int total = 0;
+
+    /**
+     * In this test we prove how when we subscribe a observable, this one block the thread until emmitt all items
+     */
+    @Test
+    public void testObservableSubscriptionBlockMainThread() {
+        Integer[] numbers = {0, 1, 2, 3, 4};
+
+        Observable.from(numbers)
+                  .flatMap(Observable::just)
+                  .doOnNext(number->{
+                      try {
+                          Thread.sleep(100);
+                      } catch (InterruptedException e) {
+                          e.printStackTrace();
+                      }
+                  })
+                  .subscribe(number -> total+=number);
+        System.out.println("I finish after all items are emmitted:"+total);
+    }
+
     @Test
     public void testObservable() {
         Subscription subscription = Observable.just(1)
