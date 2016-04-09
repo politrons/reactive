@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ObservableScheduler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CreatingObservable.java" afterPath="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ObservableSubscription.java" afterPath="$PROJECT_DIR$/src/test/java/ObservableSubscription.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,25 +37,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableSubscription.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableSubscription.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSubscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28899083">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableFlatMap.java">
+      <file leaf-file-name="ObservableScheduler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding>
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.51834863">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,28 +97,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ObservableZip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="47" selection-start-line="23" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ObservableGroupBy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ObservableGroupBy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#25830#0" expanded="false" />
-                <element signature="e#5748#5749#0" expanded="false" />
-                <element signature="e#5784#5785#0" expanded="false" />
-                <element signature="e#10065#10066#0" expanded="false" />
-                <element signature="e#10148#10149#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ObservableConcat.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreatingObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/ObservableSubscription.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ObservableScheduler.java" />
       </list>
     </option>
   </component>
@@ -396,28 +387,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableSubscription.testObservableSubscriptionBlockMainThread">
-    <configuration default="false" name="ObservableScan.scanObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObservableScan" />
-      <option name="METHOD_NAME" value="scanObservable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableScheduler.testObservableSubscriptionAsync">
     <configuration default="false" name="ObservableConcat.testContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="reactive" />
@@ -489,6 +459,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ObservableSubscription" />
       <option name="METHOD_NAME" value="testObservableSubscriptionBlockMainThread" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableScheduler.testObservableSubscriptionAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ObservableScheduler" />
+      <option name="METHOD_NAME" value="testObservableSubscriptionAsync" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1167,19 +1158,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContact" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CreatingObservable.testObservableSubscription" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservable" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableSubscriptionBlockMainThread" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContact" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CreatingObservable.testObservableSubscription" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservable" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableSubscriptionBlockMainThread" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableSubscriptionBlockMainThread" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CreatingObservable.testObservableSubscription" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservable" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContact" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableSubscriptionBlockMainThread" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CreatingObservable.testObservableSubscription" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservable" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContact" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1226,7 +1217,7 @@
       <workItem from="1459432905342" duration="625000" />
       <workItem from="1459847516687" duration="738000" />
       <workItem from="1460016621139" duration="2490000" />
-      <workItem from="1460206426634" duration="4052000" />
+      <workItem from="1460206426634" duration="4441000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1366,7 +1357,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460208314383</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add concat">
+      <created>1460210752146</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1460210752146</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1388,8 +1385,8 @@
     <history-entry file="CreatingObservable_testObservableSubscription - 2016.04.09 at 14h 58m 43s.xml">
       <configuration name="CreatingObservable.testObservableSubscription" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableConcat_testContact - 2016.04.09 at 14h 24m 25s.xml">
-      <configuration name="ObservableConcat.testContact" configurationId="JUnit" />
+    <history-entry file="ObservableScheduler_testObservableSubscriptionAsync - 2016.04.09 at 15h 11m 47s.xml">
+      <configuration name="ObservableScheduler.testObservableSubscriptionAsync" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ObservableSubscription_testObservable - 2016.04.09 at 14h 56m 47s.xml">
       <configuration name="ObservableSubscription.testObservable" configurationId="JUnit" />
@@ -1402,7 +1399,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51111000" />
+    <option name="totallyTimeSpent" value="51500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1242" height="777" extended-state="6" />
@@ -1507,13 +1504,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1808,14 +1798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="47" selection-start-line="23" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableMerge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1907,8 +1889,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ObservableSubscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28899083">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="47" selection-start-line="23" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ObservableScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51834863">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding />
         </state>
       </provider>
