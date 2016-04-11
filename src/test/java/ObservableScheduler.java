@@ -27,6 +27,7 @@ public class ObservableScheduler {
                   .doOnNext(number->{
                       try {
                           total+=number;
+                          System.out.println("current total value:"+total);
                           Thread.sleep(100);
                       } catch (InterruptedException e) {
                           e.printStackTrace();
