@@ -1,5 +1,6 @@
+package rx;
+
 import org.junit.Test;
-import rx.Observable;
 
 import java.util.ArrayList;
 import java.util.List;

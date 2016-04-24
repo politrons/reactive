@@ -1,3 +1,5 @@
+package rx;
+
 import org.junit.Test;
 import rx.Single;
 import rx.schedulers.Schedulers;

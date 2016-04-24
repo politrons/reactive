@@ -1,5 +1,6 @@
+package rx;
+
 import org.junit.Test;
-import rx.Observable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,7 +10,7 @@ import static junit.framework.TestCase.assertTrue;
 /**
  * @author Pablo Perez
  */
-public class CreatingObservable {
+public class BasicsObservable {
 
 
 

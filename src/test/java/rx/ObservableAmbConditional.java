@@ -1,6 +1,6 @@
+package rx;
+
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
 
 import java.io.Serializable;
 import java.util.Random;
@@ -14,7 +14,7 @@ public class ObservableAmbConditional {
 
 
     /**
-     * Amb condional only takes into account the first observable that start emitting, the second one will be avoided completely
+     * Amb conditional only takes into account the first observable that start emitting, the second one will be avoided completely
      */
     @Test
     public void ambObservable() {
