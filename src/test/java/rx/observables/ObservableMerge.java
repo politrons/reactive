@@ -4,6 +4,10 @@ import org.junit.Test;
 import rx.Observable;
 
 
+/**
+ * Merge get all observables defined in it, and set into an array,
+ * then iterate over the array emitting all observables through the pipeline.
+ */
 public class ObservableMerge {
 
     static int count = 0;

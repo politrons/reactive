@@ -9,8 +9,7 @@ import java.util.List;
 
 /**
  * Sometimes we want to pass an observable through the pipeline, that´s when flatMap come handy.
- * Also it´ very useful combine flapMap with onSubscribe if we want make our pipeline async.
- *
+ * Also it´s very useful combine flapMap with onSubscribe if we want make our pipeline async.
  */
 public class ObservableFlatMap {
 
