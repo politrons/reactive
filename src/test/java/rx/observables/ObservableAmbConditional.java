@@ -12,6 +12,10 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Pablo Perez
  */
+
+/**
+ *  Amb conditional it will get the first observable that start emitting, and it will avoid the others
+ */
 public class ObservableAmbConditional {
 
 

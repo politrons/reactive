@@ -1,4 +1,4 @@
-package rx;
+package rx.observables;
 
 /**
  * Created by pabloperezgarcia on 20/12/15.

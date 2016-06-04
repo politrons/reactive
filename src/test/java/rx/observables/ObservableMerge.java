@@ -2,7 +2,6 @@ package rx.observables;
 
 import org.junit.Test;
 import rx.Observable;
-import rx.Person;
 
 
 public class ObservableMerge {
