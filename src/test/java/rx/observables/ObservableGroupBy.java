@@ -14,7 +14,8 @@ import java.util.List;
 public class ObservableGroupBy {
 
     /**
-     * Created a Boolen GroupedObservable
+     * In this example we create a boolean/Person group.
+     * The key of the group is just the boolean value of the condition if the item emitted is male
      */
     @Test
     public void testGroupBy() {
@@ -34,7 +35,8 @@ public class ObservableGroupBy {
 
 
     /**
-     * Created a GroupedObservable by sex
+     * In this example we create a String/Person group.
+     * The key of the group is just the String value of the sex of the item.
      */
     @Test
     public void testGroupBySex() {
