@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableInterval.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableInterval.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableMerge.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableMerge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScan.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScan.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScheduler.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScheduler.java" />
     </list>
     <ignored path="reactive.iws" />
@@ -86,8 +82,8 @@
       <file leaf-file-name="ObservableScheduler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6784741">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.15137614">
+              <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -522,59 +518,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableScheduler.testObservableSubscriptionSync">
-    <configuration default="false" name="ObservableInterval.testIntervalObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableInterval" />
-      <option name="METHOD_NAME" value="testIntervalObservable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableMerge" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableScheduler.testObservableSync">
     <configuration default="false" name="ObservableScan.scanObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -640,6 +584,58 @@
       <option name="PACKAGE_NAME" value="rx.observables" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableScheduler" />
       <option name="METHOD_NAME" value="testObservableSubscriptionSync" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableScheduler.testObservableSync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableScheduler" />
+      <option name="METHOD_NAME" value="testObservableSync" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableScheduler.testObservableSubscribeOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableScheduler" />
+      <option name="METHOD_NAME" value="testObservableSubscribeOn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1331,19 +1327,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservable" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableMerge" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionSync" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionSync" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSync" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscribeOn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionSync" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableMerge" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservable" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSync" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscribeOn" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionSync" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableScheduler.testObservableSubscriptionAsync" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableScan.scanObservable" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1398,7 +1394,7 @@
       <workItem from="1461053043609" duration="4975000" />
       <workItem from="1461502419079" duration="3144000" />
       <workItem from="1461847166277" duration="825000" />
-      <workItem from="1465043210823" duration="7929000" />
+      <workItem from="1465043210823" duration="8314000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1628,27 +1624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1465049594700</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Refactor of observables">
+      <created>1465065789311</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1465065789311</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableInterval_testIntervalObservable - 2016.06.04 at 19h 25m 55s.xml">
-      <configuration name="ObservableInterval.testIntervalObservable" configurationId="JUnit" />
+    <history-entry file="ObservableScheduler_testObservableSubscribeOn - 2016.06.04 at 19h 47m 05s.xml">
+      <configuration name="ObservableScheduler.testObservableSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableInterval_testIntervalObservable - 2016.06.04 at 19h 27m 26s.xml">
-      <configuration name="ObservableInterval.testIntervalObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableInterval_testIntervalObservable - 2016.06.04 at 19h 27m 37s.xml">
-      <configuration name="ObservableInterval.testIntervalObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableInterval_testIntervalObservable - 2016.06.04 at 19h 27m 49s.xml">
-      <configuration name="ObservableInterval.testIntervalObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableMerge - 2016.06.04 at 19h 30m 59s.xml">
-      <configuration name="ObservableMerge" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableScan_scanObservable - 2016.06.04 at 19h 35m 35s.xml">
-      <configuration name="ObservableScan.scanObservable" configurationId="JUnit" />
+    <history-entry file="ObservableScheduler_testObservableSubscribeOn - 2016.06.04 at 19h 48m 14s.xml">
+      <configuration name="ObservableScheduler.testObservableSubscribeOn" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ObservableScheduler_testObservableSubscriptionAsync - 2016.06.04 at 19h 37m 56s.xml">
       <configuration name="ObservableScheduler.testObservableSubscriptionAsync" configurationId="JUnit" />
@@ -1662,9 +1652,21 @@
     <history-entry file="ObservableScheduler_testObservableSubscriptionSync - 2016.06.04 at 19h 42m 54s.xml">
       <configuration name="ObservableScheduler.testObservableSubscriptionSync" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableScheduler_testObservableSubscriptionSync - 2016.06.04 at 19h 45m 40s.xml">
+      <configuration name="ObservableScheduler.testObservableSubscriptionSync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableScheduler_testObservableSync - 2016.06.04 at 19h 45m 46s.xml">
+      <configuration name="ObservableScheduler.testObservableSync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableScheduler_testObservableSync - 2016.06.04 at 19h 46m 10s.xml">
+      <configuration name="ObservableScheduler.testObservableSync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableScheduler_testObservableSync - 2016.06.04 at 19h 48m 52s.xml">
+      <configuration name="ObservableScheduler.testObservableSync" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78598000" />
+    <option name="totallyTimeSpent" value="78983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -1677,7 +1679,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4208211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4208211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2980849" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2228,8 +2230,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6784741">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.15137614">
+          <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
           <folding />
         </state>
       </provider>
