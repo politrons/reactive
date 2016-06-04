@@ -6,7 +6,11 @@ import rx.Observable;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Group by can be very handy when you need create items groups in your pipeline, instead of filter by just one item type,
+ * you can create those groups and then when the observable finish, on complete you will have a GroupedObservable, which is a map
+ * with the pair key(filter)/value(item emitted)
+ */
 public class ObservableGroupBy {
 
     /**
