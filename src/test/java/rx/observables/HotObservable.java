@@ -3,13 +3,16 @@ package rx.observables;
 import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
-import rx.observables.ConnectableObservable;
 import rx.subjects.PublishSubject;
 import rx.subjects.Subject;
 
 import java.util.concurrent.TimeUnit;
 
 
+/**
+ * Hot Observables are Observables that allow start emitting when we connect to the publisher
+ * or features as retry items emitted through the pipeline to new observers subscribed.
+ */
 public class HotObservable {
 
 
