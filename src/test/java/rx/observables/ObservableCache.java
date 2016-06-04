@@ -7,6 +7,10 @@ import rx.Observable;
 /**
  * @author Pablo Perez
  */
+
+/**
+ * The feature cache it will cache the last emitted items from the last observer and it will return to the next observer that subscribe to the observable.
+ */
 public class ObservableCache {
 
 

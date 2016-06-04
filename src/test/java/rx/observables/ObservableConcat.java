@@ -4,10 +4,10 @@ import org.junit.Test;
 import rx.Observable;
 
 
-public class ObservableConcat<T> {
+public class ObservableConcat {
 
     /**
-     * Get every emitted item and concat with the previous emmitted item
+     * Get every emitted item and concat with the previous emitted item
      */
     @Test
     public void testContact() {
