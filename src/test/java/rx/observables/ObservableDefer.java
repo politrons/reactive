@@ -1,6 +1,7 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
+import rx.Observable;
 
 
 /**

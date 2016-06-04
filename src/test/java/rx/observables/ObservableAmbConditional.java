@@ -1,6 +1,8 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
+import rx.Observable;
+import rx.Subscription;
 
 import java.io.Serializable;
 import java.util.Random;

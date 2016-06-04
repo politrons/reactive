@@ -1,13 +1,17 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Person;
 
 
 public class ObservableMerge {
 
     static int count = 0;
 
+    /**
+     * Since we merge the two observables, once that we subscribe we will emit both.
+     */
     @Test
     public void testMerge() {
         Observable.merge(obPerson(), obPerson1())

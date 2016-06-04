@@ -1,4 +1,4 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
 import rx.Observable;
@@ -14,7 +14,8 @@ public class HotObservable {
 
 
     /**
-     * This example we can see how a third observable subscribe to hot Observable once this one has start emitting items, so he miss the items already emitted
+     * This example we can see how a third observable subscribe to hot Observable once this one has start emitting items,
+     * Since the hot observable was created with publish he miss the items already emitted
      *
      * @throws InterruptedException
      */
@@ -25,7 +26,6 @@ public class HotObservable {
         Subscription sub1 = subscribePrint(published, "First");
         Subscription sub2 = subscribePrint(published, "Second");
         published.connect();
-
         thirdSubscriber(published, sub1, sub2);
     }
 
@@ -47,7 +47,7 @@ public class HotObservable {
 
 
     /**
-     * In this example we see how using hot observables PublishSubject we can emit an item on boradcast to all the observers(subscribers).
+     * In this example we see how using hot observables PublishSubject we can emit an item on broadcast to all the observers(subscribers).
      *
      * @throws InterruptedException
      */

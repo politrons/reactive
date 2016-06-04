@@ -1,6 +1,8 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
+import rx.Observable;
+import rx.Person;
 
 import java.util.ArrayList;
 import java.util.List;

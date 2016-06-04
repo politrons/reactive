@@ -1,6 +1,7 @@
-package rx;
+package rx.observables;
 
 import org.junit.Test;
+import rx.Observable;
 
 
 /**
@@ -10,7 +11,7 @@ public class ObservableCache {
 
 
     /**
-     * Here we can prove how the first time the items are delayed 100 ms per item emitted but second time becuase it´s cached we dont have any delay since
+     * Here we can prove how the first time the items are delayed 100 ms per item emitted but second time because it´s cached we dont have any delay since
      * the item emitted are cached
      */
     @Test

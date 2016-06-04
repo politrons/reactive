@@ -1,4 +1,4 @@
-package rx;
+package rx.single;
 
 import org.junit.Test;
 import rx.Single;
