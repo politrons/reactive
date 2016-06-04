@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
+    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="Refactor of observables">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableCache.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableConcat.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableConcat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,26 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HotObservable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/HotObservable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectableObservable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/observables/ConnectableObservable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BasicsObservable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/BasicsObservable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,14 +67,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableDefer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableDefer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20642202">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="38" />
               <folding>
                 <element signature="e#793#794#0" expanded="true" />
                 <element signature="e#862#863#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18348624">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Schedulers.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/schedulers/Schedulers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+              <folding>
+                <element signature="e#2045#2046#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
+                <element signature="e#4027#4028#0" expanded="true" />
+                <element signature="e#4070#4071#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/TestMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestZip.java" />
         <option value="$PROJECT_DIR$/src/main/java/Person.java" />
@@ -210,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableCache.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableConcat.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
       </list>
     </option>
   </component>
@@ -513,59 +516,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableAmbConditional.ambObservable">
-    <configuration default="false" name="ObservableMerge.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.single.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableMerge" />
-      <option name="METHOD_NAME" value="testMerge" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableZip.testZip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.single.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableZip" />
-      <option name="METHOD_NAME" value="testZip" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableFlatMap.testFlatMapAsyncContact">
     <configuration default="false" name="ObservableZip.testAsyncZip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -631,6 +582,58 @@
       <option name="PACKAGE_NAME" value="rx.observables" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableAmbConditional" />
       <option name="METHOD_NAME" value="ambObservable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableFlatMap.testFlatMapContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableFlatMap" />
+      <option name="METHOD_NAME" value="testFlatMapContact" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableFlatMap.testFlatMapAsyncContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableFlatMap" />
+      <option name="METHOD_NAME" value="testFlatMapAsyncContact" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1322,19 +1325,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableMerge.testMerge" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableZip.testZip" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableZip.testAsyncZip" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Relay.testRelay" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional.ambObservable" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableZip.testAsyncZip" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Relay.testRelay" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional.ambObservable" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.testFlatMapContact" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.testFlatMapAsyncContact" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional.ambObservable" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Relay.testRelay" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableZip.testAsyncZip" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableZip.testZip" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableMerge.testMerge" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.testFlatMapAsyncContact" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.testFlatMapContact" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAmbConditional.ambObservable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Relay.testRelay" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableZip.testAsyncZip" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1389,7 +1392,7 @@
       <workItem from="1461053043609" duration="4975000" />
       <workItem from="1461502419079" duration="3144000" />
       <workItem from="1461847166277" duration="825000" />
-      <workItem from="1465043210823" duration="4805000" />
+      <workItem from="1465043210823" duration="5673000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1595,43 +1598,49 @@
       <option name="project" value="LOCAL" />
       <updated>1465047989910</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Refactor of observables">
+      <created>1465048318721</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1465048318721</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableAmbConditional_ambObservable - 2016.06.04 at 14h 42m 01s.xml">
-      <configuration name="ObservableAmbConditional.ambObservable" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 00m 24s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableCache_cacheObservable - 2016.06.04 at 13h 50m 33s.xml">
-      <configuration name="ObservableCache.cacheObservable" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 00m 30s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableMerge_testMerge - 2016.06.04 at 13h 51m 27s.xml">
-      <configuration name="ObservableMerge.testMerge" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 00m 44s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableMerge_testMerge - 2016.06.04 at 13h 53m 48s.xml">
-      <configuration name="ObservableMerge.testMerge" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 02m 24s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip_testAsyncZip - 2016.06.04 at 13h 59m 36s.xml">
-      <configuration name="ObservableZip.testAsyncZip" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 02m 31s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableZip_testZip - 2016.06.04 at 13h 58m 16s.xml">
-      <configuration name="ObservableZip.testZip" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 02m 43s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Relay_testRelay - 2016.06.04 at 14h 07m 38s.xml">
-      <configuration name="Relay.testRelay" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 02m 52s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Relay_testRelay - 2016.06.04 at 14h 18m 03s.xml">
-      <configuration name="Relay.testRelay" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapAsyncContact - 2016.06.04 at 15h 04m 03s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapAsyncContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Relay_testRelay - 2016.06.04 at 14h 18m 54s.xml">
-      <configuration name="Relay.testRelay" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapContact - 2016.06.04 at 15h 00m 36s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapContact" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Relay_testRelay - 2016.06.04 at 14h 21m 16s.xml">
-      <configuration name="Relay.testRelay" configurationId="JUnit" />
+    <history-entry file="ObservableFlatMap_testFlatMapContact - 2016.06.04 at 15h 02m 37s.xml">
+      <configuration name="ObservableFlatMap.testFlatMapContact" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75474000" />
+    <option name="totallyTimeSpent" value="76342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -1644,7 +1653,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29325512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29178885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33638635" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1724,7 +1733,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java</url>
-          <line>49</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -1906,18 +1915,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1405#1406#0" expanded="false" />
-            <element signature="e#1449#1450#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2161,12 +2158,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20642202">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="38" />
           <folding>
             <element signature="e#793#794#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/schedulers/Schedulers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+          <folding>
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4070#4071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18348624">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
