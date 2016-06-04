@@ -12,7 +12,7 @@ import rx.schedulers.Schedulers;
  * Using the option subscribeOn, you specify in your observable that you want to execute all previous pipeline steps into another thread,
  * making the pipeline asyncronious
  */
-public class ObservableScheduler {
+public class ObservableSubscribeOn {
 
     int total = 0;
 

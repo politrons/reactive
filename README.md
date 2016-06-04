@@ -22,7 +22,7 @@ All the most common features of Observable
 * [ObservableInterval] (src/test/java/rx/observables/ObservableInterval.java)
 * [ObservableMerge] (src/test/java/rx/observables/ObservableMerge.java)
 * [ObservableScan] (src/test/java/rx/observables/ObservableScan.java)
-* [ObservableScheduler] (src/test/java/rx/observables/ObservableScheduler.java)
+* [ObservableSubscribeOn] (src/test/java/rx/observables/ObservableSubscribeOn.java)
 * [ObservableSubscription] (src/test/java/rx/observables/ObservableSubscription.java)
 * [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
 * [ObservableTo] (src/test/java/rx/observables/ObservableTo.java)
