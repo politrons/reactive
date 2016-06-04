@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/relay/CreatingRelay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/rx/CreatingObservable.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/BasicsObservable.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/BasicsObservable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/HotObservable.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/HotObservable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableAmbConditional.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableAmbConditional.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableCache.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableCache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableChain.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableChain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableConcat.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableConcat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableDefer.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableGroupBy.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableGroupBy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableInterval.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableInterval.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableMerge.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableMerge.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableScan.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScan.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableScheduler.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScheduler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableSubscription.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableSubscription.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableSwitch.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableSwitch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableTo.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableTo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/ObservableZip.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableZip.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/SingleFeatures.java" afterPath="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -86,7 +65,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor vertical-scroll-proportion="0.624374">
-                <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -386,6 +365,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="observables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1366,7 +1375,7 @@
       <workItem from="1461053043609" duration="4975000" />
       <workItem from="1461502419079" duration="3144000" />
       <workItem from="1461847166277" duration="825000" />
-      <workItem from="1465043210823" duration="3163000" />
+      <workItem from="1465043210823" duration="3362000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1536,7 +1545,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465043986623</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Refactor of observables">
+      <created>1465046675660</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1465046675660</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1572,11 +1587,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73832000" />
+    <option name="totallyTimeSpent" value="74031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1588,7 +1603,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5219941" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33638635" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33638635" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2102,7 +2117,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.624374">
-            <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

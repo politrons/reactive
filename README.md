@@ -10,7 +10,7 @@ Here we will cover with examples the most common use of the ReactiveX platform.
 
 All the most common features of Observable
 
-* BasicsObservable
+* [BasicsObservable] (src/test/java/rx/observables/BasicsObservable.java)
 * HotObservable
 * ObservableAmbConditional
 * ObservableCache
@@ -27,6 +27,7 @@ All the most common features of Observable
 * ObservableSwitch
 * ObservableTo
 * ObservableZip
+
 
 ### Single
 
