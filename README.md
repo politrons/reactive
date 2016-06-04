@@ -24,7 +24,7 @@ All the most common features of Observable
 * [ObservableSubscribeOn] (src/test/java/rx/observables/ObservableSubscribeOn.java)
 * [ObservableSubscription] (src/test/java/rx/observables/ObservableSubscription.java)
 * [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
-* [ObservableTo] (src/test/java/rx/observables/ObservableTo.java)
+* [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
 * [ObservableZip] (src/test/java/rx/observables/ObservableZip.java)
 
 
