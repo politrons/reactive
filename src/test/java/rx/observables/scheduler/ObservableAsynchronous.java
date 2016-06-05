@@ -18,7 +18,7 @@ public class ObservableAsynchronous {
 
     Integer[] numbers = {0, 1, 2, 3, 4};
 
-    //************************DIFFERENCE BETWEEN subscribeOn AND observerOn***********************\
+    //************************DIFFERENCE BETWEEN subscribeOn AND observerOn***********************\\
     /**
      * Once that you set in your pipeline the observerOn all the next steps of your pipeline will be executed in another thread.
      * Shall print
@@ -60,9 +60,7 @@ public class ObservableAsynchronous {
         }
     }
 
-
-    //****************DIFFERENCE BETWEEN ASYNC AND SYNC OBSERVABLE*********************\\
-
+    //************************DIFFERENCE BETWEEN ASYNC AND SYNC OBSERVABLE***************************\\
     /**
      * In this test we prove how when we subscribe a observable using scheduler, this one is executed in another thread,
      * and total is in the scope of every thread.
