@@ -14,11 +14,11 @@ All the most common features of Observable
 
 -   [HotObservable] (src/test/java/rx/observables/connectable/HotObservable.java)
 
-* Combining
-*   [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
-*   [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
-*   [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
-*   [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
+- Combining
+    * [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
+    * [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
+    * [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
+    * [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
 
 * Creating
 
