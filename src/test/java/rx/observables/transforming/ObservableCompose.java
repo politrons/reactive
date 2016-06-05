@@ -6,7 +6,8 @@ import rx.Scheduler;
 import rx.schedulers.Schedulers;
 
 /**
- * Transformer is a function that get the observable and change his type or value
+ * Using compose we can get an observable and transform into another type or value.
+ * We pass to compose a Transformer function that get the observable and change his type or value
  */
 public class ObservableCompose {
 
