@@ -24,7 +24,6 @@ public class ObservableBuffer {
     @Test
     public void bufferCountObservable() {
         Integer[] numbers = {0, 1, 2, 3, 4};
-
         Observable.from(numbers)
                   .buffer(3)
                   .subscribe(list -> System.out.println("Group size:" + list.size()));
@@ -46,6 +45,20 @@ public class ObservableBuffer {
         while (!subscription.isUnsubscribed()) {
             Thread.sleep(100);
         }
+
+    }
+
+    @Test
+    public void windowCountObservable() {
+        Integer[] numbers = {0, 1, 2, 3, 4};
+
+        Observable.from(numbers)
+                  .window(3)
+                  .flatMap(o-> {
+                      System.out.println("New Observable");
+                      return o;
+                  })
+                  .subscribe(number -> System.out.println("Number:" + number));
 
     }
 
