@@ -2,9 +2,13 @@ package rx.observables.scheduler;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Observer;
 import rx.Subscription;
 import rx.functions.Action1;
+import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
+
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -34,9 +38,8 @@ public class ObservableAsynchronous {
                                               .doOnNext(number -> System.out.println( "Second step " + Thread.currentThread()
                                                                                                                     .getName()))
                                               .subscribe();
-        while (!subscription.isUnsubscribed()) {
-            Thread.sleep(100);
-        }
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
     }
 
     /**
@@ -55,9 +58,8 @@ public class ObservableAsynchronous {
                                               .doOnNext(number -> System.out.println("Second step " + Thread.currentThread()
                                                                                                                     .getName()))
                                               .subscribe();
-        while (!subscription.isUnsubscribed()) {
-            Thread.sleep(100);
-        }
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
     }
 
     //************************DIFFERENCE BETWEEN ASYNC AND SYNC OBSERVABLE***************************\\
@@ -72,9 +74,8 @@ public class ObservableAsynchronous {
                                               .subscribeOn(Schedulers.newThread())
                                               .subscribe(number -> System.out.println("Items emitted:" + total));
         System.out.println("I finish before the observable finish.  Items emitted:" + total);
-        while (!subscription.isUnsubscribed()) {
-            Thread.sleep(100);
-        }
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
     }
 
     /**
@@ -86,7 +87,6 @@ public class ObservableAsynchronous {
         Observable.from(numbers)
                   .doOnNext(increaseTotalItemsEmitted())
                   .subscribe(number -> System.out.println("Items emitted:" + total));
-
         System.out.println("I finish after the observable finish.  Items emitted:" + total);
     }
 
