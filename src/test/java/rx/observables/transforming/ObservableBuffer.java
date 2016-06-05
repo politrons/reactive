@@ -2,41 +2,50 @@ package rx.observables.transforming;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Subscription;
+
+import java.util.concurrent.TimeUnit;
 
 
 /**
  * @author Pablo Perez
- */
-
-/**
- * The feature cache it will cache the last emitted items from the last observer and it will return to the next observer that subscribe to the observable.
+ *         /**
+ *         Buffer allow keep the observable waiting buffering the items emitted unitl a spceific number of items, or a period of time.
  */
 public class ObservableBuffer {
 
 
     /**
-     * Here we can prove how the first time the items are delayed 100 ms per item emitted but second time because it´s cached we dont have any delay since
-     * the item emitted are cached
+     * In this example we use buffer(count) which will buffer items until it will take the count number set or end of items.
+     * Shall print
+     * Group size:3
+     * Group size:2
      */
     @Test
-    public void cacheObservable() {
-        Integer[] numbers = {0, 1, 2, 3, 4, 5};
+    public void bufferCountObservable() {
+        Integer[] numbers = {0, 1, 2, 3, 4};
 
-        Observable<Integer> observable = Observable.from(numbers)
-                                                   .doOnNext(number -> {
-                                                       try {
-                                                           Thread.sleep(100);
-                                                       } catch (InterruptedException e) {
-                                                           e.printStackTrace();
-                                                       }
-                                                   })
-                                                   .cache();
-        long time = System.currentTimeMillis();
-        observable.subscribe(System.out::println);
-        System.out.println("First time took:" + (System.currentTimeMillis() - time));
-        time = System.currentTimeMillis();
-        observable.subscribe(System.out::println);
-        System.out.println("Second time took:" + (System.currentTimeMillis() - time));
+        Observable.from(numbers)
+                  .buffer(3)
+                  .subscribe(list -> System.out.println("Group size:" + list.size()));
+
+    }
+
+    /**
+     * This buffer will wait 50ms after emit the items, since the interval is every 100 ms, we should see a group size of 0, then the next time 1 and so on.
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void bufferTimeStampObservable() throws InterruptedException {
+        Subscription subscription = Observable.interval(100, TimeUnit.MILLISECONDS)
+                                              .buffer(50, TimeUnit.MILLISECONDS)
+                                              .doOnNext(
+                                                      list -> System.out.println("Group size " + list.size()))
+                                              .subscribe();
+        while (!subscription.isUnsubscribed()) {
+            Thread.sleep(100);
+        }
 
     }
 
