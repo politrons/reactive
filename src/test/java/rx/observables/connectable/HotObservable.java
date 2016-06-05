@@ -52,7 +52,6 @@ public class HotObservable {
         unsubscribe(sub1, sub2, sub3);
     }
 
-
     /**
      * In this example we see how using hot observables PublishSubject we can emit an item on broadcast to all the observers(subscribers).
      *
@@ -70,13 +69,44 @@ public class HotObservable {
             publishSubject.onNext(555L);
             Subscription sub3 = subscribeToObservable(publishSubject, "Third");
             Thread.sleep(500L);
-            sub1.unsubscribe();
-            sub2.unsubscribe();
-            sub3.unsubscribe();
+            unsubscribe(sub1,sub2,sub3);
         } catch (InterruptedException e) {
         }
     }
 
+    /**
+     * In this example we see how using hot observables ConnectableObservables we can start emitting items not when we subscribe, but when we connect.
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservableConnectableObservables() throws InterruptedException {
+        Long startTime = System.currentTimeMillis();
+        Observable<String> observable = Observable.just("Hot observable");
+        ConnectableObservable<String> published = observable.publish();
+        published.subscribe(s -> System.out.println(String.format("Item %s Emitted after: %s seconds", s, (System.currentTimeMillis() - startTime) / 1000)),
+                            e -> System.out.println(e.getMessage()));
+        Thread.sleep(1000);
+        published.connect();
+    }
+
+    /**
+     * In this example we see how using hot observables PublishSubject we can start emitting items not when we subscribe,
+     * but when we subscribe the observer to the observable.
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservablePublishSubject() throws InterruptedException {
+        Long startTime = System.currentTimeMillis();
+        Observable<String> observable = Observable.just("Hot observable");
+        PublishSubject<String> publishSubject = PublishSubject.create();
+        publishSubject.subscribe(s -> System.out.println(
+                String.format("Item %s Emitted in publish subject after: %s seconds", s, (System.currentTimeMillis() - startTime) / 1000)));
+        Thread.sleep(1000);
+        observable.subscribe(publishSubject);
+
+    }
 
     private Subscription subscribeToObservableWithDelay(ConnectableObservable<Long> published) {
         Subscription sub3 = null;
@@ -103,39 +133,5 @@ public class HotObservable {
     }
 
 
-    /**
-     * In this example we see how using hot observables ConnectableObservables we can start emitting items not when we subscribe, but when we connect.
-     *
-     * @throws InterruptedException
-     */
-    @Test
-    public void testHotObservableConnectableObservables() throws InterruptedException {
-        Long startTime = System.currentTimeMillis();
-        Observable<String> observable = Observable.just("Hot observable");
-        ConnectableObservable<String> published = observable.publish();
-        published.subscribe(s -> System.out.println(String.format("Item %s Emitted after: %s seconds", s, (System.currentTimeMillis() - startTime) / 1000)),
-                            e -> System.out.println(e.getMessage()));
-        Thread.sleep(1000);
-        published.connect();
-    }
-
-
-    /**
-     * In this example we see how using hot observables PublishSubject we can start emitting items not when we subscribe,
-     * but when we subscribe the observer to the observable.
-     *
-     * @throws InterruptedException
-     */
-    @Test
-    public void testHotObservablePublishSubject() throws InterruptedException {
-        Long startTime = System.currentTimeMillis();
-        Observable<String> observable = Observable.just("Hot observable");
-        PublishSubject<String> publishSubject = PublishSubject.create();
-        publishSubject.subscribe(s -> System.out.println(
-                String.format("Item %s Emitted in publish subject after: %s seconds", s, (System.currentTimeMillis() - startTime) / 1000)));
-        Thread.sleep(1000);
-        observable.subscribe(publishSubject);
-
-    }
 
 }
