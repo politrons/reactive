@@ -1,7 +1,8 @@
-package rx.observables;
+package rx.observables.combining;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.observables.transforming.Person;
 
 
 /**

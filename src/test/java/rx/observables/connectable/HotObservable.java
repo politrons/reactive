@@ -1,8 +1,9 @@
-package rx.observables;
+package rx.observables.connectable;
 
 import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
+import rx.observables.ConnectableObservable;
 import rx.subjects.PublishSubject;
 import rx.subjects.Subject;
 

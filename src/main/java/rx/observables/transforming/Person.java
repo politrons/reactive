@@ -1,4 +1,4 @@
-package rx.observables;
+package rx.observables.transforming;
 
 /**
  * Created by pabloperezgarcia on 20/12/15.

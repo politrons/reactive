@@ -10,22 +10,22 @@ Here we will cover with examples the most common use of the ReactiveX platform.
 
 All the most common features of Observable
 
-* [HotObservable] (src/test/java/rx/observables/HotObservable.java)
+* [HotObservable] (src/test/java/rx/observables/connectable/HotObservable.java)
 * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
 * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
-* [ObservableChain] (src/test/java/rx/observables/ObservableChain.java)
-* [ObservableConcat] (src/test/java/rx/observables/ObservableConcat.java)
-* [ObservableDefer] (src/test/java/rx/observables/ObservableDefer.java)
-* [ObservableFlatMap] (src/test/java/rx/observables/ObservableFlatMap.java)
-* [ObservableGroupBy] (src/test/java/rx/observables/ObservableGroupBy.java)
-* [ObservableInterval] (src/test/java/rx/observables/ObservableInterval.java)
-* [ObservableMerge] (src/test/java/rx/observables/ObservableMerge.java)
-* [ObservableScan] (src/test/java/rx/observables/ObservableScan.java)
-* [ObservableAsynchronous] (src/test/java/rx/observables/ObservableAsynchronous.java)
-* [ObservableSubscription] (src/test/java/rx/observables/ObservableSubscription.java)
+* [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
+* [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
+* [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
+* [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
+* [ObservableGroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
+* [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
+* [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
+* [ObservableScan] (src/test/java/rx/observables/transforming/ObservableScan.java)
+* [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
+* [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
 * [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
 * [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
-* [ObservableZip] (src/test/java/rx/observables/ObservableZip.java)
+* [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
 
 
 ### Single

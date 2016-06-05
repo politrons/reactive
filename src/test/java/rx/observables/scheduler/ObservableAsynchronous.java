@@ -1,4 +1,4 @@
-package rx.observables;
+package rx.observables.scheduler;
 
 import org.junit.Test;
 import rx.Observable;

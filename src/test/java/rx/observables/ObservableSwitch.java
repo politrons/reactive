@@ -2,6 +2,7 @@ package rx.observables;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.observables.transforming.Person;
 
 import java.util.ArrayList;
 import java.util.List;
