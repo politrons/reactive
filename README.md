@@ -18,6 +18,7 @@ All the most common features of Observable
     * [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
     * [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
     * [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
+    * [ObservableSwitch] (src/test/java/rx/observables/combining/ObservableSwitch.java)
 
 * Creating
     * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
@@ -33,13 +34,12 @@ All the most common features of Observable
     * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
     * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
-
+* Scheduler
+    * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
 
 * Utils
     * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
     * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
-    * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
-    * [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
     * [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
 
 
