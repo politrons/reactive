@@ -48,18 +48,4 @@ public class ObservableBuffer {
 
     }
 
-    @Test
-    public void windowCountObservable() {
-        Integer[] numbers = {0, 1, 2, 3, 4};
-
-        Observable.from(numbers)
-                  .window(3)
-                  .flatMap(o-> {
-                      System.out.println("New Observable");
-                      return o;
-                  })
-                  .subscribe(number -> System.out.println("Number:" + number));
-
-    }
-
 }

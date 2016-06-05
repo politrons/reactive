@@ -25,7 +25,7 @@ public class ObservableScan {
     public void scanObservable() {
         Integer[] numbers = {0, 1, 2, 3, 4, 5};
         Observable.from(numbers)
-                  .scan((lastItemEmitted, newItem) -> (lastItemEmitted + newItem))
+                  .scan((lastItemEmitted, newItem) -> lastItemEmitted + newItem)
                   .subscribe(System.out::println);
     }
 
