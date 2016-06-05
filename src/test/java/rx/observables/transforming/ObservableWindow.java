@@ -14,7 +14,7 @@ public class ObservableWindow {
 
     /**
      * In this example since we set the window in 3 items, it will create two observables.
-     * First one will contain 0,1,2 item, and second 3,4
+     * First one will emit 0,1,2 item, and second will emit 3,4
      */
     @Test
     public void windowCountObservable() {
