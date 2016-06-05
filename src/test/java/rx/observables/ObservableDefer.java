@@ -9,10 +9,11 @@ import rx.Observable;
  */
 
 /**
- * Normally when you create an observable with just or create, the value is just passed to the observable,
- * and then once that a observer subscribe, it´s just passed through the pipeline.
- * Sometimes that´s not the desirable, since maybe we want to just create the observable but not subscribe to it yet.
- * Defer it will wait to take that value and set into the observable when we subscribe our observer.
+ * Normally when you create an observable with just or create, The observable is created with the value that passed at that point,
+ * and then once that a observer subscribe, the value it´s just passed through the pipeline.
+ * Sometimes that´s not the desirable, since maybe we dont want to  create the observable at that point, only when an observer subscribe to it.
+ * Defer it will wait to create the observable with the value when we subscribe our observer.
+ * Basically create this Observable that wrap the observable that we want to create only when we subscribe to the observable.
  */
 public class ObservableDefer {
 
@@ -52,6 +53,5 @@ public class ObservableDefer {
         setValue("deferred");
         observable.subscribe(System.out::println);
     }
-
 
 }

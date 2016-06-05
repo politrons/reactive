@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" afterPath="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" afterPath="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,14 +93,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleFeatures.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingleFeatures.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5504587">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableDefer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22018349">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,31 +131,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8786" column="26" selection-start-line="8786" selection-start-column="26" selection-end-line="8786" selection-end-column="26" />
-              <folding>
-                <element signature="e#3950#3951#0" expanded="true" />
-                <element signature="e#4008#4009#0" expanded="true" />
-                <element signature="e#13250#13251#0" expanded="true" />
-                <element signature="e#13307#13308#0" expanded="true" />
-                <element signature="e#63337#63338#0" expanded="true" />
-                <element signature="e#63420#63421#0" expanded="true" />
-                <element signature="e#64406#64407#0" expanded="true" />
-                <element signature="e#64474#64475#0" expanded="true" />
-                <element signature="e#86322#86323#0" expanded="true" />
-                <element signature="e#86379#86380#0" expanded="true" />
-                <element signature="e#458985#458986#0" expanded="true" />
-                <element signature="e#459037#459038#0" expanded="true" />
-                <element signature="e#483118#483119#0" expanded="true" />
-                <element signature="e#483161#483162#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -207,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableAmbConditional.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableCache.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableConcat.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableGroupBy.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableInterval.java" />
@@ -222,6 +205,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java" />
       </list>
     </option>
   </component>
@@ -1435,7 +1419,7 @@
       <workItem from="1461053043609" duration="4975000" />
       <workItem from="1461502419079" duration="3144000" />
       <workItem from="1461847166277" duration="825000" />
-      <workItem from="1465043210823" duration="12850000" />
+      <workItem from="1465043210823" duration="13586000" />
     </task>
     <task id="LOCAL-00001" summary="Add merge and zip">
       <created>1450622063588</created>
@@ -1701,7 +1685,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465067844802</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Refactor of observables">
+      <created>1465127234444</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1465127234444</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1737,7 +1727,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83519000" />
+    <option name="totallyTimeSpent" value="84255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -2065,17 +2055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2308,11 +2287,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5504587">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableDefer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22018349">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
