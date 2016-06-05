@@ -8,7 +8,7 @@ import rx.schedulers.Schedulers;
 /**
  * Transformer is a function that get the observable and change his type or value
  */
-public class ObservableTransformer {
+public class ObservableCompose {
 
 
     private Scheduler mainThread = Schedulers.newThread();

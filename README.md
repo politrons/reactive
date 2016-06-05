@@ -31,7 +31,7 @@ All the most common features of Observable
     * [ObservableScan] (src/test/java/rx/observables/transforming/ObservableScan.java)
     * [ObservableBuffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
     * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
-    * [ObservableTransformer] (src/test/java/rx/observables/transforming/ObservableTransformer.java)
+    * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
 
 
