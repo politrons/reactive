@@ -22,25 +22,25 @@ All the most common features of Observable
 
 * Creating
 
--   [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
--   [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
--   [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
+    * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
+    * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
+    * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
 
 * Transforming
 
--   [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
--   [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
--   [ObservableGroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
--   [ObservableScan] (src/test/java/rx/observables/transforming/ObservableScan.java)
--   [ObservableBuffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
+    * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
+    * [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
+    * [ObservableGroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
+    * [ObservableScan] (src/test/java/rx/observables/transforming/ObservableScan.java)
+    * [ObservableBuffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
 
 * Utils
 
--   [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
--   [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
--   [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
--   [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
--   [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
+    * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
+    * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
+    * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
+    * [ObservableSwitch] (src/test/java/rx/observables/ObservableSwitch.java)
+    * [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
 
 
 ### Single
