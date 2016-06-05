@@ -18,7 +18,7 @@ public class HotObservable {
 
 
     /**
-     * This example we can see how a third observable subscribe to hot Observable once this one has start emitting items,
+     * This example we can see how a third observer subscribe to hot Observable once this one has start emitting items,
      * Since the hot observable was created with publish he miss the items already emitted
      *
      * @throws InterruptedException
@@ -27,26 +27,29 @@ public class HotObservable {
     public void testHotObservablesMissingItems() throws InterruptedException {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         ConnectableObservable<Long> published = interval.publish();
-        Subscription sub1 = subscribePrint(published, "First");
-        Subscription sub2 = subscribePrint(published, "Second");
+        Subscription sub1 = subscribeToObservable(published, "First");
+        Subscription sub2 = subscribeToObservable(published, "Second");
         published.connect();
-        thirdSubscriber(published, sub1, sub2);
+        Subscription sub3 = subscribeToObservableWithDelay(published);
+        unsubscribe(sub1, sub2, sub3);
+
     }
 
     /**
-     * This example we can see how a third observable subscribe to hot Observable once start emitting items, and because the hot
-     * observable was created with replay, it replay to the third subscriber all missed items.
+     * This example we can see how a third observer subscribe to hot Observable once start emitting items, and because the hot
+     * observable was created with replay, it replay to the third observer all missed items.
      *
      * @throws InterruptedException
      */
     @Test
-    public void testHotObservablesRecoveringMissItems() throws InterruptedException {
+    public void testHotObservablesReplayingMissItems() throws InterruptedException {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         ConnectableObservable<Long> published = interval.replay();
-        Subscription sub1 = subscribePrint(published, "First");
-        Subscription sub2 = subscribePrint(published, "Second");
+        Subscription sub1 = subscribeToObservable(published, "First");
+        Subscription sub2 = subscribeToObservable(published, "Second");
         published.connect();
-        thirdSubscriber(published, sub1, sub2);
+        Subscription sub3 = subscribeToObservableWithDelay(published);
+        unsubscribe(sub1, sub2, sub3);
     }
 
 
@@ -60,12 +63,12 @@ public class HotObservable {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         Subject<Long, Long> publishSubject = PublishSubject.create();
         interval.subscribe(publishSubject);
-        Subscription sub1 = subscribePrint(publishSubject, "First");
-        Subscription sub2 = subscribePrint(publishSubject, "Second");
+        Subscription sub1 = subscribeToObservable(publishSubject, "First");
+        Subscription sub2 = subscribeToObservable(publishSubject, "Second");
         try {
             Thread.sleep(300L);
             publishSubject.onNext(555L);
-            Subscription sub3 = subscribePrint(publishSubject, "Third");
+            Subscription sub3 = subscribeToObservable(publishSubject, "Third");
             Thread.sleep(500L);
             sub1.unsubscribe();
             sub2.unsubscribe();
@@ -75,14 +78,15 @@ public class HotObservable {
     }
 
 
-    private void thirdSubscriber(ConnectableObservable<Long> published, Subscription sub1, Subscription sub2) {
+    private Subscription subscribeToObservableWithDelay(ConnectableObservable<Long> published) {
+        Subscription sub3 = null;
         try {
             Thread.sleep(500L);
-            Subscription sub3 = subscribePrint(published, "Third");
+            sub3 = subscribeToObservable(published, "Third");
             Thread.sleep(500L);
-            unsubscribe(sub1, sub2, sub3);
         } catch (InterruptedException e) {
         }
+        return sub3;
     }
 
     private void unsubscribe(Subscription sub1, Subscription sub2, Subscription sub3) {
@@ -91,7 +95,7 @@ public class HotObservable {
         sub3.unsubscribe();
     }
 
-    Subscription subscribePrint(Observable<Long> observable, String name) {
+    Subscription subscribeToObservable(Observable<Long> observable, String name) {
         return observable.subscribe((v) -> System.out.println(name + " : " + v), (e) -> {
             System.err.println("Error from " + name + ":");
             System.err.println(e.getMessage());

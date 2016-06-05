@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Relay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/relay/Relay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,11 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5275229">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotObservable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6880734">
+              <caret line="114" column="47" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -206,13 +206,13 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableAsyncronious.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableAsynchronous.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableBuffer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" />
         <option value="$PROJECT_DIR$/src/main/java/rx/observables/transforming/Person.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableStart.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" />
       </list>
     </option>
   </component>
@@ -461,6 +461,40 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="observables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -523,33 +557,7 @@
       <recent name="relay" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableWindow.windowCountObservable">
-    <configuration default="false" name="ObservableMap.testMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.transforming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableMap" />
-      <option name="METHOD_NAME" value="testMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.HotObservable.testHotObservablesMissingItems">
     <configuration default="false" name="ObservableBuffer.bufferCountObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -641,6 +649,32 @@
       <option name="PACKAGE_NAME" value="rx.observables.transforming" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableWindow" />
       <option name="METHOD_NAME" value="windowCountObservable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HotObservable.testHotObservablesMissingItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.connectable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.connectable" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.connectable.HotObservable" />
+      <option name="METHOD_NAME" value="testHotObservablesMissingItems" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1332,19 +1366,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferCountObservable" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.windowCountObservable" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableWindow.windowCountObservable" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferCountObservable" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.windowCountObservable" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableWindow.windowCountObservable" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.HotObservable.testHotObservablesMissingItems" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableWindow.windowCountObservable" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.windowCountObservable" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferCountObservable" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable.testHotObservablesMissingItems" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableWindow.windowCountObservable" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.windowCountObservable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferCountObservable" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1399,13 +1433,7 @@
       <workItem from="1461053043609" duration="4975000" />
       <workItem from="1461502419079" duration="3144000" />
       <workItem from="1461847166277" duration="825000" />
-      <workItem from="1465043210823" duration="20324000" />
-    </task>
-    <task id="LOCAL-00006" summary="refactor">
-      <created>1450634596313</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1450634596313</updated>
+      <workItem from="1465043210823" duration="21130000" />
     </task>
     <task id="LOCAL-00007" summary="refactor">
       <created>1450637296840</created>
@@ -1695,12 +1723,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465134802071</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Refactor of observables">
+      <created>1465134899762</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1465134899762</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableBuffer_bufferTimeStampObservable - 2016.06.05 at 14h 31m 08s.xml">
-      <configuration name="ObservableBuffer.bufferTimeStampObservable" configurationId="JUnit" />
+    <history-entry file="HotObservable_testHotObservablesMissingItems - 2016.06.05 at 18h 12m 16s.xml">
+      <configuration name="HotObservable.testHotObservablesMissingItems" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ObservableBuffer_windowCountObservable - 2016.06.05 at 14h 43m 49s.xml">
       <configuration name="ObservableBuffer.windowCountObservable" configurationId="JUnit" />
@@ -1731,7 +1765,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90993000" />
+    <option name="totallyTimeSpent" value="91799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -1747,7 +1781,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4208211" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50957537" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3355537" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2199,14 +2233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/relay/Relay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2296,8 +2322,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5275229">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6880734">
+          <caret line="114" column="47" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="47" />
           <folding />
         </state>
       </provider>
