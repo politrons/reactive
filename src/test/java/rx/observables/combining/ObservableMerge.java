@@ -15,8 +15,6 @@ import java.util.Collections;
  */
 public class ObservableMerge {
 
-    static int count = 0;
-
     /**
      * Since we merge the two observables, once that we subscribe we will emit both.
      */
@@ -27,11 +25,14 @@ public class ObservableMerge {
     }
 
     /**
-     * Here we merge two list and we sort both
+     * Here we merge two list and we sort the list for every new item added into.
+     * Shall return
+     *
+     * [1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]
      */
     @Test
-    public void testMergeChains() {
-        Observable.merge(Observable.from(Arrays.asList(1, 2, 13, 11, 5)), Observable.from(Arrays.asList(10, 4, 12, 3, 14, 15)))
+    public void testMergeLists() {
+        Observable.merge(Observable.from(Arrays.asList(2, 1, 13, 11, 5)), Observable.from(Arrays.asList(10, 4, 12, 3, 14, 15)))
                   .collect(ArrayList<Integer>::new, ArrayList::add)
                   .doOnNext(Collections::sort)
                   .subscribe(System.out::println);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
+    <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="Refactor of observables">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java" />
     </list>
@@ -52,11 +52,11 @@
       <file leaf-file-name="ObservableMerge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32119915">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.38543898">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding>
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1572,13 +1572,7 @@
       <workItem from="1461847166277" duration="825000" />
       <workItem from="1465043210823" duration="28092000" />
       <workItem from="1465223135005" duration="690000" />
-      <workItem from="1465224310244" duration="4925000" />
-    </task>
-    <task id="LOCAL-00017" summary="add hot observable">
-      <created>1453042001329</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1453042001329</updated>
+      <workItem from="1465224310244" duration="5013000" />
     </task>
     <task id="LOCAL-00018" summary="add hot observable">
       <created>1453042390693</created>
@@ -1868,7 +1862,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465230241066</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Refactor of observables">
+      <created>1465230796932</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1465230796932</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1899,12 +1899,12 @@
     <history-entry file="ObservableMerge_testMergeChains - 2016.06.06 at 17h 22m 57s.xml">
       <configuration name="ObservableMerge.testMergeChains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTransformer_observableWithTransformToString - 2016.06.05 at 19h 39m 09s.xml">
-      <configuration name="ObservableTransformer.observableWithTransformToString" configurationId="JUnit" />
+    <history-entry file="ObservableMerge_testMergeChains - 2016.06.06 at 17h 34m 17s.xml">
+      <configuration name="ObservableMerge.testMergeChains" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104376000" />
+    <option name="totallyTimeSpent" value="104464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1874" height="1057" extended-state="0" />
@@ -2486,11 +2486,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32119915">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.38543898">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding>
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
           </folding>
         </state>
       </provider>
