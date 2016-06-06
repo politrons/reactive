@@ -33,8 +33,8 @@ public class ObservableMerge {
     public void testMergeChains() {
         Observable.merge(Observable.from(Arrays.asList(1, 2, 13, 11, 5)), Observable.from(Arrays.asList(10, 4, 12, 3, 14, 15)))
                   .collect(ArrayList<Integer>::new, ArrayList::add)
-                .doOnNext(Collections::sort)
-                .subscribe(System.out::println);
+                  .doOnNext(Collections::sort)
+                  .subscribe(System.out::println);
 
     }
 
