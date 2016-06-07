@@ -1,9 +1,14 @@
+Author Pablo Perez Garcia 
+
 # Reactive
-Pablo Perez Garcia 
 
-Project to experiment with ReactiveX API.
+Marble diagrams are not clear enough?
 
-Here we will cover with examples the most common use of the ReactiveX platform.
+Here we cover with some practical examples, the most common use of the ReactiveX platform for Java.
+
+That project it´s just a complement to play around and put in practice what I´ve learned in the platform.
+
+To reference to the real documentation go here https://github.com/ReactiveX/RxJava/wiki
 
 
 ### Observables
