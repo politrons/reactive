@@ -13,8 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Pablo Perez
- *         Using the option subscribeOn or observerOn, you specify in your observable that you want to execute all/some pipeline steps into another thread,
- *         making the pipeline asyncronious
+ * Using the option subscribeOn or observerOn, you specify in your observable that you want to execute all/some pipeline steps into another thread,
+ * making the pipeline asyncronious
  */
 public class ObservableAsynchronous {
 

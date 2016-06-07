@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Pablo Perez
- *         /**
- *         Buffer allow keep the observable waiting buffering the items emitted unitl a spceific number of items, or a period of time.
+ *
+ * Buffer allow keep the observable waiting, buffering the items emitted unitl a spceific number of items, or a period of time.
  */
 public class ObservableBuffer {
 
