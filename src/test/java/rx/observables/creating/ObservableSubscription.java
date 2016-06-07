@@ -42,7 +42,8 @@ public class ObservableSubscription {
     }
 
     /**
-     * Here we can check how only when the observable has emit all items the observer is unsubscribed
+     * Here since we use delay, that makes the pipeline asynchronous,
+     * we can check how only when the observable has emit all items the observer is unsubscribed
      */
     @Test
     public void testObservableWaitForUnsubscribed() {

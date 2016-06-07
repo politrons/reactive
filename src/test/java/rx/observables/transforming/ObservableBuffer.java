@@ -2,7 +2,9 @@ package rx.observables.transforming;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Observer;
 import rx.Subscription;
+import rx.observers.TestSubscriber;
 
 import java.util.concurrent.TimeUnit;
 
@@ -42,9 +44,8 @@ public class ObservableBuffer {
                                               .doOnNext(
                                                       list -> System.out.println("Group size " + list.size()))
                                               .subscribe();
-        while (!subscription.isUnsubscribed()) {
-            Thread.sleep(100);
-        }
+        new TestSubscriber((Observer) subscription).awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
+
 
     }
 
