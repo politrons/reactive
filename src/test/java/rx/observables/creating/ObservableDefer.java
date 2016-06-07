@@ -34,7 +34,8 @@ public class ObservableDefer {
 
     /**
      * In this example we see how the values are set into the observable once we create instead when we subscribe.
-     * will return none
+     * Shall print
+     *       none
      */
     @Test
     public void testNotDeferObservable() {
@@ -45,7 +46,8 @@ public class ObservableDefer {
 
     /**
      * In this example we see how the values are set into the observable once we subscribe instead when we create the observable.
-     * Will return deferred
+     * Shall print
+     *       deferred
      */
     @Test
     public void testDeferObservable() {

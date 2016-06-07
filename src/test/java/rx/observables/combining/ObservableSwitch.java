@@ -9,9 +9,8 @@ import java.util.List;
 
 /**
  * Switch allow switch the item emitted by the observable by another value.
- * @param <T>
  */
-public class ObservableSwitch<T> {
+public class ObservableSwitch {
 
     /**
      * We switchIfEmpty switch from alternative observable if the origin observable is empty.
