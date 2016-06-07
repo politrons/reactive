@@ -1,13 +1,10 @@
 Author Pablo Perez Garcia 
 
-# Reactive
+# ReactiveX
 
 Marble diagrams are not clear enough?
-
 Here we cover with some practical examples, the most common use of the ReactiveX platform for Java.
-
 That project it´s just a complement to play around and put in practice what I´ve learned in the platform.
-
 To reference to the real documentation go here https://github.com/ReactiveX/RxJava/wiki
 
 
