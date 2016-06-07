@@ -17,6 +17,9 @@ public class ObservableMerge {
 
     /**
      * Since we merge the two observables, once that we subscribe we will emit both.
+     * Shall print
+     *      Person{name='pablo', age=34, sex='null'}
+     *      Person{name='null', age=25, sex='male'}
      */
     @Test
     public void testMerge() {
