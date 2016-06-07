@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by pabloperezgarcia on 10/3/16.
- *
+ * <p>
  * An Observable that emit an item every interval time specify.
  */
 public class ObservableInterval {
@@ -22,10 +22,9 @@ public class ObservableInterval {
     @Test
     public void testIntervalObservable() {
         Subscription subscription = Observable.interval(50, TimeUnit.MILLISECONDS)
-                                             .map(time-> "item emitted\n")
-                                             .subscribe(System.out::print);
-        new TestSubscriber((Observer) subscription)
-                .awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
+                                              .map(time -> "item emitted\n")
+                                              .subscribe(System.out::print);
+        new TestSubscriber((Observer) subscription).awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
     }
 
 
@@ -37,12 +36,11 @@ public class ObservableInterval {
     @Test
     public void testIntervalObservableWithMax() {
         Subscription subscription = Observable.interval(50, TimeUnit.MILLISECONDS)
-                                              .map(time-> "item emitted\n")
+                                              .map(time -> "item emitted\n")
                                               .subscribe(System.out::print);
-        new TestSubscriber((Observer) subscription)
-                .awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
+        TestSubscriber testSubscriber = new TestSubscriber((Observer) subscription);
+        testSubscriber.awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
         subscription.unsubscribe();
-        new TestSubscriber((Observer) subscription)
-                .awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
+        testSubscriber.awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
     }
 }

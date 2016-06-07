@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" />
     </list>
     <ignored path="reactive.iws" />
@@ -85,8 +83,8 @@
       <file leaf-file-name="ObservableInterval.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16055046">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.6559633">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -1571,13 +1569,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="2250000" />
-    </task>
-    <task id="LOCAL-00023" summary="add concat">
-      <created>1460208314383</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1460208314383</updated>
+      <workItem from="1465317550556" duration="2321000" />
     </task>
     <task id="LOCAL-00024" summary="add concat">
       <created>1460210752146</created>
@@ -1867,7 +1859,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465332410085</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Refactor of observables">
+      <created>1465333020789</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1465333020789</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1898,12 +1896,12 @@
     <history-entry file="ObservableInterval_testIntervalObservableWithMax - 2016.06.07 at 21h 56m 22s.xml">
       <configuration name="ObservableInterval.testIntervalObservableWithMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableSwitch_testNoSwitchPerson - 2016.06.07 at 21h 42m 44s.xml">
-      <configuration name="ObservableSwitch.testNoSwitchPerson" configurationId="JUnit" />
+    <history-entry file="ObservableInterval_testIntervalObservableWithMax - 2016.06.07 at 21h 57m 58s.xml">
+      <configuration name="ObservableInterval.testIntervalObservableWithMax" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107971000" />
+    <option name="totallyTimeSpent" value="108042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1234" height="777" extended-state="6" />
@@ -2154,6 +2152,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="32" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2430,8 +2429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16055046">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.6559633">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
