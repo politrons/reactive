@@ -2,7 +2,11 @@ package rx.observables.creating;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Observer;
+import rx.Scheduler;
 import rx.Subscription;
+import rx.observers.TestSubscriber;
+import rx.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -55,4 +59,37 @@ public class ObservableSubscription {
         }
         System.out.println(foo);
     }
+
+
+    /**
+     * In this example we create another observable through the subscription, and we subscribe to be informed when the previous observer was unsubscribed
+     * Since we dont want to block our program, we will run in another thread,
+     * then and once the pipeline continue we return the result event to the main thread(immediate)
+     *
+     */
+    @Test
+    public void testObservableWaitForUnsubscribedListener() {
+        Subscription subscription = Observable.just(1)
+                                              .delay(1, TimeUnit.SECONDS)
+                                              .subscribe(number -> foo = "Subscription finish");
+        Scheduler mainThread = Schedulers.immediate();
+        Observable.just(subscription)
+                  .subscribeOn(Schedulers.newThread())
+                  .doOnNext(s ->{
+                      while(!s.isUnsubscribed()){
+                          try {
+                              Thread.sleep(100);
+                          } catch (InterruptedException e) {
+                              e.printStackTrace();
+                          }
+                      }
+                  }).observeOn(mainThread)
+                  .subscribe(u-> System.out.println("Observer unsubscribed:"+u.toString()));
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(2, TimeUnit.SECONDS);
+    }
+
+
+
+
 }
