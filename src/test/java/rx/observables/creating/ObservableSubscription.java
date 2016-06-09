@@ -35,11 +35,7 @@ public class ObservableSubscription {
         Observable.from(numbers)
                   .flatMap(Observable::just)
                   .doOnNext(number->{
-                      try {
-                          Thread.sleep(100);
-                      } catch (InterruptedException e) {
-                          e.printStackTrace();
-                      }
+                      sleep();
                   })
                   .subscribe(number -> total+=number);
         System.out.println("I finish after all items are emitted:"+total);
@@ -77,19 +73,22 @@ public class ObservableSubscription {
                   .subscribeOn(Schedulers.newThread())
                   .doOnNext(s ->{
                       while(!s.isUnsubscribed()){
-                          try {
-                              Thread.sleep(100);
-                          } catch (InterruptedException e) {
-                              e.printStackTrace();
-                          }
+                          sleep();
                       }
                   }).observeOn(mainThread)
                   .subscribe(u-> System.out.println("Observer unsubscribed:"+u.toString()));
+
         new TestSubscriber((Observer) subscription)
                 .awaitTerminalEvent(2, TimeUnit.SECONDS);
     }
 
-
+    private void sleep() {
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
