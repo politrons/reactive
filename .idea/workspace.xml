@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,20 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableAsynchronous.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObservableAsynchronous.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="41" selection-end-column="64" />
+            <state vertical-scroll-proportion="1.3650963">
+              <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableSubscription.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableSubscription.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3119266">
+            <state vertical-scroll-proportion="0.0">
               <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
               <folding />
             </state>
@@ -201,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
       </list>
     </option>
   </component>
@@ -226,8 +226,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="46" />
     <option name="y" value="23" />
-    <option name="width" value="1234" />
-    <option name="height" value="777" />
+    <option name="width" value="1874" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -331,7 +331,166 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="single" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="observables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="observables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
@@ -392,59 +551,7 @@
       <recent name="relay" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableSubscription.testObservableWaitForUnsubscribedListener">
-    <configuration default="false" name="ObservableSwitch.testNoSwitchPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.combining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.combining" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableSwitch" />
-      <option name="METHOD_NAME" value="testNoSwitchPerson" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableInterval.testIntervalObservable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.creating.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.creating" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.creating.ObservableInterval" />
-      <option name="METHOD_NAME" value="testIntervalObservable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableAsynchronous.testObservableSync">
     <configuration default="false" name="ObservableInterval.testIntervalObservableWithMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -510,6 +617,58 @@
       <option name="PACKAGE_NAME" value="rx.observables.creating" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.creating.ObservableSubscription" />
       <option name="METHOD_NAME" value="testObservableWaitForUnsubscribedListener" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableAsynchronous.testObservableAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.scheduler" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.scheduler.ObservableAsynchronous" />
+      <option name="METHOD_NAME" value="testObservableAsync" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableAsynchronous.testObservableSync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.scheduler" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.scheduler.ObservableAsynchronous" />
+      <option name="METHOD_NAME" value="testObservableSync" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1201,19 +1360,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableSwitch.testNoSwitchPerson" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservable" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservableWithMax" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableWaitForUnsubscribedListener" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservableWithMax" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableWaitForUnsubscribedListener" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableAsync" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSync" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableWaitForUnsubscribedListener" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservableWithMax" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservable" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableSwitch.testNoSwitchPerson" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSync" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableAsync" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableSubscription.testObservableWaitForUnsubscribedListener" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.bufferTimeStampObservable" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableInterval.testIntervalObservableWithMax" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1273,13 +1432,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="7081000" />
-    </task>
-    <task id="LOCAL-00027" summary="Refactor of observables">
-      <created>1461503357998</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1461503357998</updated>
+      <workItem from="1465317550556" duration="8325000" />
     </task>
     <task id="LOCAL-00028" summary="Refactor of observables">
       <created>1465043986623</created>
@@ -1569,15 +1722,21 @@
       <option name="project" value="LOCAL" />
       <updated>1465463039118</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Refactor of observables">
+      <created>1465463193244</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1465463193244</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableSubscription_testObservableWaitForUnsubscribedListener - 2016.06.09 at 09h 51m 47s.xml">
-      <configuration name="ObservableSubscription.testObservableWaitForUnsubscribedListener" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableAsync - 2016.06.09 at 13h 25m 29s.xml">
+      <configuration name="ObservableAsynchronous.testObservableAsync" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableSubscription_testObservableWaitForUnsubscribedListener - 2016.06.09 at 09h 52m 24s.xml">
-      <configuration name="ObservableSubscription.testObservableWaitForUnsubscribedListener" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableSync - 2016.06.09 at 13h 25m 57s.xml">
+      <configuration name="ObservableAsynchronous.testObservableSync" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ObservableSubscription_testObservableWaitForUnsubscribedListener - 2016.06.09 at 09h 52m 47s.xml">
       <configuration name="ObservableSubscription.testObservableWaitForUnsubscribedListener" configurationId="JUnit" />
@@ -1605,10 +1764,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112802000" />
+    <option name="totallyTimeSpent" value="114046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="23" width="1234" height="777" extended-state="6" />
+    <frame x="46" y="23" width="1874" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1618,10 +1777,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59090906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5904366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32634228" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32587337" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2114,14 +2273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="41" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/schedulers/Schedulers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2137,8 +2288,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3119266">
+        <state vertical-scroll-proportion="0.0">
           <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3650963">
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
           <folding />
         </state>
       </provider>

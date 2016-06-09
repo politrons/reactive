@@ -66,6 +66,9 @@ public class ObservableAsynchronous {
     /**
      * In this test we prove how when we subscribe a observable using scheduler, this one is executed in another thread,
      * and total is in the scope of every thread.
+     * Shall print
+     *
+     *     I finish before the observable finish.  Items emitted:0
      */
     @Test
     public void testObservableAsync() throws InterruptedException {
@@ -81,6 +84,14 @@ public class ObservableAsynchronous {
     /**
      * In this test we prove how when we subscribe a observable ans we not use subscribeOn, this one is executed in the main thread.
      * And total is in the scope of both
+     * Shall print
+     *
+     *     Items emitted:0
+     *     Items emitted:1
+     *     Items emitted:3
+     *     Items emitted:6
+     *     Items emitted:10
+     *     I finish after the observable finish.  Items emitted:10
      */
     @Test
     public void testObservableSync() {
