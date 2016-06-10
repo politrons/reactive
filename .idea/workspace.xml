@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1467,13 +1466,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="10442000" />
-    </task>
-    <task id="LOCAL-00034" summary="Refactor of observables">
-      <created>1465047989909</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1465047989910</updated>
+      <workItem from="1465317550556" duration="10473000" />
     </task>
     <task id="LOCAL-00035" summary="Refactor of observables">
       <created>1465048318721</created>
@@ -1763,7 +1756,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465584714657</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Refactor of observables">
+      <created>1465584762197</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1465584762198</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1799,7 +1798,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116163000" />
+    <option name="totallyTimeSpent" value="116194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1234" height="777" extended-state="6" />
