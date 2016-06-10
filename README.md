@@ -2,7 +2,8 @@ Author Pablo Perez Garcia
 
 # ReactiveX
 
-Marble diagrams are not clear enough?. ![My image](src/main/resources/img/flatMap.png)
+Marble diagrams are not clear enough?.
+ ![My image](src/main/resources/img/flatMap.png)
 
 Here we cover with some practical examples, the most common use of the ReactiveX platform for Java.
 
