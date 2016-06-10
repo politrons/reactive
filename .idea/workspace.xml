@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,8 +91,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.12520868">
-                <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <first_editor vertical-scroll-proportion="0.10016695">
+                <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1466,13 +1467,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="10473000" />
-    </task>
-    <task id="LOCAL-00035" summary="Refactor of observables">
-      <created>1465048318721</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1465048318721</updated>
+      <workItem from="1465317550556" duration="10506000" />
     </task>
     <task id="LOCAL-00036" summary="Refactor of observables">
       <created>1465049213917</created>
@@ -1762,7 +1757,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465584762198</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Refactor of observables">
+      <created>1465584795015</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1465584795015</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1798,7 +1799,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116194000" />
+    <option name="totallyTimeSpent" value="116227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1234" height="777" extended-state="6" />
@@ -2325,8 +2326,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.12520868">
-            <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <first_editor vertical-scroll-proportion="0.10016695">
+            <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
