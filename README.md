@@ -47,7 +47,7 @@ All the most common features of Observable
     * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
     * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
-* Scheduler
+* Scheduler ![My image](src/main/resources/img/subscribeonc.png)
     * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
 
 * Utils
