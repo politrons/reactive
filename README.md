@@ -31,6 +31,12 @@ All the most common features of Observable
     * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
     * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
     * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
+    
+* Filtering    
+    * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
+    * [ObservableDistinct] (src/test/java/rx/observables/filtering/ObservableDistinct.java)
+    * [ObservableSkip] (src/test/java/rx/observables/filtering/ObservableSkip.java)
+    * [ObservableTake] (src/test/java/rx/observables/filtering/ObservableTake.java)
 
 * Transforming
     * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
