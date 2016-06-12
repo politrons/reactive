@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_1subscribeonc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_buffer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_createc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_filter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_zipo.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/subscribeonc.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_1buffer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_1createc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_1filter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_1zipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_2subscribeonc.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/rsz_1subscribeonc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/rsz_buffer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/rsz_createc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/rsz_filter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/img/rsz_zipo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -67,8 +71,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.5008347">
-                <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+              <first_editor vertical-scroll-proportion="0.25041735">
+                <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1580,13 +1584,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="20547000" />
-    </task>
-    <task id="LOCAL-00042" summary="Refactor of observables">
-      <created>1465067149679</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1465067149679</updated>
+      <workItem from="1465317550556" duration="20920000" />
     </task>
     <task id="LOCAL-00043" summary="Refactor of observables">
       <created>1465067524941</created>
@@ -1876,7 +1874,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465768988661</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Add filtering package">
+      <created>1465769411427</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1465769411428</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1912,7 +1916,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126268000" />
+    <option name="totallyTimeSpent" value="126641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1234" height="777" extended-state="6" />
@@ -2452,8 +2456,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.5008347">
-            <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <first_editor vertical-scroll-proportion="0.25041735">
+            <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
             <folding />
           </first_editor>
           <second_editor />

@@ -20,25 +20,25 @@ All the most common features of Observable
 * Contactable
     * [HotObservable] (src/test/java/rx/observables/connectable/HotObservable.java)
  
-- Combining ![My image](src/main/resources/img/rsz_zipo.png)
+- Combining ![My image](src/main/resources/img/rsz_1zipo.png)
     * [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
     * [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
     * [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
     * [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
     * [ObservableSwitch] (src/test/java/rx/observables/combining/ObservableSwitch.java)
 
-* Creating ![My image](src/main/resources/img/rsz_createc.png)
+* Creating ![My image](src/main/resources/img/rsz_1createc.png)
     * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
     * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
     * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
     
-* Filtering ![My image](src/main/resources/img/rsz_createc.png)
+* Filtering ![My image](src/main/resources/img/rsz_1createc.png)
     * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
     * [ObservableDistinct] (src/test/java/rx/observables/filtering/ObservableDistinct.java)
     * [ObservableSkip] (src/test/java/rx/observables/filtering/ObservableSkip.java)
     * [ObservableTake] (src/test/java/rx/observables/filtering/ObservableTake.java)
 
-* Transforming ![My image](src/main/resources/img/rsz_filter.png)
+* Transforming ![My image](src/main/resources/img/rsz_1filter.png)
     * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
     * [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
     * [ObservableGroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
@@ -47,7 +47,7 @@ All the most common features of Observable
     * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
     * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
-* Scheduler ![My image](src/main/resources/img/rsz_1subscribeonc.png)
+* Scheduler ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
 
 * Utils
