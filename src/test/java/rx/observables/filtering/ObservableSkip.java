@@ -57,20 +57,21 @@ public class ObservableSkip {
     }
 
     /**
-     * We skip the emit of items until the passed observable start emitting items
+     * We skip the emit of items until the passed observable start emitting items, the skipUtil will subscribe the passed observable.
+     * In this example, since the passed observable start emitting in 1ms the skip will emit everything.
+     * If you increase the initial delay all items will be skiped.
      * Shall print
-     * 4,5
+     * 1,2,3,4,5
      */
     @Test
     public void testSkiUitil() throws InterruptedException {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-        Observable observable2 = Observable.just(1);
+        Observable observable2 = Observable.interval(1,1, TimeUnit.MILLISECONDS);
         Subscription subscription = Observable.from(numbers)
                                               .skipUntil(observable2)
                                               .subscribe(System.out::println);
-        Thread.sleep(3000);
-        observable2.subscribe();
-        new TestSubscriber((Observer) subscription).awaitTerminalEvent(5, TimeUnit.SECONDS);
+
+        new TestSubscriber((Observer) subscription).awaitTerminalEvent(1, TimeUnit.SECONDS);
 
     }
 

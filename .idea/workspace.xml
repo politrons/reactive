@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_flatmap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/rsz_publishconnectc.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableSkip.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObservableSkip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.4713217">
+              <caret line="61" column="66" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -59,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
@@ -89,7 +87,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6735" column="31" selection-start-line="6735" selection-start-column="31" selection-end-line="6735" selection-end-column="31" />
+              <caret line="4057" column="35" selection-start-line="4057" selection-start-column="35" selection-end-line="4057" selection-end-column="35" />
               <folding>
                 <element signature="e#200580#200581#0" expanded="true" />
                 <element signature="e#200652#200653#0" expanded="true" />
@@ -209,12 +207,12 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableDistinct.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableDebounce.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableTake.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" />
       </list>
     </option>
   </component>
@@ -695,33 +693,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/rx/observables/creating" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableTake.testSample">
-    <configuration default="false" name="ObservableDistinct.testDistinct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.filtering.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.filtering" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.filtering.ObservableDistinct" />
-      <option name="METHOD_NAME" value="testDistinct" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableSkip.testSkiUitil">
     <configuration default="false" name="ObservableDistinct.testDistincFunc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -813,6 +785,32 @@
       <option name="PACKAGE_NAME" value="rx.observables.filtering" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.filtering.ObservableTake" />
       <option name="METHOD_NAME" value="testSample" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableSkip.testSkiUitil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.filtering.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.filtering" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.filtering.ObservableSkip" />
+      <option name="METHOD_NAME" value="testSkiUitil" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1504,19 +1502,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistinct" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistincFunc" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableDebounce.testDistinct" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableTake" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableTake.testSample" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistincFunc" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableDebounce.testDistinct" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableTake" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableTake.testSample" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableSkip.testSkiUitil" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableTake.testSample" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableTake" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableDebounce.testDistinct" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistincFunc" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistinct" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableSkip.testSkiUitil" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableTake.testSample" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableTake" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableDebounce.testDistinct" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableDistinct.testDistincFunc" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1576,13 +1574,7 @@
       <workItem from="1465224310244" duration="5593000" />
       <workItem from="1465316398958" duration="189000" />
       <workItem from="1465316924186" duration="488000" />
-      <workItem from="1465317550556" duration="21489000" />
-    </task>
-    <task id="LOCAL-00046" summary="Refactor of observables">
-      <created>1465127974866</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1465127974866</updated>
+      <workItem from="1465317550556" duration="22127000" />
     </task>
     <task id="LOCAL-00047" summary="Refactor of observables">
       <created>1465129020168</created>
@@ -1872,43 +1864,49 @@
       <option name="project" value="LOCAL" />
       <updated>1465769907207</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Add filtering package">
+      <created>1465770354532</created>
+      <option name="number" value="00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1465770354532</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 30m 33s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 32m 19s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 32m 44s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 32m 32s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 33m 03s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 32m 43s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 33m 15s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 33m 14s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 33m 19s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 33m 29s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 34m 01s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 33m 50s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDebounce_testDistinct - 2016.06.12 at 21h 34m 18s.xml">
-      <configuration name="ObservableDebounce.testDistinct" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 34m 02s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTake - 2016.06.12 at 21h 35m 40s.xml">
-      <configuration name="ObservableTake" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 34m 11s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTake_testSample - 2016.06.12 at 21h 35m 52s.xml">
-      <configuration name="ObservableTake.testSample" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 35m 58s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableTake_testSample - 2016.06.12 at 21h 37m 00s.xml">
-      <configuration name="ObservableTake.testSample" configurationId="JUnit" />
+    <history-entry file="ObservableSkip_testSkiUitil - 2016.06.12 at 23h 36m 07s.xml">
+      <configuration name="ObservableSkip.testSkiUitil" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127210000" />
+    <option name="totallyTimeSpent" value="127848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1234" height="777" extended-state="6" />
@@ -1921,10 +1919,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37096775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37096775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29865772" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36828858" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2394,14 +2392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableDebounce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2410,10 +2400,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.52587646">
+            <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableTake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6735" column="31" selection-start-line="6735" selection-start-column="31" selection-end-line="6735" selection-end-column="31" />
+          <caret line="4057" column="35" selection-start-line="4057" selection-start-column="35" selection-end-line="4057" selection-end-column="35" />
           <folding>
             <element signature="e#200580#200581#0" expanded="true" />
             <element signature="e#200652#200653#0" expanded="true" />
@@ -2437,26 +2449,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableTake.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4713217">
+          <caret line="61" column="66" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.52587646">
-            <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
   </component>
