@@ -21,6 +21,7 @@ All the most common features of Observable
     * [HotObservable] (src/test/java/rx/observables/connectable/HotObservable.java)
  
 - Combining
+
     ![My image](src/main/resources/img/rsz_1zipo.png)
     * [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
     * [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
@@ -35,6 +36,7 @@ All the most common features of Observable
     * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
     
 * Filtering
+
     ![My image](src/main/resources/img/rsz_1createc.png)
     * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
     * [ObservableDistinct] (src/test/java/rx/observables/filtering/ObservableDistinct.java)
@@ -42,6 +44,7 @@ All the most common features of Observable
     * [ObservableTake] (src/test/java/rx/observables/filtering/ObservableTake.java)
 
 * Transforming
+
     ![My image](src/main/resources/img/rsz_1filter.png)
     * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
     * [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
@@ -52,6 +55,7 @@ All the most common features of Observable
     * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
 * Scheduler
+
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
 
