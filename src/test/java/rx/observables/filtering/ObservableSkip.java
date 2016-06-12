@@ -64,7 +64,7 @@ public class ObservableSkip {
      * 1,2,3,4,5
      */
     @Test
-    public void testSkiUitil() throws InterruptedException {
+    public void testSkipUntil() throws InterruptedException {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         Observable observable2 = Observable.interval(1,1, TimeUnit.MILLISECONDS);
         Subscription subscription = Observable.from(numbers)
