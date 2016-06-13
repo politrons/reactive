@@ -18,7 +18,7 @@ public class ObserverVsIterator {
      * and we ask in every iteration to the iterator if there´s more data
      * @param start
      */
-    private void pullExample(long start) {
+    private void pullFromIterator(long start) {
         final List<Integer> list = Lists.newArrayList(1,2,3);
         final Iterator<Integer> iterator = list.iterator();
         System.out.println("Get iterator took:" +(System.currentTimeMillis() - start));
@@ -33,7 +33,7 @@ public class ObserverVsIterator {
      * so we control when we finish to iterate over the data.
      * @param start
      */
-    private void pushExample(long start) {
+    private void pushInObservable(long start) {
         final List<Integer> list = Lists.newArrayList(4,5,6);
         final Observable<Integer> observable = Observable.from(list);
         System.out.println("Create observable took:" +(System.currentTimeMillis() - start));
@@ -44,8 +44,8 @@ public class ObserverVsIterator {
     @Test
     public void run() {
         System.out.println("******+Iterator pattern*******");
-        pullExample(System.currentTimeMillis());
+        pullFromIterator(System.currentTimeMillis());
         System.out.println("******+Observer pattern*******");
-        pushExample(System.currentTimeMillis());
+        pushInObservable(System.currentTimeMillis());
     }
 }
