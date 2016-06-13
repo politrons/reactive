@@ -15,7 +15,7 @@ public class ObserverVsIterator {
 
     /**
      * Using iterator pattern we get an iterator from the collection,
-     * and we ask in every iteration to the iterator if there´s more dats
+     * and we ask in every iteration to the iterator if there´s more data
      * @param start
      */
     private void pullExample(long start) {
