@@ -82,7 +82,7 @@ A subject which will subscribe observers and it will keep the pipeline open all 
 
 ### Observer V Iterator Pattern
 
-An explanation, comparative and benchmark between this two patterns.
+An explanation, comparative and benchmark between these two patterns.
 
 * [ObserverVsIterator] (src/test/java/rx/utils/ObserverVsIterator.java)
 
