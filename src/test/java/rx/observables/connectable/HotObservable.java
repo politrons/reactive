@@ -5,6 +5,7 @@ import rx.Observable;
 import rx.Subscription;
 import rx.observables.ConnectableObservable;
 import rx.subjects.PublishSubject;
+import rx.subjects.ReplaySubject;
 import rx.subjects.Subject;
 
 import java.util.concurrent.TimeUnit;
@@ -27,11 +28,10 @@ public class HotObservable {
     public void testHotObservablesMissingItems() throws InterruptedException {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         ConnectableObservable<Long> published = interval.publish();
-        Subscription sub1 = subscribeToObservable(published, "First");
-        Subscription sub2 = subscribeToObservable(published, "Second");
+        subscribeToObservable(published, "First");
+        subscribeToObservable(published, "Second");
         published.connect();
-        Subscription sub3 = subscribeToObservableWithDelay(published);
-        unsubscribe(sub1, sub2, sub3);
+        subscribeToObservableWithDelay(published);
 
     }
 
@@ -45,11 +45,10 @@ public class HotObservable {
     public void testHotObservablesReplayingMissItems() throws InterruptedException {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         ConnectableObservable<Long> published = interval.replay();
-        Subscription sub1 = subscribeToObservable(published, "First");
-        Subscription sub2 = subscribeToObservable(published, "Second");
+        subscribeToObservable(published, "First");
+        subscribeToObservable(published, "Second");
         published.connect();
-        Subscription sub3 = subscribeToObservableWithDelay(published);
-        unsubscribe(sub1, sub2, sub3);
+        subscribeToObservableWithDelay(published);
     }
 
     /**
@@ -62,14 +61,13 @@ public class HotObservable {
         Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
         Subject<Long, Long> publishSubject = PublishSubject.create();
         interval.subscribe(publishSubject);
-        Subscription sub1 = subscribeToObservable(publishSubject, "First");
-        Subscription sub2 = subscribeToObservable(publishSubject, "Second");
+        subscribeToObservable(publishSubject, "First");
+        subscribeToObservable(publishSubject, "Second");
         try {
             Thread.sleep(300L);
             publishSubject.onNext(555L);
-            Subscription sub3 = subscribeToObservable(publishSubject, "Third");
+            subscribeToObservable(publishSubject, "Third");
             Thread.sleep(500L);
-            unsubscribe(sub1,sub2,sub3);
         } catch (InterruptedException e) {
         }
     }
@@ -108,6 +106,23 @@ public class HotObservable {
 
     }
 
+
+    /**
+     * In this example we see how using hot observables ReplaySubject we can emit an item on broadcast to all the observers(subscribers).
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservableUsingReplaySubject() throws InterruptedException {
+        Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
+        Subject<Long, Long> publishSubject = ReplaySubject.create(1);
+        interval.subscribe(publishSubject);
+        Thread.sleep(1000L);
+        subscribeToObservable(publishSubject, "First");
+        subscribeToObservable(publishSubject, "Second");
+        subscribeToObservable(publishSubject, "Third");
+    }
+
     private Subscription subscribeToObservableWithDelay(ConnectableObservable<Long> published) {
         Subscription sub3 = null;
         try {
@@ -119,11 +134,6 @@ public class HotObservable {
         return sub3;
     }
 
-    private void unsubscribe(Subscription sub1, Subscription sub2, Subscription sub3) {
-        sub1.unsubscribe();
-        sub2.unsubscribe();
-        sub3.unsubscribe();
-    }
 
     Subscription subscribeToObservable(Observable<Long> observable, String name) {
         return observable.subscribe((v) -> System.out.println(name + " : " + v), (e) -> {
