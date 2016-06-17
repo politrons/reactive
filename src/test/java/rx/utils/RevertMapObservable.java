@@ -3,6 +3,7 @@ package rx.utils;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import org.junit.Test;
+import rx.observables.MathObservable;
 
 import java.util.*;
 
@@ -10,9 +11,54 @@ import static java.util.stream.Collectors.*;
 
 
 /**
- *Here we show different mechanism to revert a map from key/value to value as key and key as value.
+ * Here we show different mechanism to revert a map from key/value to value as key and key as value.
  */
 public class RevertMapObservable {
+
+
+    class Product {
+        int quantity;
+
+        public Product(int quantity) {
+            this.quantity = quantity;
+        }
+    }
+
+    @Test
+    public void sumIntegerMathObservableFromObject() throws InterruptedException {
+        List<Product> products1 = Arrays.asList(new Product(1), new Product(2), new Product(3));
+        List<Product> products2 = Arrays.asList(new Product(1), new Product(1));
+
+        Map<String, List<Product>> productsRes = new HashMap<>();
+        productsRes.put("res1", products1);
+        productsRes.put("res2", products2);
+
+        HashMap<Object, Object> total = rx.Observable.from(productsRes.entrySet())
+                     .flatMap(entry -> rx.Observable.from(entry.getValue())
+                                                    .map(product -> product.quantity)
+                                                    .toList()
+                                                    .flatMap(list -> MathObservable.sumInteger(rx.Observable.from(list)))
+                                                    .filter(integer -> integer > 2)
+                                                    .map(i -> entry))
+                     .reduce(new HashMap<>(),(map, entry) -> {
+                         map.put(entry.getKey(), entry.getValue());
+                         return map;
+                     })
+                     .toBlocking()
+                     .last();
+
+        System.out.println(total);
+    }
+
+
+    @Test
+    public void sumIntegerMathObservable() throws InterruptedException {
+        List<Integer> products = Arrays.asList(1, 2, 3);
+        MathObservable.sumInteger(rx.Observable.from(products))
+                      .subscribe(System.out::println);
+
+
+    }
 
 
     @Test
@@ -83,9 +129,6 @@ public class RevertMapObservable {
 
 
     }
-
-
-
 
 
 }
