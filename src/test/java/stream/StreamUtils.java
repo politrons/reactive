@@ -65,7 +65,8 @@ public class StreamUtils {
 
     /**
      * Filter operator just receive a predicate function, and continue the pipeline if that function return true
-     *
+     * Shall return
+     *      {"A":"1","B":2}
      * @throws InterruptedException
      */
     @Test
@@ -81,8 +82,10 @@ public class StreamUtils {
 
     /**
      * Collect is one of the operators that transform our pipeline form lazy to eager, make it start emitting the items.
+     * In this pipeline we use the operator sorted to sort the items emitted
      * Pick up the items emitted and collect into a Collector
-     *
+     * Shall print
+     *     [1, 2, 5, 11, 13]
      * @throws InterruptedException
      */
     @Test
@@ -98,7 +101,8 @@ public class StreamUtils {
      * Like collect this operator execute the terminal and make the pipeline eager from lazy.
      * this operator start with an initial value, and then as second argument we pass a BiFunction
      * where we pass the previous emitted item and the new one.
-     *
+     * Shall print
+     * 6
      * @throws InterruptedException
      */
     @Test
@@ -111,7 +115,8 @@ public class StreamUtils {
 
     /**
      * This operator just run the Predicate function and return true/false as the result of the function.
-     *
+     * shall print
+     * true
      * @throws InterruptedException
      */
     @Test
@@ -124,7 +129,8 @@ public class StreamUtils {
 
     /**
      * This operator is not a terminal executor. It just filter the items emitted and only pass those that has not been emitted already
-     *
+     * Shall print
+     * [1, 2, 3, 4]
      * @throws InterruptedException
      */
     @Test
@@ -139,7 +145,8 @@ public class StreamUtils {
 
     /**
      * Operator that limit the total number of items emitted through the pipeline
-     *
+     * Shall print
+     * [1, 2, 3]
      * @throws InterruptedException
      */
     @Test
@@ -155,6 +162,11 @@ public class StreamUtils {
     /**
      * Peek operator just run a Consumer function, which we pass the item emitted but we cannot send a different item through the pipeline.
      * It would be similar to foreach, but this one always emit the Stream(T), not like foreach which is void.
+     * Shall print
+     *       This Consumer function is void, we not modify the stream in here
+     *       This Consumer function is void, we not modify the stream in here
+     *       This Consumer function is void, we not modify the stream in here
+     *       [1, 2, 3]
      *
      * @throws InterruptedException
      */
@@ -162,14 +174,15 @@ public class StreamUtils {
     public void peekStream() throws InterruptedException {
         List<Integer> list = Arrays.asList(1, 2, 3)
                                    .stream()
-                                   .peek(number -> System.out.println("This consume function is void, we not modify the stream in here"))
+                                   .peek(number -> System.out.println("This Consumer function is void, we not modify the stream in here"))
                                    .collect(toList());
         System.out.println(list);
     }
 
     /**
      * Similar to limit, but the other way around, this operator skip the first specific items emitted through the pipeline
-     *
+     * Shall print
+     * [2, 3]
      * @throws InterruptedException
      */
     @Test
@@ -201,6 +214,8 @@ public class StreamUtils {
 
     /**
      * This operator just get the max value emitted by the pipeline
+     * Shall print
+     * 5
      * @throws InterruptedException
      */
     @Test
@@ -228,6 +243,8 @@ public class StreamUtils {
 
     /**
      * This operator just get the min value emitted by the pipeline
+     * Shall print
+     * 1
      * @throws InterruptedException
      */
     @Test

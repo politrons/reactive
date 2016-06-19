@@ -30,8 +30,8 @@
       <file leaf-file-name="StreamUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3440367">
-              <caret line="247" column="19" selection-start-line="247" selection-start-column="19" selection-end-line="247" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.7068063">
+              <caret line="250" column="20" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -740,8 +740,8 @@
       <recent name="$PROJECT_DIR$/src/test/java/rx/observables/creating" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StreamUtils.minStreamString">
-    <configuration default="false" name="StreamUtils.mapStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StreamUtils.minStream">
+    <configuration default="false" name="StreamUtils.distinctStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="stream.*" />
@@ -753,7 +753,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="stream" />
       <option name="MAIN_CLASS_NAME" value="stream.StreamUtils" />
-      <option name="METHOD_NAME" value="mapStream" />
+      <option name="METHOD_NAME" value="distinctStream" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -767,7 +767,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StreamUtils.flatMapStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StreamUtils.limitStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="stream.*" />
@@ -779,7 +779,33 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="stream" />
       <option name="MAIN_CLASS_NAME" value="stream.StreamUtils" />
-      <option name="METHOD_NAME" value="flatMapStream" />
+      <option name="METHOD_NAME" value="limitStream" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="StreamUtils.peekStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="stream" />
+      <option name="MAIN_CLASS_NAME" value="stream.StreamUtils" />
+      <option name="METHOD_NAME" value="peekStream" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -819,7 +845,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StreamUtils.maxStreamString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="StreamUtils.minStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="stream.*" />
@@ -831,33 +857,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="stream" />
       <option name="MAIN_CLASS_NAME" value="stream.StreamUtils" />
-      <option name="METHOD_NAME" value="maxStreamString" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StreamUtils.minStreamString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="stream" />
-      <option name="MAIN_CLASS_NAME" value="stream.StreamUtils" />
-      <option name="METHOD_NAME" value="minStreamString" />
+      <option name="METHOD_NAME" value="minStream" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1549,19 +1549,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StreamUtils.mapStream" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StreamUtils.flatMapStream" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StreamUtils.skipStream" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StreamUtils.maxStreamString" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.StreamUtils.minStreamString" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StreamUtils.distinctStream" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StreamUtils.limitStream" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StreamUtils.peekStream" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StreamUtils.skipStream" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.StreamUtils.minStream" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StreamUtils.minStreamString" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StreamUtils.maxStreamString" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StreamUtils.skipStream" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StreamUtils.flatMapStream" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StreamUtils.mapStream" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StreamUtils.minStream" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StreamUtils.skipStream" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StreamUtils.peekStream" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StreamUtils.limitStream" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StreamUtils.distinctStream" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1625,13 +1625,7 @@
       <workItem from="1465893127410" duration="2443000" />
       <workItem from="1465900129621" duration="1542000" />
       <workItem from="1466007488946" duration="37175000" />
-      <workItem from="1466371774418" duration="2039000" />
-    </task>
-    <task id="LOCAL-00065" summary="Refactor of observables">
-      <created>1465230241065</created>
-      <option name="number" value="00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1465230241066</updated>
+      <workItem from="1466371774418" duration="2622000" />
     </task>
     <task id="LOCAL-00066" summary="Refactor of observables">
       <created>1465230796932</created>
@@ -1921,43 +1915,49 @@
       <option name="project" value="LOCAL" />
       <updated>1466367542033</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Add filtering package">
+      <created>1466373844707</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1466373844708</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StreamUtils_flatMapStream - 2016.06.19 at 22h 33m 00s.xml">
-      <configuration name="StreamUtils.flatMapStream" configurationId="JUnit" />
+    <history-entry file="StreamUtils_collectStream - 2016.06.19 at 23h 10m 15s.xml">
+      <configuration name="StreamUtils.collectStream" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_flatMapStream - 2016.06.19 at 22h 41m 59s.xml">
-      <configuration name="StreamUtils.flatMapStream" configurationId="JUnit" />
+    <history-entry file="StreamUtils_distinctStream - 2016.06.19 at 23h 12m 06s.xml">
+      <configuration name="StreamUtils.distinctStream" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_maxStreamString - 2016.06.19 at 23h 00m 44s.xml">
-      <configuration name="StreamUtils.maxStreamString" configurationId="JUnit" />
+    <history-entry file="StreamUtils_filterStream - 2016.06.19 at 23h 09m 25s.xml">
+      <configuration name="StreamUtils.filterStream" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_maxStreamString - 2016.06.19 at 23h 02m 16s.xml">
-      <configuration name="StreamUtils.maxStreamString" configurationId="JUnit" />
+    <history-entry file="StreamUtils_limitStream - 2016.06.19 at 23h 12m 25s.xml">
+      <configuration name="StreamUtils.limitStream" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StreamUtils_matchStream - 2016.06.19 at 23h 11m 52s.xml">
+      <configuration name="StreamUtils.matchStream" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StreamUtils_minStream - 2016.06.19 at 23h 14m 43s.xml">
+      <configuration name="StreamUtils.minStream" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StreamUtils_minStreamString - 2016.06.19 at 23h 03m 48s.xml">
       <configuration name="StreamUtils.minStreamString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_skiStream - 2016.06.19 at 21h 06m 00s.xml">
-      <configuration name="StreamUtils.skiStream" configurationId="JUnit" />
+    <history-entry file="StreamUtils_peekStream - 2016.06.19 at 23h 12m 45s.xml">
+      <configuration name="StreamUtils.peekStream" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_skiStream - 2016.06.19 at 21h 06m 17s.xml">
-      <configuration name="StreamUtils.skiStream" configurationId="JUnit" />
+    <history-entry file="StreamUtils_reduceStream - 2016.06.19 at 23h 11m 22s.xml">
+      <configuration name="StreamUtils.reduceStream" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StreamUtils_skipStream - 2016.06.19 at 20h 58m 25s.xml">
-      <configuration name="StreamUtils.skipStream" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StreamUtils_skipStream - 2016.06.19 at 22h 55m 23s.xml">
-      <configuration name="StreamUtils.skipStream" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StreamUtils_skipStream - 2016.06.19 at 22h 55m 34s.xml">
+    <history-entry file="StreamUtils_skipStream - 2016.06.19 at 23h 13m 54s.xml">
       <configuration name="StreamUtils.skipStream" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177897000" />
+    <option name="totallyTimeSpent" value="178480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="0" />
@@ -1970,7 +1970,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.398827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4621149" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2082,7 +2082,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java</url>
-          <line>76</line>
+          <line>77</line>
           <properties>
             <option name="lambda-ordinal" value="0" />
           </properties>
@@ -2090,7 +2090,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java</url>
-          <line>74</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -2509,8 +2509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3440367">
-          <caret line="247" column="19" selection-start-line="247" selection-start-column="19" selection-end-line="247" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.7068063">
+          <caret line="250" column="20" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
