@@ -1617,13 +1617,7 @@
       <workItem from="1465317550556" duration="28977000" />
       <workItem from="1465893127410" duration="2443000" />
       <workItem from="1465900129621" duration="1542000" />
-      <workItem from="1466007488946" duration="36243000" />
-    </task>
-    <task id="LOCAL-00063" summary="Refactor of observables">
-      <created>1465154391721</created>
-      <option name="number" value="00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1465154391721</updated>
+      <workItem from="1466007488946" duration="36350000" />
     </task>
     <task id="LOCAL-00064" summary="Refactor of observables">
       <created>1465224428604</created>
@@ -1913,7 +1907,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466367234190</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Add filtering package">
+      <created>1466367421616</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1466367421616</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1949,7 +1949,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174926000" />
+    <option name="totallyTimeSpent" value="175033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
