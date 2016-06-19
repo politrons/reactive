@@ -91,3 +91,11 @@ An explanation, comparative and benchmark between these two patterns.
 
 * [ObserverVsIterator] (src/test/java/rx/utils/ObserverVsIterator.java)
 
+### Stream
+
+![My image](src/main/resources/img/rsz_stream.jpg)
+
+The Java 8 Stream API with examples of most useful operators.
+
+* [StreamUtils] (src/test/java/stream/StreamUtils.java)
+
