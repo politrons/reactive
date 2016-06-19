@@ -17,11 +17,36 @@ public class RevertMapObservable {
 
 
     class Product {
-        int quantity;
+        Integer quantity;
 
-        public Product(int quantity) {
+        public Product(Integer quantity) {
             this.quantity = quantity;
         }
+    }
+
+    @Test
+    public void test() throws InterruptedException {
+        List<Product> products1 = Arrays.asList(new Product(1), new Product(2), new Product(3));
+        List<Product> products2 = Arrays.asList(new Product(1), new Product(3));
+
+        Map<String, List<Product>> productsRes = new HashMap<>();
+        productsRes.put("res1", products1);
+        productsRes.put("res2", products2);
+
+        HashMap<String, List<Product>> total = rx.Observable.from(productsRes.entrySet())
+                                                            .flatMap(entry -> rx.Observable.from(entry.getValue())
+                                                                                           .map(product -> product.quantity)
+                                                                                           .reduce((x, y) -> x + y)
+                                                                                           .filter(integer -> integer > 2)
+                                                                                           .compose(transformToEntry(entry)))
+                                                            .reduce(new HashMap<String, List<Product>>(), (map, entry) -> {
+                                                                map.put(entry.getKey(), entry.getValue());
+                                                                return map;
+                                                            })
+                                                            .toBlocking()
+                                                            .last();
+
+        System.out.println(total);
     }
 
     @Test
@@ -33,19 +58,19 @@ public class RevertMapObservable {
         productsRes.put("res1", products1);
         productsRes.put("res2", products2);
 
-        HashMap<Object, Object> total = rx.Observable.from(productsRes.entrySet())
-                     .flatMap(entry -> rx.Observable.from(entry.getValue())
-                                                    .map(product -> product.quantity)
-                                                    .toList()
-                                                    .flatMap(list -> MathObservable.sumInteger(rx.Observable.from(list)))
-                                                    .filter(integer -> integer > 2)
-                                                    .map(i -> entry))
-                     .reduce(new HashMap<>(),(map, entry) -> {
-                         map.put(entry.getKey(), entry.getValue());
-                         return map;
-                     })
-                     .toBlocking()
-                     .last();
+        HashMap<String, List<Product>> total = rx.Observable.from(productsRes.entrySet())
+                                                            .flatMap(entry -> rx.Observable.from(entry.getValue())
+                                                                                           .map(product -> product.quantity)
+                                                                                           .toList()
+                                                                                           .flatMap(list -> MathObservable.sumInteger(rx.Observable.from(list)))
+                                                                                           .filter(integer -> integer > 2)
+                                                                                           .compose(transformToEntry(entry)))
+                                                            .reduce(new HashMap<String, List<Product>>(), (map, entry) -> {
+                                                                map.put(entry.getKey(), entry.getValue());
+                                                                return map;
+                                                            })
+                                                            .toBlocking()
+                                                            .last();
 
         System.out.println(total);
     }
@@ -129,6 +154,10 @@ public class RevertMapObservable {
 
 
     }
+
+    private rx.Observable.Transformer<Integer, Map.Entry<String, List<Product>>> transformToEntry(
+            Map.Entry<String, List<Product>> entry) {return i -> rx.Observable.just(entry);}
+
 
 
 }
