@@ -17,12 +17,12 @@ To reference to the real documentation go here https://github.com/ReactiveX/RxJa
 
 All the most common features of Observable
 
-* Contactable
+* **Contactable**
 
     ![My image](src/main/resources/img/rsz_publishconnectc.png)
     * [HotObservable] (src/test/java/rx/observables/connectable/HotObservable.java)
  
-- Combining
+* **Combining**
 
     ![My image](src/main/resources/img/rsz_1zipo.png)
     * [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
@@ -31,14 +31,14 @@ All the most common features of Observable
     * [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
     * [ObservableSwitch] (src/test/java/rx/observables/combining/ObservableSwitch.java)
 
-* Creating
+* **Creating**
 
     ![My image](src/main/resources/img/rsz_1createc.png)
     * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
     * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
     * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
     
-* Filtering
+* Filtering**
 
     ![My image](src/main/resources/img/rsz_1filter.png)
     * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
@@ -46,7 +46,7 @@ All the most common features of Observable
     * [ObservableSkip] (src/test/java/rx/observables/filtering/ObservableSkip.java)
     * [ObservableTake] (src/test/java/rx/observables/filtering/ObservableTake.java)
 
-* Transforming
+* **Transforming**
 
     ![My image](src/main/resources/img/rsz_flatmap.png)
     * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
@@ -57,17 +57,17 @@ All the most common features of Observable
     * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
     * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
-* Scheduler
+* **Scheduler**
 
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
     
-* Errors
+* **Errors**
 
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [ObservableExceptions] (src/test/java/rx/observables/errors/ObservableExceptions.java)
         
-* Utils
+* **Utils**
     * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
     * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
     * [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
