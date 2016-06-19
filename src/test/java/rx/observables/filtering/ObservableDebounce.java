@@ -13,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Debounce operator only emit items if the last item emitted by observable before the timeout, then restart the timer and start again.
+ * Shall return
+ * 15,10,10
  */
 public class ObservableDebounce {
 
