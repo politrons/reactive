@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,16 +70,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Collector.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/util/stream/Collector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="196" column="17" selection-start-line="196" selection-start-column="17" selection-end-line="196" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,6 +84,22 @@
                 <element signature="e#351937#351938#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.34891486">
+                <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -116,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableExceptions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java">
+      <file leaf-file-name="ObservableExceptions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4266055">
+            <state vertical-scroll-proportion="0.0">
               <caret line="50" column="95" selection-start-line="50" selection-start-column="95" selection-end-line="50" selection-end-column="95" />
               <folding />
             </state>
@@ -156,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableInterval.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableScan.java" />
@@ -198,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/PushVsPull.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/ObserverVsIterator.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/rx/utils/ObserverVsIterator.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" />
@@ -207,6 +212,8 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/utils/RevertMapObservable.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/StreamUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -512,6 +519,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="errors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="observables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="combining" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -707,15 +748,15 @@
     <configuration default="false" name="ObservableExceptions.observableException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="rx.observables.*" />
+          <option name="PATTERN" value="rx.observables.errors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableExceptions" />
+      <option name="PACKAGE_NAME" value="rx.observables.errors" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
       <option name="METHOD_NAME" value="observableException" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -733,15 +774,15 @@
     <configuration default="false" name="ObservableExceptions.observableOnErrorResumeNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="rx.observables.*" />
+          <option name="PATTERN" value="rx.observables.errors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.ObservableExceptions" />
+      <option name="PACKAGE_NAME" value="rx.observables.errors" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
       <option name="METHOD_NAME" value="observableOnErrorResumeNext" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1509,13 +1550,7 @@
       <workItem from="1465317550556" duration="28977000" />
       <workItem from="1465893127410" duration="2443000" />
       <workItem from="1465900129621" duration="1542000" />
-      <workItem from="1466007488946" duration="33706000" />
-    </task>
-    <task id="LOCAL-00057" summary="Refactor of observables">
-      <created>1465147550893</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1465147550893</updated>
+      <workItem from="1466007488946" duration="33824000" />
     </task>
     <task id="LOCAL-00058" summary="Refactor of observables">
       <created>1465148471221</created>
@@ -1805,7 +1840,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466361489541</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Add filtering package">
+      <created>1466364860355</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1466364860355</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1841,7 +1882,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172389000" />
+    <option name="totallyTimeSpent" value="172507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -1979,7 +2020,7 @@
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java</url>
           <line>42</line>
           <properties>
             <option name="lambda-ordinal" value="0" />
@@ -1987,7 +2028,7 @@
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java</url>
           <line>61</line>
           <properties />
           <option name="timeStamp" value="98" />
@@ -2145,20 +2186,6 @@
           <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObserverVsIterator.java">
@@ -2428,12 +2455,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/ObservableExceptions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4266055">
+        <state vertical-scroll-proportion="0.0">
           <caret line="50" column="95" selection-start-line="50" selection-start-column="95" selection-end-line="50" selection-end-column="95" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.34891486">
+            <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

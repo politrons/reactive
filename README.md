@@ -61,7 +61,12 @@ All the most common features of Observable
 
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
+    
+* Errors
 
+    ![My image](src/main/resources/img/rsz_2subscribeonc.png)
+    * [ObservableExceptions] (src/test/java/rx/observables/errors/ObservableExceptions.java)
+        
 * Utils
     * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
     * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
