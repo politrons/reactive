@@ -91,7 +91,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor vertical-scroll-proportion="0.27378964">
-                <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+                <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1549,13 +1549,7 @@
       <workItem from="1465317550556" duration="28977000" />
       <workItem from="1465893127410" duration="2443000" />
       <workItem from="1465900129621" duration="1542000" />
-      <workItem from="1466007488946" duration="34067000" />
-    </task>
-    <task id="LOCAL-00059" summary="Refactor of observables">
-      <created>1465153085874</created>
-      <option name="number" value="00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1465153085874</updated>
+      <workItem from="1466007488946" duration="34103000" />
     </task>
     <task id="LOCAL-00060" summary="Refactor of observables">
       <created>1465153714914</created>
@@ -1845,7 +1839,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466364975433</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Add filtering package">
+      <created>1466365220898</created>
+      <option name="number" value="00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1466365220898</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1881,7 +1881,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172750000" />
+    <option name="totallyTimeSpent" value="172786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="6" />
@@ -2466,7 +2466,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.27378964">
-            <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+            <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />

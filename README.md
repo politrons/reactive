@@ -38,7 +38,7 @@ All the most common features of Observable
     * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
     * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
     
-* Filtering**
+* **Filtering**
 
     ![My image](src/main/resources/img/rsz_1filter.png)
     * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
