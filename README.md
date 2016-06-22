@@ -81,7 +81,7 @@ An Observable that just emit 1 item through the pipeline.
 
 ### Relay
 
-A subject which will subscribe observers and it will keep the pipeline open all the time.
+A subject which subscribe observers and keep the pipeline open all the time.
 
 * [Relay] (src/test/java/rx/relay/Relay.java)
 
