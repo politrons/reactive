@@ -3,6 +3,8 @@ package rx.relay;
 import com.jakewharton.rxrelay.BehaviorRelay;
 import com.jakewharton.rxrelay.ReplayRelay;
 import org.junit.Test;
+import rx.Observer;
+import rx.Subscription;
 
 
 /**
@@ -43,6 +45,23 @@ public class Relay {
         relay.call("2");
         relay.call("3");
         relay.subscribe(result -> System.out.println("Observer2:" + result));
+        relay.call("4");
+        relay.call("5");
+    }
+
+    /**
+     * ReplayRelay it works just like hot observables, once that an observer subscribe, the Relay will replay all items already emitted
+     * to another observer.
+     * it should return 1,2,3,4,5 for both observers.
+     */
+    @Test
+    public void testReplaytRelaySharingObserver() {
+        ReplayRelay<String> relay = ReplayRelay.create();
+        Subscription subscription = relay.subscribe(result -> System.out.println("Observer1:" + result));
+        relay.call("1");
+        relay.call("2");
+        relay.call("3");
+        relay.subscribe((Observer<? super String>) subscription);
         relay.call("4");
         relay.call("5");
     }
