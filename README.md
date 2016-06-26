@@ -99,3 +99,6 @@ The Java 8 Stream API with examples of most useful operators.
 
 * [StreamUtils] (src/test/java/stream/StreamUtils.java)
 
+* [Functions] (src/test/java/stream/Functions.java)
+
+
