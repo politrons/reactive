@@ -12,6 +12,7 @@ This project it´s just a complement to play around and put in practice what I´
 
 To reference to the real documentation go here https://github.com/ReactiveX/RxJava/wiki
 
+RxScala examples [here](https://github.com/politrons/reactiveScala)
 
 ### Observables
 
