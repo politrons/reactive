@@ -82,6 +82,20 @@ public class ObservableSubscription {
                 .awaitTerminalEvent(2, TimeUnit.SECONDS);
     }
 
+
+    boolean onSubscribe = false;
+
+    @Test
+    public void observableDoOnSubscribe() {
+        String val = "test";
+        Observable.just(val)
+                  .doOnSubscribe(() -> onSubscribe = true)
+                  .filter(s -> onSubscribe)
+                  .subscribe(s -> System.out.printf(s));
+    }
+
+
+
     private void sleep() {
         try {
             Thread.sleep(100);
