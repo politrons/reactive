@@ -26,53 +26,53 @@ All the most common features of Observable
 * **Combining**
 
     ![My image](src/main/resources/img/rsz_1zipo.png)
-    * [ObservableChain] (src/test/java/rx/observables/combining/ObservableChain.java)
-    * [ObservableConcat] (src/test/java/rx/observables/combining/ObservableConcat.java)
-    * [ObservableMerge] (src/test/java/rx/observables/combining/ObservableMerge.java)
-    * [ObservableZip] (src/test/java/rx/observables/combining/ObservableZip.java)
-    * [ObservableSwitch] (src/test/java/rx/observables/combining/ObservableSwitch.java)
+    * [Chain] (src/test/java/rx/observables/combining/ObservableChain.java)
+    * [Concat] (src/test/java/rx/observables/combining/ObservableConcat.java)
+    * [Merge] (src/test/java/rx/observables/combining/ObservableMerge.java)
+    * [Zip] (src/test/java/rx/observables/combining/ObservableZip.java)
+    * [Switch] (src/test/java/rx/observables/combining/ObservableSwitch.java)
 
 * **Creating**
 
     ![My image](src/main/resources/img/rsz_1createc.png)
-    * [ObservableDefer] (src/test/java/rx/observables/creating/ObservableDefer.java)
-    * [ObservableInterval] (src/test/java/rx/observables/creating/ObservableInterval.java)
-    * [ObservableSubscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
+    * [Defer] (src/test/java/rx/observables/creating/ObservableDefer.java)
+    * [Interval] (src/test/java/rx/observables/creating/ObservableInterval.java)
+    * [Subscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
     
 * **Filtering**
 
     ![My image](src/main/resources/img/rsz_1filter.png)
-    * [ObservableDebounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
-    * [ObservableDistinct] (src/test/java/rx/observables/filtering/ObservableDistinct.java)
-    * [ObservableSkip] (src/test/java/rx/observables/filtering/ObservableSkip.java)
-    * [ObservableTake] (src/test/java/rx/observables/filtering/ObservableTake.java)
+    * [Debounce] (src/test/java/rx/observables/filtering/ObservableDebounce.java)
+    * [Distinct] (src/test/java/rx/observables/filtering/ObservableDistinct.java)
+    * [Skip] (src/test/java/rx/observables/filtering/ObservableSkip.java)
+    * [Take] (src/test/java/rx/observables/filtering/ObservableTake.java)
 
 * **Transforming**
 
     ![My image](src/main/resources/img/rsz_flatmap.png)
-    * [ObservableMap] (src/test/java/rx/observables/transforming/ObservableMap.java)
-    * [ObservableFlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
-    * [ObservableGroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
-    * [ObservableScan] (src/test/java/rx/observables/transforming/ObservableScan.java)
-    * [ObservableBuffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
-    * [ObservableWindow] (src/test/java/rx/observables/transforming/ObservableWindow.java)
-    * [ObservableCompose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
+    * [Map] (src/test/java/rx/observables/transforming/ObservableMap.java)
+    * [FlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
+    * [GroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
+    * [Scan] (src/test/java/rx/observables/transforming/ObservableScan.java)
+    * [Buffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
+    * [Window] (src/test/java/rx/observables/transforming/ObservableWindow.java)
+    * [Compose] (src/test/java/rx/observables/transforming/ObservableCompose.java)
 
 * **Scheduler**
 
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
-    * [ObservableAsynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
+    * [Asynchronous] (src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
     
 * **Errors**
 
     ![My image](src/main/resources/img/rsz_2subscribeonc.png)
-    * [ObservableExceptions] (src/test/java/rx/observables/errors/ObservableExceptions.java)
+    * [Exceptions] (src/test/java/rx/observables/errors/ObservableExceptions.java)
         
 * **Utils**
-    * [ObservableDelay] (src/test/java/rx/observables/utils/ObservableDelay.java)
-    * [ObservableAmbConditional] (src/test/java/rx/observables/utils/ObservableAmbConditional.java)
-    * [ObservableCache] (src/test/java/rx/observables/utils/ObservableCache.java)
-    * [ObservableToBlocking] (src/test/java/rx/observables/utils/ObservableToBlocking.java)
+    * [Delay] (src/test/java/rx/observables/utils/ObservableDelay.java)
+    * [AmbConditional] (src/test/java/rx/observables/utils/ObservableAmbConditional.java)
+    * [Cache] (src/test/java/rx/observables/utils/ObservableCache.java)
+    * [ToBlocking] (src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
 
 ### Single
