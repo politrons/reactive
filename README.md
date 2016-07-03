@@ -69,9 +69,10 @@ All the most common features of Observable
     * [ObservableExceptions] (src/test/java/rx/observables/errors/ObservableExceptions.java)
         
 * **Utils**
-    * [ObservableAmbConditional] (src/test/java/rx/observables/ObservableAmbConditional.java)
-    * [ObservableCache] (src/test/java/rx/observables/ObservableCache.java)
-    * [ObservableToBlocking] (src/test/java/rx/observables/ObservableToBlocking.java)
+    * [ObservableDelay] (src/test/java/rx/observables/utils/ObservableDelay.java)
+    * [ObservableAmbConditional] (src/test/java/rx/observables/utils/ObservableAmbConditional.java)
+    * [ObservableCache] (src/test/java/rx/observables/utils/ObservableCache.java)
+    * [ObservableToBlocking] (src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
 
 ### Single

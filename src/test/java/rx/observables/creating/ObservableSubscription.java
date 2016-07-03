@@ -83,19 +83,6 @@ public class ObservableSubscription {
     }
 
 
-    boolean onSubscribe = false;
-
-    @Test
-    public void observableDoOnSubscribe() {
-        String val = "test";
-        Observable.just(val)
-                  .doOnSubscribe(() -> onSubscribe = true)
-                  .filter(s -> onSubscribe)
-                  .subscribe(s -> System.out.printf(s));
-    }
-
-
-
     private void sleep() {
         try {
             Thread.sleep(100);

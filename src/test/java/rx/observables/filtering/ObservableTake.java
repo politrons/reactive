@@ -64,19 +64,4 @@ public class ObservableTake {
                   .subscribe(System.out::println);
 
     }
-
-//    /**
-//     * We skip the emit of items until the passed observable start emitting items
-//     * Shall print
-//     * 4,5
-//     */
-//    @Test
-//    public void testTakeUntil() throws InterruptedException {
-//        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-//        Observable.from(numbers)
-//                  .takeUntil(number -> number < 3)
-//                  .subscribe(System.out::println);
-//
-//    }
-
 }

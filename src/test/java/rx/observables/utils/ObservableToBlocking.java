@@ -1,4 +1,4 @@
-package rx.observables;
+package rx.observables.utils;
 
 import org.junit.Test;
 import rx.Observable;
