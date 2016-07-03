@@ -14,7 +14,7 @@ To reference to the real documentation go here https://github.com/ReactiveX/RxJa
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
 
-### Observables
+ ![My image](src/main/resources/img/rsz_reactive-extensions.png)
 
 All the most common features of Observable
 
