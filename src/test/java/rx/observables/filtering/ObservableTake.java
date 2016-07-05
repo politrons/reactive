@@ -64,4 +64,27 @@ public class ObservableTake {
                   .subscribe(System.out::println);
 
     }
+
+    /**
+     * We take the emit of items while the predicate function is true
+     * Shall print
+     * 1,2,3
+     */
+    @Test
+    public void tesTakeUntil() {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        Observable.from(numbers)
+                  .takeUntil(number -> number > 3)
+                  .subscribe(System.out::println);
+
+    }
+
+    @Test
+    public void getFirstUser(){
+        Observable<List<Integer>> findUser =Observable.just(Arrays.asList(1,2,3));
+        Observable<Integer> user = findUser
+                .flatMap(Observable::from)
+                .first();
+        user.subscribe(System.out::println);
+    }
 }
