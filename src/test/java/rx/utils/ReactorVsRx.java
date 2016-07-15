@@ -1,4 +1,4 @@
-package rx.observables.utils;
+package rx.utils;
 
 import org.junit.Test;
 import reactor.core.publisher.Flux;
