@@ -43,7 +43,7 @@ public class ObservableSwitch {
     /**
      * We switch from original item to a new observable just using switchMap.
      * It´s a way to replace the Observable instead just the item as map does
-     * Emitted:Person{name='Pablo', age=34, sex='male'}
+     * Emitted:Person{name='Pablo', age=0, sex='no_sex'}
      */
     @Test
     public void testSwitchMap() {
