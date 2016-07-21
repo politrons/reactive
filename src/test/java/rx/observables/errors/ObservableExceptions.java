@@ -56,7 +56,7 @@ public class ObservableExceptions {
                                               .map(Object::toString)
                                               .doOnError(failure -> System.out.println("Error:" + failure.getCause()))
                                               .retryWhen(errors -> errors.doOnNext(o -> count++)
-                                                                         .flatMap(t -> count > 3 ? Observable.error(t) : Observable.just(null)),
+                                                                         .flatMap(t -> count > 3 ? Observable.error(t) : Observable.just(null).delay(100, TimeUnit.MILLISECONDS)),
                                                          Schedulers.newThread())
                                               .onErrorResumeNext(t -> {
                                                   System.out.println("Error after all retries:" + t.getCause());
