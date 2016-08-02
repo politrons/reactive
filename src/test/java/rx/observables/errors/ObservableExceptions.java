@@ -66,4 +66,22 @@ public class ObservableExceptions {
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(500, TimeUnit.MILLISECONDS);
     }
 
+    /**
+     * Here is a silly example how runtimeExceptions are not needed
+     */
+    @Test
+    public void observableRuntimeException() {
+        Integer[] numbers = {0, 1, 2, 3, 4, 5};
+
+        Observable.from(numbers)
+                  .doOnNext(number -> throwRuntimeException())
+                  .doOnError(t -> System.out.println("Expecting illegal argument exception:" + t.getMessage()))
+                  .subscribe();
+
+    }
+
+    private void throwRuntimeException() {
+        throw new RuntimeException();
+    }
+
 }
