@@ -3,6 +3,7 @@ package rx.utils;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import org.junit.Test;
+import rx.Observable;
 import rx.observables.MathObservable;
 
 import java.util.*;
@@ -22,6 +23,16 @@ public class RevertMapObservable {
         public Product(Integer quantity) {
             this.quantity = quantity;
         }
+    }
+
+    @Test
+    public void collectCollections() {
+        Observable.from(Arrays.asList(1, 2, 3))
+                  .map(Arrays::asList)
+                  .scan(new ArrayList<Integer>(), (l1, l2) -> {
+                      l1.addAll(l2);
+                      return l1;
+                  }).subscribe(System.out::println);
     }
 
     @Test
@@ -157,7 +168,6 @@ public class RevertMapObservable {
 
     private rx.Observable.Transformer<Integer, Map.Entry<String, List<Product>>> transformToEntry(
             Map.Entry<String, List<Product>> entry) {return i -> rx.Observable.just(entry);}
-
 
 
 }
