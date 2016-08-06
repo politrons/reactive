@@ -35,6 +35,7 @@ All the most common features of Observable
 * **Creating**
 
     ![My image](src/main/resources/img/rsz_1createc.png)
+    * [Create] (src/test/java/rx/observables/creating/ObservableCreate.java)
     * [Defer] (src/test/java/rx/observables/creating/ObservableDefer.java)
     * [Interval] (src/test/java/rx/observables/creating/ObservableInterval.java)
     * [Subscription] (src/test/java/rx/observables/creating/ObservableSubscription.java)
