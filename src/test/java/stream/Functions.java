@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 
@@ -29,8 +30,8 @@ public class Functions {
     @Test
     public void functionFunction() throws InterruptedException {
         String words = Stream.of("hello_functional_world")
-                             .map(replaceWordsFunction())
-                             .reduce("", String::concat);
+                .map(replaceWordsFunction())
+                .reduce("", String::concat);
 
         System.out.println(words);
     }
@@ -49,8 +50,8 @@ public class Functions {
     @Test
     public void consumerFunction() throws InterruptedException {
         Arrays.asList("hello", "functional", "world")
-              .stream()
-              .forEach(upperWordsFunction());
+                .stream()
+                .forEach(upperWordsFunction());
 
     }
 
@@ -69,8 +70,8 @@ public class Functions {
     @Test
     public void predicateFunction() throws InterruptedException {
         String words = Stream.of("hello ", "OOD", "functional ", "world")
-                             .filter(isAFunctionalWorldFunction())
-                             .reduce("", String::concat);
+                .filter(isAFunctionalWorldFunction())
+                .reduce("", String::concat);
 
         System.out.println(words);
     }
@@ -79,26 +80,44 @@ public class Functions {
         return word -> word.trim().equals("hello") || word.trim().equals("functional") || word.trim().equals("world");
     }
 
+    /**
+     * Supplier function does not receive any argument, and just return a value
+     * @throws InterruptedException
+     */
+    @Test
+    public void supplierFunction() throws InterruptedException {
+        Stream.of("Actual time:")
+                .map(s-> s.concat(String.valueOf(systemCurrentFunction().get())))
+                .forEach(System.out::println);
+
+    }
+
+    private Supplier<Long> systemCurrentFunction() {
+        return System::currentTimeMillis;
+    }
 
     /**
      * In this example we can see how we can combine the three types of functions in the same pipeline,
      * to provide to our pipeline all the logic that it needs.
+     *
      * @throws InterruptedException
      */
     @Test
     public void allFunctionsCombined() throws InterruptedException {
         Stream.of("hello_Foo_functional_OOD_world_!_")
-                             .map(replaceWordsFunction())
-                             .map(splitWordsFunction())
-                             .flatMap(ws -> ws.stream()
-                                              .filter(isAFunctionalWorldFunction()))
-                             .forEach(upperWordsFunction());
+                .map(replaceWordsFunction())
+                .map(splitWordsFunction())
+                .flatMap(ws -> ws.stream()
+                        .filter(isAFunctionalWorldFunction()))
+                .forEach(upperWordsFunction());
 
     }
 
     private Function<String, List<String>> splitWordsFunction() {
         return a -> Arrays.asList(a.split(" "));
     }
+
+
 
 
 }

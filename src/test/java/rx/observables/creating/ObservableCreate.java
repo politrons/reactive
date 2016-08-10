@@ -52,7 +52,9 @@ public class ObservableCreate {
                 .buffer(3).scan(new ArrayList<Integer>(), (l, l1) -> {
                     l.addAll(l1);
                     return l;
-                }).map(l -> l.stream().reduce((x, y) -> x + y).get()).toBlocking().first();
+                }).map(l -> l.stream()
+                        .reduce((x, y) -> x + y))
+                .toBlocking().first().get();
     }
 
 

@@ -23,8 +23,8 @@ public class ObservableDelay {
     public void delayCreation() {
         long start = System.currentTimeMillis();
         Subscription subscription = Observable.just("hello reactive world")
-                                              .delay(200, TimeUnit.MICROSECONDS)
-                                              .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
+                .delay(200, TimeUnit.MICROSECONDS)
+                .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
     }
 
@@ -32,18 +32,18 @@ public class ObservableDelay {
      * If we want to delay the every single item emitted in the pipeline we will need a hack,
      * one possible hack is use zip operator and combine every item emitted with an interval so every item emitted has to wait until interval emit the item.
      * Shall print
-     * 
-     *    time:586
-     *    time:783
-     *    time:982
+     * <p>
+     * time:586
+     * time:783
+     * time:982
      */
     @Test
     public void delaySteps() {
         long start = System.currentTimeMillis();
-        Subscription subscription = Observable.zip(Observable.from(Arrays.asList(1, 2, 3)), Observable.interval(200, TimeUnit.MILLISECONDS), (i, t) -> i)
-                                              .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
+        Subscription subscription =
+                Observable.zip(Observable.from(Arrays.asList(1, 2, 3)), Observable.interval(200, TimeUnit.MILLISECONDS),
+                               (i, t) -> i)
+                        .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(3000, TimeUnit.MILLISECONDS);
     }
-
-
 }
