@@ -75,6 +75,14 @@ public class ObservableFlatMap {
     }
 
 
+    @Test
+    public void multiFlatMap() {
+
+        Observable.just(1)
+                .flatMap(x -> Observable.just(2), (x, y) -> x + y)
+                .subscribe(System.out::println);
+    }
+
     private void contactWords(String word) {
         System.out.println("Thread:"+Thread.currentThread().getName());
         result = result.concat(word);

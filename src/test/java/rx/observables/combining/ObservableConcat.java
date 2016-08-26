@@ -12,10 +12,9 @@ public class ObservableConcat {
     /**
      * Get every emitted item and concat with the previous emitted item
      * Shall print
-     *   Hello
-     *   reactive
-     *   world
-     *
+     * Hello
+     * reactive
+     * world
      */
     @Test
     public void testContact() {
@@ -23,7 +22,7 @@ public class ObservableConcat {
         Observable.concat(Observable.just("Hello"),
                           Observable.just("reactive"),
                           Observable.just("world"))
-                  .subscribe(System.out::println);
+                .subscribe(System.out::println);
     }
 
 

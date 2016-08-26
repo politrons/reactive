@@ -3,8 +3,6 @@ package rx.observables.creating;
 import org.junit.Test;
 import rx.Observable;
 
-import java.util.ArrayList;
-
 
 /**
  * @author Pablo Perez
@@ -41,19 +39,17 @@ public class ObservableCreate {
     @Test
     public void returnObservableInCreate() {
         Integer[] numbers = {0, 1, 2, 3, 4};
-        Observable.create(observer -> {
-            observer.onNext(totalReadNumbers(numbers));
-        })
-                .subscribe(System.out::println, System.out::println);
+        Observable.create(observer -> observer.onNext(totalReadNumbers(numbers)))
+                .subscribe(n -> System.out.println(n + " in thread " + Thread.currentThread().getName()),
+                           System.out::println);
     }
 
     private Integer totalReadNumbers(Integer[] numbers) {
         return Observable.from(numbers)
-                .buffer(3).scan(new ArrayList<Integer>(), (l, l1) -> {
-                    l.addAll(l1);
-                    return l;
-                }).map(l -> l.stream()
+                .buffer(3)
+                .map(l -> l.stream()
                         .reduce((x, y) -> x + y))
+                .doOnNext(n -> System.out.println("Buffer Thread:" + Thread.currentThread().getName()))
                 .toBlocking().first().get();
     }
 
