@@ -30,18 +30,18 @@ public class ObservableExceptions {
         Integer[] numbers = {0, 1, 2, 3, 4, 5};
 
         Observable.from(numbers)
-                  .doOnNext(number -> {
-                      if (number > 3) {
-                          try {
-                              throw new IllegalArgumentException();
-                          } catch (Exception e) {
-                              throw new RuntimeException(e);
-                          }
-                      }
+                .doOnNext(number -> {
+                    if (number > 3) {
+                        try {
+                            throw new IllegalArgumentException();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
 
-                  })
-                  .doOnError(t -> System.out.println("Expecting illegal argument exception:" + t.getMessage()))
-                  .subscribe();
+                })
+                .doOnError(t -> System.out.println("Expecting illegal argument exception:" + t.getMessage()))
+                .subscribe();
 
     }
 
@@ -53,16 +53,17 @@ public class ObservableExceptions {
     @Test
     public void observableOnErrorResumeNext() {
         Subscription subscription = Observable.just(null)
-                                              .map(Object::toString)
-                                              .doOnError(failure -> System.out.println("Error:" + failure.getCause()))
-                                              .retryWhen(errors -> errors.doOnNext(o -> count++)
-                                                                         .flatMap(t -> count > 3 ? Observable.error(t) : Observable.just(null).delay(100, TimeUnit.MILLISECONDS)),
-                                                         Schedulers.newThread())
-                                              .onErrorResumeNext(t -> {
-                                                  System.out.println("Error after all retries:" + t.getCause());
-                                                  return Observable.just("I save the world for extinction!");
-                                              })
-                                              .subscribe(s -> System.out.println(s));
+                .map(Object::toString)
+                .doOnError(failure -> System.out.println("Error:" + failure.getCause()))
+                .retryWhen(errors -> errors.doOnNext(o -> count++)
+                                   .flatMap(t -> count > 3 ? Observable.error(t) :
+                                           Observable.just(null).delay(100, TimeUnit.MILLISECONDS)),
+                           Schedulers.newThread())
+                .onErrorResumeNext(t -> {
+                    System.out.println("Error after all retries:" + t.getCause());
+                    return Observable.just("I save the world for extinction!");
+                })
+                .subscribe(s -> System.out.println(s));
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(500, TimeUnit.MILLISECONDS);
     }
 
@@ -74,11 +75,12 @@ public class ObservableExceptions {
         Integer[] numbers = {0, 1, 2, 3, 4, 5};
 
         Observable.from(numbers)
-                  .doOnNext(number -> throwRuntimeException())
-                  .doOnError(t -> System.out.println("Expecting illegal argument exception:" + t.getMessage()))
-                  .subscribe();
+                .doOnNext(number -> throwRuntimeException())
+                .doOnError(t -> System.out.println("Expecting illegal argument exception:" + t.getMessage()))
+                .subscribe();
 
     }
+
 
     private void throwRuntimeException() {
         throw new RuntimeException();
