@@ -47,6 +47,8 @@ public class ObservableAsynchronous {
                 .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
     }
 
+
+
     /**
      * Does not matter at what point in your pipeline you set your subscribeOn, once that is set in the pipeline,
      * all steps will be executed in another thread.
@@ -66,6 +68,47 @@ public class ObservableAsynchronous {
         new TestSubscriber((Observer) subscription)
                 .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
     }
+
+    /**
+     * Combining subscribeOn and observerOn it´s possible, and one can take the control over  the other
+     * In this example since we define observerOn, everything before this operator it will be executed in the observerOn thread defined,
+     * After that, when we use the subscribeOn operator, the rest of the step it will be executed in the defined thread.
+     * @throws InterruptedException
+     */
+    @Test
+    public void testObservableObservableOnAndSubscribeOn() throws InterruptedException {
+        Subscription subscription = Observable.just(1)
+                .doOnNext(number -> System.out.println("First step " + Thread.currentThread()
+                        .getName()))
+                .observeOn(Schedulers.newThread())
+                .doOnNext(number -> System.out.println("Second step " + Thread.currentThread()
+                        .getName()))
+                .doOnNext(number -> System.out.println("Third step " + Thread.currentThread()
+                        .getName()))
+                .subscribeOn(Schedulers.newThread())
+                .subscribe();
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
+    }
+
+    /**
+     * Combining subscribeOn and observerOn it´s possible, and one can override the other
+     * @throws InterruptedException
+     */
+    @Test
+    public void testObservableSubscribeOnAndObserverOn() throws InterruptedException {
+        Subscription subscription = Observable.just(1)
+                .doOnNext(number -> System.out.println("First step " + Thread.currentThread()
+                        .getName()))
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(Schedulers.newThread())
+                .doOnNext(number -> System.out.println("Second step " + Thread.currentThread()
+                        .getName()))
+                .subscribe();
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(100, TimeUnit.MILLISECONDS);
+    }
+
 
     //************************DIFFERENCE BETWEEN ASYNC AND SYNC OBSERVABLE***************************\\
 

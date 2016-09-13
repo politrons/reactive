@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca86c34a-a1c2-45ae-bf2a-74535968ffb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableAsynchronous.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObservableAsynchronous.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="51" selection-start-line="85" selection-start-column="8" selection-end-line="86" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.44362018">
+              <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -70,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableDelay.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableDelay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0761421">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -85,7 +84,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1286#1287#0" expanded="false" />
+                <element signature="e#1332#1333#0" expanded="false" />
+                <element signature="e#1519#1520#0" expanded="false" />
+                <element signature="e#1566#1567#0" expanded="false" />
+                <element signature="e#1636#1637#0" expanded="false" />
+                <element signature="e#1680#1681#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +103,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-              <folding />
+              <folding>
+                <element signature="e#0#1441#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +114,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4404" column="31" selection-start-line="4404" selection-start-column="31" selection-end-line="4404" selection-end-column="31" />
+              <caret line="1274" column="21" selection-start-line="1274" selection-start-column="21" selection-end-line="1274" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -124,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableCreate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -190,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/utils/ReactorVsRx.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/StreamUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableGroupBy.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/utils/RevertMapObservable.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -201,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
       </list>
     </option>
   </component>
@@ -236,10 +246,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
+    <option name="x" value="46" />
     <option name="y" value="23" />
-    <option name="width" value="1238" />
-    <option name="height" value="777" />
+    <option name="width" value="1874" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -381,7 +391,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -808,6 +817,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -870,59 +880,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/rx/observables/creating" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableDelay.delayObservableList">
-    <configuration default="false" name="ObservableConcat.testContactObservables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.combining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.combining" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableConcat" />
-      <option name="METHOD_NAME" value="testContactObservables" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ObservableExceptions.retryWhen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.errors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.errors" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
-      <option name="METHOD_NAME" value="retryWhen" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn">
     <configuration default="false" name="ObservableExceptions.retryWhen1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -988,6 +946,58 @@
       <option name="PACKAGE_NAME" value="rx.observables.utils" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.utils.ObservableDelay" />
       <option name="METHOD_NAME" value="delayObservableList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.scheduler" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.scheduler.ObservableAsynchronous" />
+      <option name="METHOD_NAME" value="testObservableSubscribeOnAndObserverOn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.scheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.scheduler" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.scheduler.ObservableAsynchronous" />
+      <option name="METHOD_NAME" value="testObservableObservableOnAndSubscribeOn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1682,19 +1692,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HotObservable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContactObservables" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen1" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhenTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableDelay.delayObservableList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen1" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhenTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableDelay.delayObservableList" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableDelay.delayObservableList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhenTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableConcat.testContactObservables" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableDelay.delayObservableList" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhenTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryWhen1" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1809,13 +1819,9 @@
       <workItem from="1471519110282" duration="608000" />
       <workItem from="1472198579214" duration="884000" />
       <workItem from="1472716922643" duration="1353000" />
-      <workItem from="1472800850305" duration="977000" />
-    </task>
-    <task id="LOCAL-00086" summary="Refactor of observables">
-      <created>1465585225954</created>
-      <option name="number" value="00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1465585225954</updated>
+      <workItem from="1472800850305" duration="1258000" />
+      <workItem from="1473761137399" duration="861000" />
+      <workItem from="1473779174250" duration="1826000" />
     </task>
     <task id="LOCAL-00087" summary="Refactor of observables">
       <created>1465585482496</created>
@@ -2105,46 +2111,52 @@
       <option name="project" value="LOCAL" />
       <updated>1472201615746</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="observable create">
+      <created>1472801862906</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1472801862906</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableDelay_delayObservableList - 2016.09.02 at 08h 27m 03s.xml">
-      <configuration name="ObservableDelay.delayObservableList" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 16h 59m 59s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDelay_delayObservableList - 2016.09.02 at 08h 27m 42s.xml">
-      <configuration name="ObservableDelay.delayObservableList" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 00m 13s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDelay_delayObservableList - 2016.09.02 at 08h 29m 11s.xml">
-      <configuration name="ObservableDelay.delayObservableList" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 00m 36s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDelay_delayObservableList - 2016.09.02 at 08h 30m 00s.xml">
-      <configuration name="ObservableDelay.delayObservableList" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 02m 36s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableDelay_delayObservableList - 2016.09.02 at 08h 30m 17s.xml">
-      <configuration name="ObservableDelay.delayObservableList" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 03m 11s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableExceptions_retryWhenTest - 2016.09.01 at 09h 12m 56s.xml">
-      <configuration name="ObservableExceptions.retryWhenTest" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 03m 31s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableExceptions_retryWhenTest - 2016.09.01 at 09h 13m 25s.xml">
-      <configuration name="ObservableExceptions.retryWhenTest" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 03m 49s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableExceptions_retryWhenTest - 2016.09.01 at 09h 13m 50s.xml">
-      <configuration name="ObservableExceptions.retryWhenTest" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 08m 35s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableExceptions_retryWhenTest - 2016.09.01 at 09h 24m 20s.xml">
-      <configuration name="ObservableExceptions.retryWhenTest" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableObservableOnAndSubscribeOn - 2016.09.13 at 17h 09m 24s.xml">
+      <configuration name="ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableExceptions_retryWhenTest - 2016.09.01 at 09h 24m 33s.xml">
-      <configuration name="ObservableExceptions.retryWhenTest" configurationId="JUnit" />
+    <history-entry file="ObservableAsynchronous_testObservableSubscribeOnAndObserverOn - 2016.09.13 at 17h 00m 28s.xml">
+      <configuration name="ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260566000" />
+    <option name="totallyTimeSpent" value="263534000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1238" height="777" extended-state="6" />
+    <frame x="46" y="23" width="1874" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2154,10 +2166,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38123167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27027026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37880033" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3779264" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2292,7 +2304,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java</url>
-          <line>103</line>
+          <line>146</line>
           <properties />
           <option name="timeStamp" value="105" />
         </line-breakpoint>
@@ -2607,7 +2619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2645,35 +2656,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/com/sun/org/apache/xpath/internal/functions/WrongNumberArgsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4404" column="31" selection-start-line="4404" selection-start-column="31" selection-end-line="4404" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="51" selection-start-line="85" selection-start-column="8" selection-end-line="86" selection-end-column="64" />
-          <folding />
+          <folding>
+            <element signature="e#0#1441#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2689,14 +2678,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1286#1287#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1519#1520#0" expanded="false" />
+            <element signature="e#1566#1567#0" expanded="false" />
+            <element signature="e#1636#1637#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0761421">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.14/rxjava-1.0.14-sources.jar!/rx/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1274" column="21" selection-start-line="1274" selection-start-column="21" selection-end-line="1274" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44362018">
+          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
           <folding />
         </state>
       </provider>
