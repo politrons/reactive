@@ -55,6 +55,7 @@ All the most common features of Observable
     * [FlatMap] (src/test/java/rx/observables/transforming/ObservableFlatMap.java)
     * [GroupBy] (src/test/java/rx/observables/transforming/ObservableGroupBy.java)
     * [Scan] (src/test/java/rx/observables/transforming/ObservableScan.java)
+    * [Collect] (src/test/java/rx/observables/transforming/ObservableCollect.java)
     * [Buffer] (src/test/java/rx/observables/transforming/ObservableBuffer.java)
     * [Window] (src/test/java/rx/observables/transforming/ObservableWindow.java)
     * [Compose] (src/test/java/rx/observables/transforming/ObservableCompose.java)

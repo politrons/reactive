@@ -6,13 +6,15 @@ import rx.Observable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 
 /**
  * @author Pablo Perez
- *
+ */
+
+/**
+ * Collect operator include a function where we define the init value, and a BiConsumer function where we
+ * receive the accumulator to mutate and the item emitted, which we should add into the accumulator
  */
 public class ObservableCollect {
 
@@ -20,9 +22,7 @@ public class ObservableCollect {
     public void collectObservableList() {
         Observable.from(Arrays.asList(1, 2))
                 .flatMap(item -> getFirstList())
-                .collect(ArrayList<Integer>::new, (lastList, newList) ->
-                        Stream.concat(lastList.stream(),
-                                newList.stream()).collect(Collectors.toList()))
+                .collect(ArrayList<Integer>::new, ArrayList::addAll)
                 .subscribe(System.out::println);
 
     }
