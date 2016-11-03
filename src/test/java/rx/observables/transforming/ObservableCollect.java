@@ -22,7 +22,7 @@ public class ObservableCollect {
     public void collectObservableList() {
         Observable.from(Arrays.asList(1, 2))
                 .flatMap(item -> getFirstList())
-                .collect(ArrayList<Integer>::new, ArrayList::addAll)
+                .collect(ArrayList<Integer>::new, List::addAll)
                 .subscribe(System.out::println);
 
     }
