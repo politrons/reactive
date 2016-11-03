@@ -4,6 +4,7 @@ import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
 import rx.observables.ConnectableObservable;
+import rx.subjects.AsyncSubject;
 import rx.subjects.PublishSubject;
 import rx.subjects.ReplaySubject;
 import rx.subjects.Subject;
@@ -104,6 +105,22 @@ public class HotObservable {
         Thread.sleep(1000);
         observable.subscribe(publishSubject);
 
+    }
+
+    /**
+     * In this example we see how using hot observables ReplaySubject we can emit an item on broadcast to all the observers(subscribers).
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservableUsingAsyncSubject() throws InterruptedException {
+        Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
+        Subject<Long, Long> publishSubject = AsyncSubject.create();
+        interval.subscribe(publishSubject);
+        Thread.sleep(1000L);
+        subscribeToObservable(publishSubject, "First");
+        subscribeToObservable(publishSubject, "Second");
+        subscribeToObservable(publishSubject, "Third");
     }
 
 

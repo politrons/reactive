@@ -18,7 +18,7 @@ import rx.Observable;
 public class ObservableDefer {
 
 
-    String value = "none";
+    private String value = "none";
 
     public void setValue(String value) {
         this.value = value;
@@ -28,7 +28,7 @@ public class ObservableDefer {
         return Observable.just(value);
     }
 
-    public Observable<String> getDeferValue() {
+    private Observable<String> getDeferValue() {
         return Observable.defer(() -> Observable.just(value));
     }
 

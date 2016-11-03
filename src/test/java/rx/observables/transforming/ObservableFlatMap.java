@@ -5,6 +5,7 @@ import rx.Observable;
 import rx.schedulers.Schedulers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -86,6 +87,22 @@ public class ObservableFlatMap {
     private void contactWords(String word) {
         System.out.println("Thread:"+Thread.currentThread().getName());
         result = result.concat(word);
+    }
+
+    @Test
+    public void flatMapCities(){
+        List<String> cities = Arrays.asList("London", "Berlin", "Moscow");
+        Observable.from(cities)
+                .flatMap(city -> getReport(city)
+                .doOnNext(report->checkReport(city, report)));
+    }
+
+    private void checkReport(String city, String report) {
+        //TODO:Check here the report and city
+    }
+
+    private Observable<String> getReport(String city) {
+        return Observable.just("report");
     }
 
 }

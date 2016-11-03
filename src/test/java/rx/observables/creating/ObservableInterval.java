@@ -3,8 +3,11 @@ package rx.observables.creating;
 import org.junit.Test;
 import rx.Observable;
 import rx.Observer;
+import rx.Scheduler;
 import rx.Subscription;
 import rx.observers.TestSubscriber;
+import rx.schedulers.Schedulers;
+import rx.subjects.AsyncSubject;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,8 +28,20 @@ public class ObservableInterval {
                                               .map(time -> "item emitted\n")
                                               .subscribe(System.out::print);
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
+        System.out.println("Vertx started");
     }
 
+    @Test
+    public void testIntervalAsyncSubject() {
+        Scheduler scheduler = Schedulers.newThread();
+        AsyncSubject<String> asyncSubject = AsyncSubject.create();
+        final Subscription subscribe = Observable.interval(50, TimeUnit.MILLISECONDS, scheduler)
+                .map(time -> "item emitted\n")
+                .doOnCompleted(() -> System.out.println("all items emitted"))
+                .subscribe(System.out::println);
+        asyncSubject.subscribeOn(scheduler).subscribe((Observer<? super String>) subscribe);
+        new TestSubscriber().awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
+    }
 
     /**
      * Since interval work asynchronously you will have to use TestSubscriber class to wait a period of time

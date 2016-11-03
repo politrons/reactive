@@ -38,7 +38,7 @@ public class Relay {
      * it should return 1,2,3,4,5 for both observers.
      */
     @Test
-    public void testReplaytRelay() {
+    public void testReplayRelay() {
         ReplayRelay<String> relay = ReplayRelay.create();
         relay.subscribe(result -> System.out.println("Observer1:" + result));
         relay.call("1");
@@ -55,7 +55,7 @@ public class Relay {
      * it should return 1,2,3,4,5 for both observers.
      */
     @Test
-    public void testReplaytRelaySharingObserver() {
+    public void testReplayRelaySharingObserver() {
         ReplayRelay<String> relay = ReplayRelay.create();
         Subscription subscription = relay.subscribe(result -> System.out.println("Observer1:" + result));
         relay.call("1");
