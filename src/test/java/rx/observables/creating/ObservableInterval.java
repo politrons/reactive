@@ -25,8 +25,8 @@ public class ObservableInterval {
     @Test
     public void testIntervalObservable() {
         Subscription subscription = Observable.interval(50, TimeUnit.MILLISECONDS)
-                                              .map(time -> "item emitted\n")
-                                              .subscribe(System.out::print);
+                .map(time -> "item emitted\n")
+                .subscribe(System.out::print);
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
         System.out.println("Vertx started");
     }
@@ -51,11 +51,26 @@ public class ObservableInterval {
     @Test
     public void testIntervalObservableWithMax() {
         Subscription subscription = Observable.interval(50, TimeUnit.MILLISECONDS)
-                                              .map(time -> "item emitted\n")
-                                              .subscribe(System.out::print);
+                .map(time -> "item emitted\n")
+                .subscribe(System.out::print);
         TestSubscriber testSubscriber = new TestSubscriber((Observer) subscription);
         testSubscriber.awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
         subscription.unsubscribe();
         testSubscriber.awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
     }
+
+    @Test
+    public void testIntervalObservableWithError() {
+        Observable.interval(100, TimeUnit.MILLISECONDS)
+                .map(time -> "item\n")
+                .map(time -> null)
+                .materialize()
+                .flatMap(item -> Observable.just(item)
+                        .map(Object::toString)
+                        .onErrorResumeNext(t -> Observable.just("Item error")))
+                .subscribe(System.out::print);
+        TestSubscriber testSubscriber = new TestSubscriber();
+        testSubscriber.awaitTerminalEvent(5000, TimeUnit.MILLISECONDS);
+    }
+
 }

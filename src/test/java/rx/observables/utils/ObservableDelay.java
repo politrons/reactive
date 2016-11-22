@@ -63,4 +63,21 @@ public class ObservableDelay {
         new TestSubscriber().awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
 
     }
+
+    /**
+     * Another elegant solution it would be to create an observable with the list of items, and then use
+     * concatMap to pass all items from the first observable to the second, then this second observable
+     * can be created used delay operator afterwards.
+     */
+    @Test
+    public void delayObservablesWithConcatMap() {
+        Observable.from(Arrays.asList(Observable.just(1), Observable.just(2),Observable.just(3)))
+                .concatMap(s -> s.delay(100, TimeUnit.MILLISECONDS))
+                .subscribe(n -> System.out.println(n + " just came..."),
+                        e -> {
+                        },
+                        () -> System.out.println("Everybody came!"));
+        new TestSubscriber().awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
+
+    }
 }
