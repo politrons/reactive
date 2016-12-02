@@ -113,4 +113,8 @@ The Java 8 Functions with particle examples of how to use it.
 
 * [Functions] (src/test/java/stream/Functions.java)
 
+## Software craftsmanship
 
+* [Don't repeat yourself](src/test/java/good_practices/DRY.java)
+
+* [Single responsibility principle](src/test/java/good_practices/SRP.java)

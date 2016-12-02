@@ -23,9 +23,9 @@ public class ObservableMap {
     public void testMap() {
         String fruit = "apple";
         Observable.just(fruit)
-                  .map(apple -> "orange")
-                  .map(orange -> "banana")
-                  .subscribe(banana -> System.out.println("I´m a " + banana));
+                .map(apple -> "orange")
+                .map(orange -> "banana")
+                .subscribe(banana -> System.out.println("I´m a " + banana));
         System.out.println("I´ still a " + fruit);
     }
 
@@ -44,6 +44,19 @@ public class ObservableMap {
         return "Items form page " + page;
     }
 
+    @Test
+    public void test() {
+        List<String> strings = null;
+        Observable.from(strings)
+                .onErrorResumeNext(t -> {
+                    System.out.println("Null pointer error!!!!!:"+t);
+                    return Observable.just("works!");
+                })
+                .subscribe(i -> System.out.println(i),
+                        t -> System.out.println("Errror!!!"),
+                        () -> System.out.println("finish"));
+
+    }
 
 
 }

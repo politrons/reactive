@@ -7,6 +7,7 @@ import rx.observables.transforming.Person;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
@@ -306,7 +307,7 @@ public class StreamUtils {
     @Test
     public void immutableObject() {
         Person person = new Person("name", 35, "male");
-        Person modifierPerson= person.copy();
+        Person modifierPerson = person.copy();
         Thread thread = new Thread(() -> {
             Person modifiedPerson = getPerson(modifierPerson);
             System.out.println("Modified person:" + modifiedPerson.toString());
@@ -332,6 +333,18 @@ public class StreamUtils {
                     return person1;
                 })
                 .findAny().get();
+    }
+
+    @Test
+    public void flatMap() {
+
+        Arrays.asList(1, 2, 3, 4).stream()
+                .flatMap(number -> Stream.of(Arrays.asList("A", "C", "D", "B").stream()
+                        .map(String::toLowerCase)
+                        .collect(Collectors.toList())))
+                .collect(Collectors.toList()).get(0);
+
+
     }
 
 }

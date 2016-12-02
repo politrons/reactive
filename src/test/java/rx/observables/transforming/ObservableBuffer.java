@@ -11,8 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Pablo Perez
- *
- * Buffer allow keep the observable waiting, buffering the items emitted unitl a spceific number of items, or a period of time.
+ *         <p>
+ *         Buffer allow keep the observable waiting, buffering the items emitted unitl a spceific number of items, or a period of time.
  */
 public class ObservableBuffer {
 
@@ -27,8 +27,8 @@ public class ObservableBuffer {
     public void bufferCountObservable() {
         Integer[] numbers = {0, 1, 2, 3, 4};
         Observable.from(numbers)
-                  .buffer(3)
-                  .subscribe(list -> System.out.println("Group size:" + list.size()));
+                .buffer(3)
+                .subscribe(list -> System.out.println("Group size:" + list.size()));
 
     }
 
@@ -40,13 +40,25 @@ public class ObservableBuffer {
     @Test
     public void bufferTimeStampObservable() throws InterruptedException {
         Subscription subscription = Observable.interval(100, TimeUnit.MILLISECONDS)
-                                              .buffer(50, TimeUnit.MILLISECONDS)
-                                              .doOnNext(
-                                                      list -> System.out.println("Group size " + list.size()))
-                                              .subscribe();
+                .buffer(50, TimeUnit.MILLISECONDS)
+                .doOnNext(
+                        list -> System.out.println("Group size " + list.size()))
+                .subscribe();
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
 
 
     }
+
+    @Test
+    public void stringBuffer() {
+        Integer[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Observable.from(numbers)
+                .map(number -> "uniqueKey=" + number )
+                .buffer(4)
+                .map(ns -> String.join("&", ns))
+                .subscribe(System.out::println);
+
+    }
+
 
 }
