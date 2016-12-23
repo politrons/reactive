@@ -13,8 +13,7 @@ public class ObservableRecursive {
 
     @Test
     public void runTest() {
-        final Observable<Integer> numbers = Observable.from(getNumbers());
-        recursive(numbers)
+        recursive(Observable.from(getNumbers()))
                 .collect(ArrayList<Integer>::new, ArrayList::add)
                 .subscribe(System.out::println);
     }
@@ -33,5 +32,9 @@ public class ObservableRecursive {
     private ArrayList<Integer> getNumbers() {
         return new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
     }
+
+
+
+
 
 }

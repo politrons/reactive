@@ -64,7 +64,7 @@ public class SingleFeatures {
                 .flatMap(word -> getObservables()
                         .flatMapObservable(Observable::from))
                 .collect(ArrayList<String>::new, List::add)
-                .subscribe(System.out::println);
+                .subscribe(System.out::println, System.out::println, System.out::println);
 
     }
 

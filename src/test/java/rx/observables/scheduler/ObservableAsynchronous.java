@@ -162,5 +162,41 @@ public class ObservableAsynchronous {
         };
     }
 
+    //***********************+DIFFERENCE BETWEEN SCHEDULERS ********************************\\
+
+    /**
+     * scheduler.io() implementation backed to thread-pool that will grow as needed. So,
+     * we don’t know which thread will be used whenever we call Schedulers.io()
+     */
+    @Test
+    public void io(){
+        Observable.just(1, 2, 3, 4, 5)
+                .subscribeOn(Schedulers.io())
+                .subscribe(onNext);
+        Observable.just(6, 7, 8, 9, 10)
+                .subscribeOn(Schedulers.io())
+                .subscribe(onNext);
+    }
+
+    /**
+     * All jobs that subscribes on trampoline() will be queued and excuted one by one
+     */
+    @Test
+    public void trampoline(){
+        Observable.just(2, 4, 6, 8, 10)
+                .subscribeOn(Schedulers.trampoline())
+                .subscribe(onNext);
+        Observable.just(1, 3, 5, 7, 9)
+                .subscribeOn(Schedulers.trampoline())
+                .subscribe(onNext);
+    }
+
+    Action1<Integer> onNext = new Action1<Integer>() {
+        @Override public void call(Integer integer) {
+            System.out.println("Number = " + integer);
+        }
+    };
+
+
 
 }
