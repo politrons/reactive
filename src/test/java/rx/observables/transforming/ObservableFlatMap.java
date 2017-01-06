@@ -28,8 +28,8 @@ public class ObservableFlatMap {
         people.add(new Person("Pablo", 34, "male"));
         people.add(new Person("Paula", 35, "female"));
         Observable.just(people)
-                  .flatMap(Observable::from)
-                  .subscribe(this::showResult, System.out::println, () -> System.out.println("complete"));
+                .flatMap(Observable::from)
+                .subscribe(this::showResult, System.out::println, () -> System.out.println("complete"));
     }
 
     private void showResult(Person person) {
@@ -50,9 +50,9 @@ public class ObservableFlatMap {
         words.add("Reactive ");
         words.add("World");
         Observable.just(words)
-                  .flatMap(Observable::from)
-                  .subscribe(this::contactWords, System.out::println,
-                             () -> System.out.println("Result " + result + " in " + (System.currentTimeMillis() - start)));
+                .flatMap(Observable::from)
+                .subscribe(this::contactWords, System.out::println,
+                        () -> System.out.println("Result " + result + " in " + (System.currentTimeMillis() - start)));
 
     }
 
@@ -68,14 +68,28 @@ public class ObservableFlatMap {
         words.add("Reactive ");
         words.add("World");
         Observable.from(words)
-                  .flatMap(word -> Observable.just(word)
-                                                .subscribeOn(Schedulers.newThread()))
-                  .subscribe(this::contactWords, System.out::println,
-                             () -> System.out.println("Result " + result + " in " + (System.currentTimeMillis() - start)));
+                .flatMap(word -> Observable.just(word)
+                        .subscribeOn(Schedulers.newThread()))
+                .subscribe(this::contactWords, System.out::println,
+                        () -> System.out.println("Result " + result + " in " + (System.currentTimeMillis() - start)));
 
     }
 
+    /**
+     * In flatMap all Observable created in the flatMap are executed in the main thread in sequential order.
+     */
+    @Test
+    public void flatMapThreads() {
+        Observable.from(Arrays.asList(1, 2, 3, 4))
+                .flatMap(number -> Observable.just(number)
+                        .doOnNext(n -> System.out.println(String.format("Executed in thread:%s number %s",
+                                Thread.currentThread().getName(), n))))
+                .subscribe();
+    }
 
+    /**
+     * Shall print 3
+     */
     @Test
     public void multiFlatMap() {
 
@@ -85,16 +99,16 @@ public class ObservableFlatMap {
     }
 
     private void contactWords(String word) {
-        System.out.println("Thread:"+Thread.currentThread().getName());
+        System.out.println("Thread:" + Thread.currentThread().getName());
         result = result.concat(word);
     }
 
     @Test
-    public void flatMapCities(){
+    public void flatMapCities() {
         List<String> cities = Arrays.asList("London", "Berlin", "Moscow");
         Observable.from(cities)
                 .flatMap(city -> getReport(city)
-                .doOnNext(report->checkReport(city, report)));
+                        .doOnNext(report -> checkReport(city, report)));
     }
 
     private void checkReport(String city, String report) {
@@ -104,5 +118,21 @@ public class ObservableFlatMap {
     private Observable<String> getReport(String city) {
         return Observable.just("report");
     }
+
+    @Test
+    public void flatMapCars() {
+        Observable.from(getCars())
+                .flatMap(this::saveCar)
+                .subscribe();
+    }
+
+    private List<String> getCars() {
+        return Arrays.asList("Aston martin", "Renault", "Seat");
+    }
+
+    private Observable<String> saveCar(String car) {
+        return Observable.just(car);//You should save the car
+    }
+
 
 }

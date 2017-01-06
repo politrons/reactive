@@ -7,6 +7,7 @@ import rx.Subscription;
 import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 
@@ -102,6 +103,19 @@ public class ObservableExceptions {
 
     private void throwRuntimeException() {
         throw new RuntimeException();
+    }
+
+    @Test
+    public void onErrorResumeNext() {
+        Observable.from(Arrays.asList(1, 2, 3, 4))
+                .flatMap(number -> Observable.just(number)
+                        .doOnNext(n -> {
+                            if (n == 2) {
+                                throw new NullPointerException();
+                            }
+                        })
+                .onErrorResumeNext(t -> Observable.just(666)))
+                .subscribe(n-> System.out.println("number:"+n));
     }
 
 }
