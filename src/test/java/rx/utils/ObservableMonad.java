@@ -13,8 +13,8 @@ import java.util.function.Function;
 
 public class ObservableMonad {
 
-    private Function<String, String> asyncFunc = new AsyncValue();
-    private Function<String, String> syncFunc = new SyncValue();
+    private Function<String, String> asyncFunc = new AsyncFunction();
+    private Function<String, String> syncFunc = new SyncFunction();
 
 
     @Test
@@ -42,7 +42,7 @@ public class ObservableMonad {
     /**
      * A function which internally get a Promise from an external resource
      */
-    public class AsyncValue implements Function<String, String> {
+    public class AsyncFunction implements Function<String, String> {
         @Override
         public String apply(String id) {
             try {
@@ -54,7 +54,7 @@ public class ObservableMonad {
         }
     }
 
-    public class SyncValue implements Function<String, String> {
+    public class SyncFunction implements Function<String, String> {
         @Override
         public String apply(String s) {
             return "Hello world:".concat(s);
