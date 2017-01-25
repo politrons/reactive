@@ -56,8 +56,8 @@ public class ObservableMonad {
 
     public class SyncFunction implements Function<String, String> {
         @Override
-        public String apply(String s) {
-            return "Hello world:".concat(s);
+        public String apply(String id) {
+            return "Hello world:".concat(id);
         }
     }
 

@@ -68,12 +68,12 @@
       <file leaf-file-name="ObservableMonad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="405">
+              <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
-                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
+                <element signature="e#1871#1872#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1597,7 +1597,7 @@
       <workItem from="1482501110508" duration="2326000" />
       <workItem from="1483608402810" duration="945000" />
       <workItem from="1483695241455" duration="1809000" />
-      <workItem from="1485268847280" duration="7035000" />
+      <workItem from="1485268847280" duration="8763000" />
     </task>
     <task id="LOCAL-00001" summary="Add stream mutable immutable">
       <created>1477038575786</created>
@@ -1697,16 +1697,24 @@
       <option name="project" value="LOCAL" />
       <updated>1485332661034</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add collect operator">
+      <created>1485333960350</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1485333960350</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add collect operator">
+      <created>1485334559539</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1485334559539</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableMonad_testMonad - 2017.01.24 at 16h 58m 46s.xml">
-      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableMonad_testMonad - 2017.01.24 at 17h 00m 50s.xml">
-      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObservableMonad_testMonad - 2017.01.24 at 17h 01m 30s.xml">
       <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
     </history-entry>
@@ -1731,9 +1739,15 @@
     <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 24m 01s.xml">
       <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 45m 52s.xml">
+      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 46m 58s.xml">
+      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100553000" />
+    <option name="totallyTimeSpent" value="102281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
@@ -1750,12 +1764,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42898974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42898974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38615513" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38615513" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2467,12 +2481,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="405">
+          <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1802#1803#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
           </folding>
         </state>
       </provider>
