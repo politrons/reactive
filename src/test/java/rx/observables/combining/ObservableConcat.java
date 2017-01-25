@@ -18,7 +18,6 @@ public class ObservableConcat {
      */
     @Test
     public void testContact() {
-
         Observable.concat(Observable.just("Hello"),
                           Observable.just("reactive"),
                           Observable.just("world"))
