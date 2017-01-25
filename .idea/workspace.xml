@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edc105f5-81fd-4fda-be64-9b37319fbafc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,12 +68,12 @@
       <file leaf-file-name="ObservableMonad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="112">
+              <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1528#1529#0" expanded="true" />
+                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1598,7 +1597,7 @@
       <workItem from="1482501110508" duration="2326000" />
       <workItem from="1483608402810" duration="945000" />
       <workItem from="1483695241455" duration="1809000" />
-      <workItem from="1485268847280" duration="5696000" />
+      <workItem from="1485268847280" duration="6115000" />
     </task>
     <task id="LOCAL-00001" summary="Add stream mutable immutable">
       <created>1477038575786</created>
@@ -1684,16 +1683,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483698039016</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add collect operator">
+      <created>1485332239393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1485332239394</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableFlatMap_flatMapThreads - 2016.12.24 at 17h 48m 13s.xml">
-      <configuration name="ObservableFlatMap.flatMapThreads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableFlatMap_multiFlatMap - 2016.12.24 at 17h 42m 55s.xml">
-      <configuration name="ObservableFlatMap.multiFlatMap" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObservableMonad_testMonad - 2017.01.24 at 16h 58m 46s.xml">
       <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
     </history-entry>
@@ -1718,9 +1718,15 @@
     <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 16m 30s.xml">
       <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 21m 41s.xml">
+      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 24m 01s.xml">
+      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99214000" />
+    <option name="totallyTimeSpent" value="99633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
@@ -1742,7 +1748,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38615513" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38615513" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2454,12 +2460,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="112">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
           </folding>
         </state>
       </provider>
