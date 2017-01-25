@@ -34,6 +34,7 @@ public class ObservableMonad {
                 .flatMap(f -> Observable.just(f.apply(id))
                         .doOnNext(val -> System.out.println(Thread.currentThread().getName()))
                         .subscribeOn(Schedulers.newThread()))//This step it will async
+                .map(String::toUpperCase)
                 .subscribe(System.out::println);
     }
 
