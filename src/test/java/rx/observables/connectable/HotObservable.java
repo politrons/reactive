@@ -84,7 +84,7 @@ public class HotObservable {
         Observable<String> observable = Observable.just("Hot observable");
         ConnectableObservable<String> published = observable.publish();
         published.subscribe(s -> System.out.println(String.format("Item %s Emitted after: %s seconds", s, (System.currentTimeMillis() - startTime) / 1000)),
-                            e -> System.out.println(e.getMessage()));
+                e -> System.out.println(e.getMessage()));
         Thread.sleep(1000);
         published.connect();
     }
@@ -140,6 +140,20 @@ public class HotObservable {
         subscribeToObservable(publishSubject, "Third");
     }
 
+    /**
+     * In this example we see how using hot observables ReplaySubject we can emit an item on broadcast to all the observers(subscribers).
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testHotObservableUsingReplaySubject2() throws InterruptedException {
+        Observable<Long> interval = Observable.interval(100L, TimeUnit.MILLISECONDS);
+        Subject<Long, Long> publishSubject = ReplaySubject.create(1);
+        interval.subscribe(publishSubject);
+        Thread.sleep(1000L);
+        publishSubject.subscribe(System.out::println, (e) -> System.err.println(e.getMessage()), System.out::println);
+    }
+
     private Subscription subscribeToObservableWithDelay(ConnectableObservable<Long> published) {
         Subscription sub3 = null;
         try {
@@ -158,7 +172,6 @@ public class HotObservable {
             System.err.println(e.getMessage());
         }, () -> System.out.println(name + " ended!"));
     }
-
 
 
 }

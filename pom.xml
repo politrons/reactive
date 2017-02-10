@@ -83,6 +83,11 @@
             <version>1.1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>4.0.0</version>
+        </dependency>
 
     </dependencies>
 

@@ -31,13 +31,14 @@ public class Functions {
     public void functionFunction() throws InterruptedException {
         String words = Stream.of("hello_functional_world")
                 .map(replaceWordsFunction())
+                .map(String::toUpperCase)
                 .reduce("", String::concat);
 
         System.out.println(words);
     }
 
     private Function<String, String> replaceWordsFunction() {
-        return a -> a.replace("_", " ");
+        return string -> string.replace("_", " ");
     }
 
     /**
