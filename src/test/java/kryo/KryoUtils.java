@@ -11,9 +11,6 @@ import java.io.FileOutputStream;
 
 import static junit.framework.TestCase.assertTrue;
 
-/**
- * Created by pabloperezgarcia on 02/02/2017.
- */
 public class KryoUtils {
 
     private Kryo kryo = new Kryo();

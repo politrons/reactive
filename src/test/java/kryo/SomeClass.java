@@ -1,8 +1,6 @@
 package kryo;
 
-/**
- * Created by pabloperezgarcia on 02/02/2017.
- */
+
 class SomeClass {
 
     private String a;

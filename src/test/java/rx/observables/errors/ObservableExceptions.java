@@ -101,6 +101,25 @@ public class ObservableExceptions {
 
     }
 
+    @Test
+    public void observableOnError() {
+        Integer[] numbers = {0, 1, 2, 3, 4, 5};
+
+        Observable.from(numbers)
+                .doOnNext(number -> {
+                    if (number > 3) {
+                        try {
+                            throw new IllegalArgumentException();
+                        } catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                })
+                .subscribe(n -> System.out.println("onNext:"+n),e -> System.out.println("onRrror:"+e.getMessage()),System.out::println);
+
+    }
+
     private void throwRuntimeException() {
         throw new RuntimeException();
     }
