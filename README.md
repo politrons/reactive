@@ -118,3 +118,5 @@ The Java 8 Functions with particle examples of how to use it.
 * [Don't repeat yourself](src/test/java/good_practices/DRY.java)
 
 * [Single responsibility principle](src/test/java/good_practices/SRP.java)
+
+* [Open/Closed principle](src/test/java/good_practices/OpenClosedPrinciple.java)
