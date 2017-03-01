@@ -9,6 +9,9 @@ import java.util.stream.Stream;
 
 /**
  * Created by pabloperezgarcia on 27/11/2016.
+ *
+ * In software engineering, don't repeat yourself (DRY) is a principle of software development,
+ * aimed at reducing repetition of information of all kinds,
  */
 public class DRY {
 

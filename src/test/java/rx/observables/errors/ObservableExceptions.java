@@ -116,6 +116,7 @@ public class ObservableExceptions {
                     }
 
                 })
+                .doOnError(t-> System.out.println("Exception happens "+t.getMessage()))
                 .subscribe(n -> System.out.println("onNext:"+n),e -> System.out.println("onRrror:"+e.getMessage()),System.out::println);
 
     }

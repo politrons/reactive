@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
 
 /**
  * Created by pabloperezgarcia on 27/11/2016.
+ *
+ * The single responsibility principle states that every module or class should have responsibility over
+ * a single part of the functionality provided by the software, and that responsibility
+ * should be entirely encapsulated by the class.
  */
 public class SRP {
 
