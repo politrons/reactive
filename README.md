@@ -115,8 +115,12 @@ The Java 8 Functions with particle examples of how to use it.
 
 ## Software craftsmanship
 
-* [Don't repeat yourself](src/test/java/good_practices/DRY.java)
+* [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)
 
-* [Single responsibility principle](src/test/java/good_practices/SRP.java)
+* [(O)pen/Closed principle](src/test/java/good_practices/OpenClosedPrinciple.java)
 
-* [Open/Closed principle](src/test/java/good_practices/OpenClosedPrinciple.java)
+* [(L)iskov substitution principle](src/test/java/good_practices/LiskovSubstitutionPrinciple.java)
+
+* [(I)nterface segregation principle](src/test/java/good_practices/InterfaceSegregationPrinciple.java)
+
+* [(D)on't repeat yourself](src/test/java/good_practices/DRY.java)
