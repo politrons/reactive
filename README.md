@@ -77,31 +77,31 @@ All the most common features of Observable
     * [ToBlocking] (src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
 
-### Single
+## Single
 
 An Observable that just emit 1 item through the pipeline.
 
 * [SingleFeatures] (src/test/java/rx/single/SingleFeatures.java)
 
-### Relay
+## Relay
 
 A subject which subscribe observers and keep the pipeline open all the time.
 
 * [Relay] (src/test/java/rx/relay/Relay.java)
 
-### Observer V Iterator Pattern
+## Observer V Iterator Pattern
 
 An explanation, comparative and benchmark between these two patterns.
 
 * [ObserverVsIterator] (src/test/java/rx/utils/ObserverVsIterator.java)
 
-### RxJava V Spring Reactor
+## RxJava V Spring Reactor
 
 A Comparative and benchmark between these two frameworks.
 
 * [ReactorVsRx] (src/test/java/rx/utils/ReactorVsRx.java)
 
-### Java 8
+## Java 8
 
 ![My image](src/main/resources/img/rsz_stream.jpg)
 
