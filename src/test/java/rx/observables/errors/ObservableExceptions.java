@@ -138,4 +138,39 @@ public class ObservableExceptions {
                 .subscribe(n-> System.out.println("number:"+n));
     }
 
+    /**
+     * This retry since is after a flatMap it will retry the creation of the flatMap operation
+     */
+    @Test
+    public void retryInFlatMap() {
+        Observable.from(Arrays.asList(1, 2, 3, 4))
+                .flatMap(number -> Observable.just(number)
+                        .doOnNext(n -> {
+                            if (n == 2) {
+                                throw new NullPointerException();
+                            }
+                        }))
+                        .retry(3)
+                .subscribe(n-> System.out.println("number:"+n));
+    }
+
+    private int cont=0;
+
+    /**
+     * This retry since is after a map it wont retry
+     */
+    @Test
+    public void retryInMap() {
+        Observable.from(Arrays.asList(1, 2, 3, 4))
+                .map(number ->{
+                            if (cont == 2) {
+                                throw new NullPointerException();
+                            }
+                            cont++;
+                            return number;
+                        })
+                .retry(3)
+                .subscribe(n-> System.out.println("number:"+n));
+    }
+
 }
