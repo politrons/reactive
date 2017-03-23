@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="edc105f5-81fd-4fda-be64-9b37319fbafc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -50,33 +50,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObservableMerge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableExceptions.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableExceptions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+            <state relative-caret-position="166">
+              <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Relay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/relay/Relay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4680">
+              <caret line="322" column="5" lean-forward="false" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -102,22 +105,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DRY.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/good_practices/DRY.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SRP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/good_practices/SRP.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,9 +122,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,9 +194,9 @@
         <option value="$PROJECT_DIR$/src/test/java/good_practices/OpenClosePrinciple.java" />
         <option value="$PROJECT_DIR$/src/test/java/good_practices/LiskovSustitutionPrinciple.java" />
         <option value="$PROJECT_DIR$/src/test/java/good_practices/LiskovSubstitutionPrinciple.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/good_practices/InterfaceSegregationPrinciple.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -783,33 +776,7 @@
       <recent name="rx.observables.transforming" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableExceptions.retry2">
-    <configuration default="false" name="ObservableExceptions.observableOnErrorResumeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.errors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.errors" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
-      <option name="METHOD_NAME" value="observableOnErrorResumeException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableExceptions.retryInFlatMap">
     <configuration default="false" name="OpenClosedPrinciple.calcRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -901,6 +868,32 @@
       <option name="PACKAGE_NAME" value="rx.observables.errors" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
       <option name="METHOD_NAME" value="retry2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableExceptions.retryInFlatMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.errors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.errors" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
+      <option name="METHOD_NAME" value="retryInFlatMap" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1581,19 +1574,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SingleFeatures.retryWhen" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.observableOnErrorResumeException" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.observableOnErrorResumeException" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1689,7 +1682,7 @@
       <workItem from="1485713037533" duration="5273000" />
       <workItem from="1486299672774" duration="1569000" />
       <workItem from="1487665193548" duration="12527000" />
-      <workItem from="1489652034781" duration="493000" />
+      <workItem from="1489652034781" duration="3750000" />
     </task>
     <task id="LOCAL-00001" summary="Add stream mutable immutable">
       <created>1477038575786</created>
@@ -1859,7 +1852,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488624722129</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="software craftsmanship">
+      <created>1489652574660</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1489652574660</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1875,11 +1875,11 @@
     <history-entry file="ObservableExceptions_retry2 - 2017.03.16 at 09h 19m 21s.xml">
       <configuration name="ObservableExceptions.retry2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 45m 52s.xml">
-      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    <history-entry file="ObservableExceptions_retryInFlatMap - 2017.03.16 at 09h 23m 10s.xml">
+      <configuration name="ObservableExceptions.retryInFlatMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableMonad_testMonad - 2017.01.25 at 08h 46m 58s.xml">
-      <configuration name="ObservableMonad.testMonad" configurationId="JUnit" />
+    <history-entry file="ObservableExceptions_retryInFlatMap - 2017.03.16 at 09h 23m 24s.xml">
+      <configuration name="ObservableExceptions.retryInFlatMap" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OpenClosePrinciple_calcRectangle - 2017.03.01 at 16h 02m 21s.xml">
       <configuration name="OpenClosePrinciple.calcRectangle" configurationId="JUnit" />
@@ -1895,7 +1895,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126590000" />
+    <option name="totallyTimeSpent" value="129847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
@@ -2071,13 +2071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="41" column="27" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="322" column="5" lean-forward="false" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2299,13 +2292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/relay/Relay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
@@ -2370,7 +2356,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="34" column="10" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2290#2291#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
+            <element signature="e#2372#2373#0" expanded="false" />
+            <element signature="e#2441#2442#0" expanded="false" />
+            <element signature="e#2487#2488#0" expanded="false" />
+            <element signature="e#2555#2556#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2378,7 +2372,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2386,7 +2382,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2394,9 +2392,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2404,21 +2400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -2449,8 +2430,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+        <state relative-caret-position="166">
+          <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/relay/Relay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4680">
+          <caret line="322" column="5" lean-forward="false" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
