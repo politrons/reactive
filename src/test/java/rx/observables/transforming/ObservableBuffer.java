@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class ObservableBuffer {
 
-
     /**
      * In this example we use buffer(count) which will buffer items until it will take the count number set or end of items.
      * Shall print
@@ -53,7 +52,7 @@ public class ObservableBuffer {
     public void stringBuffer() {
         Integer[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         Observable.from(numbers)
-                .map(number -> "uniqueKey=" + number )
+                .map(number -> "uniqueKey=" + number)
                 .buffer(4)
                 .map(ns -> String.join("&", ns))
                 .subscribe(System.out::println);

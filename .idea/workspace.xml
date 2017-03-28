@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="edc105f5-81fd-4fda-be64-9b37319fbafc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableBuffer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableAsynchronous.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2625">
+              <caret line="183" column="9" lean-forward="true" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -105,28 +126,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SRP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/good_practices/SRP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenClosedPrinciple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/good_practices/OpenClosedPrinciple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -178,8 +177,6 @@
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableRecursive.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableZip.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" />
@@ -197,6 +194,8 @@
         <option value="$PROJECT_DIR$/src/test/java/good_practices/InterfaceSegregationPrinciple.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" />
       </list>
     </option>
   </component>
@@ -776,33 +775,7 @@
       <recent name="rx.observables.transforming" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableExceptions.retryInFlatMap">
-    <configuration default="false" name="OpenClosedPrinciple.calcRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="good_practices.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="good_practices" />
-      <option name="MAIN_CLASS_NAME" value="good_practices.OpenClosedPrinciple" />
-      <option name="METHOD_NAME" value="calcRectangle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableBuffer.test">
     <configuration default="false" name="LiskovSubstitutionPrinciple.calcAreaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -894,6 +867,32 @@
       <option name="PACKAGE_NAME" value="rx.observables.errors" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.errors.ObservableExceptions" />
       <option name="METHOD_NAME" value="retryInFlatMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableBuffer.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.transforming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableBuffer" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1574,19 +1573,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SingleFeatures.retryWhen" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.OpenClosedPrinciple.calcRectangle" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableBuffer.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retryInFlatMap" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableExceptions.retry" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LiskovSubstitutionPrinciple.calcAreaTest" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1682,7 +1681,7 @@
       <workItem from="1485713037533" duration="5273000" />
       <workItem from="1486299672774" duration="1569000" />
       <workItem from="1487665193548" duration="12527000" />
-      <workItem from="1489652034781" duration="3750000" />
+      <workItem from="1489652034781" duration="5795000" />
     </task>
     <task id="LOCAL-00001" summary="Add stream mutable immutable">
       <created>1477038575786</created>
@@ -1859,10 +1858,23 @@
       <option name="project" value="LOCAL" />
       <updated>1489652574660</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="software craftsmanship">
+      <created>1490259491393</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1490259491393</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="ObservableBuffer_test - 2017.03.28 at 10h 11m 49s.xml">
+      <configuration name="ObservableBuffer.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableBuffer_test - 2017.03.28 at 10h 12m 30s.xml">
+      <configuration name="ObservableBuffer.test" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ObservableExceptions_retry - 2017.03.16 at 09h 15m 48s.xml">
       <configuration name="ObservableExceptions.retry" configurationId="JUnit" />
     </history-entry>
@@ -1881,12 +1893,6 @@
     <history-entry file="ObservableExceptions_retryInFlatMap - 2017.03.16 at 09h 23m 24s.xml">
       <configuration name="ObservableExceptions.retryInFlatMap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenClosePrinciple_calcRectangle - 2017.03.01 at 16h 02m 21s.xml">
-      <configuration name="OpenClosePrinciple.calcRectangle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OpenClosePrinciple_calcRectangle - 2017.03.01 at 16h 02m 39s.xml">
-      <configuration name="OpenClosePrinciple.calcRectangle" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OpenClosePrinciple_calcRectangle - 2017.03.01 at 16h 03m 22s.xml">
       <configuration name="OpenClosePrinciple.calcRectangle" configurationId="JUnit" />
     </history-entry>
@@ -1895,11 +1901,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129847000" />
+    <option name="totallyTimeSpent" value="131892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1917,7 +1923,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49958298" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49958298" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2145,13 +2151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2595">
-          <caret line="181" column="7" lean-forward="false" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7-sources.jar!/rx/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95265">
@@ -2268,16 +2267,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/file.bin" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -2456,6 +2445,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="183" column="9" lean-forward="true" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -191,12 +191,19 @@ public class ObservableAsynchronous {
                 .subscribe(onNext);
     }
 
-    Action1<Integer> onNext = new Action1<Integer>() {
-        @Override public void call(Integer integer) {
-            System.out.println("Number = " + integer);
-        }
-    };
+    Action1<Integer> onNext = integer -> System.out.println("Number = " + integer);
 
 
+    /**
+     * Using flatMap and subscribeOn we can execute an item per thread
+     */
+    @Test
+    public void itemPerThread() {
+        Observable.just(1, 2)
+                .flatMap(item -> Observable.just(item)
+                        .subscribeOn(Schedulers.newThread())
+                        .doOnNext(i -> System.out.println("Thread:" + Thread.currentThread())))
+                .subscribe(System.out::println);
+    }
 
 }
