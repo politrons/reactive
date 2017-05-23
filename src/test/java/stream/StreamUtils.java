@@ -261,8 +261,7 @@ public class StreamUtils {
      */
     @Test
     public void minStream() {
-        Integer list = Arrays.asList(5, 2, 1, 3)
-                .stream()
+        Integer list = Stream.of(5, 2, 1, 3)
                 .min(Comparator.comparingInt(i -> i))
                 .get();
         System.out.println(list);
@@ -276,8 +275,7 @@ public class StreamUtils {
      */
     @Test
     public void minStreamString() {
-        String list = Arrays.asList("A", "C", "D", "B")
-                .stream()
+        String list = Stream.of("A", "C", "D", "B")
                 .max(Comparator.comparing(i -> i))
                 .get();
         System.out.println(list);
@@ -337,9 +335,8 @@ public class StreamUtils {
 
     @Test
     public void flatMap() {
-
-        Arrays.asList(1, 2, 3, 4).stream()
-                .flatMap(number -> Stream.of(Arrays.asList("A", "C", "D", "B").stream()
+        Stream.of(1, 2, 3, 4)
+                .flatMap(number -> Stream.of(Stream.of("A", "C", "D", "B")
                         .map(String::toLowerCase)
                         .collect(Collectors.toList())))
                 .collect(Collectors.toList()).get(0);

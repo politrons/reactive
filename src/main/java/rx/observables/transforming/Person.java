@@ -3,10 +3,10 @@ package rx.observables.transforming;
 /**
  * Created by pabloperezgarcia on 20/12/15.
  */
-public class Person implements Cloneable {
-    String name;
-    Integer age;
-    String sex;
+public final class Person implements Cloneable {
+     String name;
+     Integer age;
+     String sex;
 
     public Person(String name, Integer age, String sex) {
         this.name = name;
