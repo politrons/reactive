@@ -136,6 +136,21 @@ public class ObservableFlatMap {
 
 
     @Test
+    public void twoDeepLevel() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+        Observable.from(list)
+                .flatMap(number -> Observable.from(list)
+                        .take(10)
+                        .collect(ArrayList<Integer>::new, ArrayList::add))
+                .scan(new ArrayList<>(),
+                        (lastItemEmitted, newItem) -> {
+                            lastItemEmitted.add(newItem);
+                            return lastItemEmitted;
+                        })
+                .subscribe(System.out::println, System.out::println);
+    }
+
+    @Test
     public void thirdDeepLevel() {
         Observable.from(Arrays.asList("a", "b", "c", "d", "e"))
                 .flatMap(letter -> Observable.from(Arrays.asList(1, 2, 3, 4, 5))
@@ -151,5 +166,6 @@ public class ObservableFlatMap {
                                 })))
                 .subscribe();
     }
+
 
 }

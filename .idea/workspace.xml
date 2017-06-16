@@ -4,7 +4,6 @@
     <list default="true" id="edc105f5-81fd-4fda-be64-9b37319fbafc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stream/Functions.java" afterPath="$PROJECT_DIR$/src/test/java/stream/Functions.java" />
     </list>
     <ignored path="reactive.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ObservableExceptions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="117" column="17" lean-forward="false" selection-start-line="108" selection-start-column="36" selection-end-line="117" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Functions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stream/Functions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+              <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -49,8 +38,43 @@
       <file leaf-file-name="ObservableFlatMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+            <state relative-caret-position="451">
+              <caret line="150" column="5" lean-forward="false" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Integer.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7-sources.jar!/rx/Observable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="587">
+              <caret line="1648" column="36" lean-forward="false" selection-start-line="1648" selection-start-column="36" selection-end-line="1648" selection-end-column="36" />
+              <folding>
+                <element signature="e#560505#560506#0" expanded="true" />
+                <element signature="e#560560#560561#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableScan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableScan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="45" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -99,33 +123,9 @@
       <file leaf-file-name="ObservableCollect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCollect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="270">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar!/com/jcraft/jsch/Session.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10545">
-              <caret line="750" column="19" lean-forward="false" selection-start-line="750" selection-start-column="19" selection-end-line="750" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObservableMonad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1815#1816#0" expanded="false" />
-                <element signature="e#1871#1872#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -256,6 +256,56 @@
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: io.reactivex:rxjava:1.1.7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rxjava-1.1.7.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reactive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: io.reactivex:rxjava:1.1.7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rxjava-1.1.7.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="reactive" />
@@ -751,28 +801,7 @@
       <recent name="rx.observables.transforming" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObservableFlatMap.thirdDeepLevel">
-    <configuration default="false" name="JSChTest.sshCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JSChTest" />
-      <option name="METHOD_NAME" value="sshCall" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ObservableFlatMap.twoDeepLevel">
     <configuration default="false" name="ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -864,6 +893,32 @@
       <option name="PACKAGE_NAME" value="rx.observables.transforming" />
       <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableFlatMap" />
       <option name="METHOD_NAME" value="thirdDeepLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ObservableFlatMap.twoDeepLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.transforming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableFlatMap" />
+      <option name="METHOD_NAME" value="twoDeepLevel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1544,19 +1599,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SingleFeatures.retryWhen" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JSChTest.sshCall" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObserverOn" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.thirdDeepLevel" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObserverOn" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.thirdDeepLevel" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.twoDeepLevel" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.thirdDeepLevel" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObserverOn" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JSChTest.sshCall" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.twoDeepLevel" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableFlatMap.thirdDeepLevel" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObserverOn" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableObservableOnAndSubscribeOn" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableAsynchronous.testObservableSubscribeOnAndObserverOn" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1659,7 +1714,7 @@
       <workItem from="1494674668066" duration="1191000" />
       <workItem from="1494919254453" duration="1724000" />
       <workItem from="1495091111214" duration="2040000" />
-      <workItem from="1496045527427" duration="5739000" />
+      <workItem from="1496045527427" duration="8175000" />
     </task>
     <task id="LOCAL-00001" summary="Add stream mutable immutable">
       <created>1477038575786</created>
@@ -1857,19 +1912,17 @@
       <option name="project" value="LOCAL" />
       <updated>1495527330552</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="software craftsmanship">
+      <created>1496821924247</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1496821924247</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JSChTest_sshCall - 2017.05.11 at 12h 38m 16s.xml">
-      <configuration name="JSChTest.sshCall" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JSChTest_sshCall - 2017.05.11 at 13h 40m 39s.xml">
-      <configuration name="JSChTest.sshCall" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JSChTest_sshCall - 2017.05.11 at 14h 16m 22s.xml">
-      <configuration name="JSChTest.sshCall" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JSChTest_sshCall - 2017.05.11 at 14h 16m 34s.xml">
       <configuration name="JSChTest.sshCall" configurationId="JUnit" />
     </history-entry>
@@ -1891,9 +1944,18 @@
     <history-entry file="ObservableFlatMap_thirdDeepLevel - 2017.06.07 at 09h 14m 49s.xml">
       <configuration name="ObservableFlatMap.thirdDeepLevel" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableFlatMap_twoDeepLevel - 2017.06.16 at 21h 36m 56s.xml">
+      <configuration name="ObservableFlatMap.twoDeepLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableFlatMap_twoDeepLevel - 2017.06.16 at 21h 47m 10s.xml">
+      <configuration name="ObservableFlatMap.twoDeepLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObservableFlatMap_twoDeepLevel - 2017.06.16 at 21h 48m 43s.xml">
+      <configuration name="ObservableFlatMap.twoDeepLevel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154828000" />
+    <option name="totallyTimeSpent" value="157264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1241" height="778" extended-state="0" />
@@ -2059,27 +2121,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2477,10 +2518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCollect.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stream/Functions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="221">
+          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -2493,19 +2534,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stream/Functions.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7-sources.jar!/rx/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="587">
+          <caret line="1648" column="36" lean-forward="false" selection-start-line="1648" selection-start-column="36" selection-end-line="1648" selection-end-column="36" />
+          <folding>
+            <element signature="e#560505#560506#0" expanded="true" />
+            <element signature="e#560560#560561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCollect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableScan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="45" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="451">
+          <caret line="150" column="5" lean-forward="false" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
