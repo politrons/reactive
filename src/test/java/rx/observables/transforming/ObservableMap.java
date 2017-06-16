@@ -49,14 +49,15 @@ public class ObservableMap {
         List<String> strings = null;
         Observable.from(strings)
                 .onErrorResumeNext(t -> {
-                    System.out.println("Null pointer error!!!!!:"+t);
+                    System.out.println("Null pointer error!!!!!:" + t);
                     return Observable.just("works!");
                 })
-                .subscribe(i -> System.out.println(i),
+                .subscribe(System.out::println,
                         t -> System.out.println("Errror!!!"),
                         () -> System.out.println("finish"));
 
     }
+
 
 
 }

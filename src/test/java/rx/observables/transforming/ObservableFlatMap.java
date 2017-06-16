@@ -134,7 +134,10 @@ public class ObservableFlatMap {
         return Observable.just(car);//You should save the car
     }
 
-
+    /**
+     * Here we iterate over the list and per element of the list we iterate again to get 10 elements
+     * We use collect to get a list of 10 elements, and scan to append every new list with the previous one
+     */
     @Test
     public void twoDeepLevel() {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
