@@ -47,6 +47,8 @@ All the most common features of Observable
     * [Distinct](src/test/java/rx/observables/filtering/ObservableDistinct.java)
     * [Skip](src/test/java/rx/observables/filtering/ObservableSkip.java)
     * [Take](src/test/java/rx/observables/filtering/ObservableTake.java)
+    * [First](src/test/java/rx/observables/filtering/ObservableFirst.java)
+
 
 * **Transforming**
 

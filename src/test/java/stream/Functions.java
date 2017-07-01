@@ -83,12 +83,13 @@ public class Functions {
 
     /**
      * Supplier function does not receive any argument, and just return a value
+     *
      * @throws InterruptedException
      */
     @Test
     public void supplierFunction() throws InterruptedException {
         Stream.of("Actual time:")
-                .map(s-> s.concat(String.valueOf(systemCurrentFunction().get())))
+                .map(s -> s.concat(String.valueOf(systemCurrentFunction().get())))
                 .forEach(System.out::println);
 
     }
@@ -118,7 +119,10 @@ public class Functions {
         return a -> Arrays.asList(a.split(" "));
     }
 
+    @Test
+    public void supplier() {
 
+    }
 
 
 }

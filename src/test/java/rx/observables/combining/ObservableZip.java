@@ -71,7 +71,7 @@ public class ObservableZip {
                          .map(val -> "!");
     }
 
-    public Observable<String> obAsyncString() {
+    private Observable<String> obAsyncString() {
         return Observable.just("")
                          .observeOn(scheduler)
                          .doOnNext(val -> {
@@ -81,7 +81,7 @@ public class ObservableZip {
                          .map(val -> "Hello");
     }
 
-    public Observable<String> obAsyncString1() {
+    private Observable<String> obAsyncString1() {
         return Observable.just("")
                          .observeOn(scheduler1)
                          .doOnNext(val -> {
@@ -91,7 +91,7 @@ public class ObservableZip {
                          .map(val -> " World");
     }
 
-    public Observable<String> obAsyncString2() {
+    private Observable<String> obAsyncString2() {
         return Observable.just("")
                          .observeOn(scheduler2)
                          .doOnNext(val -> {
