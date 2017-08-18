@@ -77,4 +77,20 @@ public class ObservableMerge {
         return Observable.just(new Person(null, 25, "male"));
     }
 
+
+    @Test
+    public void testMergeMaxConcurrency() {
+        Observable.merge(Observable.just(
+                Observable.just(3),
+                Observable.just(5),
+                Observable.just(1),
+                Observable.just(4),
+                Observable.just(2)), 2)
+                .collect(ArrayList<Integer>::new, ArrayList::add)
+                .doOnNext(Collections::sort)
+                .subscribe(System.out::println);
+
+    }
+
+
 }

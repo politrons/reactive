@@ -11,6 +11,10 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8 74" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.12.2" level="application" />
+    <orderEntry type="library" name="Maven: com.github.akarnokd:rxjava2-extensions:0.17.5" level="project" />
+    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.reactivex.rxjava2:rxjava:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava-math:0.21.0" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.1.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
@@ -20,7 +24,6 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-assistedinject:4.0" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:2.5.0.M4" level="project" />
-    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-multibindings:4.0" level="project" />
     <orderEntry type="library" name="Maven: io.vertx:vertx-core:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-common:4.0.31.Final" level="project" />
@@ -49,6 +52,5 @@
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.21.0-GA" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:21.0" level="project" />
     <orderEntry type="library" name="Maven: com.jcraft:jsch:0.1.54" level="project" />
-    <orderEntry type="library" name="scala-sdk-2.12.2" level="application" />
   </component>
 </module>

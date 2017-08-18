@@ -8,6 +8,7 @@ import rx.functions.Action1;
 import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 
@@ -48,7 +49,6 @@ public class ObservableAsynchronous {
     }
 
 
-
     /**
      * Does not matter at what point in your pipeline you set your subscribeOn, once that is set in the pipeline,
      * all steps will be executed in another thread.
@@ -73,6 +73,7 @@ public class ObservableAsynchronous {
      * Combining subscribeOn and observerOn it´s possible, and one can take the control over  the other
      * In this example since we define observerOn, everything before this operator it will be executed in the observerOn thread defined,
      * After that, when we use the subscribeOn operator, the rest of the step it will be executed in the defined thread.
+     *
      * @throws InterruptedException
      */
     @Test
@@ -93,6 +94,7 @@ public class ObservableAsynchronous {
 
     /**
      * Combining subscribeOn and observerOn it´s possible, and one can override the other
+     *
      * @throws InterruptedException
      */
     @Test
@@ -131,7 +133,7 @@ public class ObservableAsynchronous {
     }
 
     /**
-     * In this test we prove how when we subscribe a observable ans we not use subscribeOn, this one is executed in the main thread.
+     * In this test we prove how when we subscribe a observable and we not use subscribeOn, this one is executed in the main thread.
      * And total is in the scope of both
      * Shall print
      * <p>
@@ -169,7 +171,7 @@ public class ObservableAsynchronous {
      * we don’t know which thread will be used whenever we call Schedulers.io()
      */
     @Test
-    public void io(){
+    public void io() {
         Observable.just(1, 2, 3, 4, 5)
                 .subscribeOn(Schedulers.io())
                 .subscribe(onNext);
@@ -182,7 +184,7 @@ public class ObservableAsynchronous {
      * All jobs that subscribes on trampoline() will be queued and excuted one by one
      */
     @Test
-    public void trampoline(){
+    public void trampoline() {
         Observable.just(2, 4, 6, 8, 10)
                 .subscribeOn(Schedulers.trampoline())
                 .subscribe(onNext);
@@ -205,5 +207,41 @@ public class ObservableAsynchronous {
                         .doOnNext(i -> System.out.println("Thread:" + Thread.currentThread())))
                 .subscribe(System.out::println);
     }
+
+    @Test
+    public void testBackToMainThread() throws InterruptedException {
+        processValue(1);
+        processValue(2);
+        processValue(3);
+        processValue(4);
+        processValue(5);
+        Thread.sleep(3000);
+        while (tasks.size() != 0) {
+            tasks.take().run();
+        }
+        System.out.println("done");
+    }
+
+    private LinkedBlockingQueue<Runnable> tasks = new LinkedBlockingQueue<>();
+
+
+    private void processValue(int value){
+        Observable.just(value)
+                .subscribeOn(Schedulers.io())
+                .doOnNext(number -> processExecution())
+                .observeOn(Schedulers.from(command -> tasks.add(command)))
+                .subscribe(x -> System.out.println("Thread:" + Thread.currentThread().getName() + " value:" + x));
+    }
+
+    private void processExecution() {
+        System.out.println("Execution in " + Thread.currentThread().getName());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 }
