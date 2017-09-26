@@ -174,4 +174,19 @@ public class HotObservable {
     }
 
 
+    /**
+     * In this example we see how using hot observables ReplaySubject we can emit an item on broadcast to all the observers(subscribers).
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void chainObservables() throws InterruptedException {
+        Observable<Long> interval = Observable.just(1l);
+        Subject<Long, Long> publishSubject = ReplaySubject.create(1);
+        Subject<Long, Long> publishSubject2 = ReplaySubject.create(1);
+        interval.subscribe(publishSubject);
+        publishSubject.subscribe(publishSubject2);
+        publishSubject2.subscribe(System.out::println, (e) -> System.err.println(e.getMessage()), System.out::println);
+    }
+
 }

@@ -116,8 +116,8 @@ public class ObservableExceptions {
                     }
 
                 })
-                .doOnError(t-> System.out.println("Exception happens "+t.getMessage()))
-                .subscribe(n -> System.out.println("onNext:"+n),e -> System.out.println("onRrror:"+e.getMessage()),System.out::println);
+                .doOnError(t -> System.out.println("Exception happens " + t.getMessage()))
+                .subscribe(n -> System.out.println("onNext:" + n), e -> System.out.println("onRrror:" + e.getMessage()), System.out::println);
 
     }
 
@@ -134,8 +134,8 @@ public class ObservableExceptions {
                                 throw new NullPointerException();
                             }
                         })
-                .onErrorResumeNext(t -> Observable.just(666)))
-                .subscribe(n-> System.out.println("number:"+n));
+                        .onErrorResumeNext(t -> Observable.just(666)))
+                .subscribe(n -> System.out.println("number:" + n));
     }
 
     /**
@@ -150,11 +150,11 @@ public class ObservableExceptions {
                                 throw new NullPointerException();
                             }
                         }))
-                        .retry(3)
-                .subscribe(n-> System.out.println("number:"+n));
+                .retry(3)
+                .subscribe(n -> System.out.println("number:" + n));
     }
 
-    private int cont=0;
+    private int cont = 0;
 
     /**
      * This retry since is after a map it wont retry
@@ -162,15 +162,32 @@ public class ObservableExceptions {
     @Test
     public void retryInMap() {
         Observable.from(Arrays.asList(1, 2, 3, 4))
-                .map(number ->{
-                            if (cont == 2) {
-                                throw new NullPointerException();
-                            }
-                            cont++;
-                            return number;
-                        })
+                .map(number -> {
+                    if (cont == 2) {
+                        throw new NullPointerException();
+                    }
+                    cont++;
+                    return number;
+                })
                 .retry(3)
-                .subscribe(n-> System.out.println("number:"+n));
+                .subscribe(n -> System.out.println("number:" + n));
+    }
+
+
+    @Test
+    public void retryWhenConnectionError() {
+        Subscription subscription = Observable.just(null)
+                .map(connection -> {
+                    System.out.println("Trying to open connection");
+                    connection.toString();
+                    return connection;
+                })
+                .retryWhen(errors -> errors.doOnNext(o -> count++)
+                                .flatMap(t -> count > 3 ? Observable.error(t) :
+                                        Observable.just(null).delay(100, TimeUnit.MILLISECONDS)),
+                        Schedulers.newThread())
+                .subscribe(s -> System.out.println(s));
+        new TestSubscriber((Observer) subscription).awaitTerminalEvent(500, TimeUnit.MILLISECONDS);
     }
 
 }

@@ -2,8 +2,10 @@ package rx.observables.transforming;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.observables.GroupedObservable;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,17 +22,17 @@ public class ObservableGroupBy {
     @Test
     public void testGroupBy() {
         Observable.just(getPersons())
-                  .flatMap(listOfPersons -> Observable.from(listOfPersons)
-                                                      .groupBy(person -> person.sex.equals("male")))
-                  .subscribe(booleanPersonGroupedObservable -> {
-                      if (booleanPersonGroupedObservable.getKey()) {
-                          booleanPersonGroupedObservable.asObservable()
-                                                        .subscribe(person -> System.out.println("Here the male:" + person.name));
-                      } else {
-                          booleanPersonGroupedObservable.asObservable()
-                                                        .subscribe(person -> System.out.println("Here the female:" + person.name));
-                      }
-                  });
+                .flatMap(listOfPersons -> Observable.from(listOfPersons)
+                        .groupBy(person -> person.sex.equals("male")))
+                .subscribe(booleanPersonGroupedObservable -> {
+                    if (booleanPersonGroupedObservable.getKey()) {
+                        booleanPersonGroupedObservable.asObservable()
+                                .subscribe(person -> System.out.println("Here the male:" + person.name));
+                    } else {
+                        booleanPersonGroupedObservable.asObservable()
+                                .subscribe(person -> System.out.println("Here the female:" + person.name));
+                    }
+                });
     }
 
 
@@ -41,22 +43,22 @@ public class ObservableGroupBy {
     @Test
     public void testGroupBySex() {
         Observable.just(getPersons())
-                  .flatMap(listOfPersons -> Observable.from(listOfPersons)
-                                                      .groupBy(person -> person.sex))
-                  .subscribe(booleanPersonGroupedObservable -> {
-                      switch (booleanPersonGroupedObservable.getKey()) {
-                          case "male": {
-                              booleanPersonGroupedObservable.asObservable()
-                                                            .subscribe(person -> System.out.println("Here the male:" + person.name));
-                              break;
-                          }
-                          case "female": {
-                              booleanPersonGroupedObservable.asObservable()
-                                                            .subscribe(person -> System.out.println("Here the female:" + person.name));
-                              break;
-                          }
-                      }
-                  });
+                .flatMap(listOfPersons -> Observable.from(listOfPersons)
+                        .groupBy(person -> person.sex))
+                .subscribe(booleanPersonGroupedObservable -> {
+                    switch (booleanPersonGroupedObservable.getKey()) {
+                        case "male": {
+                            booleanPersonGroupedObservable.asObservable()
+                                    .subscribe(person -> System.out.println("Here the male:" + person.name));
+                            break;
+                        }
+                        case "female": {
+                            booleanPersonGroupedObservable.asObservable()
+                                    .subscribe(person -> System.out.println("Here the female:" + person.name));
+                            break;
+                        }
+                    }
+                });
     }
 
     private List<Person> getPersons() {
@@ -64,6 +66,37 @@ public class ObservableGroupBy {
         people.add(new Person("Pablo", 34, "male"));
         people.add(new Person("Paula", 35, "female"));
         return people;
+    }
+
+    /**
+     * In this example we create a response code group.
+     */
+    @Test
+    public void testGroupByCode() {
+        Observable.from(Arrays.asList(401,403, 200))
+                .groupBy(code -> code)
+                .subscribe(groupByCode -> {
+                    switch (groupByCode.getKey()) {
+                        case 401: {
+                            System.out.println("refresh token");
+                            processResponse(groupByCode);
+                            break;
+                        }
+                        case 403: {
+                            System.out.println("refresh token");
+                            processResponse(groupByCode);
+                            break;
+                        }
+                        default: {
+                            System.out.println("Do the toast");
+                            processResponse(groupByCode);
+                        }
+                    }
+                });
+    }
+
+    private void processResponse(GroupedObservable<Integer, Integer> groupByCode) {
+        groupByCode.asObservable().subscribe(value -> System.out.println("Response code:" + value));
     }
 
 }

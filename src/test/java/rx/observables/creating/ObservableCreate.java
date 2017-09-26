@@ -3,6 +3,8 @@ package rx.observables.creating;
 import org.junit.Test;
 import rx.Observable;
 
+import java.util.Arrays;
+
 
 /**
  * @author Pablo Perez
@@ -34,6 +36,21 @@ public class ObservableCreate {
                 .map(s -> ((String) s).toUpperCase())
                 .subscribe(System.out::println, System.out::println);
     }
+
+
+    /**
+     * operator to be executed once we subscribe to the observable.
+     */
+    @Test
+    public void doOnSubscribe() {
+        Observable.from(Arrays.asList(1, 2, 3, 4))
+                .doOnSubscribe(()-> System.out.println("We just subscribe!"))
+                .flatMap(number -> Observable.just(number)
+                        .doOnNext(n -> System.out.println(String.format("Executed in thread:%s number %s",
+                                Thread.currentThread().getName(), n))))
+                .subscribe();
+    }
+
 
 
     @Test
