@@ -123,6 +123,9 @@ The most important features with particle examples of how to use it.
 
 * [Flow](src/test/java/java9/FlowFeatures.java)
 
+* [Features](src/test/java/java9/UtilFeatures.java)
+
+
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)

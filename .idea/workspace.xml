@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/java-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/java.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" afterPath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,21 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ObservableConcat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableConcat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FlowFeatures.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2790">
-              <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
+            <state relative-caret-position="37">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#1861#1862#0" expanded="true" />
                 <element signature="e#1911#1912#0" expanded="true" />
@@ -83,11 +71,82 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UtilFeatures.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1388#1389#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1908#1909#0" expanded="true" />
+                <element signature="e#1968#1969#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+                <element signature="e#2155#2156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessHandle.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ProcessHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+              <folding>
+                <element signature="e#4724#4725#0" expanded="true" />
+                <element signature="e#4773#4774#0" expanded="true" />
+                <element signature="e#5321#5322#0" expanded="true" />
+                <element signature="e#5371#5372#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3912">
+              <caret line="1304" column="28" lean-forward="false" selection-start-line="1304" selection-start-column="28" selection-end-line="1304" selection-end-column="28" />
+              <folding>
+                <element signature="e#60100#60101#0" expanded="true" />
+                <element signature="e#60162#60163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/IntStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="838" column="23" lean-forward="false" selection-start-line="838" selection-start-column="23" selection-end-line="838" selection-end-column="23" />
+              <folding>
+                <element signature="e#37292#37293#0" expanded="true" />
+                <element signature="e#37359#37360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="121" column="68" lean-forward="true" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+            <state relative-caret-position="473">
+              <caret line="125" column="45" lean-forward="false" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -133,10 +192,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SampleSubscriber</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -153,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/test/java/java9/Interfaces.java" />
         <option value="$PROJECT_DIR$/src/test/java/java9/FlowFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -357,8 +422,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="FlowFeatures.offer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UtilFeatures.processImprovements">
+    <configuration name="UtilFeatures.http2Clients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="java9.*" />
@@ -369,8 +434,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="offer" />
+      <option name="MAIN_CLASS_NAME" value="java9.UtilFeatures" />
+      <option name="METHOD_NAME" value="http2Clients" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,7 +448,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlowFeatures.testOnError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilFeatures.immutableFactoryCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="java9.*" />
@@ -394,8 +459,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="testOnError" />
+      <option name="MAIN_CLASS_NAME" value="java9.UtilFeatures" />
+      <option name="METHOD_NAME" value="immutableFactoryCollection" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -408,7 +473,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlowFeatures.testPublisher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilFeatures.iterateWithRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="java9.*" />
@@ -419,8 +484,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="testPublisher" />
+      <option name="MAIN_CLASS_NAME" value="java9.UtilFeatures" />
+      <option name="METHOD_NAME" value="iterateWithRange" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -433,7 +498,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlowFeatures.testPublisherUntilWeClose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilFeatures.processImprovements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="java9.*" />
@@ -444,8 +509,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="testPublisherUntilWeClose" />
+      <option name="MAIN_CLASS_NAME" value="java9.UtilFeatures" />
+      <option name="METHOD_NAME" value="processImprovements" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -458,7 +523,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlowFeatures.testTransformer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UtilFeatures.staticInterfaceMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="java9.*" />
@@ -469,8 +534,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="testTransformer" />
+      <option name="MAIN_CLASS_NAME" value="java9.UtilFeatures" />
+      <option name="METHOD_NAME" value="staticInterfaceMethod" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -568,19 +633,19 @@
       <Port>5050</Port>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisher" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testTransformer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisherUntilWeClose" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UtilFeatures.iterateWithRange" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UtilFeatures.staticInterfaceMethod" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UtilFeatures.http2Clients" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UtilFeatures.immutableFactoryCollection" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UtilFeatures.processImprovements" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisherUntilWeClose" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisher" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testTransformer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UtilFeatures.processImprovements" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UtilFeatures.immutableFactoryCollection" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UtilFeatures.http2Clients" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UtilFeatures.staticInterfaceMethod" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UtilFeatures.iterateWithRange" />
       </list>
     </recent_temporary>
   </component>
@@ -614,47 +679,63 @@
       <option name="project" value="LOCAL" />
       <updated>1506797991730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Flow API">
+      <created>1506799568552</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1506799568552</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 21h 17m 25s.xml">
-      <configuration name="FlowFeatures.offer" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_immutableFactoryCollection - 2017.09.30 at 22h 12m 06s.xml">
+      <configuration name="UtilFeatures.immutableFactoryCollection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 51s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_iterateWithPredicate - 2017.09.30 at 21h 41m 52s.xml">
+      <configuration name="UtilFeatures.iterateWithPredicate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 55s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_iterateWithRange - 2017.09.30 at 21h 43m 40s.xml">
+      <configuration name="UtilFeatures.iterateWithRange" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 58s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_processImprovements - 2017.09.30 at 22h 17m 59s.xml">
+      <configuration name="UtilFeatures.processImprovements" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 01s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_processImprovements - 2017.09.30 at 22h 21m 02s.xml">
+      <configuration name="UtilFeatures.processImprovements" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 03s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_processImprovements - 2017.09.30 at 22h 21m 53s.xml">
+      <configuration name="UtilFeatures.processImprovements" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 40s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_processImprovements - 2017.09.30 at 22h 22m 35s.xml">
+      <configuration name="UtilFeatures.processImprovements" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 15m 03s.xml">
-      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_processImprovements - 2017.09.30 at 22h 23m 07s.xml">
+      <configuration name="UtilFeatures.processImprovements" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisherUntilWeClose - 2017.09.30 at 21h 15m 59s.xml">
-      <configuration name="FlowFeatures.testPublisherUntilWeClose" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_staticInterfaceMethod - 2017.09.30 at 21h 48m 48s.xml">
+      <configuration name="UtilFeatures.staticInterfaceMethod" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_testPublisherUntilWeClose - 2017.09.30 at 21h 16m 59s.xml">
-      <configuration name="FlowFeatures.testPublisherUntilWeClose" configurationId="JUnit" />
+    <history-entry file="UtilFeatures_staticInterfaceMethod - 2017.09.30 at 21h 50m 02s.xml">
+      <configuration name="UtilFeatures.staticInterfaceMethod" configurationId="JUnit" />
     </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="22" width="1245" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -662,11 +743,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48181817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31753948" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31753948" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24937657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -678,7 +760,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -764,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
+        <state relative-caret-position="37">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#1861#1862#0" expanded="true" />
             <element signature="e#1911#1912#0" expanded="true" />
@@ -775,10 +856,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="838" column="23" lean-forward="false" selection-start-line="838" selection-start-column="23" selection-end-line="838" selection-end-column="23" />
+          <folding>
+            <element signature="e#37292#37293#0" expanded="true" />
+            <element signature="e#37359#37360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/IntStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3912">
+          <caret line="1304" column="28" lean-forward="false" selection-start-line="1304" selection-start-column="28" selection-end-line="1304" selection-end-column="28" />
+          <folding>
+            <element signature="e#60100#60101#0" expanded="true" />
+            <element signature="e#60162#60163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ProcessHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+          <folding>
+            <element signature="e#4724#4725#0" expanded="true" />
+            <element signature="e#4773#4774#0" expanded="true" />
+            <element signature="e#5321#5322#0" expanded="true" />
+            <element signature="e#5371#5372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="54" column="18" lean-forward="false" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="121" column="68" lean-forward="true" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+        <state relative-caret-position="473">
+          <caret line="125" column="45" lean-forward="false" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
           <folding />
         </state>
       </provider>
