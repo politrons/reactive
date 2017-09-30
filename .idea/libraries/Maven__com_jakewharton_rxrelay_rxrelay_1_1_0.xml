@@ -8,7 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/jakewharton/rxrelay/rxrelay/1.1.0/rxrelay-1.1.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.ideaLibSources/rxrelay-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
