@@ -10,7 +10,7 @@ import java.util.function.Function;
 
 /**
  * Java 9 introduce Flow, an API to finally do reactive programing with Java.
- * It´s based like other Reactive stream libraries in the Observer pattern([Publisher] -> [Subscriber])
+ * It´s based like other Reactive stream libraries in the Observer pattern([Publisher] ~> [Subscriber])
  * Here Flow it´s just an extension to Stream, where instead of just return a value in the stream, we have
  * the possibility to pass the item to a [Publisher] which it will have or not a [Subscriber] associated.
  * <p>
@@ -48,6 +48,7 @@ public class FlowFeatures {
 
         @Override
         public void onError(Throwable t) {
+            System.out.println("onError callback:" + t.getMessage());
             t.printStackTrace();
         }
 
@@ -69,25 +70,10 @@ public class FlowFeatures {
         }
     }
 
-    class CancelSubscriber extends CustomSubscriber<String> {
-        int i = 0;
-
-        @Override
-        public void onSubscribe(Flow.Subscription subscription) {
-            this.subscription = subscription;
-            if (i == 0) {
-                i++;
-                subscription.cancel();
-            } else {
-                System.out.println("Subscription done:");
-                subscription.request(1);
-            }
-        }
-    }
-
     /**
      * A simple publisher which will receive items form the stream to be passed to the subscriber.
      * We can use all the commons operator from Stream before submit the items to the publisher.
+     * to pass the item to the publisher and start emitting, we use [[submit(Item)]]
      */
     @Test
     public void testPublisher() throws InterruptedException {
@@ -96,7 +82,7 @@ public class FlowFeatures {
 
         //Register Subscriber
         publisher.subscribe(new CustomSubscriber<>());
-
+        Thread.sleep(500);
         //Publish items
         System.out.println("Publishing Items...");
         String[] items = {"1", "A", "2", "B", "3", "C"};
@@ -199,6 +185,7 @@ public class FlowFeatures {
 
         @Override
         public void onError(Throwable t) {
+            System.out.println("onError transformer:" + t.getMessage());
             t.printStackTrace();
         }
 
@@ -209,6 +196,11 @@ public class FlowFeatures {
     }
 
 
+    /**
+     * Using this class we will subscribe to the publisher and we will do the gateway to the subscriber, which it will
+     * subscribe to the Transformer class, all the items emitted by the publisher it will be passed to the transformer,
+     * and then to the subscriber.
+     */
     @Test
     public void testTransformer() throws InterruptedException {
         //Create Publisher
@@ -224,6 +216,29 @@ public class FlowFeatures {
         System.out.println("Publishing Items...");
         String[] items = {"1", "2", "3", "4"};
         Arrays.stream(items).forEach(publisher::submit);
+        Thread.sleep(500);
+        publisher.close();
+    }
+
+    /**
+     * Like other reactive API onError it will invoked in case something in the emission of the item goes wrong
+     */
+    @Test
+    public void testOnError() throws InterruptedException {
+        //Create Processor
+
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+        TransformerProcessor<String, Integer> transformProcessor = new TransformerProcessor<>(Integer::parseInt);
+
+        //Chain Processor and Subscriber
+        transformProcessor.subscribe(new CustomSubscriber<>());
+        publisher.subscribe(transformProcessor);
+
+        System.out.println("Publishing Items...");
+        String[] items = {"wrong Number"};
+        Arrays.stream(items)
+                .forEach(publisher::submit);
         Thread.sleep(500);
         publisher.close();
     }
