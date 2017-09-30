@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/java-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/img/java.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" afterPath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,17 +68,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlowFeatures.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FlowFeatures.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1500">
-              <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+            <state relative-caret-position="2790">
+              <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
               <folding>
                 <element signature="e#1861#1862#0" expanded="true" />
                 <element signature="e#1911#1912#0" expanded="true" />
-                <element signature="e#6968#6969#0" expanded="true" />
-                <element signature="e#6999#7000#0" expanded="true" />
+                <element signature="e#8598#8599#0" expanded="true" />
+                <element signature="e#8629#8630#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="121" column="68" lean-forward="true" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,8 +106,8 @@
       <file leaf-file-name="SubmissionPublisher.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/SubmissionPublisher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3083">
-              <caret line="246" column="71" lean-forward="false" selection-start-line="246" selection-start-column="54" selection-end-line="246" selection-end-column="71" />
+            <state relative-caret-position="391">
+              <caret line="374" column="15" lean-forward="false" selection-start-line="374" selection-start-column="15" selection-end-line="374" selection-end-column="15" />
               <folding>
                 <element signature="e#11344#11345#0" expanded="true" />
                 <element signature="e#11399#11400#0" expanded="true" />
@@ -140,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/test/java/java9/Interfaces.java" />
         <option value="$PROJECT_DIR$/src/test/java/java9/FlowFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -280,6 +294,21 @@
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,31 +383,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FlowFeatures.testCancelSubscription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="java9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="java9" />
-      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
-      <option name="METHOD_NAME" value="testCancelSubscription" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="FlowFeatures.testOnError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -417,6 +421,31 @@
       <option name="PACKAGE_NAME" value="java9" />
       <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
       <option name="METHOD_NAME" value="testPublisher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="FlowFeatures.testPublisherUntilWeClose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java9" />
+      <option name="MAIN_CLASS_NAME" value="java9.FlowFeatures" />
+      <option name="METHOD_NAME" value="testPublisherUntilWeClose" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -540,18 +569,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisher" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testCancelSubscription" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testTransformer" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testTransformer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisherUntilWeClose" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisher" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FlowFeatures.offer" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisherUntilWeClose" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testPublisher" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testTransformer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testCancelSubscription" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FlowFeatures.testOnError" />
       </list>
     </recent_temporary>
   </component>
@@ -578,39 +607,46 @@
       <option name="project" value="LOCAL" />
       <updated>1506796693496</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Flow API">
+      <created>1506797991730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1506797991730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 20h 35m 01s.xml">
+    <history-entry file="FlowFeatures_offer - 2017.09.30 at 21h 17m 25s.xml">
       <configuration name="FlowFeatures.offer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 20h 35m 13s.xml">
-      <configuration name="FlowFeatures.offer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 20h 35m 53s.xml">
-      <configuration name="FlowFeatures.offer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 20h 36m 00s.xml">
-      <configuration name="FlowFeatures.offer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_offer - 2017.09.30 at 20h 36m 05s.xml">
-      <configuration name="FlowFeatures.offer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_testOnError - 2017.09.30 at 20h 42m 02s.xml">
-      <configuration name="FlowFeatures.testOnError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_testOnError - 2017.09.30 at 20h 43m 54s.xml">
-      <configuration name="FlowFeatures.testOnError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_testOnError - 2017.09.30 at 20h 44m 26s.xml">
-      <configuration name="FlowFeatures.testOnError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_testOnError - 2017.09.30 at 20h 45m 00s.xml">
-      <configuration name="FlowFeatures.testOnError" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 20h 58m 45s.xml">
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 51s.xml">
       <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 55s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 13m 58s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 01s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 03s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 14m 40s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisher - 2017.09.30 at 21h 15m 03s.xml">
+      <configuration name="FlowFeatures.testPublisher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisherUntilWeClose - 2017.09.30 at 21h 15m 59s.xml">
+      <configuration name="FlowFeatures.testPublisherUntilWeClose" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlowFeatures_testPublisherUntilWeClose - 2017.09.30 at 21h 16m 59s.xml">
+      <configuration name="FlowFeatures.testPublisherUntilWeClose" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -630,7 +666,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31753948" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31753948" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24937657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -663,12 +699,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java</url>
-          <line>188</line>
+          <line>219</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -715,8 +751,8 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/SubmissionPublisher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3083">
-          <caret line="246" column="71" lean-forward="false" selection-start-line="246" selection-start-column="54" selection-end-line="246" selection-end-column="71" />
+        <state relative-caret-position="391">
+          <caret line="374" column="15" lean-forward="false" selection-start-line="374" selection-start-column="15" selection-end-line="374" selection-end-column="15" />
           <folding>
             <element signature="e#11344#11345#0" expanded="true" />
             <element signature="e#11399#11400#0" expanded="true" />
@@ -728,14 +764,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+        <state relative-caret-position="2790">
+          <caret line="192" column="31" lean-forward="false" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
           <folding>
             <element signature="e#1861#1862#0" expanded="true" />
             <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#6968#6969#0" expanded="true" />
-            <element signature="e#6999#7000#0" expanded="true" />
+            <element signature="e#8598#8599#0" expanded="true" />
+            <element signature="e#8629#8630#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="121" column="68" lean-forward="true" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

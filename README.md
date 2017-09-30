@@ -115,6 +115,14 @@ The Java 8 Functions with particle examples of how to use it.
 
 * [Functions](src/test/java/stream/Functions.java)
 
+## Java 9
+
+![My image](src/main/resources/img/java-9.png)
+
+The most important features with particle examples of how to use it.
+
+* [Flow](src/test/java/java9/FlowFeatures.java)
+
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)

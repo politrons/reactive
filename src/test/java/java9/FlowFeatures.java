@@ -89,6 +89,39 @@ public class FlowFeatures {
         Arrays.stream(items)
                 .filter(item -> item.chars().allMatch(Character::isAlphabetic))
                 .map(String::toUpperCase)
+                .map(publisher::submit)
+                .forEach(result -> System.out.println("Estimated maximum lag among subscribers in ms:" + result));
+        Thread.sleep(500);
+        publisher.close();
+    }
+
+    /**
+     * You might realize that all examples has the publisher.close, this is because unlike the RxJava that once
+     * we finish the emission of the items the subscriber automatically unsubscribe, here we keep it subscribe,
+     * just like the [[Relay:https://github.com/politrons/reactive/blob/master/src/test/java/rx/relay/Relay.java]].
+     * So the only way to unsubscribe from the publisher is just close the publisher, which it will invoke the onComplete
+     * of all subscribers.
+     */
+    @Test
+    public void testPublisherUntilWeClose() throws InterruptedException {
+        //Create Publisher for expected items Strings
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+        //Register Subscriber
+        publisher.subscribe(new CustomSubscriber<>());
+        Thread.sleep(500);
+        //Publish items
+        System.out.println("Publishing Items...");
+        String[] items = {"1", "A", "2", "B", "3", "C"};
+        Arrays.stream(items)
+                .filter(item -> item.chars().allMatch(Character::isAlphabetic))
+                .map(String::toUpperCase)
+                .forEach(publisher::submit);
+        Thread.sleep(500);
+        //After we finish the emission we start again and the subscription still up
+        Arrays.stream(items)
+                .filter(item -> item.chars().allMatch(Character::isAlphabetic))
+                .map(String::toUpperCase)
                 .forEach(publisher::submit);
         Thread.sleep(500);
         publisher.close();
@@ -151,8 +184,6 @@ public class FlowFeatures {
         }
         Thread.sleep(5000);
         publisher.close();
-
-
     }
 
     /**
@@ -166,7 +197,7 @@ public class FlowFeatures {
         private Function function;
         private Flow.Subscription subscription;
 
-        public TransformerProcessor(Function<? super T, ? extends R> function) {
+        TransformerProcessor(Function<? super T, ? extends R> function) {
             super();
             this.function = function;
         }
