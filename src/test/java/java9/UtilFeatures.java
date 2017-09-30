@@ -1,14 +1,14 @@
 package java9;
 
-import com.sun.deploy.model.Resource;
+import jdk.incubator.http.HttpClient;
+import jdk.incubator.http.HttpRequest;
+import jdk.incubator.http.HttpResponse;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.IntStream;
 
 import static java.lang.String.*;
@@ -88,19 +88,24 @@ public class UtilFeatures {
         System.out.println("State Process: = " + p.isAlive());
     }
 
-    /*@Test
+    /**
+     * Java 9 introduce in the core an Http client 2.0 so no need to use a third party solution
+     * unless offer something else.
+     *
+     * By default the HttpClient and another classes are in another module not imported by default
+     * in the default JDK modules. So you need to provide in the module-info that you have a dependency.
+     */
+    @Test
     public void http2Clients() throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newHttpClient();
 
+        HttpClient client = HttpClient.newHttpClient();
         HttpRequest req =
                 HttpRequest.newBuilder(URI.create("http://www.google.com"))
                         .header("User-Agent", "Java")
                         .GET()
                         .build();
-
-
         HttpResponse<String> resp = client.send(req, HttpResponse.BodyHandler.asString());
         System.out.println(resp.body());
-    }*/
+    }
 
 }

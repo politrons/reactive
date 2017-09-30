@@ -125,6 +125,7 @@ The most important features with particle examples of how to use it.
 
 * [Features](src/test/java/java9/UtilFeatures.java)
 
+* [Module system](src/test/java/java9/module-info.java)
 
 ## Software craftsmanship
 
