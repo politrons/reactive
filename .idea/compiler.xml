@@ -19,7 +19,7 @@
         <module name="reactive" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="9">
       <module name="reactive" target="9" />
     </bytecodeTargetLevel>
   </component>

@@ -1,8 +1,6 @@
 package java9;
 
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
+
 import org.junit.Test;
 
 import java.io.IOException;
@@ -95,7 +93,7 @@ public class UtilFeatures {
      * By default the HttpClient and another classes are in another module not imported by default
      * in the default JDK modules. So you need to provide in the module-info that you have a dependency.
      */
-    @Test
+    /*@Test
     public void http2Clients() throws IOException, InterruptedException {
 
         HttpClient client = HttpClient.newHttpClient();
@@ -106,6 +104,7 @@ public class UtilFeatures {
                         .build();
         HttpResponse<String> resp = client.send(req, HttpResponse.BodyHandler.asString());
         System.out.println(resp.body());
-    }
+
+    }*/
 
 }

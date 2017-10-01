@@ -6,7 +6,9 @@
  * In our example if we want to use the package junit we need to specify in the module file.
  * Where I specify the package of my classes and the package of the classes that I need to use.
  */
-module java9 {
+module reactive {
     requires junit;
     requires jdk.incubator.httpclient;
+    requires rxjava;
+    requires vertx.core;
 }
