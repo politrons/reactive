@@ -22,26 +22,32 @@ public class CompletableFutureFeature {
     @Test
     public void supplyAsync() throws InterruptedException {
         CompletableFuture<Either<Integer, String>> completableFuture = CompletableFuture.supplyAsync(this::getValue);
-        completableFuture.whenComplete((result, throwable) -> {
-            System.out.println(result.right().get());
-        });
+        completableFuture.whenComplete((result, throwable) -> System.out.println(result.right().get()));
         Thread.sleep(2000);
     }
 
     /**
-     * You can trigger the promise using complete, which it will return a boolean
+     * You can trigger the promise using [[complete]] which will resolve the result in the same thread, and it will return a boolean
      * as an state of the future, true in case that the future finish or false
      */
     @Test
     public void complete() throws InterruptedException {
         CompletableFuture<Either<Integer, String>> completableFuture = new CompletableFuture<>();
-        completableFuture.whenComplete((result, throwable) -> {
-            System.out.println(result.right().get());
-        });
-        Thread.sleep(500);
+        completableFuture.whenComplete((result, throwable) -> System.out.println(result.right().get()));
         boolean complete = completableFuture.complete(getValue());//Pass the value to return once he it.
         System.out.println(complete);
-        Thread.sleep(5000);
+    }
+
+    /**
+     * You can trigger the promise using [[completeAsync]] which will resolve the result in another thread.
+     */
+    @Test
+    public void completeAsync() throws InterruptedException {
+        CompletableFuture<Either<Integer, String>> completableFuture = new CompletableFuture<>();
+        completableFuture.thenRun(() -> System.out.println("Do on Next action " + Thread.currentThread().getName()));
+        completableFuture.completeAsync(this::getValue);
+        completableFuture.whenComplete((result, throwable) -> System.out.println(result.right().get() + " " + Thread.currentThread().getName()));
+        Thread.sleep(2000);
     }
 
     /**
@@ -50,14 +56,22 @@ public class CompletableFutureFeature {
      */
     @Test
     public void zip() throws InterruptedException {
-        CompletableFuture<Either<Integer, String>> completableFuture =  CompletableFuture.supplyAsync(this::getValue);
+        CompletableFuture<Either<Integer, String>> completableFuture = CompletableFuture.supplyAsync(this::getValue);
         CompletableFuture<Either<Integer, String>> completableFuture1 = CompletableFuture.supplyAsync(this::getValue);
-        CompletableFuture<Right> rightCompletableFuture = completableFuture
-                .thenCombine(completableFuture1, (c1, c2) -> new Right<>(c1.right().get() + "|" + c2.right().get()));
+        completableFuture
+                .thenCombine(completableFuture1, (c1, c2) -> new Right<>(c1.right().get() + "|" + c2.right().get()))
+                .whenComplete((result, throwable) -> System.out.println(result.right().get()));
+        Thread.sleep(2000);
+    }
 
-        rightCompletableFuture.whenComplete((result, throwable) -> {
-            System.out.println(result.right().get());
-        });
+    @Test
+    public void thenApply() throws InterruptedException {
+        CompletableFuture.supplyAsync(this::getValue)
+                .thenApply(either -> {
+                    String value = either.right().get().toUpperCase();
+                    return new Right<Integer, String>(value);
+                })
+                .whenComplete((result, throwable) -> System.out.println(result.right().get()));
         Thread.sleep(2000);
     }
 
