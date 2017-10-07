@@ -113,7 +113,7 @@ Stream API, Functions and Promises with examples of how to use it.
 
 * [Functions](src/test/java/java8/Functions.java)
 
-* [CompletableFuture](src/test/java/java8/CompletableFuture.java)
+* [CompletableFuture](src/test/java/java8/CompletableFutureFeature.java)
 
 
 ## Java 9
