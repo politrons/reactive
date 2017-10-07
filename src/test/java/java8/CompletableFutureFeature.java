@@ -64,11 +64,19 @@ public class CompletableFutureFeature {
         Thread.sleep(2000);
     }
 
+    /**
+     * ThenApply it would behave like the map operator in Scala Future. It will mutate the item through the pipeline
+     * to the whenComplete callback, once that finish
+     */
     @Test
     public void thenApply() throws InterruptedException {
         CompletableFuture.supplyAsync(this::getValue)
                 .thenApply(either -> {
                     String value = either.right().get().toUpperCase();
+                    return new Right<Integer, String>(value);
+                })
+                .thenApply(either ->{
+                    String value = either.right().get().substring(0,5);
                     return new Right<Integer, String>(value);
                 })
                 .whenComplete((result, throwable) -> System.out.println(result.right().get()));
