@@ -107,13 +107,14 @@ A Comparative and benchmark between these two frameworks.
 
 ![My image](src/main/resources/img/rsz_stream.jpg)
 
-The Java 8 Stream API with examples of most useful operators.
+Stream API, Functions and Promises with examples of how to use it.
 
-* [Stream](src/test/java/stream/StreamUtils.java)
+* [Stream](src/test/java/java8/StreamUtils.java)
 
-The Java 8 Functions with particle examples of how to use it.
+* [Functions](src/test/java/java8/Functions.java)
 
-* [Functions](src/test/java/stream/Functions.java)
+* [CompletableFuture](src/test/java/java8/CompletableFuture.java)
+
 
 ## Java 9
 

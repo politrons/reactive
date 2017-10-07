@@ -1,4 +1,4 @@
-package stream;
+package java8;
 
 import io.vertx.core.json.JsonObject;
 import org.junit.Test;

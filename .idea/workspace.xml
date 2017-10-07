@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="Flow API">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/utils/CompletableFutureFeature.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/module-info.java" afterPath="" />
+    <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/stream/Functions.java" afterPath="$PROJECT_DIR$/src/test/java/java8/Functions.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/stream/StreamUtils.java" afterPath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/utils/CompletableFutureFeature.java" afterPath="$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reactive.iml" afterPath="$PROJECT_DIR$/reactive.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,13 +59,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CompletableFutureFeature.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/CompletableFutureFeature.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,9 +93,12 @@
       <file leaf-file-name="CompletableFuture.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="2132" column="38" lean-forward="false" selection-start-line="2132" selection-start-column="38" selection-end-line="2132" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="1969" column="43" lean-forward="false" selection-start-line="1969" selection-start-column="43" selection-end-line="1969" selection-end-column="43" />
+              <folding>
+                <element signature="e#72103#72104#0" expanded="true" />
+                <element signature="e#72134#72135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,20 +119,6 @@
             <state relative-caret-position="30">
               <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObservableMerge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableMerge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2372#2373#0" expanded="true" />
-                <element signature="e#2441#2442#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -202,12 +201,13 @@
         <option value="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home!/jdk.incubator.httpclient/module-info.class" />
         <option value="$PROJECT_DIR$/src/test/java/java9/module-info.java" />
         <option value="$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/stream/StreamUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableMap.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/module-info.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/CompletableFutureFeature.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java" />
       </list>
     </option>
   </component>
@@ -347,6 +347,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -392,18 +400,68 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.CompletableFutureFeature.zip">
-    <configuration name="CompletableFutureFeature.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureFeature.complete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.CompletableFutureFeature" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.CompletableFutureFeature" />
+      <option name="METHOD_NAME" value="complete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CompletableFutureFeature.supplyAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.CompletableFutureFeature" />
+      <option name="METHOD_NAME" value="supplyAsync" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CompletableFutureFeature.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="java8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.CompletableFutureFeature" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -420,67 +478,17 @@
     <configuration name="CompletableFutureFeature.zip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.CompletableFutureFeature" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.CompletableFutureFeature" />
       <option name="METHOD_NAME" value="zip" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ObservableCollect.collectObservableList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.transforming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableCollect" />
-      <option name="METHOD_NAME" value="collectObservableList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ObservableCompose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.transforming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableCompose" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -602,19 +610,19 @@
       <Port>5050</Port>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableCompose" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ObservableCollect.collectObservableList" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.zip" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.zip" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.complete" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.supplyAsync" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.zip" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableCompose" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableCollect.collectObservableList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.supplyAsync" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.complete" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CompletableFutureFeature.test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ObservableMap.testMap" />
       </list>
     </recent_temporary>
   </component>
@@ -669,18 +677,28 @@
       <option name="project" value="LOCAL" />
       <updated>1506860327756</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Flow API">
+      <created>1507379835154</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1507379835154</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CompletableFutureFeature_test - 2017.10.05 at 21h 30m 46s.xml">
-      <configuration name="CompletableFutureFeature.test" configurationId="JUnit" />
+    <history-entry file="CompletableFutureFeature_complete - 2017.10.07 at 18h 15m 10s.xml">
+      <configuration name="CompletableFutureFeature.complete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureFeature_test - 2017.10.05 at 21h 34m 37s.xml">
-      <configuration name="CompletableFutureFeature.test" configurationId="JUnit" />
+    <history-entry file="CompletableFutureFeature_complete - 2017.10.07 at 18h 15m 50s.xml">
+      <configuration name="CompletableFutureFeature.complete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CompletableFutureFeature_test - 2017.10.05 at 21h 34m 50s.xml">
-      <configuration name="CompletableFutureFeature.test" configurationId="JUnit" />
+    <history-entry file="CompletableFutureFeature_supplyAsync - 2017.10.07 at 18h 16m 26s.xml">
+      <configuration name="CompletableFutureFeature.supplyAsync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompletableFutureFeature_supplyAsync - 2017.10.07 at 18h 16m 39s.xml">
+      <configuration name="CompletableFutureFeature.supplyAsync" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CompletableFutureFeature_zip - 2017.10.05 at 21h 50m 20s.xml">
       <configuration name="CompletableFutureFeature.zip" configurationId="JUnit" />
@@ -694,14 +712,11 @@
     <history-entry file="CompletableFutureFeature_zip - 2017.10.05 at 21h 52m 12s.xml">
       <configuration name="CompletableFutureFeature.zip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableCollect_collectObservableList - 2017.10.01 at 14h 18m 00s.xml">
-      <configuration name="ObservableCollect.collectObservableList" configurationId="JUnit" />
+    <history-entry file="CompletableFutureFeature_zip - 2017.10.07 at 18h 18m 41s.xml">
+      <configuration name="CompletableFutureFeature.zip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableCompose - 2017.10.01 at 14h 18m 17s.xml">
-      <configuration name="ObservableCompose" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObservableMap_testMap - 2017.10.04 at 12h 55m 46s.xml">
-      <configuration name="ObservableMap.testMap" configurationId="JUnit" />
+    <history-entry file="CompletableFutureFeature_zip - 2017.10.07 at 18h 20m 21s.xml">
+      <configuration name="CompletableFutureFeature.zip" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1030,15 +1045,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="127" column="32" lean-forward="false" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stream/StreamUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/StreamUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
@@ -1083,9 +1090,9 @@
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2372#2373#0" expanded="false" />
+            <element signature="e#2441#2442#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1150,14 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="2132" column="38" lean-forward="false" selection-start-line="2132" selection-start-column="38" selection-end-line="2132" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar!/scala/util/Right.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1166,10 +1165,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/CompletableFutureFeature.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="317">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="1969" column="43" lean-forward="false" selection-start-line="1969" selection-start-column="43" selection-end-line="1969" selection-end-column="43" />
+          <folding>
+            <element signature="e#72103#72104#0" expanded="true" />
+            <element signature="e#72134#72135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
