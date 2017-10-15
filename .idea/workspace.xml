@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/Client.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureDao.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/Connector.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/Connector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/workspace/FutureDao.java" afterPath="$PROJECT_DIR$/src/test/java/workspace/FutureDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,11 +64,11 @@
       <file leaf-file-name="CompletableFutureConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding>
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,12 +77,14 @@
       <file leaf-file-name="FutureConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/Connector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -116,8 +123,8 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -126,8 +133,8 @@
       <file leaf-file-name="FutureDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/FutureDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="195">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -136,11 +143,11 @@
       <file leaf-file-name="CompletableFutureDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/CompletableFutureDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding>
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,14 +156,16 @@
       <file leaf-file-name="DaoConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -215,14 +224,14 @@
         <option value="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utils/ScalaFuture.java" />
-        <option value="$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java" />
         <option value="$PROJECT_DIR$/src/test/java/workspace/FutureClient.java" />
-        <option value="$PROJECT_DIR$/src/test/java/workspace/FutureDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/workspace/Connector.java" />
-        <option value="$PROJECT_DIR$/src/test/java/workspace/Client.java" />
-        <option value="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java" />
         <option value="$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java" />
+        <option value="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java" />
         <option value="$PROJECT_DIR$/src/test/java/workspace/CompletableFutureDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/workspace/FutureDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/workspace/Client.java" />
+        <option value="$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java" />
       </list>
     </option>
   </component>
@@ -412,7 +421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Client.testFuture">
+  <component name="RunManager" selected="JUnit.Client.testCompletableInteger">
     <configuration name="Client.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -463,7 +472,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Client.testFuture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Client.testCompletableInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="workspace.*" />
@@ -475,7 +484,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="workspace" />
       <option name="MAIN_CLASS_NAME" value="workspace.Client" />
-      <option name="METHOD_NAME" value="testFuture" />
+      <option name="METHOD_NAME" value="testCompletableInteger" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -488,20 +497,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ScalaFuture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Client.testFutureInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="workspace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.ScalaFuture" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="workspace" />
+      <option name="MAIN_CLASS_NAME" value="workspace.Client" />
+      <option name="METHOD_NAME" value="testFutureInteger" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -513,19 +522,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ScalaFuture.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Client.testFutureString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="workspace.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.ScalaFuture" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="workspace" />
+      <option name="MAIN_CLASS_NAME" value="workspace.Client" />
+      <option name="METHOD_NAME" value="testFutureString" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -623,19 +632,19 @@
       <Port>5050</Port>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ScalaFuture.test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ScalaFuture" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Client.test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Client.testFuture" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Client.testCompletableFuture" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Client.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Client.testFutureString" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Client.testCompletableFuture" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Client.testFutureInteger" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Client.testCompletableInteger" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Client.testFuture" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Client.testCompletableFuture" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Client.test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ScalaFuture.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ScalaFuture" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Client.testCompletableInteger" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Client.testFutureInteger" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Client.testFutureString" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Client.testCompletableFuture" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Client.test" />
       </list>
     </recent_temporary>
   </component>
@@ -732,21 +741,25 @@
       <option name="project" value="LOCAL" />
       <updated>1508061589430</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Generics">
+      <created>1508061685966</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1508061685966</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Client_testCompletableFuture - 2017.10.15 at 10h 51m 30s.xml">
-      <configuration name="Client.testCompletableFuture" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Client_testCompletableFuture - 2017.10.15 at 10h 51m 48s.xml">
-      <configuration name="Client.testCompletableFuture" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Client_testCompletableFuture - 2017.10.15 at 11h 15m 53s.xml">
       <configuration name="Client.testCompletableFuture" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Client_testCompletableFuture - 2017.10.15 at 11h 19m 35s.xml">
       <configuration name="Client.testCompletableFuture" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Client_testCompletableInteger - 2017.10.15 at 21h 33m 19s.xml">
+      <configuration name="Client.testCompletableInteger" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Client_testFuture - 2017.10.15 at 11h 05m 39s.xml">
       <configuration name="Client.testFuture" configurationId="JUnit" />
@@ -766,6 +779,9 @@
     <history-entry file="Client_testFuture - 2017.10.15 at 12h 00m 50s.xml">
       <configuration name="Client.testFuture" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Client_testFutureInteger - 2017.10.15 at 21h 33m 13s.xml">
+      <configuration name="Client.testFutureInteger" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +794,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="22" width="1244" height="778" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -793,7 +808,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6090909" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33194676" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33194676" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24937657" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1199,21 +1214,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/workspace/FutureDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/workspace/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/workspace/CompletableFutureConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding>
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1221,52 +1244,48 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/workspace/Connector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/workspace/FutureConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/workspace/FutureDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/workspace/DaoConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/workspace/CompletableFutureDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="105">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
           </folding>
         </state>
       </provider>

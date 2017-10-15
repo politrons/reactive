@@ -16,8 +16,12 @@ public abstract class DaoConnector {
         }
     }
 
-    public <D> D execute() {
-        return (D) connector.execute();
+    public <D> D executeString() {
+        return (D) connector.executeString();
+    }
+
+    public <D> D executeInt() {
+        return (D) connector.executeInt();
     }
 
     public Class getReturnTypeClass() {
