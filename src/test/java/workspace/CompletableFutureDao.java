@@ -12,12 +12,9 @@ public class CompletableFutureDao extends DaoConnector {
 
     public void search() throws Exception {
         CompletableFuture<String> future = execute();
-        future.whenComplete((r, t) -> {
-            System.out.println("Completable future value:" + r);
-        });
+        future.whenComplete((r, t) -> System.out.println("Completable future value:" + r));
         Thread.sleep(1000);
     }
-
 
     @Override
     public Class getReturnTypeClass() {

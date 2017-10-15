@@ -1,6 +1,5 @@
 package workspace;
 
-import akka.dispatch.Futures;
 import scala.concurrent.Future;
 
 import java.util.concurrent.CompletableFuture;
