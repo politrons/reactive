@@ -122,7 +122,8 @@ The most important features with particle examples of how to use it.
 
 * [Flow](src/test/java/java9/FlowFeatures.java)
 * [Features](src/test/java/java9/UtilFeatures.java)
-* [Module system](src/test/java/module-info.java)
+* [Optional](src/test/java/java9/OptionalImprovements.java)
+* [Module system](src/test/java/module-info.java.bak)
 
 ## Software craftsmanship
 

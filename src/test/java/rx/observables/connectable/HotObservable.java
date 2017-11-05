@@ -1,5 +1,8 @@
 package rx.observables.connectable;
 
+import akka.dispatch.ExecutionContexts;
+import akka.dispatch.Futures;
+import akka.dispatch.OnComplete;
 import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
@@ -8,8 +11,17 @@ import rx.subjects.AsyncSubject;
 import rx.subjects.PublishSubject;
 import rx.subjects.ReplaySubject;
 import rx.subjects.Subject;
+import scala.Function1;
+import scala.concurrent.ExecutionContextExecutorService;
+import scala.concurrent.Future;
+import scala.runtime.AbstractFunction1;
+import scala.runtime.BoxedUnit;
+import scala.util.Try;
 
+import java.util.Optional;
 import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.Executors.*;
 
 
 /**
@@ -187,6 +199,34 @@ public class HotObservable {
         interval.subscribe(publishSubject);
         publishSubject.subscribe(publishSubject2);
         publishSubject2.subscribe(System.out::println, (e) -> System.err.println(e.getMessage()), System.out::println);
+    }
+
+    @Test
+    public void createObservableFromFuture() throws InterruptedException {
+        Optional<Object> o2 = Optional.of(null);
+        Observable<String> observableFuture = getObservableFuture();
+        Observable<String> observableFuture1 = getObservableFuture();
+        Observable.zip(observableFuture, observableFuture1, (o, o1) -> o.concat(":").concat(o1))
+                .subscribe(value -> System.out.println("Result:" + value),
+                        System.out::println, () -> System.out.println("end"));
+    }
+
+    private Observable<String> getObservableFuture() {
+        ExecutionContextExecutorService executionContextExecutorService = ExecutionContexts.fromExecutorService(newCachedThreadPool());
+        ReplaySubject<String> publishSubject = ReplaySubject.create(1);
+        Future<String> future = Futures.<String>promise().success("works").future();
+        future.onComplete(getFunction(publishSubject), executionContextExecutorService);
+        return publishSubject.first().single();
+    }
+
+    private OnComplete getFunction(ReplaySubject<String> publishSubject) {
+        return new OnComplete() {
+            @Override
+            public void onComplete(Throwable failure, Object success) throws Throwable {
+                Observable<String> observable = Observable.just((String) success);
+                observable.subscribe(publishSubject);
+            }
+        };
     }
 
 }

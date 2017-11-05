@@ -58,8 +58,12 @@ public class CompletableFutureFeature {
     public void zip() throws InterruptedException {
         CompletableFuture<Either<Integer, String>> completableFuture = CompletableFuture.supplyAsync(this::getValue);
         CompletableFuture<Either<Integer, String>> completableFuture1 = CompletableFuture.supplyAsync(this::getValue);
+        CompletableFuture<Either<Integer, String>> completableFuture2 = CompletableFuture.supplyAsync(this::getValue);
+
         completableFuture
                 .thenCombine(completableFuture1, (c1, c2) -> new Right<>(c1.right().get() + "|" + c2.right().get()))
+                .thenCombine(completableFuture2, (c1, c2) -> new Right<>(c1.right().get() + "|" + c2.right().get()))
+
                 .whenComplete((result, throwable) -> System.out.println(result.right().get()));
         Thread.sleep(2000);
     }
