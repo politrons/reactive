@@ -110,9 +110,7 @@ A Comparative and benchmark between these two frameworks.
 Stream API, Functions and Promises with examples of how to use it.
 
 * [Stream](src/test/java/java8/StreamUtils.java)
-
 * [Functions](src/test/java/java8/Functions.java)
-
 * [CompletableFuture](src/test/java/java8/CompletableFutureFeature.java)
 
 
@@ -123,19 +121,13 @@ Stream API, Functions and Promises with examples of how to use it.
 The most important features with particle examples of how to use it.
 
 * [Flow](src/test/java/java9/FlowFeatures.java)
-
 * [Features](src/test/java/java9/UtilFeatures.java)
-
 * [Module system](src/test/java/module-info.java)
 
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)
-
 * [(O)pen/Closed principle](src/test/java/good_practices/OpenClosedPrinciple.java)
-
 * [(L)iskov substitution principle](src/test/java/good_practices/LiskovSubstitutionPrinciple.java)
-
 * [(I)nterface segregation principle](src/test/java/good_practices/InterfaceSegregationPrinciple.java)
-
 * [(D)on't repeat yourself](src/test/java/good_practices/DRY.java)
