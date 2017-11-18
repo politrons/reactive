@@ -9,6 +9,7 @@ import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 import rx.subjects.AsyncSubject;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -59,6 +60,20 @@ public class ObservableInterval {
         testSubscriber.awaitTerminalEvent(200, TimeUnit.MILLISECONDS);
     }
 
+    /**
+     * Interval can be used with zipWith which will allow you to zip one element of your observable emission with the next
+     * after N interval time.
+     */
+    @Test
+    public void intervalWithZip() {
+        Observable.interval(500, TimeUnit.MILLISECONDS)
+                .zipWith(Observable.from(Arrays.asList(1, 2, 3, 4, 5)), (a, b) -> String.valueOf(a).concat("-").concat(String.valueOf(b)))
+                .subscribe(number -> System.out.println("number:" + number),
+                        System.out::println,
+                        System.out::println);
+        TestSubscriber testSubscriber = new TestSubscriber();
+        testSubscriber.awaitTerminalEvent(5000, TimeUnit.MILLISECONDS);
+    }
     @Test
     public void testIntervalObservableWithError() {
         Observable.interval(100, TimeUnit.MILLISECONDS)
