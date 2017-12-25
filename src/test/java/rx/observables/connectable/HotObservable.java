@@ -203,7 +203,6 @@ public class HotObservable {
 
     @Test
     public void createObservableFromFuture() throws InterruptedException {
-        Optional<Object> o2 = Optional.of(null);
         Observable<String> observableFuture = getObservableFuture();
         Observable<String> observableFuture1 = getObservableFuture();
         Observable.zip(observableFuture, observableFuture1, (o, o1) -> o.concat(":").concat(o1))

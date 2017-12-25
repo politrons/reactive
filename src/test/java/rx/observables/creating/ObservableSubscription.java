@@ -1,10 +1,8 @@
 package rx.observables.creating;
 
 import org.junit.Test;
-import rx.Observable;
-import rx.Observer;
-import rx.Scheduler;
-import rx.Subscription;
+import rx.*;
+import rx.internal.util.ActionSubscriber;
 import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 
@@ -95,13 +93,50 @@ public class ObservableSubscription {
     }
 
 
-
     private void sleep() {
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * In every moment we have the possibility to create our own subscriber, which you have to implement ActionSubscriber
+     *  with onNext, onError and onComplete functions.
+     *  Once that you do that you can attach that subscriber into a subscription.
+     *
+     *  You can also can add the subscription into a subscriptionList that a subscriber has to know the state of the
+     *  subscriptions where he is part of
+     */
+    @Test
+    public void subscriberAndSubscription() {
+        Integer[] numbers = {0, 1, 2};
+
+        Subscriber subscriber = new ActionSubscriber(number -> {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Subscriber number:" + number);
+        },
+                System.out::println,
+                () -> System.out.println("Subscriber End of pipeline"));
+
+        Subscription subscription = Observable.from(numbers).subscribeOn(Schedulers.newThread()).subscribe(subscriber);
+        Subscription subscription1 = Observable.from(numbers).subscribeOn(Schedulers.newThread()).subscribe(subscriber);
+
+        subscriber.add(subscription);
+        subscriber.add(subscription1);
+        System.out.println("Is Unsubscribed??:" + subscriber.isUnsubscribed());
+
+
+        new TestSubscriber((Observer) subscription)
+                .awaitTerminalEvent(5, TimeUnit.SECONDS);
+
+        System.out.println("Is Unsubscribed??:" + subscriber.isUnsubscribed());
+
     }
 
 
