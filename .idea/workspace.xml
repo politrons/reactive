@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/module-info.java.bak" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,8 +91,8 @@
       <file leaf-file-name="ObservableSubscription.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="139" selection-end-column="5" />
+            <state relative-caret-position="1875">
+              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -896,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510998821565</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Generics">
+      <created>1514226395336</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1514226395336</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1413,8 +1418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="139" selection-end-column="5" />
+        <state relative-caret-position="1875">
+          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
         </state>
       </provider>

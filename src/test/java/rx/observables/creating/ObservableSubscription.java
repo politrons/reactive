@@ -92,15 +92,6 @@ public class ObservableSubscription {
                         () -> System.out.println("End of pipeline"));
     }
 
-
-    private void sleep() {
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
     /**
      * In every moment we have the possibility to create our own subscriber, which you have to implement ActionSubscriber
      *  with onNext, onError and onComplete functions.
@@ -137,6 +128,15 @@ public class ObservableSubscription {
 
         System.out.println("Is Unsubscribed??:" + subscriber.isUnsubscribed());
 
+    }
+
+
+    private void sleep() {
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
