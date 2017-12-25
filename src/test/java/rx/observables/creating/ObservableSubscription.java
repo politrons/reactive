@@ -94,26 +94,17 @@ public class ObservableSubscription {
 
     /**
      * In every moment we have the possibility to create our own subscriber, which you have to implement ActionSubscriber
-     *  with onNext, onError and onComplete functions.
-     *  Once that you do that you can attach that subscriber into a subscription.
-     *
-     *  You can also can add the subscription into a subscriptionList that a subscriber has to know the state of the
-     *  subscriptions where he is part of
+     * with onNext, onError and onComplete functions.
+     * Once that you do that you can attach that subscriber into a subscription.
+     * <p>
+     * You can also can add the subscription into a subscriptionList that a subscriber has to know the state of the
+     * subscriptions where he is part of
      */
     @Test
     public void subscriberAndSubscription() {
         Integer[] numbers = {0, 1, 2};
 
-        Subscriber subscriber = new ActionSubscriber(number -> {
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Subscriber number:" + number);
-        },
-                System.out::println,
-                () -> System.out.println("Subscriber End of pipeline"));
+        Subscriber subscriber = createSubscriber();
 
         Subscription subscription = Observable.from(numbers).subscribeOn(Schedulers.newThread()).subscribe(subscriber);
         Subscription subscription1 = Observable.from(numbers).subscribeOn(Schedulers.newThread()).subscribe(subscriber);
@@ -128,6 +119,35 @@ public class ObservableSubscription {
 
         System.out.println("Is Unsubscribed??:" + subscriber.isUnsubscribed());
 
+    }
+
+    /**
+     * You can in any moment unsubscribe all subscriber of a subscription and create a new one again.
+     * @throws InterruptedException
+     */
+    @Test
+    public void subscribeAndUnsubscribe() throws InterruptedException {
+        Integer[] numbers = {0, 1, 2, 4, 5, 6};
+        Observable<Integer> observable = Observable.from(numbers);
+        Subscription subscription = observable.subscribeOn(Schedulers.newThread()).subscribe(createSubscriber());
+        Thread.sleep(2000);
+        subscription.unsubscribe();
+        subscription = observable.subscribeOn(Schedulers.newThread()).subscribe(createSubscriber());
+        Thread.sleep(10000);
+        System.out.println(subscription.isUnsubscribed());
+    }
+
+    private ActionSubscriber createSubscriber() {
+        return new ActionSubscriber(number -> {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println("preparing to unsubscribe");
+            }
+            System.out.println("Subscriber number:" + number);
+        },
+                System.out::println,
+                () -> System.out.println("Subscriber End of pipeline"));
     }
 
 
