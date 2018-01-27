@@ -18,6 +18,7 @@ import scala.runtime.AbstractFunction1;
 import scala.runtime.BoxedUnit;
 import scala.util.Try;
 
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
@@ -226,6 +227,14 @@ public class HotObservable {
                 observable.subscribe(publishSubject);
             }
         };
+    }
+
+    @Test
+    public void chainObservablesWithSubject() throws InterruptedException {
+        Observable<Long> observable = Observable.from(Arrays.asList(1l, 2l, 3l, 4l));
+        Subject<Long, Long> chainObservable = ReplaySubject.create(1);
+        observable.subscribe(chainObservable);
+        chainObservable.subscribe(System.out::println, (e) -> System.err.println(e.getMessage()), System.out::println);
     }
 
 }
