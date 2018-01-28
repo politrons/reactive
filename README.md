@@ -88,7 +88,8 @@ A subject which subscribe observers and keep the pipeline open all the time.
 
 * [Relay](src/test/java/rx/relay/Relay.java)
 
-##  ![My image](src/main/resources/img/reactor.png) Spring Reactor 
+![My image](src/main/resources/img/reactor.png) 
+## Spring Reactor 
 
 The reactive stream API implementation of Spring.
 
