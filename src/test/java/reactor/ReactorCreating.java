@@ -46,6 +46,20 @@ public class ReactorCreating {
     }
 
     /**
+     * From operator allow you to create a Flux from another flux combining pipelines logic.
+     * In this case we have the first pipeline which filter the number of elements, and the second one
+     * set in upper case all elements emitted.
+     */
+    @Test
+    public void from() {
+        Flux<String> flux = Flux.just("hello", "reactive", "Spring", "world", "?")
+                .filter(value -> value.length() > 1);
+        Flux.from(flux)
+                .map(String::toUpperCase)
+                .subscribe(System.out::println);
+    }
+
+    /**
      * Since interval work asynchronously you will have to use Thread sleep to wait a period of time
      * to see some items emitted. This type of Flux never finish to emit, in order to stop, you will need unsubscribe the Disposable.
      * <p>

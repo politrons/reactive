@@ -44,21 +44,52 @@ public class ReactorTransforming {
 
     /**
      * Compose operator it´s mean to be used to transform one Flux into another with all the steps that want to define.
+     * And it will affect the whole stream and not only what happens inside the operator as flatMap does.
+     * Here we can see how the publishOn affect the whole stream and not only the compose operator
      *
      */
     @Test
     public void compose() throws InterruptedException {
-        Scheduler mainThread = Schedulers.newElastic("1");
+        Scheduler mainThread = Schedulers.immediate();
         Flux.just(("old element"))
                 .compose(element ->
                         Flux.just("new element in new thread")
-                                .publishOn(Schedulers.newElastic("2"))
+                                .subscribeOn(mainThread)
                                 .doOnNext(value -> System.out.println("Thread:" + Thread.currentThread().getName())))
-                .publishOn(mainThread)
                 .doOnNext(value -> System.out.println("Thread:" + Thread.currentThread().getName()))
                 .subscribe(System.out::println);
         Thread.sleep(1000);
     }
 
+    @Test
+    public void flatMapVsCompose() throws InterruptedException {
+        Scheduler mainThread = Schedulers.immediate();
+        Flux.just(("old element"))
+                .flatMap(element ->
+                        Flux.just("new element in new thread")
+                                .subscribeOn(mainThread)
+                                .doOnNext(value -> System.out.println("Thread:" + Thread.currentThread().getName())))
+                .doOnNext(value -> System.out.println("Thread:" + Thread.currentThread().getName()))
+                .subscribe(System.out::println);
+        Thread.sleep(1000);
+    }
+
+    /**
+     * Window operator transform a number of elements to be emitted in the pipeline in a number of groups
+     * defined by the number of elements to gather in one emission.
+     * In this case having 10 elements to be emit and specifying that we want to group 5 by 5, we would end up
+     * having two Flux of 5 elements each.
+     */
+    @Test
+    public void window() {
+        Flux.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .window(5)
+                .flatMap(flux -> {
+                    System.out.println("New Flux:"+flux) ;
+                    return flux;
+                })
+                .subscribe(System.out::println);
+
+    }
 
 }

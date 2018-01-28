@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,24 +70,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReactorCreating.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
+      <file leaf-file-name="ReactorBackPressure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="107" column="7" lean-forward="true" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReactorBackPressure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
+      <file leaf-file-name="ReactorCreating.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="314">
+              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,11 +95,43 @@
       <file leaf-file-name="ReactorTransforming.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="236">
+              <caret line="71" column="100" lean-forward="true" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReactorAsync.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReactorFiltering.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="56" column="84" lean-forward="false" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,54 +158,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReactorAsync.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Schedulers.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE-sources.jar!/reactor/core/scheduler/Schedulers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
-              <folding>
-                <element signature="e#4714#4715#0" expanded="true" />
-                <element signature="e#4757#4758#0" expanded="true" />
-                <element signature="e#5414#5415#0" expanded="true" />
-                <element signature="e#5482#5483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Flux.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE-sources.jar!/reactor/core/publisher/Flux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="2890" column="29" lean-forward="false" selection-start-line="2890" selection-start-column="29" selection-end-line="2890" selection-end-column="29" />
+            <state relative-caret-position="-343">
+              <caret line="773" column="30" lean-forward="false" selection-start-line="773" selection-start-column="30" selection-end-line="773" selection-end-column="30" />
               <folding>
+                <element signature="e#36639#36640#0" expanded="true" />
+                <element signature="e#36684#36685#0" expanded="true" />
                 <element signature="e#44086#44087#0" expanded="true" />
                 <element signature="e#44115#44116#0" expanded="true" />
                 <element signature="e#289820#289821#0" expanded="true" />
                 <element signature="e#289862#289863#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BiFunction.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/BiFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -240,9 +235,10 @@
         <option value="$PROJECT_DIR$/src/test/java/reactor/Reactor.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" />
-        <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
+        <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
       </list>
     </option>
@@ -509,20 +505,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTransforming.flatMapX">
-    <configuration name="ObservableCompose.observableWithScheduler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReactorTransforming.flatMapVsCompose">
+    <configuration name="ReactorFiltering.last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="rx.observables.transforming.*" />
+          <option name="PATTERN" value="reactor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="reactive" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rx.observables.transforming" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.transforming.ObservableCompose" />
-      <option name="METHOD_NAME" value="observableWithScheduler" />
+      <option name="PACKAGE_NAME" value="reactor" />
+      <option name="MAIN_CLASS_NAME" value="reactor.ReactorFiltering" />
+      <option name="METHOD_NAME" value="last" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ReactorFiltering.skip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="reactor" />
+      <option name="MAIN_CLASS_NAME" value="reactor.ReactorFiltering" />
+      <option name="METHOD_NAME" value="skip" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ReactorFiltering.take" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="reactive" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="reactor" />
+      <option name="MAIN_CLASS_NAME" value="reactor.ReactorFiltering" />
+      <option name="METHOD_NAME" value="take" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -560,7 +606,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ReactorTransforming.flatMapX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReactorTransforming.flatMapVsCompose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="reactor.*" />
@@ -572,57 +618,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="reactor" />
       <option name="MAIN_CLASS_NAME" value="reactor.ReactorTransforming" />
-      <option name="METHOD_NAME" value="flatMapX" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ReactorTransforming.scan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="reactor" />
-      <option name="MAIN_CLASS_NAME" value="reactor.ReactorTransforming" />
-      <option name="METHOD_NAME" value="scan" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ReactorTransforming.x" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="reactor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="reactive" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="reactor" />
-      <option name="MAIN_CLASS_NAME" value="reactor.ReactorTransforming" />
-      <option name="METHOD_NAME" value="x" />
+      <option name="METHOD_NAME" value="flatMapVsCompose" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -720,19 +716,19 @@
       <Port>5050</Port>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.x" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.scan" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.compose" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ObservableCompose.observableWithScheduler" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapX" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.take" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.last" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.skip" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.compose" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapVsCompose" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapX" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapVsCompose" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.compose" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ObservableCompose.observableWithScheduler" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.scan" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.x" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.skip" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.last" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.take" />
       </list>
     </recent_temporary>
   </component>
@@ -903,39 +899,46 @@
       <option name="project" value="LOCAL" />
       <updated>1517096368868</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Reactor stream">
+      <created>1517134985668</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1517134985668</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObservableCompose_observableWithScheduler - 2018.01.28 at 11h 00m 20s.xml">
-      <configuration name="ObservableCompose.observableWithScheduler" configurationId="JUnit" />
+    <history-entry file="ReactorFiltering_skip - 2018.01.28 at 11h 54m 26s.xml">
+      <configuration name="ReactorFiltering.skip" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ObservableCompose_observableWithScheduler - 2018.01.28 at 11h 00m 53s.xml">
-      <configuration name="ObservableCompose.observableWithScheduler" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 01h 00m 47s.xml">
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 58m 01s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 01h 01m 19s.xml">
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 58m 40s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 02m 45s.xml">
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 59m 47s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 04m 33s.xml">
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 12h 01m 00s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 08m 06s.xml">
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 12h 01m 09s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 08m 40s.xml">
-      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
+    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 11h 58m 11s.xml">
+      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_flatMapX - 2018.01.28 at 11h 17m 31s.xml">
-      <configuration name="ReactorTransforming.flatMapX" configurationId="JUnit" />
+    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 11h 58m 47s.xml">
+      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_flatMapX - 2018.01.28 at 11h 18m 21s.xml">
-      <configuration name="ReactorTransforming.flatMapX" configurationId="JUnit" />
+    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 12h 00m 34s.xml">
+      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 12h 01m 21s.xml">
+      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1032,33 +1035,11 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1635">
-            <caret line="109" column="66" lean-forward="false" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java9/OptionalImprovements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1378,34 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="107" column="7" lean-forward="true" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/BiFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1453,11 +1406,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE-sources.jar!/reactor/core/publisher/Flux.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="2890" column="29" lean-forward="false" selection-start-line="2890" selection-start-column="29" selection-end-line="2890" selection-end-column="29" />
+        <state relative-caret-position="-343">
+          <caret line="773" column="30" lean-forward="false" selection-start-line="773" selection-start-column="30" selection-end-line="773" selection-end-column="30" />
           <folding>
+            <element signature="e#36639#36640#0" expanded="true" />
+            <element signature="e#36684#36685#0" expanded="true" />
             <element signature="e#44086#44087#0" expanded="true" />
             <element signature="e#44115#44116#0" expanded="true" />
             <element signature="e#289820#289821#0" expanded="true" />
@@ -1466,10 +1457,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="56" column="84" lean-forward="false" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="236">
+          <caret line="71" column="100" lean-forward="true" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
