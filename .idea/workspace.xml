@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,12 +114,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReactorFiltering.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReactorFiltering.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="592">
               <caret line="56" column="84" lean-forward="false" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="20">
+                <caret line="2" column="89" lean-forward="false" selection-start-line="2" selection-start-column="89" selection-end-line="2" selection-end-column="89" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -226,11 +236,11 @@
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java" />
         <option value="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -996,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517146002335</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Reactor stream">
+      <created>1517146510406</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1517146510406</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1045,6 +1062,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="22" width="1244" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1059,7 +1077,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6090909" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30033278" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30033278" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24875207" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1494,17 +1512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1565,6 +1572,17 @@
         <state relative-caret-position="592">
           <caret line="56" column="84" lean-forward="false" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="20">
+            <caret line="2" column="89" lean-forward="false" selection-start-line="2" selection-start-column="89" selection-end-line="2" selection-end-column="89" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
