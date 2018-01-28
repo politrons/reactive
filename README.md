@@ -76,7 +76,6 @@ All the most common features of Observable
     * [Cache](src/test/java/rx/observables/utils/ObservableCache.java)
     * [ToBlocking](src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
-
 ## Single
 
 An Observable that just emit 1 item through the pipeline.
@@ -88,6 +87,25 @@ An Observable that just emit 1 item through the pipeline.
 A subject which subscribe observers and keep the pipeline open all the time.
 
 * [Relay](src/test/java/rx/relay/Relay.java)
+
+## Spring Reactor  ![My image](src/main/resources/img/reactor.png)
+
+The reactive stream API implementation of Spring.
+
+![My image](src/main/resources/img/rsz_1createc.png)
+* [Creating](src/test/java/reactor/ReactorCreating.java)
+
+![My image](src/main/resources/img/rsz_1zipo.png)
+* [Combining](src/test/java/reactor/ReactorCombining.java)
+
+![My image](src/main/resources/img/rsz_flatmap.png)
+* [Transforming](src/test/java/reactor/ReactorTransforming.java)
+
+![My image](src/main/resources/img/rsz_1filter.png)
+* [Filtering](src/test/java/reactor/ReactorFiltering.java)
+    
+![My image](src/main/resources/img/rsz_2subscribeonc.png)
+* [Async](src/test/java/reactor/ReactorAstnc.java)
 
 ## Observer V Iterator Pattern
 
