@@ -76,17 +76,13 @@ All the most common features of Observable
     * [Cache](src/test/java/rx/observables/utils/ObservableCache.java)
     * [ToBlocking](src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
-## Single
+* **Single**
+    An Observable that just emit 1 item through the pipeline.
+    * [SingleFeatures](src/test/java/rx/single/SingleFeatures.java)
 
-An Observable that just emit 1 item through the pipeline.
-
-* [SingleFeatures](src/test/java/rx/single/SingleFeatures.java)
-
-## Relay
-
-A subject which subscribe observers and keep the pipeline open all the time.
-
-* [Relay](src/test/java/rx/relay/Relay.java)
+* **Relay**
+    A subject which subscribe observers and keep the pipeline open all the time.
+    * [Relay](src/test/java/rx/relay/Relay.java)
 
 ![My image](src/main/resources/img/reactor.png) 
 ## Spring Reactor 
