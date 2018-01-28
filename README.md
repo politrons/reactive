@@ -104,7 +104,7 @@ The reactive stream API implementation of Spring.
 
 ## Akka Stream
 
-![My image](src/main/resources/img/stream.png)
+![My image](src/main/resources/img/akka.png)
 * [Source, Flow, Sink](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/AkkaStream.scala)
 * [Subscriber](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/Subscriber.scala)
 * [Back-pressure](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/BackPressure.scala)
