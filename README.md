@@ -12,7 +12,7 @@ Here we cover with some practical examples, the most common use of the [Reactive
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
 
-All the most common features of Observable
+All the most common features of Observable:
 
 * **Contactable**
 
