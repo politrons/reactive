@@ -5,7 +5,11 @@ import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
-
+/**
+ * Just like ReactiveX by default the pipelines run synchronously, apart of some operators as interval, delay or others
+ * that by default run asynchronously.
+ * If we need to run into another thread we can use subscribeOn and publishOn.
+ */
 public class ReactorAsync {
 
 

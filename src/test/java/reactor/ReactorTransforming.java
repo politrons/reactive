@@ -2,14 +2,13 @@ package reactor;
 
 import org.junit.Test;
 import reactor.core.publisher.Flux;
-import reactor.core.scheduler.Scheduler;
-import reactor.core.scheduler.Schedulers;
 
 import java.util.ArrayList;
 
-
+/**
+ * Operators used to transform the elements emitted in the pipeline.
+ */
 public class ReactorTransforming {
-
 
     /**
      * FlatMap operator together with map are the most famous tranformation operator in functional programing.

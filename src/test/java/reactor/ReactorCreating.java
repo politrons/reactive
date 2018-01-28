@@ -9,21 +9,24 @@ import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
+/**
+ * Flux is like the ReactiveX observable, The Flux implement Publisher, and once we subscribe to
+ * the Flux we receive a Disposable.
+ *
+ * Like the rest of Reactive Stream implementations we have three callbacks in the disposable.
+ * <p>
+ * OnNext -> To be invoked per item emitted in the pipeline.
+ * OnError -> To be invoked per error emitted in the pipeline. Once that an error happens the emission is stopped.
+ * OnComplete -> To be invoked once we finish the emission of items in the pipeline.
+ * <p>
+ * The Disposable has a boolean isDisposable which return true/false depending if the pipeline is finish so the subscriber is unsubscribed.
+ */
 public class ReactorCreating {
-
 
     /**
      * A simple way to create a Flux. Allow you to add one or N elements.
      * Then once that you subscribe your Flux and create a Disposable the emission of the items start.
-     * <p>
-     * Like the rest of Reactive Stream implementations we have three callbacks in the disposable.
-     * <p>
-     * OnNext -> To be invoked per item emitted in the pipeline.
-     * OnError -> To be invoked per error emitted in the pipeline. Once that an error happens the emission is stopped.
-     * OnComplete -> To be invoked once we finish the emission of items in the pipeline.
-     * <p>
-     * The Disposable has a boolean isDisposable which return true/false depending if the pipeline is finish so the subscriber is unsubscribed.
-     */
+     **/
     @Test
     public void just() {
         Disposable subscribe = Flux.just("hello", "reactive", "Spring", "world", "?")

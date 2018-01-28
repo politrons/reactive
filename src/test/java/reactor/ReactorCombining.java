@@ -3,7 +3,9 @@ package reactor;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 
-
+/**
+ * Combining operators allow interact multiple Publisher together in the pipeline.
+ */
 public class ReactorCombining {
 
     /**
