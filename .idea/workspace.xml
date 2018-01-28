@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,8 +93,8 @@
       <file leaf-file-name="ReactorTransforming.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="71" column="100" lean-forward="true" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
+            <state relative-caret-position="-61">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,7 +147,7 @@
       <file leaf-file-name="ReactorCombining.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="463">
               <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -505,7 +503,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTransforming.flatMapVsCompose">
+  <component name="RunManager" selected="JUnit.ReactorTransforming.compose">
     <configuration name="ReactorFiltering.last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -724,8 +722,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapVsCompose" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.compose" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.compose" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ReactorTransforming.flatMapVsCompose" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.skip" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.last" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ReactorFiltering.take" />
@@ -906,19 +904,17 @@
       <option name="project" value="LOCAL" />
       <updated>1517134985668</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Reactor stream">
+      <created>1517137300434</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1517137300434</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactorFiltering_skip - 2018.01.28 at 11h 54m 26s.xml">
-      <configuration name="ReactorFiltering.skip" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 58m 01s.xml">
-      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 58m 40s.xml">
-      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReactorTransforming_compose - 2018.01.28 at 11h 59m 47s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
@@ -928,8 +924,14 @@
     <history-entry file="ReactorTransforming_compose - 2018.01.28 at 12h 01m 09s.xml">
       <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 11h 58m 11s.xml">
-      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 14h 02m 43s.xml">
+      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 14h 03m 10s.xml">
+      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactorTransforming_compose - 2018.01.28 at 14h 04m 24s.xml">
+      <configuration name="ReactorTransforming.compose" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 11h 58m 47s.xml">
       <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
@@ -938,6 +940,9 @@
       <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 12h 01m 21s.xml">
+      <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactorTransforming_flatMapVsCompose - 2018.01.28 at 14h 04m 09s.xml">
       <configuration name="ReactorTransforming.flatMapVsCompose" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1380,16 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1410,14 +1405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1465,10 +1452,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorBackPressure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="71" column="100" lean-forward="true" selection-start-line="71" selection-start-column="100" selection-end-line="71" selection-end-column="100" />
+        <state relative-caret-position="-61">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
