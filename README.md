@@ -12,8 +12,6 @@ Here we cover with some practical examples, the most common use of the [Reactive
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
 
-All the most common features of Observable:
-
 * **Contactable**
 
     ![My image](src/main/resources/img/rsz_publishconnectc.png)
