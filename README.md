@@ -4,7 +4,7 @@ Here we cover with examples the most famous [reactive](https://www.reactivemanif
 
 ## ReactiveX
 
-![My image](src/main/resources/img/flatMap.png)
+![My image](src/main/resources/img/reactivex.png)
 
 Marble diagrams are not clear enough?.
 
@@ -13,8 +13,6 @@ Here we cover with some practical examples, the most common use of the ReactiveX
 To reference to the real documentation go here https://github.com/ReactiveX/RxJava/wiki
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
-
- ![My image](src/main/resources/img/rsz_reactive-extensions.png)
 
 All the most common features of Observable
 
