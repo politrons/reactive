@@ -1,21 +1,12 @@
 package reactor;
 
 import org.junit.Test;
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.FluxSink;
-import reactor.util.context.Context;
 
-import java.lang.reflect.Method;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
 import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
-import java.util.function.LongConsumer;
 import java.util.stream.Stream;
 
 public class ReactorCreating {

@@ -30,7 +30,7 @@ public class ObservableCompose {
      * But the result in the observer is processed in the main thread.
      */
     @Test
-    public void observableWithScheduler() {
+    public void observableWithScheduler() throws InterruptedException {
         Observable.just(1)
                   .map(number -> {
                       System.out.println("Item processed on thread:" + Thread.currentThread()
@@ -40,6 +40,7 @@ public class ObservableCompose {
                   .compose(applySchedulers())
                   .subscribe(number -> System.out.println("Result in thread:" + Thread.currentThread()
                                                                                       .getName()));
+        Thread.sleep(1000);
     }
 
     /**
