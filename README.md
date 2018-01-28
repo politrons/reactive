@@ -102,7 +102,7 @@ The reactive stream API implementation of Spring.
 ![My image](src/main/resources/img/rsz_2subscribeonc.png)
 * [Async](src/test/java/reactor/ReactorAsync.java)
 
-## Akka Stream**
+## Akka Stream
 
 ![My image](src/main/resources/img/stream.png)
 * [Source, Flow, Sink](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/AkkaStream.scala)
