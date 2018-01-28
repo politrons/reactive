@@ -1,6 +1,8 @@
 Author Pablo Perez Garcia 
 
-# ReactiveX
+Here we cover with examples the most famous reactive libraries that you can find in the market.
+
+## ReactiveX
 
 ![My image](src/main/resources/img/flatMap.png)
 
@@ -125,7 +127,6 @@ Stream API, Functions and Promises with examples of how to use it.
 * [Stream](src/test/java/java8/StreamUtils.java)
 * [Functions](src/test/java/java8/Functions.java)
 * [CompletableFuture](src/test/java/java8/CompletableFutureFeature.java)
-
 
 ## Java 9
 
