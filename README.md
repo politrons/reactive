@@ -19,10 +19,12 @@ RxScala examples [here](https://github.com/politrons/reactiveScala)
 All the most common features of Observable
 
 * **Contactable**
+
     ![My image](src/main/resources/img/rsz_publishconnectc.png)
     * [HotObservable](src/test/java/rx/observables/connectable/HotObservable.java)
  
 * **Combining**
+
     ![My image](src/main/resources/img/rsz_1zipo.png)
     * [Chain](src/test/java/rx/observables/combining/ObservableChain.java)
     * [Concat](src/test/java/rx/observables/combining/ObservableConcat.java)
