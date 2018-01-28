@@ -8,9 +8,7 @@ Here we cover with examples the most famous [reactive](https://www.reactivemanif
 
 Marble diagrams are not clear enough?.
 
-Here we cover with some practical examples, the most common use of the ReactiveX platform for Java.
-
-To reference to the real documentation go here https://github.com/ReactiveX/RxJava/wiki
+Here we cover with some practical examples, the most common use of the [ReactiveX](https://github.com/ReactiveX/RxJava/wiki) platform for Java.
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
 
