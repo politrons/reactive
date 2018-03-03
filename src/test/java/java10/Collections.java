@@ -2,6 +2,7 @@ package java10;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -11,7 +12,7 @@ public class Collections {
 
 
     /**
-     * Java 10 finally introduce factories to create maps with initial values avoiding the boilerplate of creating the
+     * Java 10 finally introduce factories to create immutable maps with initial values avoiding the boilerplate of creating the
      * Collection.
      * Also introduce the possibility to instead of mutate a Map you can create a new map from previous one without
      * all streaming copy code.
@@ -42,7 +43,7 @@ public class Collections {
     }
 
     /**
-     * Also like Map collection List introduce all factories with same capabilities
+     * Also like Map collection List introduce all factories with same capabilities to create immutable lists
      */
     @Test
     public void listFeatures() {
@@ -57,14 +58,44 @@ public class Collections {
     }
 
     /**
-     * New feature in Set factory is that it will throw an Exception is one element it´s duplicated
+     * With the new Factory List we can combine old List with new one and different types in it.
      */
-    @Test(expected = IllegalArgumentException.class)
+    @Test
+    public void listMultiType() {
+        var multiTypeList = List.of("hello", 1, List.of(10l));
+        System.out.println(multiTypeList);
+
+        var list = List.of("hello", "java", "10", "world");
+        var extendedList = List.of(List.of(list, 1, List.of(2)), List.of("new element"));
+        extendedList
+                .forEach(value -> value
+                        .forEach(x -> {
+                            if (x instanceof List) {
+                                ((List) x).stream().forEach(System.out::println);
+                            } else {
+                                System.out.println(x);
+                            }
+                        }));
+
+        System.out.println(extendedList);
+    }
+
+    @Test
     public void setFeatures() {
-        var set = Set.of("hello", "hello", "java", "10", "world").stream()
+        var set = Set.of("hello", "java", "10", "world").stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toSet());
         System.out.println(set);
+    }
+
+    /**
+     * New feature in Set factory is that it will throw an Exception is one element it´s duplicated
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void setFeaturesDuplicity() {
+        Set.of("hello", "hello", "java", "10", "world").stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toSet());
     }
 
     /**
