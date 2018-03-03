@@ -145,7 +145,7 @@ The most important features with particle examples of how to use it.
 
 ## Java 10
 
-![My image](src/main/resources/img/ios-10.png)
+![My image](src/main/resources/img/10.png)
 
 The most important features with particle examples of how to use it.
 
