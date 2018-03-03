@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/ios-10.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java10/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java10/Collections.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Collections.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+            <state relative-caret-position="447">
+              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,13 +83,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            <state relative-caret-position="424">
+              <caret line="147" column="35" lean-forward="true" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img/10.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="ObservableChain.java" pinned="false" current-in-tab="false">
@@ -144,19 +147,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
               <caret line="295" column="29" selection-start-line="295" selection-start-column="29" selection-end-line="295" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
-              <folding>
-                <element signature="e#61131#61132#0" expanded="true" />
-                <element signature="e#61193#61194#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -223,11 +213,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" />
         <option value="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java10/Collections.java" />
         <option value="$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java" />
         <option value="$PROJECT_DIR$/src/test/java/java10/GarbageCollectionFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/java10/Collections.java" />
       </list>
     </option>
   </component>
@@ -457,14 +447,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LocalVariableTypeInference.main">
+  <component name="RunManager" selected="JUnit.Collections.mapFeaturesDuplicityCheck">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Collections.collectors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Collections.mapFeaturesDuplicityCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -476,7 +466,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java10" />
       <option name="MAIN_CLASS_NAME" value="java10.Collections" />
-      <option name="METHOD_NAME" value="collectors" />
+      <option name="METHOD_NAME" value="mapFeaturesDuplicityCheck" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -487,7 +477,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Collections.listFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Collections.setFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -499,7 +489,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java10" />
       <option name="MAIN_CLASS_NAME" value="java10.Collections" />
-      <option name="METHOD_NAME" value="listFeatures" />
+      <option name="METHOD_NAME" value="setFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -635,19 +625,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Collections.listFeatures" />
-      <item itemvalue="JUnit.Collections.collectors" />
       <item itemvalue="JUnit.ObservableChain.testObservableChain" />
       <item itemvalue="JUnit.LocalVariableTypeInference.mapFeatures" />
       <item itemvalue="JUnit.LocalVariableTypeInference.main" />
+      <item itemvalue="JUnit.Collections.setFeatures" />
+      <item itemvalue="JUnit.Collections.mapFeaturesDuplicityCheck" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Collections.mapFeaturesDuplicityCheck" />
+        <item itemvalue="JUnit.Collections.setFeatures" />
         <item itemvalue="JUnit.LocalVariableTypeInference.main" />
         <item itemvalue="JUnit.LocalVariableTypeInference.mapFeatures" />
         <item itemvalue="JUnit.ObservableChain.testObservableChain" />
-        <item itemvalue="JUnit.Collections.collectors" />
-        <item itemvalue="JUnit.Collections.listFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -983,7 +973,28 @@
       <option name="project" value="LOCAL" />
       <updated>1520076947912</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Add Java 10">
+      <created>1520079418692</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1520079418692</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add Java 10">
+      <created>1520079573531</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1520079573531</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add Java 10">
+      <created>1520079644153</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1520079644153</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1117,13 +1128,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar!/org/reactivestreams/Subscriber.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1458,16 +1462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -1479,10 +1473,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="424">
+          <caret line="147" column="35" lean-forward="true" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1563,7 +1570,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

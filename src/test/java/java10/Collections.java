@@ -2,9 +2,9 @@ package java10;
 
 import org.junit.Test;
 
-import java.lang.management.GarbageCollectorMXBean;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Collections {
@@ -31,6 +31,17 @@ public class Collections {
     }
 
     /**
+     * New feature in Map factory is that it will throw an Exception if one element it´s duplicated as key.
+     * Pretty disappointed with Oracle, I would expect another behaviour, like return a multimap instead.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void mapFeaturesDuplicityCheck() {
+        var map = Map.of("hello", "Java 10", "hello", "it will fail");
+        System.out.println(map);
+
+    }
+
+    /**
      * Also like Map collection List introduce all factories with same capabilities
      */
     @Test
@@ -43,7 +54,17 @@ public class Collections {
         var copyList = List.copyOf(List.of("hello", "Java 10"));
         System.out.println(copyList);
 
+    }
 
+    /**
+     * New feature in Set factory is that it will throw an Exception is one element it´s duplicated
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void setFeatures() {
+        var set = Set.of("hello", "hello", "java", "10", "world").stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toSet());
+        System.out.println(set);
     }
 
     /**
@@ -59,7 +80,6 @@ public class Collections {
                 .collect(Collectors.toUnmodifiableList());
         boolean should_not_works = immutableList.add("should not works");
         System.out.println(should_not_works);
-
 
     }
 
