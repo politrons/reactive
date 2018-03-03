@@ -143,6 +143,15 @@ The most important features with particle examples of how to use it.
 * [Optional](src/test/java/java9/OptionalImprovements.java)
 * [Module system](src/test/java/module-info.java.bak)
 
+## Java 10
+
+![My image](src/main/resources/img/ios-10.png)
+
+The most important features with particle examples of how to use it.
+
+* [Collections](src/test/java/java10/Collections.java)
+* [Local variable type inference](src/test/java/java10/LocalVariableTypeInference.java)
+
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)

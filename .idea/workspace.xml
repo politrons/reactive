@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java10/Collections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/ios-10.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactive.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reactive.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,24 +60,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlowFeatures.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReactorCreating.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,16 +72,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GarbageCollection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="LocalVariableTypeInference.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="57" column="14" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="14" />
+              <folding>
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableChain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="GarbageCollectorMXBean.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.management/java/lang/management/GarbageCollectorMXBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="326">
               <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GarbageCollectorExtImpl.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/jdk.management/com/sun/management/internal/GarbageCollectorExtImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="48" column="36" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GarbageCollectorImpl.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.management/sun/management/GarbageCollectorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -139,24 +157,6 @@
                 <element signature="e#61131#61132#0" expanded="true" />
                 <element signature="e#61193#61194#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1819">
-              <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -218,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
         <option value="$PROJECT_DIR$/src/main/java/test.proto" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -226,6 +225,9 @@
         <option value="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/java10/Collections.java" />
         <option value="$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java10/GarbageCollectionFeature.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -400,22 +402,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="java10" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rx" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -471,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Collections.collectors">
+  <component name="RunManager" selected="JUnit.LocalVariableTypeInference.main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -524,7 +510,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Collections.mapCopyOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalVariableTypeInference.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -535,8 +521,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java10" />
-      <option name="MAIN_CLASS_NAME" value="java10.Collections" />
-      <option name="METHOD_NAME" value="mapCopyOf" />
+      <option name="MAIN_CLASS_NAME" value="java10.LocalVariableTypeInference" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -547,7 +533,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Collections.mapFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalVariableTypeInference.mapFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -558,7 +544,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="java10" />
-      <option name="MAIN_CLASS_NAME" value="java10.Collections" />
+      <option name="MAIN_CLASS_NAME" value="java10.LocalVariableTypeInference" />
       <option name="METHOD_NAME" value="mapFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -570,19 +556,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ReactorCreating.checkIfItDisposable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObservableChain.testObservableChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reactor.*" />
+          <option name="PATTERN" value="rx.observables.combining.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="reactor" />
-      <option name="MAIN_CLASS_NAME" value="reactor.ReactorCreating" />
-      <option name="METHOD_NAME" value="checkIfItDisposable" />
+      <option name="PACKAGE_NAME" value="rx.observables.combining" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableChain" />
+      <option name="METHOD_NAME" value="testObservableChain" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -649,19 +635,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorCreating.checkIfItDisposable" />
-      <item itemvalue="JUnit.Collections.mapCopyOf" />
-      <item itemvalue="JUnit.Collections.mapFeatures" />
       <item itemvalue="JUnit.Collections.listFeatures" />
       <item itemvalue="JUnit.Collections.collectors" />
+      <item itemvalue="JUnit.ObservableChain.testObservableChain" />
+      <item itemvalue="JUnit.LocalVariableTypeInference.mapFeatures" />
+      <item itemvalue="JUnit.LocalVariableTypeInference.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocalVariableTypeInference.main" />
+        <item itemvalue="JUnit.LocalVariableTypeInference.mapFeatures" />
+        <item itemvalue="JUnit.ObservableChain.testObservableChain" />
         <item itemvalue="JUnit.Collections.collectors" />
         <item itemvalue="JUnit.Collections.listFeatures" />
-        <item itemvalue="JUnit.Collections.mapFeatures" />
-        <item itemvalue="JUnit.Collections.mapCopyOf" />
-        <item itemvalue="JUnit.ReactorCreating.checkIfItDisposable" />
       </list>
     </recent_temporary>
   </component>
@@ -990,22 +976,17 @@
       <option name="project" value="LOCAL" />
       <updated>1517166642259</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Add Java 10">
+      <created>1520076947911</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1520076947912</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StreamUtils_IntStream - 2018.03.03 at 10h 21m 29s.xml">
-      <configuration name="StreamUtils.IntStream" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StreamUtils_mutateObject - 2018.02.28 at 17h 27m 46s.xml">
-      <configuration name="StreamUtils.mutateObject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StreamUtils_mutateObject - 2018.02.28 at 17h 28m 24s.xml">
-      <configuration name="StreamUtils.mutateObject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Collections_mapCopyOf - 2018.03.03 at 11h 05m 02s.xml">
-      <configuration name="Collections.mapCopyOf" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Collections_mapFeatures - 2018.03.03 at 11h 06m 12s.xml">
       <configuration name="Collections.mapFeatures" configurationId="JUnit" />
     </history-entry>
@@ -1024,6 +1005,18 @@
     <history-entry file="Collections_collectors - 2018.03.03 at 11h 38m 55s.xml">
       <configuration name="Collections.collectors" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObservableChain_testObservableChain - 2018.03.03 at 12h 36m 19s.xml">
+      <configuration name="ObservableChain.testObservableChain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableTypeInference_mapFeatures - 2018.03.03 at 12h 52m 19s.xml">
+      <configuration name="LocalVariableTypeInference.mapFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableTypeInference_mapFeatures - 2018.03.03 at 12h 57m 19s.xml">
+      <configuration name="LocalVariableTypeInference.mapFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableTypeInference_main - 2018.03.03 at 13h 11m 52s.xml">
+      <configuration name="LocalVariableTypeInference.main" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="58000" />
@@ -1039,6 +1032,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="22" width="1241" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287879" />
@@ -1088,7 +1082,8 @@
     <MESSAGE value="CompletableFuture" />
     <MESSAGE value="Generics" />
     <MESSAGE value="Reactor stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reactor stream" />
+    <MESSAGE value="Add Java 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Java 10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,27 +1117,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE-sources.jar!/reactor/core/publisher/FluxSink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="32" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE-sources.jar!/reactor/core/Disposable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1289,9 +1263,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/flatMap.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/ArrayBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1363,13 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4620">
           <caret line="319" column="42" selection-start-line="319" selection-start-column="42" selection-end-line="319" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1454,10 +1418,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.management/sun/management/GarbageCollectorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/jdk.management/com/sun/management/internal/GarbageCollectorExtImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.management/java/lang/management/GarbageCollectorMXBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="326">
           <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java10/GarbageCollectionFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1471,8 +1468,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java10/GarbageCollection.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="14" />
+          <folding>
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
