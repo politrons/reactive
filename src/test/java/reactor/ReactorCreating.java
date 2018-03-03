@@ -3,16 +3,19 @@ package reactor;
 import org.junit.Test;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Schedulers;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.Arrays;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.stream.Stream;
 
 /**
  * Flux is like the ReactiveX observable, The Flux implement Publisher, and once we subscribe to
  * the Flux we receive a Disposable.
- *
+ * <p>
  * Like the rest of Reactive Stream implementations we have three callbacks in the disposable.
  * <p>
  * OnNext -> To be invoked per item emitted in the pipeline.
@@ -141,6 +144,67 @@ public class ReactorCreating {
     public void range() {
         Flux.range(1, 10)
                 .subscribe(System.out::println);
+    }
+
+    LinkedBlockingQueue<String> users = new LinkedBlockingQueue();
+
+    /**
+     * Another use of Flux is to make broadcast in case you need it.
+     */
+    @Test
+    public void testBroadcast() {
+        broadcast("Phil");
+        broadcast("Paul");
+        broadcast("Johnny");
+        broadcast("Mike");
+    }
+
+    private void broadcast(String user) {
+        users.add(user);
+        Flux.fromIterable(users)
+                .filter(otherUsers -> !user.equals(otherUsers))
+                .doOnNext(otherUser -> System.out.println("Here we can inform other users"))
+                .subscribe(value -> System.out.println("On next callback: " + value),
+                        t -> System.out.println("On error callback: " + t),
+                        () -> System.out.println("On complete callback"));
+    }
+
+    int count = 0;
+
+    @Test
+    public void checkIfItDisposable() throws InterruptedException {
+        Disposable subscribe = Flux.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .map(number -> {
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return number;
+                }).subscribeOn(Schedulers.newElastic("1"))
+                .subscribe();
+
+        while (!subscribe.isDisposed() && count < 100) {
+            Thread.sleep(400);
+            count++;
+            System.out.println("Waiting......");
+        }
+        System.out.println("It disposable:" + subscribe.isDisposed());
+    }
+
+    @Test
+    public void checkIfItDisposableBlocking() {
+        Flux.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .map(number -> {
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return number;
+                }).subscribeOn(Schedulers.newElastic("1"))
+                .blockLast(Duration.of(60, ChronoUnit.SECONDS));
+        System.out.println("It disposable");
     }
 
 }

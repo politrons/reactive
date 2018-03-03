@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
@@ -301,6 +302,16 @@ public class StreamUtils {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void IntStream() {
+        List<Integer> list = IntStream.range(0, 10)
+                .map(number -> number * 10)
+                .boxed()
+                .collect(toList());
+        System.out.println(list);
+    }
+
 
     @Test
     public void immutableObject() {
