@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="afb81ba4-2322-41bd-b48f-a3f82d15ee86" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java10/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java10/Collections.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +60,8 @@
       <file leaf-file-name="Collections.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            <state relative-caret-position="116">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -672,13 +671,6 @@
       <updated>1506763453338</updated>
       <workItem from="1510560257964" duration="58000" />
     </task>
-    <task id="LOCAL-00001" summary="Flow API">
-      <created>1506796693496</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1506796693496</updated>
-    </task>
     <task id="LOCAL-00002" summary="Flow API">
       <created>1506797991730</created>
       <option name="number" value="00002" />
@@ -1015,19 +1007,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520080208209</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Add Java 10">
+      <created>1520081273056</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1520081273057</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Collections_setFeatures - 2018.03.03 at 13h 26m 13s.xml">
-      <configuration name="Collections.setFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Collections_mapFeaturesDuplicityCheck - 2018.03.03 at 13h 28m 30s.xml">
-      <configuration name="Collections.mapFeaturesDuplicityCheck" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Collections - 2018.03.03 at 13h 30m 41s.xml">
-      <configuration name="Collections" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Collections_listFeatures - 2018.03.03 at 13h 35m 07s.xml">
       <configuration name="Collections.listFeatures" configurationId="JUnit" />
     </history-entry>
@@ -1047,6 +1037,15 @@
       <configuration name="Collections.listMultiType" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Collections_listMultiType - 2018.03.03 at 13h 43m 29s.xml">
+      <configuration name="Collections.listMultiType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Collections_listMultiType - 2018.03.03 at 13h 43m 57s.xml">
+      <configuration name="Collections.listMultiType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Collections_listMultiType - 2018.03.03 at 13h 45m 32s.xml">
+      <configuration name="Collections.listMultiType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Collections_listMultiType - 2018.03.03 at 13h 47m 07s.xml">
       <configuration name="Collections.listMultiType" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1075,7 +1074,7 @@
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.3294412" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48176292" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48176292" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3287879" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.6090909" />
       <window_info id="Capture Tool" order="1" />
@@ -1516,8 +1515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+        <state relative-caret-position="116">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

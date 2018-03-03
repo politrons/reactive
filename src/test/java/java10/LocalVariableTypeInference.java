@@ -55,7 +55,7 @@ public class LocalVariableTypeInference {
     }
 
     private class TestClass {
-        String sentence = "You looks like more like Scala";
+        String sentence = "You looks more like Scala";
     }
 
 
