@@ -7,6 +7,7 @@ import rx.Subscription;
 import rx.observers.TestSubscriber;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 
@@ -42,7 +43,7 @@ public class ObservableDelay {
         long start = System.currentTimeMillis();
         Subscription subscription =
                 Observable.zip(Observable.from(Arrays.asList(1, 2, 3)), Observable.interval(200, TimeUnit.MILLISECONDS),
-                               (i, t) -> i)
+                        (i, t) -> i)
                         .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
         new TestSubscriber((Observer) subscription).awaitTerminalEvent(3000, TimeUnit.MILLISECONDS);
     }
@@ -57,9 +58,9 @@ public class ObservableDelay {
         Observable.from(Arrays.asList(1, 2, 3, 4, 5))
                 .concatMap(s -> Observable.just(s).delay(100, TimeUnit.MILLISECONDS))
                 .subscribe(n -> System.out.println(n + " just came..."),
-                           e -> {
-                           },
-                           () -> System.out.println("Everybody came!"));
+                        e -> {
+                        },
+                        () -> System.out.println("Everybody came!"));
         new TestSubscriber().awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
 
     }
@@ -71,7 +72,7 @@ public class ObservableDelay {
      */
     @Test
     public void delayObservablesWithConcatMap() {
-        Observable.from(Arrays.asList(Observable.just(1), Observable.just(2),Observable.just(3)))
+        Observable.from(Arrays.asList(Observable.just(1), Observable.just(2), Observable.just(3)))
                 .concatMap(s -> s.delay(100, TimeUnit.MILLISECONDS))
                 .subscribe(n -> System.out.println(n + " just came..."),
                         e -> {
@@ -79,5 +80,26 @@ public class ObservableDelay {
                         () -> System.out.println("Everybody came!"));
         new TestSubscriber().awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
 
+    }
+
+    long total = 0;
+
+    @Test
+    public void customDelay() {
+        long start = System.currentTimeMillis();
+        Subscription subscription = Observable.just("hello reactive world with custom delay")
+                .map(value -> {
+                    try {
+                        Thread.sleep(new Random().nextInt(600));
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    total = System.currentTimeMillis() - start;
+                    if (total > 500) total = 0;
+                    return value;
+                })
+                .delay(total, TimeUnit.MILLISECONDS)
+                .subscribe(n -> System.out.println("time:" + (System.currentTimeMillis() - start)));
+        new TestSubscriber((Observer) subscription).awaitTerminalEvent(1000, TimeUnit.MILLISECONDS);
     }
 }

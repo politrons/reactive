@@ -48,6 +48,15 @@ public class LocalVariableTypeInference {
         var _sentence = testClass.sentence;
         System.out.println(_sentence);
 
+        var object = new Object() {
+            String value = "hello";
+            int number = 0;
+        };
+
+        System.out.println(object.number);
+        System.out.println(object.value);
+
+
     }
 
     private String getHelloWithoutType() {
