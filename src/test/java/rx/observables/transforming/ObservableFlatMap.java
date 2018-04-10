@@ -102,6 +102,30 @@ public class ObservableFlatMap {
                 .subscribe(System.out::println);
     }
 
+    /**
+     * FlatMap operator allow you to specify the max number of concurrent operation that this operator can process.
+     * This is another way to make back pressure if you know your system cannot process more than specific number
+     * of elements in the pipeline.
+     */
+    @Test
+    public void asyncFlatMapWithMaxConcurrent() {
+        Observable.from(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+                .flatMap(value -> Observable.just(value)
+                        .map(number -> {
+                            try {
+                                Thread.sleep(1000);
+                                System.out.println(String.format("Value %s in Thread execution:%s",number, Thread.currentThread().getName()));
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            return number;
+                        }).subscribeOn(Schedulers.newThread())
+                        , 2)
+        .subscribe();
+        new TestSubscriber()
+                .awaitTerminalEvent(15, TimeUnit.SECONDS);
+    }
+
     private void contactWords(String word) {
         System.out.println("Thread:" + Thread.currentThread().getName());
         result = result.concat(word);
@@ -174,23 +198,6 @@ public class ObservableFlatMap {
                 .subscribe();
     }
 
-    @Test
-    public void asyncFlatMapWithMaxConcurrent() {
-        Observable.from(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
-                .flatMap(value -> Observable.just(value)
-                        .map(number -> {
-                            try {
-                                Thread.sleep(1000);
-                                System.out.println(String.format("Value %s in Thread execution:%s",number, Thread.currentThread().getName()));
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                            return number;
-                        }).subscribeOn(Schedulers.newThread())
-                        , 2)
-        .subscribe();
-        new TestSubscriber()
-                .awaitTerminalEvent(15, TimeUnit.SECONDS);    }
 
 
 }
