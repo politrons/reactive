@@ -2,11 +2,15 @@ package rx.observables.transforming;
 
 import org.junit.Test;
 import rx.Observable;
+import rx.Observer;
+import rx.Scheduler;
+import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Sometimes we want to pass an observable through the pipeline, that´s when flatMap come handy.
@@ -169,6 +173,24 @@ public class ObservableFlatMap {
                                 })))
                 .subscribe();
     }
+
+    @Test
+    public void asyncFlatMapWithMaxConcurrent() {
+        Observable.from(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+                .flatMap(value -> Observable.just(value)
+                        .map(number -> {
+                            try {
+                                Thread.sleep(1000);
+                                System.out.println(String.format("Value %s in Thread execution:%s",number, Thread.currentThread().getName()));
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            return number;
+                        }).subscribeOn(Schedulers.newThread())
+                        , 2)
+        .subscribe();
+        new TestSubscriber()
+                .awaitTerminalEvent(15, TimeUnit.SECONDS);    }
 
 
 }
