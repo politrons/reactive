@@ -7,6 +7,7 @@ import rx.observables.transforming.Person;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -352,6 +353,17 @@ public class StreamUtils {
                         .collect(Collectors.toList())))
                 .collect(Collectors.toList()).get(0);
 
+
+    }
+
+    @Test
+    public void arrayStream() {
+
+        String paul = Arrays.stream("hello, world, !".split(","))
+                .filter(word -> word.equalsIgnoreCase("paul"))
+                .findAny()
+                .orElse(null);
+        System.out.println("Result:" + paul);
 
     }
 }

@@ -7,10 +7,12 @@ import rx.Scheduler;
 import rx.observers.TestSubscriber;
 import rx.schedulers.Schedulers;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.IntStream;
 
 /**
  * Sometimes we want to pass an observable through the pipeline, that´s when flatMap come handy.
@@ -111,17 +113,17 @@ public class ObservableFlatMap {
     public void asyncFlatMapWithMaxConcurrent() {
         Observable.from(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
                 .flatMap(value -> Observable.just(value)
-                        .map(number -> {
-                            try {
-                                Thread.sleep(1000);
-                                System.out.println(String.format("Value %s in Thread execution:%s",number, Thread.currentThread().getName()));
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                            return number;
-                        }).subscribeOn(Schedulers.newThread())
-                        , 2)
-        .subscribe();
+                                .map(number -> {
+                                    try {
+                                        Thread.sleep(1000);
+                                        System.out.println(String.format("Value %s in Thread execution:%s", number, Thread.currentThread().getName()));
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                    return number;
+                                }).subscribeOn(Schedulers.newThread())
+                        , 8)
+                .subscribe();
         new TestSubscriber()
                 .awaitTerminalEvent(15, TimeUnit.SECONDS);
     }
@@ -197,7 +199,5 @@ public class ObservableFlatMap {
                                 })))
                 .subscribe();
     }
-
-
 
 }
