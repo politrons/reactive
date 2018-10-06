@@ -152,6 +152,14 @@ The most important features with particle examples of how to use it.
 * [Collections](src/test/java/java10/Collections.java)
 * [Local variable type inference](src/test/java/java10/LocalVariableTypeInference.java)
 
+![My image](src/main/resources/img/11.png)
+
+The most important features with particle examples of how to use it.
+
+* [HttpClient2](src/test/java/java11/HttpClient2Feature.java)
+* [String](src/test/java/java11/StringFeatures.java)
+
+
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)

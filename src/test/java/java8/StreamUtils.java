@@ -353,7 +353,6 @@ public class StreamUtils {
                         .collect(Collectors.toList())))
                 .collect(Collectors.toList()).get(0);
 
-
     }
 
     @Test
@@ -366,4 +365,5 @@ public class StreamUtils {
         System.out.println("Result:" + paul);
 
     }
+
 }
