@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/reactive.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 11 features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,29 +22,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="17" />
+          <entry key="java" value="21" />
           <entry key="md" value="1" />
+          <entry key="png" value="3" />
           <entry key="proto" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="17" />
+          <entry key="Image" value="3" />
+          <entry key="JAVA" value="21" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1991" />
-          <entry key="md" value="27" />
+          <entry key="java" value="2273" />
+          <entry key="md" value="29" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1991" />
-          <entry key="Markdown" value="27" />
+          <entry key="JAVA" value="2273" />
+          <entry key="Markdown" value="29" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
     </session>
@@ -74,12 +70,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="510">
-                <caret line="152" column="56" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
+              <first_editor relative-caret-position="420">
+                <caret line="154" column="10" selection-start-line="154" selection-start-column="10" selection-end-line="154" selection-end-column="10" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -88,41 +84,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="279" column="23" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/time/Duration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1267">
-              <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/time/temporal/TemporalUnit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="363">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/jdk.jfr/jdk/jfr/Label.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/jdk.jfr/jdk/jfr/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Optional.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -154,15 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="183" column="23" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -189,8 +176,9 @@
         <option value="$PROJECT_DIR$/src/test/java/module-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
         <option value="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/java11/FlightRecorderFeature.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" />
       </list>
     </option>
   </component>
@@ -240,6 +228,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
@@ -318,6 +321,49 @@
               <item name="rx" type="462c0819:PsiDirectoryNode" />
               <item name="relay" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.jfr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jdk.jfr" type="462c0819:PsiDirectoryNode" />
+              <item name="jfr" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -325,7 +371,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538827734976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538828702307" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -339,8 +385,8 @@
       <recent name="$PROJECT_DIR$/src/test/java/java11" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.java11.features" />
       <recent name="java11" />
+      <recent name="org.java11.features" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/java11" />
@@ -358,14 +404,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringFeatures.filesFeatures">
+  <component name="RunManager" selected="JUnit.StringFeatures.features">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClient2Feature.httpRequest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightRecorderFeature.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -374,15 +420,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.HttpClient2Feature" />
-      <option name="METHOD_NAME" value="httpRequest1" />
+      <option name="MAIN_CLASS_NAME" value="java11.FlightRecorderFeature" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClient2Feature.httpRequest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightRecorderFeature.publishMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -391,8 +437,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.HttpClient2Feature" />
-      <option name="METHOD_NAME" value="httpRequest2" />
+      <option name="MAIN_CLASS_NAME" value="java11.FlightRecorderFeature" />
+      <option name="METHOD_NAME" value="publishMessage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -466,18 +512,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.StringFeatures.features" />
-      <item itemvalue="JUnit.HttpClient2Feature.httpRequest1" />
-      <item itemvalue="JUnit.HttpClient2Feature.httpRequest2" />
       <item itemvalue="JUnit.ObservableConcat.testContact" />
       <item itemvalue="JUnit.StringFeatures.filesFeatures" />
+      <item itemvalue="JUnit.FlightRecorderFeature.main" />
+      <item itemvalue="JUnit.FlightRecorderFeature.publishMessage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringFeatures.filesFeatures" />
         <item itemvalue="JUnit.StringFeatures.features" />
+        <item itemvalue="JUnit.FlightRecorderFeature.publishMessage" />
+        <item itemvalue="JUnit.FlightRecorderFeature.main" />
+        <item itemvalue="JUnit.StringFeatures.filesFeatures" />
         <item itemvalue="JUnit.ObservableConcat.testContact" />
-        <item itemvalue="JUnit.HttpClient2Feature.httpRequest2" />
-        <item itemvalue="JUnit.HttpClient2Feature.httpRequest1" />
       </list>
     </recent_temporary>
   </component>
@@ -513,22 +559,31 @@
       <option name="project" value="LOCAL" />
       <updated>1530605010044</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Java 11 features">
+      <created>1538827617885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538827617886</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Java 11 features">
+      <created>1538827728522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538827728522</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Java 11 features">
+      <created>1538827771996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538827771996</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringFeatures_features - 2018.10.06 at 13h 49m 06s.xml">
-      <configuration name="StringFeatures.features" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringFeatures_features - 2018.10.06 at 13h 49m 52s.xml">
-      <configuration name="StringFeatures.features" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringFeatures_features - 2018.10.06 at 13h 50m 03s.xml">
-      <configuration name="StringFeatures.features" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringFeatures_features - 2018.10.06 at 13h 51m 10s.xml">
-      <configuration name="StringFeatures.features" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringFeatures_features - 2018.10.06 at 13h 51m 37s.xml">
       <configuration name="StringFeatures.features" configurationId="JUnit" />
     </history-entry>
@@ -546,6 +601,18 @@
     </history-entry>
     <history-entry file="StringFeatures_filesFeatures - 2018.10.06 at 13h 58m 31s.xml">
       <configuration name="StringFeatures.filesFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlightRecorderFeature_main - 2018.10.06 at 14h 16m 19s.xml">
+      <configuration name="FlightRecorderFeature.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlightRecorderFeature_publishMessage - 2018.10.06 at 14h 17m 54s.xml">
+      <configuration name="FlightRecorderFeature.publishMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringFeatures_features - 2018.10.06 at 14h 23m 49s.xml">
+      <configuration name="StringFeatures.features" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringFeatures_features - 2018.10.06 at 14h 24m 06s.xml">
+      <configuration name="StringFeatures.features" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -587,14 +654,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new flatMap example" />
-    <option name="LAST_COMMIT_MESSAGE" value="new flatMap example" />
+    <MESSAGE value="Java 11 features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 11 features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java</url>
-          <line>41</line>
+          <line>52</line>
           <properties field="words" class="java11.StringFeatures" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -869,16 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -889,6 +947,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/akka.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -897,12 +964,53 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="510">
-            <caret line="152" column="56" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
+          <first_editor relative-caret-position="420">
+            <caret line="154" column="10" selection-start-line="154" selection-start-column="10" selection-end-line="154" selection-end-column="10" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/jdk.jfr/jdk/jfr/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/jdk.jfr/jdk/jfr/Label.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/FlightRecorderFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

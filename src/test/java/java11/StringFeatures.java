@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Optional;
 
 public class StringFeatures {
 
@@ -31,6 +32,16 @@ public class StringFeatures {
         var sentence = "Repeat text is handy sometimes \n";
         System.out.println(sentence.repeat(5));
 
+        //Evolution of trim for unicode
+        var name = "    Paul    ";
+        System.out.println(name.strip());
+        // Remove the whitespace in the beginning of the string
+        var name1 = "    Paul";
+        System.out.println(name1.stripLeading());
+        // Remove the whitespace from the end of the string
+        var name2 = "Paul    ";
+        System.out.println(name2.stripTrailing());
+
     }
 
     /**
@@ -45,6 +56,7 @@ public class StringFeatures {
         Files.readString(Path.of("sentence.txt"))
                 .lines()
                 .forEach(System.out::println);
+
     }
 
 }
