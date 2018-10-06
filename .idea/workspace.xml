@@ -329,7 +329,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538855125307" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538855273140" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -362,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionFeatures.feature">
+  <component name="RunManager" selected="JUnit.CollectionFeatures">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -473,8 +473,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionFeatures.feature" />
         <item itemvalue="JUnit.CollectionFeatures" />
+        <item itemvalue="JUnit.CollectionFeatures.feature" />
         <item itemvalue="JUnit.FileFeatures.linesFeature" />
         <item itemvalue="JUnit.FileFeatures.fileFeatures" />
         <item itemvalue="JUnit.HttpClient2Feature" />
