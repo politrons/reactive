@@ -49,7 +49,7 @@ public class StringFeatures {
      * With the operators [writeString] and [readString] adding the [Path] we can easily write and read in files.
      */
     @Test
-    public void filesFeatures() throws IOException {
+    public void fileFeatures() throws IOException {
         var words = "Write now in Java \n is really easy";
         Files.writeString(Path.of("sentence.txt"), words);
 
