@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 11 features">
-      <change afterPath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java11/FileFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java11/LocalVariableFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +23,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="27" />
+          <entry key="class" value="2" />
+          <entry key="java" value="30" />
           <entry key="md" value="2" />
           <entry key="png" value="3" />
           <entry key="proto" value="1" />
@@ -35,8 +34,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="2" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="27" />
+          <entry key="JAVA" value="30" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
@@ -45,15 +45,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="39" />
-          <entry key="java" value="2849" />
-          <entry key="md" value="40" />
+          <entry key="java" value="3124" />
+          <entry key="md" value="61" />
           <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2849" />
-          <entry key="Markdown" value="40" />
+          <entry key="JAVA" value="3124" />
+          <entry key="Markdown" value="61" />
           <entry key="PLAIN_TEXT" value="55" />
         </counts>
       </usages-collector>
@@ -64,21 +64,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="28" selection-start-line="45" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="465">
-                <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+              <first_editor relative-caret-position="525">
+                <caret line="164" column="17" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -100,6 +91,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java11/FileFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -108,29 +111,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="255">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/AbstractCollection.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="210">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Arrays.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java11/LocalVariableFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="5101" column="25" selection-start-line="5101" selection-start-column="25" selection-end-line="5101" selection-end-column="25" />
+            <state relative-caret-position="390">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.1.2/rxjava-2.1.2.jar!/io/reactivex/annotations/Nullable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.1.2/rxjava-2.1.2.jar!/io/reactivex/annotations/NonNull.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -138,30 +159,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="379" column="20" selection-start-line="379" selection-start-column="20" selection-end-line="379" selection-end-column="20" />
+            <state relative-caret-position="-4645">
+              <caret line="377" column="14" selection-start-line="377" selection-start-column="7" selection-end-line="377" selection-end-column="14" />
               <folding>
                 <element signature="e#18598#18599#0" expanded="true" />
                 <element signature="e#18648#18649#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/IntFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/file/Files.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="3240" column="25" selection-start-line="3240" selection-start-column="25" selection-end-line="3240" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -174,6 +177,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@since 11</find>
+      <find>@since</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -195,8 +204,9 @@
         <option value="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" />
         <option value="$PROJECT_DIR$/src/test/java/java11/FileFeatures.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java11/LocalVariableFeature.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -281,6 +291,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="java11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,6 +340,32 @@
               <item name="util" type="462c0819:PsiDirectoryNode" />
               <item name="function" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.reactivex.rxjava2:rxjava:2.1.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.reactivex.rxjava2:rxjava:2.1.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="rxjava-2.1.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.reactivex.rxjava2:rxjava:2.1.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="rxjava-2.1.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: io.reactivex.rxjava2:rxjava:2.1.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="rxjava-2.1.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="reactivex" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -329,7 +373,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538855273140" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538856163038" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -362,7 +406,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionFeatures">
+  <component name="RunManager" selected="JUnit.LocalVariableFeature.notNullAllowed">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -401,23 +445,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileFeatures.fileFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.FileFeatures" />
-      <option name="METHOD_NAME" value="fileFeatures" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FileFeatures.linesFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -435,7 +462,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpClient2Feature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalVariableFeature.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -444,7 +471,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.HttpClient2Feature" />
+      <option name="MAIN_CLASS_NAME" value="java11.LocalVariableFeature" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalVariableFeature.notNullAllowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java11" />
+      <option name="MAIN_CLASS_NAME" value="java11.LocalVariableFeature" />
+      <option name="METHOD_NAME" value="notNullAllowed" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -465,19 +511,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HttpClient2Feature" />
-      <item itemvalue="JUnit.FileFeatures.fileFeatures" />
       <item itemvalue="JUnit.FileFeatures.linesFeature" />
       <item itemvalue="JUnit.CollectionFeatures.feature" />
       <item itemvalue="JUnit.CollectionFeatures" />
+      <item itemvalue="JUnit.LocalVariableFeature.main" />
+      <item itemvalue="JUnit.LocalVariableFeature.notNullAllowed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocalVariableFeature.notNullAllowed" />
+        <item itemvalue="JUnit.LocalVariableFeature.main" />
         <item itemvalue="JUnit.CollectionFeatures" />
         <item itemvalue="JUnit.CollectionFeatures.feature" />
         <item itemvalue="JUnit.FileFeatures.linesFeature" />
-        <item itemvalue="JUnit.FileFeatures.fileFeatures" />
-        <item itemvalue="JUnit.HttpClient2Feature" />
       </list>
     </recent_temporary>
   </component>
@@ -548,39 +594,53 @@
       <option name="project" value="LOCAL" />
       <updated>1538853603742</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Java 11 features">
+      <created>1538855229635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538855229635</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Java 11 features">
+      <created>1538855293327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1538855293327</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HttpClient2Feature - 2018.10.06 at 21h 19m 53s.xml">
-      <configuration name="HttpClient2Feature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileFeatures_fileFeatures - 2018.10.06 at 21h 26m 03s.xml">
-      <configuration name="FileFeatures.fileFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileFeatures_fileFeatures - 2018.10.06 at 21h 27m 30s.xml">
-      <configuration name="FileFeatures.fileFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileFeatures_linesFeature - 2018.10.06 at 21h 27m 57s.xml">
-      <configuration name="FileFeatures.linesFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 34m 58s.xml">
+    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 45m 17s.xml">
       <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionFeatures - 2018.10.06 at 21h 38m 28s.xml">
+    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 45m 27s.xml">
+      <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionFeatures - 2018.10.06 at 21h 47m 55s.xml">
       <configuration name="CollectionFeatures" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 38m 46s.xml">
-      <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 21h 54m 27s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 38m 55s.xml">
-      <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 21h 57m 47s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 39m 09s.xml">
-      <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 21h 58m 01s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionFeatures_feature - 2018.10.06 at 21h 41m 25s.xml">
-      <configuration name="CollectionFeatures.feature" configurationId="JUnit" />
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 21h 58m 48s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 21h 59m 07s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableFeature_main - 2018.10.06 at 22h 01m 42s.xml">
+      <configuration name="LocalVariableFeature.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalVariableFeature_notNullAllowed - 2018.10.06 at 22h 01m 48s.xml">
+      <configuration name="LocalVariableFeature.notNullAllowed" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -595,7 +655,7 @@
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5490446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5490446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -609,7 +669,7 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Cargo" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.26897568" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.26897568" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -638,34 +698,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/ScalaFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
@@ -894,16 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -918,44 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/FileFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="45" column="28" selection-start-line="45" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="465">
-            <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>
@@ -982,8 +970,8 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="379" column="20" selection-start-line="379" selection-start-column="20" selection-end-line="379" selection-end-column="20" />
+        <state relative-caret-position="-4645">
+          <caret line="377" column="14" selection-start-line="377" selection-start-column="7" selection-end-line="377" selection-end-column="14" />
           <folding>
             <element signature="e#18598#18599#0" expanded="true" />
             <element signature="e#18648#18649#0" expanded="true" />
@@ -991,10 +979,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/FileFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        <state relative-caret-position="255">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java10/LocalVariableTypeInference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.1.2/rxjava-2.1.2.jar!/io/reactivex/annotations/NonNull.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.1.2/rxjava-2.1.2.jar!/io/reactivex/annotations/Nullable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/LocalVariableFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="525">
+            <caret line="164" column="17" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

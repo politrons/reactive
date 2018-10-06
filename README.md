@@ -162,6 +162,7 @@ The most important features with particle examples of how to use it.
 * [String](src/test/java/java11/StringFeatures.java)
 * [File](src/test/java/java11/FileFeatures.java)
 * [Collection](src/test/java/java11/CollectionFeatures.java)
+* [Local variable](src/test/java/java11/LocalVariableFeature.java)
 
 
 ## Software craftsmanship
