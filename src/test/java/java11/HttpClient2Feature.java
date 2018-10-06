@@ -45,16 +45,8 @@ public class HttpClient2Feature {
      * Then finally using the client we can do [sync] and [async] calls. In case of Async it will return a CompletableFuture
      */
     private void makeRequest(String uri) throws InterruptedException, ExecutionException, TimeoutException {
-        var httpClient = HttpClient.newBuilder()
-                .version(HttpClient.Version.HTTP_2)  // this is the default
-                .connectTimeout(Duration.ofMillis(1500))
-                .followRedirects(HttpClient.Redirect.ALWAYS)
-                .build();
-        var request = HttpRequest
-                .newBuilder(URI.create(uri))
-                .GET()
-                .setHeader("my_custom_header","hello java 11")
-                .build();
+        var httpClient = createHttpClient();
+        var request = createHttpRequest(uri);
         var future = httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString());
         var status = future
                 .thenApply(response -> {
@@ -64,6 +56,22 @@ public class HttpClient2Feature {
                 .thenApply(HttpResponse::statusCode)
                 .get(10, SECONDS);
         System.out.println("Response call:" + status);
+    }
+
+    private HttpRequest createHttpRequest(String uri) {
+        return HttpRequest
+                .newBuilder(URI.create(uri))
+                .GET()
+                .setHeader("my_custom_header","hello java 11")
+                .build();
+    }
+
+    private HttpClient createHttpClient() {
+        return HttpClient.newBuilder()
+                .version(HttpClient.Version.HTTP_2)  // this is the default
+                .connectTimeout(Duration.ofMillis(1500))
+                .followRedirects(HttpClient.Redirect.ALWAYS)
+                .build();
     }
 
 }

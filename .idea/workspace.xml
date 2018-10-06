@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 11 features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="39" />
           <entry key="java" value="2273" />
           <entry key="md" value="29" />
           <entry key="txt" value="16" />
@@ -48,7 +49,7 @@
         <counts>
           <entry key="JAVA" value="2273" />
           <entry key="Markdown" value="29" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="PLAIN_TEXT" value="55" />
         </counts>
       </usages-collector>
     </session>
@@ -58,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="44" column="124" selection-start-line="44" selection-start-column="124" selection-end-line="44" selection-end-column="124" />
+            <state relative-caret-position="363">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="363">
@@ -175,10 +176,10 @@
         <option value="$PROJECT_DIR$/src/main/java/org/java11/features/module-info.java" />
         <option value="$PROJECT_DIR$/src/test/java/module-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/java11/FlightRecorderFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java11/StringFeatures.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" />
       </list>
     </option>
   </component>
@@ -371,7 +372,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538828702307" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538853591418" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -404,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringFeatures.features">
+  <component name="RunManager" selected="JUnit.HttpClient2Feature">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -445,17 +446,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObservableConcat.testContact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpClient2Feature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rx.observables.combining.*" />
+          <option name="PATTERN" value="java11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="rx.observables.combining" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableConcat" />
-      <option name="METHOD_NAME" value="testContact" />
+      <option name="PACKAGE_NAME" value="java11" />
+      <option name="MAIN_CLASS_NAME" value="java11.HttpClient2Feature" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClient2Feature.httpRequest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java11" />
+      <option name="MAIN_CLASS_NAME" value="java11.HttpClient2Feature" />
+      <option name="METHOD_NAME" value="httpRequest2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -479,23 +495,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringFeatures.filesFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.StringFeatures" />
-      <option name="METHOD_NAME" value="filesFeatures" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -512,18 +511,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.StringFeatures.features" />
-      <item itemvalue="JUnit.ObservableConcat.testContact" />
-      <item itemvalue="JUnit.StringFeatures.filesFeatures" />
       <item itemvalue="JUnit.FlightRecorderFeature.main" />
       <item itemvalue="JUnit.FlightRecorderFeature.publishMessage" />
+      <item itemvalue="JUnit.HttpClient2Feature.httpRequest2" />
+      <item itemvalue="JUnit.HttpClient2Feature" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpClient2Feature" />
+        <item itemvalue="JUnit.HttpClient2Feature.httpRequest2" />
         <item itemvalue="JUnit.StringFeatures.features" />
         <item itemvalue="JUnit.FlightRecorderFeature.publishMessage" />
         <item itemvalue="JUnit.FlightRecorderFeature.main" />
-        <item itemvalue="JUnit.StringFeatures.filesFeatures" />
-        <item itemvalue="JUnit.ObservableConcat.testContact" />
       </list>
     </recent_temporary>
   </component>
@@ -580,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538827771996</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Java 11 features">
+      <created>1538828709519</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538828709519</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -937,16 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="44" column="124" selection-start-line="44" selection-start-column="124" selection-end-line="44" selection-end-column="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/10.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1008,6 +1004,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
