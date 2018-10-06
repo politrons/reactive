@@ -31,7 +31,7 @@ public class CompletableFutureFeature {
      * as an state of the future, true in case that the future finish or false
      */
     @Test
-    public void complete() throws InterruptedException {
+    public void complete() {
         CompletableFuture<Either<Integer, String>> completableFuture = new CompletableFuture<>();
         completableFuture.whenComplete((result, throwable) -> System.out.println(result.right().get()));
         boolean complete = completableFuture.complete(getValue());//Pass the value to return once he it.
