@@ -152,6 +152,8 @@ The most important features with particle examples of how to use it.
 * [Collections](src/test/java/java10/Collections.java)
 * [Local variable type inference](src/test/java/java10/LocalVariableTypeInference.java)
 
+## Java 11
+
 ![My image](src/main/resources/img/11.png)
 
 The most important features with particle examples of how to use it.
