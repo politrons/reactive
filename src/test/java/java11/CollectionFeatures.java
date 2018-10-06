@@ -22,6 +22,13 @@ public class CollectionFeatures {
         final var words = Set.of("hello", "copy", "array", "java");
         var stringArray = words.toArray(String[]::new);
         System.out.println(Arrays.toString(stringArray));
+
+        Object[] objects = words.toArray();
+        System.out.println(Arrays.toString(objects));
+
+        var stringArray2 = words.toArray(String[]::new);
+        System.out.println(Arrays.toString(stringArray2));
+
     }
 
 
