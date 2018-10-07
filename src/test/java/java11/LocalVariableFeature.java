@@ -20,8 +20,7 @@ public class LocalVariableFeature {
 
 
     @Test
-    public void main() {
-
+    public void nullAllowed() {
         var numbers = new String[]{"**************", "hello", "local", "variable", null, "in", "lambdas"};
         Arrays.stream(numbers)
                 .forEach((@Nullable var out) -> System.out.println(out));
@@ -29,7 +28,6 @@ public class LocalVariableFeature {
 
     @Test
     public void notNullAllowed() {
-
         var numbers = new String[]{"hello", "local", "variable", null, "in", "lambdas"};
         Arrays.stream(numbers)
                 .filter((@NonNull var a) -> a.length() < 10)
