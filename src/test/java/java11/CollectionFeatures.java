@@ -14,7 +14,7 @@ public class CollectionFeatures {
      * In Java 11 allows the collection's elements to be transferred to a newly created array of the desired runtime type.
      */
     @Test
-    public void feature() {
+    public void copyIntoNewArray() {
         final var numbers = Set.of(1, 2, 3, 4);
         var intArray = numbers.toArray(Integer[]::new);
         System.out.println(Arrays.toString(intArray));
