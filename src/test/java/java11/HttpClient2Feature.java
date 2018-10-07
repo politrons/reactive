@@ -23,11 +23,17 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class HttpClient2Feature {
 
 
+    /**
+     * In this example google over http run in http/1.1
+     */
     @Test
     public void httpRequest1() throws InterruptedException, ExecutionException, TimeoutException {
         makeRequest("http://www.google.com");
     }
 
+    /**
+     * In this example google over https run in http/2.0
+     */
     @Test
     public void httpRequest2() throws InterruptedException, ExecutionException, TimeoutException {
         makeRequest("https://www.google.com");
