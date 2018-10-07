@@ -7,20 +7,18 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
-import java.time.temporal.TemporalUnit;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import static java.util.concurrent.TimeUnit.*;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
- * With the new http client by default it will try to connect using HTTP 2.0 protocol.
- * If the server does not supports HTTP/2, then HTTP/1.1 will be used.
- * <p>
+ * Finally with Java 11 HttpClient is mature enough and is not in the incubator package.
  * In order to make work this code is mandatory create your module-info.java class
  * and import the module [requires java.net.http;]
+ *
+ * With the http client by default it will try to connect using HTTP 2.0 protocol.
+ * If the server does not supports HTTP/2, then HTTP/1.1 will be used.
  */
 public class HttpClient2Feature {
 
