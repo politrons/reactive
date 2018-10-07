@@ -22,7 +22,6 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  */
 public class HttpClient2Feature {
 
-
     /**
      * In this example google over http run in http/1.1
      */
