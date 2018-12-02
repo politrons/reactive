@@ -123,6 +123,13 @@ A Comparative and benchmark between these two frameworks.
 
 * [ReactorVsRx](src/test/java/rx/utils/ReactorVsRx.java)
 
+## Reactive Stream Monads combination
+
+A Combination of Monads that implement Reactive Stream.
+
+* [ReactiveStream](src/test/java/ReactiveMix.java)
+
+
 ## Java 8
 
 ![My image](src/main/resources/img/rsz_stream.jpg)

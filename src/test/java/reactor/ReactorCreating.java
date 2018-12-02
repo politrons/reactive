@@ -207,4 +207,19 @@ public class ReactorCreating {
         System.out.println("It disposable");
     }
 
+    @Test
+    public void fluxPipeline() {
+        Flux.just("hello", "reactive", "Spring", "foo", null)
+                .filter(word -> word != "foo") // filter
+                .delayElements(Duration.ofMillis(100)) // Give a break, async
+                .map(word -> word.toUpperCase()) // Transformation
+                .flatMap(word -> Flux.just("-") //Composition
+                        .map(item -> word.concat(item)))
+                .onErrorResume(throwable -> Flux.just("Error because:" + throwable))//Error handling
+                .subscribe(value -> System.out.println("On next function: " + value),
+                        t -> System.out.println("On error function: " + t),
+                        () -> System.out.println("On complete function"));
+
+    }
+
 }
