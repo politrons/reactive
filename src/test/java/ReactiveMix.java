@@ -13,8 +13,8 @@ public class ReactiveMix {
 
 
     /**
-     * In this example we create an [Observable] publisher, we wrap first into a Flowable, and then we are able to pass
-     * this publisher as Flux publisher using [from] operator.
+     * In this example we create an [Observable] publisher, we wrap first into a Flowable using constructor [FlowableFromObservable],
+     * and then we are able to pass this publisher as Flux publisher using [from] operator.
      */
     @Test
     public void observableIntoReactor() {
