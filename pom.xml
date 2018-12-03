@@ -21,7 +21,11 @@
     </build>
 
     <dependencies>
-
+        <dependency>
+            <groupId>io.reactivex</groupId>
+            <artifactId>rxjava-reactive-streams</artifactId>
+            <version>1.2.1</version>
+        </dependency>
         <dependency>
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjava</artifactId>

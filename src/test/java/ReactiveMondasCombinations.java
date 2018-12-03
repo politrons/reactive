@@ -14,7 +14,7 @@ import java.util.concurrent.SubmissionPublisher;
  * Also since Java release version 9 with [Flow] which is another implementation of Reactive Stream, is also possible
  * combine this three Monads.
  */
-public class ReactiveMix {
+public class ReactiveMondasCombinations {
 
 
     /**
@@ -37,9 +37,9 @@ public class ReactiveMix {
                 .map(word -> "Reactor and " + word)
                 .flatMap(word -> Flux.just("_").map(word::concat));
 
-        flux.subscribe(System.out::println, System.out::println);
-        System.out.println("****************************************");
         observable.subscribe(System.out::println, System.out::println);
+        System.out.println("****************************************");
+        flux.subscribe(System.out::println, System.out::println);
     }
 
     /**
@@ -60,12 +60,18 @@ public class ReactiveMix {
                         .map(word -> "Rx and " + word)
                         .map(String::toUpperCase);
 
-        observable.subscribe(System.out::println, System.out::println);
-        System.out.println("****************************************");
         flux.subscribe(System.out::println, System.out::println);
+        System.out.println("****************************************");
+        observable.subscribe(System.out::println, System.out::println);
     }
 
 
+    /**
+     * Here we combine a [Flux] Publisher with a Reactor [Flow]. First of all we create a Java9 [SubmissionPublisher]
+     * Which used to receive events submitted by a Java [Stream].
+     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into a Flux
+     * Then subscribe the flux and we start the emission of the Stream.
+     **/
     @Test
     public void flowToFlux() throws InterruptedException {
         System.out.println("----------------------------------------");
@@ -85,6 +91,13 @@ public class ReactiveMix {
         publisher.close();
     }
 
+    /**
+     * Here we combine a [Flux] Publisher with a Reactor [Flow] and finally ReactiveX [Observable]. First of all we create a Java9 [SubmissionPublisher]
+     * Which used to receive events submitted by a Java [Stream].
+     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into a Flux, then create
+     * the Observable through the flux using [fromPublisher] operator
+     * Then we subscribe the observable and we start the emission of the Stream.
+     **/
     @Test
     public void flowToFluxToObservable() throws InterruptedException {
         System.out.println("----------------------------------------");

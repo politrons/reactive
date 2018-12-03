@@ -115,7 +115,7 @@ The reactive stream API implementation of Akka.
 
 A Combination of Monads that implement Reactive Stream.
 
-* [ReactiveStream](src/test/java/ReactiveMix.java)
+* [ReactiveStream](src/test/java/ReactiveMondasCombinations.java)
 
 ## Observer V Iterator Pattern
 
