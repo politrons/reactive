@@ -22,10 +22,10 @@ public class ReactiveMondasCombinations {
      * and then we are able to pass this publisher as Flux publisher using [from] operator.
      */
     @Test
-    public void observableIntoReactor() {
+    public void observableToFlux() {
         System.out.println("----------------------------------------");
         Observable<String> observable =
-                Observable.just("hello", "reactive", "Reactor", "and", "ReactiveX", "world")
+                Observable.just("hello", "reactive", "world")
                         .filter(Objects::nonNull)
                         .map(word -> "Rx " + word)
                         .map(String::toUpperCase);
@@ -47,9 +47,9 @@ public class ReactiveMondasCombinations {
      * as a Observable publisher using [fromPublisher] operator.
      */
     @Test
-    public void reactorToObservable() {
+    public void fluxToObservable() {
         System.out.println("----------------------------------------");
-        Flux<String> flux = Flux.just("hello", "reactive", "Reactor", "and", "ReactiveX", "world")
+        Flux<String> flux = Flux.just("hello", "reactive", "world")
                 .filter(Objects::nonNull)
                 .map(word -> "Reactor " + word)
                 .flatMap(word -> Flux.just("_").map(word::concat));
@@ -75,7 +75,7 @@ public class ReactiveMondasCombinations {
     @Test
     public void flowToFlux() throws InterruptedException {
         System.out.println("----------------------------------------");
-        String[] items = {"hello", "reactive", "Flow", "and", "Reactor", "world"};
+        String[] items = {"hello", "reactive", "world"};
         SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
 
         Flux<String> flux = JdkFlowAdapter.flowPublisherToFlux(publisher)
@@ -101,7 +101,7 @@ public class ReactiveMondasCombinations {
     @Test
     public void flowToFluxToObservable() throws InterruptedException {
         System.out.println("----------------------------------------");
-        String[] items = {"hello", "reactive", "Flow", "and", "Reactor", "world"};
+        String[] items = {"hello", "reactive", "world"};
         SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
 
         Flux<String> flux = JdkFlowAdapter.flowPublisherToFlux(publisher)
