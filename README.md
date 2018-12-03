@@ -111,6 +111,12 @@ The reactive stream API implementation of Akka.
 * [Back-pressure](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/BackPressure.scala)
 * [GraphDSL](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/Graphs.scala)
 
+## Reactive Stream Monads combination
+
+A Combination of Monads that implement Reactive Stream.
+
+* [ReactiveStream](src/test/java/ReactiveMix.java)
+
 ## Observer V Iterator Pattern
 
 An explanation, comparative and benchmark between these two patterns.
@@ -123,11 +129,6 @@ A Comparative and benchmark between these two frameworks.
 
 * [ReactorVsRx](src/test/java/rx/utils/ReactorVsRx.java)
 
-## Reactive Stream Monads combination
-
-A Combination of Monads that implement Reactive Stream.
-
-* [ReactiveStream](src/test/java/ReactiveMix.java)
 
 
 ## Java 8
