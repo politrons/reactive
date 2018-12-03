@@ -1,9 +1,12 @@
 import io.reactivex.Observable;
 import io.reactivex.internal.operators.flowable.FlowableFromObservable;
 import org.junit.Test;
+import reactor.adapter.JdkFlowAdapter;
 import reactor.core.publisher.Flux;
 
+import java.util.Arrays;
 import java.util.Objects;
+import java.util.concurrent.SubmissionPublisher;
 
 /**
  * Since ReactiveX implement with version 2.0 Reactive Stream API, nowadays is possible combine Monads from [ReactiveX] with
@@ -58,6 +61,51 @@ public class ReactiveMix {
         observable.subscribe(System.out::println, System.out::println);
         System.out.println("****************************************");
         flux.subscribe(System.out::println, System.out::println);
+    }
+
+
+    @Test
+    public void flowToFlux() throws InterruptedException {
+        System.out.println("----------------------------------------");
+        String[] items = {"hello", "reactive", "Flow", "and", "Reactor", "world"};
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+        Flux<String> flux = JdkFlowAdapter.flowPublisherToFlux(publisher)
+                .map(word -> "Reactor and " + word)
+                .flatMap(word -> Flux.just("_").map(word::concat))
+                .map(String::toUpperCase);
+        flux.subscribe(System.out::println, System.out::println);
+
+        Arrays.stream(items)
+                .map(word -> "Flow " + word)
+                .forEach(publisher::submit);
+        Thread.sleep(500);//Async
+        publisher.close();
+    }
+
+    @Test
+    public void flowToFluxToObservable() throws InterruptedException {
+        System.out.println("----------------------------------------");
+        String[] items = {"hello", "reactive", "Flow", "and", "Reactor", "world"};
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+        Flux<String> flux = JdkFlowAdapter.flowPublisherToFlux(publisher)
+                .map(word -> "Reactor and " + word)
+                .flatMap(word -> Flux.just("_").map(word::concat));
+
+        Observable<String> observable =
+                Observable.fromPublisher(flux)
+                        .filter(Objects::nonNull)
+                        .map(word -> "Rx and " + word)
+                        .map(String::toUpperCase);
+        observable.subscribe(System.out::println, System.out::println);
+
+        Arrays.stream(items)
+                .map(word -> "Flow " + word)
+                .map(String::toUpperCase)
+                .forEach(publisher::submit);
+        Thread.sleep(500);//Async
+        publisher.close();
     }
 
 }
