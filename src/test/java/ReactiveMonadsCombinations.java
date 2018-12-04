@@ -9,17 +9,18 @@ import java.util.Objects;
 import java.util.concurrent.SubmissionPublisher;
 
 /**
- * Since ReactiveX implement with version 2.0 Reactive Stream API, nowadays is possible combine Monads from [ReactiveX] with
+ * Since ReactiveX implement with version 2.0 Reactive Stream API, is possible combine Monads from [ReactiveX] with
  * [Reactor] monads and the other way around.
  * Also since Java release version 9 with [Flow] which is another implementation of Reactive Stream, is also possible
  * combine this three Monads.
  */
-public class ReactiveMondasCombinations {
-
+public class ReactiveMonadsCombinations {
 
     /**
      * In this example we create an [Observable] publisher, we wrap first into a Flowable using constructor [FlowableFromObservable],
      * and then we are able to pass this publisher as Flux publisher using [from] operator.
+     * Then once we subscribe into the flux publisher the emission from the observable start, and is passing
+     * through the observable pipeline, and then through the flux.
      */
     @Test
     public void observableToFlux() {
