@@ -23,6 +23,8 @@ public class ReactiveMonadsCombinations {
      * and then we are able to pass this publisher as Flux publisher using [from] operator.
      * Then once we subscribe into the flux publisher the emission from the observable start, and is passing
      * through the observable pipeline, and then through the flux.
+     *
+     * In this example we publish the combination of monads pipeline of [flux] but also we can subscribe independently the observable
      */
     @Test
     public void observableToFlux() {
@@ -52,6 +54,8 @@ public class ReactiveMonadsCombinations {
      * as a Observable publisher using [fromPublisher] operator.
      * As we can see in this example with [take] operator the latest part of the pipeline apply the operator
      * again and change the number of emissions of elements.
+     *
+     * In this example we publish the combination of monads pipeline of [observable] but also we can subscribe independently the flux
      */
     @Test
     public void fluxToObservable() {
