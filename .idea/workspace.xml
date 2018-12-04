@@ -60,7 +60,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="6833" />
+          <entry key="java" value="7190" />
           <entry key="md" value="218" />
           <entry key="profile" value="4" />
           <entry key="txt" value="16" />
@@ -69,7 +69,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6833" />
+          <entry key="JAVA" value="7190" />
           <entry key="Markdown" value="218" />
           <entry key="PLAIN_TEXT" value="65" />
           <entry key="XML" value="7" />
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+            <state relative-caret-position="172">
+              <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,7 +380,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543918952869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543919056705" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
@@ -733,16 +733,24 @@
       <option name="project" value="LOCAL" />
       <updated>1543916744160</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Java 11 features">
+      <created>1543918958884</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1543918958884</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Java 11 features">
+      <created>1543919063417</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1543919063417</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 09h 34m 57s.xml">
-      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMonadsCombinations - 2018.12.04 at 09h 45m 17s.xml">
-      <configuration name="ReactiveMonadsCombinations" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReactiveMonadsCombinations - 2018.12.04 at 10h 16m 33s.xml">
       <configuration name="ReactiveMonadsCombinations" configurationId="JUnit" />
     </history-entry>
@@ -766,6 +774,12 @@
     </history-entry>
     <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 19m 41s.xml">
       <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_fluxToObservable - 2018.12.04 at 10h 21m 00s.xml">
+      <configuration name="ReactiveMonadsCombinations.fluxToObservable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_fluxToObservable - 2018.12.04 at 10h 21m 26s.xml">
+      <configuration name="ReactiveMonadsCombinations.fluxToObservable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1181,8 +1195,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        <state relative-caret-position="172">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -96,6 +96,7 @@ public class ReactiveMonadsCombinations {
                 .map(word -> "Reactor and " + word)
                 .flatMap(word -> Flux.just("_").map(word::concat))
                 .map(String::toUpperCase);
+
         flux.subscribe(System.out::println, System.out::println);
 
         Arrays.stream(items)
@@ -127,6 +128,7 @@ public class ReactiveMonadsCombinations {
                         .filter(Objects::nonNull)
                         .map(word -> "Rx and " + word)
                         .map(String::toUpperCase);
+
         observable.subscribe(System.out::println, System.out::println);
 
         Arrays.stream(items)
