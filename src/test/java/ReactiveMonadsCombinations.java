@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.concurrent.SubmissionPublisher;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Stream;
 
 /**
  * Since ReactiveX implement with version 2.0 Reactive Stream API, is possible combine Monads from [ReactiveX] with
@@ -34,6 +35,7 @@ public class ReactiveMonadsCombinations {
                         .filter(Objects::nonNull)
                         .timeout(10, TimeUnit.SECONDS)
                         .map(word -> "Rx " + word)
+                        .flatMap(word -> Observable.just("@").map(word::concat))
                         .map(String::toUpperCase);
 
         FlowableFromObservable<String> flowableFromObservable = new FlowableFromObservable(observable);
@@ -70,8 +72,9 @@ public class ReactiveMonadsCombinations {
         Observable<String> observable =
                 Observable.fromPublisher(flux)
                         .filter(Objects::nonNull)
-                        .map(word -> "Rx and " + word)
                         .take(3)
+                        .map(word -> "Rx and " + word)
+                        .flatMap(word -> Observable.just("@").map(word::concat))
                         .map(String::toUpperCase);
 
         flux.subscribe(System.out::println, System.out::println);
@@ -101,6 +104,7 @@ public class ReactiveMonadsCombinations {
 
         Arrays.stream(items)
                 .map(word -> "Flow " + word)
+                .flatMap(word -> Stream.of("!").map(word::concat))
                 .forEach(publisher::submit);
         Thread.sleep(500);//Async
         publisher.close();
@@ -127,6 +131,7 @@ public class ReactiveMonadsCombinations {
                 Observable.fromPublisher(flux)
                         .filter(Objects::nonNull)
                         .map(word -> "Rx and " + word)
+                        .flatMap(word -> Observable.just("@").map(word::concat))
                         .map(String::toUpperCase);
 
         observable.subscribe(System.out::println, System.out::println);
@@ -134,6 +139,7 @@ public class ReactiveMonadsCombinations {
         Arrays.stream(items)
                 .map(word -> "Flow " + word)
                 .map(String::toUpperCase)
+                .flatMap(word -> Stream.of("$").map(word::concat))
                 .forEach(publisher::submit);
         Thread.sleep(500);//Async
         publisher.close();
