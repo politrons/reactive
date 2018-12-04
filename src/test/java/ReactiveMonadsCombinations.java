@@ -4,9 +4,11 @@ import org.junit.Test;
 import reactor.adapter.JdkFlowAdapter;
 import reactor.core.publisher.Flux;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.concurrent.SubmissionPublisher;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Since ReactiveX implement with version 2.0 Reactive Stream API, is possible combine Monads from [ReactiveX] with
@@ -28,6 +30,7 @@ public class ReactiveMonadsCombinations {
         Observable<String> observable =
                 Observable.just("hello", "reactive", "world")
                         .filter(Objects::nonNull)
+                        .timeout(10, TimeUnit.SECONDS)
                         .map(word -> "Rx " + word)
                         .map(String::toUpperCase);
 
@@ -35,6 +38,7 @@ public class ReactiveMonadsCombinations {
 
         Flux<String> flux = Flux.from(flowableFromObservable)
                 .filter(Objects::nonNull)
+                .buffer(2)
                 .map(word -> "Reactor and " + word)
                 .flatMap(word -> Flux.just("_").map(word::concat));
 
@@ -46,12 +50,16 @@ public class ReactiveMonadsCombinations {
     /**
      * In this example we create a [Flux] publisher, we dont have to wrap first is possible to pass directly
      * as a Observable publisher using [fromPublisher] operator.
+     * As we can see in this example with [take] operator the latest part of the pipeline apply the operator
+     * again and change the number of emissions of elements.
      */
     @Test
     public void fluxToObservable() {
         System.out.println("----------------------------------------");
-        Flux<String> flux = Flux.just("hello", "reactive", "world")
+        Flux<String> flux = Flux.just("hello", "reactive", "world","extra")
                 .filter(Objects::nonNull)
+                .timeout(Duration.ofSeconds(10))
+                .take(4)
                 .map(word -> "Reactor " + word)
                 .flatMap(word -> Flux.just("_").map(word::concat));
 
@@ -59,6 +67,7 @@ public class ReactiveMonadsCombinations {
                 Observable.fromPublisher(flux)
                         .filter(Objects::nonNull)
                         .map(word -> "Rx and " + word)
+                        .take(3)
                         .map(String::toUpperCase);
 
         flux.subscribe(System.out::println, System.out::println);

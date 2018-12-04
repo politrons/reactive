@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 11 features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="23" />
+          <entry key="class" value="26" />
           <entry key="java" value="60" />
           <entry key="md" value="4" />
           <entry key="png" value="3" />
@@ -48,7 +49,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="23" />
+          <entry key="CLASS" value="26" />
           <entry key="Image" value="3" />
           <entry key="JAVA" value="60" />
           <entry key="Markdown" value="4" />
@@ -59,7 +60,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="6694" />
+          <entry key="java" value="6833" />
           <entry key="md" value="218" />
           <entry key="profile" value="4" />
           <entry key="txt" value="16" />
@@ -68,7 +69,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6694" />
+          <entry key="JAVA" value="6833" />
           <entry key="Markdown" value="218" />
           <entry key="PLAIN_TEXT" value="65" />
           <entry key="XML" value="7" />
@@ -81,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="66" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+            <state relative-caret-position="187">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,15 +95,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/publisher/Flux.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="468" column="31" selection-start-line="468" selection-start-column="31" selection-end-line="468" selection-end-column="31" />
+              <folding>
+                <element signature="e#21118#21119#0" expanded="true" />
+                <element signature="e#21164#21165#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/Observable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="2472" column="54" selection-start-line="2472" selection-start-column="54" selection-end-line="2472" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/ObservableSource.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
@@ -112,24 +135,6 @@
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/Disposable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9030">
-              <caret line="646" selection-start-line="646" selection-end-line="647" />
             </state>
           </provider>
         </entry>
@@ -236,8 +241,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ReactiveMix.java" />
         <option value="$PROJECT_DIR$/src/test/java/ReactiveMondasCombinations.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" />
       </list>
     </option>
   </component>
@@ -375,7 +380,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543916697517" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543918882588" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15349545" />
@@ -492,10 +497,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReactiveMonadsCombinations" />
-        <item itemvalue="JUnit.ReactiveMonadsCombinations.observableToFlux" />
-        <item itemvalue="JUnit.ReactiveMonadsCombinations.flowToFluxToObservable" />
         <item itemvalue="JUnit.ReactiveMonadsCombinations.fluxToObservable" />
+        <item itemvalue="JUnit.ReactiveMonadsCombinations.observableToFlux" />
+        <item itemvalue="JUnit.ReactiveMonadsCombinations" />
+        <item itemvalue="JUnit.ReactiveMonadsCombinations.flowToFluxToObservable" />
         <item itemvalue="JUnit.ReactiveMonadsCombinations.flowToObservable" />
       </list>
     </recent_temporary>
@@ -721,39 +726,46 @@
       <option name="project" value="LOCAL" />
       <updated>1543916661550</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Java 11 features">
+      <created>1543916744160</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1543916744160</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactiveMix_flowToObservable - 2018.12.03 at 22h 41m 27s.xml">
-      <configuration name="ReactiveMix.flowToObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMix - 2018.12.03 at 23h 28m 44s.xml">
-      <configuration name="ReactiveMix" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMix - 2018.12.03 at 23h 29m 31s.xml">
-      <configuration name="ReactiveMix" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMix_observableIntoReactor - 2018.12.03 at 23h 29m 49s.xml">
-      <configuration name="ReactiveMix.observableIntoReactor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMix_reactorToObservable - 2018.12.03 at 23h 29m 56s.xml">
-      <configuration name="ReactiveMix.reactorToObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMondasCombinations_flowToFluxToObservable - 2018.12.03 at 23h 34m 09s.xml">
-      <configuration name="ReactiveMondasCombinations.flowToFluxToObservable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMondasCombinations_observableToFlux - 2018.12.03 at 23h 34m 51s.xml">
-      <configuration name="ReactiveMondasCombinations.observableToFlux" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 09h 34m 22s.xml">
-      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 09h 34m 57s.xml">
       <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReactiveMonadsCombinations - 2018.12.04 at 09h 45m 17s.xml">
       <configuration name="ReactiveMonadsCombinations" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations - 2018.12.04 at 10h 16m 33s.xml">
+      <configuration name="ReactiveMonadsCombinations" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 16m 43s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 17m 38s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 17m 55s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 18m 13s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 18m 40s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 18m 50s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactiveMonadsCombinations_observableToFlux - 2018.12.04 at 10h 19m 41s.xml">
+      <configuration name="ReactiveMonadsCombinations.observableToFlux" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -782,7 +794,7 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Cargo" order="3" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.32988167" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.32988167" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -912,6 +924,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3180">
           <caret line="309" column="16" selection-start-line="309" selection-start-column="16" selection-end-line="309" selection-end-column="16" />
+          <folding>
+            <element signature="e#12166#12167#0" expanded="true" />
+            <element signature="e#12212#12213#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/ObservableSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/disposables/Disposable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1048,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/publisher/Flux.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="59" selection-start-line="59" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/internal/operators/flowable/FlowableFromObservable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1066,13 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/Observable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="633" column="54" lean-forward="true" selection-start-line="633" selection-start-column="54" selection-end-line="633" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1142,16 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="66" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1166,6 +1151,41 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/ObservableSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/Observable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="2472" column="54" selection-start-line="2472" selection-start-column="54" selection-end-line="2472" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/publisher/Flux.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="468" column="31" selection-start-line="468" selection-start-column="31" selection-end-line="468" selection-end-column="31" />
+          <folding>
+            <element signature="e#21118#21119#0" expanded="true" />
+            <element signature="e#21164#21165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
