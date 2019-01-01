@@ -23,7 +23,7 @@ public class KryoUtils {
 
     private void serializeObject() throws FileNotFoundException {
         Output output = new Output(new FileOutputStream("file.bin"));
-        SomeClass someObject = new SomeClass("a","b");
+        SomeClass someObject = new SomeClass("hello","kryo");
         kryo.writeObject(output, someObject);
         output.close();
     }
