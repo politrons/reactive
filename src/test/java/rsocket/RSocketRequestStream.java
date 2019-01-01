@@ -9,12 +9,13 @@ import org.junit.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
 import java.util.function.Function;
 
-public class RSocketStream {
+public class RSocketRequestStream {
 
     @Test
-    public void streamCommunication() throws InterruptedException {
+    public void main() throws InterruptedException {
         createServer();
         createClient();
     }
@@ -32,15 +33,16 @@ public class RSocketStream {
                 .subscribe(Flux::subscribe);
 
         while (!subscribe.isDisposed()) {
-            Thread.sleep(2000);
+            Thread.sleep(10000);
         }
     }
 
     /**
      * Function that receive a RSocket Request a stream of bytes which create a [Flux<Payload>]
      * in the Flux [doOnNext] operator we can already treat the response from the server.
-     * Having this control we can have back-pressure between client -> server.
+     * Having a [Flux] means can have back-pressure between client -> server.
      * For instance here we can repeat this process 5 times, sending data.
+     * Also here we can delay the emission between request using [delayElements]
      */
     private Function<RSocket, Flux<Payload>> requestStream() {
         return rSocket ->
@@ -48,7 +50,9 @@ public class RSocketStream {
                         .doOnNext(payload -> {
                             var response = payload.getDataUtf8();
                             System.out.println("Response:" + response);
-                        }).repeat(5);
+                        })
+                        .delayElements(Duration.ofMillis(500))
+                        .repeat(10);
     }
 
     /**

@@ -111,6 +111,17 @@ The reactive stream API implementation of Akka.
 * [Back-pressure](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/BackPressure.scala)
 * [GraphDSL](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/Graphs.scala)
 
+## RSocket
+![My image](src/main/resources/img/rsocket.png)
+
+Binary protocol for use on byte stream transports.
+
+* [Fire and Forget](src/test/java/rsocket/RSocketFireAndForget.java)
+* [Request Response](src/test/java/rsocket/RSocketRequestResponse.java)
+* [Request Stream](src/test/java/rsocket/RSocketRequestStream.java)
+* [Request Channel](src/test/java/rsocket/RSocketRequestChannel.java)
+
+
 ## Reactive Stream Monads combination
 
 A Combination of Monads that implement Reactive Stream.
