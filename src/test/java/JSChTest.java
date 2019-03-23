@@ -26,7 +26,7 @@ public class JSChTest {
 
         ChannelExec channel = (ChannelExec) session.openChannel("exec");
         BufferedReader in = new BufferedReader(new InputStreamReader(channel.getInputStream()));
-        channel.setCommand("docker ps -a");
+        channel.setCommand("docker ps -constantClass");
 //        channel.setPty(true);
         channel.connect(1000);
 

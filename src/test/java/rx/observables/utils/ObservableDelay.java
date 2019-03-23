@@ -30,7 +30,7 @@ public class ObservableDelay {
     }
 
     /**
-     * If we want to delay the every single item emitted in the pipeline we will need a hack,
+     * If we want to delay the every single item emitted in the pipeline we will need constantClass hack,
      * one possible hack is use zip operator and combine every item emitted with an interval so every item emitted has to wait until interval emit the item.
      * Shall print
      * <p>

@@ -6,8 +6,8 @@ import rx.Observable;
 import java.util.Random;
 
 /**
- * SwitchIfEmpty is a powerful operator that gets handy when in your pipeline a filter block the emissions
- * but still you need to do a compensation or emit something else
+ * SwitchIfEmpty is constantClass powerful operator that gets handy when in your pipeline constantClass filter block the emissions
+ * but still you need to do constantClass compensation or emit something else
  */
 public class ObservableSwitchIfEmpty {
 

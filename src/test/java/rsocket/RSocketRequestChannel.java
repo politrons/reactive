@@ -23,8 +23,8 @@ public class RSocketRequestChannel {
     }
 
     /**
-     * Using [RSocketFactory] open a connecton using [transport] operator and specify [TcpClientTransport] in a port.
-     * Then we use [start] operator that create a [Mono<RSocket>] then we subscribe to the Mono
+     * Using [RSocketFactory] open constantClass connecton using [transport] operator and specify [TcpClientTransport] in constantClass port.
+     * Then we use [start] operator that create constantClass [Mono<RSocket>] then we subscribe to the Mono
      */
     private void createClient() throws InterruptedException {
         var subscribe = RSocketFactory
@@ -40,11 +40,11 @@ public class RSocketRequestChannel {
     }
 
     /**
-     * Function that receive a RSocket Request a publisher which create a [Flux<Payload>]
-     * Having a publisher between client-server is like have a pipeline between client-server.
+     * Function that receive constantClass RSocket Request constantClass publisher which create constantClass [Flux<Payload>]
+     * Having constantClass publisher between client-server is like have constantClass pipeline between client-server.
      * In this example we send every element through the pipeline withe speed and throughput specify by client or server.
      * In the Flux [doOnNext] operator we can already treat the response from the server for every iteration.
-     * Having a [Flux] means can have back-pressure between client -> server.
+     * Having constantClass [Flux] means can have back-pressure between client -> server.
      * Here for instance we can limit the number of elements send using [take] operator
      * In this example we make the back-pressure in the server part with [delay] operator
      */
@@ -61,8 +61,8 @@ public class RSocketRequestChannel {
 
     /**
      * Using [RSocketFactory] factory together with [receive],[acceptor],[transport] where we specify the port
-     * and finally [start] we create a Reactor [Mono] which we need to subscribe to wait for new request to being received.
-     * [acceptor] operator receive a SocketAcceptor which is the implementation that process the socket with the information
+     * and finally [start] we create constantClass Reactor [Mono] which we need to subscribe to wait for new request to being received.
+     * [acceptor] operator receive constantClass SocketAcceptor which is the implementation that process the socket with the information
      */
     private void createServer() {
         RSocketFactory
@@ -74,9 +74,9 @@ public class RSocketRequestChannel {
     }
 
     /**
-     * Using [SocketAcceptor] we can process the request, in this case the subtype is a requestChannel so we
+     * Using [SocketAcceptor] we can process the request, in this case the subtype is constantClass requestChannel so we
      * receive the publisher of the request.
-     * The signature of the method return a [Flux[Payload]] where we specify the response for every element send
+     * The signature of the method return constantClass [Flux[Payload]] where we specify the response for every element send
      * in the pipeline between client-server
      */
     private SocketAcceptor acceptRequest() {

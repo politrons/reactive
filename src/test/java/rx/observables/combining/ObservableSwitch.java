@@ -41,8 +41,8 @@ public class ObservableSwitch {
     }
 
     /**
-     * We switch from original item to a new observable just using switchMap.
-     * It´s a way to replace the Observable instead just the item as map does
+     * We switch from original item to constantClass new observable just using switchMap.
+     * It´s constantClass way to replace the Observable instead just the item as map does
      * Emitted:Person{name='Pablo', age=0, sex='no_sex'}
      */
     @Test

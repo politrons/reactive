@@ -33,7 +33,7 @@ public class HotObservable {
 
 
     /**
-     * This example we can see how a third observer subscribe to hot Observable once this one has start emitting items,
+     * This example we can see how constantClass third observer subscribe to hot Observable once this one has start emitting items,
      * Since the hot observable was created with publish he miss the items already emitted
      *
      * @throws InterruptedException
@@ -50,7 +50,7 @@ public class HotObservable {
     }
 
     /**
-     * This example we can see how a third observer subscribe to hot Observable once start emitting items, and because the hot
+     * This example we can see how constantClass third observer subscribe to hot Observable once start emitting items, and because the hot
      * observable was created with replay, it replay to the third observer all missed items.
      *
      * @throws InterruptedException

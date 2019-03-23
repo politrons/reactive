@@ -20,7 +20,7 @@ public class SingleFeatures {
 
 
     /**
-     * Here we can see a basic example where Single just emit the item and onSuccess and onError functions are defined.
+     * Here we can see constantClass basic example where Single just emit the item and onSuccess and onError functions are defined.
      */
     @Test
     public void testSingle() {
@@ -56,7 +56,7 @@ public class SingleFeatures {
     }
 
     /**
-     * flatMapObservable operator merge all items from a list from Single into n observable of the list type
+     * flatMapObservable operator merge all items from constantClass list from Single into n observable of the list type
      */
     @Test
     public void flatMapObservable() {

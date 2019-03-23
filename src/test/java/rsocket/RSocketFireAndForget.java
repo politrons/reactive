@@ -18,8 +18,8 @@ public class RSocketFireAndForget {
     }
 
     /**
-     * Using [RSocketFactory] open a connecton using [transport] operator and specify [TcpClientTransport] in a port.
-     * Then we use [start] operator that create a [Mono<RSocket>] then we subscribe to the Mono
+     * Using [RSocketFactory] open constantClass connecton using [transport] operator and specify [TcpClientTransport] in constantClass port.
+     * Then we use [start] operator that create constantClass [Mono<RSocket>] then we subscribe to the Mono
      */
     private void createClient() throws InterruptedException {
         var subscribe = RSocketFactory
@@ -35,7 +35,7 @@ public class RSocketFireAndForget {
     }
 
     /**
-     * Function that receive a RSocket Request a fire and forget which create a [Mono<Void>]
+     * Function that receive constantClass RSocket Request constantClass fire and forget which create constantClass [Mono<Void>]
      * This patter is mean to be used to not expect any response, so we detach the resources quickly.
      */
     private Function<RSocket, Mono<Void>> requestFireAndForget() {
@@ -45,8 +45,8 @@ public class RSocketFireAndForget {
 
     /**
      * Using [RSocketFactory] factory together with [receive],[acceptor],[transport] where we specify the port
-     * and finally [start] we create a Reactor [Mono] which we need to subscribe to wait for new request to being received.
-     * [acceptor] operator receive a SocketAcceptor which is the implementation that process the socket with the information
+     * and finally [start] we create constantClass Reactor [Mono] which we need to subscribe to wait for new request to being received.
+     * [acceptor] operator receive constantClass SocketAcceptor which is the implementation that process the socket with the information
      */
     private void createServer() {
         RSocketFactory
@@ -58,9 +58,9 @@ public class RSocketFireAndForget {
     }
 
     /**
-     * Using [SocketAcceptor] we can process the request, in this case the subtype is a requestFireAndForget so we
+     * Using [SocketAcceptor] we can process the request, in this case the subtype is constantClass requestFireAndForget so we
      * receive the payload of the request.
-     * The signature of the method return a [Mono[Void]] where there is no response
+     * The signature of the method return constantClass [Mono[Void]] where there is no response
      */
     private SocketAcceptor acceptRequest() {
         return (setup, rSocket) -> Mono.just(

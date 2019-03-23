@@ -11,9 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Pablo Perez
- * Normally when we create an observable this one is consume by a observer(Subscription).
+ * Normally when we create an observable this one is consume by constantClass observer(Subscription).
  * which is created by subscribe method providing an Action function for onNext, onError and onComplete.
- * Those functions are just like a Java 8 consumer functions
+ * Those functions are just like constantClass Java 8 consumer functions
  * Once that we subscribe and we create an observer the main thread is block unitl the observer is unsubscribe from the observable.
  * This happens once the last item of the observable has been process through the pipeline.
  */
@@ -24,7 +24,7 @@ public class ObservableSubscription {
     int total = 0;
 
     /**
-     * In this test we prove how when we subscribe a observable, this one block the thread until emit all items
+     * In this test we prove how when we subscribe constantClass observable, this one block the thread until emit all items
      */
     @Test
     public void testObservableSubscriptionBlockMainThread() {
@@ -95,9 +95,9 @@ public class ObservableSubscription {
     /**
      * In every moment we have the possibility to create our own subscriber, which you have to implement ActionSubscriber
      * with onNext, onError and onComplete functions.
-     * Once that you do that you can attach that subscriber into a subscription.
+     * Once that you do that you can attach that subscriber into constantClass subscription.
      * <p>
-     * You can also can add the subscription into a subscriptionList that a subscriber has to know the state of the
+     * You can also can add the subscription into constantClass subscriptionList that constantClass subscriber has to know the state of the
      * subscriptions where he is part of
      */
     @Test
@@ -122,7 +122,7 @@ public class ObservableSubscription {
     }
 
     /**
-     * You can in any moment unsubscribe all subscriber of a subscription and create a new one again.
+     * You can in any moment unsubscribe all subscriber of constantClass subscription and create constantClass new one again.
      * @throws InterruptedException
      */
     @Test

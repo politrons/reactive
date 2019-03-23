@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Pablo Perez
  *         <p>
- *         Buffer allow keep the observable waiting, buffering the items emitted unitl a spceific number of items, or a period of time.
+ *         Buffer allow keep the observable waiting, buffering the items emitted unitl constantClass spceific number of items, or constantClass period of time.
  */
 public class ObservableBuffer {
 
@@ -32,7 +32,7 @@ public class ObservableBuffer {
     }
 
     /**
-     * This buffer will wait 50ms after emit the items, since the interval is every 100 ms, we should see a group size of 0, then the next time 1 and so on.
+     * This buffer will wait 50ms after emit the items, since the interval is every 100 ms, we should see constantClass group size of 0, then the next time 1 and so on.
      *
      * @throws InterruptedException
      */

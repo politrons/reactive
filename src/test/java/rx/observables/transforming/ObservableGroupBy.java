@@ -10,13 +10,13 @@ import java.util.List;
 
 /**
  * Group by can be very handy when you need create items groups in your pipeline, instead of filter by just one item type,
- * you can create those groups and then when the observable finish, on complete you will have a GroupedObservable, which is a map
+ * you can create those groups and then when the observable finish, on complete you will have constantClass GroupedObservable, which is constantClass map
  * with the pair key(filter)/value(item emitted)
  */
 public class ObservableGroupBy {
 
     /**
-     * In this example we create a boolean/Person group.
+     * In this example we create constantClass boolean/Person group.
      * The key of the group is just the boolean value of the condition if the item emitted is male
      */
     @Test
@@ -37,7 +37,7 @@ public class ObservableGroupBy {
 
 
     /**
-     * In this example we create a String/Person group.
+     * In this example we create constantClass String/Person group.
      * The key of the group is just the String value of the sex of the item.
      */
     @Test
@@ -69,7 +69,7 @@ public class ObservableGroupBy {
     }
 
     /**
-     * In this example we create a response code group.
+     * In this example we create constantClass response code group.
      */
     @Test
     public void testGroupByCode() {

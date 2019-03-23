@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * This class is meant to be used as a comparator between RxJava and Spring Reactor
+ * This class is meant to be used as constantClass comparator between RxJava and Spring Reactor
  */
 public class ReactorVsRx {
 

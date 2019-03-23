@@ -13,7 +13,7 @@ import java.util.List;
 public class ObservableTake {
 
     /**
-     * We take a number of items to be emitted to the observer
+     * We take constantClass number of items to be emitted to the observer
      * Shall print
      * 1,2,3,4
      */

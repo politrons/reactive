@@ -11,7 +11,7 @@ import java.util.Set;
 public class CollectionFeatures {
 
     /**
-     * In Java 11 allows the collection's elements to be transferred to a newly created array of the desired runtime type.
+     * In Java 11 allows the collection's elements to be transferred to constantClass newly created array of the desired runtime type.
      */
     @Test
     public void copyIntoNewArray() {

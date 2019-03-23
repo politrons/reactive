@@ -11,8 +11,8 @@ import java.util.function.Function;
 /**
  * Java 9 introduce Flow, an API to finally do reactive programing with Java.
  * It´s based like other Reactive stream libraries in the Observer pattern([Publisher] ~> [Subscriber])
- * Here Flow it´s just an extension to Stream, where instead of just return a value in the stream, we have
- * the possibility to pass the item to a [Publisher] which it will have or not a [Subscriber] associated.
+ * Here Flow it´s just an extension to Stream, where instead of just return constantClass value in the stream, we have
+ * the possibility to pass the item to constantClass [Publisher] which it will have or not constantClass [Subscriber] associated.
  * <p>
  * By default the subscription in Java 9 is asynchronous. We need to create
  **/
@@ -129,11 +129,11 @@ public class FlowFeatures {
 
     /**
      * In Flow you have the Flow.subscription which we use as mechanism to say the publisher
-     * to continue the emission of items, it could be consider a short of backPressure mechanism, but it´s not
-     * as good as RxJava operator such as buffer/window, so just in general Java 9 Flow is just a started to introduce
+     * to continue the emission of items, it could be consider constantClass short of backPressure mechanism, but it´s not
+     * as good as RxJava operator such as buffer/window, so just in general Java 9 Flow is just constantClass started to introduce
      * in the reactive programing.
      * <p>
-     * We can stop the emission by using [cancel] operator or just passing in the request a 0 < value
+     * We can stop the emission by using [cancel] operator or just passing in the request constantClass 0 < value
      */
     @Test
     public void testCancelSubscription() throws InterruptedException {
@@ -169,7 +169,7 @@ public class FlowFeatures {
         // publish 3 items for each subscriber
         for (int i = 0; i < 3; i++) {
             int result = publisher.offer("item" + i, (subscriber, value) -> {
-                // sleep for a small period before deciding whether to retry or not
+                // sleep for constantClass small period before deciding whether to retry or not
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
@@ -187,7 +187,7 @@ public class FlowFeatures {
     }
 
     /**
-     * TransformerProcessor it´s just like Transformer in RxJava, a component that acts as both a Subscriber and Publisher.
+     * TransformerProcessor it´s just like Transformer in RxJava, constantClass component that acts as both constantClass Subscriber and Publisher.
      * The processor sits between the Publisher and Subscriber.
      * <p>
      * The TransformerProcessor will be created specifying the input/output type [[TransformerProcessor<String, Integer>]]

@@ -2,13 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="RSocket">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/rsocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rsocket/RSocketStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JSChTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSChTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/good_practices/DRY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/good_practices/DRY.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/good_practices/LiskovSubstitutionPrinciple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/good_practices/LiskovSubstitutionPrinciple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/good_practices/OpenClosedPrinciple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/good_practices/OpenClosedPrinciple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/good_practices/SRP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/good_practices/SRP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java10/Collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java10/Collections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/FileFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/FileFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/HelloWorld11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/HelloWorld11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/Functions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/StreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java9/OptionalImprovements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java9/OptionalImprovements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java9/UtilFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCombining.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorFiltering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableZip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/combining/ObservableZip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableDefer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableSubscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/errors/ObservableExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableDistinct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableDistinct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableSkip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableTake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/filtering/ObservableTake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/scheduler/ObservableAsynchronous.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCollect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableGroupBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableGroupBy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableDelay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableSwitchIfEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableSwitchIfEmpty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableToBlocking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/observables/utils/ObservableToBlocking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/relay/Relay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/single/SingleFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/ObservableMonad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/utils/ObserverVsIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/ObserverVsIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/utils/ReactorVsRx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/ReactorVsRx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rx/utils/RevertMapObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rx/utils/RevertMapObservable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,72 +68,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1411335600">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.40" value="2" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.55" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="bin" value="1" />
-          <entry key="class" value="42" />
-          <entry key="java" value="83" />
-          <entry key="md" value="5" />
-          <entry key="png" value="4" />
-          <entry key="profile" value="1" />
-          <entry key="proto" value="1" />
-          <entry key="txt" value="8" />
-          <entry key="xml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="42" />
-          <entry key="Image" value="4" />
-          <entry key="JAVA" value="83" />
-          <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="11" />
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="95" />
-          <entry key="java" value="11198" />
-          <entry key="md" value="327" />
-          <entry key="profile" value="4" />
-          <entry key="txt" value="129" />
-          <entry key="xml" value="94" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="11198" />
-          <entry key="Markdown" value="327" />
-          <entry key="PLAIN_TEXT" value="228" />
-          <entry key="XML" value="94" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="reactive" />
@@ -90,57 +81,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2763#2764#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3110#4060#0" expanded="true" />
-                <element signature="e#4059#4060#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsocket.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sentence.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.0.RELEASE/reactor-core-3.2.0.RELEASE-sources.jar!/reactor/core/Disposable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="438">
-                <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="47" />
+              <first_editor relative-caret-position="683">
+                <caret line="116" column="50" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -150,45 +95,95 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/sentence.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/AbstractRSocket.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/RSocket.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.0.RELEASE/reactor-core-3.2.0.RELEASE-sources.jar!/reactor/core/publisher/Flux.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="5989" column="25" selection-start-line="5989" selection-start-column="25" selection-end-line="5989" selection-end-column="25" />
+            <state relative-caret-position="545">
+              <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
               <folding>
-                <element signature="e#51653#51654#0" expanded="true" />
-                <element signature="e#51682#51683#0" expanded="true" />
-                <element signature="e#278540#278541#0" expanded="true" />
-                <element signature="e#278600#278601#0" expanded="true" />
-                <element signature="e#309756#309757#0" expanded="true" />
-                <element signature="e#309795#309796#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2281#2282#0" expanded="true" />
+                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#3191#3192#0" expanded="true" />
+                <element signature="e#3260#3261#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+              <folding>
+                <element signature="e#137315#137316#0" expanded="true" />
+                <element signature="e#137355#137356#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/Constable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/invoke/MethodHandles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="639" column="10" selection-start-line="639" selection-start-column="10" selection-end-line="639" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="795" column="18" selection-start-line="795" selection-start-column="18" selection-end-line="795" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ClassDesc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2895">
+              <caret line="250" column="20" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="20" />
+              <folding>
+                <element signature="e#11406#11407#0" expanded="true" />
+                <element signature="e#11461#11462#0" expanded="true" />
+                <element signature="e#11703#11704#0" expanded="true" />
+                <element signature="e#11760#11761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ConstantDesc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -251,12 +246,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/ClientServer.java" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketChannel.java" />
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketWebSocket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" />
       </list>
     </option>
   </component>
@@ -283,7 +281,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="46" />
     <option name="y" value="23" />
     <option name="width" value="1394" />
@@ -296,7 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,106 +354,56 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="java12" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java10" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java11" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rsocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.projectreactor:reactor-core:3.2.0.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="reactor-core-3.2.0.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="reactor" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="publisher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.rsocket:rsocket-core:0.11.8" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.rsocket:rsocket-core:0.11.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="rsocket-core-0.11.8.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.rsocket:rsocket-core:0.11.8" type="70bed36:NamedLibraryElementNode" />
-              <item name="rsocket-core-0.11.8.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rsocket" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546347396997" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551613624897" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15349545" />
@@ -491,97 +439,106 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RSocketRequestChannel">
+  <component name="RunManager" selected="JUnit.ObservableChain">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RSocketFireAndForget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java12Features.StringAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rsocket.*" />
+          <option name="PATTERN" value="java12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketFireAndForget" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RSocketRequestChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestChannel" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RSocketRequestResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestResponse" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RSocketRequestStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestStream" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RSocketRequestStream.streamCommunication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestStream" />
-      <option name="METHOD_NAME" value="streamCommunication" />
+      <option name="PACKAGE_NAME" value="java12" />
+      <option name="MAIN_CLASS_NAME" value="java12.Java12Features" />
+      <option name="METHOD_NAME" value="StringAPI" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="Java12Features.classDesc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java12" />
+      <option name="MAIN_CLASS_NAME" value="java12.Java12Features" />
+      <option name="METHOD_NAME" value="classDesc" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration name="Java12Features.customClassDesc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java12" />
+      <option name="MAIN_CLASS_NAME" value="java12.Java12Features" />
+      <option name="METHOD_NAME" value="customClassDesc" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java12Features.xxxx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java12" />
+      <option name="MAIN_CLASS_NAME" value="java12.Java12Features" />
+      <option name="METHOD_NAME" value="xxxx" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObservableChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rx.observables.combining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rx.observables.combining" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableChain" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -590,19 +547,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RSocketRequestStream.streamCommunication" />
-      <item itemvalue="JUnit.RSocketFireAndForget" />
-      <item itemvalue="JUnit.RSocketRequestResponse" />
-      <item itemvalue="JUnit.RSocketRequestStream" />
-      <item itemvalue="JUnit.RSocketRequestChannel" />
+      <item itemvalue="JUnit.Java12Features.classDesc" />
+      <item itemvalue="JUnit.Java12Features.xxxx" />
+      <item itemvalue="JUnit.Java12Features.StringAPI" />
+      <item itemvalue="JUnit.Java12Features.customClassDesc" />
+      <item itemvalue="JUnit.ObservableChain" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RSocketRequestChannel" />
-        <item itemvalue="JUnit.RSocketRequestStream" />
-        <item itemvalue="JUnit.RSocketRequestResponse" />
-        <item itemvalue="JUnit.RSocketFireAndForget" />
-        <item itemvalue="JUnit.RSocketRequestStream.streamCommunication" />
+        <item itemvalue="JUnit.ObservableChain" />
+        <item itemvalue="JUnit.Java12Features.StringAPI" />
+        <item itemvalue="JUnit.Java12Features.classDesc" />
+        <item itemvalue="JUnit.Java12Features.customClassDesc" />
+        <item itemvalue="JUnit.Java12Features.xxxx" />
       </list>
     </recent_temporary>
   </component>
@@ -869,43 +826,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546342775264</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="RSocket">
+      <created>1546347454385</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1546347454385</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RSocketStream - 2019.01.01 at 13h 09m 56s.xml">
-      <configuration name="RSocketStream" configurationId="JUnit" />
+    <history-entry file="Java12Features_customClassDesc - 2019.03.23 at 11h 04m 17s.xml">
+      <configuration name="Java12Features.customClassDesc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketStream - 2019.01.01 at 13h 10m 15s.xml">
-      <configuration name="RSocketStream" configurationId="JUnit" />
+    <history-entry file="Java12Features_customClassDesc - 2019.03.23 at 11h 05m 22s.xml">
+      <configuration name="Java12Features.customClassDesc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketStream - 2019.01.01 at 13h 29m 29s.xml">
-      <configuration name="RSocketStream" configurationId="JUnit" />
+    <history-entry file="Java12Features_classDesc - 2019.03.23 at 11h 06m 00s.xml">
+      <configuration name="Java12Features.classDesc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 29m 46s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_classDesc - 2019.03.23 at 11h 06m 11s.xml">
+      <configuration name="Java12Features.classDesc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 33m 03s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_classDesc - 2019.03.23 at 11h 06m 16s.xml">
+      <configuration name="Java12Features.classDesc" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 33m 25s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_StringAPI - 2019.03.23 at 11h 09m 34s.xml">
+      <configuration name="Java12Features.StringAPI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 33m 46s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_StringAPI - 2019.03.23 at 11h 10m 56s.xml">
+      <configuration name="Java12Features.StringAPI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 33m 59s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_StringAPI - 2019.03.23 at 11h 11m 24s.xml">
+      <configuration name="Java12Features.StringAPI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 46m 07s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_StringAPI - 2019.03.23 at 11h 13m 20s.xml">
+      <configuration name="Java12Features.StringAPI" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RSocketChannel - 2019.01.01 at 13h 51m 09s.xml">
-      <configuration name="RSocketChannel" configurationId="JUnit" />
+    <history-entry file="Java12Features_StringAPI - 2019.03.23 at 11h 13m 40s.xml">
+      <configuration name="Java12Features.StringAPI" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="23" width="1394" height="877" extended-state="6" />
+    <frame x="46" y="23" width="1394" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -914,6 +878,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32988167" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Elm Compiler" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5490446" />
@@ -930,16 +895,15 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Cargo" order="3" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.33431953" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.38091716" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32988167" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Elm" order="10" />
+      <window_info anchor="right" id="Maven" order="11" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new flatMap example" />
@@ -957,259 +921,26 @@
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ClassDesc.java</url>
+          <line>292</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/Disposable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9030">
-          <caret line="646" selection-start-line="646" selection-end-line="647" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82740">
-          <caret line="5612" column="32" selection-start-line="5612" selection-start-column="32" selection-end-line="5612" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/adapter/JdkFlowAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/SubmissionPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file.bin">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kryo/SomeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/Observable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33495">
-          <caret line="2472" column="54" selection-start-line="2472" selection-start-column="54" selection-end-line="2472" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.4/rxjava-2.2.4.jar!/io/reactivex/ObservableSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="183" column="53" selection-start-line="183" selection-start-column="53" selection-end-line="183" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" selection-start-line="31" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kryo/KryoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/HelloWorld11.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.15/rsocket-core-0.11.15.jar!/io/rsocket/util/DefaultPayload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/rsocketStreamOutput.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="273" column="11" selection-start-line="273" selection-start-column="11" selection-end-line="273" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.1.1.RELEASE/reactor-core-3.1.1.RELEASE.jar!/reactor/core/publisher/Flux.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.0.RELEASE/reactor-core-3.2.0.RELEASE.jar!/reactor/core/publisher/Flux.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/Frame.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/util/ByteBufPayload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/Payload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/util/DefaultPayload.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding>
-            <element signature="e#2977#2978#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-transport-netty/0.11.8/rsocket-transport-netty-0.11.8.jar!/io/rsocket/transport/netty/client/TcpClientTransport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.0.RELEASE/reactor-core-3.2.0.RELEASE.jar!/reactor/core/Disposable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/RSocketFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="320" column="16" selection-start-line="320" selection-start-column="16" selection-end-line="320" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java10/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/SocketAcceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.0.RELEASE/reactor-core-3.2.0.RELEASE-sources.jar!/reactor/core/publisher/Mono.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="520" column="30" selection-start-line="520" selection-start-column="30" selection-end-line="520" selection-end-column="30" />
-          <folding>
-            <element signature="e#19983#19984#0" expanded="true" />
-            <element signature="e#20029#20030#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,13 +951,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/rsocketStream.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/rsocketStream.txt" />
     <entry file="file://$PROJECT_DIR$/src/test/java/reactor/ReactorTransforming.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1241,27 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="76" column="56" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="56" />
-          <folding>
-            <element signature="e#3265#3266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/AbstractRSocket.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/RSocket.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1276,26 +984,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="5989" column="25" selection-start-line="5989" selection-start-column="25" selection-end-line="5989" selection-end-column="25" />
-          <folding>
-            <element signature="e#51653#51654#0" expanded="true" />
-            <element signature="e#51682#51683#0" expanded="true" />
-            <element signature="e#278540#278541#0" expanded="true" />
-            <element signature="e#278600#278601#0" expanded="true" />
-            <element signature="e#309756#309757#0" expanded="true" />
-            <element signature="e#309795#309796#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentence.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsocketStream.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsocket.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rsocketStream.txt" />
     <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="708">
@@ -1303,26 +995,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/RSocket.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2763#2764#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.0.RELEASE/reactor-netty-0.8.0.RELEASE.jar!/reactor/netty/tcp/TcpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.0.RELEASE/reactor-netty-0.8.0.RELEASE.jar!/reactor/netty/http/server/HttpServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="174" column="28" selection-start-line="174" selection-start-column="28" selection-end-line="174" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-transport-netty/0.11.8/rsocket-transport-netty-0.11.8.jar!/io/rsocket/transport/netty/server/WebsocketServerTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/RSocketFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4170">
+          <caret line="312" column="62" selection-start-line="312" selection-start-column="62" selection-end-line="312" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-core/0.11.8/rsocket-core-0.11.8.jar!/io/rsocket/transport/ClientTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-transport-netty/0.11.8/rsocket-transport-netty-0.11.8.jar!/io/rsocket/transport/netty/client/WebsocketClientTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.0.RELEASE/reactor-netty-0.8.0.RELEASE.jar!/reactor/netty/http/client/HttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rsocket/rsocket-transport-netty/0.11.8/rsocket-transport-netty-0.11.8.jar!/io/rsocket/transport/netty/client/TcpClientTransport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/java.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/flatMap.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/java-9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/reactivex.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/reactor.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsocket.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsz_1createc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsz_1filter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCode.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsz_1zipo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsz_flatmap.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableCompose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="60">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3110#4060#0" expanded="true" />
-            <element signature="e#4059#4060#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/rsz_1buffer.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="385" column="15" selection-start-line="385" selection-start-column="15" selection-end-line="385" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1334,12 +1169,88 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="438">
-            <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="47" />
+          <first_editor relative-caret-position="683">
+            <caret line="116" column="50" selection-start-line="116" selection-start-column="50" selection-end-line="116" selection-end-column="50" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sentence.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="795" column="18" selection-start-line="795" selection-start-column="18" selection-end-line="795" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ClassDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2895">
+          <caret line="250" column="20" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="20" />
+          <folding>
+            <element signature="e#11406#11407#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11703#11704#0" expanded="true" />
+            <element signature="e#11760#11761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/invoke/MethodHandles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="639" column="10" selection-start-line="639" selection-start-column="10" selection-end-line="639" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ConstantDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java11/StringFeatures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/Constable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+          <folding>
+            <element signature="e#137315#137316#0" expanded="true" />
+            <element signature="e#137355#137356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="81" column="50" lean-forward="true" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1384,7 +1295,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -14,7 +14,7 @@ public class FileFeatures {
      */
     @Test
     public void fileFeatures() throws IOException {
-        var words = "This is a simple sentence";
+        var words = "This is constantClass simple sentence";
         Files.writeString(Path.of("sentence.txt"), words);
 
         var sentence = Files.readString(Path.of("sentence.txt"));
@@ -23,7 +23,7 @@ public class FileFeatures {
     }
 
     /**
-     * Also now using [lines] operator it return a Stream monad so we can use then all operators of the Stream
+     * Also now using [lines] operator it return constantClass Stream monad so we can use then all operators of the Stream
      */
     @Test
     public void linesFeature() throws IOException {

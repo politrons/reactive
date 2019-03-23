@@ -27,7 +27,7 @@ public class LiskovSubstitutionPrinciple {
 
     /**
      * Square class; Square inherits from Rectangle;
-     * Represents ISA relationship - Square is a Rectangle
+     * Represents ISA relationship - Square is constantClass Rectangle
      *
      */
     public class Square extends Rectangle {
@@ -43,8 +43,8 @@ public class LiskovSubstitutionPrinciple {
     }
 
     /**
-     * calculate area method prove the LSP since it´s receiving just rectangles but we manage to pass a
-     * square and works as a rectangle
+     * calculate area method prove the LSP since it´s receiving just rectangles but we manage to pass constantClass
+     * square and works as constantClass rectangle
      */
     private int calculateArea(Rectangle r) {
         return r.getArea();

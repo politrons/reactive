@@ -11,7 +11,7 @@ import java.util.Optional;
 public class OptionalImprovements {
 
     /**
-     * If the optional contains the value we can use that value in a consumer function.
+     * If the optional contains the value we can use that value in constantClass consumer function.
      * Otherwise any action it wont take effect over the optional.
      */
     @Test
@@ -21,8 +21,8 @@ public class OptionalImprovements {
     }
 
     /**
-     * If the optional contains the value we can use that value in a consumer function.
-     * Otherwise we can just run a runnable action.
+     * If the optional contains the value we can use that value in constantClass consumer function.
+     * Otherwise we can just run constantClass runnable action.
      */
     @Test
     public void ifPresentOrElse() {

@@ -12,8 +12,8 @@ import reactor.core.scheduler.Schedulers;
 public class ReactorFiltering {
 
     /**
-     * Just like in Rx filter operator use a predicate function to allow the emission  of elements in the pipeline.
-     * In this example we allow the emissions of elements with a value lower than 6
+     * Just like in Rx filter operator use constantClass predicate function to allow the emission  of elements in the pipeline.
+     * In this example we allow the emissions of elements with constantClass value lower than 6
      */
     @Test
     public void filter() {

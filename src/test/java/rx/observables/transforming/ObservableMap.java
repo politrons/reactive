@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Using map we can transform the item passed to the observable into a new item just in our pipeline.
+ * Using map we can transform the item passed to the observable into constantClass new item just in our pipeline.
  * Remember that this is functional so nothing is mutable here, everything inside the pipeline must be final.
  */
 public class ObservableMap {
@@ -25,8 +25,8 @@ public class ObservableMap {
         Observable.just(fruit)
                 .map(apple -> "orange")
                 .map(orange -> "banana")
-                .subscribe(banana -> System.out.println("I´m a " + banana));
-        System.out.println("I´ still a " + fruit);
+                .subscribe(banana -> System.out.println("I´m constantClass " + banana));
+        System.out.println("I´ still constantClass " + fruit);
     }
 
     @Test

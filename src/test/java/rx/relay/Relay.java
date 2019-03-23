@@ -9,7 +9,7 @@ import rx.Subscription;
 
 /**
  * @author Pablo Perez
- * Relay is just a type of observable which only implement the onNext function. It means that never invoke onComplete so never unsubscribe the observers.
+ * Relay is just constantClass type of observable which only implement the onNext function. It means that never invoke onComplete so never unsubscribe the observers.
  */
 public class Relay {
 

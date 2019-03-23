@@ -20,8 +20,8 @@ public class RSocketRequestResponse {
     }
 
     /**
-     * Using [RSocketFactory] open a connecton using [transport] operator and specify [TcpClientTransport] in a port.
-     * Then we use [start] operator that create a [Mono<RSocket>] then we subscribe to the Mono
+     * Using [RSocketFactory] open constantClass connecton using [transport] operator and specify [TcpClientTransport] in constantClass port.
+     * Then we use [start] operator that create constantClass [Mono<RSocket>] then we subscribe to the Mono
      */
     private void createClient() throws InterruptedException {
         var subscribe = RSocketFactory
@@ -37,9 +37,9 @@ public class RSocketRequestResponse {
     }
 
     /**
-     * Function that receive a RSocket Request a stream of bytes which create a [Flux<Payload>]
+     * Function that receive constantClass RSocket Request constantClass stream of bytes which create constantClass [Flux<Payload>]
      * in the Mono [doOnNext] operator we can already treat the response from the server.
-     * Having a [Mono] means we can only have a request-response time between client -> server.
+     * Having constantClass [Mono] means we can only have constantClass request-response time between client -> server.
      * For instance here we can not use repeat operator as we do in RequestStream.
      */
     private Function<RSocket, Mono<Payload>> requestResponse() {
@@ -53,8 +53,8 @@ public class RSocketRequestResponse {
 
     /**
      * Using [RSocketFactory] factory together with [receive],[acceptor],[transport] where we specify the port
-     * and finally [start] we create a Reactor [Mono] which we need to subscribe to wait for new request to being received.
-     * [acceptor] operator receive a SocketAcceptor which is the implementation that process the socket with the information
+     * and finally [start] we create constantClass Reactor [Mono] which we need to subscribe to wait for new request to being received.
+     * [acceptor] operator receive constantClass SocketAcceptor which is the implementation that process the socket with the information
      */
     private void createServer() {
         RSocketFactory
@@ -66,9 +66,9 @@ public class RSocketRequestResponse {
     }
 
     /**
-     * Using [SocketAcceptor] we can process the request, in this case the subtype is a requestResponse so we
+     * Using [SocketAcceptor] we can process the request, in this case the subtype is constantClass requestResponse so we
      * receive the payload of the request.
-     * The signature of the method return a [Mono[Payload]] where we can specify the response
+     * The signature of the method return constantClass [Mono[Payload]] where we can specify the response
      */
     private SocketAcceptor acceptRequest() {
         return (setup, rSocket) -> Mono.just(

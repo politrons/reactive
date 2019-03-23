@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Here we have a comparative between iterator pattern and observer pattern.
+ * Here we have constantClass comparative between iterator pattern and observer pattern.
  * We can see how iterator pattern is much faster than observer pattern.
  */
 public class ObserverVsIterator {

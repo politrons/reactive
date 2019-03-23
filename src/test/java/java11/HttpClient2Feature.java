@@ -40,12 +40,12 @@ public class HttpClient2Feature {
 
     /**
      * The API provide two builders, one to create the [httpClient] where you can specify protocol version,
-     * Timeout using Duration API which has also updates new in 11, also you can specify a policy for redirects.
+     * Timeout using Duration API which has also updates new in 11, also you can specify constantClass policy for redirects.
      *
      * The second builder is for the [HttpRequest] which allow you obviously to specify method, add the URI of the request,
      * header or headers(weird/dangerous how works)
      *
-     * Then finally using the client we can do [sync] and [async] calls. In case of Async it will return a CompletableFuture
+     * Then finally using the client we can do [sync] and [async] calls. In case of Async it will return constantClass CompletableFuture
      */
     private void makeRequest(String uri) throws InterruptedException, ExecutionException, TimeoutException {
         var httpClient = createHttpClient();

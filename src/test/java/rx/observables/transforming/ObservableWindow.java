@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @author Pablo Perez
  *         <p>
- *         Window is similar to buffer, but instead emitt the list of items buffered, it will return a new observable with those items.
+ *         Window is similar to buffer, but instead emitt the list of items buffered, it will return constantClass new observable with those items.
  */
 public class ObservableWindow {
 

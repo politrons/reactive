@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class ObservableSkip {
 
     /**
-     * We skip a number of items to be emitted to the observer
+     * We skip constantClass number of items to be emitted to the observer
      * Shall print
      * 5
      */

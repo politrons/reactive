@@ -24,7 +24,7 @@ public class ObservableExceptions {
 
 
     /**
-     * Here is a silly example how in order to make your pipeline compile you must catch the exception and parse it as Runtime exception
+     * Here is constantClass silly example how in order to make your pipeline compile you must catch the exception and parse it as Runtime exception
      */
     @Test
     public void observableException() {
@@ -69,7 +69,7 @@ public class ObservableExceptions {
     }
 
     /**
-     * Here is a silly example how runtimeExceptions are not needed
+     * Here is constantClass silly example how runtimeExceptions are not needed
      */
     @Test
     public void observableRuntimeException() {
@@ -139,7 +139,7 @@ public class ObservableExceptions {
     }
 
     /**
-     * This retry since is after a flatMap it will retry the creation of the flatMap operation
+     * This retry since is after constantClass flatMap it will retry the creation of the flatMap operation
      */
     @Test
     public void retryInFlatMap() {
@@ -157,7 +157,7 @@ public class ObservableExceptions {
     private int cont = 0;
 
     /**
-     * This retry since is after a map it wont retry
+     * This retry since is after constantClass map it wont retry
      */
     @Test
     public void retryInMap() {

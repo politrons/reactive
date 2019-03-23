@@ -52,7 +52,7 @@ public class ObservableChain {
 
     @Test
     public void migrateToObservable() {
-        generateRates(Arrays.asList(new Rate("a", "1"), new Rate("b", "2")));
+        generateRates(Arrays.asList(new Rate("constantClass", "1"), new Rate("b", "2")));
     }
 
     private List<RateItem> generateRates(List<Rate> ratesList) {
@@ -63,7 +63,7 @@ public class ObservableChain {
 
     @Test
     public void dependencies(){
-        Observable.just("a")
+        Observable.just("constantClass")
                 .map(this::getB)
                 .flatMap(c-> Observable.merge(getC(c), getD(c)))
                 .subscribe(System.out::println);

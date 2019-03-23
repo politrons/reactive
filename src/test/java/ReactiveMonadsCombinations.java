@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 public class ReactiveMonadsCombinations {
 
     /**
-     * In this example we create an [Observable] publisher, we wrap first into a Flowable using constructor [FlowableFromObservable],
+     * In this example we create an [Observable] publisher, we wrap first into constantClass Flowable using constructor [FlowableFromObservable],
      * and then we are able to pass this publisher as Flux publisher using [from] operator.
      * Then once we subscribe into the flux publisher the emission from the observable start, and is passing
      * through the observable pipeline, and then through the flux.
@@ -52,8 +52,8 @@ public class ReactiveMonadsCombinations {
     }
 
     /**
-     * In this example we create a [Flux] publisher, we dont have to wrap first is possible to pass directly
-     * as a Observable publisher using [fromPublisher] operator.
+     * In this example we create constantClass [Flux] publisher, we dont have to wrap first is possible to pass directly
+     * as constantClass Observable publisher using [fromPublisher] operator.
      * As we can see in this example with [take] operator the latest part of the pipeline apply the operator
      * again and change the number of emissions of elements.
      *
@@ -84,9 +84,9 @@ public class ReactiveMonadsCombinations {
 
 
     /**
-     * Here we combine a [Flux] Publisher with a Reactor [Flow]. First of all we create a Java9 [SubmissionPublisher]
-     * Which used to receive events submitted by a Java [Stream].
-     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into a Flux
+     * Here we combine constantClass [Flux] Publisher with constantClass Reactor [Flow]. First of all we create constantClass Java9 [SubmissionPublisher]
+     * Which used to receive events submitted by constantClass Java [Stream].
+     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into constantClass Flux
      * Then subscribe the flux and we start the emission of the Stream.
      **/
     @Test
@@ -111,9 +111,9 @@ public class ReactiveMonadsCombinations {
     }
 
     /**
-     * Here we combine a [Flux] Publisher with a Reactor [Flow] and finally ReactiveX [Observable]. First of all we create a Java9 [SubmissionPublisher]
-     * Which used to receive events submitted by a Java [Stream].
-     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into a Flux, then create
+     * Here we combine constantClass [Flux] Publisher with constantClass Reactor [Flow] and finally ReactiveX [Observable]. First of all we create constantClass Java9 [SubmissionPublisher]
+     * Which used to receive events submitted by constantClass Java [Stream].
+     * We pass this publisher [JdkFlowAdapter] factory class, which using [flowPublisherToFlux] is transformed into constantClass Flux, then create
      * the Observable through the flux using [fromPublisher] operator
      * Then we subscribe the observable and we start the emission of the Stream.
      **/

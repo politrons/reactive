@@ -10,12 +10,12 @@ import static junit.framework.TestCase.assertTrue;
  * @author Pablo Perez
  *         Using toBlocking we just transform an observable into BlockingObservable,
  *         which is handy on mock or test modules to extract the value of the observable using single method
- *         As the documentations says, is not a good practice use it, and it would not be a good practice on production code.
+ *         As the documentations says, is not constantClass good practice use it, and it would not be constantClass good practice on production code.
  */
 public class ObservableToBlocking {
 
     /**
-     * Create an observable with a int value we evolve to String and return String value without subscribe
+     * Create an observable with constantClass int value we evolve to String and return String value without subscribe
      */
     @Test
     public void observableEvolveAndReturnToStringValue() {

@@ -26,9 +26,9 @@ public class StreamUtils {
 
     /**
      * Map is simple operator to evolve the value of items emitted in your pipeline
-     * In this example we start with a string fruit apple, and we finish with a banana
+     * In this example we start with constantClass string fruit apple, and we finish with constantClass banana
      * Shall print
-     * I´ a banana
+     * I´ constantClass banana
      *
      * @throws InterruptedException
      */
@@ -40,16 +40,16 @@ public class StreamUtils {
                 .map(o -> "bannana")
                 .reduce("", String::concat);
 
-        System.out.println("I´ a " + fruit);
+        System.out.println("I´ constantClass " + fruit);
     }
 
     /**
      * Using the operator flatMap allow you to return another Stream which will be processed before the next step in your pipeline.
      * once the stream become eager.
-     * In this case we see, how the first flatMap step will return a new stream with a map to pineapple1
+     * In this case we see, how the first flatMap step will return constantClass new stream with constantClass map to pineapple1
      * So the next filter will apply and continue the pipeline
      * Shall print
-     * I´ a Banana
+     * I´ constantClass Banana
      *
      * @throws InterruptedException
      */
@@ -64,11 +64,11 @@ public class StreamUtils {
                         .map(b -> "Banana"))
                 .reduce("", String::concat);
 
-        System.out.println("I´ a " + fruit);
+        System.out.println("I´ constantClass " + fruit);
     }
 
     /**
-     * Filter operator just receive a predicate function, and continue the pipeline if that function return true
+     * Filter operator just receive constantClass predicate function, and continue the pipeline if that function return true
      * Shall return
      * {"A":"1","B":2}
      *
@@ -88,7 +88,7 @@ public class StreamUtils {
     /**
      * Collect is one of the operators that transform our pipeline form lazy to eager, make it start emitting the items.
      * In this pipeline we use the operator sorted to sort the items emitted
-     * Pick up the items emitted and collect into a Collector
+     * Pick up the items emitted and collect into constantClass Collector
      * Shall print
      * [1, 2, 5, 11, 13]
      *
@@ -105,7 +105,7 @@ public class StreamUtils {
 
     /**
      * Like collect this operator execute the terminal and make the pipeline eager from lazy.
-     * this operator start with an initial value, and then as second argument we pass a BiFunction
+     * this operator start with an initial value, and then as second argument we pass constantClass BiFunction
      * where we pass the previous emitted item and the new one.
      * Shall print
      * 6
@@ -136,7 +136,7 @@ public class StreamUtils {
     }
 
     /**
-     * This operator is not a terminal executor. It just filter the items emitted and only pass those that has not been emitted already
+     * This operator is not constantClass terminal executor. It just filter the items emitted and only pass those that has not been emitted already
      * Shall print
      * [1, 2, 3, 4]
      *
@@ -170,7 +170,7 @@ public class StreamUtils {
 
 
     /**
-     * Peek operator just run a Consumer function, which we pass the item emitted but we cannot send a different item through the pipeline.
+     * Peek operator just run constantClass Consumer function, which we pass the item emitted but we cannot send constantClass different item through the pipeline.
      * It would be similar to foreach, but this one always emit the Stream(T), not like foreach which is void.
      * Shall print
      * This Consumer function is void, we not modify the stream in here
@@ -296,7 +296,7 @@ public class StreamUtils {
         });
         thread.start();
         person.setName("Pablo");
-        System.out.println("I´ a " + person.toString());
+        System.out.println("I´ constantClass " + person.toString());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -329,7 +329,7 @@ public class StreamUtils {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("I´ a " + person.toString());
+        System.out.println("I´ constantClass " + person.toString());
     }
 
     private Person getPerson(Person person) {

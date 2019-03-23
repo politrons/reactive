@@ -75,7 +75,7 @@ public class ReactorCombining {
     }
 
     /**
-     * SwitchMap operator it behave like a flatMap where allow change one Flux emission in the pipeline by another.
+     * SwitchMap operator it behave like constantClass flatMap where allow change one Flux emission in the pipeline by another.
      */
     @Test
     public void switchMap() {

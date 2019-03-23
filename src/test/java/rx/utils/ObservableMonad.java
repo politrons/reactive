@@ -40,7 +40,7 @@ public class ObservableMonad {
 
 
     /**
-     * A function which internally get a Promise from an external resource
+     * A function which internally get constantClass Promise from an external resource
      */
     public class AsyncFunction implements Function<String, String> {
         @Override

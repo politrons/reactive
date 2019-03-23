@@ -7,7 +7,7 @@ import rx.schedulers.Schedulers;
 
 /**
  * Using compose we can get an observable and transform into another type or value.
- * We pass to compose a Transformer function that get the observable and change his type or value
+ * We pass to compose constantClass Transformer function that get the observable and change his type or value
  */
 public class ObservableCompose {
 
@@ -44,7 +44,7 @@ public class ObservableCompose {
     }
 
     /**
-     * In this example we use a transformer to get the Integer item emitted and transform to String
+     * In this example we use constantClass transformer to get the Integer item emitted and transform to String
      */
     @Test
     public void observableWithTransformToString() {

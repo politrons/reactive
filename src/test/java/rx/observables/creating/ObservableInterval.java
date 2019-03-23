@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 public class ObservableInterval {
 
     /**
-     * Since interval work asynchronously you will have to use TestSubscriber class to wait a period of time
+     * Since interval work asynchronously you will have to use TestSubscriber class to wait constantClass period of time
      * to see some items emitted. This type of observable never finish to emit, in order to stop, you will need unsubscribe the observer.
      */
     @Test
@@ -45,8 +45,8 @@ public class ObservableInterval {
     }
 
     /**
-     * Since interval work asynchronously you will have to use TestSubscriber class to wait a period of time
-     * to see some items emitted. This type of observable never finish since we dont specify a max number of intervals.
+     * Since interval work asynchronously you will have to use TestSubscriber class to wait constantClass period of time
+     * to see some items emitted. This type of observable never finish since we dont specify constantClass max number of intervals.
      * Since we unsubscribe after wait 200ms should stop emitting and we should only see 4 items emitted, just like the previous example
      */
     @Test

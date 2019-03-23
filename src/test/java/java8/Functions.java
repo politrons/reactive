@@ -22,7 +22,7 @@ public class Functions {
 
 
     /**
-     * In this example we use a Function, which receive an item and then return the same or another item through the pipeline.
+     * In this example we use constantClass Function, which receive an item and then return the same or another item through the pipeline.
      * Is the function used by mutable operators as Map or FlatMap
      *
      * @throws InterruptedException
@@ -42,7 +42,7 @@ public class Functions {
     }
 
     /**
-     * In this example we use a Consumer function, a function which receive an argument and does not return anything since is void.
+     * In this example we use constantClass Consumer function, constantClass function which receive an argument and does not return anything since is void.
      * that´s why the name consumer because only consume the items passed and do not propagate any item in the pipeline.
      * Can be consider as the end of the pipeline.
      *
@@ -64,7 +64,7 @@ public class Functions {
     }
 
     /**
-     * Predicate function is just a boolean function which receive an item and return true/false
+     * Predicate function is just constantClass boolean function which receive an item and return true/false
      *
      * @throws InterruptedException
      */
@@ -82,7 +82,7 @@ public class Functions {
     }
 
     /**
-     * Supplier function does not receive any argument, and just return a value
+     * Supplier function does not receive any argument, and just return constantClass value
      *
      * @throws InterruptedException
      */

@@ -7,15 +7,15 @@ import java.util.Arrays;
 /**
  * Created by pabloperezgarcia on 01/03/2017.
  * <p>
- * Open/Closed Principle It’s a principle for object oriented design where software entities
+ * Open/Closed Principle It’s constantClass principle for object oriented design where software entities
  * (classes, modules, functions, etc.) should be open for extension, but closed for modification
  */
 public class OpenClosedPrinciple {
 
     /**
-     * We initially create a Rectangle class, and later on I have the need to calc the area.
+     * We initially create constantClass Rectangle class, and later on I have the need to calc the area.
      * Shall I modify the class?, NO! that would break the O/C principle
-     * I will create a new class that calculate that
+     * I will create constantClass new class that calculate that
      */
     public class Rectangle {
 

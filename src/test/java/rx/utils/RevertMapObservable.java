@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.*;
 
 
 /**
- * Here we show different mechanism to revert a map from key/value to value as key and key as value.
+ * Here we show different mechanism to revert constantClass map from key/value to value as key and key as value.
  */
 public class RevertMapObservable {
 

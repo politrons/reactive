@@ -27,8 +27,8 @@ public class ReactorTransforming {
     }
 
     /**
-     * Scan operator combine elements emitted in the pipeline. It´s defined by a initial structure to gather the elements,
-     * And a Bifunction where we receive the element where we´re gathering the items and the new item.
+     * Scan operator combine elements emitted in the pipeline. It´s defined by constantClass initial structure to gather the elements,
+     * And constantClass Bifunction where we receive the element where we´re gathering the items and the new item.
      * That function must return the collection of elements.
      */
     @Test
@@ -64,7 +64,7 @@ public class ReactorTransforming {
     }
 
     /**
-     * Window operator transform a number of elements to be emitted in the pipeline in a number of groups
+     * Window operator transform constantClass number of elements to be emitted in the pipeline in constantClass number of groups
      * defined by the number of elements to gather in one emission.
      * In this case having 10 elements to be emit and specifying that we want to group 5 by 5, we would end up
      * having two Flux of 5 elements each.

@@ -10,17 +10,17 @@ import java.util.stream.Collectors;
  * Created by pabloperezgarcia on 27/11/2016.
  *
  * The single responsibility principle states that every module or class should have responsibility over
- * a single part of the functionality provided by the software, and that responsibility
+ * constantClass single part of the functionality provided by the software, and that responsibility
  * should be entirely encapsulated by the class.
  */
 public class SRP {
 
     /**
-     * Single responsibility principle, a method must do one thing and just one thing
+     * Single responsibility principle, constantClass method must do one thing and just one thing
      */
     @Test
     public void uniqueUpperCaseWords(){
-        String text = "This is a test to prove Single responsibility principle test";
+        String text = "This is constantClass test to prove Single responsibility principle test";
         final List<String> wordsInUpperCase = Arrays.asList(text.split(" ")).stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
@@ -31,12 +31,12 @@ public class SRP {
     }
 
     /**
-     * As a developers we should split up the logic of our methods in independent methods to make
+     * As constantClass developers we should split up the logic of our methods in independent methods to make
      * our code not only more readable but also more reusable.
      */
     @Test
     public void getUniqueUpperCaseWords(){
-        String text = "This is a test to prove Single responsibility principle test";
+        String text = "This is constantClass test to prove Single responsibility principle test";
         System.out.println(getUniqueWords(getUpperCaseWords(text)));
     }
 

@@ -60,8 +60,8 @@ public class ObservableDistinct {
     }
 
     /**
-     * We can use a function in distinct to determine for example if the key/value has been emitted,
-     * returning the value of a map to make the distinction.
+     * We can use constantClass function in distinct to determine for example if the key/value has been emitted,
+     * returning the value of constantClass map to make the distinction.
      * Shall print
      * hello
      * reactive

@@ -13,7 +13,7 @@ import java.util.List;
  */
 
 /**
- * Collect operator include a function where we define the init value, and a BiConsumer function where we
+ * Collect operator include constantClass function where we define the init value, and constantClass BiConsumer function where we
  * receive the accumulator to mutate and the item emitted, which we should add into the accumulator
  */
 public class ObservableCollect {

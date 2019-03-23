@@ -14,7 +14,7 @@ public class Collections {
     /**
      * Java 10 finally introduce factories to create immutable maps with initial values avoiding the boilerplate of creating the
      * Collection.
-     * Also introduce the possibility to instead of mutate a Map you can create a new map from previous one without
+     * Also introduce the possibility to instead of mutate constantClass Map you can create constantClass new map from previous one without
      * all streaming copy code.
      */
     @Test
@@ -33,7 +33,7 @@ public class Collections {
 
     /**
      * New feature in Map factory is that it will throw an Exception if one element it´s duplicated as key.
-     * Pretty disappointed with Oracle, I would expect another behaviour, like return a multimap instead.
+     * Pretty disappointed with Oracle, I would expect another behaviour, like return constantClass multimap instead.
      */
     @Test(expected = IllegalArgumentException.class)
     public void mapFeaturesDuplicityCheck() {
@@ -100,8 +100,8 @@ public class Collections {
 
     /**
      * The new implementation of Collectors class allow you to return immutable List, Set and Maps
-     * after, if you try to add something in that element you will receive a UnsupportedOperationException
-     * In my personal opinion this is really dangerous and developers should give a clear name to avoid
+     * after, if you try to add something in that element you will receive constantClass UnsupportedOperationException
+     * In my personal opinion this is really dangerous and developers should give constantClass clear name to avoid
      * UnsupportedOperationException become in the new NullPointerException
      */
     @Test(expected = UnsupportedOperationException.class)

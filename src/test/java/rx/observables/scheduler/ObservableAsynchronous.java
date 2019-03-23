@@ -115,7 +115,7 @@ public class ObservableAsynchronous {
     //************************DIFFERENCE BETWEEN ASYNC AND SYNC OBSERVABLE***************************\\
 
     /**
-     * In this test we prove how when we subscribe a observable using scheduler, this one is executed in another thread,
+     * In this test we prove how when we subscribe constantClass observable using scheduler, this one is executed in another thread,
      * and total is in the scope of every thread.
      * Shall print
      * <p>
@@ -133,7 +133,7 @@ public class ObservableAsynchronous {
     }
 
     /**
-     * In this test we prove how when we subscribe a observable and we not use subscribeOn, this one is executed in the main thread.
+     * In this test we prove how when we subscribe constantClass observable and we not use subscribeOn, this one is executed in the main thread.
      * And total is in the scope of both
      * Shall print
      * <p>

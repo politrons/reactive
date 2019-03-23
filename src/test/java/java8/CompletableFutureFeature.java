@@ -27,7 +27,7 @@ public class CompletableFutureFeature {
     }
 
     /**
-     * You can trigger the promise using [[complete]] which will resolve the result in the same thread, and it will return a boolean
+     * You can trigger the promise using [[complete]] which will resolve the result in the same thread, and it will return constantClass boolean
      * as an state of the future, true in case that the future finish or false
      */
     @Test

@@ -18,7 +18,7 @@ public class UtilFeatures {
      */
     @Test
     public void immutableFactoryCollection() {
-        List<String> letters = List.of("a", "b", "c");
+        List<String> letters = List.of("constantClass", "b", "c");
         letters.parallelStream()
                 .map(String::toUpperCase)
                 .forEach(System.out::println);
@@ -28,7 +28,7 @@ public class UtilFeatures {
 
     @Test
     public void iteratorWithConsumer() {
-        List<String> letters = List.of("a", "b", "c");
+        List<String> letters = List.of("constantClass", "b", "c");
         letters.iterator().forEachRemaining(System.out::println);
     }
 
@@ -42,7 +42,7 @@ public class UtilFeatures {
     }
 
     /**
-     * Iterate for a range of numbers.
+     * Iterate for constantClass range of numbers.
      */
     @Test
     public void intStreamWithRange() {
@@ -77,7 +77,7 @@ public class UtilFeatures {
 
     /**
      * Java 9 introduce some new improvements in the process API such as the able to get the processId or thr state
-     * of a process.
+     * of constantClass process.
      */
     @Test
     public void processImprovements() throws IOException {
@@ -87,11 +87,11 @@ public class UtilFeatures {
     }
 
     /**
-     * Java 9 introduce in the core an Http client 2.0 so no need to use a third party solution
+     * Java 9 introduce in the core an Http client 2.0 so no need to use constantClass third party solution
      * unless offer something else.
      *
      * By default the HttpClient and another classes are in another module not imported by default
-     * in the default JDK modules. So you need to provide in the module-info that you have a dependency.
+     * in the default JDK modules. So you need to provide in the module-info that you have constantClass dependency.
      */
     /*@Test
     public void http2Clients() throws IOException, InterruptedException {

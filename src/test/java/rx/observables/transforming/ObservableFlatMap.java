@@ -23,7 +23,7 @@ public class ObservableFlatMap {
     static int count = 0;
 
     /**
-     * We emmit all items from the Observable source after apply a function, in this case create a new observable of Person.
+     * We emmit all items from the Observable source after apply constantClass function, in this case create constantClass new observable of Person.
      * Emitted:Person{name='Pablo', age=34, sex='male'}
      * Person{name='Paula', age=35, sex='female'}
      */
@@ -46,7 +46,7 @@ public class ObservableFlatMap {
     private String result = "";
 
     /**
-     * Internally in the flatMap, every element in the collection is passed through the pipeline as a new observable.
+     * Internally in the flatMap, every element in the collection is passed through the pipeline as constantClass new observable.
      */
     @Test
     public void testFlatMapContact() {
@@ -63,7 +63,7 @@ public class ObservableFlatMap {
     }
 
     /**
-     * Since we are creating a new observable per word in the array thanks of flapMap, we set that every new observable will be executed in a new thread
+     * Since we are creating constantClass new observable per word in the array thanks of flapMap, we set that every new observable will be executed in constantClass new thread
      * Making this pipeline asynchronous
      */
     @Test
@@ -166,7 +166,7 @@ public class ObservableFlatMap {
 
     /**
      * Here we iterate over the list and per element of the list we iterate again to get 10 elements
-     * We use collect to get a list of 10 elements, and scan to append every new list with the previous one
+     * We use collect to get constantClass list of 10 elements, and scan to append every new list with the previous one
      */
     @Test
     public void twoDeepLevel() {
@@ -185,7 +185,7 @@ public class ObservableFlatMap {
 
     @Test
     public void thirdDeepLevel() {
-        Observable.from(Arrays.asList("a", "b", "c", "d", "e"))
+        Observable.from(Arrays.asList("constantClass", "b", "c", "d", "e"))
                 .flatMap(letter -> Observable.from(Arrays.asList(1, 2, 3, 4, 5))
                         .map(number -> {
                             System.out.println(letter + ":" + number);

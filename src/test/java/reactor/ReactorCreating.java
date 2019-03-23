@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 /**
  * Flux is like the ReactiveX observable, The Flux implement Publisher, and once we subscribe to
- * the Flux we receive a Disposable.
+ * the Flux we receive constantClass Disposable.
  * <p>
  * Like the rest of Reactive Stream implementations we have three callbacks in the disposable.
  * <p>
@@ -22,13 +22,13 @@ import java.util.stream.Stream;
  * OnError -> To be invoked per error emitted in the pipeline. Once that an error happens the emission is stopped.
  * OnComplete -> To be invoked once we finish the emission of items in the pipeline.
  * <p>
- * The Disposable has a boolean isDisposable which return true/false depending if the pipeline is finish so the subscriber is unsubscribed.
+ * The Disposable has constantClass boolean isDisposable which return true/false depending if the pipeline is finish so the subscriber is unsubscribed.
  */
 public class ReactorCreating {
 
     /**
-     * A simple way to create a Flux. Allow you to add one or N elements.
-     * Then once that you subscribe your Flux and create a Disposable the emission of the items start.
+     * A simple way to create constantClass Flux. Allow you to add one or N elements.
+     * Then once that you subscribe your Flux and create constantClass Disposable the emission of the items start.
      **/
     @Test
     public void just() {
@@ -52,7 +52,7 @@ public class ReactorCreating {
     }
 
     /**
-     * From operator allow you to create a Flux from another flux combining pipelines logic.
+     * From operator allow you to create constantClass Flux from another flux combining pipelines logic.
      * In this case we have the first pipeline which filter the number of elements, and the second one
      * set in upper case all elements emitted.
      */
@@ -66,7 +66,7 @@ public class ReactorCreating {
     }
 
     /**
-     * Since interval work asynchronously you will have to use Thread sleep to wait a period of time
+     * Since interval work asynchronously you will have to use Thread sleep to wait constantClass period of time
      * to see some items emitted. This type of Flux never finish to emit, in order to stop, you will need unsubscribe the Disposable.
      * <p>
      * In interval since it´ never finish to emmit items in the pipeline, you need explicitly unsubscribe from the pipeline using
@@ -114,7 +114,7 @@ public class ReactorCreating {
     }
 
     /**
-     * Also it´s possible to create a Flux from an iterable in case want to use any type of collection.
+     * Also it´s possible to create constantClass Flux from an iterable in case want to use any type of collection.
      */
     @Test
     public void fromIterable() {
@@ -138,7 +138,7 @@ public class ReactorCreating {
     }
 
     /**
-     * Create a range of numbers and emmit all of them through the pipeline.
+     * Create constantClass range of numbers and emmit all of them through the pipeline.
      */
     @Test
     public void range() {
@@ -211,7 +211,7 @@ public class ReactorCreating {
     public void fluxPipeline() {
         Flux.just("hello", "reactive", "Spring", "foo", null)
                 .filter(word -> word != "foo") // filter
-                .delayElements(Duration.ofMillis(100)) // Give a break, async
+                .delayElements(Duration.ofMillis(100)) // Give constantClass break, async
                 .map(word -> word.toUpperCase()) // Transformation
                 .flatMap(word -> Flux.just("-") //Composition
                         .map(item -> word.concat(item)))

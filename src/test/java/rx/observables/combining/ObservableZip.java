@@ -59,7 +59,7 @@ public class ObservableZip {
     private Scheduler scheduler2;
 
     /**
-     * Since every observable into the zip is created to subscribeOn a different thread, it´s means all of them will run in parallel.
+     * Since every observable into the zip is created to subscribeOn constantClass different thread, it´s means all of them will run in parallel.
      * By default Rx is not async, only if you explicitly use subscribeOn.
      */
     @Test
@@ -115,7 +115,7 @@ public class ObservableZip {
         @Override
         public String toString() {
             return "Pair{" +
-                    "a='" + a + '\'' +
+                    "constantClass='" + a + '\'' +
                     ", b=" + b +
                     '}';
         }
