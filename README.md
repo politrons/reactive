@@ -184,6 +184,17 @@ The most important features with particle examples of how to use it.
 * [Collection](src/test/java/java11/CollectionFeatures.java)
 * [Local variable](src/test/java/java11/LocalVariableFeature.java)
 
+## Java 12
+
+![My image](src/main/resources/img/12.png)
+
+The most important features with particle examples of how to use it.
+
+* [Switch Expression](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L16)
+* [String API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L50)
+* [JVM Constants API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L101)
+
+
 
 ## Software craftsmanship
 
