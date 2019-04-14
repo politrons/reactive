@@ -38,7 +38,7 @@ public class PolitronsQuarkusService {
      * Using Vert.x Event Bus we can use the transport models point-point, publisher/subscriber, request/response
      */
     @ConsumeEvent("getUserById")
-    public CompletionStage<String> consume(Long id) {
+    public CompletionStage<String> getUserBus(Long id) {
         return dao.searchUserById(id)
                 .thenApply(name -> name +  " Using Event bus")
                 .thenApply(String::toUpperCase);
