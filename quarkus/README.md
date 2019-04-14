@@ -29,6 +29,7 @@ And if you want to reach your first endpoint created you can go to `http://local
 
 In Quarkus the Dependency injection happens when we compile our project, that's the reason why it's so fast.
  That brings some limitations, like the use of Reflection in your application it's limited.
+ 
  You can read the way to inject dependencies in your project purely with annotations [here](https://quarkus.io/guides/cdi-reference.html)
  
 ### Program
@@ -43,7 +44,7 @@ Another cool feature of Quarkus, is that allow register your API and generate an
 You just need to run the Quarkus mvn command
 
 ```
-./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"`
+./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"
 ```
 
 ### Health check
@@ -51,7 +52,7 @@ You just need to run the Quarkus mvn command
 You can take a look how to implement health check in Quarkus [here](src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java)
 
 ```
-http://localhost:8080/health`
+http://localhost:8080/health
 ```
 
 Response
@@ -70,4 +71,4 @@ Response
         }
     ]
 }
-``
+```
