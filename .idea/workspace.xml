@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add Quarkus async">
-      <change afterPath="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/PolitronsQuarkusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/PolitronsQuarkusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/quarkus/target/" />
@@ -56,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -76,15 +72,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -132,8 +119,22 @@
         <entry file="file://$PROJECT_DIR$/quarkus/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="327">
-                <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <first_editor relative-caret-position="623">
+                <caret line="73" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="402">
+                <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -205,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketWebSocket.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCode.java" />
         <option value="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/FirstQuarkusResource.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PolitronsQuarkusService.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PolitronsQuarkusResource.java" />
@@ -215,8 +215,9 @@
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/PolitronsQuarkusService.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java" />
         <option value="$PROJECT_DIR$/quarkus/pom.xml" />
-        <option value="$PROJECT_DIR$/quarkus/README.md" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java" />
+        <option value="$PROJECT_DIR$/quarkus/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -274,207 +275,6 @@
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
               <item name="reactive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java9" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rx" type="462c0819:PsiDirectoryNode" />
-              <item name="observables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rx" type="462c0819:PsiDirectoryNode" />
-              <item name="observables" type="462c0819:PsiDirectoryNode" />
-              <item name="connectable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rx" type="462c0819:PsiDirectoryNode" />
-              <item name="observables" type="462c0819:PsiDirectoryNode" />
-              <item name="transforming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -959,7 +759,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555237985189</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add Quarkus async">
+      <created>1555239858425</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1555239858425</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add Quarkus async">
+      <created>1555239980224</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1555239980224</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1011,7 +825,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4343949" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4343949" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32611465" />
@@ -1270,23 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="49" selection-start-line="6" selection-end-line="7" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/img/quarkus.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1359,18 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="327">
-            <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -1394,6 +1179,35 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quarkus/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="623">
+            <caret line="73" column="3" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="402">
+            <caret line="123" column="10" lean-forward="true" selection-start-line="123" selection-start-column="10" selection-end-line="123" selection-end-column="10" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>

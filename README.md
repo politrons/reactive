@@ -121,6 +121,9 @@ Binary protocol for use on byte stream transports.
 * [Request Stream](src/test/java/rsocket/RSocketRequestStream.java)
 * [Request Channel](src/test/java/rsocket/RSocketRequestChannel.java)
 
+## Quarkus
+
+* [project](quarkus/)
 
 ## Reactive Stream Monads combination
 
