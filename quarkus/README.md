@@ -1,5 +1,7 @@
 ![My image](src/main/resources/img/quarkus.jpeg)
 
+Example of a Servetless using the red hat [framework](https://quarkus.io/)
+
 ### Create project
 
 In order to create your first project, it's easy enough to use mvn and use the Quarkus plugin.
