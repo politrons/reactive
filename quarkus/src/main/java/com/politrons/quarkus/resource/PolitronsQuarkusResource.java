@@ -9,6 +9,11 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * Quarkus use JAX-RS standard for REST API, all annotation included the @Inject for DI
+ * are Java standard.
+ * In case of JAX-RS is JBoss implementation
+ */
 @Path("/info")
 public class PolitronsQuarkusResource {
 
