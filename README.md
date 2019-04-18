@@ -1,5 +1,7 @@
 Author Pablo Perez Garcia 
 
+Is this repo useful? Please ⭑Star this repository and share the love.
+
 Here we cover with examples the most famous [reactive](https://www.reactivemanifesto.org/) libraries that you can find in the market.
 
 ## ReactiveX
