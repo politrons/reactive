@@ -1,5 +1,7 @@
 package com.politrons.quarkus.resource;
 
+import io.reactivex.BackpressureStrategy;
+import io.reactivex.Observable;
 import io.vertx.axle.core.Vertx;
 import org.reactivestreams.Publisher;
 
@@ -9,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.Date;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.Integer.parseInt;
 
@@ -19,7 +22,6 @@ import static java.lang.Integer.parseInt;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class PolitronsVertxResource {
-
 
     @Inject
     Vertx vertx;
@@ -47,9 +49,9 @@ public class PolitronsVertxResource {
     @Produces(MediaType.SERVER_SENT_EVENTS)
     @Path("/streaming/{name}/{delay}")
     public Publisher<String> greeting(@PathParam("name") String name, @PathParam("delay") String delay) {
-        return vertx.periodicStream(parseInt(delay)).toPublisherBuilder()
+        return Observable.interval(parseInt(delay), TimeUnit.MILLISECONDS)
                 .map(l -> String.format("Hello %s! (%s)%n", name, new Date()))
-                .buildRs();
+                .toFlowable(BackpressureStrategy.DROP);
     }
 
 }
