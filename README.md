@@ -124,9 +124,9 @@ Binary protocol for use on byte stream transports.
 ## Quarkus
 ![My image](src/main/resources/img/quarkus_logo.png)
 
-Example of a Serverless using the red hat framework.
+Example of most important features of the red hat framework.
 
-* [project](quarkus/)
+* [features](quarkus/)
 
 ## Reactive Stream Monads combination
 

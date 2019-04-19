@@ -39,6 +39,25 @@ In Quarkus the Dependency injection happens when we compile our project, that's 
 Here I develop a simple Serverless where thanks to Quarkus and JAX-RS we make the transport(Request/Response) layer totally agnostic.
 You can see the API resource of the application as entry point [here](src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java)   
 
+### Web socket
+
+Here I develop a simple web socket chat, based on example that you can find in Quarkus documentation.
+
+The code can be find [here](src/main/java/com/politrons/quarkus/service/ChatService.java)
+
+Also the client code [here](src/main/resources/META-INF/resources/chat.html)
+
+To run it, just run quarkus command 
+
+```
+./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"
+```
+And go into 
+
+```
+http://localhost:8080/politrons/chat
+```
+
 ### Open API
 
 Another cool feature of Quarkus, is that allow register your API and generate an OpenAPI file with all the API description.
