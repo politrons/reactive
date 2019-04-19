@@ -1,6 +1,7 @@
 package com.politrons.quarkus.service;
 
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -15,7 +16,9 @@ import javax.websocket.Session;
 /**
  * WebSocket service which it will open a connection to ws://localhost.port/politrons/chat/
  * In order to have a websocket endpoint where to connect from html client, we use the annotation [ServerEndpoint]
- * Where we specify the endpoint
+ * Where we specify the endpoint.
+ * <p>
+ * Thanks to the different annotations we can control all the phases of the Websocket communication.
  */
 @ServerEndpoint("/politrons/chat/{username}")
 @ApplicationScoped
@@ -31,7 +34,7 @@ public class ChatService {
      * @param username of the new connection
      */
     @OnOpen
-    public void onOpen(Session session, @PathParam("username") String username) {
+    public void onOpenConnection(Session session, @PathParam("username") String username) {
         sessions.put(username, session);
         broadcast("Human " + username + " joined the room");
     }
@@ -44,7 +47,7 @@ public class ChatService {
      * @param username to be used to remove from the key/map
      */
     @OnClose
-    public void onClose(Session session, @PathParam("username") String username) {
+    public void onCloseConnection(Session session, @PathParam("username") String username) {
         sessions.remove(username);
         broadcast("Human " + username + " left the room");
     }
@@ -58,22 +61,21 @@ public class ChatService {
      * @param throwable reason of the onError
      */
     @OnError
-    public void onError(Session session, @PathParam("username") String username, Throwable throwable) {
+    public void onErrorConnection(Session session, @PathParam("username") String username, Throwable throwable) {
         sessions.remove(username);
         broadcast("Human " + username + " left the room because: " + throwable);
     }
 
     @OnMessage
-    public void onMessage(String message, @PathParam("username") String username) {
+    public void onMessageIncoming(String message, @PathParam("username") String username) {
         broadcast(">> " + username + ": " + message);
     }
 
     private void broadcast(String message) {
         sessions.values().forEach(s -> s.getAsyncRemote()
                 .sendObject(message, result -> {
-                    if (result.getException() != null) {
-                        System.out.println("Unable to send message: " + result.getException());
-                    }
+                    Optional.of(result.getException())
+                            .ifPresent(t -> System.out.println("Unable to send message: " + t));
                 }));
     }
 
