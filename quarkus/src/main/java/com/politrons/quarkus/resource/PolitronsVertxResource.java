@@ -55,5 +55,16 @@ public class PolitronsVertxResource {
                 .toFlowable(BackpressureStrategy.DROP);
     }
 
+    @GET
+    @Produces(MediaType.SERVER_SENT_EVENTS)
+    @Path("/observable/{name}/{delay}")
+    public Publisher<String> greeting(@PathParam("name") String name, @PathParam("delay") String delay) {
+        return Observable.just("Hello Reactive World")
+                .delay(parseInt(delay), TimeUnit.MILLISECONDS)
+                .map(sentence -> sentence + " " + name)
+                .map(String::toUpperCase)
+                .toFlowable(BackpressureStrategy.DROP);
+    }
+
 
 }
