@@ -45,7 +45,7 @@ You can see the API resource of the application as entry point [here](src/main/j
 
 Here I develop a simple web socket chat, based on example that you can find in Quarkus documentation.
 
-The code can be find [here](src/main/java/com/politrons/quarkus/service/ChatService.java)
+The code can be find [here](src/main/java/com/politrons/quarkus/service/PolitronsChatService.java)
 
 Also the client code [here](src/main/resources/META-INF/resources/chat.html)
 

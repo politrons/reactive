@@ -22,7 +22,7 @@ import javax.websocket.Session;
  */
 @ServerEndpoint("/politrons/chat/{username}")
 @ApplicationScoped
-public class ChatService {
+public class PolitronsChatService {
 
     private Map<String, Session> sessions = new ConcurrentHashMap<>(); //
 
