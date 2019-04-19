@@ -31,7 +31,7 @@ public class PolitronsVertxResource {
      */
     @GET
     @Path("/delay/{delay}")
-    public CompletionStage<String> getUsersAsyncResource(@PathParam("delay") String delay) {
+    public CompletionStage<String> getUsersWithDelay(@PathParam("delay") String delay) {
         CompletableFuture<String> future = new CompletableFuture<>();
         vertx.setTimer(parseInt(delay), timerId -> future.complete("Message render after " + delay + " delay and timerId " + timerId));
         return future;
@@ -48,11 +48,12 @@ public class PolitronsVertxResource {
     @GET
     @Produces(MediaType.SERVER_SENT_EVENTS)
     @Path("/streaming/{name}/{delay}")
-    public Publisher<String> greeting(@PathParam("name") String name, @PathParam("delay") String delay) {
+    public Publisher<String> streaming(@PathParam("name") String name, @PathParam("delay") String delay) {
         return Observable.interval(parseInt(delay), TimeUnit.MILLISECONDS)
                 .map(l -> String.format("Howdy %s! (%s)%n", name, new Date()))
                 .map(String::toUpperCase)
                 .toFlowable(BackpressureStrategy.DROP);
     }
+
 
 }
