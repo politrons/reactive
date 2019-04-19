@@ -58,6 +58,27 @@ And go into
 http://localhost:8080/politrons/chat
 ```
 
+### Vertx
+
+Integration with Vertx library, using some features as the extensions of RxJava2 you can see the examples of the resource [here](src/main/java/com/politrons/quarkus/resource/PolitronsVertxResource.java)
+
+To run it, just run quarkus command 
+
+```
+./mvnw quarkus:add-extension -Dextensions="smallrye-openapi"
+```
+And go into:
+
+* Streaming
+
+    ```
+    http://localhost:8080/streaming.html
+    ```
+* Http
+    ```
+    http://localhost:8080/vertx/delay/{delay}
+    ```
+
 ### Open API
 
 Another cool feature of Quarkus, is that allow register your API and generate an OpenAPI file with all the API description.

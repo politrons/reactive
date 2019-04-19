@@ -30,8 +30,8 @@ public class PolitronsVertxResource {
      * Using vertx we can use his API and use for instance a delay of a async call.
      */
     @GET
-    @Path("/delay/{userId}")
-    public CompletionStage<String> getUsersAsyncResource(@PathParam("userId") String delay) {
+    @Path("/delay/{delay}")
+    public CompletionStage<String> getUsersAsyncResource(@PathParam("dekay") String delay) {
         CompletableFuture<String> future = new CompletableFuture<>();
         vertx.setTimer(parseInt(delay), timerId -> future.complete("Message render after " + delay + " delay and timerId " + timerId));
         return future;
