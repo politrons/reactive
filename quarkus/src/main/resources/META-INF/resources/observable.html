@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8"/>
     <title>SSE with Vert.x - Quarkus</title>
-    <script type="application/javascript" src="observavble.js"></script>
 </head>
 <body>
-<div id="container"></div>
+<div id="contain"></div>
 <script type="text/javascript">
-    var eventSource = new EventSource("/vertx/observable/politrons/1000");
+    var eventSource = new EventSource("/vertx/observable/politrons/2000");
     eventSource.onmessage = function (event) {
-    var container = document.getElementById("container");
+    var container = document.getElementById("contain");
     var paragraph = document.createElement("p");
     paragraph.innerHTML = event.data;
     container.appendChild(paragraph);

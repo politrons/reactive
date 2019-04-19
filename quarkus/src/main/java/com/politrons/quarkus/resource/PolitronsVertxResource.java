@@ -43,7 +43,7 @@ public class PolitronsVertxResource {
      * server, instead have to be doing schedule request to the server.
      * <p>
      * To make the whole process work you have to implement the client where through javascript it's able to get the publisher
-     * as an [EventSource] and subscribe to it.
+     * as an [EventSource] and subscribe to it. https://developer.mozilla.org/es/docs/Web/API/EventSource
      */
     @GET
     @Produces(MediaType.SERVER_SENT_EVENTS)
@@ -55,6 +55,9 @@ public class PolitronsVertxResource {
                 .toFlowable(BackpressureStrategy.DROP);
     }
 
+    /**
+     * In this resource we just return a Publisher with just one emission, it up to the client when start the subscription
+     */
     @GET
     @Produces(MediaType.SERVER_SENT_EVENTS)
     @Path("/observable/{name}/{delay}")
