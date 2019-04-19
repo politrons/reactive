@@ -50,7 +50,8 @@ public class PolitronsVertxResource {
     @Path("/streaming/{name}/{delay}")
     public Publisher<String> greeting(@PathParam("name") String name, @PathParam("delay") String delay) {
         return Observable.interval(parseInt(delay), TimeUnit.MILLISECONDS)
-                .map(l -> String.format("Hello %s! (%s)%n", name, new Date()))
+                .map(l -> String.format("Howdy %s! (%s)%n", name, new Date()))
+                .map(String::toUpperCase)
                 .toFlowable(BackpressureStrategy.DROP);
     }
 
