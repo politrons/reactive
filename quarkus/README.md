@@ -2,6 +2,8 @@
 
 Example of a Servetless using the red hat [framework](https://quarkus.io/)
 
+Is this repo useful? Please ⭑Star this repository and share the love.
+
 ### Create project
 
 In order to create your first project, it's easy enough to use mvn and use the Quarkus plugin.
