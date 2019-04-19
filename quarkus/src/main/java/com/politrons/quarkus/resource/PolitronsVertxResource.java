@@ -31,7 +31,7 @@ public class PolitronsVertxResource {
      */
     @GET
     @Path("/delay/{delay}")
-    public CompletionStage<String> getUsersAsyncResource(@PathParam("dekay") String delay) {
+    public CompletionStage<String> getUsersAsyncResource(@PathParam("delay") String delay) {
         CompletableFuture<String> future = new CompletableFuture<>();
         vertx.setTimer(parseInt(delay), timerId -> future.complete("Message render after " + delay + " delay and timerId " + timerId));
         return future;
