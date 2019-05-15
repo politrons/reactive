@@ -130,7 +130,7 @@ Example of most important features of the red hat framework.
 
 * [features](quarkus/)
 
-## Vavr
+## 
 ![My image](src/main/resources/img/vavr.png)
 
 Example of most important features of this functional programing library for Java.
