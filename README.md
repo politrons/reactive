@@ -130,6 +130,14 @@ Example of most important features of the red hat framework.
 
 * [features](quarkus/)
 
+## Vavr
+![My image](src/main/resources/img/vavr.png)
+
+Example of most important features of this functional programing library for Java.
+
+* [effects](src/test/java/vavr/VavrEffects.java)
+
+
 ## Reactive Stream Monads combination
 
 A Combination of Monads that implement Reactive Stream.
