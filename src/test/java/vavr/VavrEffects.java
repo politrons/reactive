@@ -7,12 +7,11 @@ import io.vavr.control.Option;
 import io.vavr.control.Try;
 import org.junit.Test;
 
-import static io.vavr.API.*;        // $, Case, Match
-import static io.vavr.Patterns.*;
-import static io.vavr.Predicates.*; // instanceOf
-
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
+
+import static io.vavr.API.*;
+import static io.vavr.Patterns.*;
+import static io.vavr.Predicates.instanceOf;
 
 /**
  * Vavr it's a toolkit of Monads type to control effects to do Functional programing and also has
@@ -28,7 +27,7 @@ public class VavrEffects {
      * The Option it will return a [Some(T)] in case it contains a value, just like in Scala.
      *
      * Using the Vavr implementation of Pattern matching we can check if the Option is Some or None
-     * and extract the value.
+     * and extract the value.(Option, Try, Either, Future)
      */
     @Test
     public void optionFeature() {
