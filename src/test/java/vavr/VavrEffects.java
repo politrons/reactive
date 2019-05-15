@@ -26,15 +26,24 @@ public class VavrEffects {
      * Using Vavr allow us control effects of the monad Option to have or not have a value.
      * We can make transformation with [map] and composition with [flatMap]
      * The Option it will return a [Some(T)] in case it contains a value, just like in Scala.
+     *
+     * Using the Vavr implementation of Pattern matching we can check if the Option is Some or None
+     * and extract the value.
      */
     @Test
     public void optionFeature() {
         var maybeString = Option.of(getMaybeString())
                 .filter(value -> value.length() >= 4)
                 .map(String::toUpperCase)
-                .flatMap(value -> Option.of(value + "!!"))
-                .orElse(() -> Option.of("default value"));
+                .flatMap(value -> Option.of(value + "!!"));
+
+        String response = Match(maybeString).of(
+                Case($Some($()), value -> value + " defined"),
+                Case($None(), "empty"));
+
         System.out.println(maybeString);
+        System.out.println(response);
+
     }
 
 
@@ -113,7 +122,7 @@ public class VavrEffects {
      * Future monad to execute your program in another thread and control if the program return the expected output or
      * a throwable.
      * It contains all operator of Scala Future API.
-     *
+     * <p>
      * In this example we also use pattern matching, that even not being native in Java it behave pretty good with success and failure
      */
     @Test

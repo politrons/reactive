@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add vertx integration">
-      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
+    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add vavr examples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/quarkus/target/" />
@@ -29,13 +28,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+            <state relative-caret-position="128">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="250">
+                <caret line="132" column="3" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/img/vavr.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -109,35 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-              <folding>
-                <element signature="e#1586#1587#0" expanded="true" />
-                <element signature="e#1609#1610#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/control/Try.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
               <caret line="811" column="41" selection-start-line="811" selection-start-column="41" selection-end-line="811" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -206,7 +199,6 @@
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/chat.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/ChatService.java" />
         <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/streaming.html" />
         <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/streaming.js" />
@@ -216,6 +208,7 @@
         <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/observable.html" />
         <option value="$PROJECT_DIR$/quarkus/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" />
       </list>
     </option>
@@ -311,6 +304,21 @@
               <item name="reactive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
@@ -423,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VavrEffects.eitherFeature">
+  <component name="RunManager" selected="JUnit.VavrEffects.optionFeature">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -540,11 +548,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrEffects.optionFeature" />
         <item itemvalue="JUnit.VavrEffects.eitherFeature" />
         <item itemvalue="JUnit.VavrEffects.futureFeature" />
         <item itemvalue="JUnit.VavrEffects.lazyFeature" />
         <item itemvalue="JUnit.VavrEffects.tryFeature" />
-        <item itemvalue="JUnit.VavrEffects.optionFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -558,20 +566,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Java 11 features">
-      <created>1538855293327</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1538855293327</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Java 11 features">
-      <created>1538856170646</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1538856170646</updated>
     </task>
     <task id="LOCAL-00012" summary="Java 11 features">
       <created>1538856234776</created>
@@ -902,19 +896,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555677698790</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add vertx integration">
+      <created>1557940251056</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1557940251057</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Add vavr examples">
+      <created>1557940342736</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1557940342736</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 17h 26m 58s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 25m 51s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 25m 57s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 26m 00s.xml">
       <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
     </history-entry>
@@ -935,6 +934,15 @@
     </history-entry>
     <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 25s.xml">
       <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 48s.xml">
+      <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 52s.xml">
+      <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrEffects_optionFeature - 2019.05.15 at 19h 16m 20s.xml">
+      <configuration name="VavrEffects.optionFeature" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -982,7 +990,8 @@
     <MESSAGE value="Add Quarkus" />
     <MESSAGE value="Add Quarkus async" />
     <MESSAGE value="Add vertx integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add vertx integration" />
+    <MESSAGE value="Add vavr examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add vavr examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1009,13 +1018,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/java9/FlowFeatures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/java8/Functions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1164,23 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="66" selection-start-column="66" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="26" selection-start-line="2" selection-end-line="3" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
         </state>
       </provider>
     </entry>
@@ -1384,10 +1369,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/vavr.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="250">
+            <caret line="132" column="3" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+        <state relative-caret-position="128">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
