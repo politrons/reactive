@@ -20,7 +20,6 @@ import static io.vavr.Predicates.instanceOf;
  */
 public class VavrEffects {
 
-
     /**
      * Using Vavr allow us control effects of the monad Option to have or not have a value.
      * We can make transformation with [map] and composition with [flatMap]
@@ -42,9 +41,7 @@ public class VavrEffects {
 
         System.out.println(maybeString);
         System.out.println(response);
-
     }
-
 
     /**
      * Using Vavr allow us control effects of the monad Try to have a value or receive a throwable.
