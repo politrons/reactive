@@ -136,6 +136,8 @@ Example of most important features of the red hat framework.
 Example of most important features of this functional programing library for Java.
 
 * [effects](src/test/java/vavr/VavrEffects.java)
+* [Functions](src/test/java/vavr/VavrFunctions.java)
+* [Collections](src/test/java/vavr/VavrCollections.java)
 
 
 ## Reactive Stream Monads combination

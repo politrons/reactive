@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add vavr examples">
+      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/quarkus/target/" />
@@ -25,14 +26,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+            <state relative-caret-position="221">
+              <caret line="73" selection-start-line="73" selection-end-line="74" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Function2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="162" column="29" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
+              <folding>
+                <element signature="e#6289#6290#0" expanded="true" />
+                <element signature="e#6336#6337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="139" column="31" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="31" />
+              <folding>
+                <element signature="e#3990#3991#0" expanded="true" />
+                <element signature="e#4033#4034#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-280">
+              <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+              <folding>
+                <element signature="e#5615#5616#0" expanded="true" />
+                <element signature="e#5652#5653#0" expanded="true" />
+                <element signature="e#6809#6810#0" expanded="true" />
+                <element signature="e#6867#6868#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Number.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -69,72 +141,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Lazy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="1204" column="29" selection-start-line="1204" selection-start-column="29" selection-end-line="1204" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/control/Either.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="1162" column="16" selection-start-line="1162" selection-start-column="16" selection-end-line="1162" selection-end-column="16" />
-              <folding>
-                <element signature="e#2627#2628#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#30132#30133#0" expanded="true" />
-                <element signature="e#30176#30177#0" expanded="true" />
-                <element signature="e#40291#40292#0" expanded="true" />
-                <element signature="e#40333#40334#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/API.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="789" column="45" selection-start-line="789" selection-start-column="45" selection-end-line="789" selection-end-column="45" />
-              <folding>
-                <element signature="e#27686#27687#0" expanded="true" />
-                <element signature="e#27749#27750#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0.jar!/io/vavr/API.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="986" column="35" selection-start-line="986" selection-start-column="35" selection-end-line="986" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/control/Try.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="811" column="41" selection-start-line="811" selection-start-column="41" selection-end-line="811" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/java8/CompletableFutureFeature.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java11/HelloWorld11.java" />
         <option value="$USER_HOME$/.profile" />
         <option value="$PROJECT_DIR$/src/test/java/java11/LocalVariableFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" />
@@ -210,6 +214,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java" />
       </list>
     </option>
   </component>
@@ -356,6 +362,32 @@
             <path>
               <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 12 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: io.vavr:vavr:0.10.0" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -397,26 +429,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.politrons.quarkus" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java/rsocket" />
+      <recent name="$PROJECT_DIR$/src/test/java/java11" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vavr" />
+      <recent name="com.politrons.quarkus.resource" />
+      <recent name="rsocket" />
+      <recent name="java11" />
+      <recent name="org.java11.features" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
       <recent name="$PROJECT_DIR$/quarkus" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main/java/org/java11/features" />
       <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.politrons.quarkus" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.politrons.quarkus.resource" />
-      <recent name="rsocket" />
-      <recent name="java11" />
-      <recent name="org.java11.features" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
-      <recent name="$PROJECT_DIR$/src/test/java/rsocket" />
-      <recent name="$PROJECT_DIR$/src/test/java/java11" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -431,14 +464,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VavrEffects.optionFeature">
+  <component name="RunManager" selected="JUnit.VavrFunctions.funcMemorization">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.eitherFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrCollections.listFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -447,15 +480,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="eitherFeature" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
+      <option name="METHOD_NAME" value="listFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.futureFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrFunctions.funcCompositionFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -464,15 +497,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="futureFeature" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
+      <option name="METHOD_NAME" value="funcCompositionFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.lazyFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrFunctions.funcFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -481,15 +514,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="lazyFeature" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
+      <option name="METHOD_NAME" value="funcFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.optionFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrFunctions.funcMemorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -498,15 +531,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="optionFeature" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
+      <option name="METHOD_NAME" value="funcMemorization" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.tryFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrFunctions.listFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -515,8 +548,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="tryFeature" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
+      <option name="METHOD_NAME" value="listFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -540,19 +573,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.VavrEffects.optionFeature" />
-      <item itemvalue="JUnit.VavrEffects.tryFeature" />
-      <item itemvalue="JUnit.VavrEffects.eitherFeature" />
-      <item itemvalue="JUnit.VavrEffects.lazyFeature" />
-      <item itemvalue="JUnit.VavrEffects.futureFeature" />
+      <item itemvalue="JUnit.VavrCollections.listFeatures" />
+      <item itemvalue="JUnit.VavrFunctions.listFeatures" />
+      <item itemvalue="JUnit.VavrFunctions.funcCompositionFeatures" />
+      <item itemvalue="JUnit.VavrFunctions.funcFeatures" />
+      <item itemvalue="JUnit.VavrFunctions.funcMemorization" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VavrEffects.optionFeature" />
-        <item itemvalue="JUnit.VavrEffects.eitherFeature" />
-        <item itemvalue="JUnit.VavrEffects.futureFeature" />
-        <item itemvalue="JUnit.VavrEffects.lazyFeature" />
-        <item itemvalue="JUnit.VavrEffects.tryFeature" />
+        <item itemvalue="JUnit.VavrFunctions.funcMemorization" />
+        <item itemvalue="JUnit.VavrFunctions.funcFeatures" />
+        <item itemvalue="JUnit.VavrFunctions.funcCompositionFeatures" />
+        <item itemvalue="JUnit.VavrFunctions.listFeatures" />
+        <item itemvalue="JUnit.VavrCollections.listFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -566,27 +599,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Java 11 features">
-      <created>1538856234776</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1538856234776</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Java 11 features">
-      <created>1538856307377</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1538856307377</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Java 11 features">
-      <created>1538856830698</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1538856830698</updated>
     </task>
     <task id="LOCAL-00015" summary="Java 11 features">
       <created>1538860040041</created>
@@ -910,39 +922,60 @@
       <option name="project" value="LOCAL" />
       <updated>1557940342736</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Add vavr examples">
+      <created>1557940672162</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1557940672163</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Add vavr examples">
+      <created>1557940735770</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1557940735770</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Add vavr examples">
+      <created>1557941174490</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1557941174490</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 26m 00s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 26m 03s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_lazyFeature - 2019.05.15 at 18h 26m 06s.xml">
-      <configuration name="VavrEffects.lazyFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_futureFeature - 2019.05.15 at 18h 46m 27s.xml">
-      <configuration name="VavrEffects.futureFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_futureFeature - 2019.05.15 at 18h 52m 18s.xml">
-      <configuration name="VavrEffects.futureFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_futureFeature - 2019.05.15 at 19h 01m 26s.xml">
-      <configuration name="VavrEffects.futureFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 25s.xml">
-      <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 48s.xml">
-      <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_eitherFeature - 2019.05.15 at 19h 07m 52s.xml">
-      <configuration name="VavrEffects.eitherFeature" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrEffects_optionFeature - 2019.05.15 at 19h 16m 20s.xml">
+    <history-entry file="VavrEffects_optionFeature - 2019.05.15 at 19h 16m 47s.xml">
       <configuration name="VavrEffects.optionFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 21h 56m 30s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 20m 56s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 21m 36s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 23m 49s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 24m 40s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 24m 52s.xml">
+      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrFunctions_listFeatures - 2019.05.15 at 22h 43m 33s.xml">
+      <configuration name="VavrFunctions.listFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrFunctions_funcCompositionFeatures - 2019.05.15 at 22h 50m 02s.xml">
+      <configuration name="VavrFunctions.funcCompositionFeatures" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VavrFunctions_funcFeatures - 2019.05.15 at 23h 06m 14s.xml">
+      <configuration name="VavrFunctions.funcFeatures" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -957,7 +990,7 @@
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5490446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5490446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1018,44 +1051,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/img/quarkus.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/enterprise/cdi-api/2.0.SP1/cdi-api-2.0.SP1.jar!/javax/enterprise/context/ApplicationScoped.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/transforming/ObservableBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletionStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/dao/PolitronsQuarkusDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1391,11 +1386,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="73" selection-start-line="73" selection-end-line="74" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+          <folding>
+            <element signature="e#5615#5616#0" expanded="true" />
+            <element signature="e#5652#5653#0" expanded="true" />
+            <element signature="e#6809#6810#0" expanded="true" />
+            <element signature="e#6867#6868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="139" column="31" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="31" />
+          <folding>
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4033#4034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Function2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="162" column="29" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
+          <folding>
+            <element signature="e#6289#6290#0" expanded="true" />
+            <element signature="e#6336#6337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
         </state>
       </provider>
     </entry>
