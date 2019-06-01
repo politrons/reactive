@@ -15,7 +15,7 @@ public class PolitronsQuarkusResourceTest {
           .when().get("/info")
           .then()
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("Version 1.0 of Quarkus in Politrons system"));
     }
 
 }
