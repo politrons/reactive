@@ -130,6 +130,13 @@ Example of most important features of the red hat framework.
 
 * [features](quarkus/)
 
+## Micronaut
+![My image](src/main/resources/img/micronaut.png)
+
+A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.
+
+* [features](https://github.com/politrons/micronaut)
+
 ## 
 ![My image](src/main/resources/img/vavr.png)
 
