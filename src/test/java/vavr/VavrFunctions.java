@@ -24,7 +24,7 @@ public class VavrFunctions {
     @Test
     public void funcCompositionFeatures() {
         Function2<String, Integer, Boolean> func1 = (str, intValue) -> str.equals("hello") && intValue == 1981;
-        Function1<Boolean , String> func2 = (bool) -> bool ? "True" : "False";
+        Function1<Boolean, String> func2 = (bool) -> bool ? "True" : "False";
 
         Function2<String, Integer, String> stringIntegerStringFunction2 = func1.andThen(func2);
 
@@ -42,6 +42,16 @@ public class VavrFunctions {
         System.out.println(memoized.apply());
         System.out.println(memoized.apply());
         System.out.println(memoized.apply());
+    }
+
+    @Test
+    public void foldFunc() {
+        var numbers = List.of(1, 2, 30, 3, 4, 5,10, 8);
+        String strNumbers = numbers
+            .filter(number -> number <= 5)
+            .foldRight("", (number, output) ->
+                output.concat("-").concat(String.valueOf(number)));
+        System.out.println(strNumbers);
     }
 }
 
