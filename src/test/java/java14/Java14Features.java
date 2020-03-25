@@ -10,6 +10,8 @@ public class Java14Features {
     /**
      * Java 14 introduce a pseudo patter matching with if/else syntax, where apart to match an element using
      * [instanceOf] we can extract the cast variable to be used or even add extra conditions over it.
+     * Hopefully in Java 15 they will bring the pattern matching technology with Switch expression and then
+     * we will have the real pattern matching as we have already in Scala.
      */
     @Test
     public void patternMatching() {
@@ -52,9 +54,9 @@ public class Java14Features {
 
     /**
      * [Record type] in Java 14 it's kind of like [case class] of scala. It's allow to create final immutable instances
-     * with toString/equals/hashCode and getter for all arguments passed in the constructor. The different
-     * between case class and record, is that the first one don't require [new] operator to create the instance, but
-     * record still it does.
+     * with toString/equals/hashCode and getter for all arguments passed in the constructor. The different between case
+     * class and record, is that the first one don't require [new] operator to create the instance, but record still it
+     * does.
      */
     @Test
     public void recordType() {
@@ -73,7 +75,7 @@ public class Java14Features {
             return "name:" + name + " " + "age:" + age;
         }
 
-        public List<ProductRecord> getProducts(){
+        public List<ProductRecord> getProducts() {
             return List.of(product);
         }
     }
@@ -87,16 +89,12 @@ public class Java14Features {
 
     public Object getElement() {
         var number = new Random().nextInt(4);
-        if (number == 0) {
-            return "hello pattern matching in Java";
-        } else if (number == 1) {
-            return 1981;
-        } else if (number == 2) {
-            return 1981L;
-        } else {
-            return Optional.of("Hello String inside Optional");
-        }
-
+        return switch (number) {
+            case 0 -> "hello pattern matching in Java";
+            case 1 -> 1981;
+            case 2 -> 1981L;
+            default -> Optional.of("Hello String inside Optional");
+        };
     }
 
 }

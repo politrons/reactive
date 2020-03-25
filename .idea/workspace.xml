@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add vavr examples">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/getting-started.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/j14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java14/Java14Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" afterDir="false" />
+    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 14 features">
+      <change beforePath="$PROJECT_DIR$/src/test/java/java14/Java14Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java14/Java14Features.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +106,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Java12Features.withReturnValue">
+  <component name="RunManager" selected="JUnit.Java14Features.patternMatching">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -272,9 +255,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Java14Features.patternMatching" />
         <item itemvalue="JUnit.Java12Features.withReturnValue" />
         <item itemvalue="JUnit.Java14Features.recordType" />
-        <item itemvalue="JUnit.Java14Features.patternMatching" />
         <item itemvalue="JUnit.Java14Features.textBlocks" />
         <item itemvalue="JUnit.Java14Features" />
       </list>
@@ -290,27 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Java 11 features">
-      <created>1538900599946</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1538900599946</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Java 11 features">
-      <created>1538900612109</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1538900612109</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Java 11 features">
-      <created>1538900863706</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1538900863706</updated>
     </task>
     <task id="LOCAL-00020" summary="Java 11 features">
       <created>1538901105102</created>
@@ -634,7 +596,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580072513609</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Java 14 features">
+      <created>1585160413148</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1585160413149</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Java 14 features">
+      <created>1585160527517</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1585160527517</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Java 14 features">
+      <created>1585160577605</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1585160577605</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -646,7 +629,8 @@
     <MESSAGE value="Add Quarkus async" />
     <MESSAGE value="Add vertx integration" />
     <MESSAGE value="Add vavr examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add vavr examples" />
+    <MESSAGE value="Java 14 features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 14 features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="121" key="#Project_Structure" timestamp="1580071914695">
@@ -661,10 +645,10 @@
       <screen x="51" y="23" width="1629" height="1027" />
     </state>
     <state x="688" y="427" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/51.23.1629.1027@51.23.1629.1027" timestamp="1580034880785" />
-    <state x="478" y="51" key="CommitChangelistDialog2" timestamp="1585160058763">
+    <state x="478" y="51" key="CommitChangelistDialog2" timestamp="1585160577397">
       <screen x="47" y="23" width="1633" height="1027" />
     </state>
-    <state x="478" y="51" key="CommitChangelistDialog2/47.23.1633.1027@47.23.1633.1027" timestamp="1585160058763" />
+    <state x="478" y="51" key="CommitChangelistDialog2/47.23.1633.1027@47.23.1633.1027" timestamp="1585160577397" />
     <state x="481" y="73" key="CommitChangelistDialog2/51.23.1629.1027@51.23.1629.1027" timestamp="1580072969151" />
     <state x="240" y="129" key="DiffContextDialog" timestamp="1585160057093">
       <screen x="47" y="23" width="1633" height="1027" />
@@ -703,9 +687,10 @@
     </state>
     <state x="262" y="23" width="1280" height="1027" key="SettingsEditor/47.23.1633.1027@47.23.1633.1027" timestamp="1585135065679" />
     <state x="265" y="23" width="1280" height="1027" key="SettingsEditor/51.23.1629.1027@51.23.1629.1027" timestamp="1580072896054" />
-    <state x="365" y="213" key="Vcs.Push.Dialog.v2" timestamp="1580072515788">
-      <screen x="51" y="23" width="1629" height="1027" />
+    <state x="362" y="213" key="Vcs.Push.Dialog.v2" timestamp="1585160579475">
+      <screen x="47" y="23" width="1633" height="1027" />
     </state>
+    <state x="362" y="213" key="Vcs.Push.Dialog.v2/47.23.1633.1027@47.23.1633.1027" timestamp="1585160579475" />
     <state x="365" y="213" key="Vcs.Push.Dialog.v2/51.23.1629.1027@51.23.1629.1027" timestamp="1580072515788" />
     <state x="530" y="418" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585133954820">
       <screen x="47" y="23" width="1633" height="1027" />
