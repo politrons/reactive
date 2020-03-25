@@ -45,7 +45,6 @@ public class Java12Features {
         System.out.println(output);
     }
 
-
     //#######################
     //      String API      #
     //#######################

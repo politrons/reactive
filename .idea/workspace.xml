@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Add vavr examples">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/micronaut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/getting-started.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/j14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java14/Java14Features.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/quarkus/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -21,108 +35,6 @@
   <component name="ElmWorkspace">
     <elmProjects />
     <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="reactive" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quarkus/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="294">
-                <caret line="137" column="51" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="51" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsVertxResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/chat.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="102" column="13" selection-start-line="102" selection-end-line="103" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/NativePolitronsQuarkusResourceIT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,216 +57,47 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java11/FileFeatures.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java10/Collections.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableCreate.java" />
-        <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorAsync.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rx/observables/creating/ObservableInterval.java" />
-        <option value="$PROJECT_DIR$/src/test/java/reactor/ReactorCreating.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ReactiveMix.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ReactiveMondasCombinations.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ReactiveMonadsCombinations.java" />
-        <option value="$PROJECT_DIR$/file.bin" />
-        <option value="$PROJECT_DIR$/src/test/java/kryo/KryoUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/kryo/SomeClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/rsocketStream.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/rsocketStreamOutput.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/ClientServer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketFireAndForget.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketStream.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketChannel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestChannel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestResponse.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rsocket/RSocketWebSocket.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/java12/Java12Features.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/FirstQuarkusResource.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PolitronsQuarkusService.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PolitronsQuarkusResource.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PolitronsQuarkusDAO.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/dao/PolitronsQuarkusDAO.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/dao/PolitronsQuarkusDAO.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/PolitronsQuarkusService.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/chat.html" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/ChatService.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/streaming.html" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/streaming.js" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsVertxResource.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/observable.html" />
-        <option value="$PROJECT_DIR$/quarkus/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" />
-        <option value="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" />
-        <option value="$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/PolitronsQuarkusResourceTest.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/quarkus/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/quarkus/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="politrons &lt;politrons@gmail.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="getting-started" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="getting-started" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="getting-started" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="getting-started" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="quarkus" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="46" />
-    <option name="y" value="23" />
-    <option name="width" value="1394" />
-    <option name="height" value="877" />
-  </component>
+  <component name="ProjectId" id="1WvfCkohBKWkISVrlGubY9CgWK2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="quarkus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reactive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reactive" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vavr" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551613624897" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15349545" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.3462604" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -380,108 +123,100 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.VavrFunctions.funcMemorization">
+  <component name="RunManager" selected="JUnit.Java12Features.withReturnValue">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrCollections.listFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java12Features.withReturnValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
-      <option name="METHOD_NAME" value="listFeatures" />
+      <option name="PACKAGE_NAME" value="java12" />
+      <option name="MAIN_CLASS_NAME" value="java12.Java12Features" />
+      <option name="METHOD_NAME" value="withReturnValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrFunctions.funcCompositionFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java14Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
-      <option name="METHOD_NAME" value="funcCompositionFeatures" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="java14" />
+      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrFunctions.funcFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java14Features.patternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
-      <option name="METHOD_NAME" value="funcFeatures" />
+      <option name="PACKAGE_NAME" value="java14" />
+      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
+      <option name="METHOD_NAME" value="patternMatching" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrFunctions.funcMemorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java14Features.recordType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
-      <option name="METHOD_NAME" value="funcMemorization" />
+      <option name="PACKAGE_NAME" value="java14" />
+      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
+      <option name="METHOD_NAME" value="recordType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrFunctions.listFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java14Features.textBlocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrFunctions" />
-      <option name="METHOD_NAME" value="listFeatures" />
+      <option name="PACKAGE_NAME" value="java14" />
+      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
+      <option name="METHOD_NAME" value="textBlocks" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -489,7 +224,34 @@
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="install no test" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -501,19 +263,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.VavrCollections.listFeatures" />
-      <item itemvalue="JUnit.VavrFunctions.funcCompositionFeatures" />
-      <item itemvalue="JUnit.VavrFunctions.funcFeatures" />
-      <item itemvalue="JUnit.VavrFunctions.funcMemorization" />
-      <item itemvalue="JUnit.VavrFunctions.listFeatures" />
+      <item itemvalue="Maven.install no test" />
+      <item itemvalue="JUnit.Java14Features" />
+      <item itemvalue="JUnit.Java14Features.patternMatching" />
+      <item itemvalue="JUnit.Java14Features.textBlocks" />
+      <item itemvalue="JUnit.Java14Features.recordType" />
+      <item itemvalue="JUnit.Java12Features.withReturnValue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VavrFunctions.funcMemorization" />
-        <item itemvalue="JUnit.VavrFunctions.funcFeatures" />
-        <item itemvalue="JUnit.VavrFunctions.funcCompositionFeatures" />
-        <item itemvalue="JUnit.VavrFunctions.listFeatures" />
-        <item itemvalue="JUnit.VavrCollections.listFeatures" />
+        <item itemvalue="JUnit.Java12Features.withReturnValue" />
+        <item itemvalue="JUnit.Java14Features.recordType" />
+        <item itemvalue="JUnit.Java14Features.patternMatching" />
+        <item itemvalue="JUnit.Java14Features.textBlocks" />
+        <item itemvalue="JUnit.Java14Features" />
       </list>
     </recent_temporary>
   </component>
@@ -527,13 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Java 11 features">
-      <created>1538899968763</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1538899968763</updated>
     </task>
     <task id="LOCAL-00017" summary="Java 11 features">
       <created>1538900599946</created>
@@ -871,78 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1557954685539</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Add vavr examples">
+      <created>1580072513607</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1580072513609</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 21h 56m 30s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 20m 56s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 21m 36s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 23m 49s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 24m 40s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrCollections_listFeatures - 2019.05.15 at 22h 24m 52s.xml">
-      <configuration name="VavrCollections.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrFunctions_listFeatures - 2019.05.15 at 22h 43m 33s.xml">
-      <configuration name="VavrFunctions.listFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrFunctions_funcCompositionFeatures - 2019.05.15 at 22h 50m 02s.xml">
-      <configuration name="VavrFunctions.funcCompositionFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrFunctions_funcFeatures - 2019.05.15 at 23h 06m 14s.xml">
-      <configuration name="VavrFunctions.funcFeatures" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VavrFunctions_funcMemorization - 2019.05.15 at 23h 10m 23s.xml">
-      <configuration name="VavrFunctions.funcMemorization" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="46" y="23" width="1394" height="877" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" weight="0.32988167" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5490446" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6369427" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32611465" />
-      <window_info anchor="bottom" id="IntelliTail" order="11" />
-      <window_info anchor="bottom" id="Elm Compiler" order="12" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Palette&#9;" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Cargo" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.43195266" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32988167" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32988167" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-      <window_info anchor="right" id="Elm" order="11" />
-    </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new flatMap example" />
@@ -955,488 +648,93 @@
     <MESSAGE value="Add vavr examples" />
     <option name="LAST_COMMIT_MESSAGE" value="Add vavr examples" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="365" y="121" key="#Project_Structure" timestamp="1580071914695">
+      <screen x="51" y="23" width="1629" height="1027" />
+    </state>
+    <state x="365" y="121" key="#Project_Structure/51.23.1629.1027@51.23.1629.1027" timestamp="1580071914695" />
+    <state x="391" y="53" key="#Unnamed" timestamp="1585133735919">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="391" y="53" key="#Unnamed/47.23.1633.1027@47.23.1633.1027" timestamp="1585133735919" />
+    <state x="688" y="427" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580034880785">
+      <screen x="51" y="23" width="1629" height="1027" />
+    </state>
+    <state x="688" y="427" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/51.23.1629.1027@51.23.1629.1027" timestamp="1580034880785" />
+    <state x="478" y="51" key="CommitChangelistDialog2" timestamp="1585160058763">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="478" y="51" key="CommitChangelistDialog2/47.23.1633.1027@47.23.1633.1027" timestamp="1585160058763" />
+    <state x="481" y="73" key="CommitChangelistDialog2/51.23.1629.1027@51.23.1629.1027" timestamp="1580072969151" />
+    <state x="240" y="129" key="DiffContextDialog" timestamp="1585160057093">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="240" y="129" key="DiffContextDialog/47.23.1633.1027@47.23.1633.1027" timestamp="1585160057093" />
+    <state width="1577" height="456" key="GridCell.Tab.0.bottom" timestamp="1585160145903">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1577" height="456" key="GridCell.Tab.0.bottom/47.23.1633.1027@47.23.1633.1027" timestamp="1585160145903" />
+    <state width="1577" height="451" key="GridCell.Tab.0.bottom/51.23.1629.1027@51.23.1629.1027" timestamp="1580072451787" />
+    <state width="1577" height="451" key="GridCell.Tab.0.bottom/868.1463.1680.1027/58.23.3382.1417@58.23.3382.1417" timestamp="1580134950540" />
+    <state width="1577" height="456" key="GridCell.Tab.0.center" timestamp="1585160145902">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1577" height="456" key="GridCell.Tab.0.center/47.23.1633.1027@47.23.1633.1027" timestamp="1585160145902" />
+    <state width="1577" height="451" key="GridCell.Tab.0.center/51.23.1629.1027@51.23.1629.1027" timestamp="1580072451785" />
+    <state width="1577" height="451" key="GridCell.Tab.0.center/868.1463.1680.1027/58.23.3382.1417@58.23.3382.1417" timestamp="1580134950539" />
+    <state width="1577" height="456" key="GridCell.Tab.0.left" timestamp="1585160145901">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1577" height="456" key="GridCell.Tab.0.left/47.23.1633.1027@47.23.1633.1027" timestamp="1585160145901" />
+    <state width="1577" height="451" key="GridCell.Tab.0.left/51.23.1629.1027@51.23.1629.1027" timestamp="1580072451784" />
+    <state width="1577" height="451" key="GridCell.Tab.0.left/868.1463.1680.1027/58.23.3382.1417@58.23.3382.1417" timestamp="1580134950538" />
+    <state width="1577" height="456" key="GridCell.Tab.0.right" timestamp="1585160145902">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state width="1577" height="456" key="GridCell.Tab.0.right/47.23.1633.1027@47.23.1633.1027" timestamp="1585160145902" />
+    <state width="1577" height="451" key="GridCell.Tab.0.right/51.23.1629.1027@51.23.1629.1027" timestamp="1580072451786" />
+    <state width="1577" height="451" key="GridCell.Tab.0.right/868.1463.1680.1027/58.23.3382.1417@58.23.3382.1417" timestamp="1580134950539" />
+    <state x="676" y="202" key="RollbackChangesDialog" timestamp="1580071855827">
+      <screen x="51" y="23" width="1629" height="1027" />
+    </state>
+    <state x="676" y="202" key="RollbackChangesDialog/51.23.1629.1027@51.23.1629.1027" timestamp="1580071855827" />
+    <state x="262" y="23" width="1280" height="1027" key="SettingsEditor" timestamp="1585135065679">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="262" y="23" width="1280" height="1027" key="SettingsEditor/47.23.1633.1027@47.23.1633.1027" timestamp="1585135065679" />
+    <state x="265" y="23" width="1280" height="1027" key="SettingsEditor/51.23.1629.1027@51.23.1629.1027" timestamp="1580072896054" />
+    <state x="365" y="213" key="Vcs.Push.Dialog.v2" timestamp="1580072515788">
+      <screen x="51" y="23" width="1629" height="1027" />
+    </state>
+    <state x="365" y="213" key="Vcs.Push.Dialog.v2/51.23.1629.1027@51.23.1629.1027" timestamp="1580072515788" />
+    <state x="530" y="418" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585133954820">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="530" y="418" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/47.23.1633.1027@47.23.1633.1027" timestamp="1585133954820" />
+    <state x="446" y="23" key="search.everywhere.popup" timestamp="1585157341308">
+      <screen x="47" y="23" width="1633" height="1027" />
+    </state>
+    <state x="446" y="23" key="search.everywhere.popup/47.23.1633.1027@47.23.1633.1027" timestamp="1585157341308" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java</url>
           <line>74</line>
-          <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java</url>
-          <line>142</line>
-          <properties />
+          <line>141</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ClassDesc.java</url>
           <line>292</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/observavble.js" />
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/streaming.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="66" selection-start-column="66" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/observable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/PersonReflectionBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsReflectionResource.java" />
-    <entry file="file://$PROJECT_DIR$/quarkus/quarkus.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rx/observables/connectable/HotObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7.jar!/rx/subjects/PublishSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7.jar!/rx/subjects/Subject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.7/rxjava-1.1.7.jar!/rx/Observer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0.jar!/io/vavr/control/Try.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding>
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0.jar!/io/vavr/API.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="986" column="35" selection-start-line="986" selection-start-column="35" selection-end-line="986" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/control/Try.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="811" column="41" selection-start-line="811" selection-start-column="41" selection-end-line="811" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="1204" column="29" selection-start-line="1204" selection-start-column="29" selection-end-line="1204" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="789" column="45" selection-start-line="789" selection-start-column="45" selection-end-line="789" selection-end-column="45" />
-          <folding>
-            <element signature="e#27686#27687#0" expanded="true" />
-            <element signature="e#27749#27750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Lazy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/control/Either.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="1162" column="16" selection-start-line="1162" selection-start-column="16" selection-end-line="1162" selection-end-column="16" />
-          <folding>
-            <element signature="e#2627#2628#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#30132#30133#0" expanded="true" />
-            <element signature="e#30176#30177#0" expanded="true" />
-            <element signature="e#40291#40292#0" expanded="true" />
-            <element signature="e#40333#40334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/concurrent/Future.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding>
-            <element signature="e#52548#52549#0" expanded="true" />
-            <element signature="e#52601#52602#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/vavr.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
-          <folding>
-            <element signature="e#5615#5616#0" expanded="true" />
-            <element signature="e#5652#5653#0" expanded="true" />
-            <element signature="e#6809#6810#0" expanded="true" />
-            <element signature="e#6867#6868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/collection/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="139" column="31" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="31" />
-          <folding>
-            <element signature="e#3990#3991#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.0/vavr-0.10.0-sources.jar!/io/vavr/Function2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="162" column="29" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
-          <folding>
-            <element signature="e#6289#6290#0" expanded="true" />
-            <element signature="e#6336#6337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/PolitronsQuarkusResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/service/PolitronsQuarkusService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/java8/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsHealthCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsQuarkusResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1555238402970" expanded="true" signature="1909:2014" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micronaut/micronaut.iml" />
-    <entry file="file://$PROJECT_DIR$/micronaut/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/micronaut/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/micronaut/src/main/java/com/politrons/app/MainApp.java" />
-    <entry file="file://$PROJECT_DIR$/micronaut/src/main/java/com/politrons/resources/HelloController.java" />
-    <entry file="file://$PROJECT_DIR$/quarkus/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1035">
-            <caret line="69" column="35" selection-start-line="69" selection-end-line="70" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/java/com/politrons/quarkus/resource/PolitronsVertxResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="13" selection-start-line="102" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/NativePolitronsQuarkusResourceIT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/micronaut.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="294">
-            <caret line="137" column="51" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="51" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>quarkus</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -217,6 +217,16 @@ The most important features with particle examples of how to use it.
 * [String API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L50)
 * [JVM Constants API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L101)
 
+## Java 14
+
+![My image](src/main/resources/img/j14.png)
+
+The most important features with particle examples of how to use it.
+
+* [Pattern matching](src/test/java/java14/Java14Features.java)
+* [Multiline text](src/test/java/java14/Java14Features.java)
+* [Record type](src/test/java/java14/Java14Features.java)
+
 
 ## Software craftsmanship
 

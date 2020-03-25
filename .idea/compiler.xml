@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="getting-started" />
         <module name="quarkus" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="12">
-      <module name="micronaut" target="10" />
+    <bytecodeTargetLevel target="14">
+      <module name="getting-started" target="14" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
