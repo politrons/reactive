@@ -227,6 +227,12 @@ The most important features with particle examples of how to use it.
 * [Multiline text](https://github.com/politrons/reactive/blob/master/src/test/java/java14/Java14Features.java#L31)
 * [Record type](https://github.com/politrons/reactive/blob/master/src/test/java/java14/Java14Features.java#L54)
 
+## Java 15
+
+The most important features with particle examples of how to use it.
+
+* [Sealed class](src/test/java/java15/Java15Features.java)
+
 
 ## Software craftsmanship
 

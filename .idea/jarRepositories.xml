@@ -2,9 +2,9 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="snapshots" />
-      <option name="name" value="snapshots_mvn_ModelBank" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/snapshots_mvn_ModelBank" />
+      <option name="id" value="releases" />
+      <option name="name" value="releases_mvn_all" />
+      <option name="url" value="https://artifactory.ing.net/artifactory/releases_mvn_all" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -13,23 +13,28 @@
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
-      <option name="name" value="Maven Central repository" />
-      <option name="url" value="https://repo1.maven.org/maven2" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="releases" />
-      <option name="name" value="releases_mvn_all" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/releases_mvn_all" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://artifactory.ing.net/artifactory/mvnpublic" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/mvnpublic" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="bintray" />
+      <option name="url" value="https://jcenter.bintray.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="snapshots_mvn_ModelBank" />
+      <option name="url" value="https://artifactory.ing.net/artifactory/snapshots_mvn_ModelBank" />
     </remote-repository>
   </component>
 </project>
