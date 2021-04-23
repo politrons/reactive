@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 14 features">
-      <change afterPath="$PROJECT_DIR$/src/test/java/java15/Java15Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/getting-started.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,28 +111,33 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Java15Features.sealedFeature">
+  <component name="RunManager" selected="JUnit.Java15Features">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java14Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java14" />
-      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
     </configuration>
     <configuration name="Java14Features.patternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
@@ -188,6 +185,22 @@
       <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
       <option name="METHOD_NAME" value="textBlocks" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java15Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java15" />
+      <option name="MAIN_CLASS_NAME" value="java15.Java15Features" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,23 +266,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Java14Features" />
       <item itemvalue="JUnit.Java14Features.patternMatching" />
       <item itemvalue="JUnit.Java14Features.recordType" />
       <item itemvalue="JUnit.Java14Features.textBlocks" />
-      <item itemvalue="Maven.install no test" />
       <item itemvalue="JUnit.Java15Features.sealedFeature" />
+      <item itemvalue="Maven.install no test" />
+      <item itemvalue="JUnit.Java15Features" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Java15Features" />
         <item itemvalue="JUnit.Java15Features.sealedFeature" />
         <item itemvalue="JUnit.Java14Features.textBlocks" />
         <item itemvalue="JUnit.Java14Features.recordType" />
         <item itemvalue="JUnit.Java14Features.patternMatching" />
-        <item itemvalue="JUnit.Java14Features" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -280,13 +294,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Java 11 features">
-      <created>1538901105102</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1538901105102</updated>
     </task>
     <task id="LOCAL-00021" summary="Java 11 features">
       <created>1538901135285</created>
@@ -624,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585160577605</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Java 14 features">
+      <created>1604314260764</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1604314260764</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -644,26 +658,34 @@
       <screen x="55" y="23" width="1385" height="877" />
     </state>
     <state x="347" y="109" key="#Plugins/55.23.1385.877@55.23.1385.877" timestamp="1604313049922" />
-    <state width="1343" height="403" key="GridCell.Tab.0.bottom" timestamp="1604313493363">
+    <state x="324" y="37" key="CommitChangelistDialog2" timestamp="1604314260424">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.bottom/55.23.1385.877@55.23.1385.877" timestamp="1604313493363" />
-    <state width="1343" height="403" key="GridCell.Tab.0.center" timestamp="1604313493363">
+    <state x="324" y="37" key="CommitChangelistDialog2/55.23.1385.877@55.23.1385.877" timestamp="1604314260424" />
+    <state width="1343" height="403" key="GridCell.Tab.0.bottom" timestamp="1604699479490">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.center/55.23.1385.877@55.23.1385.877" timestamp="1604313493363" />
-    <state width="1343" height="403" key="GridCell.Tab.0.left" timestamp="1604313493362">
+    <state width="1343" height="403" key="GridCell.Tab.0.bottom/55.23.1385.877@55.23.1385.877" timestamp="1604699479490" />
+    <state width="1343" height="403" key="GridCell.Tab.0.center" timestamp="1604699479488">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.left/55.23.1385.877@55.23.1385.877" timestamp="1604313493362" />
-    <state width="1343" height="403" key="GridCell.Tab.0.right" timestamp="1604313493363">
+    <state width="1343" height="403" key="GridCell.Tab.0.center/55.23.1385.877@55.23.1385.877" timestamp="1604699479488" />
+    <state width="1343" height="403" key="GridCell.Tab.0.left" timestamp="1604699479487">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.right/55.23.1385.877@55.23.1385.877" timestamp="1604313493363" />
+    <state width="1343" height="403" key="GridCell.Tab.0.left/55.23.1385.877@55.23.1385.877" timestamp="1604699479487" />
+    <state width="1343" height="403" key="GridCell.Tab.0.right" timestamp="1604699479489">
+      <screen x="55" y="23" width="1385" height="877" />
+    </state>
+    <state width="1343" height="403" key="GridCell.Tab.0.right/55.23.1385.877@55.23.1385.877" timestamp="1604699479489" />
     <state x="235" y="43" key="SettingsEditor" timestamp="1604313100040">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
     <state x="235" y="43" key="SettingsEditor/55.23.1385.877@55.23.1385.877" timestamp="1604313100040" />
+    <state x="347" y="201" key="Vcs.Push.Dialog.v2" timestamp="1604314262188">
+      <screen x="55" y="23" width="1385" height="877" />
+    </state>
+    <state x="347" y="201" key="Vcs.Push.Dialog.v2/55.23.1385.877@55.23.1385.877" timestamp="1604314262188" />
     <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1604313281696">
       <screen x="55" y="23" width="1385" height="877" />
     </state>
