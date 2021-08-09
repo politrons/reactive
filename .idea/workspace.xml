@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 14 features">
+    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 15 features">
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java16/Java16Features.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java15/Java15Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java15/Java15Features.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -82,7 +86,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551613624897" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -111,13 +115,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Java15Features">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Java16Features.recordClass">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -139,84 +137,56 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Java14Features.patternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java16Features" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java14" />
-      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
-      <option name="METHOD_NAME" value="patternMatching" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java14Features.recordType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java14" />
-      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
-      <option name="METHOD_NAME" value="recordType" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java14Features.textBlocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompletableFutureFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java14" />
-      <option name="MAIN_CLASS_NAME" value="java14.Java14Features" />
-      <option name="METHOD_NAME" value="textBlocks" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Java15Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java15" />
-      <option name="MAIN_CLASS_NAME" value="java15.Java15Features" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.CompletableFutureFeature" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java15Features.sealedFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Functions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java15" />
-      <option name="MAIN_CLASS_NAME" value="java15.Java15Features" />
-      <option name="METHOD_NAME" value="sealedFeature" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.Functions" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java16Features.newPatternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="java16" />
+      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
+      <option name="METHOD_NAME" value="newPatternMatching" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java16Features.recordClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="java16" />
+      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
+      <option name="METHOD_NAME" value="recordClass" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -266,20 +236,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Java14Features.patternMatching" />
-      <item itemvalue="JUnit.Java14Features.recordType" />
-      <item itemvalue="JUnit.Java14Features.textBlocks" />
-      <item itemvalue="JUnit.Java15Features.sealedFeature" />
       <item itemvalue="Maven.install no test" />
-      <item itemvalue="JUnit.Java15Features" />
+      <item itemvalue="JUnit.CompletableFutureFeature" />
+      <item itemvalue="JUnit.Functions" />
+      <item itemvalue="Application.Java16Features" />
+      <item itemvalue="JUnit.Java16Features.newPatternMatching" />
+      <item itemvalue="JUnit.Java16Features.recordClass" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Java15Features" />
-        <item itemvalue="JUnit.Java15Features.sealedFeature" />
-        <item itemvalue="JUnit.Java14Features.textBlocks" />
-        <item itemvalue="JUnit.Java14Features.recordType" />
-        <item itemvalue="JUnit.Java14Features.patternMatching" />
+        <item itemvalue="JUnit.Java16Features.recordClass" />
+        <item itemvalue="JUnit.Java16Features.newPatternMatching" />
+        <item itemvalue="Application.Java16Features" />
+        <item itemvalue="JUnit.Functions" />
+        <item itemvalue="JUnit.CompletableFutureFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -294,13 +264,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Java 11 features">
-      <created>1538901135285</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1538901135285</updated>
     </task>
     <task id="LOCAL-00022" summary="Java 11 features">
       <created>1543790975114</created>
@@ -638,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604314260764</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Java 15 features">
+      <created>1619200317919</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1619200317920</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -651,45 +621,8 @@
     <MESSAGE value="Add vertx integration" />
     <MESSAGE value="Add vavr examples" />
     <MESSAGE value="Java 14 features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java 14 features" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="347" y="109" key="#Plugins" timestamp="1604313049922">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state x="347" y="109" key="#Plugins/55.23.1385.877@55.23.1385.877" timestamp="1604313049922" />
-    <state x="324" y="37" key="CommitChangelistDialog2" timestamp="1604314260424">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state x="324" y="37" key="CommitChangelistDialog2/55.23.1385.877@55.23.1385.877" timestamp="1604314260424" />
-    <state width="1343" height="403" key="GridCell.Tab.0.bottom" timestamp="1604699479490">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.bottom/55.23.1385.877@55.23.1385.877" timestamp="1604699479490" />
-    <state width="1343" height="403" key="GridCell.Tab.0.center" timestamp="1604699479488">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.center/55.23.1385.877@55.23.1385.877" timestamp="1604699479488" />
-    <state width="1343" height="403" key="GridCell.Tab.0.left" timestamp="1604699479487">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.left/55.23.1385.877@55.23.1385.877" timestamp="1604699479487" />
-    <state width="1343" height="403" key="GridCell.Tab.0.right" timestamp="1604699479489">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state width="1343" height="403" key="GridCell.Tab.0.right/55.23.1385.877@55.23.1385.877" timestamp="1604699479489" />
-    <state x="235" y="43" key="SettingsEditor" timestamp="1604313100040">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state x="235" y="43" key="SettingsEditor/55.23.1385.877@55.23.1385.877" timestamp="1604313100040" />
-    <state x="347" y="201" key="Vcs.Push.Dialog.v2" timestamp="1604314262188">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state x="347" y="201" key="Vcs.Push.Dialog.v2/55.23.1385.877@55.23.1385.877" timestamp="1604314262188" />
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1604313281696">
-      <screen x="55" y="23" width="1385" height="877" />
-    </state>
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup/55.23.1385.877@55.23.1385.877" timestamp="1604313281696" />
+    <MESSAGE value="Java 15 features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 15 features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

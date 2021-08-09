@@ -233,6 +233,13 @@ The most important features with particle examples of how to use it.
 
 * [Sealed class](src/test/java/java15/Java15Features.java)
 
+## Java 16
+
+![My image](src/main/resources/img/16.png)
+
+The most important features with particle examples of how to use it.
+
+* [Features](src/test/java/java16/Java16Features.java)
 
 ## Software craftsmanship
 
