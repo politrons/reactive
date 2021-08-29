@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="Java 15 features">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pabloperezgarcia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/pabloperezgarcia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java15/Java15Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java15/Java15Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/Functions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
+    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,13 +281,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Java 11 features">
-      <created>1543790975114</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1543790975114</updated>
     </task>
     <task id="LOCAL-00023" summary="Java 11 features">
       <created>1543791197670</created>
@@ -631,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619200317920</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Java 15 features">
+      <created>1630233796414</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1630233796414</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
