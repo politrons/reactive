@@ -6,7 +6,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class CollectionFeatures {
 
@@ -28,6 +31,14 @@ public class CollectionFeatures {
 
         var stringArray2 = words.toArray(String[]::new);
         System.out.println(Arrays.toString(stringArray2));
+
+        List<String> collect = List.of("hello", "collection", "world")
+                .stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
+
+        System.out.println(collect);
+
 
     }
 

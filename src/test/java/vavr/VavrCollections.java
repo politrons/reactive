@@ -1,11 +1,22 @@
 package vavr;
 
+import io.vavr.API;
+import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
+import io.vavr.collection.Map;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.function.Function;
+
+import static io.vavr.API.*;
 
 public class VavrCollections {
+
+    Map<String, String> actors = HashMap.of(
+            "episode1", "Anakin, Owi-wan, Qui-Gon-Jin",
+            "episode2", "Anakin, Owi-wan, Mace-Windu",
+            "episode3", "Anakin, Owi-wan, Palpatine");
 
     @Test
     public void listFeatures() {
@@ -23,4 +34,12 @@ public class VavrCollections {
                         });
         System.out.println(integers);
     }
+
+    @Test
+    public void foldFeature() {
+        StringBuffer stringBuffer = List.of(1, 2, 3, 4)
+                .foldLeft(new StringBuffer(), (acc, next) -> acc.append("-").append(next));
+        println(stringBuffer.toString());
+    }
+
 }

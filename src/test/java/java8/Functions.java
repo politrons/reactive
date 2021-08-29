@@ -121,7 +121,37 @@ public class Functions {
 
     @Test
     public void supplier() {
+        System.out.println(splitWordsFunction().apply("hello world"));
+    }
 
+
+    @Test
+    public void ifReturnFunction() {
+        String result = ifFunction.apply(true);
+        System.out.println(result);
+        String result1 = ifMethod(false);
+        System.out.println(result1);
+    }
+
+    /**
+     * In Java since if statement is not a function we have to create one, in order to being able
+     * to return a value from an if and assign into a variable.
+     * Of course the classic way is to create a simple method
+     */
+    Function<Boolean, String> ifFunction = a -> {
+        if (a) {
+            return "Value 1";
+        } else {
+            return "Value 2";
+        }
+    };
+
+    public String ifMethod(Boolean a) {
+        if (a) {
+            return "Value 1";
+        } else {
+            return "Value 2";
+        }
     }
 
 
