@@ -1,7 +1,6 @@
 package eclipse_collection;
 
 import org.eclipse.collections.api.bag.ImmutableBag;
-import org.eclipse.collections.api.bag.MutableBag;
 import org.eclipse.collections.api.factory.Lists;
 import org.eclipse.collections.api.factory.Maps;
 import org.eclipse.collections.api.list.ImmutableList;
@@ -12,8 +11,6 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.OptionalInt;
-import java.util.function.IntSupplier;
-import java.util.function.Supplier;
 
 /**
  * https://www.eclipse.org/collections/
@@ -27,8 +24,15 @@ public class EclipseCollectionFeature {
     public void listFeature() {
         /**
          * Constructor to create an empty [ImmutableList] of Eclipse collection.
+         * Once we have it we can create a new collection adding new element using [newWith]
+         * Also Eclipse collection provide some operators to get first and last element like in Scala with
+         * [getFirstOptional] and [getLastOptional]
          */
         ImmutableList<String> immutableListEmpty = Lists.immutable.empty();
+        var newList = immutableListEmpty.newWith("New element");
+        var newList1 = newList.newWith("last element");
+        System.out.println(newList1.getFirstOptional());
+        System.out.println(newList1.getLastOptional());
 
         /**
          * We can transform the Eclipse collection into Java stream just using  [stream] operator.
@@ -63,11 +67,19 @@ public class EclipseCollectionFeature {
         System.out.println(first.orElse(0));
     }
 
+    /**
+     * With Map, it works exactly the same, it provides a functional API without have to use [Stream]
+     * In this example we create an immutable map which means once is created you cannot add any new entry in it.
+     * Here in order to add a new entry in the map it would be using [newWithKeyValue] which allow you to add a new key, value
+     * and return a new Map with previous entry and new one.
+     */
     @Test
     public void mapFeature() {
 
         final ImmutableMap<String, Integer> map = Maps.immutable.of("key1", 1981, "key2", 666, "key3", 1000);
+        final ImmutableMap<String, Integer> newMap = map.newWithKeyValue("newKey", 3000);
         System.out.println(map);
+        System.out.println(newMap);
 
         final ImmutableBag<Integer> select = Maps.immutable.of("key1", 1981, "key2", 666, "key3", 1000)
                 .select(value -> value >= 1000);
