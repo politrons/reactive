@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/PolitronsQuarkusResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/src/test/java/com/politrons/quarkus/PolitronsQuarkusResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +76,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+        <option name="localRepository" value="$PROJECT_DIR$/../.m2/repository" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../.m2/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -101,8 +116,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15349545" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.3462604" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -128,7 +143,13 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionFeatures.copyIntoNewArray">
+  <component name="RunManager" selected="JUnit.EclipseCollectionFeature.mapFeature">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -147,14 +168,10 @@
       <setting name="port" value="0" />
       <setting name="replType" value="SOCKET" />
       <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="CollectionFeatures.copyIntoNewArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
@@ -167,22 +184,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Functions.ifReturnFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EclipseCollectionFeature.listFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.Functions" />
-      <option name="METHOD_NAME" value="ifReturnFunction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eclipse_collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eclipse_collection" />
+      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
+      <option name="METHOD_NAME" value="listFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Functions.supplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EclipseCollectionFeature.mapFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.Functions" />
-      <option name="METHOD_NAME" value="supplier" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eclipse_collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eclipse_collection" />
+      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
+      <option name="METHOD_NAME" value="mapFeature" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EclipseCollectionFeature.primitiveListFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eclipse_collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eclipse_collection" />
+      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
+      <option name="METHOD_NAME" value="primitiveListFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -194,17 +240,6 @@
       <option name="PACKAGE_NAME" value="java16" />
       <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VavrCollections.foldFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
-      <option name="METHOD_NAME" value="foldFeature" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,19 +289,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Java16Features" />
-      <item itemvalue="Maven.install no test" />
-      <item itemvalue="JUnit.VavrCollections.foldFeature" />
-      <item itemvalue="JUnit.Functions.supplier" />
-      <item itemvalue="JUnit.Functions.ifReturnFunction" />
       <item itemvalue="JUnit.CollectionFeatures.copyIntoNewArray" />
+      <item itemvalue="Maven.install no test" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.primitiveListFeature" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionFeatures.copyIntoNewArray" />
-        <item itemvalue="JUnit.Functions.ifReturnFunction" />
-        <item itemvalue="JUnit.Functions.supplier" />
-        <item itemvalue="JUnit.VavrCollections.foldFeature" />
+        <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
+        <item itemvalue="JUnit.EclipseCollectionFeature.primitiveListFeature" />
+        <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
         <item itemvalue="JUnit.Java16Features" />
+        <item itemvalue="JUnit.CollectionFeatures.copyIntoNewArray" />
       </list>
     </recent_temporary>
   </component>
