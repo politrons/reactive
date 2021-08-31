@@ -241,6 +241,13 @@ The most important features with particle examples of how to use it.
 
 * [Features](src/test/java/java16/Java16Features.java)
 
+
+## ![My image](src/main/resources/img/eclipse.png)
+Eclipse Collections is one of the best Java collections framework ever that brings happiness to your Java development.
+
+
+* [feature](src/test/java/eclipse_collection/EclipseCollectionFeature.java)
+
 ## Software craftsmanship
 
 * [(S)ingle responsibility principle](src/test/java/good_practices/SRP.java)

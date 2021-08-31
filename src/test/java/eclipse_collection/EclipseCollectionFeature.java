@@ -5,12 +5,18 @@ import org.eclipse.collections.api.factory.Lists;
 import org.eclipse.collections.api.factory.Maps;
 import org.eclipse.collections.api.list.ImmutableList;
 import org.eclipse.collections.api.list.MutableList;
+import org.eclipse.collections.api.list.primitive.ImmutableIntList;
 import org.eclipse.collections.api.map.ImmutableMap;
 import org.eclipse.collections.impl.factory.primitive.IntLists;
+import org.eclipse.collections.impl.list.primitive.IntInterval;
 import org.junit.Test;
 
+import java.sql.Time;
 import java.util.List;
 import java.util.OptionalInt;
+import java.util.PrimitiveIterator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * https://www.eclipse.org/collections/
@@ -86,5 +92,58 @@ public class EclipseCollectionFeature {
         System.out.println(select);
 
     }
+
+    /**
+     * [TypeInterval] with fromTo arguments, provide an enrich Iterable of one particular type,
+     * which implement useful features like:
+     * * [getFirst] get the first element of the iterable
+     * * [getLast] get the last element of the iterable
+     * * [allSatisfy] passing a predicate function check that all elements pass the condition and return true or false.
+     * We can also can do some maths calc like [min, max, average, median] of the elements in the iterator.
+     * * [select] to create a new [ImmutableIntList] with the elements that poss the predicate function.
+     */
+    @Test
+    public void intervalFeature() {
+        final IntInterval intInterval = IntInterval.fromTo(1, 10);
+        final int i = intInterval.get(0);
+        System.out.println(i);
+        final int first = intInterval.getFirst();
+        System.out.println(first);
+        final int last = intInterval.getLast();
+        System.out.println(last);
+        final boolean result = intInterval.allSatisfy(number -> number < 100);
+        System.out.println(result);
+        System.out.println("Median:" + intInterval.median());
+        System.out.println("Average:" + intInterval.average());
+        final ImmutableIntList select = intInterval.select(number -> number <= 5);
+        System.out.println(select);
+    }
+
+    /**
+     * One of the greatest feature of Eclipse collection is the memory consumption, and the performance.
+     * Here for instance we use the operator [binarySearch] to use the binarySearch algorithm to find an element
+     * in the collection.
+     * Compare with the [filter] of Stream we see that is so much worst in terms of perforance.
+     * Result:
+     * BigO time:3677 result:999999
+     * BigO time:6401460 result:1000000
+     */
+    @Test
+    public void performanceFeature() {
+        final IntInterval intInterval = IntInterval.fromTo(1, 1000000000);
+
+        var start = System.nanoTime();
+        final int result = intInterval.binarySearch(1000000);
+        System.out.println("BigO time:" + (System.nanoTime() - start) + " result:" + result);
+
+        final IntStream range = IntStream.range(1, 1000000000);
+
+        var start2 = System.nanoTime();
+        var result1 = range.filter(number -> number == 1000000).findFirst().getAsInt();
+        System.out.println("BigO time:" + (System.nanoTime() - start2) + " result:" + result1);
+
+
+    }
+
 
 }

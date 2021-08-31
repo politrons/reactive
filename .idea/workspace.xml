@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EclipseCollectionFeature.listFeature">
+  <component name="RunManager" selected="JUnit.EclipseCollectionFeature.performanceFeature">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -167,11 +168,17 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="CollectionFeatures.copyIntoNewArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EclipseCollectionFeature.intervalFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java11" />
-      <option name="MAIN_CLASS_NAME" value="java11.CollectionFeatures" />
-      <option name="METHOD_NAME" value="copyIntoNewArray" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eclipse_collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eclipse_collection" />
+      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
+      <option name="METHOD_NAME" value="intervalFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -195,6 +202,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EclipseCollectionFeature.listRangeFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eclipse_collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eclipse_collection" />
+      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
+      <option name="METHOD_NAME" value="listRangeFeature" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EclipseCollectionFeature.mapFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -212,7 +236,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EclipseCollectionFeature.primitiveListFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EclipseCollectionFeature.performanceFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -222,18 +246,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="eclipse_collection" />
       <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="primitiveListFeature" />
+      <option name="METHOD_NAME" value="performanceFeature" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Java16Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java16" />
-      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -282,20 +296,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Java16Features" />
-      <item itemvalue="JUnit.CollectionFeatures.copyIntoNewArray" />
       <item itemvalue="Maven.install no test" />
       <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.primitiveListFeature" />
       <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.listRangeFeature" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.intervalFeature" />
+      <item itemvalue="JUnit.EclipseCollectionFeature.performanceFeature" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EclipseCollectionFeature.performanceFeature" />
+        <item itemvalue="JUnit.EclipseCollectionFeature.intervalFeature" />
+        <item itemvalue="JUnit.EclipseCollectionFeature.listRangeFeature" />
         <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
         <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
-        <item itemvalue="JUnit.EclipseCollectionFeature.primitiveListFeature" />
-        <item itemvalue="JUnit.Java16Features" />
-        <item itemvalue="JUnit.CollectionFeatures.copyIntoNewArray" />
       </list>
     </recent_temporary>
   </component>
@@ -310,13 +324,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522870423220</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Java 11 features">
-      <created>1543832125122</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1543832125122</updated>
     </task>
     <task id="LOCAL-00025" summary="Java 11 features">
       <created>1543832169165</created>
@@ -654,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630322747395</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Add Eclipse collection">
+      <created>1630328585863</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1630328585863</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
