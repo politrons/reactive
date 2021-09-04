@@ -3,11 +3,30 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BspLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../reactiveScala/ZIOHttpFeatures" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../scala3/scala3_features" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/akka/AkkaFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pabloperezgarcia.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/reactive.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,58 +36,10 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="ElmWorkspace">
-    <elmProjects />
-    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="resilience4j-features" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="resilience4j-features" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>@since 11</find>
-      <find>@since</find>
-      <find>reactor</find>
-      <find>reactor-core</find>
-      <find>Publisher</find>
-      <find>vavr</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="politrons &lt;politrons@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -79,18 +50,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="$PROJECT_DIR$/../.m2/repository" />
-        <option name="userSettingsFile" value="$PROJECT_DIR$/../.m2/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1WvfCkohBKWkISVrlGubY9CgWK2" />
+  <component name="ProjectId" id="1xfYBRJDMUfjA5UvAemcqNVVcCH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -99,155 +62,37 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551613624897" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15349545" />
-    <property name="project.structure.side.proportion" value="0.3462604" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.politrons.quarkus" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/quarkus/src/main/resources/META-INF/resources" />
-      <recent name="$PROJECT_DIR$/src/test/java/rsocket" />
-      <recent name="$PROJECT_DIR$/src/test/java/java11" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="vavr" />
-      <recent name="com.politrons.quarkus.resource" />
-      <recent name="rsocket" />
-      <recent name="java11" />
-      <recent name="org.java11.features" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/img" />
-      <recent name="$PROJECT_DIR$/quarkus" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/org/java11/features" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.EclipseCollectionFeature.performanceFeature">
+  <component name="RunManager" selected="JUnit.ObservableChain">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="replType" value="NREPL" />
-      <setting name="execution" value="LEININGEN" />
-      <setting name="jvmArgs" value="" />
-      <setting name="parameters" value="" />
-      <setting name="workingDir" value="" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="host" value="" />
-      <setting name="port" value="0" />
-      <setting name="replType" value="SOCKET" />
-      <setting name="configType" value="SPECIFY" />
-      <setting name="replPortFileType" value="STANDARD" />
-      <setting name="customPortFile" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="EclipseCollectionFeature.intervalFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AkkaFeatures.akkaFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eclipse_collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eclipse_collection" />
-      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="intervalFeature" />
+      <option name="PACKAGE_NAME" value="akka" />
+      <option name="MAIN_CLASS_NAME" value="akka.AkkaFeatures" />
+      <option name="METHOD_NAME" value="akkaFeatures" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EclipseCollectionFeature.listFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObservableChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eclipse_collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eclipse_collection" />
-      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="listFeature" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EclipseCollectionFeature.listRangeFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eclipse_collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eclipse_collection" />
-      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="listRangeFeature" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EclipseCollectionFeature.mapFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eclipse_collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eclipse_collection" />
-      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="mapFeature" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EclipseCollectionFeature.performanceFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eclipse_collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eclipse_collection" />
-      <option name="MAIN_CLASS_NAME" value="eclipse_collection.EclipseCollectionFeature" />
-      <option name="METHOD_NAME" value="performanceFeature" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="rx.observables.combining" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableChain" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,30 +105,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="install no test" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="install" />
-                <option value="-DskipTests" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -295,415 +146,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.install no test" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.listRangeFeature" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.intervalFeature" />
-      <item itemvalue="JUnit.EclipseCollectionFeature.performanceFeature" />
-    </list>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EclipseCollectionFeature.performanceFeature" />
-        <item itemvalue="JUnit.EclipseCollectionFeature.intervalFeature" />
-        <item itemvalue="JUnit.EclipseCollectionFeature.listRangeFeature" />
-        <item itemvalue="JUnit.EclipseCollectionFeature.listFeature" />
-        <item itemvalue="JUnit.EclipseCollectionFeature.mapFeature" />
+        <item itemvalue="JUnit.ObservableChain" />
+        <item itemvalue="JUnit.AkkaFeatures.akkaFeatures" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2aeb5597-0254-4100-b90f-a3e89ee1750a" name="Default" comment="" />
-      <created>1522870423220</created>
+      <changelist id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="" />
+      <created>1630747478454</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1522870423220</updated>
+      <updated>1630747478454</updated>
     </task>
-    <task id="LOCAL-00025" summary="Java 11 features">
-      <created>1543832169165</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1543832169165</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Java 11 features">
-      <created>1543832262331</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1543832262331</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Java 11 features">
-      <created>1543879891253</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1543879891253</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Java 11 features">
-      <created>1543880104465</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1543880104465</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Java 11 features">
-      <created>1543916479880</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1543916479880</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Java 11 features">
-      <created>1543916661550</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1543916661550</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Java 11 features">
-      <created>1543916744160</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1543916744160</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Java 11 features">
-      <created>1543918958884</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1543918958884</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Java 11 features">
-      <created>1543919063417</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1543919063417</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Java 11 features">
-      <created>1543919143315</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1543919143315</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Combining reactive monads">
-      <created>1543919670479</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1543919670479</updated>
-    </task>
-    <task id="LOCAL-00036" summary="RSocket">
-      <created>1546342775264</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1546342775264</updated>
-    </task>
-    <task id="LOCAL-00037" summary="RSocket">
-      <created>1546347454385</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1546347454385</updated>
-    </task>
-    <task id="LOCAL-00038" summary="RSocket">
-      <created>1553337058743</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1553337058743</updated>
-    </task>
-    <task id="LOCAL-00039" summary="RSocket">
-      <created>1553337622050</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1553337622050</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Add Quarkus">
-      <created>1555234261533</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1555234261533</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Add Quarkus">
-      <created>1555234504671</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1555234504671</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Add Quarkus async">
-      <created>1555235223132</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1555235223132</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Add Quarkus async">
-      <created>1555237985189</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1555237985189</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Add Quarkus async">
-      <created>1555239858425</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1555239858425</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Add Quarkus async">
-      <created>1555239980224</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1555239980224</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Add Quarkus async">
-      <created>1555240394874</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1555240394874</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Add Quarkus async">
-      <created>1555257936718</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1555257936718</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Add Quarkus async">
-      <created>1555257975193</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1555257975193</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add Quarkus async">
-      <created>1555671650308</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1555671650308</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Add Quarkus async">
-      <created>1555672110136</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1555672110136</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Add vertx integration">
-      <created>1555674164822</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1555674164822</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Add vertx integration">
-      <created>1555674668117</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1555674668117</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Add vertx integration">
-      <created>1555675698966</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1555675698966</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Add vertx integration">
-      <created>1555677099029</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1555677099029</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Add vertx integration">
-      <created>1555677164744</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1555677164745</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Add vertx integration">
-      <created>1555677236540</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1555677236540</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Add vertx integration">
-      <created>1555677652646</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1555677652646</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Add vertx integration">
-      <created>1555677698790</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1555677698790</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Add vertx integration">
-      <created>1557940251056</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1557940251057</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Add vavr examples">
-      <created>1557940342736</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1557940342736</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Add vavr examples">
-      <created>1557940672162</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1557940672163</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Add vavr examples">
-      <created>1557940735770</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1557940735770</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Add vavr examples">
-      <created>1557941174490</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1557941174490</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Add vavr examples">
-      <created>1557954685539</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1557954685539</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Add vavr examples">
-      <created>1580072513607</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1580072513609</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Java 14 features">
-      <created>1585160413148</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1585160413149</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Java 14 features">
-      <created>1585160527517</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1585160527517</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Java 14 features">
-      <created>1585160577605</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1585160577605</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Java 14 features">
-      <created>1604314260764</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1604314260764</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Java 15 features">
-      <created>1619200317919</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1619200317920</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Java 15 features">
-      <created>1630233796414</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1630233796414</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Add Eclipse collection">
-      <created>1630322747394</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1630322747395</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Add Eclipse collection">
-      <created>1630328585863</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1630328585863</updated>
-    </task>
-    <option name="localTasksCounter" value="74" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="new flatMap example" />
-    <MESSAGE value="Java 11 features" />
-    <MESSAGE value="Combining reactive monads" />
-    <MESSAGE value="RSocket" />
-    <MESSAGE value="Add Quarkus" />
-    <MESSAGE value="Add Quarkus async" />
-    <MESSAGE value="Add vertx integration" />
-    <MESSAGE value="Add vavr examples" />
-    <MESSAGE value="Java 14 features" />
-    <MESSAGE value="Java 15 features" />
-    <MESSAGE value="Add Eclipse collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Eclipse collection" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/rsocket/RSocketRequestStream.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/java12/Java12Features.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/constant/ClassDesc.java</url>
-          <line>292</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

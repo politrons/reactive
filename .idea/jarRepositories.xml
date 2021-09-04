@@ -2,29 +2,9 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="releases" />
-      <option name="name" value="releases_mvn_all" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/releases_mvn_all" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/mvnpublic" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="http://artifactory-spain.ic.ing.net/artifactory/external" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="ingdirect-architecture-snapshots" />
-      <option name="name" value="ingdirect-architecture-snapshots" />
-      <option name="url" value="http://artifactory-spain.ic.ing.net/artifactory/external" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -35,31 +15,6 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="central" />
-      <option name="name" value="bintray" />
-      <option name="url" value="https://jcenter.bintray.com" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="ingdirect-snapshots" />
-      <option name="name" value="ingdirect-snapshots" />
-      <option name="url" value="http://artifactory-spain.ic.ing.net/artifactory/external" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="snapshots" />
-      <option name="name" value="snapshots_mvn_ModelBank" />
-      <option name="url" value="https://artifactory.ing.net/artifactory/snapshots_mvn_ModelBank" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="ingdirect-releases" />
-      <option name="name" value="ingdirect-releases" />
-      <option name="url" value="http://artifactory-spain.ic.ing.net/artifactory/external" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="ingdirect-architecture-releases" />
-      <option name="name" value="ingdirect-architecture-releases" />
-      <option name="url" value="http://artifactory-spain.ic.ing.net/artifactory/external" />
     </remote-repository>
   </component>
 </project>
