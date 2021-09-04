@@ -1,13 +1,11 @@
 package akka;
 
-import org.junit.Test;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.ActorSystem;
 import akka.actor.typed.Behavior;
-import akka.actor.typed.javadsl.AbstractBehavior;
 import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
-import akka.actor.typed.javadsl.Receive;
+import org.junit.Test;
 
 public class AkkaFeatures {
 
@@ -43,26 +41,19 @@ public class AkkaFeatures {
         }
     }
 
-    public static class ActorTwo extends AbstractBehavior<ActorTwoMessage> {
+    public static class ActorTwo {
 
         public static Behavior<ActorTwoMessage> create() {
-            return Behaviors.setup(ActorTwo::new);
+            return Behaviors.setup(ctx -> Behaviors.receive(ActorTwoMessage.class)
+                    .onMessage(ActorTwoMessage.class, ActorTwo::processMessage)
+                    .build());
         }
 
-        private ActorTwo(ActorContext<ActorTwoMessage> context) {
-            super(context);
-        }
-
-        @Override
-        public Receive<ActorTwoMessage> createReceive() {
-            return newReceiveBuilder().onMessage(ActorTwoMessage.class, this::onGreet).build();
-        }
-
-        private Behavior<ActorTwoMessage> onGreet(ActorTwoMessage command) {
+        private static Behavior<ActorTwoMessage> processMessage(ActorTwoMessage command) {
             System.out.printf("Hello %s!%n", command.replyTo.path().name());
             System.out.println("Sending back message to ActorOne in ActorSystem");
             command.replyTo.tell(new ActorOneMessageTwo("Copy that buddy, hello!"));
-            return this;
+            return Behaviors.same();
         }
     }
 
