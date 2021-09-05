@@ -11,6 +11,12 @@ import org.junit.Test;
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
 
+/**
+ * This whole file describe the three most commons patterns in Akka to communicate with or between Actors in Akka Actor system.
+ *
+ * Here we cover the fire and forget, request/response and finally ask pattern in each Test scenario.
+ * For the official documentation you can refer here [https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html]
+ */
 public class AkkaFeatures {
 
     /**
