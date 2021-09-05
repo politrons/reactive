@@ -13,16 +13,26 @@ import java.util.concurrent.CompletionStage;
 
 public class AkkaFeatures {
 
+    /**
+     * [FireAndForget] pattern: Using [ActorSystem.create] we're able to create the ActorRef/ActorSystem.
+     * Then using [tell] we inform the ActorOne and we forget about the response.
+     */
+    @Test
+    public void fireAndForgetPattern() throws InterruptedException {
+        ActorSystem<ActorOneMessage> actorRef = ActorSystem.create(ActorOne.create(), "actorOne");
+        actorRef.tell(new FireAndForgetMessage("[Fire and Forget] Hello and don't expect to hear from you again...."));
+        Thread.sleep(2000);
+    }
 
     /**
      * [Request/Response] pattern: Using [ActorSystem.create] we're able to create the ActorRef/ActorSystem.
      * Then using [tell] we inform the ActorOne which communicate to ActorTwo using this pattern.
      */
     @Test
-    public void requestResponse() throws InterruptedException {
+    public void requestResponsePattern() throws InterruptedException {
         ActorSystem<ActorOneMessage> actorRef = ActorSystem.create(ActorOne.create(), "actorOne");
         actorRef.tell(new RequestResponseMessage("actorRef Akka world in Java"));
-        Thread.sleep(60000);
+        Thread.sleep(2000);
     }
 
     /**
@@ -48,8 +58,13 @@ public class AkkaFeatures {
             }
             System.out.println("[Ask pattern] Message response:" + response);
         });
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
+
+    /**
+     * ACTORS IMPLEMENTATION
+     * ----------------------
+     */
 
     public static class ActorOne {
 
@@ -64,10 +79,19 @@ public class AkkaFeatures {
          */
         public static Behavior<ActorOneMessage> create() {
             return Behaviors.setup(ctx -> Behaviors.receive(ActorOneMessage.class)
+                    .onMessage(FireAndForgetMessage.class, ActorOne::processFireAndForgetMessage)
                     .onMessage(RequestResponseMessage.class, message -> processRequestResponseMessage(ctx, message))
                     .onMessage(ActorOneRequestResponseMessage.class, ActorOne::processRequestResponseFromAnotherActor)
                     .onMessage(AskPatternMessage.class, ActorOne::processAskPatternMessage)
                     .build());
+        }
+
+        /**
+         * Here we just receive the a message and we do not response back or send any message to nobody.
+         */
+        private static Behavior<ActorOneMessage> processFireAndForgetMessage(FireAndForgetMessage message) {
+            System.out.println("[Fire and Forget] Message from client:" + message.value);
+            return Behaviors.same();
         }
 
         /**
@@ -115,7 +139,20 @@ public class AkkaFeatures {
         }
     }
 
+    /**
+     * ACTOR MESSAGES
+     * ---------------
+     */
+
     interface ActorOneMessage {
+    }
+
+    public static final class FireAndForgetMessage implements ActorOneMessage {
+        public final String value;
+
+        public FireAndForgetMessage(String value) {
+            this.value = value;
+        }
     }
 
     public static final class RequestResponseMessage implements ActorOneMessage {

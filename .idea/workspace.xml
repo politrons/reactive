@@ -13,8 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/akka/AkkaFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/akka/AkkaFeatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.AkkaFeatures.askPattern">
+  <component name="RunManager" selected="JUnit.AkkaFeatures.fireAndForgetPattern">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -82,6 +80,17 @@
       <option name="PACKAGE_NAME" value="akka" />
       <option name="MAIN_CLASS_NAME" value="akka.AkkaFeatures" />
       <option name="METHOD_NAME" value="askPattern" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AkkaFeatures.fireAndForgetPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="akka" />
+      <option name="MAIN_CLASS_NAME" value="akka.AkkaFeatures" />
+      <option name="METHOD_NAME" value="fireAndForgetPattern" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -176,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AkkaFeatures.fireAndForgetPattern" />
         <item itemvalue="JUnit.AkkaFeatures.askPattern" />
         <item itemvalue="JUnit.AkkaFeatures.akkaFeatures" />
         <item itemvalue="JUnit.ObservableChain" />
@@ -205,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630753837426</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Akka typed in Java">
+      <created>1630831622366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630831622366</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
