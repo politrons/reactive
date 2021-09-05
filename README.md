@@ -103,8 +103,14 @@ The reactive stream API implementation of Spring.
 ![My image](src/main/resources/img/rsz_2subscribeonc.png)
 * [Async](src/test/java/reactor/ReactorAsync.java)
 
-## Akka Stream
+## Akka
 ![My image](src/main/resources/img/akka.png)
+
+Implementation of Akka patterns using Akka typed, using Java DSL.
+
+* [patterns](src/test/java/akka/AkkaFeatures.java)
+
+## Akka Stream
 
 The reactive stream API implementation of Akka.
 
