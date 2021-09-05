@@ -193,11 +193,11 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.scala-lang.modules</groupId>
-            <artifactId>scala-java8-compat_2.11</artifactId>
-            <version>0.8.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.scala-lang.modules</groupId>-->
+<!--            <artifactId>scala-java8-compat_2.11</artifactId>-->
+<!--            <version>0.8.0</version>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>com.typesafe.akka</groupId>-->
