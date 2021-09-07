@@ -15,12 +15,14 @@ public class HelidonReactiveMessaging {
      */
     @Test
     public void channelFeatures() throws InterruptedException {
-        var channel = Channel.<String>create("channel1");
+        var channel = Channel.<String>create("channel");
 
         Messaging.builder()
-                .publisher(channel, Multi.just("hello", "channel", "world")
-                        .map(Message::of))
-                .listener(channel, s -> System.out.println("Intecepted message " + s))
+                .publisher(channel, Multi.just("hello", "channel", "world").map(Message::of))
+                .build();
+
+        Messaging.builder()
+                .listener(channel, s -> System.out.println("Message received: " + s))
                 .build()
                 .start();
 

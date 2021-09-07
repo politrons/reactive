@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.HelidonReactiveMessaging">
+  <component name="RunManager" selected="JUnit.HelidonReactiveMessaging.channelFeatures">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,11 +268,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelidonReactiveMessaging.channelFeatures" />
         <item itemvalue="JUnit.HelidonReactiveMessaging" />
         <item itemvalue="JUnit.rx in reactive" />
         <item itemvalue="JUnit.RSocketWebSocket.main" />
         <item itemvalue="JUnit.All in reactive" />
-        <item itemvalue="JUnit.HelidonReactiveMessaging.channelFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -343,11 +341,33 @@
       <option name="project" value="LOCAL" />
       <updated>1631014862463</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add channel of Helidon">
+      <created>1631017937311</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631017937311</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Akka typed in Java" />
+    <MESSAGE value="Add channel of Helidon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add channel of Helidon" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java</url>
+          <line>29</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
