@@ -254,6 +254,12 @@ The most important features with particle examples of how to use it.
 
 * [Features](src/test/java/java16/Java16Features.java)
 
+## Java 18
+
+Project Loom feature
+
+* [Features](src/test/java/loom/LoomFeatures.java)
+
 
 ## ![My image](src/main/resources/img/eclipse.png)
 Eclipse Collections is one of the best Java collections framework ever that brings happiness to your Java development.
