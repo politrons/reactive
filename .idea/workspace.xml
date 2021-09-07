@@ -12,10 +12,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonReactiveMessaging.java" afterDir="false" />
-    </list>
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -341,11 +338,19 @@
       <option name="project" value="LOCAL" />
       <updated>1631014862463</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add helidon from Oracle">
+      <created>1631038694832</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631038694832</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Akka typed in Java" />
+    <MESSAGE value="add helidon from Oracle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add helidon from Oracle" />
   </component>
 </project>

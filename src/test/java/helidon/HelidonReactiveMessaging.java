@@ -10,28 +10,41 @@ import java.util.concurrent.CompletableFuture;
 
 public class HelidonReactiveMessaging {
 
+    @Test
+    public void channelFeatures() throws InterruptedException {
+        var channel = getChannel();
+        publisher(channel);
+        consumer(channel);
+        Thread.sleep(2000);
+    }
+
     /**
      * [Channel] allow us to create communication layer between publisher and subscriber, between different threads.
      * Here we have a [publisher] in one thread, and a [consumer] in another thread.
-     *
+     */
+    private Channel<String> getChannel() {
+        return Channel.create("channel");
+    }
+
+    /**
      * Using [publisher] we can emmit messages into the channel, we just need to specify the channel, and then pass a Publisher
      * [Multi]
-     *
-     * Using [listener] operator, we subscribe to the channel we pass as first element, and we implement
-     * a consumer function where we receive the payload of the message unwrapped. The Ack of the message is done
-     * by the operator once we run the consumer function without side effects.
      */
-    @Test
-    public void channelFeatures() throws InterruptedException {
-        var channel = Channel.<String>create("channel");
-
+    private void publisher(Channel<String> channel) {
         CompletableFuture.runAsync(() ->
                 Messaging.builder()
                         .publisher(channel, Multi.just("hello", "channel", "world")
                                 .map(Message::of))
                         .build()
         );
+    }
 
+    /**
+     * Using [listener] operator, we subscribe to the channel we pass as first element, and we implement
+     * a consumer function where we receive the payload of the message unwrapped. The Ack of the message is done
+     * by the operator once we run the consumer function without side effects.
+     */
+    private void consumer(Channel<String> channel) {
         CompletableFuture.runAsync(() ->
                 Messaging.builder()
                         .listener(channel, s -> {
@@ -40,9 +53,7 @@ public class HelidonReactiveMessaging {
                         })
                         .build()
                         .start());
-
-        Thread.sleep(2000);
-
     }
+
 
 }
