@@ -44,20 +44,4 @@ public class ObservableMap {
         return "Items form page " + page;
     }
 
-    @Test
-    public void test() {
-        List<String> strings = null;
-        Observable.from(strings)
-                .onErrorResumeNext(t -> {
-                    System.out.println("Null pointer error!!!!!:" + t);
-                    return Observable.just("works!");
-                })
-                .subscribe(System.out::println,
-                        t -> System.out.println("Errror!!!"),
-                        () -> System.out.println("finish"));
-
-    }
-
-
-
 }
