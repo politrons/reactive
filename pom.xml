@@ -18,8 +18,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>18</source>
+                    <target>18</target>
                     <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
@@ -217,6 +217,12 @@
             <artifactId>eclipse-collections</artifactId>
             <version>10.4.0</version>
         </dependency>
+        <!--Fibers-->
+        <dependency>
+            <groupId>com.github.akarnokd</groupId>
+            <artifactId>rxjava3-fiber-interop</artifactId>
+            <version>0.0.13</version>
+        </dependency>
         <!--Scala-->
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -234,12 +240,6 @@
             <version>${scala.version}</version>
         </dependency>
         <!-- Akka-->
-<!--        <dependency>-->
-<!--            <groupId>com.typesafe.akka</groupId>-->
-<!--            <artifactId>akka-bom_${scala.binary.version}</artifactId>-->
-<!--            <version>2.6.16</version>-->
-<!--            <type>pom</type>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor-typed_${scala.binary.version}</artifactId>
@@ -251,16 +251,17 @@
             <scope>test</scope>
             <version>2.6.4</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.typesafe.akka</groupId>-->
-<!--            <artifactId>akka-stream_${scala.binary.version}</artifactId>-->
-<!--            <version>2.6.16</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.typesafe.akka</groupId>-->
-<!--            <artifactId>akka-http_${scala.binary.version}</artifactId>-->
-<!--            <version>10.2.6</version>-->
-<!--        </dependency>-->
+<!--        Helidon-->
+        <dependency>
+            <groupId>io.helidon.webserver</groupId>
+            <artifactId>helidon-webserver</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.helidon.webclient</groupId>
+            <artifactId>helidon-webclient</artifactId>
+            <version>2.3.2</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -120,33 +120,5 @@ public class Java12Features {
         System.out.println(lConstantClass.isClassOrInterface());
     }
 
-    /**
-     * Same example than before but implementing our own [ClassDesc] so we can define [resolveConstantDesc]
-     * method
-     */
-    @Test
-    public void customClassDesc() {
-        var constantClass = new ConstantClass();
-        System.out.println(constantClass.descriptorString());
-        System.out.println(constantClass.displayName());
-        System.out.println(constantClass.isArray());
-        System.out.println(constantClass.isPrimitive());
-        System.out.println(constantClass.packageName());
-        System.out.println(constantClass.resolveConstantDesc(MethodHandles.lookup()));
-    }
-
-    class ConstantClass implements ClassDesc {
-
-        @Override
-        public Object resolveConstantDesc(MethodHandles.Lookup lookup) {
-            return this;
-        }
-
-        @Override
-        public String descriptorString() {
-            return "LCustomClass";
-        }
-    }
-
 
 }
