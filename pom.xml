@@ -241,6 +241,11 @@
             <artifactId>helidon-messaging-kafka</artifactId>
             <version>2.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>io.helidon.webserver</groupId>
+            <artifactId>helidon-webserver-jersey</artifactId>
+            <version>2.3.2</version>
+        </dependency>
         <!--  Reactive-stream-->
         <dependency>
             <groupId>org.reactivestreams</groupId>
