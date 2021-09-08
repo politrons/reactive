@@ -148,8 +148,8 @@ A modern, JVM-based, full-stack framework for building modular, easily testable 
 
 Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty.
 
-* [webClient/webServer](src/test/java/helidon/HelidonWebServer.java)
-
+* [WebClient / WebServer](src/test/java/helidon/HelidonWebServer.java)
+* [Reactive Messaging](src/test/java/helidon/HelidonReactiveMessaging.java)
 ## 
 ![My image](src/main/resources/img/vavr.png)
 
