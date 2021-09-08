@@ -246,6 +246,11 @@
             <artifactId>helidon-webserver-jersey</artifactId>
             <version>2.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>io.helidon.scheduling</groupId>
+            <artifactId>helidon-scheduling</artifactId>
+            <version>2.3.2</version>
+        </dependency>
         <!--  Reactive-stream-->
         <dependency>
             <groupId>org.reactivestreams</groupId>
