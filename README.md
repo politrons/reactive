@@ -150,6 +150,9 @@ Helidon is a collection of Java libraries for writing microservices that run on 
 
 * [WebClient / WebServer](src/test/java/helidon/HelidonWebServer.java)
 * [Reactive Messaging](src/test/java/helidon/HelidonReactiveMessaging.java)
+* [Kafka connector](src/test/java/helidon/HelidonKafka.java)
+* [Scheduler](src/test/java/helidon/HelidonScheduler.java)
+
 ## 
 ![My image](src/main/resources/img/vavr.png)
 

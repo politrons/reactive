@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631124281183</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add Kafka connector helidon">
+      <created>1631210134124</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631210134124</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
