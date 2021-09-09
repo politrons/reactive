@@ -22,6 +22,15 @@ public class HelidonKafka {
         Thread.sleep(10000);
     }
 
+    /**
+     * A Kafka Consumer implementation. Consumers and Publisher are using a Channel for the communication.
+     * Once we have the channel we can add a [publisherConfig] which expect a Config,
+     * then using [KafkaConnector] DSL we can fill all the information need it for the communication.
+     *
+     * Once we have the channel we can use Messaging builder to specify using [connector] a ConnectorFactory
+     * in this particular case [KafkaConnector].
+     * After that we can just use listener as we explain in HelidonReactiveMessaging.
+     */
     private void kafkaConsumer() {
         Channel<String> consumerChannel = Channel.<String>builder()
                 .name("kafka-connector")
@@ -46,6 +55,17 @@ public class HelidonKafka {
                 .start();
     }
 
+    /**
+     * A Kafka Publisher implementation. Consumers and Publisher are using a Channel for the communication.
+     * Once we have the channel we can add a [subscriberConfig] which expect a Config,
+     * then using [KafkaConnector] DSL we can fill all the information need it for the communication.
+     *
+     * Once we have the channel we can use Messaging builder to specify using [connector] a ConnectorFactory
+     * in this particular case [KafkaConnector].
+     *
+     * Then we specify using [publisher] a Publisher in this particular case [Multi] to send events.
+     * After that we can just use listener as we explain in HelidonReactiveMessaging.
+     */
     private void kafkaPublisher() {
 
         Channel<String> publisherChannel = Channel.<String>builder()
@@ -58,10 +78,10 @@ public class HelidonKafka {
                 ).build();
 
         Messaging.builder()
+                .connector(KafkaConnector.create())
                 .publisher(publisherChannel,
                         Multi.just("hello", "kafka", "world", "helidon", "connector")
                                 .map(Message::of))
-                .connector(KafkaConnector.create())
                 .build()
                 .start();
     }

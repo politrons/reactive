@@ -7,6 +7,11 @@ import java.util.concurrent.TimeUnit;
 
 public class HelidonScheduler {
 
+    /**
+     * Scheduler, is just a Task executor that is running a task in a scheduler thread pool.
+     * It allow you to specify how often this scheduler run the task, and also a delay execution
+     * in the initial execution if you want.
+     */
     @Test
     public void schedulerFeature() throws InterruptedException {
         Scheduling.fixedRateBuilder()
