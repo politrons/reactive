@@ -23,9 +23,10 @@ public class AkkaHttpFeatures {
         var materializer = Materializer.apply(system);
 
         httpServer(system);
-        final CompletionStage<HttpResponse> responseFuture = httpClient(system);
 
-        CompletableFuture<String> future = responseFuture.toCompletableFuture()
+        final var responseFuture = httpClient(system);
+
+        var future = responseFuture.toCompletableFuture()
                 .thenApply(response -> Try.of(() -> response.entity()
                                 .toStrict(1000, materializer)
                                 .toCompletableFuture()
