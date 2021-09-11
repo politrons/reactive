@@ -215,6 +215,17 @@
             <scope>test</scope>
             <version>2.6.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-stream_${scala.binary.version}</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-http_${scala.binary.version}</artifactId>
+            <version>10.2.4</version>
+        </dependency>
+
 <!--        Helidon-->
         <dependency>
             <groupId>io.helidon.webserver</groupId>
