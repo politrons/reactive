@@ -11,11 +11,8 @@ import org.eclipse.collections.impl.factory.primitive.IntLists;
 import org.eclipse.collections.impl.list.primitive.IntInterval;
 import org.junit.Test;
 
-import java.sql.Time;
 import java.util.List;
 import java.util.OptionalInt;
-import java.util.PrimitiveIterator;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -81,7 +78,6 @@ public class EclipseCollectionFeature {
      */
     @Test
     public void mapFeature() {
-
         final ImmutableMap<String, Integer> map = Maps.immutable.of("key1", 1981, "key2", 666, "key3", 1000);
         final ImmutableMap<String, Integer> newMap = map.newWithKeyValue("newKey", 3000);
         System.out.println(map);
