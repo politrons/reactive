@@ -13,9 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/curator/ApacheCuratorFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,12 @@
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="JUnit.VavrPatternMatching.optionPattern">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="curator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -160,6 +165,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApacheCuratorFeature.curatorLockAndCounterFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="curator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="curator" />
+      <option name="MAIN_CLASS_NAME" value="curator.ApacheCuratorFeature" />
+      <option name="METHOD_NAME" value="curatorLockAndCounterFeature" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelidonKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -188,22 +210,6 @@
       <option name="MAIN_CLASS_NAME" value="helidon.HelidonKafka" />
       <option name="METHOD_NAME" value="publisherConsumerKafka" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helidon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,19 +260,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HelidonWebServer" />
       <item itemvalue="JUnit.JSChTest.portFromApache" />
       <item itemvalue="JUnit.HelidonKafka" />
       <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
       <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
+      <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
+        <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
         <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
+        <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
         <item itemvalue="JUnit.HelidonKafka" />
         <item itemvalue="JUnit.JSChTest.portFromApache" />
-        <item itemvalue="JUnit.HelidonWebServer" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632123227794</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactor">
+      <created>1632735794002</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632735794002</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
