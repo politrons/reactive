@@ -12,12 +12,10 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="add Kafka connector helidon">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JSChTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSChTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +79,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="JUnit.JSChTest.portFromApache">
+  <component name="RunManager" selected="JUnit.VavrPatternMatching.optionPattern">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -162,21 +160,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkkaHttpFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelidonKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="akka" />
-      <option name="MAIN_CLASS_NAME" value="akka.AkkaHttpFeatures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helidon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="helidon" />
+      <option name="MAIN_CLASS_NAME" value="helidon.HelidonKafka" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkkaHttpFeatures.httpServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelidonKafka.publisherConsumerKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="akka" />
-      <option name="MAIN_CLASS_NAME" value="akka.AkkaHttpFeatures" />
-      <option name="METHOD_NAME" value="httpServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helidon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="helidon" />
+      <option name="MAIN_CLASS_NAME" value="helidon.HelidonKafka" />
+      <option name="METHOD_NAME" value="publisherConsumerKafka" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -210,17 +220,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java16Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrPatternMatching.optionPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java16.*" />
+          <option name="PATTERN" value="vavr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java16" />
-      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
+      <option name="METHOD_NAME" value="optionPattern" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,19 +254,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
-      <item itemvalue="JUnit.AkkaHttpFeatures" />
-      <item itemvalue="JUnit.Java16Features" />
       <item itemvalue="JUnit.HelidonWebServer" />
       <item itemvalue="JUnit.JSChTest.portFromApache" />
+      <item itemvalue="JUnit.HelidonKafka" />
+      <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
+      <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
+        <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
+        <item itemvalue="JUnit.HelidonKafka" />
         <item itemvalue="JUnit.JSChTest.portFromApache" />
         <item itemvalue="JUnit.HelidonWebServer" />
-        <item itemvalue="JUnit.Java16Features" />
-        <item itemvalue="JUnit.AkkaHttpFeatures" />
-        <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -366,22 +377,57 @@
       <option name="project" value="LOCAL" />
       <updated>1631210594879</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactor">
+      <created>1632123227794</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632123227794</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
     <MESSAGE value="add helidon from Oracle" />
     <MESSAGE value="add Kafka connector helidon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Kafka connector helidon" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/JSChTest.java</url>
-          <line>21</line>
+          <line>19</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../.m2/repository/org/eclipse/microprofile/reactive/messaging/microprofile-reactive-messaging-api/1.0/microprofile-reactive-messaging-api-1.0.jar!/org/eclipse/microprofile/reactive/messaging/Message.class</url>
+          <line>14</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
