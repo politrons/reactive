@@ -275,8 +275,15 @@
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
+        <!-- Apache commons-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.8.0</version>
+        </dependency>
 
-<!--        Apache curator-->
+
+        <!--        Apache curator-->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-x-async</artifactId>
@@ -300,6 +307,14 @@
             <version>4.0.1</version>
         </dependency>
 
+
+<!--        Gson-->
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.6</version>
+        </dependency>
     </dependencies>
 
 </project>

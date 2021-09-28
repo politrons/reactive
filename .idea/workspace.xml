@@ -12,7 +12,10 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Apache Curator" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Apache Curator">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,11 +81,15 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="curator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApacheCuratorFeature">
+  <component name="RunManager" selected="JUnit.SftpConnectorDemo.sftpConnector">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -194,50 +201,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelidonKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SftpConnectorDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helidon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonKafka" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelidonKafka.publisherConsumerKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SftpConnectorDemo.curatorLockAndCounterFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helidon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonKafka" />
-      <option name="METHOD_NAME" value="publisherConsumerKafka" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
+      <option name="METHOD_NAME" value="curatorLockAndCounterFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrPatternMatching.optionPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SftpConnectorDemo.sftpConnector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vavr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
-      <option name="METHOD_NAME" value="optionPattern" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
+      <option name="METHOD_NAME" value="sftpConnector" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -261,19 +250,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HelidonKafka" />
-      <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
-      <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
       <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
       <item itemvalue="JUnit.ApacheCuratorFeature" />
+      <item itemvalue="JUnit.SftpConnectorDemo" />
+      <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
+      <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
+        <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
+        <item itemvalue="JUnit.SftpConnectorDemo" />
         <item itemvalue="JUnit.ApacheCuratorFeature" />
         <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
-        <item itemvalue="JUnit.HelidonKafka.publisherConsumerKafka" />
-        <item itemvalue="JUnit.VavrPatternMatching.optionPattern" />
-        <item itemvalue="JUnit.HelidonKafka" />
       </list>
     </recent_temporary>
   </component>
@@ -419,7 +408,28 @@
       <option name="project" value="LOCAL" />
       <updated>1632754433954</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Apache Curator">
+      <created>1632754637712</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1632754637712</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Apache Curator">
+      <created>1632754677330</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1632754677330</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Apache Curator">
+      <created>1632754734564</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1632754734564</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -464,6 +474,11 @@
           <url>jar://$PROJECT_DIR$/../.m2/repository/org/eclipse/microprofile/reactive/messaging/microprofile-reactive-messaging-api/1.0/microprofile-reactive-messaging-api-1.0.jar!/org/eclipse/microprofile/reactive/messaging/Message.class</url>
           <line>14</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SftpConnectorDemo.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
