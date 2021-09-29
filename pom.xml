@@ -282,8 +282,7 @@
             <version>2.8.0</version>
         </dependency>
 
-
-        <!--        Apache curator-->
+        <!-- Apache curator-->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-x-async</artifactId>
@@ -307,9 +306,7 @@
             <version>4.0.1</version>
         </dependency>
 
-
-<!--        Gson-->
-
+        <!-- Gson-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
