@@ -87,6 +87,8 @@ public class EclipseCollectionFeature {
                 .select(value -> value >= 1000);
         System.out.println(select);
 
+        map.toMap();
+
     }
 
     /**

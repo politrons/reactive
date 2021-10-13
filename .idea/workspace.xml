@@ -14,7 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Apache Curator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
       <recent name="curator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SftpConnectorDemo.sftpConnector">
+  <component name="RunManager" selected="JUnit.HelidonWebServer">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -184,18 +185,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApacheCuratorFeature.curatorLockAndCounterFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="curator.*" />
+          <option name="PATTERN" value="helidon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="curator" />
-      <option name="MAIN_CLASS_NAME" value="curator.ApacheCuratorFeature" />
-      <option name="METHOD_NAME" value="curatorLockAndCounterFeature" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="helidon" />
+      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,19 +253,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
       <item itemvalue="JUnit.ApacheCuratorFeature" />
       <item itemvalue="JUnit.SftpConnectorDemo" />
       <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
       <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
+      <item itemvalue="JUnit.HelidonWebServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelidonWebServer" />
         <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
         <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
         <item itemvalue="JUnit.SftpConnectorDemo" />
         <item itemvalue="JUnit.ApacheCuratorFeature" />
-        <item itemvalue="JUnit.ApacheCuratorFeature.curatorLockAndCounterFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632841475309</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Apache Curator">
+      <created>1632906559192</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1632906559192</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

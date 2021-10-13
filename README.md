@@ -161,6 +161,7 @@ Example of most important features of this functional programing library for Jav
 * [effects](src/test/java/vavr/VavrEffects.java)
 * [Functions](src/test/java/vavr/VavrFunctions.java)
 * [Collections](src/test/java/vavr/VavrCollections.java)
+* [Pattern matching](src/test/java/vavr/VavrPatternMatching.java)
 
 ## ![My image](src/main/resources/img/curator-logo.png)
 
