@@ -12,10 +12,15 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Apache Curator">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr pm">
+      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RunnableFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/highScaleLib/NonBlockingHashMapFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/vertx/VertxKafkaConsumerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,12 +90,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="curator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HelidonWebServer">
+  <component name="RunManager" selected="JUnit.VertxKafkaConsumerTest">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -169,68 +177,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApacheCuratorFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ObservableMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="curator.*" />
+          <option name="PATTERN" value="rx.observables.combining.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="curator" />
-      <option name="MAIN_CLASS_NAME" value="curator.ApacheCuratorFeature" />
+      <option name="PACKAGE_NAME" value="rx.observables.combining" />
+      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableMerge" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RSocketRequestResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="helidon.*" />
+          <option name="PATTERN" value="rsocket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="METHOD_NAME" value="" />
+      <option name="PACKAGE_NAME" value="rsocket" />
+      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestResponse" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SftpConnectorDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReactorAsync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reactor" />
+      <option name="MAIN_CLASS_NAME" value="reactor.ReactorAsync" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SftpConnectorDemo.curatorLockAndCounterFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrEffects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
-      <option name="METHOD_NAME" value="curatorLockAndCounterFeature" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SftpConnectorDemo.sftpConnector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VertxKafkaConsumerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SftpConnectorDemo" />
-      <option name="METHOD_NAME" value="sftpConnector" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vertx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vertx" />
+      <option name="MAIN_CLASS_NAME" value="vertx.VertxKafkaConsumerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,19 +274,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ApacheCuratorFeature" />
-      <item itemvalue="JUnit.SftpConnectorDemo" />
-      <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
-      <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
-      <item itemvalue="JUnit.HelidonWebServer" />
+      <item itemvalue="JUnit.ObservableMerge" />
+      <item itemvalue="JUnit.RSocketRequestResponse" />
+      <item itemvalue="JUnit.ReactorAsync" />
+      <item itemvalue="JUnit.VavrEffects" />
+      <item itemvalue="JUnit.VertxKafkaConsumerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HelidonWebServer" />
-        <item itemvalue="JUnit.SftpConnectorDemo.sftpConnector" />
-        <item itemvalue="JUnit.SftpConnectorDemo.curatorLockAndCounterFeature" />
-        <item itemvalue="JUnit.SftpConnectorDemo" />
-        <item itemvalue="JUnit.ApacheCuratorFeature" />
+        <item itemvalue="JUnit.VertxKafkaConsumerTest" />
+        <item itemvalue="JUnit.VavrEffects" />
+        <item itemvalue="JUnit.ReactorAsync" />
+        <item itemvalue="JUnit.RSocketRequestResponse" />
+        <item itemvalue="JUnit.ObservableMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632906559192</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="vavr pm">
+      <created>1634111276387</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1634111276387</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -477,7 +505,8 @@
     <MESSAGE value="add Kafka connector helidon" />
     <MESSAGE value="refactor" />
     <MESSAGE value="Apache Curator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apache Curator" />
+    <MESSAGE value="vavr pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr pm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -137,6 +137,15 @@ public class VavrEffects {
         System.out.println(future.get());
     }
 
+    @Test
+    public void tryError() {
+        Try<Object> errorProgram = Try.of(() -> {
+            throw new NullPointerException();
+        });
+
+        System.out.println(errorProgram.isSuccess());
+    }
+
     private String getMaybeString() {
         if (new Random().nextBoolean()) {
             return "hello Vavr world";
