@@ -1,7 +1,5 @@
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
+import com.jcraft.jsch.*;
+import org.apache.commons.net.ftp.FTPFile;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -15,7 +13,17 @@ import java.util.Properties;
 public class JSChTest {
 
     @Test
+    public void portFromApache() throws JSchException, IOException {
+        FTPFile file =new FTPFile();
+        file.setName("hello world");
+        file.setType(0);
+        System.out.println(file.isFile());
+    }
+
+    @Test
     public void sshCall() throws JSchException, IOException {
+
+
         JSch jsch = new JSch();
         Session session = jsch.getSession("pabloperezgarcia", "localhost", 22);
         session.setPassword("Politron1981!");
