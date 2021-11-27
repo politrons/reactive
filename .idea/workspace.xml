@@ -12,22 +12,8 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr pm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RunnableFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/highScaleLib/NonBlockingHashMapFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/vertx/VertxKafkaConsumerTest.java" afterDir="false" />
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/j17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java17/Java17Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/akka/AkkaHttpFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/akka/AkkaHttpFeatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +76,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.AkkaHttpFeatures">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Java17Features">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -164,18 +155,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelidonWebServer.webServerFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java17Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helidon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="METHOD_NAME" value="webServerFeatures" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="java17" />
+      <option name="MAIN_CLASS_NAME" value="java17.Java17Features" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,19 +242,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.HelidonWebServer.webServerFeatures" />
       <item itemvalue="JUnit.HelidonKafka" />
       <item itemvalue="JUnit.HelidonScheduler.schedulerFeature" />
       <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
       <item itemvalue="JUnit.AkkaHttpFeatures" />
+      <item itemvalue="JUnit.Java17Features" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Java17Features" />
         <item itemvalue="JUnit.AkkaHttpFeatures" />
         <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
         <item itemvalue="JUnit.HelidonScheduler.schedulerFeature" />
         <item itemvalue="JUnit.HelidonKafka" />
-        <item itemvalue="JUnit.HelidonWebServer.webServerFeatures" />
       </list>
     </recent_temporary>
   </component>
