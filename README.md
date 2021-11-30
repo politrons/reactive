@@ -191,8 +191,6 @@ A Comparative and benchmark between these two frameworks.
 
 ![My image](src/main/resources/img/rsz_stream.jpg)
 
-Stream API, Functions and Promises with examples of how to use it.
-
 * [Stream](src/test/java/java8/StreamUtils.java)
 * [Functions](src/test/java/java8/Functions.java)
 * [CompletableFuture](src/test/java/java8/CompletableFutureFeature.java)
@@ -200,8 +198,6 @@ Stream API, Functions and Promises with examples of how to use it.
 ## Java 9
 
 ![My image](src/main/resources/img/java-9.png)
-
-The most important features with particle examples of how to use it.
 
 * [Flow](src/test/java/java9/FlowFeatures.java)
 * [Features](src/test/java/java9/UtilFeatures.java)
@@ -212,16 +208,12 @@ The most important features with particle examples of how to use it.
 
 ![My image](src/main/resources/img/10.png)
 
-The most important features with particle examples of how to use it.
-
 * [Collections](src/test/java/java10/Collections.java)
 * [Local variable type inference](src/test/java/java10/LocalVariableTypeInference.java)
 
 ## Java 11
 
 ![My image](src/main/resources/img/11.png)
-
-The most important features with particle examples of how to use it.
 
 * [HttpClient2](src/test/java/java11/HttpClient2Feature.java)
 * [String](src/test/java/java11/StringFeatures.java)
@@ -233,8 +225,6 @@ The most important features with particle examples of how to use it.
 
 ![My image](src/main/resources/img/12.png)
 
-The most important features with particle examples of how to use it.
-
 * [Switch Expression](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L16)
 * [String API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L50)
 * [JVM Constants API](https://github.com/politrons/reactive/blob/master/src/test/java/java12/Java12Features.java#L101)
@@ -243,15 +233,11 @@ The most important features with particle examples of how to use it.
 
 ![My image](src/main/resources/img/j14.png)
 
-The most important features with particle examples of how to use it.
-
 * [Pattern matching](https://github.com/politrons/reactive/blob/master/src/test/java/java14/Java14Features.java#L11)
 * [Multiline text](https://github.com/politrons/reactive/blob/master/src/test/java/java14/Java14Features.java#L31)
 * [Record type](https://github.com/politrons/reactive/blob/master/src/test/java/java14/Java14Features.java#L54)
 
 ## Java 15
-
-The most important features with particle examples of how to use it.
 
 * [Sealed class](src/test/java/java15/Java15Features.java)
 
@@ -259,9 +245,13 @@ The most important features with particle examples of how to use it.
 
 ![My image](src/main/resources/img/16.png)
 
-The most important features with particle examples of how to use it.
-
 * [Features](src/test/java/java16/Java16Features.java)
+
+
+## Java 17
+![My image](src/main/resources/img/j17.jpg)
+
+* [Features](src/test/java/java17/Java17Features.java)
 
 ## Java 18
 
