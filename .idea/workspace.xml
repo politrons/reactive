@@ -13,14 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr pm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RunnableFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/highScaleLib/NonBlockingHashMapFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/vertx/VertxKafkaConsumerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +92,7 @@
       <recent name="curator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VertxKafkaConsumerTest">
+  <component name="RunManager" selected="JUnit.VavrCollections.foldLeftEmpty">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -171,40 +165,16 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="Ideone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ideone" />
+      <module name="reactive" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObservableMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rx.observables.combining.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rx.observables.combining" />
-      <option name="MAIN_CLASS_NAME" value="rx.observables.combining.ObservableMerge" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RSocketRequestResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rsocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rsocket" />
-      <option name="MAIN_CLASS_NAME" value="rsocket.RSocketRequestResponse" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,6 +190,23 @@
       <option name="PACKAGE_NAME" value="reactor" />
       <option name="MAIN_CLASS_NAME" value="reactor.ReactorAsync" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrCollections.foldLeftEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
+      <option name="METHOD_NAME" value="foldLeftEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,19 +261,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ObservableMerge" />
-      <item itemvalue="JUnit.RSocketRequestResponse" />
+      <item itemvalue="Application.Ideone" />
       <item itemvalue="JUnit.ReactorAsync" />
       <item itemvalue="JUnit.VavrEffects" />
       <item itemvalue="JUnit.VertxKafkaConsumerTest" />
+      <item itemvalue="JUnit.VavrCollections.foldLeftEmpty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrCollections.foldLeftEmpty" />
+        <item itemvalue="Application.Ideone" />
         <item itemvalue="JUnit.VertxKafkaConsumerTest" />
         <item itemvalue="JUnit.VavrEffects" />
         <item itemvalue="JUnit.ReactorAsync" />
-        <item itemvalue="JUnit.RSocketRequestResponse" />
-        <item itemvalue="JUnit.ObservableMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634111276387</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="vavr pm">
+      <created>1635339940363</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1635339940363</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

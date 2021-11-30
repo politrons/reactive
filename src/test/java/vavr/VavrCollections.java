@@ -42,4 +42,11 @@ public class VavrCollections {
         println(stringBuffer.toString());
     }
 
+    @Test
+    public void foldLeftEmpty() {
+        HashMap<String, String> empty = HashMap.empty();
+        Integer integer = empty.foldLeft(1981, (prev, nextV) -> prev);
+        System.out.println(integer);
+    }
+
 }
