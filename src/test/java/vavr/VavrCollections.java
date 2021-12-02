@@ -49,4 +49,11 @@ public class VavrCollections {
         System.out.println(integer);
     }
 
+    @Test
+    public void putMap() {
+        HashMap<String, String> map = HashMap.of("hello", "world");
+        map = map.merge(HashMap.of("new", "world"));
+        map.forEach((k, v) -> System.out.println("Key " + k + " value " + v));
+    }
+
 }
