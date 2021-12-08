@@ -37,7 +37,6 @@
             <artifactId>vavr</artifactId>
             <version>0.10.3</version>
         </dependency>
-
         <!--Rsocket-->
         <dependency>
             <groupId>io.rsocket</groupId>

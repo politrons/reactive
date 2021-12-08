@@ -268,8 +268,9 @@ Eclipse Collections is one of the best Java collections framework ever that brin
 
 ## ![My image](src/main/resources/img/kafka.png)
 
-* **[Throttling](kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java)**
+Examples of patterns using Apache Kafka.
 
+* **[Throttling](kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java)**
 
 ## Software craftsmanship
 
