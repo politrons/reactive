@@ -19,7 +19,7 @@ public class VertxKafkaConsumer extends AbstractVerticle {
 
     @Override
     public void start(Promise<Void> startPromise) {
-        System.out.println("Running kafka consumer");
+        System.out.println("Running kafka.png consumer");
         String topic = "vertx-topic";
         Map<String, String> config = getKafkaConfig();
         KafkaConsumer<String, String> consumer = KafkaConsumer.create(vertx, config);
@@ -40,8 +40,8 @@ public class VertxKafkaConsumer extends AbstractVerticle {
     private Map<String, String> getKafkaConfig() {
         Map<String, String> config = new HashMap<>();
         config.put("bootstrap.servers", brokersAsString);
-        config.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-        config.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+        config.put("key.deserializer", "org.apache.kafka.png.common.serialization.StringDeserializer");
+        config.put("value.deserializer", "org.apache.kafka.png.common.serialization.StringDeserializer");
         config.put("group.id", "my_group");
         config.put("auto.offset.reset", "earliest");
         config.put("enable.auto.commit", "false");

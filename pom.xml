@@ -27,10 +27,11 @@
     </build>
     <modules>
 <!--        <module>quarkus</module>-->
+        <module>kafka</module>
     </modules>
 
     <dependencies>
-        <!--        VavrIO-->
+        <!-- VavrIO-->
         <dependency>
             <groupId>io.vavr</groupId>
             <artifactId>vavr</artifactId>
