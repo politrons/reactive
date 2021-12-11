@@ -13,19 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaConnectAssignmentPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/kafka.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vertx/kafka/VertxKafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SftpConnectorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SftpConnectorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/curator/ApacheCuratorFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/curator/ApacheCuratorFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helidon/HelidonKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaConnectAssignmentPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaThrottling.specificPartition">
+  <component name="RunManager" selected="JUnit.KafkaAssignment.specificPartition">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -136,17 +126,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkkaHttpFeatures.httpServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="akka" />
-      <option name="MAIN_CLASS_NAME" value="akka.AkkaHttpFeatures" />
-      <option name="METHOD_NAME" value="httpServer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <option name="PACKAGE_NAME" value="helidon" />
@@ -162,6 +141,17 @@
       <option name="PACKAGE_NAME" value="java17" />
       <option name="MAIN_CLASS_NAME" value="java17.Java17Features" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaAssignment.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAssignment" />
+      <option name="METHOD_NAME" value="specificPartition" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,20 +271,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
       <item itemvalue="JUnit.AkkaHttpFeatures" />
       <item itemvalue="JUnit.Java17Features" />
       <item itemvalue="JUnit.HelidonWebServer" />
       <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       <item itemvalue="Maven.kafka [install]" />
+      <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
         <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
         <item itemvalue="JUnit.HelidonWebServer" />
         <item itemvalue="JUnit.Java17Features" />
         <item itemvalue="JUnit.AkkaHttpFeatures" />
-        <item itemvalue="JUnit.AkkaHttpFeatures.httpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -412,13 +402,28 @@
       <option name="project" value="LOCAL" />
       <updated>1638008325786</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add apache kafka throttling">
+      <created>1638996828157</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638996828157</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add apache kafka throttling">
+      <created>1638996963485</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638996963485</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
     <MESSAGE value="add helidon from Oracle" />
     <MESSAGE value="add Kafka connector helidon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Kafka connector helidon" />
+    <MESSAGE value="Add apache kafka throttling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add apache kafka throttling" />
   </component>
 </project>
