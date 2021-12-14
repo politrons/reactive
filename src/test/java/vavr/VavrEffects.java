@@ -24,7 +24,7 @@ public class VavrEffects {
      * Using Vavr allow us control effects of the monad Option to have or not have a value.
      * We can make transformation with [map] and composition with [flatMap]
      * The Option it will return a [Some(T)] in case it contains a value, just like in Scala.
-     *
+     * <p>
      * Using the Vavr implementation of Pattern matching we can check if the Option is Some or None
      * and extract the value.(Option, Try, Either, Future)
      */
@@ -145,6 +145,21 @@ public class VavrEffects {
         });
 
         System.out.println(errorProgram.isSuccess());
+    }
+
+    @Test
+    public void tryToEither() {
+        Either<Throwable, String> eitherProgram =
+                Try.of(() -> "hello world").toEither();
+        System.out.println(eitherProgram.isRight());
+        System.out.println(eitherProgram.get());
+
+        Either<Integer, String> emptyProgram =
+                Try.of(() -> "hello")
+                        .filter(m -> m.equals("hello world"))
+                        .toEither(1981);
+        System.out.println(emptyProgram.isRight());
+        System.out.println(emptyProgram.getLeft());
     }
 
     private String getMaybeString() {

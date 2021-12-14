@@ -1,6 +1,7 @@
 package vavr;
 
 import io.vavr.Predicates;
+import io.vavr.control.Either;
 import io.vavr.control.Option;
 import io.vavr.control.Try;
 import org.junit.Test;
@@ -22,12 +23,22 @@ public class VavrPatternMatching {
 
        @Test
     public void tryPattern() {
-
         var output = Match(Try.of(() ->"hello world")).of(
                 Case($Success($()), value -> {
                     return "success";
                 }),
                 Case($Failure($(Predicates.instanceOf(NullPointerException.class))), e -> "error" + e)
+        );
+        println(output);
+    }
+
+    @Test
+    public void eitherPattern() {
+        var output = Match(Either.right("hello world")).of(
+                Case($Right($()), value -> {
+                    return "success";
+                }),
+                Case($Left($(Predicates.instanceOf(NullPointerException.class))), e -> "error" + e)
         );
         println(output);
     }

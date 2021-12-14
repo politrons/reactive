@@ -12,10 +12,10 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr pm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaConnectAssignmentPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +47,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -86,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaAssignment.specificPartition">
+  <component name="RunManager" selected="JUnit.VavrPatternMatching.eitherPattern">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -165,30 +165,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkkaHttpFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="akka" />
-      <option name="MAIN_CLASS_NAME" value="akka.AkkaHttpFeatures" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <option name="PACKAGE_NAME" value="helidon" />
       <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Java17Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java17" />
-      <option name="MAIN_CLASS_NAME" value="java17.Java17Features" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -211,6 +191,40 @@
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaThrottling" />
       <option name="METHOD_NAME" value="specificPartition" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrEffects.tryToEither" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
+      <option name="METHOD_NAME" value="tryToEither" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrPatternMatching.eitherPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
+      <option name="METHOD_NAME" value="eitherPattern" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -271,20 +285,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AkkaHttpFeatures" />
-      <item itemvalue="JUnit.Java17Features" />
       <item itemvalue="JUnit.HelidonWebServer" />
       <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
       <item itemvalue="Maven.kafka [install]" />
+      <item itemvalue="JUnit.VavrEffects.tryToEither" />
+      <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
+        <item itemvalue="JUnit.VavrEffects.tryToEither" />
         <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
         <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
         <item itemvalue="JUnit.HelidonWebServer" />
-        <item itemvalue="JUnit.Java17Features" />
-        <item itemvalue="JUnit.AkkaHttpFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -416,14 +430,34 @@
       <option name="project" value="LOCAL" />
       <updated>1638996963485</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="vavr pm">
+      <created>1639473833159</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639473833159</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
     <MESSAGE value="add helidon from Oracle" />
     <MESSAGE value="add Kafka connector helidon" />
     <MESSAGE value="Add apache kafka throttling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add apache kafka throttling" />
+    <MESSAGE value="vavr pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr pm" />
   </component>
 </project>
