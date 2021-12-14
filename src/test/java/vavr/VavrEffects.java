@@ -140,6 +140,7 @@ public class VavrEffects {
     @Test
     public void tryError() {
         Try<Object> errorProgram = Try.of(() -> {
+            System.out.println("I'm not lazy and I'm gonna blow if you get me!");
             throw new NullPointerException();
         });
 
