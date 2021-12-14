@@ -22,8 +22,8 @@ import java.util.concurrent.Executors;
 
 /**
  * IMPORTANT: In order to make this test works, we need to have a zookeeper running on port [2181]
- * I personally use docker image: docker pull johnnypark/kafka-zookeeper
- * And run with: docker run -p 2181:2181 -p 9092:9092 -e ADVERTISED_HOST=127.0.0.1  -e NUM_PARTITIONS=10 johnnypark/kafka-zookeeper
+ * I personally use docker image: docker pull johnnypark/kafka.png-zookeeper
+ * And run with: docker run -p 2181:2181 -p 9092:9092 -e ADVERTISED_HOST=127.0.0.1  -e NUM_PARTITIONS=10 johnnypark/kafka.png-zookeeper
  *
  * Apache Curator is a DSL in top of Apache Zookeeper to allow connection management between znodes of the cluster
  * it also allows distributed lock and counter.
@@ -105,7 +105,7 @@ public class ApacheCuratorFeature {
      */
     private void kafkaConsumer() {
         Channel<String> consumerChannel = Channel.<String>builder()
-                .name("kafka-connector")
+                .name("kafka.png-connector")
                 .publisherConfig(KafkaConnector.configBuilder()
                         .bootstrapServers(kafkaServer)
                         .groupId("helidon-group")

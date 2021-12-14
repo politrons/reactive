@@ -263,8 +263,15 @@ Project Loom feature
 ## ![My image](src/main/resources/img/eclipse.png)
 Eclipse Collections is one of the best Java collections framework ever that brings happiness to your Java development.
 
-
 * [feature](src/test/java/eclipse_collection/EclipseCollectionFeature.java)
+
+
+## ![My image](src/main/resources/img/kafka.png)
+
+Examples of patterns using Apache Kafka.
+
+* **[Throttling](kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java)**
+* **[Assign](kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java)**
 
 ## Software craftsmanship
 

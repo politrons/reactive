@@ -27,16 +27,16 @@
     </build>
     <modules>
 <!--        <module>quarkus</module>-->
+        <module>kafka</module>
     </modules>
 
     <dependencies>
-        <!--        VavrIO-->
+        <!-- VavrIO-->
         <dependency>
             <groupId>io.vavr</groupId>
             <artifactId>vavr</artifactId>
             <version>0.10.3</version>
         </dependency>
-
         <!--Rsocket-->
         <dependency>
             <groupId>io.rsocket</groupId>

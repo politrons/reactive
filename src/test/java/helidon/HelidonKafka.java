@@ -33,7 +33,7 @@ public class HelidonKafka {
      */
     private void kafkaConsumer() {
         Channel<String> consumerChannel = Channel.<String>builder()
-                .name("kafka-connector")
+                .name("kafka.png-connector")
                 .publisherConfig(KafkaConnector.configBuilder()
                         .bootstrapServers(kafkaServer)
                         .groupId("helidon-group")

@@ -18,12 +18,12 @@ public class VertxKafkaProducer extends AbstractVerticle {
 
     @Override
     public void start(Promise<Void> startPromise) {
-        System.out.println("Running kafka producer");
+        System.out.println("Running kafka.png producer");
         String topic = "vertx-topic";
         Map<String, String> config = new HashMap<>();
         config.put("bootstrap.servers", brokersAsString);
-        config.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-        config.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        config.put("key.serializer", "org.apache.kafka.png.common.serialization.StringSerializer");
+        config.put("value.serializer", "org.apache.kafka.png.common.serialization.StringSerializer");
         config.put("acks", "1");
 
         KafkaProducer<String, String> producer = KafkaProducer.create(vertx, config);

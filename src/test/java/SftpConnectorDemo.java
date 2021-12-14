@@ -44,7 +44,7 @@ public class SftpConnectorDemo {
      */
     private void kafkaConsumer() {
         Channel<String> consumerChannel = Channel.<String>builder()
-                .name("kafka-connector")
+                .name("kafka.png-connector")
                 .publisherConfig(KafkaConnector.configBuilder()
                         .bootstrapServers(kafkaServer)
                         .groupId("hsbc_sftp-group")
