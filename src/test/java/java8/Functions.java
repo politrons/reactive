@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -19,7 +20,6 @@ import java.util.stream.Stream;
  * @author Pablo Perez
  */
 public class Functions {
-
 
     /**
      * In this example we use constantClass Function, which receive an item and then return the same or another item through the pipeline.
@@ -131,6 +131,12 @@ public class Functions {
         System.out.println(result);
         String result1 = ifMethod(false);
         System.out.println(result1);
+    }
+
+    @Test
+    public void optionalFunction() throws InterruptedException {
+        Optional<Object> o = Optional.ofNullable(null);
+        System.out.println(o.isPresent());
     }
 
     /**
