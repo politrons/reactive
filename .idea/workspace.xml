@@ -12,9 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr pm">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr either">
+      <change afterPath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrPatternMatching.eitherPattern">
+  <component name="RunManager" selected="JUnit.VavrPatternMatching.typeClassesPattern">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -165,16 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KafkaAssignment.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
@@ -225,6 +215,23 @@
       <option name="PACKAGE_NAME" value="vavr" />
       <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
       <option name="METHOD_NAME" value="eitherPattern" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrPatternMatching.typeClassesPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
+      <option name="METHOD_NAME" value="typeClassesPattern" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -285,20 +292,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HelidonWebServer" />
       <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.VavrEffects.tryToEither" />
       <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
+      <item itemvalue="JUnit.VavrPatternMatching.typeClassesPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrPatternMatching.typeClassesPattern" />
         <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
         <item itemvalue="JUnit.VavrEffects.tryToEither" />
         <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
         <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
-        <item itemvalue="JUnit.HelidonWebServer" />
       </list>
     </recent_temporary>
   </component>
@@ -437,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639473833159</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="vavr either">
+      <created>1639485773450</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1639485773450</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,6 +472,7 @@
     <MESSAGE value="add Kafka connector helidon" />
     <MESSAGE value="Add apache kafka throttling" />
     <MESSAGE value="vavr pm" />
-    <option name="LAST_COMMIT_MESSAGE" value="vavr pm" />
+    <MESSAGE value="vavr either" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr either" />
   </component>
 </project>
