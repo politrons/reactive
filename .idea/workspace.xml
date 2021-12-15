@@ -12,10 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr either">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr type classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrPatternMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/CollectionFeatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrPatternMatching.typeClassesPattern">
+  <component name="RunManager" selected="JUnit.CollectionFeatures.mapFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -165,21 +164,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaAssignment.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAssignment" />
-      <option name="METHOD_NAME" value="specificPartition" />
+    <configuration name="CollectionFeatures.mapFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java11" />
+      <option name="MAIN_CLASS_NAME" value="java11.CollectionFeatures" />
+      <option name="METHOD_NAME" value="mapFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaThrottling.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KafkaAssignment.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaThrottling" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAssignment" />
       <option name="METHOD_NAME" value="specificPartition" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -292,20 +297,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.VavrEffects.tryToEither" />
       <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
       <item itemvalue="JUnit.VavrPatternMatching.typeClassesPattern" />
+      <item itemvalue="JUnit.CollectionFeatures.mapFeature" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionFeatures.mapFeature" />
         <item itemvalue="JUnit.VavrPatternMatching.typeClassesPattern" />
         <item itemvalue="JUnit.VavrPatternMatching.eitherPattern" />
         <item itemvalue="JUnit.VavrEffects.tryToEither" />
         <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
-        <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639485773450</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="vavr type classes">
+      <created>1639559624243</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1639559624243</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -473,6 +485,7 @@
     <MESSAGE value="Add apache kafka throttling" />
     <MESSAGE value="vavr pm" />
     <MESSAGE value="vavr either" />
-    <option name="LAST_COMMIT_MESSAGE" value="vavr either" />
+    <MESSAGE value="vavr type classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr type classes" />
   </component>
 </project>
