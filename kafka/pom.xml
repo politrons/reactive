@@ -27,12 +27,18 @@
             <artifactId>kafka-clients</artifactId>
             <version>2.5.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>2.5.0</version>
+        </dependency>
         <!--Kafka embedded-->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
             <version>2.5.0.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>

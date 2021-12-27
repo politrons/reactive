@@ -13,9 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaLogCompaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaConnectAssignmentPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +87,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.politrons.kafka" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaAssignment.specificPartition">
+  <component name="RunManager" selected="JUnit.KafkaStreamFeature.kTable">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -116,30 +121,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AkkaHttpFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="akka" />
-      <option name="MAIN_CLASS_NAME" value="akka.AkkaHttpFeatures" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelidonWebServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="helidon" />
-      <option name="MAIN_CLASS_NAME" value="helidon.HelidonWebServer" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Java17Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="java17" />
-      <option name="MAIN_CLASS_NAME" value="java17.Java17Features" />
+    <configuration name="KafkaAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAssignment" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -157,12 +142,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaThrottling.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KafkaLogCompaction.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaLogCompaction" />
+      <option name="METHOD_NAME" value="specificPartition" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaStreamFeature.kTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
+      <option name="METHOD_NAME" value="kTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaThrottling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaThrottling" />
-      <option name="METHOD_NAME" value="specificPartition" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -271,20 +277,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AkkaHttpFeatures" />
-      <item itemvalue="JUnit.Java17Features" />
-      <item itemvalue="JUnit.HelidonWebServer" />
-      <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
+      <item itemvalue="JUnit.KafkaLogCompaction.specificPartition" />
+      <item itemvalue="JUnit.KafkaAssignment" />
+      <item itemvalue="JUnit.KafkaStreamFeature.kTable" />
+      <item itemvalue="JUnit.KafkaThrottling" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaStreamFeature.kTable" />
+        <item itemvalue="JUnit.KafkaThrottling" />
+        <item itemvalue="JUnit.KafkaAssignment" />
+        <item itemvalue="JUnit.KafkaLogCompaction.specificPartition" />
         <item itemvalue="JUnit.KafkaAssignment.specificPartition" />
-        <item itemvalue="JUnit.KafkaThrottling.specificPartition" />
-        <item itemvalue="JUnit.HelidonWebServer" />
-        <item itemvalue="JUnit.Java17Features" />
-        <item itemvalue="JUnit.AkkaHttpFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638996963485</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add apache kafka assign">
+      <created>1639223581936</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223581936</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -424,6 +437,26 @@
     <MESSAGE value="add helidon from Oracle" />
     <MESSAGE value="add Kafka connector helidon" />
     <MESSAGE value="Add apache kafka throttling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add apache kafka throttling" />
+    <MESSAGE value="Add apache kafka assign" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add apache kafka assign" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaLogCompaction.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java</url>
+          <line>62</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
