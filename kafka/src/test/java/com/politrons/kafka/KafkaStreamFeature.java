@@ -5,12 +5,16 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.streams.KafkaStreams;
-import org.apache.kafka.streams.KeyValue;
-import org.apache.kafka.streams.StreamsBuilder;
-import org.apache.kafka.streams.Topology;
+import org.apache.kafka.common.serialization.Serdes;
+import org.apache.kafka.common.utils.Bytes;
+import org.apache.kafka.streams.*;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KTable;
+import org.apache.kafka.streams.kstream.Materialized;
+import org.apache.kafka.streams.state.KeyValueIterator;
+import org.apache.kafka.streams.state.KeyValueStore;
+import org.apache.kafka.streams.state.QueryableStoreTypes;
+import org.apache.kafka.streams.state.ReadOnlyKeyValueStore;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
@@ -84,14 +88,57 @@ public class KafkaStreamFeature {
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
         System.out.println("Initializing stream");
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
         IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world ", topic));
         System.out.println("Sending events to stream");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
         streams.close();
     }
+
+    @Test
+    public void kTable() throws IOException, InterruptedException {
+        String broker = embeddedKafkaBroker.getBrokersAsString();
+        String topic = "Consumer-topic";
+        Path stateDirectory = Files.createTempDirectory("kafka-streams-sink");
+        //Source
+        Properties config = new Properties();
+        config.put(APPLICATION_ID_CONFIG, "My-kafka-stream");
+        config.put(BOOTSTRAP_SERVERS_CONFIG, broker);
+        config.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, String().getClass().getName());
+        config.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, String().getClass().getName());
+        config.put(STATE_DIR_CONFIG, stateDirectory.toAbsolutePath().toString());
+        //Topology/Flow
+        StreamsBuilder builder = new StreamsBuilder();
+        KStream<String, String> stream = builder.stream(topic);
+
+        stream.toTable(Materialized.as("myEvents"));
+
+        //Run
+        Topology topology = builder.build();
+        KafkaStreams streams = new KafkaStreams(topology, config);
+        streams.start();
+        System.out.println("Initializing stream");
+        Thread.sleep(2000);
+        KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
+        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world ", topic));
+
+        System.out.println("Sending events to stream");
+
+        ReadOnlyKeyValueStore<String, String> keyValueStore =
+                streams.store(StoreQueryParameters.fromNameAndType(
+                        "myEvents", QueryableStoreTypes.keyValueStore()));
+
+        KeyValueIterator<String, String> events = keyValueStore.all();
+        while (events.hasNext()) {
+            KeyValue<String, String> next = events.next();
+            System.out.println("Key " + next.key + " Value: " + next.value);
+        }
+
+        streams.close();
+    }
+
 
     /**
      * Kafka producer implementation.
