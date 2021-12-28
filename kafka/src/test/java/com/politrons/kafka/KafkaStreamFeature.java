@@ -68,7 +68,7 @@ public class KafkaStreamFeature {
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
 
-        KTable<String, String> upperCaseWords = stream
+        KTable<String, String> kTable = stream
                 .map((key, value) -> new KeyValue<>(key.toUpperCase(), value))// Transformation key, value
                 .mapValues(value -> value.toUpperCase() + UUID.randomUUID()) // Transformation value
                 .flatMap((key, value) -> List.of(new KeyValue<>(key, value))) // Composition key, value
@@ -76,7 +76,7 @@ public class KafkaStreamFeature {
                 .filter((key, value) -> value.contains("a")) // Filter
                 .toTable();
         //Sink
-        upperCaseWords.toStream()
+        kTable.toStream()
                 .foreach((key, value) -> System.out.println("key: " + key + " -> " + value));
 
         //Run
