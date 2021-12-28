@@ -111,12 +111,14 @@ public class KafkaStreamFeature {
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
         //Table
-        stream.toTable(Materialized.as("eventsStore"));
+        stream.flatMapValues(v -> List.of(v.toUpperCase()))
+                .toTable(Materialized.as("eventsStore"));
 
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
         System.out.println("Initializing stream");
+
         Thread.sleep(2000);
         publishMessages(broker, topic);
 
