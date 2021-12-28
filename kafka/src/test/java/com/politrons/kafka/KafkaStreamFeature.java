@@ -68,17 +68,16 @@ public class KafkaStreamFeature {
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
 
-        KTable<String, Long> upperCaseWords = stream
+        KTable<String, String> upperCaseWords = stream
                 .map((key, value) -> new KeyValue<>(key.toUpperCase(), value))// Transformation key, value
                 .mapValues(value -> value.toUpperCase() + UUID.randomUUID()) // Transformation value
                 .flatMap((key, value) -> List.of(new KeyValue<>(key, value))) // Composition key, value
                 .flatMapValues(value -> List.of("[" + value + "]")) // Composition value
                 .filter((key, value) -> value.contains("a")) // Filter
-                .groupBy((key, word) -> word)
-                .count();
+                .toTable();
         //Sink
         upperCaseWords.toStream()
-                .foreach((word, count) -> System.out.println("word: " + word + " -> " + count));
+                .foreach((key, value) -> System.out.println("key: " + key + " -> " + value));
 
         //Run
         Topology topology = builder.build();
