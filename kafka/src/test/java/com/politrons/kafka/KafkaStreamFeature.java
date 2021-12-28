@@ -5,12 +5,11 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.*;
-import org.apache.kafka.streams.kstream.KStream;
-import org.apache.kafka.streams.kstream.KTable;
-import org.apache.kafka.streams.kstream.Materialized;
+import org.apache.kafka.streams.kstream.*;
 import org.apache.kafka.streams.state.KeyValueIterator;
 import org.apache.kafka.streams.state.KeyValueStore;
 import org.apache.kafka.streams.state.QueryableStoreTypes;
@@ -34,11 +33,11 @@ import static org.apache.kafka.streams.StreamsConfig.*;
 import static org.apache.kafka.streams.state.QueryableStoreTypes.*;
 
 
-@EmbeddedKafka(partitions = 2)
+@EmbeddedKafka(partitions = 5)
 public class KafkaStreamFeature {
 
     @ClassRule
-    public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 2, "Consumer-topic");
+    public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 5, "Consumer-topic", "Consumer-topic-1", "Consumer-topic-2");
 
     private final EmbeddedKafkaBroker embeddedKafkaBroker = embeddedKafkaRule.getEmbeddedKafka();
 
@@ -142,6 +141,42 @@ public class KafkaStreamFeature {
         System.out.println("Get:" + eventsStore.get("key-5"));
 
         streams.close();
+    }
+
+    @Test
+    public void topicToTopic() throws InterruptedException {
+        String broker = embeddedKafkaBroker.getBrokersAsString();
+        String topic1 = "Consumer-topic-1";
+        String topic2 = "Consumer-topic-2";
+
+        Properties config = getSourceConfig(broker);
+        Serde<String> stringSerde = Serdes.String();
+
+        StreamsBuilder builder = new StreamsBuilder();
+        builder.stream(topic1, Consumed.with(stringSerde, stringSerde))
+                .peek((k, v) -> System.out.println("Topic 1 Observed event:" + v))
+                .mapValues((ValueMapper<String, String>) String::toUpperCase)
+                .to(topic2, Produced.with(stringSerde, stringSerde));
+        Topology topology = builder.build();
+        KafkaStreams streams = new KafkaStreams(topology, config);
+        streams.start();
+
+        StreamsBuilder builder1 = new StreamsBuilder();
+        builder1.stream(topic2, Consumed.with(stringSerde, stringSerde))
+                .peek((k, v) -> System.out.println("Topic 2 Observed event:" + v))
+                .toTable();
+        Topology topology1 = builder1.build();
+        KafkaStreams streams1 = new KafkaStreams(topology1, config);
+        streams1.start();
+
+        Thread.sleep(2000);
+
+        publishMessages(broker, topic1);
+
+        Thread.sleep(10000);
+
+        streams.close();
+        streams1.close();
     }
 
     private void publishMessages(String broker, String topic) {

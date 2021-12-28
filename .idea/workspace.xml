@@ -13,7 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaStreamFeature">
+  <component name="RunManager" selected="JUnit.KafkaStreamFeature.topicToTopic">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -135,17 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaStreamFeature.kTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
-      <option name="METHOD_NAME" value="kTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KafkaStreamFeature.queries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
@@ -162,6 +152,17 @@
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
       <option name="METHOD_NAME" value="stream" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaStreamFeature.topicToTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
+      <option name="METHOD_NAME" value="topicToTopic" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -273,18 +274,18 @@
     <list>
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.KafkaStreamFeature.stream" />
-      <item itemvalue="JUnit.KafkaStreamFeature.kTable" />
       <item itemvalue="JUnit.KafkaStreamFeature.queries" />
       <item itemvalue="JUnit.KafkaStreamFeature.groups" />
       <item itemvalue="JUnit.KafkaStreamFeature" />
+      <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
         <item itemvalue="JUnit.KafkaStreamFeature" />
         <item itemvalue="JUnit.KafkaStreamFeature.queries" />
         <item itemvalue="JUnit.KafkaStreamFeature.groups" />
         <item itemvalue="JUnit.KafkaStreamFeature.stream" />
-        <item itemvalue="JUnit.KafkaStreamFeature.kTable" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640731576715</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="apache kafka stream">
+      <created>1640731829817</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640731829817</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
