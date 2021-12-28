@@ -57,17 +57,11 @@ public class KafkaStreamFeature {
      * In this example we just print into console the output of each event after we use some operators of the strem
      */
     @Test
-    public void stream() throws IOException, InterruptedException {
+    public void stream() throws InterruptedException {
         String broker = embeddedKafkaBroker.getBrokersAsString();
         String topic = "Consumer-topic";
-        Path stateDirectory = Files.createTempDirectory("kafka-streams-sink");
         //Source
-        Properties config = new Properties();
-        config.put(APPLICATION_ID_CONFIG, "My-kafka-stream");
-        config.put(BOOTSTRAP_SERVERS_CONFIG, broker);
-        config.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, String().getClass().getName());
-        config.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, String().getClass().getName());
-        config.put(STATE_DIR_CONFIG, stateDirectory.toAbsolutePath().toString());
+        Properties config = getSourceConfig(broker);
         //Topology/Flow
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
@@ -98,21 +92,14 @@ public class KafkaStreamFeature {
     }
 
     @Test
-    public void kTable() throws IOException, InterruptedException {
+    public void queries() throws InterruptedException {
         String broker = embeddedKafkaBroker.getBrokersAsString();
         String topic = "Consumer-topic";
-        Path stateDirectory = Files.createTempDirectory("kafka-streams-sink");
         //Source
-        Properties config = new Properties();
-        config.put(APPLICATION_ID_CONFIG, "My-kafka-stream");
-        config.put(BOOTSTRAP_SERVERS_CONFIG, broker);
-        config.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, String().getClass().getName());
-        config.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, String().getClass().getName());
-        config.put(STATE_DIR_CONFIG, stateDirectory.toAbsolutePath().toString());
+        Properties config = getSourceConfig(broker);
         //Topology/Flow
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
-
         stream.toTable(Materialized.as("myEvents"));
 
         //Run
@@ -122,21 +109,32 @@ public class KafkaStreamFeature {
         System.out.println("Initializing stream");
         Thread.sleep(2000);
         KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
-        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world ", topic));
+        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world " + UUID.randomUUID(), topic));
 
         System.out.println("Sending events to stream");
 
-        ReadOnlyKeyValueStore<String, String> keyValueStore =
+        ReadOnlyKeyValueStore<String, String> myEvents =
                 streams.store(StoreQueryParameters.fromNameAndType(
                         "myEvents", QueryableStoreTypes.keyValueStore()));
 
-        KeyValueIterator<String, String> events = keyValueStore.all();
+        KeyValueIterator<String, String> events = myEvents.all();
         while (events.hasNext()) {
             KeyValue<String, String> next = events.next();
             System.out.println("Key " + next.key + " Value: " + next.value);
         }
 
+        System.out.println("Value searched:" + myEvents.get("key-5"));
+
         streams.close();
+    }
+
+    private Properties getSourceConfig(String broker) {
+        Properties config = new Properties();
+        config.put(APPLICATION_ID_CONFIG, "My-kafka-stream");
+        config.put(BOOTSTRAP_SERVERS_CONFIG, broker);
+        config.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, String().getClass().getName());
+        config.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, String().getClass().getName());
+        return config;
     }
 
 
