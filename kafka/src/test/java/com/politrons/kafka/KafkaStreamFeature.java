@@ -160,20 +160,18 @@ public class KafkaStreamFeature {
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
-
-        StreamsBuilder builder1 = new StreamsBuilder();
-        builder1.stream(topic2, Consumed.with(stringSerde, stringSerde))
-                .peek((k, v) -> System.out.println("Topic 2 Observed event:" + v))
-                .toTable();
-        Topology topology1 = builder1.build();
-        KafkaStreams streams1 = new KafkaStreams(topology1, config);
-        streams1.start();
-
         Thread.sleep(2000);
 
         publishMessages(broker, topic1);
 
-        Thread.sleep(10000);
+        StreamsBuilder builder1 = new StreamsBuilder();
+        builder1.stream(topic2, Consumed.with(stringSerde, stringSerde))
+                .foreach((key, value) -> System.out.println("key: " + key + " -> " + value));
+
+        Topology topology1 = builder1.build();
+        KafkaStreams streams1 = new KafkaStreams(topology1, config);
+        streams1.start();
+        Thread.sleep(2000);
 
         streams.close();
         streams1.close();

@@ -515,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640731829817</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="apache kafka stream">
+      <created>1640734517620</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1640734517620</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,5 +547,19 @@
     <MESSAGE value="vavr type classes" />
     <MESSAGE value="apache kafka stream" />
     <option name="LAST_COMMIT_MESSAGE" value="apache kafka stream" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java</url>
+          <line>168</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
