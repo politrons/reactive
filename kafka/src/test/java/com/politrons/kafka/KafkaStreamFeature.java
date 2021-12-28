@@ -79,7 +79,6 @@ public class KafkaStreamFeature {
         kTable.toStream()
                 .foreach((key, value) -> System.out.println("key: " + key + " -> " + value));
 
-        //Run
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
@@ -101,7 +100,6 @@ public class KafkaStreamFeature {
      * normally [QueryableStoreTypes.keyValueStore()].
      * That create the [ReadOnlyKeyValueStore] which is a view that allow us [get, all, range] over the records
      * of the Stream.
-     *
      */
     @Test
     public void queries() throws InterruptedException {
@@ -114,7 +112,7 @@ public class KafkaStreamFeature {
         KStream<String, String> stream = builder.stream(topic);
         //Table
         stream.toTable(Materialized.as("eventsStore"));
-        //Run
+
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
@@ -158,7 +156,6 @@ public class KafkaStreamFeature {
         config.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, String().getClass().getName());
         return config;
     }
-
 
     /**
      * Kafka producer implementation.
