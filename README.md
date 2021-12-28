@@ -272,6 +272,7 @@ Examples of patterns using Apache Kafka.
 
 * **[Throttling](kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java)**
 * **[Assign](kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java)**
+* **[Stream](kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java)**
 
 ## Software craftsmanship
 
