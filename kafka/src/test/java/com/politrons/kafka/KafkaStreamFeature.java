@@ -113,7 +113,7 @@ public class KafkaStreamFeature {
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
         //Table
-        stream.toTable(Materialized.as("myEvents"));
+        stream.toTable(Materialized.as("eventsStore"));
         //Run
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
@@ -122,16 +122,24 @@ public class KafkaStreamFeature {
         Thread.sleep(2000);
         publishMessages(broker, topic);
 
-        ReadOnlyKeyValueStore<String, String> myEvents =
-                streams.store(fromNameAndType("myEvents", keyValueStore()));
+        ReadOnlyKeyValueStore<String, String> eventsStore =
+                streams.store(fromNameAndType("eventsStore", keyValueStore()));
 
-        KeyValueIterator<String, String> events = myEvents.all();
+        System.out.println("Get all:");
+        KeyValueIterator<String, String> events = eventsStore.all();
         while (events.hasNext()) {
             KeyValue<String, String> next = events.next();
             System.out.println("Key " + next.key + " Value: " + next.value);
         }
 
-        System.out.println("Value searched:" + myEvents.get("key-5"));
+        System.out.println("Range:");
+        KeyValueIterator<String, String> rangeEvents = eventsStore.range("key-1", "key-5");
+        while (rangeEvents.hasNext()) {
+            KeyValue<String, String> next = rangeEvents.next();
+            System.out.println("Key " + next.key + " Value: " + next.value);
+        }
+
+        System.out.println("Get:" + eventsStore.get("key-5"));
 
         streams.close();
     }
