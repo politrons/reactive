@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaStreamFeature.stream">
+  <component name="RunManager" selected="JUnit.KafkaStreamFeature.queries">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -293,8 +294,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KafkaStreamFeature.stream" />
         <item itemvalue="JUnit.KafkaStreamFeature.queries" />
+        <item itemvalue="JUnit.KafkaStreamFeature.stream" />
         <item itemvalue="JUnit.KafkaStreamFeature.kTable" />
         <item itemvalue="JUnit.Functions.optionalFunction" />
         <item itemvalue="JUnit.CollectionFeatures.mapFeature" />
@@ -485,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640689745881</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="apache kafka stream">
+      <created>1640712486967</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640712486967</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,16 +518,5 @@
     <MESSAGE value="vavr type classes" />
     <MESSAGE value="apache kafka stream" />
     <option name="LAST_COMMIT_MESSAGE" value="apache kafka stream" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

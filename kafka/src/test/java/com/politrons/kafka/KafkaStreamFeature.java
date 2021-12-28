@@ -29,7 +29,9 @@ import java.util.stream.IntStream;
 
 import static java.time.Duration.ofSeconds;
 import static org.apache.kafka.common.serialization.Serdes.*;
+import static org.apache.kafka.streams.StoreQueryParameters.*;
 import static org.apache.kafka.streams.StreamsConfig.*;
+import static org.apache.kafka.streams.state.QueryableStoreTypes.*;
 
 
 @EmbeddedKafka(partitions = 2)
@@ -65,7 +67,7 @@ public class KafkaStreamFeature {
         //Topology/Flow
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
-
+        //Functional operators
         KTable<String, String> kTable = stream
                 .map((key, value) -> new KeyValue<>(key.toUpperCase(), value))// Transformation key, value
                 .mapValues(value -> value.toUpperCase() + UUID.randomUUID()) // Transformation value
@@ -83,14 +85,24 @@ public class KafkaStreamFeature {
         streams.start();
         System.out.println("Initializing stream");
         Thread.sleep(2000);
-        KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
-        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world ", topic));
-        System.out.println("Sending events to stream");
+        publishMessages(broker, topic);
         Thread.sleep(5000);
 
         streams.close();
     }
 
+    /**
+     * Another feature of Kafka Stream, is to "persist" the events as a Table, and search records using [stores].
+     * Once we have a Stream, we can create [KTable] with a [Materialized] with a given name to be used later on
+     * to make the queries.
+     * <p>
+     * In order to do queries over the table we have to use [store] operator over the stream, passing
+     * a [StoreQueryParameters.fromNameAndType] where we specify the KTable view name, and also the types
+     * normally [QueryableStoreTypes.keyValueStore()].
+     * That create the [ReadOnlyKeyValueStore] which is a view that allow us [get, all, range] over the records
+     * of the Stream.
+     *
+     */
     @Test
     public void queries() throws InterruptedException {
         String broker = embeddedKafkaBroker.getBrokersAsString();
@@ -100,22 +112,18 @@ public class KafkaStreamFeature {
         //Topology/Flow
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, String> stream = builder.stream(topic);
+        //Table
         stream.toTable(Materialized.as("myEvents"));
-
         //Run
         Topology topology = builder.build();
         KafkaStreams streams = new KafkaStreams(topology, config);
         streams.start();
         System.out.println("Initializing stream");
         Thread.sleep(2000);
-        KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
-        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world " + UUID.randomUUID(), topic));
-
-        System.out.println("Sending events to stream");
+        publishMessages(broker, topic);
 
         ReadOnlyKeyValueStore<String, String> myEvents =
-                streams.store(StoreQueryParameters.fromNameAndType(
-                        "myEvents", QueryableStoreTypes.keyValueStore()));
+                streams.store(fromNameAndType("myEvents", keyValueStore()));
 
         KeyValueIterator<String, String> events = myEvents.all();
         while (events.hasNext()) {
@@ -126,6 +134,12 @@ public class KafkaStreamFeature {
         System.out.println("Value searched:" + myEvents.get("key-5"));
 
         streams.close();
+    }
+
+    private void publishMessages(String broker, String topic) {
+        KafkaStreamProducer producer = new KafkaStreamProducer(broker, "producerId");
+        IntStream.range(0, 10).forEach(i -> producer.publishMessage("key-" + i, "hello world " + UUID.randomUUID(), topic));
+        System.out.println("Sending events to stream");
     }
 
     private Properties getSourceConfig(String broker) {
