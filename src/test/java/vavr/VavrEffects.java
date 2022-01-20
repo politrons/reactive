@@ -7,6 +7,7 @@ import io.vavr.control.Option;
 import io.vavr.control.Try;
 import org.junit.Test;
 
+import java.io.ByteArrayInputStream;
 import java.util.Random;
 
 import static io.vavr.API.*;
@@ -160,6 +161,16 @@ public class VavrEffects {
                         .toEither(1981);
         System.out.println(emptyProgram.isRight());
         System.out.println(emptyProgram.getLeft());
+    }
+
+    @Test
+    public void tryAndResources() {
+        Try.of(()-> "hello world")
+                .flatMap(text -> {
+                   return  Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
+                            .of(bais -> "back");
+                });
+
     }
 
     private String getMaybeString() {
