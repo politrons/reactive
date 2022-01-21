@@ -12,8 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr type classes">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="new pattern matching">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrPatternMatching.booleanPattern">
+  <component name="RunManager" selected="JUnit.GenericsFeature.compareTypeClasses">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -169,6 +170,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GenericsFeature.compareTypeClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GenericsFeature" />
+      <option name="METHOD_NAME" value="compareTypeClasses" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaOrdering" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <extension name="coverage">
@@ -190,17 +202,6 @@
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaStreamFeature.queries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
-      <option name="METHOD_NAME" value="queries" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -288,20 +289,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.KafkaStreamFeature.queries" />
       <item itemvalue="JUnit.KafkaStreamFeature" />
       <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
       <item itemvalue="JUnit.KafkaOrdering" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
+      <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
         <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
         <item itemvalue="JUnit.KafkaOrdering" />
         <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
         <item itemvalue="JUnit.KafkaStreamFeature" />
-        <item itemvalue="JUnit.KafkaStreamFeature.queries" />
       </list>
     </recent_temporary>
   </component>
@@ -545,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642698535577</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="new pattern matching">
+      <created>1642756984078</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1642756984078</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,7 +577,8 @@
     <MESSAGE value="vavr either" />
     <MESSAGE value="apache kafka stream" />
     <MESSAGE value="vavr type classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="vavr type classes" />
+    <MESSAGE value="new pattern matching" />
+    <option name="LAST_COMMIT_MESSAGE" value="new pattern matching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
