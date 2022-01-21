@@ -55,6 +55,15 @@ public class VavrPatternMatching {
         System.out.println(of);
     }
 
+    @Test
+    public void booleanPattern() {
+        var output = Match(false).of(
+                Case(($(true)), value -> "found"),
+                Case(($(false)), value -> "not found")
+        );
+        println(output);
+    }
+
     static class A {
         public A(String a) {
             this.a = a;

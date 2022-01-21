@@ -12,11 +12,8 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaOrdering.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr type classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1xfYBRJDMUfjA5UvAemcqNVVcCH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,7 +80,7 @@
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,7 +90,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaOrdering">
+  <component name="RunManager" selected="JUnit.VavrPatternMatching.booleanPattern">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -198,17 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaStreamFeature.groups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
-      <option name="METHOD_NAME" value="groups" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KafkaStreamFeature.queries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
@@ -225,6 +211,23 @@
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
       <option name="METHOD_NAME" value="topicToTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrPatternMatching.booleanPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
+      <option name="METHOD_NAME" value="booleanPattern" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -286,19 +289,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.KafkaStreamFeature.queries" />
-      <item itemvalue="JUnit.KafkaStreamFeature.groups" />
       <item itemvalue="JUnit.KafkaStreamFeature" />
       <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
-      <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.KafkaOrdering" />
+      <item itemvalue="Maven.kafka [install]" />
+      <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
         <item itemvalue="JUnit.KafkaOrdering" />
         <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
         <item itemvalue="JUnit.KafkaStreamFeature" />
         <item itemvalue="JUnit.KafkaStreamFeature.queries" />
-        <item itemvalue="JUnit.KafkaStreamFeature.groups" />
       </list>
     </recent_temporary>
   </component>
@@ -535,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640734517620</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="vavr type classes">
+      <created>1642698535577</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1642698535577</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -557,9 +567,9 @@
     <MESSAGE value="Add apache kafka throttling" />
     <MESSAGE value="vavr pm" />
     <MESSAGE value="vavr either" />
-    <MESSAGE value="vavr type classes" />
     <MESSAGE value="apache kafka stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="apache kafka stream" />
+    <MESSAGE value="vavr type classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr type classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
