@@ -3,6 +3,7 @@ package com.politrons.kafka.sagas;
 import io.vavr.Function0;
 import io.vavr.collection.List;
 import io.vavr.concurrent.Future;
+import io.vavr.control.Option;
 import io.vavr.control.Try;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -19,6 +20,9 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.function.Consumer;
 
+import static io.vavr.API.*;
+import static io.vavr.Patterns.$None;
+import static io.vavr.Patterns.$Some;
 import static java.time.Duration.ofSeconds;
 
 @EmbeddedKafka(partitions = 4)
@@ -35,16 +39,16 @@ public class KSaga {
     public void sagasPattern() throws InterruptedException {
         KSaga.withAction(this::actionA)
                 .withCompensation(error -> System.out.printf("Reverting local transaction service A. Caused by %s", new String(error)))
-                .withNextServiceChannel("ServiceB")
-                .withCompensationChannel("")
+                .withNextServiceChannel(Some("ServiceB"))
+                .withCompensationChannel(None())
                 .withConfig(brokers, "ServiceA");
 
         Thread.sleep(2000);
 
         KSaga.withAction(this::actionB)
                 .withCompensation(error -> System.out.printf("reverting local transaction service B. Caused by %s", error))
-                .withNextServiceChannel("")
-                .withCompensationChannel("ServiceA")
+                .withNextServiceChannel(None())
+                .withCompensationChannel(Some("ServiceA"))
                 .withConfig(brokers, "ServiceB");
 
         Thread.sleep(2000);
@@ -69,7 +73,12 @@ public class KSaga {
 
     //  DSL
     //-------
-
+    /*
+    Here we define the algebras that compound the DSL that help us to build the
+    Saga Executor Coordinator(SEC)
+    We define actions/compensations functions that it will be executed when receive an event of
+    Action or Compensation.
+     */
     public static <T> Action<T> withAction(Function0<T> action) {
         return new Action<>(action);
     }
@@ -83,19 +92,19 @@ public class KSaga {
 
     record Compensation<T>(Action<T> action, Consumer<T> function) {
 
-        public NextService<T> withNextServiceChannel(String actionTopic) {
+        public NextService<T> withNextServiceChannel(Option<String> actionTopic) {
             return new NextService<>(this, actionTopic);
         }
     }
 
-    record NextService<T>(Compensation<T> compensation, String actionTopic) {
+    record NextService<T>(Compensation<T> compensation, Option<String> maybeActionTopic) {
 
-        public CompensationChannel<T> withCompensationChannel(String compensationTopic) {
+        public CompensationChannel<T> withCompensationChannel(Option<String> compensationTopic) {
             return new CompensationChannel<>(this, compensationTopic);
         }
     }
 
-    record CompensationChannel<T>(NextService<T> actionChannel, String compensationTopic) {
+    record CompensationChannel<T>(NextService<T> actionChannel, Option<String> maybeCompensationTopic) {
 
         public void withConfig(String broker, String serviceTopic) {
             Future.run(() -> interpreter(broker, serviceTopic));
@@ -105,34 +114,59 @@ public class KSaga {
         // Interpreter of the KSaga DSL
         //------------------------------
         private void interpreter(String broker, String serviceTopic) {
+            /*
+             * Consumer to subscribe to possible compensation action over local transaction
+             */
             KSagaConsumer<T> compensationConsumer =
                     new KSagaConsumer<>(
                             broker,
                             serviceTopic,
                             "groupId");
 
+            /*
+              Producer to send the action output to the next service of the platform
+             */
             KSagaProducer<T> kSagaProducer =
                     new KSagaProducer<>(
                             broker,
                             "actionProducer"
                     );
 
+            /*
+              Producer to send back to the previous service the reason why the distributed transaction
+              fail, so then this service can do the compensation
+             */
             KSagaProducer<byte[]> kSagaProducerError =
                     new KSagaProducer<>(
                             broker,
                             "actionProducer"
                     );
 
+            /*
+               We control Side-effect of the action, in case of success, we send the output of the action,
+               to the next service in the platform.
+               And in case of error, we invoke the previous service to allow him to perform a compensation.
+             */
             Try.of(actionChannel.compensation.action.function::apply)
                     .onSuccess(output -> {
-                        ProducerRecord<String, T> record =
-                                new ProducerRecord<>(actionChannel.actionTopic, output);
-                        kSagaProducer.producer.send(record);
+                        Match(actionChannel.maybeActionTopic).of(
+                                Case($Some($()), actionTopic -> {
+                                    ProducerRecord<String, T> record =
+                                            new ProducerRecord<>(actionTopic, output);
+                                    return kSagaProducer.producer.send(record);
+                                }),
+                                Case($None(), "empty")
+                        );
                     })
                     .onFailure(t -> {
-                        ProducerRecord<String, byte[]> record =
-                                new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
-                        kSagaProducerError.producer.send(record);
+                        Match(maybeCompensationTopic).of(
+                                Case($Some($()), compensationTopic -> {
+                                    ProducerRecord<String, byte[]> record =
+                                            new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
+                                    return kSagaProducerError.producer.send(record);
+                                }),
+                                Case($None(), "empty")
+                        );
                     });
 
             compensationConsumer.start(actionChannel.compensation.function);
@@ -142,6 +176,7 @@ public class KSaga {
     // Kafka Transport Layer
     //------------------------
 
+    //Simple Kafka consumer implementation
     static public class KSagaConsumer<T> {
 
         public final String broker;
@@ -158,6 +193,10 @@ public class KSaga {
             this.groupId = groupId;
         }
 
+        /*
+            We start the consumer subscription receiving a Generic Consumer<T> function, to apply
+            in case we receive an error response event to make a compensation.
+         */
         public void start(Consumer<T> compensationFunc) {
             this.consumer = createConsumer();
             consumeRecords(consumer, compensationFunc);
@@ -188,6 +227,7 @@ public class KSaga {
         }
     }
 
+    //Simple Kafka producer implementation
     public static class KSagaProducer<T> {
 
         public final String broker;
