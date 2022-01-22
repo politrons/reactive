@@ -92,6 +92,12 @@ public class KSaga {
                             "actionProducer"
                     );
 
+            KSagaProducer<byte[]> kSagaProducerError =
+                    new KSagaProducer<>(
+                            null,
+                            "actionProducer"
+                    );
+
             Try.of(actionChannel.compensation.action.function::apply)
                     .onSuccess(output -> {
                         ProducerRecord<String, T> record =
@@ -101,7 +107,7 @@ public class KSaga {
                     .onFailure(t -> {
                         ProducerRecord<String, byte[]> record =
                                 new ProducerRecord<>(compensationTopic, t.getMessage().getBytes());
-                        kSagaProducer.producer.send(record);
+                        kSagaProducerError.producer.send(record);
                     });
 
             compensationConsumer.start();
