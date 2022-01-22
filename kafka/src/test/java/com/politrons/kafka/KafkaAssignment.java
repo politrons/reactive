@@ -50,6 +50,7 @@ public class KafkaAssignment {
      */
     @Test
     public void specificPartition() throws InterruptedException {
+        Thread.currentThread().getName();
         String broker = embeddedKafkaBroker.getBrokersAsString();
         String topic = "Consumer-topic";
         KafkaAssignedConsumer consumer1 = new KafkaAssignedConsumer(

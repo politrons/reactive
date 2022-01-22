@@ -7,33 +7,26 @@ import io.vavr.control.Try;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.clients.consumer.internals.NoOpConsumerRebalanceListener;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.TopicPartition;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
 import org.springframework.kafka.test.context.EmbeddedKafka;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 
-import java.util.Collection;
 import java.util.Properties;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
 import java.util.stream.IntStream;
 
-import static com.politrons.kafka.KafkaOrdering.ThrottlingKafkaConsumer.*;
+import static com.politrons.kafka.KafkaBalancing.ThrottlingKafkaConsumer.*;
 import static java.time.Duration.ofSeconds;
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 /**
  * Here we cover the pattern of how when we have multiple topics for one consumer is doing round-robin balancing.
  */
 @EmbeddedKafka(partitions = 4)
-public class KafkaOrdering {
+public class KafkaBalancing {
 
     @ClassRule
     public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 4, "High", "Medium");
