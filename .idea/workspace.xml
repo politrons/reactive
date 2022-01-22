@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +46,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/collection/List.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Function0.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -95,7 +92,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenericsFeature.compareTypeClasses">
+  <component name="RunManager" selected="JUnit.KSaga">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -119,6 +116,69 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="KSaga" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.sagas.KSaga" />
+      <module name="kafka" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.politrons.kafka.sagas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -136,6 +196,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KSaga" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.politrons.kafka.sagas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.politrons.kafka.sagas" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.sagas.KSaga" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaBalancing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kafka" />
       <extension name="coverage">
@@ -147,27 +223,6 @@
       <option name="PACKAGE_NAME" value="com.politrons.kafka" />
       <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaBalancing" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaStreamFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaStreamFeature.topicToTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaStreamFeature" />
-      <option name="METHOD_NAME" value="topicToTopic" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,27 +289,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -264,49 +298,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="JUnit.KafkaStreamFeature" />
-      <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
       <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
       <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
-      <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.KafkaBalancing" />
+      <item itemvalue="Maven.kafka [install]" />
+      <item itemvalue="Application.KSaga" />
+      <item itemvalue="JUnit.KSaga" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KSaga" />
+        <item itemvalue="Application.KSaga" />
         <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
         <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
         <item itemvalue="JUnit.KafkaBalancing" />
-        <item itemvalue="JUnit.KafkaStreamFeature.topicToTopic" />
-        <item itemvalue="JUnit.KafkaStreamFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -634,18 +640,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="40" />
+          <line>40</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
