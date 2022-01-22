@@ -12,12 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="new pattern matching">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaOrdering.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenericsFeature.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java11/HttpClient2Feature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -556,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642756984078</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="kafka balancing">
+      <created>1642849963736</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1642849963736</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +585,8 @@
     <MESSAGE value="apache kafka stream" />
     <MESSAGE value="vavr type classes" />
     <MESSAGE value="new pattern matching" />
-    <option name="LAST_COMMIT_MESSAGE" value="new pattern matching" />
+    <MESSAGE value="kafka balancing" />
+    <option name="LAST_COMMIT_MESSAGE" value="kafka balancing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
