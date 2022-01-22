@@ -15,7 +15,6 @@ import org.springframework.kafka.test.context.EmbeddedKafka;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 
 import java.util.Properties;
-import java.util.function.Consumer;
 
 import static java.time.Duration.ofSeconds;
 
@@ -29,29 +28,31 @@ public class KSaga {
 
     static String brokers = embeddedKafkaBroker.getBrokersAsString();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         KSaga.withAction(() -> {
                     var msg = "Running local transaction service A";
                     System.out.println(msg);
                     return msg;
                 })
                 .withCompensation(() -> "reverting local transaction service A")
-                .withActionChannel("ServiceB")
+                .withNextServiceChannel("ServiceB")
                 .withCompensationChannel("")
-                .build();
+                .withConfig(brokers, "ServiceA");
+
+        Thread.sleep(5000);
 
         KSaga.withAction(() -> {
                     System.out.println("Running local transaction service B");
                     throw new IllegalStateException();
                 })
                 .withCompensation(() -> "reverting local transaction service B")
-                .withActionChannel("")
+                .withNextServiceChannel("")
                 .withCompensationChannel("ServiceA")
-                .build();
+                .withConfig(brokers, "ServiceB");
 
     }
 
-    public static <T> Action <T> withAction(Function0<T> action) {
+    public static <T> Action<T> withAction(Function0<T> action) {
         return new Action<>(action);
     }
 
@@ -62,46 +63,46 @@ public class KSaga {
         }
     }
 
-    record Compensation<T>(Action<T> action, Function0<T> compensation) {
+    record Compensation<T>(Action<T> action, Function0<T> function) {
 
-        public ActionChannel<T> withActionChannel(String actionTopic) {
-            return new ActionChannel<>(this, actionTopic);
+        public NextService<T> withNextServiceChannel(String actionTopic) {
+            return new NextService<>(this, actionTopic);
         }
     }
 
-    record ActionChannel<T>(Compensation<T> compensation, String actionTopic) {
+    record NextService<T>(Compensation<T> compensation, String actionTopic) {
 
         public CompensationChannel<T> withCompensationChannel(String compensationTopic) {
             return new CompensationChannel<>(this, compensationTopic);
         }
     }
 
-    record CompensationChannel<T>(ActionChannel<T> actionChannel, String compensationTopic) {
+    record CompensationChannel<T>(NextService<T> actionChannel, String compensationTopic) {
 
-        public void build() {
+        public void withConfig(String broker, String serviceTopic) {
 
             KSagaConsumer compensationConsumer =
                     new KSagaConsumer(
-                            null,
-                            compensationTopic,
+                            broker,
+                            serviceTopic,
                             "groupId");
 
             KSagaProducer<T> kSagaProducer =
                     new KSagaProducer<>(
-                            null,
+                            broker,
                             "actionProducer"
                     );
 
             KSagaProducer<byte[]> kSagaProducerError =
                     new KSagaProducer<>(
-                            null,
+                            broker,
                             "actionProducer"
                     );
 
             Try.of(actionChannel.compensation.action.function::apply)
                     .onSuccess(output -> {
                         ProducerRecord<String, T> record =
-                                new ProducerRecord<>(compensationTopic, output);
+                                new ProducerRecord<>(actionChannel.actionTopic, output);
                         kSagaProducer.producer.send(record);
                     })
                     .onFailure(t -> {
@@ -110,7 +111,7 @@ public class KSaga {
                         kSagaProducerError.producer.send(record);
                     });
 
-            compensationConsumer.start();
+            compensationConsumer.start(actionChannel.compensation.function);
 
         }
     }
@@ -132,9 +133,9 @@ public class KSaga {
             this.groupId = groupId;
         }
 
-        public void start() {
+        public <T> void start(Function0<T> compensationFunc) {
             this.consumer = createConsumer();
-            Future.run(() -> consumeRecords(consumer));
+            Future.run(() -> consumeRecords(consumer, compensationFunc));
         }
 
         private org.apache.kafka.clients.consumer.Consumer<String, byte[]> createConsumer() {
@@ -148,10 +149,13 @@ public class KSaga {
             return consumer;
         }
 
-        public void consumeRecords(final org.apache.kafka.clients.consumer.Consumer<String, byte[]> consumer) {
+        public <T> void consumeRecords(final org.apache.kafka.clients.consumer.Consumer<String, byte[]> consumer, Function0<T> compensation) {
             while (true) {
                 ConsumerRecords<String, byte[]> consumerRecords = consumer.poll(ofSeconds(5));
-                consumerRecords.forEach(record -> System.out.printf("############ Consumer topic %s message %s ############\n", record.topic(), new String(record.value())));
+                consumerRecords.forEach(record -> {
+                    System.out.printf("############ Compensation received. Caused by %s ############\n", new String(record.value()));
+                    compensation.apply();
+                });
                 consumer.commitAsync();
             }
         }
