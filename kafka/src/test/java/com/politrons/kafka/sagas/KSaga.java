@@ -16,6 +16,7 @@ import org.springframework.kafka.test.context.EmbeddedKafka;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 
 import java.util.Properties;
+import java.util.Random;
 import java.util.function.Consumer;
 
 import static java.time.Duration.ofSeconds;
@@ -30,32 +31,44 @@ public class KSaga {
 
     String brokers = embeddedKafkaBroker.getBrokersAsString();
 
-
     @Test
     public void sagasPattern() throws InterruptedException {
-        KSaga.withAction(() -> {
-                    var msg = "Running local transaction service A";
-                    System.out.println(msg);
-                    return msg.getBytes();
-                })
-                .withCompensation(r -> System.out.printf("Reverting local transaction service A. Caused by %s", new String(r)))
+        KSaga.withAction(this::actionA)
+                .withCompensation(error -> System.out.printf("Reverting local transaction service A. Caused by %s", new String(error)))
                 .withNextServiceChannel("ServiceB")
                 .withCompensationChannel("")
                 .withConfig(brokers, "ServiceA");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
-        KSaga.withAction(() -> {
-                    System.out.println("Running local transaction service B");
-                    throw new IllegalStateException();
-                })
-                .withCompensation(r -> System.out.printf("reverting local transaction service B. Caused by %s", r))
+        KSaga.withAction(this::actionB)
+                .withCompensation(error -> System.out.printf("reverting local transaction service B. Caused by %s", error))
                 .withNextServiceChannel("")
                 .withCompensationChannel("ServiceA")
                 .withConfig(brokers, "ServiceB");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
+
+    private byte[] actionA() {
+        var msg = "Running local transaction service A";
+        System.out.println(msg);
+        return msg.getBytes();
+    }
+
+    private String actionB() {
+        String msg = "Running local transaction service B";
+        System.out.println(msg);
+        if (new Random().nextBoolean()) {
+            System.out.println("Local error in Service B");
+            throw new IllegalStateException();
+        } else {
+            return msg;
+        }
+    }
+
+    //  DSL
+    //-------
 
     public static <T> Action<T> withAction(Function0<T> action) {
         return new Action<>(action);
@@ -85,44 +98,49 @@ public class KSaga {
     record CompensationChannel<T>(NextService<T> actionChannel, String compensationTopic) {
 
         public void withConfig(String broker, String serviceTopic) {
+            Future.run(() -> interpreter(broker, serviceTopic));
 
-            Future.run(() -> {
-                KSagaConsumer<T> compensationConsumer =
-                        new KSagaConsumer<>(
-                                broker,
-                                serviceTopic,
-                                "groupId");
+        }
 
-                KSagaProducer<T> kSagaProducer =
-                        new KSagaProducer<>(
-                                broker,
-                                "actionProducer"
-                        );
+        // Interpreter of the KSaga DSL
+        //------------------------------
+        private void interpreter(String broker, String serviceTopic) {
+            KSagaConsumer<T> compensationConsumer =
+                    new KSagaConsumer<>(
+                            broker,
+                            serviceTopic,
+                            "groupId");
 
-                KSagaProducer<byte[]> kSagaProducerError =
-                        new KSagaProducer<>(
-                                broker,
-                                "actionProducer"
-                        );
+            KSagaProducer<T> kSagaProducer =
+                    new KSagaProducer<>(
+                            broker,
+                            "actionProducer"
+                    );
 
-                Try.of(actionChannel.compensation.action.function::apply)
-                        .onSuccess(output -> {
-                            ProducerRecord<String, T> record =
-                                    new ProducerRecord<>(actionChannel.actionTopic, output);
-                            kSagaProducer.producer.send(record);
-                        })
-                        .onFailure(t -> {
-                            ProducerRecord<String, byte[]> record =
-                                    new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
-                            kSagaProducerError.producer.send(record);
-                        });
+            KSagaProducer<byte[]> kSagaProducerError =
+                    new KSagaProducer<>(
+                            broker,
+                            "actionProducer"
+                    );
 
-                compensationConsumer.start(actionChannel.compensation.function);
-            });
+            Try.of(actionChannel.compensation.action.function::apply)
+                    .onSuccess(output -> {
+                        ProducerRecord<String, T> record =
+                                new ProducerRecord<>(actionChannel.actionTopic, output);
+                        kSagaProducer.producer.send(record);
+                    })
+                    .onFailure(t -> {
+                        ProducerRecord<String, byte[]> record =
+                                new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
+                        kSagaProducerError.producer.send(record);
+                    });
 
+            compensationConsumer.start(actionChannel.compensation.function);
         }
     }
 
+    // Kafka Transport Layer
+    //------------------------
 
     static public class KSagaConsumer<T> {
 

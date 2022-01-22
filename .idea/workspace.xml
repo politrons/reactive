@@ -12,8 +12,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="new pattern matching">
       <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -598,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642887747400</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="new pattern matching">
+      <created>1642890267503</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1642890267503</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -622,10 +628,10 @@
     <MESSAGE value="vavr either" />
     <MESSAGE value="apache kafka stream" />
     <MESSAGE value="vavr type classes" />
-    <MESSAGE value="new pattern matching" />
     <MESSAGE value="kafka balancing" />
     <MESSAGE value="sagas pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="sagas pattern" />
+    <MESSAGE value="new pattern matching" />
+    <option name="LAST_COMMIT_MESSAGE" value="new pattern matching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -637,14 +643,6 @@
             <option name="lambda-ordinal" value="0" />
           </properties>
           <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
-          <line>40</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
