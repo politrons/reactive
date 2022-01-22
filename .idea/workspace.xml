@@ -46,11 +46,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/collection/List.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Function0.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +86,7 @@
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -569,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642851746150</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="sagas pattern">
+      <created>1642883008059</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1642883008059</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
