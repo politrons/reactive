@@ -24,40 +24,63 @@ import static io.vavr.Patterns.$None;
 import static io.vavr.Patterns.$Some;
 import static java.time.Duration.ofSeconds;
 
+/**
+ * [KSaga]
+ */
 @EmbeddedKafka(partitions = 4)
 public class KSaga {
+
+    //  - TEST -
+    // ---------
 
     @ClassRule
     public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 4, "ServiceA", "ServiceB", "ServiceACompensation");
 
     private final EmbeddedKafkaBroker embeddedKafkaBroker = embeddedKafkaRule.getEmbeddedKafka();
 
-    String brokers = embeddedKafkaBroker.getBrokersAsString();
-
+    /**
+     * In this test scenario, we create two local sagas transactions.
+     * We communicate between them by Kafka, and force an error in the second service to force a
+     * compensation in [ServiceA] after make his local transaction invoke [ServiceB]
+     * <p>
+     * The log output of this execution it should be:
+     * ---------------------------------------------
+     * * Kafka event received in topic:ServiceA
+     * * Saga started ServiceA
+     * * Running local transaction service A
+     * * Kafka event received in topic:ServiceB
+     * * Saga started ServiceB
+     * * Running local transaction service B
+     * * Local error in Service B
+     * * Error found sending message for compensation back to ServiceACompensation
+     * * Kafka event received in topic:ServiceACompensation
+     * * Reverting local transaction service A. Caused by Critical error
+     */
     @Test
     public void sagasPattern() throws InterruptedException {
+        String brokers = embeddedKafkaBroker.getBrokersAsString();
 
         KSaga.withAction(this::actionA)
                 .withCompensation(error -> System.out.println("Reverting local transaction service A. Caused by " + new String(error)))
-                .withNextServiceChannel(Some("ServiceB"))
+                .withNextChannel(Some("ServiceB"))
                 .withCompensationChannel(Some("ServiceACompensation"))
-                .withPrevCompensationChannel(None())
+                .withPreviousChannel(None())
                 .withConfig(brokers, "ServiceA");
 
         KSaga.withAction(this::actionB)
                 .withCompensation(error -> System.out.println("reverting local transaction service B. Caused by " + error))
-                .withNextServiceChannel(None())
+                .withNextChannel(None())
                 .withCompensationChannel(None())
-                .withPrevCompensationChannel(Some("ServiceACompensation"))
+                .withPreviousChannel(Some("ServiceACompensation"))
                 .withConfig(brokers, "ServiceB");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
         //Send event to ServiceA to start the transaction
         KSagaProducer<byte[]> sagaProducer = new KSagaProducer<>(brokers, "initTransaction");
         sagaProducer.producer.send(new ProducerRecord<>("ServiceA", "Init transaction".getBytes()));
 
-        Thread.sleep(60000);
+        Thread.sleep(2000);
 
     }
 
@@ -73,6 +96,7 @@ public class KSaga {
         System.out.println("Local error in Service B");
         throw new IllegalStateException();
     }
+    //------------------------------------------------------------------------
 
     //  DSL
     //-------
@@ -87,29 +111,46 @@ public class KSaga {
     }
 
     record Action<T>(Function0<T> function) {
-
+        /*
+        We define a [Consumer] function compensation that it will be executed in case the next
+        service  in the distributed transaction found something that require a revert in the previous
+        service.
+         */
         public Compensation<T> withCompensation(Consumer<T> compensation) {
             return new Compensation<>(this, compensation);
         }
     }
 
+    //Information of where is the next service of the distributed transaction.
     record Compensation<T>(Action<T> action, Consumer<T> function) {
 
-        public NextService<T> withNextServiceChannel(Option<String> actionTopic) {
-            return new NextService<>(this, actionTopic);
+        /**
+         * We pass the option of next service kafka topic where we have the service subscribed.
+         */
+        public NextService<T> withNextChannel(Option<String> maybeNextTopic) {
+            return new NextService<>(this, maybeNextTopic);
         }
     }
 
+    //Information of where is the next service of the distributed transaction.
     record NextService<T>(Compensation<T> compensation, Option<String> maybeActionTopic) {
 
-        public PrevCompensationChannel<T> withCompensationChannel(Option<String> compensationTopic) {
-            return new PrevCompensationChannel<>(this, compensationTopic);
+        /**
+         * We pass the option of our service kafka topic compensation where we have the service subscribed tp
+         * perform a compensation in case the next service call us.
+         */
+        public PrevCompensationChannel<T> withCompensationChannel(Option<String> prevCompensationTopic) {
+            return new PrevCompensationChannel<>(this, prevCompensationTopic);
         }
     }
 
+    /**
+     * We pass the option of prev service kafka topic compensation where we have the service subscribed tp
+     * perform a compensation if we send an event.
+     */
     record PrevCompensationChannel<T>(NextService<T> actionChannel, Option<String> maybeCompensationTopic) {
 
-        public CompensationChannel<T> withPrevCompensationChannel(Option<String> maybePrevCompensationTopic) {
+        public CompensationChannel<T> withPreviousChannel(Option<String> maybePrevCompensationTopic) {
             return new CompensationChannel<>(this, maybePrevCompensationTopic);
         }
     }
@@ -117,17 +158,20 @@ public class KSaga {
     record CompensationChannel<T>(PrevCompensationChannel<T> prevCompensationChannel,
                                   Option<String> maybePrevCompensationTopic) {
 
+        /**
+         * We pass the Kafka brokers, and service topic for the service communications
+         */
         public void withConfig(String broker, String serviceTopic) {
             saga(broker, serviceTopic);
 
         }
 
-        // Interpreter of the KSaga DSL
+        // Saga Execution Coordinator
         //------------------------------
         private void saga(String broker, String serviceTopic) {
 
             /*
-             * Consumer to subscribe to possible compensation action over local transaction
+             * Consumer subscription for possible compensation action over local transaction
              */
             Option<KSagaConsumer<T>> maybeKafkaConsumerCompensation =
                     prevCompensationChannel.maybeCompensationTopic.map(compensationTopic -> new KSagaConsumer<>(
@@ -135,7 +179,7 @@ public class KSaga {
                             compensationTopic,
                             "groupId"));
             /*
-             * Consumer to subscribe to possible compensation action over local transaction
+             * Consumer subscription for main transport between services platform.
              */
             KSagaConsumer<T> serviceConsumer =
                     new KSagaConsumer<>(
@@ -165,7 +209,7 @@ public class KSaga {
             /*
                In this input function we control Side-effect of the action, in case of success, we send the output of the action
                to the next service in the platform.
-               And in case of error, we send event error back to the previous service to allow him to perform a compensation.
+               In case of error, we send event error back to the previous service to allow him to perform a compensation.
              */
             Consumer<T> inputFunction =
                     input -> {
@@ -177,7 +221,7 @@ public class KSaga {
                                                     new ProducerRecord<>(actionTopic, output);
                                             return kSagaProducer.producer.send(record);
                                         }),
-                                        Case($None(), "empty")
+                                        Case($None(), Future(""))
                                 ))
                                 .onFailure(t -> Match(maybePrevCompensationTopic).of(
                                         Case($Some($()), prevCompensationTopic -> {
@@ -186,18 +230,20 @@ public class KSaga {
                                                     new ProducerRecord<>(prevCompensationTopic, "Critical error".getBytes());
                                             return kSagaProducerError.producer.send(record);
                                         }),
-                                        Case($None(), "empty")
+                                        Case($None(), Future(""))
                                 ));
                     };
 
-
-            Future.run(() -> Match(maybeKafkaConsumerCompensation).of(
-                    Case($Some($()), compensationConsumer -> {
-                        compensationConsumer.start(prevCompensationChannel.actionChannel.compensation.function);
-                        return "";
-                    }),
-                    Case($None(), "empty")
-            ));
+            /*
+             * Subscriptions of Main transport channel between services for the distributed transaction.
+             * Ans also the compensation subscription to receive events where we need to perform a compensation
+             * using the compensation function, passed to the DSL
+             */
+            Future.run(() -> {
+                if (maybeKafkaConsumerCompensation.isDefined()) {
+                    maybeKafkaConsumerCompensation.get().start(prevCompensationChannel.actionChannel.compensation.function);
+                }
+            });
             Future.run(() -> {
                 serviceConsumer.start(inputFunction);
             });
