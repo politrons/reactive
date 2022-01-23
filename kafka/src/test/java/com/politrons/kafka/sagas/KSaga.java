@@ -17,7 +17,6 @@ import org.springframework.kafka.test.context.EmbeddedKafka;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 
 import java.util.Properties;
-import java.util.Random;
 import java.util.function.Consumer;
 
 import static io.vavr.API.*;
@@ -29,7 +28,7 @@ import static java.time.Duration.ofSeconds;
 public class KSaga {
 
     @ClassRule
-    public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 4, "ServiceA", "ServiceB");
+    public static EmbeddedKafkaRule embeddedKafkaRule = new EmbeddedKafkaRule(1, true, 4, "ServiceA", "ServiceB", "ServiceACompensation");
 
     private final EmbeddedKafkaBroker embeddedKafkaBroker = embeddedKafkaRule.getEmbeddedKafka();
 
@@ -37,21 +36,29 @@ public class KSaga {
 
     @Test
     public void sagasPattern() throws InterruptedException {
+
         KSaga.withAction(this::actionA)
-                .withCompensation(error -> System.out.printf("Reverting local transaction service A. Caused by %s", new String(error)))
+                .withCompensation(error -> System.out.println("Reverting local transaction service A. Caused by " + new String(error)))
                 .withNextServiceChannel(Some("ServiceB"))
-                .withCompensationChannel(None())
+                .withCompensationChannel(Some("ServiceACompensation"))
+                .withPrevCompensationChannel(None())
                 .withConfig(brokers, "ServiceA");
 
-        Thread.sleep(2000);
-
         KSaga.withAction(this::actionB)
-                .withCompensation(error -> System.out.printf("reverting local transaction service B. Caused by %s", error))
+                .withCompensation(error -> System.out.println("reverting local transaction service B. Caused by " + error))
                 .withNextServiceChannel(None())
-                .withCompensationChannel(Some("ServiceA"))
+                .withCompensationChannel(None())
+                .withPrevCompensationChannel(Some("ServiceACompensation"))
                 .withConfig(brokers, "ServiceB");
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
+
+        //Send event to ServiceA to start the transaction
+        KSagaProducer<byte[]> sagaProducer = new KSagaProducer<>(brokers, "initTransaction");
+        sagaProducer.producer.send(new ProducerRecord<>("ServiceA", "Init transaction".getBytes()));
+
+        Thread.sleep(60000);
+
     }
 
     private byte[] actionA() {
@@ -60,15 +67,11 @@ public class KSaga {
         return msg.getBytes();
     }
 
-    private String actionB() {
+    private byte[] actionB() {
         String msg = "Running local transaction service B";
         System.out.println(msg);
-        if (new Random().nextBoolean()) {
-            System.out.println("Local error in Service B");
-            throw new IllegalStateException();
-        } else {
-            return msg;
-        }
+        System.out.println("Local error in Service B");
+        throw new IllegalStateException();
     }
 
     //  DSL
@@ -99,25 +102,42 @@ public class KSaga {
 
     record NextService<T>(Compensation<T> compensation, Option<String> maybeActionTopic) {
 
-        public CompensationChannel<T> withCompensationChannel(Option<String> compensationTopic) {
-            return new CompensationChannel<>(this, compensationTopic);
+        public PrevCompensationChannel<T> withCompensationChannel(Option<String> compensationTopic) {
+            return new PrevCompensationChannel<>(this, compensationTopic);
         }
     }
 
-    record CompensationChannel<T>(NextService<T> actionChannel, Option<String> maybeCompensationTopic) {
+    record PrevCompensationChannel<T>(NextService<T> actionChannel, Option<String> maybeCompensationTopic) {
+
+        public CompensationChannel<T> withPrevCompensationChannel(Option<String> maybePrevCompensationTopic) {
+            return new CompensationChannel<>(this, maybePrevCompensationTopic);
+        }
+    }
+
+    record CompensationChannel<T>(PrevCompensationChannel<T> prevCompensationChannel,
+                                  Option<String> maybePrevCompensationTopic) {
 
         public void withConfig(String broker, String serviceTopic) {
-            Future.run(() -> interpreter(broker, serviceTopic));
+            saga(broker, serviceTopic);
 
         }
 
         // Interpreter of the KSaga DSL
         //------------------------------
-        private void interpreter(String broker, String serviceTopic) {
+        private void saga(String broker, String serviceTopic) {
+
             /*
              * Consumer to subscribe to possible compensation action over local transaction
              */
-            KSagaConsumer<T> compensationConsumer =
+            Option<KSagaConsumer<T>> maybeKafkaConsumerCompensation =
+                    prevCompensationChannel.maybeCompensationTopic.map(compensationTopic -> new KSagaConsumer<>(
+                            broker,
+                            compensationTopic,
+                            "groupId"));
+            /*
+             * Consumer to subscribe to possible compensation action over local transaction
+             */
+            KSagaConsumer<T> serviceConsumer =
                     new KSagaConsumer<>(
                             broker,
                             serviceTopic,
@@ -143,33 +163,44 @@ public class KSaga {
                     );
 
             /*
-               We control Side-effect of the action, in case of success, we send the output of the action,
+               In this input function we control Side-effect of the action, in case of success, we send the output of the action
                to the next service in the platform.
-               And in case of error, we invoke the previous service to allow him to perform a compensation.
+               And in case of error, we send event error back to the previous service to allow him to perform a compensation.
              */
-            Try.of(actionChannel.compensation.action.function::apply)
-                    .onSuccess(output -> {
-                        Match(actionChannel.maybeActionTopic).of(
-                                Case($Some($()), actionTopic -> {
-                                    ProducerRecord<String, T> record =
-                                            new ProducerRecord<>(actionTopic, output);
-                                    return kSagaProducer.producer.send(record);
-                                }),
-                                Case($None(), "empty")
-                        );
-                    })
-                    .onFailure(t -> {
-                        Match(maybeCompensationTopic).of(
-                                Case($Some($()), compensationTopic -> {
-                                    ProducerRecord<String, byte[]> record =
-                                            new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
-                                    return kSagaProducerError.producer.send(record);
-                                }),
-                                Case($None(), "empty")
-                        );
-                    });
+            Consumer<T> inputFunction =
+                    input -> {
+                        System.out.println("Saga started " + serviceTopic);
+                        Try.of(prevCompensationChannel.actionChannel.compensation.action.function::apply)
+                                .onSuccess(output -> Match(prevCompensationChannel.actionChannel.maybeActionTopic).of(
+                                        Case($Some($()), actionTopic -> {
+                                            ProducerRecord<String, T> record =
+                                                    new ProducerRecord<>(actionTopic, output);
+                                            return kSagaProducer.producer.send(record);
+                                        }),
+                                        Case($None(), "empty")
+                                ))
+                                .onFailure(t -> Match(maybePrevCompensationTopic).of(
+                                        Case($Some($()), prevCompensationTopic -> {
+                                            System.out.println("Error found sending message for compensation back to " + prevCompensationTopic);
+                                            ProducerRecord<String, byte[]> record =
+                                                    new ProducerRecord<>(prevCompensationTopic, "Critical error".getBytes());
+                                            return kSagaProducerError.producer.send(record);
+                                        }),
+                                        Case($None(), "empty")
+                                ));
+                    };
 
-            compensationConsumer.start(actionChannel.compensation.function);
+
+            Future.run(() -> Match(maybeKafkaConsumerCompensation).of(
+                    Case($Some($()), compensationConsumer -> {
+                        compensationConsumer.start(prevCompensationChannel.actionChannel.compensation.function);
+                        return "";
+                    }),
+                    Case($None(), "empty")
+            ));
+            Future.run(() -> {
+                serviceConsumer.start(inputFunction);
+            });
         }
     }
 
@@ -213,16 +244,16 @@ public class KSaga {
             return consumer;
         }
 
-        public void consumeRecords(final org.apache.kafka.clients.consumer.Consumer<String, T> consumer, Consumer<T> compensation) {
-            var compensationReceived = false;
-            while (!compensationReceived) {
-                ConsumerRecords<String, T> consumerRecords = consumer.poll(ofSeconds(5));
-                consumerRecords.forEach(record -> {
-                    System.out.println("############ Compensation received. ############\n");
-                    compensation.accept(record.value());
-                });
-                if (!consumerRecords.isEmpty()) compensationReceived = true;
-                consumer.commitAsync();
+        public void consumeRecords(final org.apache.kafka.clients.consumer.Consumer<String, T> consumer, Consumer<T> function) {
+            while (true) {
+                ConsumerRecords<String, T> consumerRecords = consumer.poll(ofSeconds(1));
+                if (!consumerRecords.isEmpty()) {
+                    consumerRecords.forEach(record -> {
+                        System.out.println("Kafka event received in topic:" + record.topic());
+                        function.accept(record.value());
+                    });
+                    consumer.commitAsync();
+                }
             }
         }
     }
