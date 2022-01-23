@@ -13,7 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -626,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642939150853</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="sagas pattern">
+      <created>1642957989973</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1642957989973</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -668,7 +674,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
-          <line>281</line>
+          <line>301</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>

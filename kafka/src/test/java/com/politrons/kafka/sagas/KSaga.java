@@ -25,7 +25,10 @@ import static io.vavr.Patterns.$Some;
 import static java.time.Duration.ofSeconds;
 
 /**
- * [KSaga]
+ * [KSaga] is a DSL and Saga Execution Coordinator that apply Sagas patter for distributed transactions.
+ * Allows distributed transaction between nodes using Kafka event driven for transport layer between members of the transaction.
+ * Each Saga has a [prev/current/next] channel where to subscribe/publish, having then the possibility to go forward
+ * or backward in case we want to revert a previous transaction, doing a compensation.
  */
 @EmbeddedKafka(partitions = 4)
 public class KSaga {
