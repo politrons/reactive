@@ -46,9 +46,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
@@ -82,7 +86,7 @@
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -299,12 +303,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.KSaga" />
       <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
       <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
       <item itemvalue="JUnit.KafkaBalancing" />
-      <item itemvalue="Maven.kafka [install]" />
-      <item itemvalue="Application.KSaga" />
       <item itemvalue="JUnit.KSaga" />
+      <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
@@ -612,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642890815949</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="new pattern matching">
+      <created>1642893049237</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1642893049237</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -148,26 +148,22 @@ public class KSaga {
                And in case of error, we invoke the previous service to allow him to perform a compensation.
              */
             Try.of(actionChannel.compensation.action.function::apply)
-                    .onSuccess(output -> {
-                        Match(actionChannel.maybeActionTopic).of(
-                                Case($Some($()), actionTopic -> {
-                                    ProducerRecord<String, T> record =
-                                            new ProducerRecord<>(actionTopic, output);
-                                    return kSagaProducer.producer.send(record);
-                                }),
-                                Case($None(), "empty")
-                        );
-                    })
-                    .onFailure(t -> {
-                        Match(maybeCompensationTopic).of(
-                                Case($Some($()), compensationTopic -> {
-                                    ProducerRecord<String, byte[]> record =
-                                            new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
-                                    return kSagaProducerError.producer.send(record);
-                                }),
-                                Case($None(), "empty")
-                        );
-                    });
+                    .onSuccess(output -> Match(actionChannel.maybeActionTopic).of(
+                            Case($Some($()), actionTopic -> {
+                                ProducerRecord<String, T> record =
+                                        new ProducerRecord<>(actionTopic, output);
+                                return kSagaProducer.producer.send(record);
+                            }),
+                            Case($None(), "empty")
+                    ))
+                    .onFailure(t -> Match(maybeCompensationTopic).of(
+                            Case($Some($()), compensationTopic -> {
+                                ProducerRecord<String, byte[]> record =
+                                        new ProducerRecord<>(compensationTopic, "Critical error".getBytes());
+                                return kSagaProducerError.producer.send(record);
+                            }),
+                            Case($None(), "empty")
+                    ));
 
             compensationConsumer.start(actionChannel.compensation.function);
         }
