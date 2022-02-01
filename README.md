@@ -1,8 +1,9 @@
-Author Pablo Perez Garcia 
+Author Pablo Perez Garcia
 
 Is this repo useful? Please ⭑Star this repository and share the love.
 
-Here we cover with examples the most famous [reactive](https://www.reactivemanifesto.org/) libraries that you can find in the market.
+Here we cover with examples the most famous [reactive](https://www.reactivemanifesto.org/) libraries that you can find
+in the market.
 
 ## ReactiveX
 
@@ -10,18 +11,19 @@ Here we cover with examples the most famous [reactive](https://www.reactivemanif
 
 Marble diagrams are not clear enough?.
 
-Here we cover with some practical examples, the most common use of the [ReactiveX](https://github.com/ReactiveX/RxJava/wiki) platform for Java.
+Here we cover with some practical examples, the most common use of
+the [ReactiveX](https://github.com/ReactiveX/RxJava/wiki) platform for Java.
 
 RxScala examples [here](https://github.com/politrons/reactiveScala)
 
 * **Contactable**
 
-    ![My image](src/main/resources/img/rsz_publishconnectc.png)
+  ![My image](src/main/resources/img/rsz_publishconnectc.png)
     * [HotObservable](src/test/java/rx/observables/connectable/HotObservable.java)
- 
+
 * **Combining**
 
-    ![My image](src/main/resources/img/rsz_1zipo.png)
+  ![My image](src/main/resources/img/rsz_1zipo.png)
     * [Chain](src/test/java/rx/observables/combining/ObservableChain.java)
     * [Concat](src/test/java/rx/observables/combining/ObservableConcat.java)
     * [Merge](src/test/java/rx/observables/combining/ObservableMerge.java)
@@ -30,26 +32,26 @@ RxScala examples [here](https://github.com/politrons/reactiveScala)
 
 * **Creating**
 
-    ![My image](src/main/resources/img/rsz_1createc.png)
+  ![My image](src/main/resources/img/rsz_1createc.png)
     * [Create](src/test/java/rx/observables/creating/ObservableCreate.java)
     * [Defer](src/test/java/rx/observables/creating/ObservableDefer.java)
     * [Interval](src/test/java/rx/observables/creating/ObservableInterval.java)
     * [Subscription](src/test/java/rx/observables/creating/ObservableSubscription.java)
-    
+
 * **Filtering**
 
-    ![My image](src/main/resources/img/rsz_1filter.png)
+  ![My image](src/main/resources/img/rsz_1filter.png)
     * [Debounce](src/test/java/rx/observables/filtering/ObservableDebounce.java)
     * [Distinct](src/test/java/rx/observables/filtering/ObservableDistinct.java)
     * [Skip](src/test/java/rx/observables/filtering/ObservableSkip.java)
     * [Take](src/test/java/rx/observables/filtering/ObservableTake.java)
     * [First](src/test/java/rx/observables/filtering/ObservableFirst.java)
-    *[Run java classes](src/test/java/java11/HelloWorld11.java)
+      *[Run java classes](src/test/java/java11/HelloWorld11.java)
 
 
 * **Transforming**
 
-    ![My image](src/main/resources/img/rsz_flatmap.png)
+  ![My image](src/main/resources/img/rsz_flatmap.png)
     * [Map](src/test/java/rx/observables/transforming/ObservableMap.java)
     * [FlatMap](src/test/java/rx/observables/transforming/ObservableFlatMap.java)
     * [GroupBy](src/test/java/rx/observables/transforming/ObservableGroupBy.java)
@@ -61,14 +63,14 @@ RxScala examples [here](https://github.com/politrons/reactiveScala)
 
 * **Scheduler**
 
-    ![My image](src/main/resources/img/rsz_2subscribeonc.png)
+  ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [Asynchronous](src/test/java/rx/observables/scheduler/ObservableAsynchronous.java)
-    
+
 * **Errors**
 
-    ![My image](src/main/resources/img/rsz_2subscribeonc.png)
+  ![My image](src/main/resources/img/rsz_2subscribeonc.png)
     * [Exceptions](src/test/java/rx/observables/errors/ObservableExceptions.java)
-        
+
 * **Utils**
     * [Delay](src/test/java/rx/observables/utils/ObservableDelay.java)
     * [AmbConditional](src/test/java/rx/observables/utils/ObservableAmbConditional.java)
@@ -76,34 +78,41 @@ RxScala examples [here](https://github.com/politrons/reactiveScala)
     * [ToBlocking](src/test/java/rx/observables/utils/ObservableToBlocking.java)
 
 * **Single**
-    An Observable that just emit 1 item through the pipeline.
+  An Observable that just emit 1 item through the pipeline.
     * [SingleFeatures](src/test/java/rx/single/SingleFeatures.java)
 
 * **Relay**
-    A subject which subscribe observers and keep the pipeline open all the time.
+  A subject which subscribe observers and keep the pipeline open all the time.
     * [Relay](src/test/java/rx/relay/Relay.java)
 
-## Spring Reactor 
-![My image](src/main/resources/img/reactor.png) 
+## Spring Reactor
+
+![My image](src/main/resources/img/reactor.png)
 
 The reactive stream API implementation of Spring.
 
 ![My image](src/main/resources/img/rsz_1createc.png)
+
 * [Creating](src/test/java/reactor/ReactorCreating.java)
 
 ![My image](src/main/resources/img/rsz_1zipo.png)
+
 * [Combining](src/test/java/reactor/ReactorCombining.java)
 
 ![My image](src/main/resources/img/rsz_flatmap.png)
+
 * [Transforming](src/test/java/reactor/ReactorTransforming.java)
 
 ![My image](src/main/resources/img/rsz_1filter.png)
+
 * [Filtering](src/test/java/reactor/ReactorFiltering.java)
-    
+
 ![My image](src/main/resources/img/rsz_2subscribeonc.png)
+
 * [Async](src/test/java/reactor/ReactorAsync.java)
 
 ## Akka
+
 ![My image](src/main/resources/img/akka.png)
 
 Implementation of Akka patterns using Akka typed, using Java DSL.
@@ -120,6 +129,7 @@ The reactive stream API implementation of Akka.
 * [GraphDSL](https://github.com/politrons/Akka/blob/master/src/main/scala/stream/Graphs.scala)
 
 ## RSocket
+
 ![My image](src/main/resources/img/rsocket.png)
 
 Binary protocol for use on byte stream transports.
@@ -130,6 +140,7 @@ Binary protocol for use on byte stream transports.
 * [Request Channel](src/test/java/rsocket/RSocketRequestChannel.java)
 
 ## Quarkus
+
 ![My image](src/main/resources/img/quarkus_logo.png)
 
 Example of most important features of the red hat framework.
@@ -137,13 +148,16 @@ Example of most important features of the red hat framework.
 * [features](quarkus/)
 
 ## Micronaut
+
 ![My image](src/main/resources/img/micronaut.png)
 
-A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.
+A modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless
+applications.
 
 * [features](https://github.com/politrons/micronaut)
 
 ## Oracle Helidon
+
 ![My image](src/main/resources/img/helidon.png)
 
 Helidon is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty.
@@ -153,7 +167,8 @@ Helidon is a collection of Java libraries for writing microservices that run on 
 * [Kafka connector](src/test/java/helidon/HelidonKafka.java)
 * [Scheduler](src/test/java/helidon/HelidonScheduler.java)
 
-## 
+##  
+
 ![My image](src/main/resources/img/vavr.png)
 
 Example of most important features of this functional programing library for Java.
@@ -247,8 +262,8 @@ A Comparative and benchmark between these two frameworks.
 
 * [Features](src/test/java/java16/Java16Features.java)
 
-
 ## Java 17
+
 ![My image](src/main/resources/img/j17.jpg)
 
 * [Features](src/test/java/java17/Java17Features.java)
@@ -259,12 +274,11 @@ Project Loom feature
 
 * [Features](src/test/java/loom/LoomFeatures.java)
 
-
 ## ![My image](src/main/resources/img/eclipse.png)
+
 Eclipse Collections is one of the best Java collections framework ever that brings happiness to your Java development.
 
 * [feature](src/test/java/eclipse_collection/EclipseCollectionFeature.java)
-
 
 ## ![My image](src/main/resources/img/kafka.png)
 
@@ -274,7 +288,7 @@ Examples of patterns using Apache Kafka.
 * **[Assign](kafka/src/test/java/com/politrons/kafka/KafkaAssignment.java)**
 * **[Stream](kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java)**
 * **[balancing](kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java)**
-
+* **[Sagas](kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java)**
 
 ## Software craftsmanship
 
@@ -286,5 +300,6 @@ Examples of patterns using Apache Kafka.
 
 ## Programs
 
-* [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing 
-* [Reactive StarWars](https://github.com/politrons/reactiveStarWars) A Star wars reactive microservice platform, formed by four services
+* [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing
+* [Reactive StarWars](https://github.com/politrons/reactiveStarWars) A Star wars reactive microservice platform, formed
+  by four services
