@@ -289,6 +289,7 @@ Examples of patterns using Apache Kafka.
 * **[Stream](kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java)**
 * **[balancing](kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java)**
 * **[Sagas](kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java)**
+* **[Delay](kafka/src/test/java/com/politrons/kafka/KafkaDelay.java)**
 
 ## Software craftsmanship
 
