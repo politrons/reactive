@@ -8,6 +8,7 @@ import io.vavr.control.Try;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.Random;
 
 import static io.vavr.API.*;
@@ -60,6 +61,17 @@ public class VavrEffects {
                         Case($(instanceOf(Exception.class)), t -> "Unknown error caused by:" + t.getMessage())
                 )).flatMap(value -> Try.of(() -> value + "!!!"));
         System.out.println(tryValue);
+    }
+
+    /**
+     * Operator to map error with a Case condition
+     */
+    @Test
+    public void tryMapFailure() {
+        var tryValue = Try.of(this::getStringOrError)
+                .mapFailure(
+                        Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
+        System.out.println(tryValue.failed().get());
     }
 
     /**
@@ -165,9 +177,9 @@ public class VavrEffects {
 
     @Test
     public void tryAndResources() {
-        Try.of(()-> "hello world")
+        Try.of(() -> "hello world")
                 .flatMap(text -> {
-                   return  Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
+                    return Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
                             .of(bais -> "back");
                 });
 

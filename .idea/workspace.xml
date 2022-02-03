@@ -12,9 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaDelay.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Kafka delay pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaDelay.specificPartition">
+  <component name="RunManager" selected="JUnit.VavrEffects.tryMapFailure">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -233,7 +233,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrPatternMatching.booleanPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrEffects.tryMapFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -242,8 +242,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrPatternMatching" />
-      <option name="METHOD_NAME" value="booleanPattern" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
+      <option name="METHOD_NAME" value="tryMapFailure" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -305,19 +305,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.KSaga" />
-      <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
       <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
       <item itemvalue="JUnit.KSaga" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.KafkaDelay.specificPartition" />
+      <item itemvalue="JUnit.VavrEffects.tryMapFailure" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrEffects.tryMapFailure" />
         <item itemvalue="JUnit.KafkaDelay.specificPartition" />
         <item itemvalue="JUnit.KSaga" />
         <item itemvalue="Application.KSaga" />
         <item itemvalue="JUnit.GenericsFeature.compareTypeClasses" />
-        <item itemvalue="JUnit.VavrPatternMatching.booleanPattern" />
       </list>
     </recent_temporary>
   </component>
@@ -638,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642958316078</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Kafka delay pattern">
+      <created>1643727616685</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1643727616685</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -665,7 +672,8 @@
     <MESSAGE value="kafka balancing" />
     <MESSAGE value="new pattern matching" />
     <MESSAGE value="sagas pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="sagas pattern" />
+    <MESSAGE value="Kafka delay pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka delay pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
