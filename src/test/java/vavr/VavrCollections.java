@@ -1,6 +1,7 @@
 package vavr;
 
 import io.vavr.API;
+import io.vavr.Tuple2;
 import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
 import io.vavr.collection.Map;
@@ -55,5 +56,6 @@ public class VavrCollections {
         map = map.merge(HashMap.of("new", "world"));
         map.forEach((k, v) -> System.out.println("Key " + k + " value " + v));
     }
+
 
 }

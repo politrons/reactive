@@ -1,5 +1,6 @@
 package vavr;
 
+import io.vavr.API;
 import io.vavr.Lazy;
 import io.vavr.concurrent.Future;
 import io.vavr.control.Either;
@@ -68,9 +69,10 @@ public class VavrEffects {
      */
     @Test
     public void tryMapFailure() {
-        var tryValue = Try.of(this::getStringOrError)
-                .mapFailure(
-                        Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
+        Try<String> tryValue =
+                Try.of(this::getStringOrError)
+                        .mapFailure(API.Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
+
         System.out.println(tryValue.failed().get());
     }
 
@@ -185,6 +187,14 @@ public class VavrEffects {
 
     }
 
+    @Test
+    public void optionToTry() {
+        Try<String> maybeNullProgram = Option.of(getMaybeString())
+                .toTry()
+                .map(String::toUpperCase);
+        System.out.println(maybeNullProgram);
+    }
+
     private String getMaybeString() {
         if (new Random().nextBoolean()) {
             return "hello Vavr world";
@@ -206,6 +216,14 @@ public class VavrEffects {
             return Right("hello Vavr world " + System.nanoTime());
         } else {
             return Left(new CustomException());
+        }
+    }
+
+    private String getEitherStringOrError() {
+        if (new Random().nextBoolean()) {
+            return "hello Vavr world " + System.nanoTime();
+        } else {
+            throw new IllegalArgumentException("Error in Either monad");
         }
     }
 
