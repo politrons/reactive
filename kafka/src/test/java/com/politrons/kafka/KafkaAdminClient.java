@@ -65,7 +65,9 @@ public class KafkaAdminClient {
             }
 
         }));
-        Thread.sleep(60000);
+        Thread.sleep(10000);
+        //Delete topic
+
     }
 
     static public class KafkaConsumerAdminClient {
@@ -73,6 +75,7 @@ public class KafkaAdminClient {
         public final String broker;
         public final String groupId;
         public Consumer<String, byte[]> consumer;
+        public AdminClient adminClient;
 
         public KafkaConsumerAdminClient(
                 String broker,
@@ -90,27 +93,17 @@ public class KafkaAdminClient {
          * * Get the information of the Cluster (id, host, port, if is in a rack)
          */
         public void start() throws ExecutionException, InterruptedException {
-            AdminClient adminClient = AdminClient.create(getProperties());
-            System.out.println("######## Creating new Topic ##########");
-            short replica = 1;
-            CreateTopicsResult topicsResult = adminClient.createTopics(List.of(new NewTopic(NEW_TOPIC, 1, replica)));
-            topicsResult.all().get();
-            DescribeClusterResult describeClusterResult = adminClient.describeCluster();
-            System.out.println("######## Creating new Partition ##########");
-            CreatePartitionsResult newPartition = adminClient.createPartitions(Map.of(NEW_TOPIC, NewPartitions.increaseTo(2)));
-            newPartition.all().get();
-            System.out.println("######## Topic Info ##########");
-            DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(List.of(NEW_TOPIC));
-            Map<String, TopicDescription> topicsDescription = describeTopicsResult.all().get();
-            for (TopicDescription tp : topicsDescription.values()) {
-                System.out.println(tp.toString());
-            }
-            System.out.println("######## Cluster Info ##########");
-            System.out.println(describeClusterResult.clusterId().get());
-            Node node = describeClusterResult.controller().get();
-            System.out.println(node.host());
-            System.out.println(node.port());
-            System.out.println(node.hasRack());
+            adminClient = AdminClient.create(getProperties());
+            createTopic();
+            createNewPartition();
+            topicInfo();
+            clusterInfo();
+            groupInfo();
+            this.consumer = createConsumer(List.of(NEW_TOPIC));
+            Future.run(() -> consumeRecords(consumer));
+        }
+
+        private void groupInfo() throws InterruptedException, ExecutionException {
             System.out.println("######## GroupId Info ##########");
             DescribeConsumerGroupsResult groupIdDescribe = adminClient.describeConsumerGroups(List.of(GROUP_ID));
             groupIdDescribe.all().get().forEach((k, v) -> {
@@ -119,9 +112,38 @@ public class KafkaAdminClient {
                 System.out.println("Host:" + v.coordinator().host());
                 System.out.println("State:" + v.state().toString());
             });
+        }
 
-            this.consumer = createConsumer(List.of(NEW_TOPIC));
-            Future.run(() -> consumeRecords(consumer));
+        private void clusterInfo() throws InterruptedException, ExecutionException {
+            System.out.println("######## Cluster Info ##########");
+            DescribeClusterResult describeClusterResult = adminClient.describeCluster();
+            System.out.println(describeClusterResult.clusterId().get());
+            Node node = describeClusterResult.controller().get();
+            System.out.println(node.host());
+            System.out.println(node.port());
+            System.out.println(node.hasRack());
+        }
+
+        private void topicInfo() throws InterruptedException, ExecutionException {
+            System.out.println("######## Topic Info ##########");
+            DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(List.of(NEW_TOPIC));
+            Map<String, TopicDescription> topicsDescription = describeTopicsResult.all().get();
+            for (TopicDescription tp : topicsDescription.values()) {
+                System.out.println(tp.toString());
+            }
+        }
+
+        private void createNewPartition() throws InterruptedException, ExecutionException {
+            System.out.println("######## Creating new Partition ##########");
+            CreatePartitionsResult newPartition = adminClient.createPartitions(Map.of(NEW_TOPIC, NewPartitions.increaseTo(2)));
+            newPartition.all().get();
+        }
+
+        private void createTopic() throws InterruptedException, ExecutionException {
+            System.out.println("######## Creating new Topic ##########");
+            short replica = 1;
+            CreateTopicsResult topicsResult = adminClient.createTopics(List.of(new NewTopic(NEW_TOPIC, 1, replica)));
+            topicsResult.all().get();
         }
 
         private Consumer<String, byte[]> createConsumer(List<String> topic) {
