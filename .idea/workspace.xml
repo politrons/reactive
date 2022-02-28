@@ -14,8 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Kafka delay pattern">
       <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrFuture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrFuture.flatMapFuture">
+  <component name="RunManager" selected="JUnit.KafkaAdminClient">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -176,34 +176,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.optionToTry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
+    <configuration name="KafkaAdminClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="com.politrons.kafka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="optionToTry" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAdminClient" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.tryMapFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
+    <configuration name="KafkaAdminClient.adminClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kafka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="com.politrons.kafka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="tryMapFailure" />
+      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAdminClient" />
+      <option name="METHOD_NAME" value="adminClient" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -315,20 +314,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.VavrEffects.tryMapFailure" />
-      <item itemvalue="JUnit.VavrEffects.optionToTry" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.VavrFuture.simpleFuture" />
       <item itemvalue="JUnit.VavrFuture.simpleFutureOnExecutor" />
       <item itemvalue="JUnit.VavrFuture.flatMapFuture" />
+      <item itemvalue="JUnit.KafkaAdminClient.adminClient" />
+      <item itemvalue="JUnit.KafkaAdminClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaAdminClient" />
+        <item itemvalue="JUnit.KafkaAdminClient.adminClient" />
         <item itemvalue="JUnit.VavrFuture.flatMapFuture" />
         <item itemvalue="JUnit.VavrFuture.simpleFutureOnExecutor" />
         <item itemvalue="JUnit.VavrFuture.simpleFuture" />
-        <item itemvalue="JUnit.VavrEffects.optionToTry" />
-        <item itemvalue="JUnit.VavrEffects.tryMapFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -670,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645562574957</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Kafka delay pattern">
+      <created>1646041180283</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1646041180283</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
