@@ -12,10 +12,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Kafka delay pattern">
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Kafka Admin client">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,13 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00001" summary="add Akka typed in Java">
-      <created>1630753406121</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1630753406121</updated>
     </task>
     <task id="LOCAL-00002" summary="add Akka typed in Java">
       <created>1630753837426</created>
@@ -676,7 +668,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646041180283</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Kafka Admin client">
+      <created>1646044697085</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1646044697085</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Kafka Admin client">
+      <created>1646044870077</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1646044870078</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -704,7 +710,8 @@
     <MESSAGE value="new pattern matching" />
     <MESSAGE value="sagas pattern" />
     <MESSAGE value="Kafka delay pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kafka delay pattern" />
+    <MESSAGE value="Kafka Admin client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kafka Admin client" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

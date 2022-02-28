@@ -40,6 +40,7 @@ public class KafkaAdminClient {
     private final EmbeddedKafkaBroker embeddedKafkaBroker = embeddedKafkaRule.getEmbeddedKafka();
 
     private static final String NEW_TOPIC = "New-Topic";
+    private static final String GROUP_ID = "MyGroupId";
 
     /**
      * A Kafka Consumer/Producer that is sending events to a new Topic created by Kafka Consumer.
@@ -49,8 +50,7 @@ public class KafkaAdminClient {
         String broker = embeddedKafkaBroker.getBrokersAsString();
         KafkaConsumerAdminClient consumer = new KafkaConsumerAdminClient(
                 broker,
-                List.of("High", "Medium"),
-                "groupId");
+                GROUP_ID);
         consumer.start();
         Thread.sleep(5000);
 
@@ -71,16 +71,13 @@ public class KafkaAdminClient {
     static public class KafkaConsumerAdminClient {
 
         public final String broker;
-        public final List<String> topic;
         public final String groupId;
         public Consumer<String, byte[]> consumer;
 
         public KafkaConsumerAdminClient(
                 String broker,
-                List<String> topic,
                 String groupId) {
             this.broker = broker;
-            this.topic = topic;
             this.groupId = groupId;
         }
 
@@ -114,6 +111,15 @@ public class KafkaAdminClient {
             System.out.println(node.host());
             System.out.println(node.port());
             System.out.println(node.hasRack());
+            System.out.println("######## GroupId Info ##########");
+            DescribeConsumerGroupsResult groupIdDescribe = adminClient.describeConsumerGroups(List.of(GROUP_ID));
+            groupIdDescribe.all().get().forEach((k, v) -> {
+                System.out.println("GroupId key:" + k);
+                System.out.println("GroupId:" + v.groupId());
+                System.out.println("Host:" + v.coordinator().host());
+                System.out.println("State:" + v.state().toString());
+            });
+
             this.consumer = createConsumer(List.of(NEW_TOPIC));
             Future.run(() -> consumeRecords(consumer));
         }
