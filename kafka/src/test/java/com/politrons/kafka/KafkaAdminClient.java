@@ -54,7 +54,7 @@ public class KafkaAdminClient {
         consumer.start();
         Thread.sleep(5000);
 
-        KafkaProducerAdminClient producer = new KafkaProducerAdminClient(broker, "producerId");
+        AdminClientKafkaProducer producer = new AdminClientKafkaProducer(broker, "producerId");
 
         Future.run(() -> IntStream.range(0, 100).forEach(i -> {
             producer.publishMessage("key", ("hello world " + i).getBytes(), NEW_TOPIC);
@@ -141,5 +141,41 @@ public class KafkaAdminClient {
                 consumer.commitAsync();
             }
         }
+    }
+
+    public static class AdminClientKafkaProducer {
+
+        public final String broker;
+        public final String producerId;
+        private final Producer<String, byte[]> producer;
+
+        public AdminClientKafkaProducer(String broker, String producerId) throws IllegalArgumentException {
+            this.broker = broker;
+            this.producerId = producerId;
+            this.producer = new KafkaProducer<>(this.getProperties());
+        }
+
+        public Try<String> publishMessage(
+                String key,
+                byte[] payload,
+                String topic
+        ) {
+            return Try.of(() -> {
+                ProducerRecord<String, byte[]> record = new ProducerRecord<>(topic, key, payload);
+                this.producer.send(record).get();
+                return "Message sent to topic " + topic;
+            });
+        }
+
+        private Properties getProperties() {
+            Properties props = new Properties();
+            props.put("bootstrap.servers", this.broker);
+            props.put("client.id", this.producerId);
+            props.put("timeout.ms", "10000");
+            props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+            props.put("value.serializer", "org.apache.kafka.common.serialization.ByteArraySerializer");
+            return props;
+        }
+
     }
 }
