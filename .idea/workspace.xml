@@ -339,20 +339,6 @@
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
     </task>
-    <task id="LOCAL-00002" summary="add Akka typed in Java">
-      <created>1630753837426</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1630753837426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add Akka typed in Java">
-      <created>1630831622366</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1630831622366</updated>
-    </task>
     <task id="LOCAL-00004" summary="add Akka typed in Java">
       <created>1630833463473</created>
       <option name="number" value="00004" />
@@ -682,7 +668,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646044870078</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Kafka Admin client">
+      <created>1646065241002</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1646065241002</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Kafka Admin client">
+      <created>1646065495714</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1646065495714</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

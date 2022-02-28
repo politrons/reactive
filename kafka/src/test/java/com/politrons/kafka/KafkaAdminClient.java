@@ -11,6 +11,7 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.Node;
+import org.apache.kafka.common.TopicPartition;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
@@ -21,11 +22,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.stream.IntStream;
 
-import static com.politrons.kafka.KafkaBalancing.ThrottlingKafkaConsumer.*;
 import static java.time.Duration.ofSeconds;
 
 /**
@@ -56,7 +55,7 @@ public class KafkaAdminClient {
 
         AdminClientKafkaProducer producer = new AdminClientKafkaProducer(broker, "producerId");
 
-        Future.run(() -> IntStream.range(0, 100).forEach(i -> {
+        Future.run(() -> IntStream.range(0, 10).forEach(i -> {
             producer.publishMessage("key", ("hello world " + i).getBytes(), NEW_TOPIC);
             try {
                 Thread.sleep(1000);
@@ -65,9 +64,7 @@ public class KafkaAdminClient {
             }
 
         }));
-        Thread.sleep(10000);
-        //Delete topic
-
+        Thread.sleep(12000);
     }
 
     static public class KafkaConsumerAdminClient {
@@ -147,6 +144,7 @@ public class KafkaAdminClient {
         }
 
         private Consumer<String, byte[]> createConsumer(List<String> topic) {
+            System.out.println("######## Creating Kafka Consumer ##########");
             Properties props = getProperties();
             final KafkaConsumer<String, byte[]> consumer = new KafkaConsumer<>(props);
             consumer.subscribe(topic);
