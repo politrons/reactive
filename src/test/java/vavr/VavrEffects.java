@@ -6,6 +6,7 @@ import io.vavr.concurrent.Future;
 import io.vavr.control.Either;
 import io.vavr.control.Option;
 import io.vavr.control.Try;
+import io.vavr.control.Validation;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -64,6 +65,7 @@ public class VavrEffects {
         System.out.println(tryValue);
     }
 
+
     /**
      * Operator to map error with a Case condition
      */
@@ -118,15 +120,29 @@ public class VavrEffects {
 
         Lazy<Either<Throwable, String>> notEvaluatedEither =
                 Lazy.of(() -> getEitherString()
-                        .right()
                         .map(String::toUpperCase)
-                        .map(s -> s + "!!!")
-                        .toEither());
+                        .map(s -> s + "!!!"));
 
         System.out.println(notEvaluatedEither.isEvaluated());
         System.out.println(notEvaluatedEither.get());
         System.out.println(notEvaluatedEither.isEvaluated());
         System.out.println(notEvaluatedEither.get());
+    }
+
+    /**
+     * Validate allow us to encapsulate if an element is valid or not, and them make combination of them.
+     */
+    @Test
+    public void validateEffect(){
+        Validation<Object, String> good = Validation.valid("Very");
+        Validation<Object, String> bad = Validation.valid("Good");
+
+        String result = Validation.combine(good, bad)
+                .ap((a, b) -> a + " " + b)
+                .map(String::toUpperCase)
+                .get();
+        System.out.println(result);
+
     }
 
     /**
@@ -180,11 +196,8 @@ public class VavrEffects {
     @Test
     public void tryAndResources() {
         Try.of(() -> "hello world")
-                .flatMap(text -> {
-                    return Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
-                            .of(bais -> "back");
-                });
-
+                .flatMap(text -> Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
+                        .of(bais -> "back"));
     }
 
     @Test
