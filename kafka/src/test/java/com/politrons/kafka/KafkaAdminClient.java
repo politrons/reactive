@@ -11,7 +11,7 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.Node;
-import org.apache.kafka.common.TopicPartition;
+import org.apache.kafka.common.requests.DescribeLogDirsResponse;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
@@ -38,7 +38,7 @@ public class KafkaAdminClient {
 
     private final EmbeddedKafkaBroker embeddedKafkaBroker = embeddedKafkaRule.getEmbeddedKafka();
 
-    private static final String NEW_TOPIC = "New-Topic";
+    private static final String TOPIC = "New-Topic";
     private static final String GROUP_ID = "MyGroupId";
 
     /**
@@ -56,10 +56,11 @@ public class KafkaAdminClient {
         AdminClientKafkaProducer producer = new AdminClientKafkaProducer(broker, "producerId");
 
         Future.run(() -> IntStream.range(0, 10).forEach(i -> {
-            producer.publishMessage("key", ("hello world " + i).getBytes(), NEW_TOPIC);
+            producer.publishMessage("key", ("hello world " + i).getBytes(), TOPIC);
             try {
+                consumer.sizeInfo();
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
+            } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
 
@@ -96,7 +97,7 @@ public class KafkaAdminClient {
             topicInfo();
             clusterInfo();
             groupInfo();
-            this.consumer = createConsumer(List.of(NEW_TOPIC));
+            this.consumer = createConsumer(List.of(TOPIC));
             Future.run(() -> consumeRecords(consumer));
         }
 
@@ -121,9 +122,29 @@ public class KafkaAdminClient {
             System.out.println(node.hasRack());
         }
 
+        public void sizeInfo() throws InterruptedException, ExecutionException {
+            System.out.println("######## Partition size Info ##########");
+            int brokerId = adminClient.describeCluster().controller().get().id();
+            System.out.println("BrokerId:" + brokerId);
+            DescribeLogDirsResult describeLogDirsResult = adminClient.describeLogDirs(List.of(brokerId));
+            Map<Integer, Map<String, DescribeLogDirsResponse.LogDirInfo>> integerMapMap = describeLogDirsResult.all().get();
+            integerMapMap.values().forEach(dirMapInfo -> {
+                dirMapInfo.forEach((key, logDirInfo) ->{
+                    System.out.println("Broker:" + key);
+                    logDirInfo.replicaInfos.forEach((tp,replicaInfo)->{
+                        if(tp.topic().equals(TOPIC)){
+                            System.out.println("Topic:" + tp.topic());
+                            System.out.println("Partition:" + tp.partition());
+                            System.out.println("Partition size:" + replicaInfo.size);
+                        }
+                    });
+                });
+            });
+        }
+
         private void topicInfo() throws InterruptedException, ExecutionException {
             System.out.println("######## Topic Info ##########");
-            DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(List.of(NEW_TOPIC));
+            DescribeTopicsResult describeTopicsResult = adminClient.describeTopics(List.of(TOPIC));
             Map<String, TopicDescription> topicsDescription = describeTopicsResult.all().get();
             for (TopicDescription tp : topicsDescription.values()) {
                 System.out.println(tp.toString());
@@ -132,14 +153,14 @@ public class KafkaAdminClient {
 
         private void createNewPartition() throws InterruptedException, ExecutionException {
             System.out.println("######## Creating new Partition ##########");
-            CreatePartitionsResult newPartition = adminClient.createPartitions(Map.of(NEW_TOPIC, NewPartitions.increaseTo(2)));
+            CreatePartitionsResult newPartition = adminClient.createPartitions(Map.of(TOPIC, NewPartitions.increaseTo(2)));
             newPartition.all().get();
         }
 
         private void createTopic() throws InterruptedException, ExecutionException {
             System.out.println("######## Creating new Topic ##########");
             short replica = 1;
-            CreateTopicsResult topicsResult = adminClient.createTopics(List.of(new NewTopic(NEW_TOPIC, 1, replica)));
+            CreateTopicsResult topicsResult = adminClient.createTopics(List.of(new NewTopic(TOPIC, 1, replica)));
             topicsResult.all().get();
         }
 
