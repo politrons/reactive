@@ -98,7 +98,7 @@ public class VavrEffects {
      */
     @Test
     public void loggingInfo() {
-        Try<String> program = Try.of(() ->"hello world")
+        Try<String> program = Try.of(() -> "hello world")
                 .andThen(info -> System.out.println("Looking value using [andThen] " + info))
                 .peek(info -> System.out.println("Peeking what is passed in the pipeline " + info));
         System.out.println(program);
@@ -110,6 +110,7 @@ public class VavrEffects {
                 .transform(value -> value.get() + "!!!!");
         System.out.println(output);
     }
+
 
     /**
      * Using Vavr allow us control effects of the monad Either to have a Left value(normally business error) or Right of T.
@@ -224,6 +225,14 @@ public class VavrEffects {
                         .toEither(1981);
         System.out.println(emptyProgram.isRight());
         System.out.println(emptyProgram.getLeft());
+
+
+        Either<String, String> nullProgram =
+                Try.of(this::getNullString)
+                        .map(String::toUpperCase)
+                        .toEither("Left value");
+        System.out.println(nullProgram.isRight());
+        System.out.println(nullProgram.getLeft());
     }
 
     @Test
