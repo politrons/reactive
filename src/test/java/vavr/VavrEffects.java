@@ -79,6 +79,39 @@ public class VavrEffects {
     }
 
     /**
+     * RecoverWith operator allow us to specify what type of error we can recover
+     */
+    @Test
+    public void tryRecoverWithClassType() {
+        Try<String> recoverProgram = Try.of(() -> getNullString().toUpperCase())
+                .recoverWith(NullPointerException.class, Try.success("recover from error"));
+
+        Try<String> failedProgram = Try.of(() -> getNullString().toUpperCase())
+                .recoverWith(IllegalStateException.class, t -> Try.success("recover from error"));
+
+        System.out.println(recoverProgram);
+        System.out.println(failedProgram);
+    }
+
+    /**
+     * We can extract the info of the pipeline and check the value is passing using the next operators.
+     */
+    @Test
+    public void loggingInfo() {
+        Try<String> program = Try.of(() ->"hello world")
+                .andThen(info -> System.out.println("Looking value using [andThen] " + info))
+                .peek(info -> System.out.println("Peeking what is passed in the pipeline " + info));
+        System.out.println(program);
+    }
+
+    @Test
+    public void transform() {
+        String output = Try.of(() -> "hello world")
+                .transform(value -> value.get() + "!!!!");
+        System.out.println(output);
+    }
+
+    /**
      * Using Vavr allow us control effects of the monad Either to have a Left value(normally business error) or Right of T.
      * We can make transformation with [map] and composition with [flatMap]
      * Either monad it will return a Left(T) or Right(T) just like in Scala.
@@ -133,7 +166,7 @@ public class VavrEffects {
      * Validate allow us to encapsulate if an element is valid or not, and them make combination of them.
      */
     @Test
-    public void validateEffect(){
+    public void validateEffect() {
         Validation<Object, String> good = Validation.valid("Very");
         Validation<Object, String> bad = Validation.valid("Good");
 
@@ -222,6 +255,10 @@ public class VavrEffects {
         } else {
             throw new CustomException();
         }
+    }
+
+    private String getNullString() {
+        return null;
     }
 
     private Either<Throwable, String> getEitherString() {
