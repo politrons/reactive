@@ -10,7 +10,9 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.IsolationLevel;
 import org.apache.kafka.common.Node;
+import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.requests.DescribeLogDirsResponse;
 import org.junit.ClassRule;
 import org.junit.Test;
@@ -65,6 +67,8 @@ public class KafkaAdminClient {
             }
 
         }));
+        Thread.sleep(12000);
+        consumer.listOffsets();
         Thread.sleep(12000);
     }
 
@@ -141,6 +145,20 @@ public class KafkaAdminClient {
                 });
             });
         }
+
+        private void listOffsets() throws InterruptedException, ExecutionException {
+            System.out.println("######## List Offset Info ##########");
+            Map<TopicPartition, OffsetSpec> topicPartitionOffsetSpecMap =
+                    Map.of(new TopicPartition(TOPIC, 0), OffsetSpec.latest(),
+                            new TopicPartition(TOPIC, 1), OffsetSpec.latest());
+            ListOffsetsResult listOffsetsResult = adminClient.listOffsets(topicPartitionOffsetSpecMap, new ListOffsetsOptions(IsolationLevel.READ_UNCOMMITTED));
+            Map<TopicPartition, ListOffsetsResult.ListOffsetsResultInfo> result = listOffsetsResult.all().get();
+            for (ListOffsetsResult.ListOffsetsResultInfo listResultInfo : result.values()) {
+                System.out.println("Record offset:" + listResultInfo.offset());
+                System.out.println("Record timestamp:" + listResultInfo.timestamp());
+            }
+        }
+
 
         private void topicInfo() throws InterruptedException, ExecutionException {
             System.out.println("######## Topic Info ##########");

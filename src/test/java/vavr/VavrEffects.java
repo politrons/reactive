@@ -10,7 +10,8 @@ import io.vavr.control.Validation;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 import static io.vavr.API.*;
@@ -76,6 +77,15 @@ public class VavrEffects {
                         .mapFailure(API.Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
 
         System.out.println(tryValue.failed().get());
+    }
+
+    @Test
+    public void tryAddFinally() {
+        Try<Integer> ryWithFinally =
+                Try.of(()->"Hello world")
+                        .map(s -> Integer.parseInt(s))
+                                .andFinally(()-> System.out.println("We are always polite, even under errors"));
+        System.out.println(ryWithFinally.get());
     }
 
     /**

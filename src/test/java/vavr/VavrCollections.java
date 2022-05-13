@@ -5,6 +5,7 @@ import io.vavr.Tuple2;
 import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
 import io.vavr.collection.Map;
+import io.vavr.control.Option;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -55,6 +56,15 @@ public class VavrCollections {
         HashMap<String, String> map = HashMap.of("hello", "world");
         map = map.merge(HashMap.of("new", "world"));
         map.forEach((k, v) -> System.out.println("Key " + k + " value " + v));
+    }
+
+    @Test
+    public void findOperator() {
+        Option<String> strings = List.of("hello", "world", "hello", "again")
+                .find(text -> text.equals("hello"))
+                .peek(e -> System.out.println("Elements through the pipeline:"+ e));
+
+        System.out.println(strings);
     }
 
 

@@ -356,11 +356,17 @@
             <version>2.8.6</version>
         </dependency>
 
-<!--        High scale lib-->
+        <!--  High scale lib-->
         <dependency>
             <groupId>com.boundary</groupId>
             <artifactId>high-scale-lib</artifactId>
             <version>1.0.6</version>
+        </dependency>
+        <!-- ZeroMQ-->
+        <dependency>
+            <groupId>org.zeromq</groupId>
+            <artifactId>jeromq</artifactId>
+            <version>0.5.2</version>
         </dependency>
     </dependencies>
 

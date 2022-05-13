@@ -1,5 +1,6 @@
 package java17;
 
+import com.google.common.collect.EvictingQueue;
 import org.junit.Test;
 
 import java.util.random.RandomGenerator;
