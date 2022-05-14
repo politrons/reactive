@@ -1,7 +1,5 @@
 package vavr;
 
-import io.vavr.API;
-import io.vavr.Tuple2;
 import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
 import io.vavr.collection.Map;
@@ -9,7 +7,6 @@ import io.vavr.control.Option;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.function.Function;
 
 import static io.vavr.API.*;
 
@@ -62,9 +59,40 @@ public class VavrCollections {
     public void findOperator() {
         Option<String> strings = List.of("hello", "world", "hello", "again")
                 .find(text -> text.equals("hello"))
-                .peek(e -> System.out.println("Elements through the pipeline:"+ e));
+                .peek(e -> System.out.println("Elements through the pipeline:" + e));
 
         System.out.println(strings);
+    }
+
+    @Test
+    public void headAndTail() {
+        recursiveMethod(List.of("hello", "world", "again"));
+    }
+
+    public void recursiveMethod(List<String> list) {
+        if (list.length() > 0) {
+            println(list.head());
+            recursiveMethod(list.tail());
+        }
+    }
+
+    @Test
+    public void distinctOperator() {
+        List<Foo> foos = List.of(new Foo("a", "hello world"), new Foo("a", "to the hell"))
+                .distinctBy(foo -> foo.key);
+
+        foos.forEach(f -> System.out.println(f.toString()));
+    }
+
+    record Foo(String key, String foo) {
+
+        @Override
+        public String toString() {
+            return "Foo{" +
+                    "key='" + key + '\'' +
+                    ", foo='" + foo + '\'' +
+                    '}';
+        }
     }
 
 
