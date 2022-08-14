@@ -177,6 +177,7 @@ Example of most important features of this functional programing library for Jav
 * [Functions](src/test/java/vavr/VavrFunctions.java)
 * [Collections](src/test/java/vavr/VavrCollections.java)
 * [Pattern matching](src/test/java/vavr/VavrPatternMatching.java)
+* [Future](src/test/java/vavr/VavrFuture.java)
 
 ## ![My image](src/main/resources/img/curator-logo.png)
 
@@ -290,6 +291,7 @@ Examples of patterns using Apache Kafka.
 * **[balancing](kafka/src/test/java/com/politrons/kafka/KafkaBalancing.java)**
 * **[Sagas](kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java)**
 * **[Delay](kafka/src/test/java/com/politrons/kafka/KafkaDelay.java)**
+* **[AdminClient](kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java)**
 
 ## Software craftsmanship
 

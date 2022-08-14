@@ -1,14 +1,17 @@
 package vavr;
 
+import io.vavr.API;
 import io.vavr.Lazy;
 import io.vavr.concurrent.Future;
 import io.vavr.control.Either;
 import io.vavr.control.Option;
 import io.vavr.control.Try;
+import io.vavr.control.Validation;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 import static io.vavr.API.*;
@@ -63,16 +66,61 @@ public class VavrEffects {
         System.out.println(tryValue);
     }
 
+
     /**
      * Operator to map error with a Case condition
      */
     @Test
     public void tryMapFailure() {
-        var tryValue = Try.of(this::getStringOrError)
-                .mapFailure(
-                        Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
+        Try<String> tryValue =
+                Try.of(this::getStringOrError)
+                        .mapFailure(API.Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
+
         System.out.println(tryValue.failed().get());
     }
+
+    @Test
+    public void tryAddFinally() {
+        Try<Integer> ryWithFinally =
+                Try.of(()->"Hello world")
+                        .map(s -> Integer.parseInt(s))
+                                .andFinally(()-> System.out.println("We are always polite, even under errors"));
+        System.out.println(ryWithFinally.get());
+    }
+
+    /**
+     * RecoverWith operator allow us to specify what type of error we can recover
+     */
+    @Test
+    public void tryRecoverWithClassType() {
+        Try<String> recoverProgram = Try.of(() -> getNullString().toUpperCase())
+                .recoverWith(NullPointerException.class, Try.success("recover from error"));
+
+        Try<String> failedProgram = Try.of(() -> getNullString().toUpperCase())
+                .recoverWith(IllegalStateException.class, t -> Try.success("recover from error"));
+
+        System.out.println(recoverProgram);
+        System.out.println(failedProgram);
+    }
+
+    /**
+     * We can extract the info of the pipeline and check the value is passing using the next operators.
+     */
+    @Test
+    public void loggingInfo() {
+        Try<String> program = Try.of(() -> "hello world")
+                .andThen(info -> System.out.println("Looking value using [andThen] " + info))
+                .peek(info -> System.out.println("Peeking what is passed in the pipeline " + info));
+        System.out.println(program);
+    }
+
+    @Test
+    public void transform() {
+        String output = Try.of(() -> "hello world")
+                .transform(value -> value.get() + "!!!!");
+        System.out.println(output);
+    }
+
 
     /**
      * Using Vavr allow us control effects of the monad Either to have a Left value(normally business error) or Right of T.
@@ -116,15 +164,29 @@ public class VavrEffects {
 
         Lazy<Either<Throwable, String>> notEvaluatedEither =
                 Lazy.of(() -> getEitherString()
-                        .right()
                         .map(String::toUpperCase)
-                        .map(s -> s + "!!!")
-                        .toEither());
+                        .map(s -> s + "!!!"));
 
         System.out.println(notEvaluatedEither.isEvaluated());
         System.out.println(notEvaluatedEither.get());
         System.out.println(notEvaluatedEither.isEvaluated());
         System.out.println(notEvaluatedEither.get());
+    }
+
+    /**
+     * Validate allow us to encapsulate if an element is valid or not, and them make combination of them.
+     */
+    @Test
+    public void validateEffect() {
+        Validation<Object, String> good = Validation.valid("Very");
+        Validation<Object, String> bad = Validation.valid("Good");
+
+        String result = Validation.combine(good, bad)
+                .ap((a, b) -> a + " " + b)
+                .map(String::toUpperCase)
+                .get();
+        System.out.println(result);
+
     }
 
     /**
@@ -173,16 +235,29 @@ public class VavrEffects {
                         .toEither(1981);
         System.out.println(emptyProgram.isRight());
         System.out.println(emptyProgram.getLeft());
+
+
+        Either<String, String> nullProgram =
+                Try.of(this::getNullString)
+                        .map(String::toUpperCase)
+                        .toEither("Left value");
+        System.out.println(nullProgram.isRight());
+        System.out.println(nullProgram.getLeft());
     }
 
     @Test
     public void tryAndResources() {
         Try.of(() -> "hello world")
-                .flatMap(text -> {
-                    return Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
-                            .of(bais -> "back");
-                });
+                .flatMap(text -> Try.withResources((() -> new ByteArrayInputStream(text.getBytes())))
+                        .of(bais -> "back"));
+    }
 
+    @Test
+    public void optionToTry() {
+        Try<String> maybeNullProgram = Option.of(getMaybeString())
+                .toTry()
+                .map(String::toUpperCase);
+        System.out.println(maybeNullProgram);
     }
 
     private String getMaybeString() {
@@ -201,11 +276,23 @@ public class VavrEffects {
         }
     }
 
+    private String getNullString() {
+        return null;
+    }
+
     private Either<Throwable, String> getEitherString() {
         if (new Random().nextBoolean()) {
             return Right("hello Vavr world " + System.nanoTime());
         } else {
             return Left(new CustomException());
+        }
+    }
+
+    private String getEitherStringOrError() {
+        if (new Random().nextBoolean()) {
+            return "hello Vavr world " + System.nanoTime();
+        } else {
+            throw new IllegalArgumentException("Error in Either monad");
         }
     }
 

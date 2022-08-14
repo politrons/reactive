@@ -12,11 +12,15 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Kafka delay pattern">
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaProducerRetry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka/src/test/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FunctionalEffect.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr">
+      <change afterPath="$PROJECT_DIR$/src/test/java/GuavaFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zeroMQ/ZeroMQFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java17/Java17Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java17/Java17Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +52,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/common/serialization/ByteArraySerializer.class" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/KafkaProducer.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/collection/List.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Option.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Function0.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -89,7 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15349545" />
     <property name="project.structure.side.proportion" value="0.3462604" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -103,7 +102,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionalEffect.main">
+  <component name="RunManager" selected="JUnit.VavrCollections.findOperator">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -127,60 +126,128 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalEffect.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuavaFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.FunctionalEffect" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaProducerRetry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaProducerRetry" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuavaFeatures" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaProducerRetry.retrySend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaProducerRetry" />
-      <option name="METHOD_NAME" value="retrySend" />
+    <configuration name="GuavaFeatures.evictingQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuavaFeatures" />
+      <option name="METHOD_NAME" value="evictingQueue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaProducerRetry.specificPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaProducerRetry" />
-      <option name="METHOD_NAME" value="specificPartition" />
+    <configuration name="VavrCollections.findOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
+      <option name="METHOD_NAME" value="findOperator" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaThrottling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaThrottling" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="VavrEffects.tryAddFinally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
+      <option name="METHOD_NAME" value="tryAddFinally" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZeroMQFeatures.runClientServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zeroMQ.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zeroMQ" />
+      <option name="MAIN_CLASS_NAME" value="zeroMQ.ZeroMQFeatures" />
+      <option name="METHOD_NAME" value="runClientServer" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,27 +297,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -260,49 +306,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="JUnit.KafkaProducerRetry.specificPartition" />
-      <item itemvalue="JUnit.KafkaThrottling" />
-      <item itemvalue="JUnit.KafkaProducerRetry" />
-      <item itemvalue="JUnit.KafkaProducerRetry.retrySend" />
       <item itemvalue="Maven.kafka [install]" />
-      <item itemvalue="JUnit.FunctionalEffect.main" />
+      <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
+      <item itemvalue="JUnit.GuavaFeatures" />
+      <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
+      <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
+      <item itemvalue="JUnit.VavrCollections.findOperator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FunctionalEffect.main" />
-        <item itemvalue="JUnit.KafkaProducerRetry.retrySend" />
-        <item itemvalue="JUnit.KafkaProducerRetry" />
-        <item itemvalue="JUnit.KafkaThrottling" />
-        <item itemvalue="JUnit.KafkaProducerRetry.specificPartition" />
+        <item itemvalue="JUnit.VavrCollections.findOperator" />
+        <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
+        <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
+        <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
+        <item itemvalue="JUnit.GuavaFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -314,62 +332,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00001" summary="add Akka typed in Java">
-      <created>1630753406121</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1630753406121</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add Akka typed in Java">
-      <created>1630753837426</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1630753837426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add Akka typed in Java">
-      <created>1630831622366</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1630831622366</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add Akka typed in Java">
-      <created>1630833463473</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1630833463473</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add Akka typed in Java">
-      <created>1630833657742</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1630833657742</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add Akka typed in Java">
-      <created>1631014494554</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1631014494554</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add Akka typed in Java">
-      <created>1631014801881</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1631014801881</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add Akka typed in Java">
-      <created>1631014862463</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631014862463</updated>
     </task>
     <task id="LOCAL-00009" summary="add helidon from Oracle">
       <created>1631038694832</created>
@@ -630,7 +592,91 @@
       <option name="project" value="LOCAL" />
       <updated>1643727616685</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Kafka delay pattern">
+      <created>1643889461610</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1643889461610</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Kafka delay pattern">
+      <created>1645562574957</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1645562574957</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Kafka delay pattern">
+      <created>1646041180283</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1646041180283</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Kafka Admin client">
+      <created>1646044697085</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1646044697085</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Kafka Admin client">
+      <created>1646044870077</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1646044870078</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Kafka Admin client">
+      <created>1646065241002</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1646065241002</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Kafka Admin client">
+      <created>1646065495714</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1646065495714</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Kafka Admin client">
+      <created>1646066543917</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1646066543917</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Kafka Admin client">
+      <created>1646125953138</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1646125953138</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Kafka Admin client">
+      <created>1646692233200</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1646692233200</updated>
+    </task>
+    <task id="LOCAL-00056" summary="vavr">
+      <created>1648460319339</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1648460319340</updated>
+    </task>
+    <task id="LOCAL-00057" summary="vavr">
+      <created>1648460528954</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1648460528954</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -658,7 +704,9 @@
     <MESSAGE value="new pattern matching" />
     <MESSAGE value="sagas pattern" />
     <MESSAGE value="Kafka delay pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kafka delay pattern" />
+    <MESSAGE value="Kafka Admin client" />
+    <MESSAGE value="vavr" />
+    <option name="LAST_COMMIT_MESSAGE" value="vavr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -675,11 +723,6 @@
           <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
           <line>301</line>
           <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaProducerRetry.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
