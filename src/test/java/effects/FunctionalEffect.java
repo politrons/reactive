@@ -9,59 +9,84 @@ import java.util.function.Function;
 public class FunctionalEffect {
 
     @Test
-    public void main() {
-
-        Option<String> hello_world = optionPolEffect.pure("hello world");
-        System.out.println(hello_world);
-        Option<String> map = optionPolEffect.map(hello_world, input -> input + "!!!!");
-        System.out.println(map);
-
-        Try<String> tryWorld = tryEffect.pure("hello world");
-        System.out.println(tryWorld);
-        Try<String> mapTry = tryEffect.map(tryWorld, input -> input + "!!!!");
-        System.out.println(mapTry);
+    public void optionEffect() {
+        var optionPolEffect = new OptionEffect<String, String>();
+        Option<String> optionWorld = optionPolEffect.pure("hello option world");
+        optionPolEffect.map(optionWorld, input -> input + "!!!!")
+                .forEach(System.out::println);
+        optionPolEffect.flatMap(optionWorld, input -> Option.of(input + " with composition"))
+                .forEach(System.out::println);
 
     }
 
-    PolEffect<Option> optionPolEffect = new PolEffect<>() {
+    @Test
+    public void tryEffect() {
+        var tryEffect = new TryEffect<String,String>();
+        Try<String> tryWorld = tryEffect.pure("hello try world");
+        System.out.println(tryWorld);
+        Try<String> mapTry = tryEffect.map(tryWorld, input -> input + "!!!!");
+        System.out.println(mapTry);
+    }
+
+    interface PolEffect<A, B, M> {
+
+        M pure(A a);
+
+        M map(M input, Function<A, B> function);
+
+        M flatMap(M input, Function<A, M> function);
+
+    }
+
+    record OptionEffect<A, B>() implements PolEffect<A, B, Option<?>> {
         @Override
-        public <A> Option<A> pure(A a) {
+        public Option<A> pure(A a) {
             return Option.of(a);
         }
 
         @Override
-        public <A, B> Option<B> map(Option input, Function<A, B> function) {
+        public Option<B> map(Option<?> input, Function<A, B> function) {
             if (input.isDefined()) {
                 return Option.of(function.apply((A) input.get()));
             } else {
                 return Option.none();
             }
         }
-    };
-
-    PolEffect<Try> tryEffect = new PolEffect<>() {
 
         @Override
-        public <A> Try pure(A a) {
-            return Try.of(() -> a);
+        public Option<B> flatMap(Option<?> input, Function<A, Option<?>> function) {
+            if (input.isDefined()) {
+                return (Option<B>) function.apply((A) input.get());
+            } else {
+                return Option.none();
+            }
+        }
+    }
+
+    record TryEffect<A,B>() implements PolEffect<A, B, Try<?>> {
+
+        @Override
+        public Try<A> pure(A a) {
+            return Try.success(a);
         }
 
         @Override
-        public <A, B> Try map(Try input, Function<A, B> function) {
+        public Try<B> map(Try<?> input, Function<A, B> function) {
             if (input.isSuccess()) {
-                return input.map(value -> function.apply((A) value));
+                return Try.success(function.apply((A) input.get()));
             } else {
                 return Try.failure(input.getCause());
             }
         }
-    };
 
-    interface PolEffect<M> {
-
-        <A> M pure(A a);
-
-        <A, B> M map(M input, Function<A, B> function);
-
+        @Override
+        public Try<B> flatMap(Try<?> input, Function<A, Try<?>> function) {
+            if (input.isSuccess()) {
+                return (Try<B>) function.apply((A) input.get());
+            } else {
+                return Try.failure(input.getCause());
+            }
+        }
     }
 
 }
