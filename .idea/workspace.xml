@@ -100,7 +100,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionalEffect.optionEffect">
+  <component name="RunManager" selected="JUnit.FunctionalEffect.tryEffect">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -141,11 +141,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuavaFeatures.evictingQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionalEffect.tryEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuavaFeatures" />
-      <option name="METHOD_NAME" value="evictingQueue" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.FunctionalEffect" />
+      <option name="METHOD_NAME" value="tryEffect" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -306,20 +306,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
       <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
       <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
       <item itemvalue="JUnit.VavrCollections.findOperator" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
+      <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
         <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
         <item itemvalue="JUnit.VavrCollections.findOperator" />
         <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
         <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
-        <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -331,13 +331,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add helidon from Oracle">
-      <created>1631038694832</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1631038694832</updated>
     </task>
     <task id="LOCAL-00011" summary="add Kafka connector helidon">
       <created>1631123067002</created>
@@ -675,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660512878100</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="effect system">
+      <created>1660514608890</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1660514608890</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -705,7 +705,8 @@
     <MESSAGE value="Kafka delay pattern" />
     <MESSAGE value="Kafka Admin client" />
     <MESSAGE value="vavr" />
-    <option name="LAST_COMMIT_MESSAGE" value="vavr" />
+    <MESSAGE value="effect system" />
+    <option name="LAST_COMMIT_MESSAGE" value="effect system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

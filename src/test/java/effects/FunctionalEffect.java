@@ -24,8 +24,10 @@ public class FunctionalEffect {
         var tryEffect = new TryEffect<String,String>();
         Try<String> tryWorld = tryEffect.pure("hello try world");
         System.out.println(tryWorld);
-        Try<String> mapTry = tryEffect.map(tryWorld, input -> input + "!!!!");
-        System.out.println(mapTry);
+        tryEffect.map(tryWorld, input -> input + "!!!!")
+                .forEach(System.out::println);
+        tryEffect.flatMap(tryWorld, input -> Try.success(input + " with composition"))
+                .forEach(System.out::println);
     }
 
     interface PolEffect<A, B, M> {
@@ -38,6 +40,9 @@ public class FunctionalEffect {
 
     }
 
+    /**
+     * Implementation of Option effect, using Vavr Option monad
+     */
     record OptionEffect<A, B>() implements PolEffect<A, B, Option<?>> {
         @Override
         public Option<A> pure(A a) {
@@ -63,6 +68,9 @@ public class FunctionalEffect {
         }
     }
 
+    /**
+     * Implementation of Try effect, using Vavr Try monad
+     */
     record TryEffect<A,B>() implements PolEffect<A, B, Try<?>> {
 
         @Override
