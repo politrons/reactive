@@ -44,7 +44,7 @@ public class FunctionalEffect {
      * [map] transformation
      * [flatMap] composition
      */
-    class PolMonad<A,B> {
+    static class PolMonad<A,B> {
 
         public A a;
 
