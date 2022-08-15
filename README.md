@@ -179,6 +179,15 @@ Example of most important features of this functional programing library for Jav
 * [Pattern matching](src/test/java/vavr/VavrPatternMatching.java)
 * [Future](src/test/java/vavr/VavrFuture.java)
 
+## Category Theory
+
+![My image](src/main/resources/img/pure.png)
+
+Example of Monad implementation for Java.
+
+* [monad](src/test/java/effects/PolEffectSystem.java)
+
+
 ## ![My image](src/main/resources/img/curator-logo.png)
 
 Apache Curator is a Java/JVM client library for Apache ZooKeeper, a distributed coordination service.
