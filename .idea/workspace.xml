@@ -102,7 +102,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolEffectSystem">
+  <component name="RunManager" selected="JUnit.PolEffectSystem.polMonadCurried">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -143,21 +143,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaAdminClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="com.politrons.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.politrons.kafka.KafkaAdminClient" />
+    <configuration name="PolEffectSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolEffectSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolEffectSystem.polMonadCurried" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <option name="PACKAGE_NAME" value="effects" />
       <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="polMonadCurried" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,19 +290,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.kafka [install]" />
-      <item itemvalue="JUnit.KafkaAdminClient" />
       <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
       <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
       <item itemvalue="JUnit.PolEffectSystem.polMonadFromTry" />
       <item itemvalue="JUnit.PolEffectSystem" />
+      <item itemvalue="JUnit.PolEffectSystem.polMonadCurried" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolEffectSystem.polMonadCurried" />
         <item itemvalue="JUnit.PolEffectSystem" />
         <item itemvalue="JUnit.PolEffectSystem.polMonadFromTry" />
         <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
         <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
-        <item itemvalue="JUnit.KafkaAdminClient" />
       </list>
     </recent_temporary>
   </component>
@@ -313,13 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add Kafka connector helidon">
-      <created>1638008325786</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1638008325786</updated>
     </task>
     <task id="LOCAL-00016" summary="Add apache kafka throttling">
       <created>1638996828157</created>
@@ -657,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660555187746</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="effect system">
+      <created>1660557150582</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1660557150582</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

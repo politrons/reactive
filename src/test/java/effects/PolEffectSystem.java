@@ -33,14 +33,14 @@ public class PolEffectSystem {
                 .forEach(System.out::println);
     }
 
-//    @Test
-//    public void polMonadCurried() {
-//        new PolMonad<String, String>().pure("hello Pol CurriedMonad")
-//                .curried(input -> input2 -> input  + input2)
-//                .map(curriedFunc -> curriedFunc.apply(" world"))
-//                .flatMap(value -> new PolMonad<>(value + " with composition"))
-//                .forEach(System.out::println);
-//    }
+    @Test
+    public void polMonadCurried() {
+        new PolMonad<String>().pure("hello Pol CurriedMonad")
+                .curried(input -> input2 -> input  + input2)
+                .map(curriedFunc -> curriedFunc.apply(" world"))
+                .flatMap(value -> new PolMonad<>(value + " with composition"))
+                .forEach(System.out::println);
+    }
 
     /**
      * Contract of all implementation required for Monad [PolEffect]
@@ -62,7 +62,7 @@ public class PolEffectSystem {
 
         <A> PolMonad<A> flatMap(Function<T, PolMonad<A>> function);
 
-//        PolMonad<Function<A, B>,Function<A, B>> curried(Function<A, Function<A, B>> function);
+        <A,B> PolMonad<Function<A,B>> curried(Function<T, Function<A, B>> function);
 
         void forEach(Consumer<T> consumer);
 
@@ -73,9 +73,13 @@ public class PolEffectSystem {
     }
 
     /**
-     * Monad implementation to control side-effects and allow to do
-     * [map] transformation
-     * [flatMap] composition
+     *
+     * Custom Monad implementation to control side-effects and allow to do operations:
+     *
+     * [map] transformation of the values that contains the [PolMonad]
+     * [flatMap] function to apply composition between [PolMonad] monads
+     * [curried] High order function. To receive and return a function
+     * [forEach] Consumer function, to iterate over all elements in the monad.
      */
     static class PolMonad<T> implements PolEffect<T>{
 
@@ -127,10 +131,10 @@ public class PolEffectSystem {
             }
         }
 
-//        @Override
-//        public PolMonad<Function<A, B>, Function<A, B>> curried(Function<A, Function<A, B>> function) {
-//            return new PolMonad(function.apply(this.value));
-//        }
+        @Override
+        public <A,B> PolMonad<Function<A,B>> curried(Function<T, Function<A, B>> function) {
+            return new PolMonad<>(function.apply(this.value));
+        }
 
         @Override
         public void forEach(Consumer<T> consumer){
