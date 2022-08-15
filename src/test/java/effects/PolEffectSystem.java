@@ -7,6 +7,9 @@ import org.junit.Test;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+/**
+ * Example of implementation of Monad type in Java
+ */
 public class PolEffectSystem {
 
     @Test
