@@ -13,8 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/effects/PolEffectSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/effects/FunctionalEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effects/FunctionalEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/effects/PolEffectSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effects/PolEffectSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolEffectSystem.polMonadFromOption">
+  <component name="RunManager" selected="JUnit.PolEffectSystem">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -132,33 +132,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalEffect.optionEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.FunctionalEffect" />
-      <option name="METHOD_NAME" value="optionEffect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FunctionalEffect.polMonadEffects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <option name="PACKAGE_NAME" value="effects" />
       <option name="MAIN_CLASS_NAME" value="effects.FunctionalEffect" />
       <option name="METHOD_NAME" value="polMonadEffects" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FunctionalEffect.tryEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.FunctionalEffect" />
-      <option name="METHOD_NAME" value="tryEffect" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -175,11 +153,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PolEffectSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PolEffectSystem.polMonadFromOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <option name="PACKAGE_NAME" value="effects" />
       <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
       <option name="METHOD_NAME" value="polMonadFromOption" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolEffectSystem.polMonadFromTry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
+      <option name="METHOD_NAME" value="polMonadFromTry" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -290,19 +289,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.kafka [install]" />
-      <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
-      <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
       <item itemvalue="JUnit.KafkaAdminClient" />
       <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
       <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
+      <item itemvalue="JUnit.PolEffectSystem.polMonadFromTry" />
+      <item itemvalue="JUnit.PolEffectSystem" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolEffectSystem" />
+        <item itemvalue="JUnit.PolEffectSystem.polMonadFromTry" />
         <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
         <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
         <item itemvalue="JUnit.KafkaAdminClient" />
-        <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
-        <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
       </list>
     </recent_temporary>
   </component>
@@ -314,13 +313,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add Kafka connector helidon">
-      <created>1631210594879</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1631210594879</updated>
     </task>
     <task id="LOCAL-00015" summary="add Kafka connector helidon">
       <created>1638008325786</created>
@@ -658,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660516881510</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="effect system">
+      <created>1660555187746</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1660555187746</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
