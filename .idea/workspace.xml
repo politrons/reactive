@@ -13,7 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/effects/PolEffectSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/effects/FunctionalEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effects/FunctionalEffect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,10 +98,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="effects" />
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionalEffect.polMonadEffects">
+  <component name="RunManager" selected="JUnit.PolEffectSystem.polMonadFromOption">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -174,17 +175,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrCollections.findOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolEffectSystem.polMonadFromOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vavr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
-      <option name="METHOD_NAME" value="findOperator" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.PolEffectSystem" />
+      <option name="METHOD_NAME" value="polMonadFromOption" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -294,20 +289,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.VavrCollections.findOperator" />
       <item itemvalue="Maven.kafka [install]" />
       <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
       <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
       <item itemvalue="JUnit.KafkaAdminClient" />
       <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
+      <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolEffectSystem.polMonadFromOption" />
         <item itemvalue="JUnit.FunctionalEffect.polMonadEffects" />
         <item itemvalue="JUnit.KafkaAdminClient" />
         <item itemvalue="JUnit.FunctionalEffect.tryEffect" />
         <item itemvalue="JUnit.FunctionalEffect.optionEffect" />
-        <item itemvalue="JUnit.VavrCollections.findOperator" />
       </list>
     </recent_temporary>
   </component>
@@ -319,20 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add Kafka connector helidon">
-      <created>1631124281183</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1631124281183</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add Kafka connector helidon">
-      <created>1631210134124</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1631210134124</updated>
     </task>
     <task id="LOCAL-00014" summary="add Kafka connector helidon">
       <created>1631210594879</created>
@@ -663,7 +644,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660515161153</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="effect system">
+      <created>1660516829045</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1660516829045</updated>
+    </task>
+    <task id="LOCAL-00062" summary="effect system">
+      <created>1660516881509</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1660516881510</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

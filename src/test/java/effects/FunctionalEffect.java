@@ -31,58 +31,6 @@ public class FunctionalEffect {
                 .forEach(System.out::println);
     }
 
-    @Test
-    public void polMonadEffects() {
-        new PolMonad<String, String>().pure("hello Pol Monad")
-                .map(String::toUpperCase)
-                .flatMap(value -> new PolMonad<>(value + " with composition"))
-                .forEach(System.out::println);
-    }
-
-    /**
-     * Monad implementation to control side-effects and allow to do
-     * [map] transformation
-     * [flatMap] composition
-     */
-    static class PolMonad<A,B> {
-
-        public A a;
-
-        public PolMonad(){}
-
-        public PolMonad(A a){
-            this.a=a;
-        }
-
-        boolean isDefined(){
-            return Option.of(this.a).isDefined();
-        }
-
-        public PolMonad<A, B> pure(A a) {
-            return new PolMonad<>(a);
-        }
-
-        public PolMonad<A,B> map(Function<A, B> function){
-            if (this.isDefined()) {
-                return new PolMonad(function.apply(this.a));
-            } else {
-                return this;
-            }
-        }
-
-        public PolMonad<A,B> flatMap(Function<A, PolMonad<A, B>> function){
-            if (this.isDefined()) {
-                return function.apply(this.a);
-            } else {
-                return this;
-            }
-        }
-
-        public void forEach(Consumer<A> consumer){
-            consumer.accept(a);
-        }
-    }
-
     /**
      * Contract to be used and implemented for the effect system that we want
      */
