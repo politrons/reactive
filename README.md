@@ -275,6 +275,12 @@ Project Loom feature
 
 * [Features](src/test/java/loom/LoomFeatures.java)
 
+## Java 19
+
+Pattern matching improvements & Virtual Thread
+
+* [Features](src/test/java/java19/Java19Features.java)
+
 ## ![My image](src/main/resources/img/eclipse.png)
 
 Eclipse Collections is one of the best Java collections framework ever that brings happiness to your Java development.

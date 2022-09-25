@@ -13,12 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GuavaFeatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zeroMQ/ZeroMQFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java19/Java19Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaAdminClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java17/Java17Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java17/Java17Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
@@ -52,17 +51,20 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/Producer.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/producer/ProducerRecord.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/eclipse_collection/EclipseCollectionFeature.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -83,17 +85,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15349545" />
-    <property name="project.structure.side.proportion" value="0.3462604" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
@@ -102,7 +101,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrCollections.findOperator">
+  <component name="RunManager" selected="JUnit.Java19Features.virtualThreadsParallel">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -181,72 +180,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuavaFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java19Features.structureTaskScope" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuavaFeatures" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuavaFeatures.evictingQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuavaFeatures" />
-      <option name="METHOD_NAME" value="evictingQueue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java19" />
+      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
+      <option name="METHOD_NAME" value="structureTaskScope" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrCollections.findOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java19Features.virtualThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
-      <option name="METHOD_NAME" value="findOperator" />
+      <option name="PACKAGE_NAME" value="java19" />
+      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
+      <option name="METHOD_NAME" value="virtualThreads" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.tryAddFinally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java19Features.virtualThreadsComposition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vavr.*" />
+          <option name="PATTERN" value="java19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="tryAddFinally" />
+      <option name="PACKAGE_NAME" value="java19" />
+      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
+      <option name="METHOD_NAME" value="virtualThreadsComposition" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZeroMQFeatures.runClientServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java19Features.virtualThreadsMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zeroMQ.*" />
+          <option name="PATTERN" value="java19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zeroMQ" />
-      <option name="MAIN_CLASS_NAME" value="zeroMQ.ZeroMQFeatures" />
-      <option name="METHOD_NAME" value="runClientServer" />
+      <option name="PACKAGE_NAME" value="java19" />
+      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
+      <option name="METHOD_NAME" value="virtualThreadsMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java19Features.virtualThreadsParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java19" />
+      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
+      <option name="METHOD_NAME" value="virtualThreadsParallel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -256,17 +268,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,20 +308,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Java19Features.structureTaskScope" />
+      <item itemvalue="JUnit.Java19Features.virtualThreads" />
+      <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
+      <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
+      <item itemvalue="JUnit.Java19Features.virtualThreadsParallel" />
       <item itemvalue="Maven.kafka [install]" />
-      <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
-      <item itemvalue="JUnit.GuavaFeatures" />
-      <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
-      <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
-      <item itemvalue="JUnit.VavrCollections.findOperator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VavrCollections.findOperator" />
-        <item itemvalue="JUnit.VavrEffects.tryAddFinally" />
-        <item itemvalue="JUnit.ZeroMQFeatures.runClientServer" />
-        <item itemvalue="JUnit.GuavaFeatures.evictingQueue" />
-        <item itemvalue="JUnit.GuavaFeatures" />
+        <item itemvalue="JUnit.Java19Features.virtualThreadsParallel" />
+        <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
+        <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
+        <item itemvalue="JUnit.Java19Features.virtualThreads" />
+        <item itemvalue="JUnit.Java19Features.structureTaskScope" />
       </list>
     </recent_temporary>
   </component>
@@ -332,20 +333,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add helidon from Oracle">
-      <created>1631038694832</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1631038694832</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add channel of Helidon">
-      <created>1631021135479</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1631021135479</updated>
     </task>
     <task id="LOCAL-00011" summary="add Kafka connector helidon">
       <created>1631123067002</created>
@@ -676,7 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648460528954</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="vavr">
+      <created>1652401198235</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1652401198236</updated>
+    </task>
+    <task id="LOCAL-00059" summary="vavr">
+      <created>1652572630249</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1652572630250</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -689,7 +690,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Akka typed in Java" />
@@ -723,6 +723,11 @@
           <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
           <line>301</line>
           <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/java19/Java19Features.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -103,6 +103,14 @@ public class VavrEffects {
         System.out.println(failedProgram);
     }
 
+    @Test
+    public void tryRecoverWithFailure() {
+        Try<String> failedProgram = Try.of(() -> getNullString().toUpperCase())
+                .recoverWith(t ->  Try.failure(t));
+
+        System.out.println(failedProgram);
+    }
+
     /**
      * We can extract the info of the pipeline and check the value is passing using the next operators.
      */
