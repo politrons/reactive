@@ -12,14 +12,8 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="vavr">
-      <change afterPath="$PROJECT_DIR$/src/test/java/java19/Java19Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 19">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Java19Features.virtualThreadsParallel">
+  <component name="RunManager" selected="JUnit.VavrEffects.peekError">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -180,23 +174,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java19Features.structureTaskScope" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java19" />
-      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
-      <option name="METHOD_NAME" value="structureTaskScope" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Java19Features.virtualThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -265,6 +242,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VavrEffects.peekError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
+      <option name="METHOD_NAME" value="peekError" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -308,7 +302,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Java19Features.structureTaskScope" />
+      <item itemvalue="JUnit.VavrEffects.peekError" />
       <item itemvalue="JUnit.Java19Features.virtualThreads" />
       <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
       <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
@@ -317,11 +311,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VavrEffects.peekError" />
         <item itemvalue="JUnit.Java19Features.virtualThreadsParallel" />
         <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
         <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
         <item itemvalue="JUnit.Java19Features.virtualThreads" />
-        <item itemvalue="JUnit.Java19Features.structureTaskScope" />
       </list>
     </recent_temporary>
   </component>
@@ -333,20 +327,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add Kafka connector helidon">
-      <created>1631123067002</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1631123067002</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add Kafka connector helidon">
-      <created>1631124281183</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1631124281183</updated>
     </task>
     <task id="LOCAL-00013" summary="add Kafka connector helidon">
       <created>1631210134124</created>
@@ -677,7 +657,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652572630250</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Java 19">
+      <created>1664140994587</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140994588</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Java 19">
+      <created>1664141015734</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1664141015734</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -706,7 +700,8 @@
     <MESSAGE value="Kafka delay pattern" />
     <MESSAGE value="Kafka Admin client" />
     <MESSAGE value="vavr" />
-    <option name="LAST_COMMIT_MESSAGE" value="vavr" />
+    <MESSAGE value="Java 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

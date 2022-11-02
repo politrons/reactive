@@ -127,6 +127,20 @@ public class VavrEffects {
         String output = Try.of(() -> "hello world")
                 .transform(value -> value.get() + "!!!!");
         System.out.println(output);
+
+    }
+
+    @Test
+    public void peekError() {
+        Try.of(() -> "hello world")
+                .peek(t -> {
+                    throw new RuntimeException();
+                })
+                .onFailure(t -> {
+                    System.out.println("Not in here");
+                    System.out.println(t);
+                });
+
     }
 
 
