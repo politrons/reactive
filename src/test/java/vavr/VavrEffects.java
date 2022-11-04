@@ -143,6 +143,17 @@ public class VavrEffects {
 
     }
 
+    @Test
+    public void tryErrorWithFinally() {
+        Try.of(() -> "hello world with side-effect")
+                .map(t -> {
+                    throw new RuntimeException();
+                })
+                .onFailure(t -> System.out.println("Controlling side-effect"))
+                .andFinally(()-> System.out.println("Running even with side-effects"));
+
+    }
+
 
     /**
      * Using Vavr allow us control effects of the monad Either to have a Left value(normally business error) or Right of T.
