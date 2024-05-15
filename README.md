@@ -1,4 +1,4 @@
-Author Pablo Perez Garcia
+Author Pablo Picouto Garcia
 
 Is this repo useful? Please ⭑Star this repository and share the love.
 
@@ -46,7 +46,7 @@ RxScala examples [here](https://github.com/politrons/reactiveScala)
     * [Skip](src/test/java/rx/observables/filtering/ObservableSkip.java)
     * [Take](src/test/java/rx/observables/filtering/ObservableTake.java)
     * [First](src/test/java/rx/observables/filtering/ObservableFirst.java)
-      *[Run java classes](src/test/java/java11/HelloWorld11.java)
+    *[Run java classes](src/test/java/java11/HelloWorld11.java)
 
 
 * **Transforming**
