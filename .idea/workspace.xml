@@ -13,10 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 22">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/reactive.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +118,7 @@
     "JUnit.FeaturesJava22.streamGathers.executor": "Run",
     "JUnit.FeaturesJava22.stringTemplate.executor": "Run",
     "JUnit.FeaturesJava22.structureConcurrency.executor": "Run",
+    "JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect.executor": "Run",
     "JUnit.FeaturesJava22.unnamedVariables.executor": "Run",
     "JUnit.FeaturesJava22.virtualThreads.executor": "Run",
     "JUnit.GenericsFeature.executor": "Run",
@@ -155,7 +152,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FeaturesJava22.structureConcurrency">
+  <component name="RunManager" selected="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -261,17 +258,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java16Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava22.structureConcurrencyCaptureSideEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java16.*" />
+          <option name="PATTERN" value="java22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java16" />
-      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="java22" />
+      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
+      <option name="METHOD_NAME" value="structureConcurrencyCaptureSideEffect" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -388,8 +386,8 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
+      <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
       <item itemvalue="JUnit.CompositionInterfaces" />
-      <item itemvalue="JUnit.Java16Features" />
       <item itemvalue="JUnit.VavrCollections" />
       <item itemvalue="JUnit.VavrEffects" />
       <item itemvalue="Maven.reactive [install]" />
@@ -397,11 +395,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
         <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
         <item itemvalue="JUnit.CompositionInterfaces" />
         <item itemvalue="JUnit.VavrEffects" />
         <item itemvalue="JUnit.VavrCollections" />
-        <item itemvalue="JUnit.Java16Features" />
       </list>
     </recent_temporary>
   </component>
@@ -757,7 +755,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

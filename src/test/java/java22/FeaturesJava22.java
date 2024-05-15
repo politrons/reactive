@@ -219,6 +219,37 @@ public class FeaturesJava22 {
         }
     }
 
+    /**
+     * We can also handle the side-effect of [StructuredTaskScope] if we use operator [exception] once we join the tasks.
+     * It will return an [Optional] type of Throwable.
+     */
+    @Test
+    public void structureConcurrencyCaptureSideEffect() throws InterruptedException, ExecutionException {
+        try(var scope = new StructuredTaskScope.ShutdownOnFailure()){
+            StructuredTaskScope.Subtask<String> hello = scope.fork(() -> {
+                System.out.println(STR."Running on thread \{Thread.currentThread()}");
+                if(new Random().nextBoolean()){
+                    throw new IllegalStateException("This task smell fishy");
+                }
+                return "hello";
+            });
+            StructuredTaskScope.Subtask<String> world = scope.fork(() -> {
+                System.out.println(STR."Running on thread \{Thread.currentThread()}");
+                if(new Random().nextBoolean()){
+                    throw new IllegalStateException("This task smell fishy");
+                }
+                return "world";
+            });
+            var maybeSideEffect = scope.join().exception();
+            if(maybeSideEffect.isPresent()){
+                System.out.println(STR."Task did not finish because side effect \{maybeSideEffect.get()}");
+            }else{
+                System.out.println(STR."\{hello.get()} \{world.get()}");
+            }
+
+        }
+    }
+
 }
 
 
