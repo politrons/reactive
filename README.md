@@ -289,6 +289,14 @@ Project Loom feature
 Pattern matching improvements & Virtual Thread
 
 * [Features](src/test/java/java19/Java19Features.java)
+* 
+## Java 20,21,22
+
+![My image](src/main/resources/img/java22.jpeg)
+
+All new features of this 3 Java versions.
+
+* [Features](src/test/java/java22/FeaturesJava22.java)
 
 ## ![My image](src/main/resources/img/eclipse.png)
 

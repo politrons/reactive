@@ -4,7 +4,7 @@ import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
 import io.vavr.collection.Map;
 import io.vavr.control.Option;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
@@ -94,6 +94,36 @@ public class VavrCollections {
                     '}';
         }
     }
+
+    @Test
+    public void dropRightWhile() {
+        List<Integer> list = List.of(1, 2, 3, 4, 5);
+        List<Integer> integers = list.dropRightWhile(n -> n > 3);
+        println(integers);
+    }
+
+    @Test
+    public void take() {
+        List<Integer> list = List.of(1, 2, 3, 4, 5);
+        List<Integer> integers = list.take(3);
+        println(integers);
+    }
+
+    @Test
+    public void distinct() {
+        List<Integer> list = List.of(1, 2, 2, 4, 5);
+        System.out.println(list.distinct().length() != list.length());
+
+    }
+
+    @Test
+    public void rangeClosed() {
+        List<Integer> integers = List.rangeClosed(1, 0);
+        System.out.println(integers);
+
+    }
+
+
 
 
 }

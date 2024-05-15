@@ -2,6 +2,7 @@ package vavr;
 
 import io.vavr.API;
 import io.vavr.Lazy;
+import io.vavr.collection.List;
 import io.vavr.concurrent.Future;
 import io.vavr.control.Either;
 import io.vavr.control.Option;
@@ -66,28 +67,6 @@ public class VavrEffects {
         System.out.println(tryValue);
     }
 
-
-    /**
-     * Operator to map error with a Case condition
-     */
-    @Test
-    public void tryMapFailure() {
-        Try<String> tryValue =
-                Try.of(this::getStringOrError)
-                        .mapFailure(API.Case($(instanceOf(CustomException.class)), io -> new IllegalAccessError("I just map the error channel")));
-
-        System.out.println(tryValue.failed().get());
-    }
-
-    @Test
-    public void tryAddFinally() {
-        Try<Integer> ryWithFinally =
-                Try.of(()->"Hello world")
-                        .map(s -> Integer.parseInt(s))
-                                .andFinally(()-> System.out.println("We are always polite, even under errors"));
-        System.out.println(ryWithFinally.get());
-    }
-
     /**
      * RecoverWith operator allow us to specify what type of error we can recover
      */
@@ -131,19 +110,6 @@ public class VavrEffects {
     }
 
     @Test
-    public void peekError() {
-        Try.of(() -> "hello world")
-                .peek(t -> {
-                    throw new RuntimeException();
-                })
-                .onFailure(t -> {
-                    System.out.println("Not in here");
-                    System.out.println(t);
-                });
-
-    }
-
-    @Test
     public void tryErrorWithFinally() {
         Try.of(() -> "hello world with side-effect")
                 .map(t -> {
@@ -153,7 +119,6 @@ public class VavrEffects {
                 .andFinally(()-> System.out.println("Running even with side-effects"));
 
     }
-
 
     /**
      * Using Vavr allow us control effects of the monad Either to have a Left value(normally business error) or Right of T.
