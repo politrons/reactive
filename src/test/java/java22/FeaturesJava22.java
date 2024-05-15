@@ -194,19 +194,23 @@ public class FeaturesJava22 {
     }
 
     /**
-     *
-     * @throws InterruptedException
-     * @throws ExecutionException
+     * Another great feature of version 22 is [StructuredTaskScope] which allow async computation in parallel for multiple tasks
+     * we need to create a [StructuredTaskScope] with a Strategy in case of any task fail, and then use the [scope] variable
+     * created, to run new Virtual Thread executions for each of them using [fork] operator.
+     * Once all task are defined as [Subtask] we can use [join] operator to wait for all of them to finish.
+     * And then use [get] to get the output for each of them.
      */
     @Test
     public void structureConcurrency() throws InterruptedException, ExecutionException {
         try(var scope = new StructuredTaskScope.ShutdownOnFailure()){
             StructuredTaskScope.Subtask<String> hello = scope.fork(() -> {
                 Thread.sleep(new Random().nextInt(1000));
+                System.out.println(STR."Running on thread \{Thread.currentThread()}");
                 return "hello";
             });
             StructuredTaskScope.Subtask<String> world = scope.fork(() -> {
                 Thread.sleep(new Random().nextInt(1000));
+                System.out.println(STR."Running on thread \{Thread.currentThread()}");
                 return "world";
             });
             scope.join().throwIfFailed();

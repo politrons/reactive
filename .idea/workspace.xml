@@ -12,9 +12,12 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 19">
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 22">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/reactive.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vavr/VavrEffects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;politrons&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -45,8 +54,15 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/politrons/reactive.git&quot;,
+    &quot;accountId&quot;: &quot;79e4496b-f900-454f-8c48-87f6a55d1a75&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/ForwardingQueue.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
@@ -57,6 +73,13 @@
     <setting file="file://$PROJECT_DIR$/src/test/java/java16/Java16Features.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/VirtualMachine/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Consumer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/Executors.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/VirtualMachine/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/zip/DeflaterOutputStream.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="t79i72ix" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,9 +92,15 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="1xfYBRJDMUfjA5UvAemcqNVVcCH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -80,23 +109,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FeaturesJava22.executor": "Run",
+    "Application.ImplicitClass.executor": "Run",
+    "JUnit.CompositionInterfaces.executor": "Run",
+    "JUnit.FeaturesJava22.composingVirtualThreads.executor": "Run",
+    "JUnit.FeaturesJava22.executor": "Run",
+    "JUnit.FeaturesJava22.lazyVirtualThreads.executor": "Run",
+    "JUnit.FeaturesJava22.patternMatching.executor": "Run",
+    "JUnit.FeaturesJava22.sequenceCollection.executor": "Run",
+    "JUnit.FeaturesJava22.streamGathers.executor": "Run",
+    "JUnit.FeaturesJava22.stringTemplate.executor": "Run",
+    "JUnit.FeaturesJava22.structureConcurrency.executor": "Run",
+    "JUnit.FeaturesJava22.unnamedVariables.executor": "Run",
+    "JUnit.FeaturesJava22.virtualThreads.executor": "Run",
+    "JUnit.GenericsFeature.executor": "Run",
+    "JUnit.Java16Features.executor": "Run",
+    "JUnit.LoomFeatures.executor": "Run",
+    "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
+    "JUnit.ReactorAsync.executor": "Run",
+    "JUnit.VavrCollections.executor": "Run",
+    "JUnit.VavrCollections.rangeClosed.executor": "Run",
+    "JUnit.VavrEffects.executor": "Run",
+    "JUnit.VavrEffects.tryAddFinally.executor": "Run",
+    "Maven.reactive [clean].executor": "Run",
+    "Maven.reactive [install].executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VavrEffects.tryErrorWithFinally">
+  <component name="RunManager" selected="JUnit.FeaturesJava22.structureConcurrency">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -175,58 +234,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java19Features.virtualThreadsComposition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositionInterfaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompositionInterfaces" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeaturesJava22.structureConcurrency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java19.*" />
+          <option name="PATTERN" value="java22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java19" />
-      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
-      <option name="METHOD_NAME" value="virtualThreadsComposition" />
+      <option name="PACKAGE_NAME" value="java22" />
+      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
+      <option name="METHOD_NAME" value="structureConcurrency" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java19Features.virtualThreadsMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Java16Features" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java19.*" />
+          <option name="PATTERN" value="java16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java19" />
-      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
-      <option name="METHOD_NAME" value="virtualThreadsMap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="java16" />
+      <option name="MAIN_CLASS_NAME" value="java16.Java16Features" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java19Features.virtualThreadsParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrCollections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java19.*" />
+          <option name="PATTERN" value="vavr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java19" />
-      <option name="MAIN_CLASS_NAME" value="java19.Java19Features" />
-      <option name="METHOD_NAME" value="virtualThreadsParallel" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrEffects.peekError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VavrEffects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -236,25 +303,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="vavr" />
       <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="peekError" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VavrEffects.tryErrorWithFinally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vavr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="METHOD_NAME" value="tryErrorWithFinally" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -273,6 +322,7 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -282,12 +332,46 @@
                 <option value="install" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" value="pom.xml" />
             <option name="profilesMap">
               <map />
             </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/kafka" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="reactive [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -303,20 +387,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.VavrEffects.peekError" />
-      <item itemvalue="JUnit.VavrEffects.tryErrorWithFinally" />
-      <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
-      <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
-      <item itemvalue="JUnit.Java19Features.virtualThreadsParallel" />
+      <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
+      <item itemvalue="JUnit.CompositionInterfaces" />
+      <item itemvalue="JUnit.Java16Features" />
+      <item itemvalue="JUnit.VavrCollections" />
+      <item itemvalue="JUnit.VavrEffects" />
+      <item itemvalue="Maven.reactive [install]" />
       <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VavrEffects.tryErrorWithFinally" />
-        <item itemvalue="JUnit.VavrEffects.peekError" />
-        <item itemvalue="JUnit.Java19Features.virtualThreadsParallel" />
-        <item itemvalue="JUnit.Java19Features.virtualThreadsComposition" />
-        <item itemvalue="JUnit.Java19Features.virtualThreadsMap" />
+        <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
+        <item itemvalue="JUnit.CompositionInterfaces" />
+        <item itemvalue="JUnit.VavrEffects" />
+        <item itemvalue="JUnit.VavrCollections" />
+        <item itemvalue="JUnit.Java16Features" />
       </list>
     </recent_temporary>
   </component>
@@ -328,13 +413,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630747478454</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add Kafka connector helidon">
-      <created>1631210594879</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1631210594879</updated>
     </task>
     <task id="LOCAL-00015" summary="add Kafka connector helidon">
       <created>1638008325786</created>
@@ -672,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667401189734</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Java 19">
+      <created>1667564319951</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1667564319951</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -702,7 +787,8 @@
     <MESSAGE value="Kafka Admin client" />
     <MESSAGE value="vavr" />
     <MESSAGE value="Java 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java 19" />
+    <MESSAGE value="Java 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
