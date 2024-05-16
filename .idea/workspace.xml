@@ -13,7 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 22">
-      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/effects/JIOFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,7 @@
   "keyToString": {
     "Application.FeaturesJava22.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
+    "Application.JIO.executor": "Run",
     "JUnit.CompositionInterfaces.executor": "Run",
     "JUnit.FeaturesJava22.composingVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.executor": "Run",
@@ -122,6 +124,7 @@
     "JUnit.FeaturesJava22.unnamedVariables.executor": "Run",
     "JUnit.FeaturesJava22.virtualThreads.executor": "Run",
     "JUnit.GenericsFeature.executor": "Run",
+    "JUnit.JIOFeature.happyPath.executor": "Run",
     "JUnit.Java16Features.executor": "Run",
     "JUnit.LoomFeatures.executor": "Run",
     "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
@@ -152,7 +155,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect">
+  <component name="RunManager" selected="JUnit.JIOFeature.happyPath">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -225,6 +228,14 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="JIOFeature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
+      <module name="reactive" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -275,33 +286,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VavrCollections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JIOFeature.happyPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vavr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VavrEffects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vavr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vavr" />
-      <option name="MAIN_CLASS_NAME" value="vavr.VavrEffects" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
+      <option name="METHOD_NAME" value="happyPath" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -385,21 +375,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.JIOFeature" />
       <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
       <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
+      <item itemvalue="JUnit.JIOFeature.happyPath" />
       <item itemvalue="JUnit.CompositionInterfaces" />
-      <item itemvalue="JUnit.VavrCollections" />
-      <item itemvalue="JUnit.VavrEffects" />
       <item itemvalue="Maven.reactive [install]" />
       <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JIOFeature.happyPath" />
+        <item itemvalue="Application.JIOFeature" />
         <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
         <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
         <item itemvalue="JUnit.CompositionInterfaces" />
-        <item itemvalue="JUnit.VavrEffects" />
-        <item itemvalue="JUnit.VavrCollections" />
       </list>
     </recent_temporary>
   </component>
@@ -755,7 +745,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
