@@ -56,7 +56,7 @@ public class JIOFeature {
                 try {
                     return func.apply(value.get());
                 } catch (Exception e) {
-                    this.value = null;
+                    this.value = Optional.empty();
                     this.error = e;
                     return (JIO<Throwable, T>) this;
                 }
@@ -104,7 +104,7 @@ public class JIOFeature {
             } else if (isError()) {
                 return STR."Side-effect detected:\{error.toString()}";
             } else {
-                return "Value(" + value + ")";
+                return STR."Value(\{value})";
             }
         }
     }

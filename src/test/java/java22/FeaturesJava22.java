@@ -5,10 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.StructuredTaskScope;
+import java.util.concurrent.*;
 import java.util.stream.Gatherers;
 import java.util.stream.Stream;
 
@@ -152,6 +149,20 @@ public class FeaturesJava22 {
             }
         }).join();
     }
+
+    /**
+     * Using new Task Executor [newVirtualThreadPerTaskExecutor] in [CompletableFuture] We can use the DSL and run async
+     * computation using Virtual Threads.
+     */
+    @Test
+    public void completableFutureWithVirtualThreads(){
+        var executor= Executors.newVirtualThreadPerTaskExecutor();
+        var vtFuture = CompletableFuture.runAsync(()->{
+            System.out.println(STR."Doing some async  task in \{Thread.currentThread()} through CompletableFuture");
+        }, executor);
+        vtFuture.join();
+    }
+
 
     /**
      * Finally in Java 22 we have similar feature we have in Scala for more than a decade,
