@@ -13,9 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 22">
+      <change afterPath="$PROJECT_DIR$/src/test/java/patterns/RacePattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/effects/JIOFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effects/JIOFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,8 @@
     "Application.FeaturesJava22.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
     "Application.JIO.executor": "Run",
+    "Application.RacePattern (1).executor": "Run",
+    "Application.RacePattern.executor": "Run",
     "JUnit.CompositionInterfaces.executor": "Run",
     "JUnit.FeaturesJava22.completableFutureWithVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.composingVirtualThreads.executor": "Run",
@@ -130,6 +131,8 @@
     "JUnit.Java16Features.executor": "Run",
     "JUnit.LoomFeatures.executor": "Run",
     "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
+    "JUnit.RacePattern.executor": "Run",
+    "JUnit.RacePattern.raceBetweenAsyncTask.executor": "Run",
     "JUnit.ReactorAsync.executor": "Run",
     "JUnit.VavrCollections.executor": "Run",
     "JUnit.VavrCollections.rangeClosed.executor": "Run",
@@ -157,7 +160,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FeaturesJava22.completableFutureWithVirtualThreads">
+  <component name="RunManager" selected="JUnit.RacePattern">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -230,10 +233,30 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="JIOFeature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
+    <configuration name="RacePattern (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
       <module name="reactive" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RacePattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
+      <module name="reactive" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,45 +284,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeaturesJava22.structureConcurrency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RacePattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java22.*" />
+          <option name="PATTERN" value="patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java22" />
-      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
-      <option name="METHOD_NAME" value="structureConcurrency" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeaturesJava22.structureConcurrencyCaptureSideEffect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RacePattern.raceBetweenAsyncTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java22.*" />
+          <option name="PATTERN" value="patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java22" />
-      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
-      <option name="METHOD_NAME" value="structureConcurrencyCaptureSideEffect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JIOFeature.happyPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
-      <option name="METHOD_NAME" value="happyPath" />
+      <option name="PACKAGE_NAME" value="patterns" />
+      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
+      <option name="METHOD_NAME" value="raceBetweenAsyncTask" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -384,21 +395,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JIOFeature" />
+      <item itemvalue="Application.RacePattern" />
+      <item itemvalue="Application.RacePattern (1)" />
       <item itemvalue="JUnit.FeaturesJava22.completableFutureWithVirtualThreads" />
-      <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
-      <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
-      <item itemvalue="JUnit.JIOFeature.happyPath" />
+      <item itemvalue="JUnit.RacePattern" />
+      <item itemvalue="JUnit.RacePattern.raceBetweenAsyncTask" />
       <item itemvalue="Maven.reactive [install]" />
       <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RacePattern" />
+        <item itemvalue="JUnit.RacePattern.raceBetweenAsyncTask" />
+        <item itemvalue="Application.RacePattern" />
+        <item itemvalue="Application.RacePattern (1)" />
         <item itemvalue="JUnit.FeaturesJava22.completableFutureWithVirtualThreads" />
-        <item itemvalue="JUnit.JIOFeature.happyPath" />
-        <item itemvalue="Application.JIOFeature" />
-        <item itemvalue="JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect" />
-        <item itemvalue="JUnit.FeaturesJava22.structureConcurrency" />
       </list>
     </recent_temporary>
   </component>
@@ -754,7 +765,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

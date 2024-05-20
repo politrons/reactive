@@ -324,6 +324,10 @@ Examples of patterns using Apache Kafka.
 * [(I)nterface segregation principle](src/test/java/good_practices/InterfaceSegregationPrinciple.java)
 * [(D)on't repeat yourself](src/test/java/good_practices/DRY.java)
 
+## Patterns
+
+* **[Race](src/test/java/patterns/RacePattern.java)**
+
 ## Programs
 
 * [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing
