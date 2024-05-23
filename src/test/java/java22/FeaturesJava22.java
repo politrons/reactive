@@ -69,7 +69,6 @@ public class FeaturesJava22 {
      * [Thread.ofVirtual()] to inform JVM we dont want to use an OS thread, but virtual.
      * Once Virtual Thread is created, you can decide to append the Runnable logic as eager [start]
      * or lazy [unstarted]
-     *
      */
     @Test
     public void virtualThreads() throws InterruptedException {
@@ -155,9 +154,9 @@ public class FeaturesJava22 {
      * computation using Virtual Threads.
      */
     @Test
-    public void completableFutureWithVirtualThreads(){
-        var executor= Executors.newVirtualThreadPerTaskExecutor();
-        var vtFuture = CompletableFuture.runAsync(()->{
+    public void completableFutureWithVirtualThreads() {
+        var executor = Executors.newVirtualThreadPerTaskExecutor();
+        var vtFuture = CompletableFuture.runAsync(() -> {
             System.out.println(STR."Doing some async  task in \{Thread.currentThread()} through CompletableFuture");
         }, executor);
         vtFuture.join();
@@ -213,7 +212,7 @@ public class FeaturesJava22 {
      */
     @Test
     public void structureConcurrency() throws InterruptedException, ExecutionException {
-        try(var scope = new StructuredTaskScope.ShutdownOnFailure()){
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
             StructuredTaskScope.Subtask<String> hello = scope.fork(() -> {
                 Thread.sleep(new Random().nextInt(1000));
                 System.out.println(STR."Running on thread \{Thread.currentThread()}");
@@ -236,29 +235,100 @@ public class FeaturesJava22 {
      */
     @Test
     public void structureConcurrencyCaptureSideEffect() throws InterruptedException, ExecutionException {
-        try(var scope = new StructuredTaskScope.ShutdownOnFailure()){
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
             StructuredTaskScope.Subtask<String> hello = scope.fork(() -> {
                 System.out.println(STR."Running on thread \{Thread.currentThread()}");
-                if(new Random().nextBoolean()){
+                if (new Random().nextBoolean()) {
                     throw new IllegalStateException("This task smell fishy");
                 }
                 return "hello";
             });
             StructuredTaskScope.Subtask<String> world = scope.fork(() -> {
                 System.out.println(STR."Running on thread \{Thread.currentThread()}");
-                if(new Random().nextBoolean()){
+                if (new Random().nextBoolean()) {
                     throw new IllegalStateException("This task smell fishy");
                 }
                 return "world";
             });
             var maybeSideEffect = scope.join().exception();
-            if(maybeSideEffect.isPresent()){
+            if (maybeSideEffect.isPresent()) {
                 System.out.println(STR."Task did not finish because side effect \{maybeSideEffect.get()}");
-            }else{
+            } else {
                 System.out.println(STR."\{hello.get()} \{world.get()}");
             }
 
         }
+    }
+
+    record UserInfo(String value) {
+    }
+
+    record AddressInfo(String value) {
+    }
+
+    record DBConnection(String session) {
+    }
+
+    private final static ScopedValue<UserInfo> USER_INFO_DEPENDENCY = ScopedValue.newInstance();
+    private final static ScopedValue<AddressInfo> ADDRESS_INFO_DEPENDENCY = ScopedValue.newInstance();
+    private final static ScopedValue<DBConnection> DATABASE_DEPENDENCY = ScopedValue.newInstance();
+
+
+    /**
+     * Java 22 introduce a new way of working simulating [Monad Reader], to be used to pass dependencies across your program.
+     * This immutable type, allows you to define any type, and inside the context of his execution, it can be passed implicitly.
+     * We have to define the dependency type [ScopedValue<YourDependencyType>] using builder [ScopedValue.newInstance()].
+     */
+    @Test
+    public void scopedValueFeature() {
+        ScopedValue
+                .where(USER_INFO_DEPENDENCY, new UserInfo("Politrons"))
+                .where(ADDRESS_INFO_DEPENDENCY, new AddressInfo("Zenon street, N-1"))
+                .where(DATABASE_DEPENDENCY, new DBConnection("Connection open"))
+                .run(this::printUserInfo);
+
+    }
+
+    /**
+     * We can also extend the scope of the dependencies through child threads, as long as we run this computation using
+     * [StructuredTaskScope]
+     * Then  once we're in that Virtual Thread we can keep using the scope dependencies.
+     */
+    @Test
+    public void scopedValueChildThreadsFeature() {
+        ScopedValue
+                .where(USER_INFO_DEPENDENCY, new UserInfo("Politrons"))
+                .where(ADDRESS_INFO_DEPENDENCY, new AddressInfo("Zenon street, N-1"))
+                .where(DATABASE_DEPENDENCY, new DBConnection("Connection open"))
+                .run(()->{
+                    printAddressInfo();
+                    try (var scope = new StructuredTaskScope<String>()) {
+                        scope.fork(this::printDatabaseInfo);
+                        scope.join();
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+    }
+
+
+    public void printUserInfo() {
+        UserInfo userInfo = USER_INFO_DEPENDENCY.get();
+        System.out.println(userInfo.value);
+        printAddressInfo();
+        printDatabaseInfo();
+    }
+
+    public void printAddressInfo() {
+        AddressInfo addressInfo = ADDRESS_INFO_DEPENDENCY.get();
+        System.out.println(addressInfo.value.toUpperCase());
+    }
+
+    public String printDatabaseInfo() {
+        DBConnection dbConnection = DATABASE_DEPENDENCY.get();
+        String session = dbConnection.session;
+        System.out.println(STR."\{session} in \{Thread.currentThread()}");
+        return session;
     }
 
 }

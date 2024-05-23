@@ -12,9 +12,10 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Java 22">
-      <change afterPath="$PROJECT_DIR$/src/test/java/patterns/RacePattern.java" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="Design patterns">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +120,8 @@
     "JUnit.FeaturesJava22.executor": "Run",
     "JUnit.FeaturesJava22.lazyVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.patternMatching.executor": "Run",
+    "JUnit.FeaturesJava22.scopedValueChildThreadsFeature.executor": "Run",
+    "JUnit.FeaturesJava22.scopedValueFeature.executor": "Run",
     "JUnit.FeaturesJava22.sequenceCollection.executor": "Run",
     "JUnit.FeaturesJava22.streamGathers.executor": "Run",
     "JUnit.FeaturesJava22.stringTemplate.executor": "Run",
@@ -134,7 +137,9 @@
     "JUnit.RacePattern.executor": "Run",
     "JUnit.RacePattern.raceBetweenAsyncTask.executor": "Run",
     "JUnit.ReactorAsync.executor": "Run",
+    "JUnit.ScopeValueFeature.implicitMethodArgs.executor": "Run",
     "JUnit.VavrCollections.executor": "Run",
+    "JUnit.VavrCollections.merge.executor": "Run",
     "JUnit.VavrCollections.rangeClosed.executor": "Run",
     "JUnit.VavrEffects.executor": "Run",
     "JUnit.VavrEffects.tryAddFinally.executor": "Run",
@@ -160,7 +165,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RacePattern">
+  <component name="RunManager" selected="JUnit.FeaturesJava22.scopedValueFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -233,41 +238,13 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="RacePattern (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
-      <module name="reactive" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RacePattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
-      <module name="reactive" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeaturesJava22.completableFutureWithVirtualThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava22.scopedValueChildThreadsFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
@@ -277,7 +254,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="java22" />
       <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
-      <option name="METHOD_NAME" value="completableFutureWithVirtualThreads" />
+      <option name="METHOD_NAME" value="scopedValueChildThreadsFeature" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeaturesJava22.scopedValueFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java22" />
+      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
+      <option name="METHOD_NAME" value="scopedValueFeature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -300,17 +294,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RacePattern.raceBetweenAsyncTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScopedValueFeature.implicitMethodArgs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="patterns.*" />
+          <option name="PATTERN" value="java22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="patterns" />
-      <option name="MAIN_CLASS_NAME" value="patterns.RacePattern" />
-      <option name="METHOD_NAME" value="raceBetweenAsyncTask" />
+      <option name="PACKAGE_NAME" value="java22" />
+      <option name="MAIN_CLASS_NAME" value="java22.ScopedValueFeature" />
+      <option name="METHOD_NAME" value="implicitMethodArgs" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VavrCollections.merge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vavr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vavr" />
+      <option name="MAIN_CLASS_NAME" value="vavr.VavrCollections" />
+      <option name="METHOD_NAME" value="merge" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -395,21 +406,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RacePattern" />
-      <item itemvalue="Application.RacePattern (1)" />
-      <item itemvalue="JUnit.FeaturesJava22.completableFutureWithVirtualThreads" />
+      <item itemvalue="JUnit.FeaturesJava22.scopedValueChildThreadsFeature" />
+      <item itemvalue="JUnit.FeaturesJava22.scopedValueFeature" />
       <item itemvalue="JUnit.RacePattern" />
-      <item itemvalue="JUnit.RacePattern.raceBetweenAsyncTask" />
+      <item itemvalue="JUnit.ScopedValueFeature.implicitMethodArgs" />
+      <item itemvalue="JUnit.VavrCollections.merge" />
       <item itemvalue="Maven.reactive [install]" />
       <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FeaturesJava22.scopedValueFeature" />
+        <item itemvalue="JUnit.FeaturesJava22.scopedValueChildThreadsFeature" />
+        <item itemvalue="JUnit.ScopedValueFeature.implicitMethodArgs" />
+        <item itemvalue="JUnit.VavrCollections.merge" />
         <item itemvalue="JUnit.RacePattern" />
-        <item itemvalue="JUnit.RacePattern.raceBetweenAsyncTask" />
-        <item itemvalue="Application.RacePattern" />
-        <item itemvalue="Application.RacePattern (1)" />
-        <item itemvalue="JUnit.FeaturesJava22.completableFutureWithVirtualThreads" />
       </list>
     </recent_temporary>
   </component>
@@ -765,7 +776,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -796,7 +807,8 @@
     <MESSAGE value="vavr" />
     <MESSAGE value="Java 19" />
     <MESSAGE value="Java 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java 22" />
+    <MESSAGE value="Design patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design patterns" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
