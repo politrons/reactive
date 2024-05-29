@@ -3,7 +3,10 @@ package effects;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
+import java.util.Random;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
 import java.util.concurrent.StructuredTaskScope;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
@@ -53,7 +56,7 @@ public class JIOFeature {
                     .orElseGet(JIO::new);
         }
 
-        public static <T> JIO< T> fromFuture(Supplier<T> action) {
+        public static <T> JIO<T> fromFuture(Supplier<T> action) {
             CompletableFuture<T> future = CompletableFuture.supplyAsync(action, newVirtualThreadPerTaskExecutor());
             return new JIO<>(future);
         }
@@ -84,7 +87,7 @@ public class JIOFeature {
             return this;
         }
 
-        public JIO< T> mapAsync(Function<T, T> func) {
+        public JIO<T> mapAsync(Function<T, T> func) {
             if (value.isPresent() && error.isEmpty()) {
                 CompletableFuture<T> future = CompletableFuture.supplyAsync(() -> func.apply(value.get()), newVirtualThreadPerTaskExecutor());
                 return new JIO<>(future);
@@ -118,6 +121,18 @@ public class JIOFeature {
             }
         }
 
+        public JIO<T> race(Function<T, T> func1, Function<T, T> func2) throws ExecutionException, InterruptedException {
+            if (value.isPresent() && error.isEmpty()) {
+                CompletableFuture<T> asyncTask1 = CompletableFuture.supplyAsync(() -> func1.apply(value.get()), newVirtualThreadPerTaskExecutor());
+                CompletableFuture<T> asyncTask2 = CompletableFuture.supplyAsync(() -> func2.apply(value.get()), newVirtualThreadPerTaskExecutor());
+                T result = (T) CompletableFuture.anyOf(asyncTask1, asyncTask2).get();
+                asyncTask1.cancel(true);
+                asyncTask2.cancel(true);
+                value = Optional.of(result);
+            }
+            return this;
+        }
+
         public JIO<T> filter(Function<T, Boolean> func) {
             if (value.isPresent() && error.isEmpty()) {
                 try {
@@ -146,7 +161,7 @@ public class JIOFeature {
             return this;
         }
 
-        public <T> JIO< T> onFailure(Consumer<Throwable> func) {
+        public <T> JIO<T> onFailure(Consumer<Throwable> func) {
             if (error.isPresent()) {
                 try {
                     func.accept(error.get());
@@ -193,7 +208,7 @@ public class JIOFeature {
         }
 
 
-        public T getOrElse(T defaultValue)  {
+        public T getOrElse(T defaultValue) {
             if (value.isEmpty() || error.isPresent()) {
                 return defaultValue;
             }
@@ -281,6 +296,14 @@ public class JIOFeature {
                 .parallelAsync(_ -> "Hello", _ -> "world", (hello, world) -> STR."\{hello} \{world}")
                 .map(String::toUpperCase);
         System.out.println(parallelProgram.get());
+    }
+
+    @Test
+    public void race() throws Throwable {
+        JIO<String> raceProgram = JIO.from("Race start.")
+                .race(v -> STR."\{v} Renault win", v -> STR."\{v} Fiat win")
+                .map(String::toUpperCase);
+        System.out.println(raceProgram.get());
     }
 }
 
