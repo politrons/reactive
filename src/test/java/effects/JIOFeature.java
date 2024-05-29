@@ -1,16 +1,14 @@
 package effects;
 
-import java22.FeaturesJava22;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.StructuredTaskScope;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import static java.util.concurrent.Executors.*;
 import static java.util.concurrent.Executors.newVirtualThreadPerTaskExecutor;
 
 public class JIOFeature {
@@ -46,14 +44,13 @@ public class JIOFeature {
         }
 
         public static <T> JIO<Throwable, T> fromOptional(Optional<T> value) {
-            return value.<JIO<Throwable, T>>map(v -> new JIO<>(v))
+            return value.<JIO<Throwable, T>>map(JIO::new)
                     .orElseGet(JIO::new);
         }
 
-        public static <T> JIO<Throwable, T> fromFuture( Supplier<T> action) {
-            CompletableFuture<T> future = CompletableFuture.supplyAsync(() -> action.get(), newVirtualThreadPerTaskExecutor());
+        public static <T> JIO<Throwable, T> fromFuture(Supplier<T> action) {
+            CompletableFuture<T> future = CompletableFuture.supplyAsync(action, newVirtualThreadPerTaskExecutor());
             return new JIO<>(future);
-
         }
 
         public JIO<X, T> map(Function<T, T> func) {
@@ -82,11 +79,13 @@ public class JIOFeature {
             return (JIO<Throwable, T>) this;
         }
 
-
         public JIO<Throwable, T> mapAsync(Function<T, T> func) {
             if (value.isPresent() && error == null) {
                 CompletableFuture<T> future = CompletableFuture.supplyAsync(() -> func.apply(value.get()), newVirtualThreadPerTaskExecutor());
                 return new JIO<>(future);
+            }
+            if (futureValue != null && error == null) {
+                return new JIO<>(futureValue.thenApply(func));
             }
             try {
                 final T value = this.get();
@@ -96,20 +95,23 @@ public class JIOFeature {
             }
         }
 
-
-
-//        public JIO<Throwable, CompletableFuture<T>> flatMapAsync(Function<T, JIO<Throwable, CompletableFuture<T>>> func) {
-//            if (value.isPresent() && error == null) {
-//                return func.apply(value.get());
-//            }
-//            try {
-//                final T value = this.get();
-//                return new JIO<>(CompletableFuture.supplyAsync(() -> value));
-//            } catch (Throwable e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
-
+        public JIO<Throwable, T> parallelAsync(Function<T, T> func1, Function<T, T> func2, BiFunction<T, T, T> mergeFunc) throws InterruptedException {
+            if (value.isPresent() && error == null) {
+                try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
+                    StructuredTaskScope.Subtask<T> task1 = scope.fork(() -> func1.apply(value.get()));
+                    StructuredTaskScope.Subtask<T> task2 = scope.fork(() -> func2.apply(value.get()));
+                    var maybeSideEffect = scope.join().exception();
+                    if (maybeSideEffect.isPresent()) {
+                        error = maybeSideEffect.get();
+                    } else {
+                        this.value = Optional.of(mergeFunc.apply(task1.get(), task2.get()));
+                    }
+                    return (JIO<Throwable, T>) this;
+                }
+            } else {
+                return (JIO<Throwable, T>) this;
+            }
+        }
 
         public JIO<Throwable, T> filter(Function<T, Boolean> func) {
             if (value.isPresent() && error == null) {
@@ -128,7 +130,7 @@ public class JIOFeature {
 
 
         public T get() throws Throwable {
-            if (isEmpty()) {
+            if (value.isEmpty()) {
                 throw new IllegalStateException("No value present");
             } else if (error != null) {
                 throw error;
@@ -189,7 +191,7 @@ public class JIOFeature {
         System.out.println(optionalEffect);
 
         JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> "Hello world without side-effects")
-                        .map(effect -> STR."\{effect}!");
+                .map(effect -> STR."\{effect}!");
         System.out.println(errorEffect);
 
         JIO<Throwable, String> nullEffect = JIO.fromOptional(Optional.empty());
@@ -200,12 +202,12 @@ public class JIOFeature {
     @Test
     public void sideEffects() {
         Optional<String> optionalWithoutValue = Optional.empty();
-        JIO<Throwable,String> optionalEffect = JIO.fromOptional(optionalWithoutValue);
+        JIO<Throwable, String> optionalEffect = JIO.fromOptional(optionalWithoutValue);
         System.out.println(optionalEffect);
         System.out.println(optionalEffect.isEmpty());
         System.out.println(optionalEffect.isPresent());
 
-        JIO<Throwable,String> errorEffect = JIO.fromEffect(() -> {
+        JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> {
             throw new NullPointerException();
         });
         System.out.println(errorEffect);
@@ -231,11 +233,23 @@ public class JIOFeature {
 
     @Test
     public void async() throws Throwable {
+        JIO<Throwable, String> futureProgram = JIO.fromFuture(() -> "Hello from")
+                .mapAsync(d -> STR."\{d}  the future");
+        System.out.println(futureProgram.getAsync());
+
         JIO<Throwable, String> asyncProgram = JIO.fromEffect(() -> "Hello JIO")
-                .mapAsync(value -> STR."\{value}");
-//                        .flatMapAsync(future -> future.thenCompose(value -> STR.""))
+                .mapAsync(value -> STR."\{value}!")
+                .mapAsync(value -> STR."\{value}!!");
         System.out.println(asyncProgram.getAsync());
 
+    }
+
+    @Test
+    public void parallel() throws Throwable {
+        JIO<Throwable, String> parallelProgram = JIO.fromEffect(() -> "")
+                .parallelAsync(_ -> "Hello", _ -> "world", (hello, world) -> STR."\{hello} \{world}")
+                .map(String::toUpperCase);
+        System.out.println(parallelProgram.get());
     }
 }
 

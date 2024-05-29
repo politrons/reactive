@@ -234,7 +234,7 @@ public class FeaturesJava22 {
      * It will return an [Optional] type of Throwable.
      */
     @Test
-    public void structureConcurrencyCaptureSideEffect() throws InterruptedException, ExecutionException {
+    public void structureConcurrencyCaptureSideEffect() throws InterruptedException {
         try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
             StructuredTaskScope.Subtask<String> hello = scope.fork(() -> {
                 System.out.println(STR."Running on thread \{Thread.currentThread()}");
