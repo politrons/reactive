@@ -133,6 +133,7 @@
     "JUnit.JIOFeature.executor": "Run",
     "JUnit.JIOFeature.happyPath.executor": "Run",
     "JUnit.JIOFeature.parallel.executor": "Run",
+    "JUnit.JIOFeature.sideEffects.executor": "Run",
     "JUnit.Java16Features.executor": "Run",
     "JUnit.LoomFeatures.executor": "Run",
     "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
@@ -167,7 +168,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JIOFeature.sideEffects">
+  <component name="RunManager" selected="JUnit.JIOFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -418,9 +419,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JIOFeature" />
         <item itemvalue="JUnit.JIOFeature.sideEffects" />
         <item itemvalue="JUnit.JIOFeature.effectSystem" />
-        <item itemvalue="JUnit.JIOFeature" />
         <item itemvalue="JUnit.JIOFeature.parallel" />
         <item itemvalue="JUnit.JIOFeature.async" />
       </list>
@@ -778,7 +779,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

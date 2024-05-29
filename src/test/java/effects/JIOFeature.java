@@ -15,7 +15,7 @@ import static java.util.concurrent.Executors.newVirtualThreadPerTaskExecutor;
 public class JIOFeature {
 
 
-    public static class JIO<X, T> {
+    public static class JIO<T> {
         private Optional<T> value = Optional.empty();
         private Optional<CompletableFuture<T>> futureValue = Optional.empty();
         private Optional<Throwable> error = Optional.empty();
@@ -36,11 +36,11 @@ public class JIOFeature {
             this.futureValue = Optional.of(futureValue);
         }
 
-        public static <T> JIO<Throwable, T> from(T value) {
+        public static <T> JIO<T> from(T value) {
             return new JIO<>(value);
         }
 
-        public static <T> JIO<Throwable, T> fromEffect(Supplier<T> action) {
+        public static <T> JIO<T> fromEffect(Supplier<T> action) {
             try {
                 return new JIO<>(action.get());
             } catch (Exception e) {
@@ -48,17 +48,17 @@ public class JIOFeature {
             }
         }
 
-        public static <T> JIO<Throwable, T> fromOptional(Optional<T> value) {
-            return value.<JIO<Throwable, T>>map(JIO::new)
+        public static <T> JIO<T> fromOptional(Optional<T> value) {
+            return value.map(JIO::new)
                     .orElseGet(JIO::new);
         }
 
-        public static <T> JIO<Throwable, T> fromFuture(Supplier<T> action) {
+        public static <T> JIO< T> fromFuture(Supplier<T> action) {
             CompletableFuture<T> future = CompletableFuture.supplyAsync(action, newVirtualThreadPerTaskExecutor());
             return new JIO<>(future);
         }
 
-        public JIO<X, T> map(Function<T, T> func) {
+        public JIO<T> map(Function<T, T> func) {
             if (value.isPresent() && error.isEmpty()) {
                 try {
                     return new JIO<>(func.apply(value.get()));
@@ -71,20 +71,20 @@ public class JIOFeature {
             return this;
         }
 
-        public JIO<Throwable, T> flatMap(Function<T, JIO<Throwable, T>> func) {
+        public JIO<T> flatMap(Function<T, JIO<T>> func) {
             if (value.isPresent() && error.isEmpty()) {
                 try {
                     return func.apply(value.get());
                 } catch (Exception e) {
                     this.value = Optional.empty();
                     this.error = Optional.of(e);
-                    return (JIO<Throwable, T>) this;
+                    return (JIO<T>) this;
                 }
             }
-            return (JIO<Throwable, T>) this;
+            return (JIO<T>) this;
         }
 
-        public JIO<Throwable, T> mapAsync(Function<T, T> func) {
+        public JIO< T> mapAsync(Function<T, T> func) {
             if (value.isPresent() && error.isEmpty()) {
                 CompletableFuture<T> future = CompletableFuture.supplyAsync(() -> func.apply(value.get()), newVirtualThreadPerTaskExecutor());
                 return new JIO<>(future);
@@ -100,7 +100,7 @@ public class JIOFeature {
             }
         }
 
-        public JIO<Throwable, T> parallelAsync(Function<T, T> func1, Function<T, T> func2, BiFunction<T, T, T> mergeFunc) throws InterruptedException {
+        public JIO<T> parallelAsync(Function<T, T> func1, Function<T, T> func2, BiFunction<T, T, T> mergeFunc) throws InterruptedException {
             if (value.isPresent() && error.isEmpty()) {
                 try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
                     StructuredTaskScope.Subtask<T> task1 = scope.fork(() -> func1.apply(value.get()));
@@ -111,14 +111,14 @@ public class JIOFeature {
                     } else {
                         this.value = Optional.of(mergeFunc.apply(task1.get(), task2.get()));
                     }
-                    return (JIO<Throwable, T>) this;
+                    return this;
                 }
             } else {
-                return (JIO<Throwable, T>) this;
+                return this;
             }
         }
 
-        public JIO<Throwable, T> filter(Function<T, Boolean> func) {
+        public JIO<T> filter(Function<T, Boolean> func) {
             if (value.isPresent() && error.isEmpty()) {
                 try {
                     if (!func.apply(value.get())) {
@@ -127,35 +127,35 @@ public class JIOFeature {
                 } catch (Exception e) {
                     this.value = Optional.empty();
                     this.error = Optional.of(e);
-                    return (JIO<Throwable, T>) this;
+                    return this;
                 }
             }
-            return (JIO<Throwable, T>) this;
+            return this;
         }
 
-        public JIO<Throwable, T> onSuccess(Consumer<T> func) {
+        public JIO<T> onSuccess(Consumer<T> func) {
             if (value.isPresent() && error.isEmpty()) {
                 try {
                     func.accept(value.get());
                 } catch (Exception e) {
                     this.value = Optional.empty();
                     this.error = Optional.of(e);
-                    return (JIO<Throwable, T>) this;
+                    return this;
                 }
             }
-            return (JIO<Throwable, T>) this;
+            return this;
         }
 
-        public <T> JIO<Throwable, T> onFailure(Consumer<Throwable> func) {
+        public <T> JIO< T> onFailure(Consumer<Throwable> func) {
             if (error.isPresent()) {
                 try {
                     func.accept(error.get());
                 } catch (Exception e) {
                     this.error = Optional.of(e);
-                    return (JIO<Throwable, T>) this;
+                    return (JIO<T>) this;
                 }
             }
-            return (JIO<Throwable, T>) this;
+            return (JIO<T>) this;
         }
 
         public boolean isPresent() {
@@ -193,7 +193,7 @@ public class JIOFeature {
         }
 
 
-        public T getOrElse(T defaultValue) throws Throwable {
+        public T getOrElse(T defaultValue)  {
             if (value.isEmpty() || error.isPresent()) {
                 return defaultValue;
             }
@@ -215,17 +215,17 @@ public class JIOFeature {
     @Test
     public void effectSystem() throws Throwable {
         Optional<String> optionalWithValue = Optional.of("Hello");
-        JIO<Throwable, String> optionalEffect = JIO.fromOptional(optionalWithValue)
+        JIO<String> optionalEffect = JIO.fromOptional(optionalWithValue)
                 .map(effect -> STR."\{effect} world")
                 .onSuccess(v -> System.out.println(STR."We found a value \{v}"));
 
         System.out.println(optionalEffect);
 
-        JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> "Hello world without side-effects")
+        JIO<String> errorEffect = JIO.fromEffect(() -> "Hello world without side-effects")
                 .map(effect -> STR."\{effect}!");
         System.out.println(errorEffect);
 
-        JIO<Throwable, String> nullEffect = JIO.fromOptional(Optional.empty());
+        JIO<String> nullEffect = JIO.fromOptional(Optional.empty());
         System.out.println(nullEffect.getOrElse("Let's use a backup"));
 
     }
@@ -233,12 +233,12 @@ public class JIOFeature {
     @Test
     public void sideEffects() {
         Optional<String> optionalWithoutValue = Optional.empty();
-        JIO<Throwable, String> optionalEffect = JIO.fromOptional(optionalWithoutValue);
+        JIO<String> optionalEffect = JIO.fromOptional(optionalWithoutValue);
         System.out.println(optionalEffect);
         System.out.println(optionalEffect.isEmpty());
         System.out.println(optionalEffect.isPresent());
 
-        JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> {
+        JIO<String> errorEffect = JIO.fromEffect(() -> {
                     throw new NullPointerException();
                 })
                 .onFailure(t -> System.out.println(STR."We found a side effect. Caused by \{t.getMessage()}"));
@@ -249,7 +249,7 @@ public class JIOFeature {
 
     @Test
     public void transform() throws Throwable {
-        JIO<Throwable, String> map = JIO.fromOptional(Optional.of("Let's transform this value"))
+        JIO<String> map = JIO.fromOptional(Optional.of("Let's transform this value"))
                 .map(String::toUpperCase)
                 .map(value -> STR."[\{value}]");
         System.out.println(map);
@@ -257,7 +257,7 @@ public class JIOFeature {
 
     @Test
     public void composition() {
-        JIO<Throwable, String> composition = JIO.fromEffect(() -> "Hello JIO")
+        JIO< String> composition = JIO.fromEffect(() -> "Hello JIO")
                 .map(value -> STR."\{value}!")
                 .flatMap(value -> JIO.fromOptional(Optional.of(STR."\{value} together is better")));
         System.out.println(composition);
@@ -265,11 +265,11 @@ public class JIOFeature {
 
     @Test
     public void async() throws Throwable {
-        JIO<Throwable, String> futureProgram = JIO.fromFuture(() -> "Hello from")
+        JIO< String> futureProgram = JIO.fromFuture(() -> "Hello from")
                 .mapAsync(d -> STR."\{d}  the future");
         System.out.println(futureProgram.getAsync());
 
-        JIO<Throwable, String> asyncProgram = JIO.fromEffect(() -> "Hello JIO")
+        JIO<String> asyncProgram = JIO.fromEffect(() -> "Hello JIO")
                 .mapAsync(value -> STR."\{value}!")
                 .mapAsync(value -> STR."\{value}!!");
         System.out.println(asyncProgram.getAsync());
@@ -277,7 +277,7 @@ public class JIOFeature {
 
     @Test
     public void parallel() throws Throwable {
-        JIO<Throwable, String> parallelProgram = JIO.from("")
+        JIO<String> parallelProgram = JIO.from("")
                 .parallelAsync(_ -> "Hello", _ -> "world", (hello, world) -> STR."\{hello} \{world}")
                 .map(String::toUpperCase);
         System.out.println(parallelProgram.get());
