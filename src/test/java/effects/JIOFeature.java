@@ -16,8 +16,8 @@ public class JIOFeature {
 
     public static class JIO<X, T> {
         private Optional<T> value = Optional.empty();
-        private Optional<CompletableFuture<T>> futureValue=Optional.empty();
-        private Optional<Throwable> error=Optional.empty();
+        private Optional<CompletableFuture<T>> futureValue = Optional.empty();
+        private Optional<Throwable> error = Optional.empty();
 
         private JIO(T value) {
             this.value = Optional.of(value);
@@ -33,6 +33,10 @@ public class JIOFeature {
 
         public JIO(CompletableFuture<T> futureValue) {
             this.futureValue = Optional.of(futureValue);
+        }
+
+        public static <T> JIO<Throwable, T> from(T value) {
+            return new JIO<>(value);
         }
 
         public static <T> JIO<Throwable, T> fromEffect(Supplier<T> action) {
@@ -241,12 +245,11 @@ public class JIOFeature {
                 .mapAsync(value -> STR."\{value}!")
                 .mapAsync(value -> STR."\{value}!!");
         System.out.println(asyncProgram.getAsync());
-
     }
 
     @Test
     public void parallel() throws Throwable {
-        JIO<Throwable, String> parallelProgram = JIO.fromEffect(() -> "")
+        JIO<Throwable, String> parallelProgram = JIO.from("")
                 .parallelAsync(_ -> "Hello", _ -> "world", (hello, world) -> STR."\{hello} \{world}")
                 .map(String::toUpperCase);
         System.out.println(parallelProgram.get());
