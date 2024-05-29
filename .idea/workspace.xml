@@ -13,9 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="effect system">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/effects/JIOFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/effects/JIOFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JIOFeature.parallel">
+  <component name="RunManager" selected="JUnit.JIOFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -420,9 +418,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JIOFeature" />
         <item itemvalue="JUnit.JIOFeature.parallel" />
         <item itemvalue="JUnit.JIOFeature.async" />
-        <item itemvalue="JUnit.JIOFeature" />
         <item itemvalue="JUnit.JIOFeature.effectSystem" />
         <item itemvalue="JUnit.JIOFeature.happyPath" />
       </list>
@@ -780,7 +778,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

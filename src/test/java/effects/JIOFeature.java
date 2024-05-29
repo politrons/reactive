@@ -16,15 +16,15 @@ public class JIOFeature {
 
     public static class JIO<X, T> {
         private Optional<T> value = Optional.empty();
-        private CompletableFuture<T> futureValue;
-        private Throwable error;
+        private Optional<CompletableFuture<T>> futureValue=Optional.empty();
+        private Optional<Throwable> error=Optional.empty();
 
         private JIO(T value) {
             this.value = Optional.of(value);
         }
 
         private JIO(Throwable error) {
-            this.error = error;
+            this.error = Optional.of(error);
         }
 
         private JIO() {
@@ -32,7 +32,7 @@ public class JIOFeature {
         }
 
         public JIO(CompletableFuture<T> futureValue) {
-            this.futureValue = futureValue;
+            this.futureValue = Optional.of(futureValue);
         }
 
         public static <T> JIO<Throwable, T> fromEffect(Supplier<T> action) {
@@ -54,12 +54,12 @@ public class JIOFeature {
         }
 
         public JIO<X, T> map(Function<T, T> func) {
-            if (value.isPresent() && error == null) {
+            if (value.isPresent() && error.isEmpty()) {
                 try {
                     return new JIO<>(func.apply(value.get()));
                 } catch (Exception e) {
                     this.value = Optional.empty();
-                    this.error = e;
+                    this.error = Optional.of(e);
                     return this;
                 }
             }
@@ -67,12 +67,12 @@ public class JIOFeature {
         }
 
         public JIO<Throwable, T> flatMap(Function<T, JIO<Throwable, T>> func) {
-            if (value.isPresent() && error == null) {
+            if (value.isPresent() && error.isEmpty()) {
                 try {
                     return func.apply(value.get());
                 } catch (Exception e) {
                     this.value = Optional.empty();
-                    this.error = e;
+                    this.error = Optional.of(e);
                     return (JIO<Throwable, T>) this;
                 }
             }
@@ -80,12 +80,12 @@ public class JIOFeature {
         }
 
         public JIO<Throwable, T> mapAsync(Function<T, T> func) {
-            if (value.isPresent() && error == null) {
+            if (value.isPresent() && error.isEmpty()) {
                 CompletableFuture<T> future = CompletableFuture.supplyAsync(() -> func.apply(value.get()), newVirtualThreadPerTaskExecutor());
                 return new JIO<>(future);
             }
-            if (futureValue != null && error == null) {
-                return new JIO<>(futureValue.thenApply(func));
+            if (futureValue.isPresent() && error.isEmpty()) {
+                return new JIO<>(futureValue.get().thenApply(func));
             }
             try {
                 final T value = this.get();
@@ -96,13 +96,13 @@ public class JIOFeature {
         }
 
         public JIO<Throwable, T> parallelAsync(Function<T, T> func1, Function<T, T> func2, BiFunction<T, T, T> mergeFunc) throws InterruptedException {
-            if (value.isPresent() && error == null) {
+            if (value.isPresent() && error.isEmpty()) {
                 try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
                     StructuredTaskScope.Subtask<T> task1 = scope.fork(() -> func1.apply(value.get()));
                     StructuredTaskScope.Subtask<T> task2 = scope.fork(() -> func2.apply(value.get()));
                     var maybeSideEffect = scope.join().exception();
                     if (maybeSideEffect.isPresent()) {
-                        error = maybeSideEffect.get();
+                        error = maybeSideEffect;
                     } else {
                         this.value = Optional.of(mergeFunc.apply(task1.get(), task2.get()));
                     }
@@ -114,14 +114,14 @@ public class JIOFeature {
         }
 
         public JIO<Throwable, T> filter(Function<T, Boolean> func) {
-            if (value.isPresent() && error == null) {
+            if (value.isPresent() && error.isEmpty()) {
                 try {
                     if (!func.apply(value.get())) {
                         this.value = Optional.empty();
                     }
                 } catch (Exception e) {
                     this.value = Optional.empty();
-                    this.error = e;
+                    this.error = Optional.of(e);
                     return (JIO<Throwable, T>) this;
                 }
             }
@@ -132,19 +132,19 @@ public class JIOFeature {
         public T get() throws Throwable {
             if (value.isEmpty()) {
                 throw new IllegalStateException("No value present");
-            } else if (error != null) {
-                throw error;
+            } else if (error.isPresent()) {
+                throw error.get();
             }
             return value.get();
         }
 
         public T getAsync() throws Throwable {
-            if (futureValue == null) {
+            if (futureValue.isEmpty()) {
                 throw new IllegalStateException("No value present");
-            } else if (error != null) {
-                throw error;
+            } else if (error.isPresent()) {
+                throw error.get();
             }
-            return futureValue.get();
+            return futureValue.get().get();
         }
 
         public boolean isPresent() {
@@ -156,16 +156,16 @@ public class JIOFeature {
         }
 
         public boolean isSucceed() {
-            return error == null;
+            return error.isEmpty();
         }
 
         public boolean isFailure() {
-            return error != null;
+            return error.isPresent();
         }
 
 
         public T getOrElse(T defaultValue) throws Throwable {
-            if (isEmpty() || error != null) {
+            if (value.isEmpty() || error.isPresent()) {
                 return defaultValue;
             }
             return value.get();
