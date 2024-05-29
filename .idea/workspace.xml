@@ -133,6 +133,7 @@
     "JUnit.JIOFeature.executor": "Run",
     "JUnit.JIOFeature.happyPath.executor": "Run",
     "JUnit.JIOFeature.parallel.executor": "Run",
+    "JUnit.JIOFeature.race.executor": "Run",
     "JUnit.JIOFeature.sideEffects.executor": "Run",
     "JUnit.Java16Features.executor": "Run",
     "JUnit.LoomFeatures.executor": "Run",
@@ -779,7 +780,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

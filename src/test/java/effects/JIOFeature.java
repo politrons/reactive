@@ -301,7 +301,21 @@ public class JIOFeature {
     @Test
     public void race() throws Throwable {
         JIO<String> raceProgram = JIO.from("Race start.")
-                .race(v -> STR."\{v} Renault win", v -> STR."\{v} Fiat win")
+                .race(v -> {
+                    try {
+                        Thread.sleep(new Random().nextInt(1000));
+                        return STR."\{v} Renault win";
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }, v -> {
+                    try {
+                        Thread.sleep(new Random().nextInt(1000));
+                        return STR."\{v} Fiat win";
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                })
                 .map(String::toUpperCase);
         System.out.println(raceProgram.get());
     }
