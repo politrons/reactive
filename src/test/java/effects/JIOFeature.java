@@ -78,10 +78,10 @@ public class JIOFeature {
                 } catch (Exception e) {
                     this.value = Optional.empty();
                     this.error = Optional.of(e);
-                    return (JIO<T>) this;
+                    return this;
                 }
             }
-            return (JIO<T>) this;
+            return this;
         }
 
         public JIO< T> mapAsync(Function<T, T> func) {
