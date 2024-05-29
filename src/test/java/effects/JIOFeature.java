@@ -257,7 +257,7 @@ public class JIOFeature {
 
     @Test
     public void composition() {
-        JIO< String> composition = JIO.fromEffect(() -> "Hello JIO")
+        JIO<String> composition = JIO.fromEffect(() -> "Hello JIO")
                 .map(value -> STR."\{value}!")
                 .flatMap(value -> JIO.fromOptional(Optional.of(STR."\{value} together is better")));
         System.out.println(composition);
@@ -265,7 +265,7 @@ public class JIOFeature {
 
     @Test
     public void async() throws Throwable {
-        JIO< String> futureProgram = JIO.fromFuture(() -> "Hello from")
+        JIO<String> futureProgram = JIO.fromFuture(() -> "Hello from")
                 .mapAsync(d -> STR."\{d}  the future");
         System.out.println(futureProgram.getAsync());
 
