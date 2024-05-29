@@ -167,7 +167,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JIOFeature">
+  <component name="RunManager" selected="JUnit.JIOFeature.sideEffects">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -296,23 +296,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JIOFeature.happyPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="effects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
-      <option name="METHOD_NAME" value="happyPath" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JIOFeature.parallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -324,6 +307,23 @@
       <option name="PACKAGE_NAME" value="effects" />
       <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
       <option name="METHOD_NAME" value="parallel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JIOFeature.sideEffects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="effects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="effects" />
+      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
+      <option name="METHOD_NAME" value="sideEffects" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -411,18 +411,18 @@
       <item itemvalue="JUnit.JIOFeature" />
       <item itemvalue="JUnit.JIOFeature.async" />
       <item itemvalue="JUnit.JIOFeature.effectSystem" />
-      <item itemvalue="JUnit.JIOFeature.happyPath" />
       <item itemvalue="JUnit.JIOFeature.parallel" />
+      <item itemvalue="JUnit.JIOFeature.sideEffects" />
       <item itemvalue="Maven.reactive [install]" />
       <item itemvalue="Maven.kafka [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JIOFeature.sideEffects" />
+        <item itemvalue="JUnit.JIOFeature.effectSystem" />
         <item itemvalue="JUnit.JIOFeature" />
         <item itemvalue="JUnit.JIOFeature.parallel" />
         <item itemvalue="JUnit.JIOFeature.async" />
-        <item itemvalue="JUnit.JIOFeature.effectSystem" />
-        <item itemvalue="JUnit.JIOFeature.happyPath" />
       </list>
     </recent_temporary>
   </component>
@@ -778,7 +778,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -6,6 +6,7 @@ import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.StructuredTaskScope;
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -132,6 +133,46 @@ public class JIOFeature {
             return (JIO<Throwable, T>) this;
         }
 
+        public JIO<Throwable, T> onSuccess(Consumer<T> func) {
+            if (value.isPresent() && error.isEmpty()) {
+                try {
+                    func.accept(value.get());
+                } catch (Exception e) {
+                    this.value = Optional.empty();
+                    this.error = Optional.of(e);
+                    return (JIO<Throwable, T>) this;
+                }
+            }
+            return (JIO<Throwable, T>) this;
+        }
+
+        public <T> JIO<Throwable, T> onFailure(Consumer<Throwable> func) {
+            if (error.isPresent()) {
+                try {
+                    func.accept(error.get());
+                } catch (Exception e) {
+                    this.error = Optional.of(e);
+                    return (JIO<Throwable, T>) this;
+                }
+            }
+            return (JIO<Throwable, T>) this;
+        }
+
+        public boolean isPresent() {
+            return value.isPresent();
+        }
+
+        public boolean isEmpty() {
+            return value.isEmpty();
+        }
+
+        public boolean isSucceed() {
+            return error.isEmpty();
+        }
+
+        public boolean isFailure() {
+            return error.isPresent();
+        }
 
         public T get() throws Throwable {
             if (value.isEmpty()) {
@@ -149,22 +190,6 @@ public class JIOFeature {
                 throw error.get();
             }
             return futureValue.get().get();
-        }
-
-        public boolean isPresent() {
-            return value.isPresent();
-        }
-
-        public boolean isEmpty() {
-            return value.isEmpty();
-        }
-
-        public boolean isSucceed() {
-            return error.isEmpty();
-        }
-
-        public boolean isFailure() {
-            return error.isPresent();
         }
 
 
@@ -191,7 +216,9 @@ public class JIOFeature {
     public void effectSystem() throws Throwable {
         Optional<String> optionalWithValue = Optional.of("Hello");
         JIO<Throwable, String> optionalEffect = JIO.fromOptional(optionalWithValue)
-                .map(effect -> STR."\{effect} world");
+                .map(effect -> STR."\{effect} world")
+                .onSuccess(v -> System.out.println(STR."We found a value \{v}"));
+
         System.out.println(optionalEffect);
 
         JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> "Hello world without side-effects")
@@ -212,8 +239,9 @@ public class JIOFeature {
         System.out.println(optionalEffect.isPresent());
 
         JIO<Throwable, String> errorEffect = JIO.fromEffect(() -> {
-            throw new NullPointerException();
-        });
+                    throw new NullPointerException();
+                })
+                .onFailure(t -> System.out.println(STR."We found a side effect. Caused by \{t.getMessage()}"));
         System.out.println(errorEffect);
         System.out.println(errorEffect.isSucceed());
         System.out.println(errorEffect.isFailure());
