@@ -28,6 +28,7 @@
     <modules>
 <!--        <module>quarkus</module>-->
         <module>kafka</module>
+        <module>graphQL</module>
     </modules>
 
     <dependencies>
