@@ -1,16 +1,26 @@
 type Query {
-    bookById(id: ID): Book
+    movieById(id: ID): Movie
+    actorById(id: ID): Actor
+
 }
 
-type Book {
+type Movie {
     id: ID
     name: String
-    pageCount: Int
-    author: Author
+    duration: Int
+    director: Director
 }
 
-type Author {
+type Director {
     id: ID
     firstName: String
     lastName: String
 }
+
+type Actor {
+    id: ID
+    name: String
+    surname: String
+}
+
+

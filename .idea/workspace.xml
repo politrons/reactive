@@ -12,23 +12,16 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="effect system">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="graphql">
+      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/FederationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +145,7 @@
     "Application.Application.executor": "Run",
     "Application.DemoApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
+    "Application.FederationApplication.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
     "Application.JIO.executor": "Run",
     "Application.RacePattern (1).executor": "Run",
@@ -224,10 +218,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.politrons.netflix" />
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemoApplication">
+  <component name="RunManager" selected="Application.FederationApplication">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -328,6 +323,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FederationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.FederationApplication" />
+      <module name="graphQL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.politrons.netflix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -369,23 +378,6 @@
       <option name="PACKAGE_NAME" value="com.example.demo" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JIOFeature.race" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="effects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="effects" />
-      <option name="MAIN_CLASS_NAME" value="effects.JIOFeature" />
-      <option name="METHOD_NAME" value="race" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -560,10 +552,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.DemoApplication" />
+      <item itemvalue="Application.FederationApplication" />
       <item itemvalue="Application.Application" />
       <item itemvalue="Gradle.DemoApplicationTests" />
       <item itemvalue="JUnit.DemoApplicationTests" />
-      <item itemvalue="JUnit.JIOFeature.race" />
       <item itemvalue="Maven.graphQL [install]" />
       <item itemvalue="Maven.graphQL [install] (1)" />
       <item itemvalue="Maven.kafka [install]" />
@@ -571,11 +563,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FederationApplication" />
         <item itemvalue="Application.DemoApplication" />
         <item itemvalue="JUnit.DemoApplicationTests" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Gradle.DemoApplicationTests" />
-        <item itemvalue="JUnit.JIOFeature.race" />
       </list>
     </recent_temporary>
   </component>
@@ -931,7 +923,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -964,7 +956,8 @@
     <MESSAGE value="Java 22" />
     <MESSAGE value="Design patterns" />
     <MESSAGE value="effect system" />
-    <option name="LAST_COMMIT_MESSAGE" value="effect system" />
+    <MESSAGE value="graphql" />
+    <option name="LAST_COMMIT_MESSAGE" value="graphql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
