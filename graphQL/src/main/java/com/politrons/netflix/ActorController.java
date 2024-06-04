@@ -13,4 +13,9 @@ public class ActorController {
         return Actor.getById(id);
     }
 
+    @SchemaMapping
+    public Movie movie(Actor actor) {
+        return Movie.getById(actor.movie());
+    }
+
 }

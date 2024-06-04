@@ -13,7 +13,7 @@ public record Movie(String id, String name, int duration, String director) {
 
     public static Movie getById(String id) {
         return movies.stream()
-                .filter(book -> book.id().equals(id))
+                .filter(movie -> movie.id().equals(id))
                 .findFirst()
                 .orElse(null);
     }

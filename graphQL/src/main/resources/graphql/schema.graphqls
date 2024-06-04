@@ -21,6 +21,7 @@ type Actor {
     id: ID
     name: String
     surname: String
+    movie:Movie
 }
 
 

@@ -13,14 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="graphql">
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/FederationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -923,7 +918,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
