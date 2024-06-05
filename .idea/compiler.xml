@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="graphQL" />
+        <module name="federation" />
         <module name="getting-started" />
+        <module name="actor-DGS" />
         <module name="kafka" />
       </profile>
     </annotationProcessing>
@@ -16,7 +17,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="graphQL" options="-parameters" />
+      <module name="actor-DGS" options="-parameters" />
+      <module name="federation" options="-parameters" />
+      <module name="graphQL" options="" />
     </option>
   </component>
 </project>

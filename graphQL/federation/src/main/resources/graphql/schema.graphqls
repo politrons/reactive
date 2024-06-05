@@ -1,6 +1,5 @@
 type Query {
     movieById(id: ID): Movie
-    actorById(id: ID): Actor
 
 }
 
@@ -9,6 +8,7 @@ type Movie {
     name: String
     duration: Int
     director: Director
+    actor:Actor
 }
 
 type Director {
@@ -21,7 +21,7 @@ type Actor {
     id: ID
     name: String
     surname: String
-    movie:Movie
 }
+
 
 

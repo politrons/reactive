@@ -29,6 +29,8 @@
 <!--        <module>quarkus</module>-->
         <module>kafka</module>
         <module>graphQL</module>
+        <module>graphQL/federation</module>
+        <module>graphQL/actor-DGS</module>
     </modules>
 
     <dependencies>

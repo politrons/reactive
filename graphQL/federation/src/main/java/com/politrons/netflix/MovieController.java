@@ -6,16 +6,20 @@ import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ActorController {
+public class MovieController {
 
     @QueryMapping
-    public Actor actorById(@Argument String id) {
-        return Actor.getById(id);
+    public Movie movieById(@Argument String id) {
+        return Movie.getById(id);
     }
 
     @SchemaMapping
-    public Movie movie(Actor actor) {
-        return Movie.getById(actor.movie());
+    public Actor actor(Movie movie) {
+        return Actor.getById(movie.id());
     }
 
+    @SchemaMapping
+    public Director director(Movie movie) {
+        return Director.getById(movie.director());
+    }
 }
