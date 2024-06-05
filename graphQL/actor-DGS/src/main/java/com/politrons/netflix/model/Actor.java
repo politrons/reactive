@@ -1,4 +1,4 @@
-package com.politrons.netflix;
+package com.politrons.netflix.model;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,0 +1,10 @@
+type Query {
+    directorById(id: ID): Director
+}
+
+type Director {
+    id: ID
+    firstName: String
+    lastName: String
+}
+

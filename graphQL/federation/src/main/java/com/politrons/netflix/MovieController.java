@@ -1,5 +1,8 @@
 package com.politrons.netflix;
 
+import com.politrons.netflix.model.Actor;
+import com.politrons.netflix.model.Director;
+import com.politrons.netflix.model.Movie;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;

@@ -31,6 +31,7 @@
         <module>graphQL</module>
         <module>graphQL/federation</module>
         <module>graphQL/actor-DGS</module>
+        <module>graphQL/director-DGS</module>
     </modules>
 
     <dependencies>

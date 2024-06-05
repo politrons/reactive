@@ -13,10 +13,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="netflix architecture">
-      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/DirectorDGSApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +153,7 @@
     "Application.Application.executor": "Run",
     "Application.DemoApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
-    "Application.FederationApplication (1).executor": "Debug",
+    "Application.FederationApplication (1).executor": "Run",
     "Application.FederationApplication.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
     "Application.JIO.executor": "Run",
@@ -198,7 +210,7 @@
     "git-widget-placeholder": "master",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pablogarcia/Development/reactive/graphQL/actor-DGS",
+    "last_opened_file_path": "/Users/pablogarcia/Development/reactive/graphQL/director-DGS",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -207,6 +219,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/graphQL/director-DGS" />
       <recent name="$PROJECT_DIR$/graphQL/actor-DGS" />
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
@@ -218,6 +231,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.politrons.netflix.model" />
       <recent name="com.politrons.netflix" />
       <recent name="com.politrons.kafka" />
     </key>
@@ -301,7 +315,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
+          <option name="PATTERN" value="com.politrons.netflix.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,13 +337,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DirectorDGSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.DirectorDGSApplication" />
+      <module name="directorDGS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.politrons.netflix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FederationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.FederationApplication" />
       <module name="graphQL" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
+          <option name="PATTERN" value="com.politrons.netflix.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -343,7 +371,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
+          <option name="PATTERN" value="com.politrons.netflix.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,22 +381,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="graphQL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -543,9 +555,9 @@
     <list>
       <item itemvalue="Application.ActorDGSApplication" />
       <item itemvalue="Application.DemoApplication" />
+      <item itemvalue="Application.DirectorDGSApplication" />
       <item itemvalue="Application.FederationApplication" />
       <item itemvalue="Application.FederationApplication (1)" />
-      <item itemvalue="JUnit.DemoApplicationTests" />
       <item itemvalue="Maven.graphQL [install]" />
       <item itemvalue="Maven.graphQL [install] (1)" />
       <item itemvalue="Maven.kafka [install]" />
@@ -554,10 +566,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ActorDGSApplication" />
+        <item itemvalue="Application.DirectorDGSApplication" />
         <item itemvalue="Application.FederationApplication (1)" />
         <item itemvalue="Application.FederationApplication" />
         <item itemvalue="Application.DemoApplication" />
-        <item itemvalue="JUnit.DemoApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -913,7 +925,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

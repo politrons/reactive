@@ -10,14 +10,21 @@
         <module name="federation" />
         <module name="getting-started" />
         <module name="actor-DGS" />
+        <module name="directorDGS (1)" />
+        <module name="directorDGS" />
         <module name="kafka" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="19" />
+    <bytecodeTargetLevel target="19">
+      <module name="director-DGS" target="22" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="actor-DGS" options="-parameters" />
+      <module name="director-DGS" options="-parameters" />
+      <module name="directorDGS" options="-parameters" />
+      <module name="directorDGS (1)" options="-parameters" />
       <module name="federation" options="-parameters" />
       <module name="graphQL" options="" />
     </option>

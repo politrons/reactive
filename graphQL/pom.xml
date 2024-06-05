@@ -15,6 +15,7 @@
     <modules>
         <module>federation</module>
         <module>actor-DGS</module>
+        <module>director-DGS</module>
     </modules>
 
 </project>

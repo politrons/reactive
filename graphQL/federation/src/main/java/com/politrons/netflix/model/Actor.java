@@ -1,4 +1,4 @@
-package com.politrons.netflix;
+package com.politrons.netflix.model;
 
 import org.springframework.graphql.client.HttpGraphQlClient;
 import org.springframework.web.reactive.function.client.WebClient;
