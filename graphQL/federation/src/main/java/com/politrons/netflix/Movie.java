@@ -6,9 +6,9 @@ import java.util.List;
 public record Movie(String id, String name, int duration, String director) {
 
     private static List<Movie> movies = Arrays.asList(
-            new Movie("1", "Effective Java", 416, "author-1"),
-            new Movie("2", "Hitchhiker's Guide to the Galaxy", 117, "author-2"),
-            new Movie("3", "The Matrix", 121, "Wachowski")
+            new Movie("1", "The Martian", 214, "author-1"),
+            new Movie("2", "Minority Report", 117, "author-2"),
+            new Movie("3", "The Matrix", 121, "author-3")
     );
 
     public static Movie getById(String id) {

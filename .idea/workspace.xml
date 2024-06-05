@@ -12,26 +12,11 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="graphql">
-      <change afterPath="$PROJECT_DIR$/graphQL/actor-DGS/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/federation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/FederationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/federation/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/federation/src/main/resources/graphql/schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/FederationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorDGSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/java/com/politrons/netflix/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/src/main/resources/graphql/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/resources/graphql/schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="netflix architecture">
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +137,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.ActorDGSApplication.executor": "Debug",
+    "Application.ActorDGSApplication.executor": "Run",
     "Application.Application.executor": "Run",
     "Application.DemoApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
@@ -928,7 +913,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -962,7 +947,8 @@
     <MESSAGE value="Design patterns" />
     <MESSAGE value="effect system" />
     <MESSAGE value="graphql" />
-    <option name="LAST_COMMIT_MESSAGE" value="graphql" />
+    <MESSAGE value="netflix architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="netflix architecture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -984,16 +970,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/java19/Java19Features.java</url>
           <line>29</line>
           <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

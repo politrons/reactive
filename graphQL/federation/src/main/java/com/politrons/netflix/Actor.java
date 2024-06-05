@@ -3,6 +3,8 @@ package com.politrons.netflix;
 import org.springframework.graphql.client.HttpGraphQlClient;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import static java.lang.StringTemplate.STR;
+
 public record Actor(String id, String name, String surname) {
 
     static String url = "http://localhost:8081/graphql";
@@ -12,19 +14,19 @@ public record Actor(String id, String name, String surname) {
             .build();
     static HttpGraphQlClient graphQlClient = HttpGraphQlClient.builder(client).build();
 
-    static String actorQuery = """
+
+    public static Actor getById(String id) {
+        String actorQuery = STR."""
             query {
-               actorById(id:"1") {
+               actorById(id:"\{id}") {
                           id
                           name
                           surname
                 }
             }
             """;
-
-    public static Actor getById(String id) {
         Actor actor = graphQlClient.document(actorQuery).retrieve("actorById").toEntity(Actor.class).block();
-        System.out.println("Actor:" + actor);
+        System.out.println(STR."Actor:\{actor}");
         return actor;
     }
 }
