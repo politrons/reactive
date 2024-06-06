@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/graphQL/actor-DGS/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/actor-DGS/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/director-DGS/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/director-DGS/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/federation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/federation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/graphQL/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/federation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/movie-DGS/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/movie-DGS/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetflixArchitecture/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quarkus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quarkus/src/main/resources" charset="UTF-8" />
   </component>

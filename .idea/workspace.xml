@@ -13,21 +13,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="netflix architecture">
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/DirectorDGSApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/java/com/politrons/netflix/ActorDGSApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/actor-DGS/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/java/com/politrons/netflix/DirectorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/java/com/politrons/netflix/DirectorDGSApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/director-DGS/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java/com/politrons/netflix/FederationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/java/com/politrons/netflix/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/federation/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetflixArchitecture/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/graphQL/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/ActorDGSApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/java/com/politrons/netflix/model/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/actor-DGS/src/main/resources/graphql/schema.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/DirectorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/DirectorDGSApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/src/main/java/com/politrons/netflix/model/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/director-DGS/src/main/resources/graphql/schema.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/FederationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/MovieController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/java/com/politrons/netflix/model/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/federation/src/main/resources/graphql/schema.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphQL/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,14 +186,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.ActorDGSApplication.executor": "Run",
+    "Application.ActorDGSApplication.executor": "Debug",
     "Application.Application.executor": "Run",
     "Application.DemoApplication.executor": "Run",
+    "Application.DirectorDGSApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
-    "Application.FederationApplication (1).executor": "Run",
+    "Application.FederationApplication (1).executor": "Debug",
     "Application.FederationApplication.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
     "Application.JIO.executor": "Run",
+    "Application.MovieDGSApplication.executor": "Debug",
     "Application.RacePattern (1).executor": "Run",
     "Application.RacePattern.executor": "Run",
     "Gradle.Build graphQL.executor": "Run",
@@ -204,13 +243,15 @@
     "Maven.graphQL [install] (1).executor": "Run",
     "Maven.graphQL [install] run.executor": "Run",
     "Maven.graphQL [install].executor": "Run",
+    "Maven.netflix-arquitecture [clean].executor": "Run",
+    "Maven.netflix-arquitecture [install].executor": "Run",
     "Maven.reactive [clean].executor": "Run",
     "Maven.reactive [install].executor": "Run",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/pablogarcia/Development/reactive/graphQL/director-DGS",
+    "last_opened_file_path": "/Users/pablogarcia/Development/reactive/graphQL/movie-DGS",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -219,6 +260,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/graphQL/movie-DGS" />
       <recent name="$PROJECT_DIR$/graphQL/director-DGS" />
       <recent name="$PROJECT_DIR$/graphQL/actor-DGS" />
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
@@ -236,7 +278,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ActorDGSApplication">
+  <component name="RunManager" selected="Application.FederationApplication">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -311,25 +353,11 @@
     </configuration>
     <configuration name="ActorDGSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.ActorDGSApplication" />
-      <module name="actor-DGS" />
+      <module name="actorDGS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
-      <module name="graphQL" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="PATTERN" value="com.politrons.netflix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,25 +381,11 @@
     </configuration>
     <configuration name="FederationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.FederationApplication" />
-      <module name="graphQL" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FederationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.FederationApplication" />
       <module name="federation" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.model.*" />
+          <option name="PATTERN" value="com.politrons.netflix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -513,6 +527,36 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="netflix-arquitecture [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/NetflixArchitecture" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="reactive [install]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -554,10 +598,9 @@
     </configuration>
     <list>
       <item itemvalue="Application.ActorDGSApplication" />
-      <item itemvalue="Application.DemoApplication" />
       <item itemvalue="Application.DirectorDGSApplication" />
       <item itemvalue="Application.FederationApplication" />
-      <item itemvalue="Application.FederationApplication (1)" />
+      <item itemvalue="Maven.netflix-arquitecture [install]" />
       <item itemvalue="Maven.graphQL [install]" />
       <item itemvalue="Maven.graphQL [install] (1)" />
       <item itemvalue="Maven.kafka [install]" />
@@ -565,11 +608,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FederationApplication" />
         <item itemvalue="Application.ActorDGSApplication" />
         <item itemvalue="Application.DirectorDGSApplication" />
-        <item itemvalue="Application.FederationApplication (1)" />
-        <item itemvalue="Application.FederationApplication" />
-        <item itemvalue="Application.DemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -925,7 +966,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
