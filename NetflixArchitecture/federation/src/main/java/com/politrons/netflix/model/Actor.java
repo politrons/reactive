@@ -44,7 +44,10 @@ public record Actor(String id, String name, String surname) {
                 }
             }
             """;
-        Actor actor = graphQlClient.document(actorQuery).retrieve("actorById").toEntity(Actor.class).block();
+        Actor actor = graphQlClient.document(actorQuery)
+                .retrieve("actorById")
+                .toEntity(Actor.class)
+                .block();
         System.out.println(STR."Actor:\{actor}");
         return actor;
     }
