@@ -54,6 +54,8 @@ Functions independently, facilitating isolated development and scaling.
 Once all services are running, you can test the setup by sending GraphQL queries to the Federation Service.
 For example, you can query for actor and director information through a single endpoint.
 
+Open your browser and click [here](http://localhost:8080/graphiql?path=/graphql)
+
 ## Example GraphQL Query
 
 ```graphql
