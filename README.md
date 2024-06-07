@@ -329,6 +329,10 @@ Examples of patterns using Apache Kafka.
 * **[Race](src/test/java/patterns/RacePattern.java)**
 * **[Effect system](src/test/java/effects/JIOFeature.java)**
 
+## Architectures
+
+* **[Netflix GraphQL Federation Replica](NetflixArchitecture)**
+
 ## Programs
 
 * [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing
