@@ -377,6 +377,12 @@
             <artifactId>jeromq</artifactId>
             <version>0.5.2</version>
         </dependency>
+<!--        Netflix-->
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-core</artifactId>
+            <version>1.5.18</version>
+        </dependency>
     </dependencies>
 
 </project>
