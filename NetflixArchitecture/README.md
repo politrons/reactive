@@ -58,6 +58,8 @@ Open your browser and click [here](http://localhost:8080/graphiql?path=/graphql)
 
 ## Example GraphQL Query
 
+After run application for each module open browser and click [here](http://localhost:8080/graphiql?path=/graphql)
+
 ```graphql
 query {
   movieById(id: "2") {
