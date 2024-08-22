@@ -116,7 +116,7 @@ public class ChannelFeature {
         Channel<String> channel = Channel.make();
 
         Thread consumer = Thread.ofVirtual().start(() -> {
-            String message = null;
+            String message;
             try {
                 message = channel.receive();
             } catch (InterruptedException e) {
