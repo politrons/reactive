@@ -31,7 +31,7 @@ public class ChannelFeature {
         /**
          * Static factory method to create a Channel with a specified capacity.
          *
-         * @param <T> The type of messages this channel will handle.
+         * @param <T>      The type of messages this channel will handle.
          * @param capacity The maximum number of messages that can be held in the channel at any one time.
          * @return A new Channel instance with the specified capacity.
          */
@@ -41,18 +41,21 @@ public class ChannelFeature {
 
         /**
          * Sends a message to the channel by placing the result of the supplied function
-         * into the BlockingQueue. If the queue is full, this method will block until space is available.
+         * into the BlockingQueue. The send operation is performed in a new virtual thread.
+         * If the queue is full, this method will block until space is available.
          *
          * @param func A Supplier function that produces the message to be sent to the channel.
          * @throws RuntimeException if the thread is interrupted while waiting to send the message.
          */
         public void send(Supplier<T> func) {
-            try {
-                queue.put(func.get());
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); // Restore the interrupt status
-                throw new RuntimeException("Thread was interrupted while sending", e);
-            }
+            Thread.ofVirtual().start(() -> {
+                try {
+                    queue.put(func.get());
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); // Restore the interrupt status
+                    throw new RuntimeException("Thread was interrupted while sending", e);
+                }
+            });
         }
 
         /**
@@ -60,7 +63,7 @@ public class ChannelFeature {
          * If the queue is empty, this method will block for the specified timeout duration, waiting for a message.
          *
          * @param timeout The maximum time to wait for a message.
-         * @param unit The time unit of the timeout argument.
+         * @param unit    The time unit of the timeout argument.
          * @return The message received from the channel.
          * @throws RuntimeException if the timeout expires before a message is received or if the thread is interrupted.
          */
@@ -84,7 +87,7 @@ public class ChannelFeature {
 
         Thread consumer = Thread.ofVirtual().start(() -> {
             String message = channel.receive(5, TimeUnit.SECONDS);
-            System.out.println("Channel received message: " + message);
+            System.out.println(STR."Channel received message: \{message}");
         });
 
         Thread.ofVirtual().start(() -> {
@@ -103,24 +106,22 @@ public class ChannelFeature {
     void runChannelMultipleThreads() throws InterruptedException {
         Channel<String> channel = Channel.make(2);
 
-        Thread.ofVirtual().start(() -> {
-            channel.send(() -> "Message from producer 1");
-        });
+        // Sending messages to the channel in virtual threads.
+        channel.send(() -> "Message from producer 1");
+        channel.send(() -> "Message from producer 2");
 
-        Thread.ofVirtual().start(() -> {
-            channel.send(() -> "Message from producer 2");
-        });
-
+        // Two consumers receiving messages from the channel.
         Thread consumer1 = Thread.ofVirtual().start(() -> {
             String message = channel.receive(5, TimeUnit.SECONDS);
-            System.out.println("Channel Consumer 1 received: " + message);
+            System.out.println(STR."Channel Consumer 1 received: \{message}");
         });
 
         Thread consumer2 = Thread.ofVirtual().start(() -> {
             String message = channel.receive(5, TimeUnit.SECONDS);
-            System.out.println("Channel Consumer 2 received: " + message);
+            System.out.println(STR."Channel Consumer 2 received: \{message}");
         });
 
+        // Wait for both consumers to finish
         consumer1.join();
         consumer2.join();
     }
