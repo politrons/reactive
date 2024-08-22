@@ -15,25 +15,15 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="19">
-      <module name="actor-DGS" target="22" />
-      <module name="director-DGS" target="22" />
-      <module name="directorDGS (1)" target="22" />
-      <module name="movie-DGS" target="22" />
-      <module name="movie-DGS (1)" target="22" />
-      <module name="NetflixArchitecture" target="1.5" />
+      <module name="NullAway" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="NetflixArchitecture" options="" />
-      <module name="actor-DGS" options="-parameters" />
+      <module name="NullAway" options="-XDcompilePolicy=simple -Xplugin:ErrorProne -Xep:NullAway:ERROR" />
       <module name="actorDGS" options="-parameters" />
-      <module name="director-DGS" options="-parameters" />
       <module name="directorDGS" options="-parameters" />
-      <module name="directorDGS (1)" options="-parameters" />
       <module name="federation" options="-parameters" />
-      <module name="movie-DGS" options="-parameters" />
-      <module name="movie-DGS (1)" options="-parameters" />
     </option>
   </component>
 </project>

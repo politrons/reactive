@@ -13,9 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="documentation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/communication/ChannelFeature.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/resilient4j/Resilience4jFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,83 +140,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ActorDGSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DirectorDGSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FeaturesJava22.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FederationApplication (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Application.FederationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImplicitClass.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JIO.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MovieDGSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.RacePattern (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.RacePattern.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build graphQL.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DemoApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.graphQL [:Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CompositionInterfaces.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemoApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.completableFutureWithVirtualThreads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.composingVirtualThreads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.lazyVirtualThreads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.modifyArray.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.patternMatching.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.scopedValueChildThreadsFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.scopedValueFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.sequenceCollection.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.streamGathers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.stringTemplate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.structureConcurrency.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.unnamedVariables.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeaturesJava22.virtualThreads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GenericsFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HystrixFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HystrixFeature.runService.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.async.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.effectSystem.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.happyPath.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.parallel.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.race.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JIOFeature.sideEffects.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Java16Features.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoomFeatures.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoomFeatures.virtualThreadFeature.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RacePattern.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RacePattern.raceBetweenAsyncTask.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReactorAsync.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ScopeValueFeature.implicitMethodArgs.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VavrCollections.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VavrCollections.merge.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VavrCollections.rangeClosed.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VavrEffects.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VavrEffects.tryAddFinally.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Spring boot run .executor&quot;: &quot;Run&quot;,
-    &quot;Maven.demo [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.graphQL [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.graphQL [install] (1).executor&quot;: &quot;Run&quot;,
-    &quot;Maven.graphQL [install] run.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.graphQL [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.netflix-arquitecture [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.netflix-arquitecture [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.reactive [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.reactive [install].executor&quot;: &quot;Run&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pablogarcia/Development/reactive/NetflixArchitecture/img&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ActorDGSApplication.executor": "Run",
+    "Application.Application.executor": "Run",
+    "Application.DemoApplication.executor": "Run",
+    "Application.DirectorDGSApplication.executor": "Run",
+    "Application.FeaturesJava22.executor": "Run",
+    "Application.FederationApplication (1).executor": "Debug",
+    "Application.FederationApplication.executor": "Run",
+    "Application.ImplicitClass.executor": "Run",
+    "Application.JIO.executor": "Run",
+    "Application.MovieDGSApplication.executor": "Debug",
+    "Application.RacePattern (1).executor": "Run",
+    "Application.RacePattern.executor": "Run",
+    "Gradle.Build graphQL.executor": "Run",
+    "Gradle.DemoApplicationTests.executor": "Run",
+    "Gradle.graphQL [:Application.main()].executor": "Run",
+    "JUnit.ChannelFeature.executor": "Run",
+    "JUnit.ChannelFeature.runChannel.executor": "Run",
+    "JUnit.ChannelFeature.runChannelSeparateScope.executor": "Run",
+    "JUnit.CompositionInterfaces.executor": "Run",
+    "JUnit.DemoApplicationTests.executor": "Run",
+    "JUnit.FeaturesJava22.completableFutureWithVirtualThreads.executor": "Run",
+    "JUnit.FeaturesJava22.composingVirtualThreads.executor": "Run",
+    "JUnit.FeaturesJava22.executor": "Run",
+    "JUnit.FeaturesJava22.lazyVirtualThreads.executor": "Run",
+    "JUnit.FeaturesJava22.modifyArray.executor": "Run",
+    "JUnit.FeaturesJava22.patternMatching.executor": "Run",
+    "JUnit.FeaturesJava22.scopedValueChildThreadsFeature.executor": "Run",
+    "JUnit.FeaturesJava22.scopedValueFeature.executor": "Run",
+    "JUnit.FeaturesJava22.sequenceCollection.executor": "Run",
+    "JUnit.FeaturesJava22.streamGathers.executor": "Run",
+    "JUnit.FeaturesJava22.stringTemplate.executor": "Run",
+    "JUnit.FeaturesJava22.structureConcurrency.executor": "Run",
+    "JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect.executor": "Run",
+    "JUnit.FeaturesJava22.unnamedVariables.executor": "Run",
+    "JUnit.FeaturesJava22.virtualThreads.executor": "Run",
+    "JUnit.GenericsFeature.executor": "Run",
+    "JUnit.HystrixFeature.executor": "Run",
+    "JUnit.HystrixFeature.runService.executor": "Run",
+    "JUnit.JIOFeature.async.executor": "Run",
+    "JUnit.JIOFeature.effectSystem.executor": "Run",
+    "JUnit.JIOFeature.executor": "Run",
+    "JUnit.JIOFeature.happyPath.executor": "Run",
+    "JUnit.JIOFeature.parallel.executor": "Run",
+    "JUnit.JIOFeature.race.executor": "Run",
+    "JUnit.JIOFeature.sideEffects.executor": "Run",
+    "JUnit.Java16Features.executor": "Run",
+    "JUnit.LoomFeatures.executor": "Run",
+    "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
+    "JUnit.RacePattern.executor": "Run",
+    "JUnit.RacePattern.raceBetweenAsyncTask.executor": "Run",
+    "JUnit.ReactorAsync.executor": "Run",
+    "JUnit.ScopeValueFeature.implicitMethodArgs.executor": "Run",
+    "JUnit.VavrCollections.executor": "Run",
+    "JUnit.VavrCollections.merge.executor": "Run",
+    "JUnit.VavrCollections.rangeClosed.executor": "Run",
+    "JUnit.VavrEffects.executor": "Run",
+    "JUnit.VavrEffects.tryAddFinally.executor": "Run",
+    "Maven.NullAway [clean].executor": "Run",
+    "Maven.NullAway [compile].executor": "Run",
+    "Maven.NullAway [install].executor": "Run",
+    "Maven.NullAway [org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile].executor": "Run",
+    "Maven.NullAway [validate].executor": "Run",
+    "Maven.NullAway [verify].executor": "Run",
+    "Maven.Spring boot run .executor": "Run",
+    "Maven.demo [install].executor": "Run",
+    "Maven.graphQL [clean].executor": "Run",
+    "Maven.graphQL [install] (1).executor": "Run",
+    "Maven.graphQL [install] run.executor": "Run",
+    "Maven.graphQL [install].executor": "Run",
+    "Maven.netflix-arquitecture [clean].executor": "Run",
+    "Maven.netflix-arquitecture [install].executor": "Run",
+    "Maven.reactive [clean].executor": "Run",
+    "Maven.reactive [install].executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/pablogarcia/Development/reactive/NetflixArchitecture/img",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/NetflixArchitecture/img" />
@@ -232,7 +247,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HystrixCircuitBreaker">
+  <component name="RunManager" selected="JUnit.ChannelFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -305,50 +320,75 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="ActorDGSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.ActorDGSApplication" />
-      <module name="actorDGS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DirectorDGSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.DirectorDGSApplication" />
-      <module name="directorDGS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FederationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.politrons.netflix.FederationApplication" />
-      <module name="federation" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.politrons.netflix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="communication" />
+      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelFeature.runChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="communication" />
+      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
+      <option name="METHOD_NAME" value="runChannel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelFeature.runChannelMultipleThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="communication" />
+      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
+      <option name="METHOD_NAME" value="runChannelMultipleThreads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelFeature.runChannelSeparateScope" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="communication" />
+      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
+      <option name="METHOD_NAME" value="runChannelSeparateScope" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -369,29 +409,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HystrixCircuitBreaker.runService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="netflix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="netflix" />
-      <option name="MAIN_CLASS_NAME" value="netflix.HystrixCircuitBreaker" />
-      <option name="METHOD_NAME" value="runService" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="NullAway [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="11" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/NullAway" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="graphQL [install] (1)" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -584,11 +653,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ActorDGSApplication" />
-      <item itemvalue="Application.DirectorDGSApplication" />
-      <item itemvalue="Application.FederationApplication" />
+      <item itemvalue="JUnit.ChannelFeature" />
+      <item itemvalue="JUnit.ChannelFeature.runChannel" />
+      <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
+      <item itemvalue="JUnit.ChannelFeature.runChannelSeparateScope" />
       <item itemvalue="JUnit.HystrixCircuitBreaker" />
-      <item itemvalue="JUnit.HystrixCircuitBreaker.runService" />
+      <item itemvalue="Maven.NullAway [install]" />
       <item itemvalue="Maven.netflix-arquitecture [install]" />
       <item itemvalue="Maven.graphQL [install]" />
       <item itemvalue="Maven.graphQL [install] (1)" />
@@ -597,11 +667,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChannelFeature" />
+        <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
+        <item itemvalue="JUnit.ChannelFeature.runChannel" />
+        <item itemvalue="JUnit.ChannelFeature.runChannelSeparateScope" />
         <item itemvalue="JUnit.HystrixCircuitBreaker" />
-        <item itemvalue="JUnit.HystrixCircuitBreaker.runService" />
-        <item itemvalue="Application.DirectorDGSApplication" />
-        <item itemvalue="Application.ActorDGSApplication" />
-        <item itemvalue="Application.FederationApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -957,7 +1027,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

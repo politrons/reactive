@@ -38,7 +38,7 @@
         <!-- VavrIO-->
         <dependency>
             <groupId>io.vavr</groupId>
-            <artifactId>vavr</artifactId>
+            <artifactId>vavr</artifactId>pwd
             <version>0.10.3</version>
         </dependency>
         <!--Rsocket-->

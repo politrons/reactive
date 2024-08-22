@@ -2,11 +2,12 @@ package java22;
 
 import org.junit.jupiter.api.Test;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.StructuredTaskScope;
 import java.util.stream.Gatherers;
 import java.util.stream.Stream;
 
