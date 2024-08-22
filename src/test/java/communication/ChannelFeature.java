@@ -2,9 +2,7 @@ package communication;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.function.Supplier;
 
 public class ChannelFeature {
@@ -12,6 +10,8 @@ public class ChannelFeature {
     public static class Channel<T> {
 
         private final BlockingQueue<T> queue;
+
+        ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 
         // Private constructor to initialize the BlockingQueue with the specified capacity.
         private Channel(int capacity) {
@@ -91,6 +91,24 @@ public class ChannelFeature {
         public T receive() throws InterruptedException {
             return queue.take();
         }
+
+        /**
+         * Receives a message from the channel asynchronously by using a CompletableFuture that
+         * will complete when a message is available. This method does not block the main thread and
+         * returns immediately with a future that can be used to obtain the message once it arrives.
+         *
+         * @return A CompletableFuture that will be completed with the received message when it becomes available.
+         */
+        public CompletableFuture<T> receiveAsync() {
+            return CompletableFuture.supplyAsync(() -> {
+                try {
+                    return queue.take(); // take() will block the virtual thread but not the platform thread
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); // Restore the interrupt status
+                    throw new RuntimeException("Thread was interrupted while receiving", e);
+                }
+            }, executor);
+        }
     }
 
     @Test
@@ -133,13 +151,14 @@ public class ChannelFeature {
             System.out.println(STR."Channel Consumer 1 received: \{message}");
         });
 
-        Thread consumer2 = Thread.ofVirtual().start(() -> {
-            String message = channel.receive(5, TimeUnit.SECONDS);
+        try {
+            var message = channel.receiveAsync().get();
             System.out.println(STR."Channel Consumer 2 received: \{message}");
-        });
+        } catch (InterruptedException | ExecutionException e) {
+            throw new RuntimeException(e);
+        }
 
         // Wait for both consumers to finish
         consumer1.join();
-        consumer2.join();
     }
 }
