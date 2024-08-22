@@ -79,6 +79,20 @@ public class ChannelFeature {
                 throw new RuntimeException("Thread was interrupted while receiving", e);
             }
         }
+
+        /**
+         * Continuously attempts to receive a message from the channel by polling the BlockingQueue.
+         * This method repeatedly checks for a message without blocking, effectively creating a busy-wait loop.
+         *
+         * @return The message received from the channel.
+         */
+        public T receive() {
+            T value = queue.poll();
+            while (value == null) {
+                value = queue.poll();
+            }
+            return value;
+        }
     }
 
     @Test
@@ -86,7 +100,7 @@ public class ChannelFeature {
         Channel<String> channel = Channel.make();
 
         Thread consumer = Thread.ofVirtual().start(() -> {
-            String message = channel.receive(5, TimeUnit.SECONDS);
+            String message = channel.receive();
             System.out.println(STR."Channel received message: \{message}");
         });
 
