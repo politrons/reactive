@@ -328,7 +328,7 @@ Examples of patterns using Apache Kafka.
 
 * **[Race](src/test/java/patterns/RacePattern.java)**
 * **[Effect system](src/test/java/effects/JIOFeature.java)**
-* **[Chanel](src/test/java/communication/ChannelFeature.java)**
+* **[Channel](src/test/java/communication/ChannelFeature.java)**
 
 
 ## Architectures
