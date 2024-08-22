@@ -48,6 +48,14 @@ public class ChannelFeature {
          * @throws RuntimeException if the thread is interrupted while waiting to send the message.
          */
         public void send(Supplier<T> func) {
+            appendInQueue(func);
+        }
+
+        public void send(T t) {
+            appendInQueue(() -> t);
+        }
+
+        private void appendInQueue(Supplier<T> func) {
             Thread.ofVirtual().start(() -> {
                 try {
                     queue.put(func.get());
@@ -122,7 +130,7 @@ public class ChannelFeature {
 
         // Sending messages to the channel in virtual threads.
         channel.send(() -> "Message from producer 1");
-        channel.send(() -> "Message from producer 2");
+        channel.send("Message from producer 2");
 
         // Two consumers receiving messages from the channel.
         Thread consumer1 = Thread.ofVirtual().start(() -> {
