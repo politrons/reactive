@@ -1,10 +1,6 @@
 # HashMap vs Chronicle Map — Memory Footprint Shoot‑out
 
-*Author: POLITRONS *
-
 ---
-
-## 0. TL;DR
 
 | Map implementation | Total size | Logical data¹ | Structural overhead | Avg. overhead / entry |
 |--------------------|-----------:|--------------:|--------------------:|----------------------:|
