@@ -330,6 +330,9 @@ Examples of patterns using Apache Kafka.
 * **[Effect system](src/test/java/effects/JIOFeature.java)**
 * **[Channel](src/test/java/communication/ChannelFeature.java)**
 
+## Java Object Layout (JOL)
+
+* **[HashMap vs Chronicle Map](JOL/README.md)**
 
 ## Architectures
 

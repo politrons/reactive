@@ -34,6 +34,30 @@ public class FeaturesJava22 {
     record Account(int amount) {
     }
 
+
+    public static class A {
+        public A(){
+            System.out.println("hello world A");
+        }
+    }
+
+    public static class B extends A {
+
+        public B(){
+            System.out.println("hello world B");
+            super();
+        }
+    }
+
+    /**
+     * With Java 21 now we can do some logic in the subclass before we invoke super() of the supper class that
+     * we extend.
+     */
+    @Test
+    public void invokeSuperAfterSubclass(){
+        new B();
+    }
+
     /**
      * Since Java 21 [Pattern matching] it's getting better and getting close what scala can do.
      * Now we can evaluate object type to any data type defined in the switch and reference to variable name.

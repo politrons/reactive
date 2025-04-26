@@ -13,14 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="documentation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/communication/ChannelFeature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resilient4j/Resilience4jFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/java/ChronicleMapMemoryBreakdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/java/HashMapNodeSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,10 +93,14 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib/src.zip!/java.net.http/java/net/http/HttpClient.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/ArrayBlockingQueue.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/BlockingQueue.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/CompletableFuture.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/Executors.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/StructuredTaskScope.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/BiFunction.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar!/com/google/common/collect/ForwardingQueue.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final.jar!/io/netty/util/concurrent/Promise.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/Value.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Either.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../.m2/repository/io/vavr/vavr/0.10.3/vavr-0.10.3.jar!/io/vavr/control/Try.class" root0="SKIP_INSPECTION" />
@@ -144,11 +151,13 @@
   "keyToString": {
     "Application.ActorDGSApplication.executor": "Run",
     "Application.Application.executor": "Run",
+    "Application.ChronicleMapMemoryBreakdown.executor": "Run",
     "Application.DemoApplication.executor": "Run",
     "Application.DirectorDGSApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
     "Application.FederationApplication (1).executor": "Debug",
     "Application.FederationApplication.executor": "Run",
+    "Application.HashMapNodeSize.executor": "Run",
     "Application.ImplicitClass.executor": "Run",
     "Application.JIO.executor": "Run",
     "Application.MovieDGSApplication.executor": "Debug",
@@ -165,6 +174,7 @@
     "JUnit.FeaturesJava22.completableFutureWithVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.composingVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.executor": "Run",
+    "JUnit.FeaturesJava22.invokeSuperAfterSubclass.executor": "Run",
     "JUnit.FeaturesJava22.lazyVirtualThreads.executor": "Run",
     "JUnit.FeaturesJava22.modifyArray.executor": "Run",
     "JUnit.FeaturesJava22.patternMatching.executor": "Run",
@@ -199,6 +209,9 @@
     "JUnit.VavrCollections.rangeClosed.executor": "Run",
     "JUnit.VavrEffects.executor": "Run",
     "JUnit.VavrEffects.tryAddFinally.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.JOL [clean].executor": "Run",
+    "Maven.JOL [install].executor": "Run",
     "Maven.NullAway [clean].executor": "Run",
     "Maven.NullAway [compile].executor": "Run",
     "Maven.NullAway [install].executor": "Run",
@@ -218,6 +231,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.preview.features.used": "true",
+    "jdk.selected.JAVA_MODULE": "22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/pablogarcia/Development/reactive/NetflixArchitecture/img",
     "project.structure.last.edited": "Modules",
@@ -247,7 +261,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChannelFeature">
+  <component name="RunManager" selected="Application.ChronicleMapMemoryBreakdown">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -271,54 +285,21 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+    <configuration name="ChronicleMapMemoryBreakdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChronicleMapMemoryBreakdown" />
+      <module name="JOL" />
+      <option name="PROGRAM_PARAMETERS" value="# one-liner to run your main class java \ --add-opens=java.base/java.lang.reflect=ALL-UNNAMED \ --add-opens=java.base/sun.nio.ch=ALL-UNNAMED \ -cp target/classes:$(mvn -q dependency:build-classpath -Dmdep.path) \ ChronicleMapMemoryBreakdown" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
+    <configuration name="HashMapNodeSize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HashMapNodeSize" />
+      <module name="JOL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -342,23 +323,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChannelFeature.runChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="communication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="communication" />
-      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
-      <option name="METHOD_NAME" value="runChannel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ChannelFeature.runChannelMultipleThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
@@ -376,34 +340,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChannelFeature.runChannelSeparateScope" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava22.invokeSuperAfterSubclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="communication.*" />
+          <option name="PATTERN" value="java22.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="communication" />
-      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
-      <option name="METHOD_NAME" value="runChannelSeparateScope" />
+      <option name="PACKAGE_NAME" value="java22" />
+      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
+      <option name="METHOD_NAME" value="invokeSuperAfterSubclass" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HystrixCircuitBreaker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="netflix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="netflix" />
-      <option name="MAIN_CLASS_NAME" value="netflix.HystrixCircuitBreaker" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -415,6 +363,36 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="JOL [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/JOL" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="NullAway [install]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -643,6 +621,28 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -652,12 +652,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Application.ChronicleMapMemoryBreakdown" />
+      <item itemvalue="Application.HashMapNodeSize" />
+      <item itemvalue="JUnit.FeaturesJava22.invokeSuperAfterSubclass" />
       <item itemvalue="JUnit.ChannelFeature" />
-      <item itemvalue="JUnit.ChannelFeature.runChannel" />
       <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
-      <item itemvalue="JUnit.ChannelFeature.runChannelSeparateScope" />
-      <item itemvalue="JUnit.HystrixCircuitBreaker" />
+      <item itemvalue="Maven.JOL [install]" />
       <item itemvalue="Maven.NullAway [install]" />
       <item itemvalue="Maven.netflix-arquitecture [install]" />
       <item itemvalue="Maven.graphQL [install]" />
@@ -667,11 +698,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChronicleMapMemoryBreakdown" />
+        <item itemvalue="Application.HashMapNodeSize" />
+        <item itemvalue="JUnit.FeaturesJava22.invokeSuperAfterSubclass" />
         <item itemvalue="JUnit.ChannelFeature" />
         <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
-        <item itemvalue="JUnit.ChannelFeature.runChannel" />
-        <item itemvalue="JUnit.ChannelFeature.runChannelSeparateScope" />
-        <item itemvalue="JUnit.HystrixCircuitBreaker" />
       </list>
     </recent_temporary>
   </component>
