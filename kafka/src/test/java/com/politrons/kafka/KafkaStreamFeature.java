@@ -23,6 +23,7 @@ import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -141,6 +142,52 @@ public class KafkaStreamFeature {
         System.out.println("Get:" + eventsStore.get("key-5"));
 
         streams.close();
+    }
+
+    @Test
+    public void globalKTable() throws InterruptedException {
+        String broker = embeddedKafkaBroker.getBrokersAsString();
+        String topic = "Consumer-topic";
+
+        Properties config = getSourceConfig(broker);
+        config.put(StreamsConfig.APPLICATION_ID_CONFIG, "my-global-ktable-app");
+        config.put(StreamsConfig.STATE_DIR_CONFIG, "/tmp/kafka-streams");
+
+        StreamsBuilder builder = new StreamsBuilder();
+
+        KStream<String, String> stream = builder.stream(topic);
+        stream.mapValues(s -> s.toUpperCase())
+                .to("global-events-topic");
+
+        GlobalKTable<String, String> globalTable = builder.globalTable(
+                "global-events-topic",
+                Materialized.as("globalEventsStore")
+        );
+
+        Topology topology = builder.build();
+        KafkaStreams streams = new KafkaStreams(topology, config);
+        streams.start();
+        System.out.println("Initializing stream");
+
+        Thread.sleep(2000);
+        publishMessages(broker, topic);
+
+        ReadOnlyKeyValueStore<String, String> globalEventsStore =
+                streams.store(
+                        fromNameAndType("globalEventsStore", QueryableStoreTypes.keyValueStore())
+                );
+
+        System.out.println("Get all:");
+        KeyValueIterator<String, String> events = globalEventsStore.all();
+        while (events.hasNext()) {
+            KeyValue<String, String> next = events.next();
+            System.out.println(STR."Record Key \{next.key} Value: \{next.value}");
+        }
+
+        System.out.println(STR."Get: \{globalEventsStore.get("key-5")}");
+
+        streams.close();
+
     }
 
     @Test
