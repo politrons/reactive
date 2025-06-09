@@ -10,6 +10,7 @@ import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.*;
 import org.apache.kafka.streams.kstream.*;
+import org.apache.kafka.streams.processor.TaskMetadata;
 import org.apache.kafka.streams.state.KeyValueIterator;
 import org.apache.kafka.streams.state.KeyValueStore;
 import org.apache.kafka.streams.state.QueryableStoreTypes;
@@ -20,6 +21,7 @@ import org.springframework.kafka.test.EmbeddedKafkaBroker;
 import org.springframework.kafka.test.context.EmbeddedKafka;
 import org.springframework.kafka.test.rule.EmbeddedKafkaRule;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -145,13 +147,19 @@ public class KafkaStreamFeature {
     }
 
     @Test
-    public void globalKTable() throws InterruptedException {
+    public void globalKTable() throws InterruptedException, IOException {
         String broker = embeddedKafkaBroker.getBrokersAsString();
         String topic = "Consumer-topic";
+
+        publishMessages(broker, topic);
+
+        Thread.sleep(2000);
+
 
         Properties config = getSourceConfig(broker);
         config.put(StreamsConfig.APPLICATION_ID_CONFIG, "my-global-ktable-app");
         config.put(StreamsConfig.STATE_DIR_CONFIG, "/tmp/kafka-streams");
+        config.put(COMMIT_INTERVAL_MS_CONFIG, 1000);
 
         StreamsBuilder builder = new StreamsBuilder();
 
@@ -160,7 +168,7 @@ public class KafkaStreamFeature {
                 .to("global-events-topic");
 
         GlobalKTable<String, String> globalTable = builder.globalTable(
-                "global-events-topic",
+                "global-events-topic-",
                 Materialized.as("globalEventsStore")
         );
 
@@ -170,7 +178,6 @@ public class KafkaStreamFeature {
         System.out.println("Initializing stream");
 
         Thread.sleep(2000);
-        publishMessages(broker, topic);
 
         ReadOnlyKeyValueStore<String, String> globalEventsStore =
                 streams.store(
@@ -186,8 +193,33 @@ public class KafkaStreamFeature {
 
         System.out.println(STR."Get: \{globalEventsStore.get("key-5")}");
 
+        while(!readCheckpointFromGlobalKTable(streams,"my-global-ktable-app")){
+            Thread.sleep(1000);
+        }
         streams.close();
 
+    }
+
+    private static boolean readCheckpointFromGlobalKTable(KafkaStreams streams, String storeName) throws IOException {
+        Set<org.apache.kafka.streams.processor.ThreadMetadata> threads = streams.localThreadsMetadata();
+        for (org.apache.kafka.streams.processor.ThreadMetadata threadMetadata : threads) {
+            for (TaskMetadata taskMetadata : threadMetadata.activeTasks()) {
+                File storeDir = new File(new File("/tmp/kafka-streams"), storeName);
+                if (storeDir.exists() && storeDir.isDirectory()) {
+                    File checkpointFile = new File(storeDir , "/global/.checkpoint");
+                    if (checkpointFile.exists()) {
+                        String content = Files.readString(checkpointFile.toPath()).trim();
+                        System.out.printf("Checkpoint in %s in task %s: %s%n",
+                                storeName, taskMetadata.taskId(), content);
+                        return true;
+                    } else {
+                        System.out.printf("File does not exist in %s%n", storeDir.getAbsolutePath());
+                        return false;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     @Test
