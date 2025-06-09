@@ -334,6 +334,10 @@ Examples of patterns using Apache Kafka.
 
 * **[HashMap vs Chronicle Map](JOL/README.md)**
 
+## Priority Queue
+
+* **[Priority Queue](src/test/java/PriorityQueueFeature.java)**
+
 ## Architectures
 
 * **[Netflix GraphQL Federation Replica](NetflixArchitecture)**
