@@ -8,7 +8,6 @@ public class PriorityQueueFeature {
     @Test
     public void priorityQueue() throws InterruptedException {
 
-
         /* ──────────────────────────────────────────────────────────────────
          * 1) Three dedicated ThreadPools, one per priority
          * ────────────────────────────────────────────────────────────────── */
@@ -37,22 +36,7 @@ public class PriorityQueueFeature {
 
         for (int i = 0; i < totalTasks; i++) {
             long enqueueTime = System.nanoTime(); // capture time **before** submission
-            Runnable task = () -> {
-                // simulate some work –– replace with real logic if needed
-                doBusyWork();
-
-                long latencyNanos = System.nanoTime() - enqueueTime;
-
-                // update the corresponding statistics
-                if (Thread.currentThread().getName().contains("high")) {
-                    highStats.addSample(latencyNanos);
-                } else if (Thread.currentThread().getName().contains("medium")) {
-                    mediumStats.addSample(latencyNanos);
-                } else {
-                    lowStats.addSample(latencyNanos);
-                }
-            };
-
+            Runnable task = getLogicTask(enqueueTime, highStats, mediumStats, lowStats);
             /* Assign the task to the correct pool based on the loop index */
             if (i < highQuota) {
                 highPool.execute(wrap(task, "high"));
@@ -82,6 +66,22 @@ public class PriorityQueueFeature {
         System.out.printf("Medium - average latency: %.3f ms%n", mediumStats.getAverageMillis());
         System.out.printf("Low    - average latency: %.3f ms%n", lowStats.getAverageMillis());
 
+    }
+
+    private static Runnable getLogicTask(long enqueueTime, Stats highStats, Stats mediumStats, Stats lowStats) {
+        return () -> {
+            // simulate some work –– replace with real logic if needed
+            doBusyWork();
+            long latencyNanos = System.nanoTime() - enqueueTime;
+            // update the corresponding statistics
+            if (Thread.currentThread().getName().contains("high")) {
+                highStats.addSample(latencyNanos);
+            } else if (Thread.currentThread().getName().contains("medium")) {
+                mediumStats.addSample(latencyNanos);
+            } else {
+                lowStats.addSample(latencyNanos);
+            }
+        };
     }
 
 
