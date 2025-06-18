@@ -342,6 +342,10 @@ Examples of patterns using Apache Kafka.
 
 * **[Netflix GraphQL Federation Replica](NetflixArchitecture)**
 
+## TigerBeetle
+
+* **[Benchmark](DatabaseBenchmarks/)**
+
 ## Programs
 
 * [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing
