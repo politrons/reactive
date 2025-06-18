@@ -16,6 +16,7 @@
         <module name="directorDGS" />
         <module name="JOL" />
         <module name="kafka" />
+        <module name="DatabaseBenchmarks" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="19" />

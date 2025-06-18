@@ -27,6 +27,7 @@
     </build>
     <modules>
 <!--        <module>quarkus</module>-->
+        <module>DatabaseBenchmarks</module>
         <module>kafka</module>
         <module>NetflixArchitecture</module>
         <module>NetflixArchitecture/federation</module>

@@ -188,10 +188,8 @@ public class KafkaStreamFeature {
         KeyValueIterator<String, String> events = globalEventsStore.all();
         while (events.hasNext()) {
             KeyValue<String, String> next = events.next();
-            System.out.println(STR."Record Key \{next.key} Value: \{next.value}");
         }
 
-        System.out.println(STR."Get: \{globalEventsStore.get("key-5")}");
 
         while(!readCheckpointFromGlobalKTable(streams,"my-global-ktable-app")){
             Thread.sleep(1000);
