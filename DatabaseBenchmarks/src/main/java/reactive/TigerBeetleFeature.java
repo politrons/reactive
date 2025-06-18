@@ -4,21 +4,36 @@ package reactive;
 import com.tigerbeetle.*;
 
 import java.math.BigInteger;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.*;
+import java.util.stream.IntStream;
 
 public class TigerBeetleFeature {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         byte[] clusterID = UInt128.asBytes(0);
-        String[] replicaAddresses = new String[] { "3000" };
+        String[] replicaAddresses = new String[]{"3000"};
+        var transactions = 10000;
+        ExecutorService pool = Executors.newFixedThreadPool(
+                10000, Thread.ofVirtual().name("TigerBeetleTask-", 0).factory());
+        System.out.println("Starting transactions: " + transactions);
         try (var client = new Client(clusterID, replicaAddresses)) {
-            var debitAccountId= ThreadLocalRandom.current().nextLong(0, 1_000L);
-            var creditAccountId=ThreadLocalRandom.current().nextLong(0, 1_000L);
-            createAccounts(debitAccountId, creditAccountId, client);
-            createTransferBatch(debitAccountId, creditAccountId, client);
-            IdBatch ids = createBatchProcess(debitAccountId, creditAccountId);
-            AccountBatch accounts = client.lookupAccounts(ids);
-            checkResults(accounts, debitAccountId, creditAccountId);
+            var start  = System.currentTimeMillis();
+            IntStream.range(0, transactions).forEach(_ -> pool.execute(() -> {
+                var debitAccountId = ThreadLocalRandom.current().nextLong(0, 1_000_000_000L);
+                var creditAccountId = ThreadLocalRandom.current().nextLong(0, 1_000_000_000L);
+                var transferId = ThreadLocalRandom.current().nextLong(0, 1_000_000_000L);
+                createAccounts(debitAccountId, creditAccountId, client);
+                createTransferBatch(transferId,debitAccountId, creditAccountId, client);
+                IdBatch ids = createBatchProcess(debitAccountId, creditAccountId);
+                AccountBatch accounts = client.lookupAccounts(ids);
+                checkResults(accounts, transferId, debitAccountId, creditAccountId);
+            }));
+            /* ──────────────────────────────────────────────────────────────────
+             * Shut down pools and wait for completion
+             * ────────────────────────────────────────────────────────────────── */
+            pool.shutdown();
+            pool.awaitTermination(10, TimeUnit.SECONDS);
+            System.out.println("Time to process:" + transactions + " transfers, took:" + (System.currentTimeMillis() - start));
         }
     }
 
@@ -45,8 +60,7 @@ public class TigerBeetleFeature {
         }
     }
 
-    private static void createTransferBatch(long debitAccountId, long creditAccountId, Client client) {
-        var transferId=ThreadLocalRandom.current().nextLong(0, 1_000L);
+    private static void createTransferBatch(long transferId, long debitAccountId, long creditAccountId, Client client) {
         TransferBatch transfers = new TransferBatch(1);
         transfers.add();
         transfers.setId(transferId);
@@ -74,7 +88,7 @@ public class TigerBeetleFeature {
     }
 
 
-    private static void checkResults(AccountBatch accounts, long debitAccountId, long creditAccountId) {
+    private static void checkResults(AccountBatch accounts,long transferId, long debitAccountId, long creditAccountId) {
         assert accounts.getCapacity() == 2;
         while (accounts.next()) {
             long idLS = accounts.getId(UInt128.LeastSignificant);
@@ -83,14 +97,12 @@ public class TigerBeetleFeature {
             if (idMS == 0 && idLS == debitAccountId) {
                 assert accounts.getDebitsPosted().intValueExact() == 10;
                 assert accounts.getCreditsPosted().intValueExact() == 0;
-                System.out.println("Debit account OK: " + idLS);
-            }
-            else if (idMS == 0 && idLS == creditAccountId) {
+                System.out.println(Thread.currentThread().getName() + " TransferId " + transferId + " Debit account OK: " + idLS);
+            } else if (idMS == 0 && idLS == creditAccountId) {
                 assert accounts.getDebitsPosted().intValueExact() == 0;
                 assert accounts.getCreditsPosted().intValueExact() == 10;
-                System.out.println("Credit account OK: " + idLS);
-            }
-            else {
+                System.out.println(Thread.currentThread().getName() + " TransferId " + transferId + " Credit account OK: " + idLS);
+            } else {
                 throw new IllegalStateException(
                         "Unexpected account ID: " + BigInteger.valueOf(idLS)
                 );

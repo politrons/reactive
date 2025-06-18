@@ -105,10 +105,7 @@ public class PriorityQueueFeature {
 
     /** Adds a human-readable suffix to the worker thread names */
     private static Runnable wrap(Runnable delegate, String tag) {
-        return () -> {
-            Thread.currentThread().setName(STR."\{tag}-\{Thread.currentThread().threadId()}");
-            delegate.run();
-        };
+        return delegate::run;
     }
 
     /** Fake workload: ~1 ms busy spin (replace as needed) */
