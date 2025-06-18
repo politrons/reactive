@@ -13,18 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e6c1e6-7af9-4fc9-8e6e-c0f79278a3cc" name="Changes" comment="documentation">
-      <change afterPath="$PROJECT_DIR$/JOL/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/java/ChronicleMapMemoryBreakdown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/java/HashMapNodeSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JOL/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DatabaseBenchmarks/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DatabaseBenchmarks/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DatabaseBenchmarks/src/main/java/reactive/DatabaseBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DatabaseBenchmarks/src/main/java/reactive/TigerBeetleFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java24/FeaturesJava24.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java22/FeaturesJava22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -140,7 +144,6 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="1xfYBRJDMUfjA5UvAemcqNVVcCH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -152,6 +155,7 @@
     "Application.ActorDGSApplication.executor": "Run",
     "Application.Application.executor": "Run",
     "Application.ChronicleMapMemoryBreakdown.executor": "Run",
+    "Application.DatabaseBenchmark.executor": "Run",
     "Application.DemoApplication.executor": "Run",
     "Application.DirectorDGSApplication.executor": "Run",
     "Application.FeaturesJava22.executor": "Run",
@@ -163,6 +167,7 @@
     "Application.MovieDGSApplication.executor": "Debug",
     "Application.RacePattern (1).executor": "Run",
     "Application.RacePattern.executor": "Run",
+    "Application.TigerBeetleFeature.executor": "Run",
     "Gradle.Build graphQL.executor": "Run",
     "Gradle.DemoApplicationTests.executor": "Run",
     "Gradle.graphQL [:Application.main()].executor": "Run",
@@ -187,6 +192,10 @@
     "JUnit.FeaturesJava22.structureConcurrencyCaptureSideEffect.executor": "Run",
     "JUnit.FeaturesJava22.unnamedVariables.executor": "Run",
     "JUnit.FeaturesJava22.virtualThreads.executor": "Run",
+    "JUnit.FeaturesJava24 (1).executor": "Run",
+    "JUnit.FeaturesJava24.executor": "Run",
+    "JUnit.FeaturesJava24.primitiveTypesInPatternMatching.executor": "Run",
+    "JUnit.FeaturesJava24Test.primitiveTypesInPatternMatching.executor": "Run",
     "JUnit.GenericsFeature.executor": "Run",
     "JUnit.HystrixFeature.executor": "Run",
     "JUnit.HystrixFeature.runService.executor": "Run",
@@ -197,9 +206,19 @@
     "JUnit.JIOFeature.parallel.executor": "Run",
     "JUnit.JIOFeature.race.executor": "Run",
     "JUnit.JIOFeature.sideEffects.executor": "Run",
+    "JUnit.JSChTest.executor": "Run",
     "JUnit.Java16Features.executor": "Run",
+    "JUnit.KafkaBalancing.specificPartition.executor": "Run",
+    "JUnit.KafkaStreamFeature.executor": "Debug",
+    "JUnit.KafkaStreamFeature.globalKTable.executor": "Run",
+    "JUnit.KafkaStreamFeature.queries.executor": "Run",
+    "JUnit.KafkaThrottling.executor": "Debug",
+    "JUnit.KafkaThrottling.specificPartition.executor": "Run",
     "JUnit.LoomFeatures.executor": "Run",
     "JUnit.LoomFeatures.virtualThreadFeature.executor": "Run",
+    "JUnit.PriorityQueue.executor": "Run",
+    "JUnit.PriorityQueue.priorityQueue.executor": "Run",
+    "JUnit.PriorityQueueFeature.executor": "Run",
     "JUnit.RacePattern.executor": "Run",
     "JUnit.RacePattern.raceBetweenAsyncTask.executor": "Run",
     "JUnit.ReactorAsync.executor": "Run",
@@ -227,9 +246,11 @@
     "Maven.netflix-arquitecture [clean].executor": "Run",
     "Maven.netflix-arquitecture [install].executor": "Run",
     "Maven.reactive [clean].executor": "Run",
+    "Maven.reactive [compile].executor": "Run",
     "Maven.reactive [install].executor": "Run",
+    "Maven.reactive [validate].executor": "Run",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "tiger__bettle",
     "ignore.preview.features.used": "true",
     "jdk.selected.JAVA_MODULE": "22",
     "kotlin-language-version-configured": "true",
@@ -249,11 +270,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/graphQL/federation" />
       <recent name="$PROJECT_DIR$/graphQL" />
       <recent name="$PROJECT_DIR$/graphQL/src/main/resources" />
       <recent name="$PROJECT_DIR$/graphQL/src/main/resources/graphql" />
-      <recent name="$PROJECT_DIR$/src/main/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.politrons.netflix.model" />
@@ -261,7 +282,7 @@
       <recent name="com.politrons.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChronicleMapMemoryBreakdown">
+  <component name="RunManager" selected="Application.TigerBeetleFeature">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -285,18 +306,30 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="ChronicleMapMemoryBreakdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChronicleMapMemoryBreakdown" />
-      <module name="JOL" />
-      <option name="PROGRAM_PARAMETERS" value="# one-liner to run your main class java \ --add-opens=java.base/java.lang.reflect=ALL-UNNAMED \ --add-opens=java.base/sun.nio.ch=ALL-UNNAMED \ -cp target/classes:$(mvn -q dependency:build-classpath -Dmdep.path) \ ChronicleMapMemoryBreakdown" />
+    <configuration name="DatabaseBenchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reactive.DatabaseBenchmark" />
+      <module name="DatabaseBenchmarks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reactive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashMapNodeSize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HashMapNodeSize" />
-      <module name="JOL" />
+    <configuration name="TigerBeetleFeature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reactive.TigerBeetleFeature" />
+      <module name="DatabaseBenchmarks" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reactive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,50 +340,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChannelFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="communication.*" />
+          <option name="PATTERN" value="java24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="communication" />
-      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
+      <option name="PACKAGE_NAME" value="java24" />
+      <option name="MAIN_CLASS_NAME" value="java24.FeaturesJava24" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChannelFeature.runChannelMultipleThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava24Test.primitiveTypesInPatternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="communication.*" />
+          <option name="PATTERN" value="com.politrons.java24.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="communication" />
-      <option name="MAIN_CLASS_NAME" value="communication.ChannelFeature" />
-      <option name="METHOD_NAME" value="runChannelMultipleThreads" />
+      <option name="PACKAGE_NAME" value="com.politrons.java24" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.java24.FeaturesJava24Test" />
+      <option name="METHOD_NAME" value="primitiveTypesInPatternMatching" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeaturesJava22.invokeSuperAfterSubclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeaturesJava24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactive" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java22.*" />
+          <option name="PATTERN" value="com.politrons.java24.FeaturesJava24" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java22" />
-      <option name="MAIN_CLASS_NAME" value="java22.FeaturesJava22" />
-      <option name="METHOD_NAME" value="invokeSuperAfterSubclass" />
+      <option name="PACKAGE_NAME" value="com.politrons.java24" />
+      <option name="MAIN_CLASS_NAME" value="com.politrons.java24.FeaturesJava24" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeaturesJava24.primitiveTypesInPatternMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java24.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java24" />
+      <option name="MAIN_CLASS_NAME" value="java24.FeaturesJava24" />
+      <option name="METHOD_NAME" value="primitiveTypesInPatternMatching" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -621,28 +670,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -652,42 +679,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.ChronicleMapMemoryBreakdown" />
-      <item itemvalue="Application.HashMapNodeSize" />
-      <item itemvalue="JUnit.FeaturesJava22.invokeSuperAfterSubclass" />
-      <item itemvalue="JUnit.ChannelFeature" />
-      <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
+      <item itemvalue="Application.DatabaseBenchmark" />
+      <item itemvalue="Application.TigerBeetleFeature" />
+      <item itemvalue="JUnit.FeaturesJava24" />
+      <item itemvalue="JUnit.FeaturesJava24.primitiveTypesInPatternMatching" />
+      <item itemvalue="JUnit.FeaturesJava24Test.primitiveTypesInPatternMatching" />
       <item itemvalue="Maven.JOL [install]" />
       <item itemvalue="Maven.NullAway [install]" />
       <item itemvalue="Maven.netflix-arquitecture [install]" />
@@ -698,11 +695,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChronicleMapMemoryBreakdown" />
-        <item itemvalue="Application.HashMapNodeSize" />
-        <item itemvalue="JUnit.FeaturesJava22.invokeSuperAfterSubclass" />
-        <item itemvalue="JUnit.ChannelFeature" />
-        <item itemvalue="JUnit.ChannelFeature.runChannelMultipleThreads" />
+        <item itemvalue="Application.TigerBeetleFeature" />
+        <item itemvalue="Application.DatabaseBenchmark" />
+        <item itemvalue="JUnit.FeaturesJava24" />
+        <item itemvalue="JUnit.FeaturesJava24.primitiveTypesInPatternMatching" />
+        <item itemvalue="JUnit.FeaturesJava24Test.primitiveTypesInPatternMatching" />
       </list>
     </recent_temporary>
   </component>
@@ -1058,7 +1055,7 @@
       <option name="project" value="LOCAL" />
       <updated>1667564319951</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1100,14 +1097,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaStreamFeature.java</url>
-          <line>168</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/sagas/KSaga.java</url>
           <line>301</line>
           <option name="timeStamp" value="72" />
@@ -1116,6 +1105,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/java19/Java19Features.java</url>
           <line>29</line>
           <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/kafka/src/test/java/com/politrons/kafka/KafkaThrottling.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DatabaseBenchmarks/src/main/java/reactive/TigerBeetleFeature.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
