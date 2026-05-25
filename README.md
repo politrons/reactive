@@ -351,3 +351,7 @@ Examples of patterns using Apache Kafka.
 * [PaymentAPI:](https://github.com/politrons/PaymentAPI) A Reactive microservice with DDD + CQRS + Event Sourcing
 * [Reactive StarWars](https://github.com/politrons/reactiveStarWars) A Star wars reactive microservice platform, formed
   by four services
+
+## Gen AI
+
+* [AI Native patterns](https://github.com/politrons/AIJavaPatterns)
